@@ -1,0 +1,6 @@
+@charset "UTF-8";
+@use "../../wordpress/core-blocks";
+
+.p-wp-post {
+  @extend %wp-core-blocks;
+}

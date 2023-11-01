@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@use "../../global" as *;
+.c-pager {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: rem(524px);
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    @include font-en;
+  }
+  &__item {
+    font-weight: 700;
+
+    &.-disabled {
+      opacity: 0.3;
+    }
+    &.-current span {
+      background-color: $c-primary;
+      color: $c-white;
+      font-weight: 700;
+      border-radius: rem(8px);
+    }
+  }
+
+  &__arrow {
+    fill: $c-black;
+    &.-left {
+      margin-right: rem(12px);
+    }
+    &.-top {
+      transform: rotate(90deg);
+      margin-right: rem(12px);
+    }
+    &.-right {
+      transform: rotate(180deg);
+      margin-left: rem(12px);
+    }
+  }
+
+  a,
+  span {
+    transition: color 0.4s;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+  }
+  a {
+    @include hover {
+      color: $c-primary;
+      svg {
+        fill: $c-primary;
+      }
+    }
+  }
+}

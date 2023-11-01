@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-blockquote {
+  position: relative;
+  background-color: $c-black;
+  padding: rem(40px) rem(32px) rem(32px);
+  margin: rem(48px) 0;
+  border-radius: rem(12px) 0 0 0;
+  &:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: rem(32px);
+    height: rem(50px);
+    background-image: url(../img/icon_blockquote.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: rem(-16px);
+    right: rem(24px);
+  }
+
+  p {
+    color: $c-black;
+
+    margin-bottom: rem(16px);
+  }
+  cite {
+    margin-top: rem(16px);
+    display: block;
+
+    a {
+      color: $c-primary;
+    }
+  }
+}

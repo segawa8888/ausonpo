@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-service-list2 {
+  &__item {
+    height: 100%;
+  }
+  &__content {
+    border-radius: 0 0 rem(16px) rem(16px);
+    padding: rem(32px) rem(32px) rem(24px);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: $c-white;
+    @include mq-max("sm") {
+      border-radius: 0 0 rem(12px) rem(12px);
+      padding: rem(24px) rem(24px) rem(20px);
+    }
+  }
+  .-borderd &__content {
+    border: $c-black;
+    border-top: none;
+  }
+  &__pic {
+    overflow: hidden;
+    border-radius: rem(16px) rem(16px) 0 0;
+    margin-bottom: 0;
+    @include mq-max("sm") {
+      border-radius: rem(12px) rem(12px) 0 0;
+    }
+    img {
+      transition: transform 0.4s;
+    }
+  }
+  &__heading {
+    font-weight: 700;
+    color: $c-primary;
+    text-align: center;
+    transition: color 0.2s;
+  }
+  &__text {
+    margin-top: rem(20px);
+    flex: 1;
+    transition: color 0.2s;
+  }
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: rem(44px);
+
+    color: $c-primary;
+    font-weight: 700;
+    position: relative;
+    padding-right: rem(40px);
+    transition: color 0.2s;
+    &::after {
+      content: "";
+      background: url(../img/arrow_blue.svg) center center/cover no-repeat;
+      width: rem(28px);
+      height: rem(28px);
+      position: absolute;
+      right: 0;
+      display: block;
+      top: 0;
+      transition: transform 0.2s;
+    }
+  }
+  a {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @include hover {
+      .c-service-list2__pic {
+        img {
+          transform: scale(1.03);
+        }
+      }
+      .c-service-list2__text {
+        color: $c-primary;
+      }
+      .c-service-list2__link {
+        &::after {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}

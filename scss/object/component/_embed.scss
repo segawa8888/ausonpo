@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-embed {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &.-map {
+    padding-top: 75%;
+    @include mq-max("sm") {
+      padding-top: 125%;
+    }
+  }
+}
+.c-embed-map {
+  .c-embed {
+    padding-top: 75%;
+    @include mq-max("sm") {
+      padding-top: 125%;
+    }
+  }
+}

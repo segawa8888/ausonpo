@@ -1,0 +1,323 @@
+@use "../global" as *;
+
+/*********************************************
+layout/_footer.scss
+**********************************************/
+.l-footer {
+  position: sticky;
+  top: 100vh;
+  &__top {
+    background: $c-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: rem(30px);
+    padding-right: rem(8px);
+    padding-left: rem(32px);
+    margin-bottom: rem(8px);
+  }
+  &__top-logo {
+    width: rem(66px);
+    height: rem(14px);
+  }
+  &__top-pagetop {
+    width: rem(25px);
+    height: rem(25px);
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__number {
+    font-size: rem(8px);
+    color: $c-base-500;
+    font-weight: 700;
+    text-align: right;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+  }
+  &__nav {
+    background: $c-base-050;
+    color: $c-base-600;
+  }
+  &__row {
+    padding: rem(20px) 0 rem(20px) rem(32px);
+    display: flex;
+    justify-content: space-between;
+  }
+  &__col {
+  }
+  &__heading {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: rem(12px);
+    line-height: 1.5;
+  }
+  &__list {
+    display: grid;
+    gap: rem(4px);
+    & & {
+      margin-top: rem(4px);
+      margin-left: rem(8px);
+    }
+    & + & {
+      margin-top: rem(16px);
+    }
+  }
+  &__list + &__heading {
+    margin-top: rem(20px);
+  }
+  &__item {
+    font-size: rem(12px);
+    letter-spacing: 0.1em;
+    line-height: 2;
+    background: url(../img/common/footer_nav_arrow.svg) left rem(11px) no-repeat;
+    background-size: rem(3px);
+    padding-left: rem(12px);
+    &.-external {
+      a {
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          height: 9px;
+          margin-left: rem(8px);
+          background: url(../img/common/footer_nav_external.svg) center center / contain no-repeat;
+        }
+      }
+    }
+  }
+  &__sub {
+    font-size: rem(8px);
+    letter-spacing: 0.1em;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: rem(60px);
+  }
+  &__bottom-logo {
+    width: rem(198px);
+  }
+  &__bottom-copy {
+    font-size: rem(12px);
+    color: $c-base-500;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+}
+
+.l-footer-nav {
+  @include mq-max("lg") {
+    margin: rem(48px) 0;
+  }
+  @include mq-max("sm") {
+    margin: rem(40px) 0;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    @include mq-max("lg") {
+      justify-content: center;
+    }
+    @include mq-max("sm") {
+      justify-content: flex-start;
+    }
+    & + & {
+      margin-top: rem(24px);
+      @include mq-max("sm") {
+        margin-top: 0;
+      }
+    }
+  }
+  &__item {
+    margin: 0 rem(16px);
+    font-weight: 700;
+    @include font-en;
+    @include mq-max("sm") {
+      flex-wrap: wrap;
+      margin: 0;
+      width: 50%;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    @include mq-max("lg") {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      transition: color 0.8s;
+      display: block;
+      padding: 0;
+      color: $c-white;
+      @include mq-max("sm") {
+        padding: rem(12px) 0;
+      }
+
+      &.is-current {
+        color: $c-primary;
+      }
+      @include hover {
+        color: $c-primary;
+      }
+    }
+  }
+}
+.l-footer-contact {
+  background-color: $c-black;
+  padding: rem(80px) 0 rem(96px);
+  @include mq-max("sm") {
+    padding: rem(64px) 0 rem(80px);
+  }
+  position: relative;
+  &__inner {
+    align-items: center;
+    @include mq-max("lg") {
+      justify-items: center;
+    }
+  }
+  &__pic {
+    order: 1;
+    @include mq-max("lg") {
+      max-width: 528px;
+    }
+    @include mq-max("sm") {
+      order: 2;
+    }
+  }
+  &__content {
+    text-align: center;
+    order: 2;
+    @include mq-max("sm") {
+      order: 1;
+    }
+  }
+  &__heading-sub {
+    color: $c-primary;
+
+    font-weight: 500;
+    @include font-en;
+  }
+  &__heading {
+    margin-top: rem(24px);
+    font-weight: 700;
+  }
+  &__text {
+    color: $c-primary;
+
+    font-weight: 700;
+    margin-top: rem(28px);
+  }
+  &__box {
+    background-color: $c-white;
+    border-radius: rem(12px);
+    padding: rem(36px) 0;
+    @include mq-max("sm") {
+      padding: rem(24px) 0;
+    }
+  }
+  &__box-heading {
+    font-weight: 700;
+  }
+  &__btn {
+    margin-top: rem(24px);
+  }
+  &__tel {
+    font-weight: 900;
+    @include font-en;
+    margin-top: rem(20px);
+    a {
+      color: $c-primary;
+    }
+  }
+  &__business-time {
+    margin-top: rem(16px);
+
+    color: $c-black;
+    font-weight: 700;
+  }
+  &__tel-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(16px);
+    margin: rem(24px) auto 0;
+    width: fit-content;
+  }
+  &__tel-list-item {
+    display: inline-flex;
+    align-items: center;
+    @include mq-max("lg") {
+      flex-direction: column;
+    }
+  }
+  &__tel-list-title {
+    width: rem(200px);
+    height: rem(32px);
+    margin-right: rem(16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: $c-primary;
+    font-weight: 700;
+    color: $c-white;
+    @include mq-max("lg") {
+      margin-right: 0;
+      margin-bottom: rem(8px);
+    }
+  }
+  &__tel-list-tel {
+    a {
+      color: $c-primary;
+      font-weight: 900;
+      font-size: rem(32px);
+      letter-spacing: 0.04em;
+      line-height: 1em;
+      @include font-en;
+      transition: color 0.4s;
+      @include hover {
+        color: $c-primary;
+      }
+    }
+  }
+}
+.l-footer-link {
+  background-color: $c-white;
+  padding: rem(64px) 0;
+  position: relative;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: rem(24px) rem(32px);
+    @include mq-max("lg") {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include mq-max("sm") {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: rem(16px) rem(20px);
+    }
+    a {
+      transition: opacity 0.4s;
+      @include hover {
+        opacity: 0.6;
+      }
+    }
+    img {
+      border: 1px solid $c-black;
+    }
+  }
+  /* wordpress対応 */
+  figure {
+    margin-bottom: 0;
+  }
+}

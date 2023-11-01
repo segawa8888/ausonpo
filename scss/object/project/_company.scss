@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@use "../../global" as *;
+.p-company-mission {
+  padding: rem(44px) 0;
+  background-image: linear-gradient(
+      90deg,
+      $c-primary 0 rem(36px),
+      transparent 0 calc(100% - rem(36px)),
+      $c-primary calc(100% - rem(36px))
+    ),
+    linear-gradient($c-primary 0 rem(36px), transparent 0 calc(100% - rem(36px)), $c-primary calc(100% - rem(36px))),
+    linear-gradient(
+      90deg,
+      $c-primary 0 rem(36px),
+      transparent 0 calc(100% - rem(36px)),
+      $c-primary calc(100% - rem(36px))
+    ),
+    linear-gradient($c-primary 0 rem(36px), transparent 0 calc(100% - rem(36px)), $c-primary calc(100% - rem(36px))),
+    url(../img/bg_note.jpg);
+  background-repeat: no-repeat;
+  background-size:
+    100% 1px,
+    1px 100%,
+    100% 1px,
+    1px 100%,
+    rem(800px);
+  background-position:
+    top,
+    right,
+    bottom,
+    left,
+    center center;
+  @include mq-max("sm") {
+    padding: rem(40px) rem(32px);
+  }
+  &__text {
+    color: $c-primary;
+    font-weight: 700;
+    @include mq-min("sm") {
+      text-align: center;
+      & > span {
+        display: inline-block;
+        background: linear-gradient(to right, $c-primary, $c-primary 4px, transparent 4px, transparent 4px) center
+          bottom/rem(8px) 1px repeat-x;
+        & + span {
+          margin-top: rem(8px);
+        }
+      }
+    }
+    @include mq-max("sm") {
+      & > span {
+        border-bottom: $c-primary dashed 1px;
+      }
+    }
+    & + & {
+      margin-top: rem(40px);
+      @include mq-max("sm") {
+        margin-top: rem(32px);
+      }
+    }
+  }
+}
+.p-company-message {
+  &__text {
+    font-weight: 700;
+    @include mq-min("sm") {
+      text-align: center;
+      & > span {
+        display: inline-block;
+        background: linear-gradient(to right, $c-base-400, $c-base-400 4px, transparent 4px, transparent 4px) center
+          bottom/rem(8px) 1px repeat-x;
+        & + span {
+          margin-top: rem(8px);
+        }
+      }
+    }
+    @include mq-max("sm") {
+      & > span {
+        border-bottom: $c-black;
+      }
+    }
+    & + & {
+      margin-top: rem(40px);
+      @include mq-max("sm") {
+        margin-top: rem(32px);
+      }
+    }
+  }
+}
+
+.p-company-information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @include mq-max("lg") {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__pic {
+    width: rem(456px);
+    order: 1;
+    @include mq-max("lg") {
+      width: 100%;
+      max-width: rem(528px);
+    }
+  }
+  &__content {
+    width: rem(600px);
+    order: 2;
+    @include mq-max("lg") {
+      width: 100%;
+      max-width: rem(528px);
+      margin-top: rem(48px);
+    }
+  }
+}

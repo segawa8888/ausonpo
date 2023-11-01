@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@use '../../global'as *;
+.c-external {
+  background-image: url(../img/icon_external.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: rem(12px);
+  padding-right: rem(16px);
+}
