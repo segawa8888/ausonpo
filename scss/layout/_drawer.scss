@@ -23,9 +23,18 @@ layout/_header.scss
     opacity 0.2s;
   will-change: transform;
   opacity: 0;
+  visibility: hidden;
+  @include mq-max("md") {
+    transform: none;
+    right: 0;
+    top: rem(68px);
+    width: 100%;
+    padding: rem(40px) calc((100% - rem(944px)) / 2);
+  }
   .is-drawer-open & {
-    transform: translateX(0);
+    transform: none;
     opacity: 1;
+    visibility: visible;
   }
   &__search {
     width: 100%;

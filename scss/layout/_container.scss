@@ -13,4 +13,7 @@ layout/_container.scss
   margin-right: auto;
   max-width: rem(1100px);
   width: 82.58%;
+  @include mq-max("md") {
+    width: 100%;
+  }
 }

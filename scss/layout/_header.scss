@@ -9,14 +9,25 @@ layout/_header.scss
 .l-header {
   padding-top: rem(32px);
   color: $c-base-900;
+  @include mq-max("md") {
+    padding-top: 0;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mq-max("md") {
+      height: rem(68px);
+      padding-right: rem(68px);
+    }
   }
   &__logo {
     width: rem(141px);
     height: auto;
+    @include mq-max("md") {
+      width: rem(104px);
+      margin-left: rem(10px);
+    }
   }
 }
 .l-header-sub {
@@ -30,10 +41,16 @@ layout/_header.scss
     line-height: rem(20px);
     border-left: 1px solid $c-base-400;
     padding: 0 rem(24px);
+    @include mq-max("md") {
+      display: none;
+    }
   }
   &__btn {
     & + & {
       margin-left: rem(12px);
+      @include mq-max("md") {
+        margin-left: 0;
+      }
     }
     a {
       display: flex;
@@ -42,10 +59,23 @@ layout/_header.scss
       padding-left: rem(38px);
       border-radius: rem(5px);
       border: rem(2px) solid;
-      background: center left / contain no-repeat;
+      background: left center / contain no-repeat;
       align-items: center;
       justify-content: center;
       font-size: rem(14px);
+      @include mq-max("md") {
+        width: rem(80px);
+        height: rem(48px);
+        padding-left: 0;
+        background-position: center rem(6px);
+        background-size: rem(20px);
+        align-items: flex-end;
+        border: none;
+        border-left: 1px solid;
+        font-size: rem(12px);
+        letter-spacing: -0.05em;
+        border-radius: 0;
+      }
     }
     &.-login {
       a {
@@ -53,6 +83,13 @@ layout/_header.scss
         background-image: url(../img/common/header_icon_login_pc.webp);
         .no-webp-support & {
           background-image: url(../img/common/header_icon_login_pc.png);
+        }
+        @include mq-max("md") {
+          background-image: url(../img/common/header_icon_login_sp.webp);
+          .no-webp-support & {
+            background-image: url(../img/common/header_icon_login_sp.png);
+          }
+          border-color: $c-base-200;
         }
       }
     }
@@ -63,6 +100,13 @@ layout/_header.scss
         .no-webp-support & {
           background-image: url(../img/common/header_icon_user_pc.png);
         }
+        @include mq-max("md") {
+          background-image: url(../img/common/header_icon_user_sp.webp);
+          .no-webp-support & {
+            background-image: url(../img/common/header_icon_user_sp.png);
+          }
+          border-color: $c-base-200;
+        }
       }
     }
   }
@@ -70,16 +114,26 @@ layout/_header.scss
 .l-header-nav {
   margin-top: rem(30px);
   font-weight: 700;
+  @include mq-max("md") {
+    margin-top: 0;
+    overflow-x: auto;
+  }
   &__list {
-    background: $c-base-700;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    height: rem(46px);
+    min-height: rem(46px);
+    @include mq-max("sm") {
+      display: flex;
+      justify-content: flex-start;
+      min-width: 100%;
+      background: $c-base-700;
+    }
   }
   &__item {
     position: relative;
     display: flex;
     align-items: center;
+    background: $c-base-700;
     a {
       display: flex;
       color: $c-white;
@@ -91,11 +145,23 @@ layout/_header.scss
       align-items: center;
       justify-content: center;
       transition: background-color 0.3s ease;
+      @include mq-max("sm") {
+        letter-spacing: 0.05em;
+        padding: 0 rem(8px);
+        white-space: nowrap;
+      }
     }
     &.-small {
       a {
         font-size: rem(10px);
         line-height: 1.2;
+        @include mq-max("sm") {
+          font-size: rem(12px);
+          line-height: 1.25;
+          br:last-child {
+            display: none;
+          }
+        }
       }
     }
     &:not(:first-child)::before {
@@ -123,6 +189,12 @@ layout/_header.scss
   width: rem(106px);
   z-index: 10000;
   padding-top: rem(12px);
+  @include mq-max("md") {
+    padding: 0;
+    width: rem(68px);
+    height: rem(68px);
+    position: absolute;
+  }
   &__btn {
     display: flex;
     flex-direction: column;
@@ -137,12 +209,22 @@ layout/_header.scss
     padding-top: rem(4px);
     margin: 0 auto;
     cursor: pointer;
+    @include mq-max("md") {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      padding-top: rem(4px);
+      background: transparent;
+    }
   }
   &__inner {
     // ハンバーガーボタンのサイズを指定
     width: rem(40px);
     height: rem(22px);
     position: relative;
+    @include mq-max("md") {
+      width: rem(32px);
+    }
   }
   &__bar {
     // ハンバーガーボタンのデザインを指定
@@ -156,6 +238,9 @@ layout/_header.scss
     transition:
       transform 0.4s,
       opacity 0.4s;
+    @include mq-max("md") {
+      background-color: $c-white;
+    }
     &:nth-of-type(1) {
       top: 0;
       transform: translateY(0) rotate(0deg);
@@ -169,7 +254,6 @@ layout/_header.scss
     }
   }
   .is-drawer-open &__bar {
-    background-color: $c-primary;
     &:nth-of-type(1) {
       transform: translateY(rem(10px)) rotate(-45deg);
     }
@@ -187,5 +271,11 @@ layout/_header.scss
     font-size: rem(15px);
     color: $c-primary;
     line-height: 1.2;
+    @include mq-max("md") {
+      font-size: rem(13px);
+      margin-top: rem(6px);
+      color: $c-white;
+      letter-spacing: -0.1em;
+    }
   }
 }
