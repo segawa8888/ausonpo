@@ -15,17 +15,31 @@ layout/_footer.scss
     padding-right: rem(8px);
     padding-left: rem(32px);
     margin-bottom: rem(8px);
+    @include mq-max("md") {
+      padding-right: 0;
+      margin-bottom: 0;
+    }
   }
   &__top-logo {
     width: rem(66px);
     height: rem(14px);
   }
   &__top-pagetop {
-    width: rem(25px);
-    height: rem(25px);
+    height: 100%;
+    @include mq-max("sm") {
+      border-left: 1px solid $c-white;
+    }
+    a {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      @include mq-max("sm") {
+        padding: 0 rem(14px);
+      }
+    }
     svg {
-      width: 100%;
-      height: auto;
+      width: rem(25px);
+      height: rem(25px);
     }
   }
   &__number {
@@ -35,8 +49,13 @@ layout/_footer.scss
     text-align: right;
     letter-spacing: 0.1em;
     line-height: 1.5;
+
     @include mq-max("md") {
       padding-right: rem(10px);
+    }
+    @include mq-max("sm") {
+      background: $c-base-050;
+      padding-top: rem(8px);
     }
   }
   &__nav {
@@ -50,6 +69,10 @@ layout/_footer.scss
     @include mq-max("md") {
       padding-right: rem(10px);
     }
+    @include mq-max("sm") {
+      display: block;
+      padding: rem(8px) rem(20px) rem(24px);
+    }
   }
   &__col {
   }
@@ -58,10 +81,53 @@ layout/_footer.scss
     letter-spacing: 0.1em;
     margin-bottom: rem(12px);
     line-height: 1.5;
+    @include mq-max("sm") {
+      margin-bottom: 0;
+      line-height: rem(40px);
+      border-bottom: rem(1px) $c-base-200 solid;
+      padding-left: rem(4px);
+      font-size: rem(14px);
+      position: relative;
+      &::after {
+        content: "";
+        width: rem(20px);
+        height: rem(20px);
+        background: url(../img/common/toggle_icon_plus.svg) center center/cover no-repeat;
+        position: absolute;
+        right: 0;
+        top: rem(10px);
+      }
+      &.is-active {
+        &::after {
+          background-image: url(../img/common/toggle_icon_minus.svg);
+        }
+      }
+    }
   }
+  &__content {
+    display: none;
+    @include mq-min("sm") {
+      display: block !important;
+    }
+    @include mq-max("sm") {
+      padding: 0 0 0 rem(20px);
+    }
+  }
+  @include mq-max("sm") {
+    &__content > &__list {
+      &:first-child {
+        padding-top: rem(24px);
+      }
+      &:last-child {
+        padding-bottom: rem(24px);
+      }
+    }
+  }
+
   &__list {
     display: grid;
     gap: rem(4px);
+
     & & {
       margin-top: rem(4px);
       margin-left: rem(8px);
@@ -69,16 +135,25 @@ layout/_footer.scss
     & + & {
       margin-top: rem(16px);
     }
+    @include mq-max("sm") {
+      &.-sm-col2 {
+        grid-template-columns: 1fr 1fr;
+        gap: rem(4px) rem(20px);
+      }
+    }
   }
-  &__list + &__heading {
+  &__content + &__heading {
     margin-top: rem(20px);
+    @include mq-max("sm") {
+      margin-top: 0;
+    }
   }
   &__item {
     font-size: rem(12px);
     letter-spacing: 0.1em;
     line-height: 2;
-    background: url(../img/common/footer_nav_arrow.svg) left rem(11px) no-repeat;
-    background-size: rem(3px);
+    background: url(../img/common/footer_nav_arrow.svg) left rem(9px) no-repeat;
+    background-size: rem(5px);
     padding-left: rem(12px);
     &.-external {
       a {
@@ -103,7 +178,14 @@ layout/_footer.scss
     align-items: center;
     height: rem(60px);
     @include mq-max("md") {
-      padding: 0 rem(10px);
+      padding: rem(12px) 0 rem(10px);
+    }
+    @include mq-max("sm") {
+      justify-content: flex-start;
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: rem(10px) 0;
     }
   }
   &__bottom-logo {
@@ -114,5 +196,9 @@ layout/_footer.scss
     color: $c-base-500;
     font-weight: 700;
     letter-spacing: 0.1em;
+    @include mq-max("sm") {
+      margin-top: rem(4px);
+      font-size: rem(10px);
+    }
   }
 }

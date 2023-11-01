@@ -232,7 +232,7 @@ layout/_header.scss
       content: "";
       width: rem(20px);
       height: rem(20px);
-      background: url(../img/common/drawer_icon_plus.svg) center center/cover no-repeat;
+      background: url(../img/common/toggle_icon_plus.svg) center center/cover no-repeat;
       position: absolute;
       right: 0;
       top: rem(18px);
@@ -242,7 +242,7 @@ layout/_header.scss
     }
     &.is-active {
       &::after {
-        background-image: url(../img/common/drawer_icon_minus.svg);
+        background-image: url(../img/common/toggle_icon_minus.svg);
       }
     }
   }
