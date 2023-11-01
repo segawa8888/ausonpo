@@ -37,7 +37,6 @@ async function supportsWebP() {
     webp.src = "img/common/header_logo.webp";
   });
 }
-
 (async () => {
   if (await supportsWebP()) {
     document.body.classList.add("webp-support");
