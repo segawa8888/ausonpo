@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@use "global" as *;
+@use "wordpress/custom-blocks";
+
+/* basic */
+html :where(.editor-styles-wrapper) {
+    font-family: $body-font-family;
+    * {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+    }
+    //@extend %wp-custom-blocks;
+    .p-home-kv {
+        margin-top: 0;
+    }
+    .c-pic-shadow img {
+        opacity: 1;
+    }
+    a:where(:not(.wp-element-button)) {
+        text-decoration: none !important;
+    }
+}
+.lazyblock {
+    ul,
+    ol {
+        list-style: none;
+        padding: 0;
+    }
+}

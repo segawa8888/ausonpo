@@ -1,0 +1,383 @@
+@use "../global" as *;
+
+/*********************************************
+layout/_header.scss
+・header
+・global nav
+・drawer menu
+**********************************************/
+.l-drawer {
+  background: rgba($c-black, 0.7);
+  position: fixed;
+  width: rem(1000px);
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  z-index: 9999;
+  padding: rem(40px) rem(20px) rem(40px) rem(36px);
+  top: 0;
+  right: rem(106px);
+  transform: translateX(rem(1280px));
+  transition:
+    transform 0.4s,
+    opacity 0.2s;
+  will-change: transform;
+  opacity: 0;
+  visibility: hidden;
+  @include mq-max("md") {
+    transform: none;
+    right: 0;
+    top: rem(68px);
+    width: 100%;
+    padding: rem(40px) calc((100% - rem(944px)) / 2) rem(96px);
+  }
+  @include mq-max("sm") {
+    padding: rem(32px) rem(10px) rem(96px);
+  }
+  .is-drawer-open & {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  &__search {
+    width: 100%;
+    height: rem(40px);
+    margin-bottom: rem(28px);
+    display: flex;
+    justify-content: flex-end;
+    @include mq-max("sm") {
+      display: block;
+      margin-bottom: rem(24px);
+    }
+    form {
+      position: relative;
+      width: rem(360px);
+      height: 100%;
+      @include mq-max("sm") {
+        width: 100%;
+      }
+    }
+  }
+  &__search-input {
+    width: 100%;
+    height: 100%;
+    border-radius: rem(20px);
+    padding: 0 rem(48px) 0 rem(18px);
+    font-size: rem(14px);
+    background: $c-white;
+    &::placeholder {
+      color: $c-base-200;
+    }
+  }
+  &__search-submit {
+    position: absolute;
+    width: rem(48px);
+    height: rem(40px);
+    background: url(../img/common/drawer_search_icon.png) center center / rem(20px) no-repeat;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include mq-max("sm") {
+      display: block;
+    }
+  }
+  &__main {
+    width: rem(612px);
+    @include mq-max("sm") {
+      width: 100%;
+    }
+  }
+  &__sub {
+    width: rem(300px);
+    @include mq-max("sm") {
+      width: 100%;
+      margin-top: rem(40px);
+    }
+  }
+  &__heading {
+    border-bottom: rem(2px) $c-white solid;
+    font-size: rem(20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: rem(30px);
+    letter-spacing: 0.03em;
+    color: $c-white;
+    padding-bottom: rem(16px);
+    &::before {
+      content: "";
+      display: inline-block;
+      width: rem(6px);
+      height: rem(30px);
+      background: $c-primary;
+      margin-right: rem(10px);
+      vertical-align: -0.4em;
+    }
+  }
+  &__sub &__heading:not(:first-child) {
+    margin-top: rem(32px);
+  }
+  &__text {
+    color: $c-white;
+    font-size: rem(14px);
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    margin-top: rem(6px);
+  }
+  &__list {
+    display: grid;
+    gap: rem(8px);
+    margin-top: rem(12px);
+  }
+  &__item {
+    background: url(../img/common/drawer_icon_arrow_white.svg) left rem(8px) no-repeat;
+    background-size: rem(6px);
+    a {
+      color: $c-white;
+      padding-left: rem(14px);
+      font-size: rem(12px);
+      line-height: 2;
+    }
+  }
+  &__grid-1 {
+    display: grid;
+    gap: rem(20px) rem(12px);
+    margin-top: rem(20px);
+    grid-template-columns: 1fr 1fr;
+    & > li:nth-child(1),
+    & > li:nth-child(2) {
+      grid-column: 1 / 3;
+    }
+    @include mq-max("sm") {
+      grid-template-columns: 1fr;
+      & > li:nth-child(1),
+      & > li:nth-child(2) {
+        grid-column: 1 / 2;
+      }
+    }
+  }
+  &__grid-2 {
+    margin-top: rem(14px);
+    display: grid;
+    gap: rem(20px);
+    @include mq-max("sm") {
+      display: grid;
+      gap: rem(10px);
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &__grid-3 {
+    @include mq-max("sm") {
+      margin-top: rem(40px);
+      display: grid;
+      gap: rem(10px);
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &__cover {
+    display: none;
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+    .is-drawer-open & {
+      display: block;
+    }
+  }
+}
+.l-drawer-toggle {
+  background: $c-white;
+  border-radius: rem(10px);
+  border: 1px solid $c-base-200;
+  padding: 0 rem(12px);
+  &__heading {
+    display: flex;
+    height: rem(58px);
+    color: $c-primary;
+    font-size: rem(20px);
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    @include mq-max("sm") {
+      height: rem(48px);
+      font-size: rem(16px);
+    }
+    &.-icon-bicycle,
+    &.-icon-pet {
+      padding-left: rem(40px);
+      background: left center/rem(32px) no-repeat;
+      @include mq-max("sm") {
+        background-size: rem(24px);
+        padding-left: rem(32px);
+      }
+    }
+    &.-icon-bicycle {
+      background-image: url(../img/common/drawer_icon_bicycle.svg);
+    }
+    &.-icon-pet {
+      background-image: url(../img/common/drawer_icon_pet.svg);
+    }
+    &::after {
+      content: "";
+      width: rem(20px);
+      height: rem(20px);
+      background: url(../img/common/toggle_icon_plus.svg) center center/cover no-repeat;
+      position: absolute;
+      right: 0;
+      top: rem(18px);
+      @include mq-max("sm") {
+        top: rem(13px);
+      }
+    }
+    &.is-active {
+      &::after {
+        background-image: url(../img/common/toggle_icon_minus.svg);
+      }
+    }
+  }
+  &__heading-sub {
+    font-weight: 500;
+    font-size: rem(10px);
+    letter-spacing: 0.1em;
+    line-height: 1;
+    margin-bottom: rem(4px);
+  }
+  &__row {
+    border-top: rem(2px) $c-primary dashed;
+    margin-top: rem(4px);
+    padding: rem(16px) rem(12px) rem(24px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(12px);
+    @include mq-max("sm") {
+      grid-template-columns: 1fr;
+      gap: rem(20px);
+      padding-top: rem(24px);
+    }
+  }
+  &__col {
+  }
+  &__list {
+    display: grid;
+    gap: rem(12px);
+    & & {
+      margin-top: rem(12px);
+      gap: rem(8px);
+    }
+    & + & {
+      margin-top: rem(24px);
+      @include mq-max("sm") {
+        margin-top: rem(20px);
+      }
+    }
+  }
+  &__item {
+    font-size: rem(16px);
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    background: url(../img/common/drawer_icon_arrow_primary_bold.svg) left rem(9.5px) no-repeat;
+    background-size: rem(6px);
+    a {
+      color: $c-primary;
+      padding-left: rem(14px);
+    }
+    & & {
+      font-size: rem(12px);
+      background-position: left rem(6px);
+      a {
+        color: $c-black;
+      }
+    }
+  }
+  &__sub {
+    font-size: rem(10px);
+    letter-spacing: 0.1em;
+  }
+}
+.l-drawer-btn {
+  background-color: $c-white;
+  border-radius: rem(10px);
+  border: 1px solid $c-base-200;
+  box-shadow: 0 rem(4px) 0 $c-base-200;
+  display: flex;
+  height: rem(58px);
+  color: $c-primary;
+  font-size: rem(20px);
+  font-weight: 700;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: rem(20px);
+  position: relative;
+  @include mq-max("sm") {
+    font-size: rem(16px);
+    height: rem(48px);
+    padding-left: rem(10px);
+  }
+
+  &__sub {
+    font-weight: 500;
+    font-size: rem(10px);
+    letter-spacing: 0.1em;
+    line-height: 1;
+    margin-bottom: rem(4px);
+  }
+  &.-icon-earth,
+  &.-icon-first-aid-kit,
+  &.-icon-japan,
+  &.-icon-hurt,
+  &.-icon-golf {
+    padding-left: rem(52px);
+    background: rem(12px) center/rem(32px) no-repeat $c-white;
+    @include mq-max("sm") {
+      background-size: rem(24px);
+      padding-left: rem(44px);
+    }
+  }
+  &.-icon-earth {
+    background-image: url(../img/common/drawer_icon_earth.svg);
+  }
+
+  &.-icon-first-aid-kit {
+    background-image: url(../img/common/drawer_icon_first_aid_kit.svg);
+  }
+  &.-icon-japan {
+    background-image: url(../img/common/drawer_icon_japan.svg);
+  }
+  &.-icon-hurt {
+    background-image: url(../img/common/drawer_icon_hurt.svg);
+  }
+  &.-icon-golf {
+    background-image: url(../img/common/drawer_icon_golf.svg);
+  }
+  &::after {
+    content: "";
+    width: rem(6px);
+    height: rem(11px);
+    background: url(../img/common/drawer_icon_arrow_primary.svg) center center/contain no-repeat;
+    position: absolute;
+    right: rem(8px);
+    top: rem(21px);
+    @include mq-max("sm") {
+      top: rem(17px);
+      right: rem(18px);
+    }
+  }
+}
+
+.js-drawer-toggle-content {
+  display: none;
+}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+// アイコンカラー名の配列
+$nameList: "arrow-right", "arrow-left", "arrow-up", "arrow-bottom";
+$colorList: "black", "white", "primary", "accent";
+
+.c-icon {
+  width: rem(16px);
+  height: rem(16px);
+  background: center center/contain no-repeat;
+
+  @each $name in $nameList {
+    @each $color in $colorList {
+      &.-#{$name}-#{$color} {
+        background-image: url("../img/#{$name}-#{$color}.svg");
+      }
+    }
+  }
+}

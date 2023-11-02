@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@use "../../global" as *;
+.c-post-list-thumbnail {
+  &__item {
+    border-bottom: 1px solid $c-black;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(24px);
+    margin-bottom: rem(24px);
+    @include mq-max("sm") {
+      flex-direction: column;
+      padding-bottom: 0;
+      margin-bottom: rem(40px);
+      border-bottom: none;
+    }
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    /*a {
+      display: flex;
+      align-items: center;
+      padding: rem(20px) rem(32px) rem(20px) 0;
+      background-image: url(../img/icon_right_green.svg);
+      background-repeat: no-repeat;
+      background-position: right rem(6px) center;
+      background-size: rem(24px);
+      transition:
+        color 0.4s,
+        background-position 0.4s;
+      @include hover {
+        background-position: right center;
+        color: $c-primary;
+      }
+      @include mq-max("sm") {
+        display: block;
+        padding: rem(12px) rem(32px) rem(12px) 0;
+      }
+    }*/
+  }
+  &__content {
+    flex: 1;
+    order: 2;
+    margin-left: rem(24px);
+    @include mq-max("sm") {
+      width: 100%;
+      margin-left: 0;
+      margin-top: rem(20px);
+    }
+  }
+  &__pic {
+    width: rem(240px);
+    order: 1;
+    margin-bottom: 0;
+    @include mq-max("lg") {
+      width: rem(200px);
+    }
+    @include mq-max("sm") {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 3 / 2;
+      border-radius: rem(8px);
+      overflow: hidden;
+    }
+  }
+  &__heading {
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    @include mq-max("sm") {
+    }
+  }
+  &__meta {
+  }
+  &__date {
+    font-weight: 500;
+    @include font-en;
+    display: inline-block;
+    @include mq-max("sm") {
+      width: auto;
+    }
+  }
+  &__cat {
+    color: $c-white;
+    text-align: center;
+    padding: rem(4px) rem(12px);
+    //width: rem(132px);
+    border-radius: rem(2px);
+    margin-right: rem(12px);
+    display: inline-block;
+    font-weight: 700;
+    background: $c-primary;
+    @include mq-max("sm") {
+    }
+    &.-green {
+      background-color: green;
+    }
+    &.-blue {
+      background-color: $c-primary;
+    }
+    &.-yellow {
+      background-color: $c-primary;
+    }
+  }
+  &__excerpt {
+    p {
+    }
+  }
+  &__link {
+    font-size: rem(14px);
+    text-align: right;
+    a {
+      justify-content: flex-end;
+    }
+  }
+}

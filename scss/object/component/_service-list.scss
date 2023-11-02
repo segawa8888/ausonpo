@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-service-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0 rem(36px);
+  @include mq-max("lg") {
+    grid-gap: rem(40px) rem(24px);
+  }
+  @include mq-max("sm") {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: rem(40px) rem(20px);
+  }
+  &__item {
+    counter-increment: count;
+  }
+
+  &__heading {
+    font-weight: 700;
+    margin-top: rem(24px);
+    text-align: center;
+  }
+  &__text {
+    font-weight: 400;
+    margin-top: rem(16px);
+  }
+  &__pic {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: rem(16px);
+    &::before {
+      background: url(../img/bg_service-list.svg) left bottom/cover no-repeat;
+      width: rem(60px);
+      height: rem(60px);
+      color: $c-white;
+
+      font-weight: 700;
+      @include font-en;
+      content: counter(count);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: rem(8px) rem(8px) 0 0;
+      @include mq-max("lg") {
+        width: rem(48px);
+        height: rem(48px);
+        padding: rem(6px) rem(6px) 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-figure {
+  border-radius: rem(16px);
+  overflow: hidden;
+  @include mq-max("sm") {
+    border-radius: rem(12px);
+  }
+  img {
+    vertical-align: bottom;
+  }
+  figcaption {
+    @extend .c-figcaption;
+  }
+}
+.c-figcaption {
+  background-color: $c-black;
+  color: $c-primary;
+  padding: rem(16px) rem(20px);
+
+  //border-radius: rem(8px);
+  margin: 0;
+}

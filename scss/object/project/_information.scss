@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@use "../../global" as *;
+.p-information {
+  &__section {
+    & + & {
+      margin-top: rem(80px);
+      @include mq-max("sm") {
+        margin-top: rem(64px);
+      }
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: rem(24px);
+    margin: rem(48px) 0 0;
+    @include mq-max("sm") {
+      grid-template-columns: 1fr;
+      grid-gap: rem(20px);
+      margin: rem(32px) 0 0;
+    }
+  }
+  &__item {
+    font-weight: 700;
+    border-radius: rem(4px);
+    border: 1px solid $c-black;
+    padding: rem(24px);
+    background: url(../img/icon_pdf.svg) right rem(24px) center/rem(24px) no-repeat;
+    transition: background-color 0.2s;
+    a {
+      display: block;
+      transition: color 0.2s;
+    }
+    @include hover {
+      background-color: $c-black;
+      border-color: $c-black;
+      a {
+        color: $c-primary;
+      }
+    }
+  }
+}
+.wp-block-lazyblock-information {
+  & + & {
+    margin-top: rem(80px);
+    @include mq-max("sm") {
+      margin-top: rem(64px);
+    }
+  }
+}
