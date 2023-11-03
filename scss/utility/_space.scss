@@ -4,47 +4,18 @@
   //4,8,12,16,20,24px
   .u-mt-#{$i} {
     margin-top: rem($i * 4px);
-    @include mq-max("lg") {
-      margin-top: rem($i * 3.2px);
-    }
   }
   .u-mb-#{$i} {
     margin-bottom: rem($i * 4px);
-    @include mq-max("lg") {
-      margin-bottom: rem($i * 3.2px);
-    }
   }
   .u-pt-#{$i} {
     padding-top: rem($i * 4px);
-    @include mq-max("lg") {
-      padding-top: rem($i * 3.2px);
-    }
   }
   .u-pb-#{$i} {
     padding-bottom: rem($i * 4px);
-    @include mq-max("lg") {
-      padding-bottom: rem($i * 3.2px);
-    }
   }
   .u-gap-#{$i} {
     gap: rem($i * 4px);
-  }
-  @include mq-max("lg") {
-    .md\:u-mt-#{$i} {
-      margin-top: rem($i * 4px);
-    }
-    .md\:u-mb-#{$i} {
-      margin-bottom: rem($i * 4px);
-    }
-    .md\:u-pt-#{$i} {
-      padding-top: rem($i * 4px);
-    }
-    .md\:u-pb-#{$i} {
-      padding-bottom: rem($i * 4px);
-    }
-    .md\:u-gap-#{$i} {
-      gap: rem($i * 4px);
-    }
   }
   @include mq-max("sm") {
     .sm\:u-mt-#{$i} {
@@ -68,50 +39,18 @@
   //32,40px
   .u-mt-#{6+($i * 2) } {
     margin-top: rem((6 + $i * 2) * 4px);
-    @include mq-max("lg") {
-      margin-top: rem((6 + $i * 2) * 3.2px);
-    }
   }
   .u-mb-#{6+($i * 2) } {
     margin-bottom: rem((6 + $i * 2) * 4px);
-    @include mq-max("lg") {
-      margin-bottom: rem((6 + $i * 2) * 3.2px);
-    }
   }
   .u-pt-#{6+($i * 2) } {
     padding-top: rem((6 + $i * 2) * 4px);
-    @include mq-max("lg") {
-      padding-top: rem((6 + $i * 2) * 3.2px);
-    }
   }
   .u-pb-#{6+($i * 2) } {
     padding-bottom: rem((6 + $i * 2) * 4px);
-    @include mq-max("lg") {
-      padding-bottom: rem((6 + $i * 2) * 3.2px);
-    }
   }
   .u-gap-#{6+($i * 2) } {
     gap: rem((6 + $i * 2) * 4px);
-    @include mq-max("lg") {
-      gap: rem((6 + $i * 2) * 3.2px);
-    }
-  }
-  @include mq-max("lg") {
-    .md\:u-mt-#{6+($i * 2) } {
-      margin-top: rem((6 + $i * 2) * 4px);
-    }
-    .md\:u-mb-#{6+($i * 2) } {
-      margin-bottom: rem((6 + $i * 2) * 4px);
-    }
-    .md\:u-pt-#{6+($i * 2) } {
-      padding-top: rem((6 + $i * 2) * 4px);
-    }
-    .md\:u-pb-#{6+($i * 2) } {
-      padding-bottom: rem((6 + $i * 2) * 4px);
-    }
-    .md\:u-gap-#{6+($i * 2) } {
-      gap: rem((6 + $i * 2) * 4px);
-    }
   }
   @include mq-max("sm") {
     .sm\:u-mt-#{6+($i * 2) } {
@@ -136,50 +75,18 @@
   //48px,64px,80px,96px,112px
   .u-mt-#{8+($i * 4) } {
     margin-top: rem((8 + $i * 4) * 4px);
-    @include mq-max("lg") {
-      margin-top: rem((8 + $i * 4) * 3.2px);
-    }
   }
   .u-mb-#{8+($i * 4) } {
     margin-bottom: rem((8 + $i * 4) * 4px);
-    @include mq-max("lg") {
-      margin-bottom: rem((8 + $i * 4) * 3.2px);
-    }
   }
   .u-pt-#{8+($i * 4) } {
     padding-top: rem((8 + $i * 4) * 4px);
-    @include mq-max("lg") {
-      padding-top: rem((8 + $i * 4) * 3.2px);
-    }
   }
   .u-pb-#{8+($i * 4) } {
     padding-bottom: rem((8 + $i * 4) * 4px);
-    @include mq-max("lg") {
-      padding-bottom: rem((8 + $i * 4) * 3.2px);
-    }
   }
   .u-gap-#{8+($i * 4) } {
     gap: rem((8 + $i * 4) * 4px);
-    @include mq-max("lg") {
-      gap: rem((8 + $i * 4) * 3.2px);
-    }
-  }
-  @include mq-max("lg") {
-    .md\:u-mt-#{8+($i * 4) } {
-      margin-top: rem((8 + $i * 4) * 4px);
-    }
-    .md\:u-mb-#{8+($i * 4) } {
-      margin-bottom: rem((8 + $i * 4) * 4px);
-    }
-    .md\:u-pt-#{8+($i * 4) } {
-      padding-top: rem((8 + $i * 4) * 4px);
-    }
-    .md\:u-pb-#{8+($i * 4) } {
-      padding-bottom: rem((8 + $i * 4) * 4px);
-    }
-    .md\:u-gap-#{8+($i * 4) } {
-      gap: rem((8 + $i * 4) * 4px);
-    }
   }
   @include mq-max("sm") {
     .sm\:u-mt-#{8+($i * 4) } {

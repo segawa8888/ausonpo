@@ -169,9 +169,16 @@ layout/_header.scss
       display: grid;
       gap: rem(10px);
       grid-template-columns: 1fr 1fr;
+      & > li:first-child {
+        order: 2;
+      }
+      & > li:last-child {
+        order: 1;
+      }
     }
   }
   &__grid-3 {
+    margin-top: rem(32px);
     @include mq-max("sm") {
       margin-top: rem(40px);
       display: grid;
@@ -259,7 +266,7 @@ layout/_header.scss
     padding: rem(16px) rem(12px) rem(24px);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: rem(12px);
+    gap: rem(20px) rem(12px);
     @include mq-max("sm") {
       grid-template-columns: 1fr;
       gap: rem(20px);
