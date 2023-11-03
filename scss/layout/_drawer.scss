@@ -159,6 +159,27 @@ layout/_header.scss
       & > li:nth-child(2) {
         grid-column: 1 / 2;
       }
+      & > li:nth-child(1) {
+        order: 1;
+      }
+      & > li:nth-child(2) {
+        order: 2;
+      }
+      & > li:nth-child(3) {
+        order: 3;
+      }
+      & > li:nth-child(5) {
+        order: 4;
+      }
+      & > li:nth-child(4) {
+        order: 5;
+      }
+      & > li:nth-child(6) {
+        order: 6;
+      }
+      & > li:nth-child(7) {
+        order: 7;
+      }
     }
   }
   &__grid-2 {
@@ -169,9 +190,16 @@ layout/_header.scss
       display: grid;
       gap: rem(10px);
       grid-template-columns: 1fr 1fr;
+      & > li:first-child {
+        order: 2;
+      }
+      & > li:last-child {
+        order: 1;
+      }
     }
   }
   &__grid-3 {
+    margin-top: rem(32px);
     @include mq-max("sm") {
       margin-top: rem(40px);
       display: grid;
@@ -259,7 +287,7 @@ layout/_header.scss
     padding: rem(16px) rem(12px) rem(24px);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: rem(12px);
+    gap: rem(20px) rem(12px);
     @include mq-max("sm") {
       grid-template-columns: 1fr;
       gap: rem(20px);
