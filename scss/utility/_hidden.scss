@@ -3,19 +3,9 @@
   .lg\:u-hidden {
     display: none;
   }
-  .md\:u-hidden {
-    display: block;
-  }
 }
-@include mq-max("lg") {
-  .md\:u-hidden {
-    display: none;
-  }
-}
+
 @include mq-max("sm") {
-  .md\:u-hidden {
-    display: block;
-  }
   .sm\:u-hidden {
     display: none;
   }

@@ -8,10 +8,12 @@ border-radius
     & > img {
       border-radius: rem($i * 4px);
     }
-    @include mq-max("sm") {
-      border-radius: rem($i * 3px);
+  }
+  @include mq-max("sm") {
+    .sm\:u-radius--#{$i} {
+      border-radius: rem($i * 4px);
       & > img {
-        border-radius: rem($i * 3px);
+        border-radius: rem($i * 4px);
       }
     }
   }

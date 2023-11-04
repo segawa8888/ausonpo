@@ -185,12 +185,12 @@ layout/_header.scss
     height: rem(20px);
     transition: opacity 0.4s ease-in-out;
     @include mq-max("sm") {
-      position: fixed;
+      position: absolute;
       right: rem(10px);
       top: rem(82px);
       display: block;
     }
-    .is-scrolled & {
+    &.is-scrolled {
       opacity: 0;
     }
   }

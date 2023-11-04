@@ -11,9 +11,20 @@ layout/_container.scss
 .l-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: rem(1100px);
-  width: 82.58%;
-  @include mq-max("md") {
-    width: 100%;
+  @include mq-min("sm") {
+    max-width: rem(1100px);
+    width: 82.58%;
+    &.-md {
+      max-width: rem(888px);
+    }
+    &.-sm {
+      max-width: rem(654px);
+    }
+  }
+  @include mq-max("sm") {
+    width: calc(100% - rem(20px));
+    &.sm\:-full {
+      width: 100%;
+    }
   }
 }

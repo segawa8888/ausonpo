@@ -71,8 +71,8 @@
   }
 }
 
-@for $i from 1 through 5 {
-  //48px,64px,80px,96px,112px
+@for $i from 1 through 6 {
+  //48px,64px,80px,96px,112px,128px
   .u-mt-#{8+($i * 4) } {
     margin-top: rem((8 + $i * 4) * 4px);
   }

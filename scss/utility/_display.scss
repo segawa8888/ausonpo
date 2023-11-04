@@ -7,16 +7,6 @@ $display: ("block", "inline-block", "inline", "flex", "inline-flex", "grid", "in
   .u-#{$property} {
     display: $property;
   }
-  @include mq-min("lg") {
-    .lg\:u-#{$property} {
-      display: $property;
-    }
-  }
-  @include mq-max("lg") {
-    .md\:u-#{$property} {
-      display: $property;
-    }
-  }
   @include mq-max("sm") {
     .sm\:u-#{$property} {
       display: $property;

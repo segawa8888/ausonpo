@@ -3,7 +3,6 @@
 
 .c-btn {
   line-height: 1;
-  //background: url(../img/arrow_btn.svg) $c-primary no-repeat;
   background: $c-primary;
   color: $c-white;
   text-align: center;
@@ -46,84 +45,6 @@
     }
     &::before {
       transform: scale(24);
-    }
-  }
-
-  &.-sm {
-    padding: rem(16px) rem(48px) rem(16px) rem(28px);
-
-    min-width: rem(224px);
-    border-radius: rem(24px);
-    &::before,
-    &::after {
-      width: rem(22px);
-      height: rem(22px);
-      right: rem(20px);
-    }
-    &::after {
-      background-size: rem(8px);
-    }
-    @include mq-max("lg") {
-      //padding: rem(12px) rem(40px) rem(12px) rem(24px);
-    }
-    @include mq-max("sm") {
-    }
-  }
-
-  &.-md {
-    padding: rem(20px) rem(60px) rem(20px) rem(48px);
-
-    min-width: rem(280px);
-    &::before,
-    &::after {
-      width: rem(28px);
-      height: rem(28px);
-      right: rem(18px);
-    }
-    &::after {
-      background-size: rem(10px);
-    }
-    @include mq-max("lg") {
-      padding: rem(16px) rem(52px) rem(16px) rem(40px);
-    }
-    @include mq-max("sm") {
-      //min-width: rem(260px);
-    }
-  }
-
-  &.-lg {
-    padding: rem(24px) rem(60px) rem(24px) rem(32px);
-
-    min-width: rem(340px);
-    border-radius: rem(36px);
-    &::before,
-    &::after {
-      width: rem(32px);
-      height: rem(32px);
-      right: rem(24px);
-    }
-    &::after {
-      background-size: rem(12px);
-    }
-    @include mq-max("lg") {
-      padding: rem(18px) rem(52px) rem(18px) rem(40px);
-    }
-    @include mq-max("sm") {
-      //min-width: rem(300px);
-    }
-  }
-  &.-secondary {
-    background-color: $c-primary;
-    color: $c-black;
-    &::before {
-      background-color: $c-primary;
-    }
-    &::after {
-      background-image: url(../img/btn_arrow_secondary.svg);
-    }
-    @include hover {
-      background-color: $c-primary;
-      color: $c-black;
     }
   }
 }
