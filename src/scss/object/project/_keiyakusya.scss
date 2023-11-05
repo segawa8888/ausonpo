@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@use "../../global" as *;
+.p-keiyakusha-login-list {
+    width: fit-content;
+    margin: rem(20px) auto;
+    background: $c-white;
+    padding: rem(24px) rem(32px);
+    .c-list-dot {
+        column-gap: rem(24px);
+    }
+}

@@ -1,0 +1,20 @@
+/*********************************************
+object/component
+**********************************************/
+@use "component/accordion";
+@use "component/alertbox";
+@use "component/breadcrumbs";
+@use "component/btn";
+@use "component/download-pdf";
+@use "component/heading";
+@use "component/list";
+@use "component/step-list";
+@use "component/table";
+@use "component/text";
+@use "component/textbox-has-link";
+
+/*********************************************
+object/project
+**********************************************/
+@use "project/home";
+@use "project/keiyakusya";

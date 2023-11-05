@@ -1,0 +1,66 @@
+@use "../global" as *;
+/*********************************************
+font-size
+**********************************************/
+.u-text-8 {
+  font-size: rem(8px);
+}
+.u-text-9 {
+  font-size: rem(9px);
+}
+.u-text-10 {
+  font-size: rem(10px);
+}
+.u-text-11 {
+  font-size: rem(11px);
+}
+.u-text-12 {
+  font-size: rem(12px);
+}
+.u-text-13 {
+  font-size: rem(13px);
+}
+.u-text-14 {
+  font-size: rem(14px);
+}
+.u-text-16 {
+  font-size: rem(16px);
+}
+.u-text-20 {
+  font-size: rem(20px);
+}
+.u-text-24 {
+  font-size: rem(24px);
+}
+@include mq-max("sm") {
+  .sm\:u-text-8 {
+    font-size: rem(8px);
+  }
+  .sm\:u-text-9 {
+    font-size: rem(9px);
+  }
+  .sm\:u-text-10 {
+    font-size: rem(10px);
+  }
+  .sm\:u-text-11 {
+    font-size: rem(11px);
+  }
+  .sm\:u-text-12 {
+    font-size: rem(12px);
+  }
+  .sm\:u-text-13 {
+    font-size: rem(13px);
+  }
+  .sm\:u-text-14 {
+    font-size: rem(14px);
+  }
+  .sm\:u-text-16 {
+    font-size: rem(16px);
+  }
+  .sm\:u-text-20 {
+    font-size: rem(20px);
+  }
+  .sm\:u-text-24 {
+    font-size: rem(24px);
+  }
+}

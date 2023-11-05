@@ -1,12 +1,12 @@
 //フォルダパスの設定
 const options = {
-  SASS_SRC_PATH: "./scss",
-  SASS_BUILD_PATH: "./css",
-  JS_SRC_PATH: "./js/src",
-  JS_BUILD_PATH: "./js/temp",
-  JS_PUBLIC_PATH: "./js",
-  IMG_SRC_PATH: "./img/src",
-  IMG_PUBLIC_PATH: "./img",
+  SASS_SRC_PATH: "./src/scss",
+  SASS_BUILD_PATH: "./assets/css",
+  JS_SRC_PATH: "./src/js",
+  JS_BUILD_PATH: "./src/js/temp",
+  JS_PUBLIC_PATH: "./assets/js",
+  IMG_SRC_PATH: "./src/img",
+  IMG_PUBLIC_PATH: "./assets/img",
   MINIFY_JS: true,
 };
 const gulp = require("gulp");
@@ -29,7 +29,7 @@ const changed = require("gulp-changed"); //画像の再圧縮を監視
 const webp = require("gulp-webp");
 const connect = require("gulp-connect"); //localhostの起動
 // scssのコンパイル
-const compileSass = (done) => {
+const compileSass = () => {
   const postcssPlugins = [
     autoprefixer({
       // ☆Androidは5以上、その他は最新1バージョンで必要なベンダープレフィックスを付与する
@@ -41,7 +41,7 @@ const compileSass = (done) => {
     }),
     mqpacker(),
   ];
-  gulp
+  return gulp
     .src(`${options.SASS_SRC_PATH}/**/*.scss`)
     .pipe(
       plumber({
@@ -56,11 +56,10 @@ const compileSass = (done) => {
     )
     .pipe(postcss(postcssPlugins))
     .pipe(gulp.dest(`${options.SASS_BUILD_PATH}`)); //コンパイル後の出力先
-  done();
 };
 //javascriptの結合
-const concatInit = (done) => {
-  gulp
+const concatInit = () => {
+  return gulp
     .src(`${options.JS_SRC_PATH}/init/*.js`)
     .pipe(
       plumber({
@@ -69,10 +68,9 @@ const concatInit = (done) => {
     ) //エラーチェック
     .pipe(concat("init.js"))
     .pipe(gulp.dest(`${options.JS_BUILD_PATH}`));
-  done();
 };
-const concatPlugin = (done) => {
-  gulp
+const concatPlugin = () => {
+  return gulp
     .src(`${options.JS_SRC_PATH}/plugin/*.js`)
     .pipe(
       plumber({
@@ -81,11 +79,10 @@ const concatPlugin = (done) => {
     ) //エラーチェック
     .pipe(concat("plugin.js"))
     .pipe(gulp.dest(`${options.JS_BUILD_PATH}`));
-  done();
 };
 
-const concatScript = (done) => {
-  gulp
+const concatScript = () => {
+  return gulp
     .src(`${options.JS_SRC_PATH}/script/*.js`)
     .pipe(
       plumber({
@@ -94,11 +91,10 @@ const concatScript = (done) => {
     ) //エラーチェック
     .pipe(concat("script.js"))
     .pipe(gulp.dest(`${options.JS_BUILD_PATH}`));
-  done();
 };
 
-const concatAll = (done) => {
-  gulp
+const concatAll = () => {
+  return gulp
     .src([`${options.JS_BUILD_PATH}/init.js`, `${options.JS_BUILD_PATH}/plugin.js`, `${options.JS_BUILD_PATH}/script.js`])
     .pipe(
       plumber({
@@ -107,11 +103,10 @@ const concatAll = (done) => {
     ) //エラーチェック
     .pipe(concat("script.js"))
     .pipe(gulp.dest(`${options.JS_PUBLIC_PATH}`));
-  done();
 };
 
-const jsMin = (done) => {
-  gulp
+const jsMin = () => {
+  return gulp
     .src(`${options.JS_PUBLIC_PATH}/script.js`)
     .pipe(uglify())
     .pipe(
@@ -125,18 +120,17 @@ const jsMin = (done) => {
       })
     )
     .pipe(gulp.dest(`${options.JS_PUBLIC_PATH}`));
-  done();
 };
 
-const imageTiny = (done) => {
-  gulp
+const imageTiny = () => {
+  return gulp
     .src(`${options.IMG_SRC_PATH}/**`)
     .pipe(
       plumber({
         errorHandler: notify.onError("Error: <%= error.message %>"),
       })
     ) //エラーチェック
-    .pipe(changed("${options.IMG_PUBLIC_PATH}/"))
+    .pipe(changed(`${options.IMG_PUBLIC_PATH}/`))
     .pipe(
       imageMin([
         pngquant({
@@ -156,14 +150,12 @@ const imageTiny = (done) => {
     .pipe(gulp.dest(`${options.IMG_PUBLIC_PATH}/`))
     .pipe(webp())
     .pipe(gulp.dest(`${options.IMG_PUBLIC_PATH}/`));
-
-  done();
 };
 
 // 開発用サーバーを立ち上げる
 function serve(done) {
   connect.server({
-    root: "./", // 'app'は公開したいディレクトリへのパス
+    root: "./",
     livereload: true,
     port: 8080,
   });
@@ -171,7 +163,7 @@ function serve(done) {
 }
 // HTMLファイルの変更を監視し、リロードするタスク
 function reload() {
-  return gulp.src("./*.html").pipe(connect.reload());
+  return gulp.src("./**/*.html").pipe(connect.reload());
 }
 
 // ファイル監視のタスク
@@ -183,7 +175,6 @@ function watchFiles() {
   gulp.watch(`${options.JS_SRC_PATH}/script/*.js`, gulp.series(concatScript));
   gulp.watch(`${options.JS_BUILD_PATH}/*.js`, gulp.series(concatAll));
   gulp.watch(`${options.JS_PUBLIC_PATH}/script.js`, gulp.series(jsMin));
-  gulp.watch(`${options.IMG_SRC_PATH}/*`, gulp.series(imageTiny));
   gulp.watch(`${options.IMG_SRC_PATH}/**/*`, gulp.series(imageTiny));
 }
 

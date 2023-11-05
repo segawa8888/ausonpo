@@ -1,0 +1,45 @@
+@use "../global" as *;
+
+/*********************************************
+layout/_container.scss
+
+<div class="l-container -full">
+  <div class="l-container__inner">
+  </div>
+</div>
+**********************************************/
+.l-container {
+  margin-left: auto;
+  margin-right: auto;
+  @include mq-min("sm") {
+    &.lg\:-full {
+      width: 82.58%;
+      @include mq-min("lg") {
+        width: rem(1100px);
+      }
+    }
+    &.lg\:-md {
+      @include mq-min("lg") {
+        width: rem(888px);
+      }
+      width: 66.67%;
+    }
+    &.lg\:-sm {
+      @include mq-min("lg") {
+        width: rem(654px);
+      }
+      width: 49.09%;
+    }
+  }
+  @include mq-max("sm") {
+    &.sm\:-screen {
+      width: 100%;
+    }
+    &.sm\:-full {
+      width: calc(100% - rem(20px));
+    }
+    &.sm\:-md {
+      width: 86%;
+    }
+  }
+}

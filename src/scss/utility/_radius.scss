@@ -1,0 +1,20 @@
+@use "../global" as *;
+/*********************************************
+border-radius
+**********************************************/
+@for $i from 1 through 6 {
+  .u-radius-#{$i} {
+    border-radius: rem($i * 4px);
+    & > img {
+      border-radius: rem($i * 4px);
+    }
+  }
+  @include mq-max("sm") {
+    .sm\:u-radius--#{$i} {
+      border-radius: rem($i * 4px);
+      & > img {
+        border-radius: rem($i * 4px);
+      }
+    }
+  }
+}
