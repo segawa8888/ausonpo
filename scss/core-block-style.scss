@@ -1,9 +1,0 @@
-@charset "UTF-8";
-@use "global" as *;
-@use "wordpress/core-blocks";
-
-/* basic */
-html :where(.editor-styles-wrapper) {
-    font-family: $body-font-family;
-    @extend %wp-core-blocks;
-}
