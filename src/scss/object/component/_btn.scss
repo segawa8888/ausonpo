@@ -79,8 +79,8 @@
     text-align: center;
   }
   @include hover {
-    box-shadow: none;
-    transform: translateY(rem(4px));
+    box-shadow: 0 rem(1px) 0 $c-base-200;
+    transform: translateY(rem(3px));
   }
 }
 
