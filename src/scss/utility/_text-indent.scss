@@ -1,0 +1,12 @@
+@use "../global" as *;
+/*********************************************
+line-height
+**********************************************/
+.u-text-indent-1 {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.u-text-indent-2 {
+  padding-left: 1.8em;
+  text-indent: -1.8em;
+}

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-heading1-bg-primary {
+  background: $c-primary;
+  font-size: rem(26px);
+  line-height: 1.5;
+  padding: rem(14px) 1em;
+  color: $c-white;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: rem(32px);
+  @include mq-max("sm") {
+    margin-left: rem(-10px);
+    margin-right: rem(-10px);
+  }
+}
+
+.c-heading2-has-line {
+  font-size: rem(24px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: relative;
+  margin-top: rem(112px);
+  margin-bottom: rem(20px);
+  &::after {
+    content: "";
+    width: rem(40px);
+    height: rem(3px);
+    background: $c-primary;
+    display: block;
+    margin: rem(8px) auto 0;
+  }
+  &.-relax {
+    margin-bottom: rem(32px);
+    &::after {
+      margin-top: rem(20px);
+    }
+  }
+}
+
+.c-heading2-bg-primary {
+  border-radius: rem(12px) rem(12px) 0px 0px;
+  background: $c-primary;
+  color: $c-white;
+  line-height: 1.5;
+  font-size: rem(20px);
+  padding: rem(9px) 1em;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  @include mq-max("sm") {
+    padding: rem(10px) 1em;
+  }
+}
+
+.c-heading3 {
+  font-size: rem(20px);
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin-top: rem(56px);
+  margin-bottom: rem(32px);
+  text-align: center;
+}
+
+/* 先頭のh2はmargin-top:56px */
+.l-main h1 + h2 {
+  margin-top: rem(56px);
+}

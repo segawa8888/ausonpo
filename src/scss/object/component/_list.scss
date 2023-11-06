@@ -1,0 +1,76 @@
+/*********************************************
+ul/olタグの共通スタイル
+**********************************************/
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-list-dot,
+.c-list-dot ul {
+  list-style: disc;
+  display: grid;
+  font-size: rem(14px);
+  line-height: 1.5;
+  gap: 0.5em;
+  li {
+    margin-left: 1.2em;
+  }
+  ul {
+    list-style: circle;
+    margin-top: 0.5em;
+  }
+  &.-dot-red {
+    color: $c-danger;
+    span {
+      color: $c-black;
+    }
+  }
+}
+
+.c-list-number {
+  counter-reset: number 0;
+  li {
+    margin: rem(8px) 0 0 rem(28px);
+    text-indent: rem(-28px);
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.c-list-flow {
+  &__item {
+    background-image: none !important;
+    position: relative;
+    padding-left: rem(32px);
+    padding-bottom: rem(32px);
+    h4 + p:not(:first-child) {
+      margin-top: rem(12px); //box内の要素のmarginを狭める
+    }
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: rem(12px);
+      left: 0;
+      border-radius: 100%;
+      width: 9px;
+      height: 9px;
+      background-color: $c-black;
+    }
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: rem(20px);
+      left: 4px;
+      height: 100%;
+      border-left: 1px dashed $c-black;
+    }
+    //:notと:hasで連続した最後の要素のみ線を非表示に(firefox非対応)
+    /*&:not(:has(+ &))::after,
+    &.last::after,*/
+    &:last-child::after {
+      content: none;
+    }
+  }
+}
