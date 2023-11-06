@@ -7,27 +7,30 @@
   display: grid;
   gap: rem(56px);
   &__item {
-    display: flex;
-    align-items: center;
-    border-radius: rem(4px);
-    border: 2px solid $c-primary;
     position: relative;
-    &::before {
-      counter-increment: step-list-num; /* counter-resetと同じ文字列 */
-      content: counter(step-list-num); /* カウントした数に応じて番号を表示 */
-      width: rem(51px);
-      min-height: rem(51px);
-      height: 100%;
-      background: $c-primary;
-      color: $c-white;
-      font-size: rem(26px);
-      font-weight: 700;
+    @include mq-min("sm") {
       display: flex;
-      justify-content: center;
       align-items: center;
-      position: absolute;
-      left: 0;
-      top: 0;
+      border-radius: rem(4px);
+      border: 2px solid $c-primary;
+
+      &::before {
+        counter-increment: step-list-num; /* counter-resetと同じ文字列 */
+        content: counter(step-list-num); /* カウントした数に応じて番号を表示 */
+        width: rem(51px);
+        min-height: rem(51px);
+        height: 100%;
+        background: $c-primary;
+        color: $c-white;
+        font-size: rem(26px);
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
     }
     &:not(:first-child)::after {
       content: "";
@@ -35,7 +38,7 @@
       height: rem(20px);
       position: absolute;
       display: block;
-      top: (-38px);
+      top: rem(-38px);
       background: url(../img/arrow/arrow_round_primary.svg) center center/contain no-repeat;
     }
   }
@@ -45,19 +48,54 @@
     font-weight: 700;
     letter-spacing: 0;
     padding: rem(12px) rem(24px) rem(12px) rem(76px);
+    @include mq-max("sm") {
+      width: 100%;
+      border-radius: rem(4px);
+      border: 2px solid $c-primary;
+      position: relative;
+      padding: rem(8px) rem(8px) rem(8px) rem(60px);
+      &::before {
+        counter-increment: step-list-num; /* counter-resetと同じ文字列 */
+        content: counter(step-list-num); /* カウントした数に応じて番号を表示 */
+        width: rem(51px);
+        min-height: rem(51px);
+        height: 100%;
+        background: $c-primary;
+        color: $c-white;
+        font-size: rem(26px);
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .c-text-accent {
+        font-size: rem(22px);
+      }
+    }
   }
   &__text {
-    flex: 1;
-    position: relative;
-    padding: rem(8px) rem(24px);
-    &::before {
-      position: absolute;
-      content: "";
-      background: $c-base-200;
-      width: 1px;
-      height: calc(100%);
-      left: 0;
-      top: rem(0px);
+    font-size: rem(14px);
+    line-height: 1.6;
+    font-weight: 700;
+    @include mq-min("sm") {
+      flex: 1;
+      position: relative;
+      padding: rem(8px) rem(24px);
+      &::before {
+        position: absolute;
+        content: "";
+        background: $c-base-200;
+        width: 1px;
+        height: calc(100%);
+        left: 0;
+        top: rem(0px);
+      }
+    }
+    @include mq-max("sm") {
+      margin-top: rem(8px);
     }
   }
 }

@@ -45,3 +45,55 @@
     padding: rem(24px) 0 rem(32px);
   }
 }
+
+.c-accordion-4 {
+  border-radius: rem(4px);
+  border: 1px solid $c-base-200;
+  max-width: rem(800px);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  &__heading {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    padding: rem(14px) rem(16px);
+    border-bottom: $c-base-200 1px solid;
+    border-radius: rem(4px);
+    box-shadow: 0px rem(4px) 0px $c-base-200;
+    cursor: pointer;
+    position: relative;
+    @include mq-max("sm") {
+    }
+    &::after {
+      content: "";
+      width: rem(20px);
+      height: rem(20px);
+      background: url(../img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
+      position: absolute;
+      right: rem(20px);
+      top: rem(14px);
+      @include mq-max("sm") {
+        right: rem(10px);
+      }
+    }
+    &.is-active {
+      &::after {
+        background-image: url(../img/icon/icon_toggle_minus.svg);
+      }
+    }
+  }
+  &__wrapper {
+    display: none;
+    @include mq-max("sm") {
+      padding: 0 rem(10px);
+    }
+  }
+  &__content {
+    padding: rem(16px) rem(24px);
+    font-size: rem(12px);
+    font-weight: 700;
+    line-height: 1.3;
+  }
+}
