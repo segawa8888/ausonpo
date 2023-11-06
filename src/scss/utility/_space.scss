@@ -1,5 +1,16 @@
 @use "../global" as *;
-$space: (0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 28, 32);
+$space: (0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32);
+
+.u-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+@include mq-max("sm") {
+  .sm\:u-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 @each $i in $space {
   .u-m-#{$i} {
