@@ -33,10 +33,11 @@ layout/_container.scss
   }
   @include mq-max("sm") {
     &.sm\:-screen {
-      width: 100%;
+      margin-left: rem(-10px);
+      margin-right: rem(-10px);
     }
     &.sm\:-full {
-      width: calc(100% - rem(20px));
+      width: calc(100% - 20px);
     }
     &.sm\:-md {
       width: 86%;

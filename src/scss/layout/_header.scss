@@ -12,6 +12,11 @@ layout/_header.scss
   @include mq-max("md") {
     padding-top: 0;
   }
+  @include mq-max("sm") {
+    &.l-container.sm\:-screen {
+      margin: 0;
+    }
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
