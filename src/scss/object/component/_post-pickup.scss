@@ -15,15 +15,18 @@
     position: absolute;
     left: 0;
     top: rem(-19px);
+    z-index: 10;
     @include mq-max("sm") {
       left: rem(-10px);
     }
+  }
+  &__wrapper {
   }
   &__article {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: rem(12px) 0;
+    padding: rem(12px) rem(106px);
     @include mq-max("sm") {
       flex-direction: column;
       padding: 0;
@@ -76,5 +79,9 @@
   .c-post-meta {
     color: $c-primary;
     margin-top: rem(12px);
+  }
+  .splide__pagination {
+    position: absolute;
+    bottom: rem(-24px);
   }
 }
