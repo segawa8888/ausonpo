@@ -1,16 +1,22 @@
 /*********************************************
 object/component
 **********************************************/
+@use "component/splide-core.min"; //plugin
+@use "component/splide";
 @use "component/accordion";
 @use "component/alertbox";
 @use "component/breadcrumbs";
 @use "component/btn";
-@use "component/contact-box";
 @use "component/download-app";
 @use "component/download-pdf";
+@use "component/contact-box";
 @use "component/faq";
 @use "component/heading";
 @use "component/list";
+@use "component/post-card";
+@use "component/post-heading";
+@use "component/post-meta";
+@use "component/post-pickup";
 @use "component/step-list";
 @use "component/table";
 @use "component/text";
