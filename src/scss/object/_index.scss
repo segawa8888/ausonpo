@@ -5,9 +5,7 @@ object/component
 @use "component/alertbox";
 @use "component/breadcrumbs";
 @use "component/btn";
-@use "component/download-app";
 @use "component/download-pdf";
-@use "component/contact-box";
 @use "component/faq";
 @use "component/heading";
 @use "component/list";
@@ -21,3 +19,6 @@ object/project
 **********************************************/
 @use "project/home";
 @use "project/keiyakusya";
+@use "project/qr";
+@use "project/process-list";
+@use "project/cards";
