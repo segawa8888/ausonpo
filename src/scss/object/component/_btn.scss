@@ -84,19 +84,23 @@
   }
 }
 
-.c-btn {
+.c-btn-md {
+  text-align: center;
+  font-size: rem(16px);
   font-weight: 700;
+  width: rem(340px);
+  height: rem(48px);
   border-radius: rem(8px);
   border: 1px solid $c-base-200;
-  background: $c-white no-repeat;
+  background: $c-white url(../img/arrow/arrow_md_primary.svg) right rem(8px) center no-repeat;
+  background-size: rem(6px);
   box-shadow: 0px rem(4px) 0px 0px $c-base-200;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease 0.1s;
+    box-shadow 0.2s ease;
   @include hover {
     box-shadow: none;
     transform: translateY(rem(4px));
@@ -107,22 +111,5 @@
   }
   &.-bg-yellow {
     background-color: $c-primary-100;
-  }
-  &.-lg {
-    font-size: rem(20px);
-    letter-spacing: 0.1;
-    width: rem(300px);
-    height: rem(60px);
-    background-image: url(../img/arrow/arrow_lg_primary.svg);
-    background-size: rem(7px);
-    background-position: right rem(13px) center;
-  }
-  &.-md {
-    font-size: rem(16px);
-    width: rem(340px);
-    height: rem(48px);
-    background-image: url(../img/arrow/arrow_md_primary.svg);
-    background-position: right rem(8px) center;
-    background-size: rem(6px);
   }
 }

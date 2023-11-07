@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-process-list {
+    border: 2px solid #ea5404;
+
+}
+
+.p-process-list__item {
+    display: flex;
+    border-radius: 5px;
+
+
+}
+
+.p-process-list__head {
+    width: rem(200px);
+    font-size: rem(26px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-process-list__bottom {
+    padding: rem(13px) rem(50px);
+
+}
+
