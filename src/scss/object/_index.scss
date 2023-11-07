@@ -5,9 +5,9 @@ object/component
 @use "component/alertbox";
 @use "component/breadcrumbs";
 @use "component/btn";
+@use "component/contact-box";
 @use "component/download-app";
 @use "component/download-pdf";
-@use "component/contact-box";
 @use "component/faq";
 @use "component/heading";
 @use "component/list";
@@ -19,5 +19,10 @@ object/component
 /*********************************************
 object/project
 **********************************************/
+@use "project/anipos-feature";
+@use "project/cards";
 @use "project/home";
 @use "project/keiyakusya";
+@use "project/process-list";
+@use "project/qr";
+@use "project/scene-cards";

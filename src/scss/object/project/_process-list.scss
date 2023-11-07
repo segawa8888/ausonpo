@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-process-list {
+    font-weight:700;
+    display: grid;
+    gap: 3.5rem;
+    position: relative;
+
+    &::after{
+    background: url(../img/keiyakusya/keiyakusha_vector01.png) center center/contain no-repeat;
+    position: absolute;
+    content: "";
+    display: block;
+    left: 50%;
+    top: -7%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height: rem(73px);
+    width: rem(154px);
+    
+    }
+
+    &::before{
+        content: "事故発生";
+        display: block;
+        height: rem(20px);
+        position: absolute;
+        top: -7%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        width: rem(-60px);
+        z-index: 1;
+        color: #fff;
+        letter-spacing: rem(1px);
+    }
+}
+
+.p-process-list__item {
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid #ea5404;
+    position: relative;
+}
+
+.p-process-list__item{
+    &:not(:first-child)::after {
+    background: url(../img/arrow/arrow_round_primary.svg) center center/contain no-repeat;
+    content: "";
+    display: block;
+    height: rem(20px);
+    position: absolute;
+    top: rem(-38px);
+    width: 100%;
+}
+}
+    
+.p-process-list__head {
+        width: rem(200px);
+        font-size: rem(26px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid #ea5404
+        
+    }
+    
+.p-process-list__bottom {
+        padding: rem(13px) rem(50px);
+        font-size: rem(14px);
+        width: calc( 100% - rem(200px) );
+}
+
+
