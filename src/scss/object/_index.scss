@@ -1,6 +1,8 @@
 /*********************************************
 object/component
 **********************************************/
+@use "component/splide-core.min"; //plugin
+@use "component/splide";
 @use "component/accordion";
 @use "component/alertbox";
 @use "component/breadcrumbs";
