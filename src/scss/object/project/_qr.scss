@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-qr {
+}
+
+.p-qr__block {
+}
+
+.p-qr__image {
+  width: rem(220px);
+  height: auto;
+  overflow: hidden;
+}
+
+.p-qr__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.p-qr__text-block {
+}
+
+.p-qr__text {
+  font-size: rem(20px);
+  font-weight: bold;
+  line-height: 1;
+}
+
+.p-qr__link {
+  margin-top: rem(12px);
+}
+
+.p-qr__link img {
+  width: rem(178px);
+  height: auto;
+}
