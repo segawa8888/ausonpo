@@ -3,8 +3,8 @@
 .splide__pagination {
   width: 100%;
   &__page {
-    width: 30px;
-    height: 2px;
+    width: rem(30px);
+    height: rem(2px);
     background: $c-base-200;
     &.is-active {
       background: $c-primary;
