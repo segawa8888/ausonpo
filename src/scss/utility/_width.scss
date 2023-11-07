@@ -1,0 +1,27 @@
+@use "../global" as *;
+.u-w-fit {
+  width: fit-content;
+}
+.u-w-full {
+  width: 100%;
+}
+.u-w-1\/2 {
+  width: 50%;
+}
+.u-w-screen {
+  width: 100vw;
+}
+@include mq-max("sm") {
+  .sm\:u-w-fit {
+    width: fit-content;
+  }
+  .sm\:u-w-full {
+    width: 100%;
+  }
+  .sm\:u-w-1\/2 {
+    width: 50%;
+  }
+  .sm\:u-w-screen {
+    width: 100vw;
+  }
+}
