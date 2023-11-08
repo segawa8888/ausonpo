@@ -10,3 +10,9 @@
     display: none;
   }
 }
+
+@include mq-min("sm") {
+  .sm-min\:u-hidden {
+    display: none;
+  }
+}
