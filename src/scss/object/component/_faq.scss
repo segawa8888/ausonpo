@@ -15,9 +15,7 @@
     line-height: 1.5;
     position: relative;
     cursor: pointer;
-    padding-top: rem(24px);
-    padding-bottom: rem(24px);
-    padding-left: rem(36px);
+    padding: rem(24px) rem(32px) rem(24px) rem(36px);
     @include mq-max("sm") {
     }
     &::before {
@@ -39,7 +37,7 @@
       right: rem(0px);
       top: rem(24px);
       @include mq-max("sm") {
-        right: rem(10px);
+        right: rem(0px);
       }
     }
     &.is-active {

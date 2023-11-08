@@ -21,6 +21,7 @@ const setWindowSize = () => {
   ww = document.documentElement.clientWidth;
   wh = document.documentElement.clientHeight;
 };
+setWindowSize();
 
 //2.スクロールバーのサイズの取得
 const setScrollbarWidth = () => {

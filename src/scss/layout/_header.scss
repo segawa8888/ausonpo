@@ -11,6 +11,7 @@ layout/_header.scss
   color: $c-base-900;
   @include mq-max("md") {
     padding-top: 0;
+    width: 100% !important;
   }
   @include mq-max("sm") {
     &.l-container.sm\:-screen {

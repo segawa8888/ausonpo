@@ -52,7 +52,8 @@
 }
 
 .c-btn-login {
-  width: rem(308px);
+  width: 100%;
+  max-width: rem(308px);
   background: $c-white url(../img/arrow/arrow_bold_login.svg) right rem(22px) center no-repeat;
   background-size: rem(18px);
   box-shadow: 0 rem(4px) 0 $c-base-200;
