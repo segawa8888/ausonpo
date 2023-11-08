@@ -1,5 +1,5 @@
 @use "../global" as *;
-@include mq-min("lg") {
+@include mq-min("sm") {
   .lg\:u-hidden {
     display: none;
   }

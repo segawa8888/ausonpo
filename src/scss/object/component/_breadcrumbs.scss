@@ -4,14 +4,23 @@
 .c-breadcrumbs {
   background: $c-base-050;
   overflow: hidden;
+
   &__list {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     font-size: rem(10px);
     height: rem(40px);
+    overflow-x: auto;
+    @include mq-max("md") {
+      @include mq-min("sm") {
+        width: 100% !important;
+        padding: rem(10px);
+      }
+    }
   }
   &__item {
+    white-space: nowrap;
     &:not(:first-child)::before {
       content: "＞";
       display: inline-block;

@@ -43,6 +43,7 @@ const setWindowSize = () => {
   ww = document.documentElement.clientWidth;
   wh = document.documentElement.clientHeight;
 };
+setWindowSize();
 
 //2.スクロールバーのサイズの取得
 const setScrollbarWidth = () => {
@@ -132,7 +133,7 @@ jQUeryのslideUp/slideDown/slideToggleの
 Vanilla JSでの再現
 ex.slideDown(element);slideUp(element);slideToggle(element);
 ------------------------------------*/
-const slideDown = (element, duration = 400) => {
+const slideDown = (element, triggerButton, duration = 400) => {
   element.style.display = "block";
   const displayHeight = element.offsetHeight;
   element.style.height = "0px";
@@ -149,9 +150,11 @@ const slideDown = (element, duration = 400) => {
     element.style.height = "";
     element.style.transitionDuration = "";
   }, duration);
+
+  triggerButton.classList.add("is-active");
 };
 
-const slideUp = (element, duration = 400) => {
+const slideUp = (element, triggerButton, duration = 400) => {
   element.style.height = `${element.offsetHeight}px`;
   element.style.overflow = "hidden";
   element.style.transitionProperty = "height";
@@ -167,15 +170,15 @@ const slideUp = (element, duration = 400) => {
     element.style.height = "";
     element.style.transitionDuration = "";
   }, duration);
+
+  triggerButton.classList.remove("is-active");
 };
 
 const slideToggle = (element, triggerButton, duration = 400) => {
   if (window.getComputedStyle(element).display === "none") {
-    slideDown(element, duration);
-    triggerButton.classList.add("is-active");
+    slideDown(element, triggerButton, duration);
   } else {
-    slideUp(element, duration);
-    triggerButton.classList.remove("is-active");
+    slideUp(element, triggerButton, duration);
   }
 };
 
@@ -253,7 +256,8 @@ document.addEventListener("componentsLoaded", () => {
     });
   });
 
-  document.querySelectorAll(".js-footer-toggle-btn").forEach((button) => {
+  const currentUrl = window.location.href;
+  document.querySelectorAll(".js-footer-toggle-btn").forEach((button, index) => {
     button.addEventListener("click", function () {
       // このボタンの隣接要素にslideToggleを適用
       const adjacentElement = this.nextElementSibling;
@@ -261,6 +265,15 @@ document.addEventListener("componentsLoaded", () => {
         slideToggle(adjacentElement, this);
       }
     });
+    if (currentUrl.includes("/keiyakusya/") && index === 1) {
+      // このボタンの隣接要素にslideToggleを適用
+      const adjacentElement = button.nextElementSibling;
+      console.log(ww);
+      console.log(button.nextElementSibling);
+      if (adjacentElement && adjacentElement.classList.contains("js-footer-toggle-content") && ww <= 520) {
+        slideDown(adjacentElement, button);
+      }
+    }
   });
 
   document.querySelectorAll(".js-accordion-toggle-btn").forEach((button) => {
