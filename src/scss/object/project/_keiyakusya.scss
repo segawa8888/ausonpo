@@ -9,3 +9,16 @@
         column-gap: rem(24px);
     }
 }
+.p-keiyakusya-menu {
+    @include mq-min("sm") {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: rem(24px);
+    }
+    @include mq-max("sm") {
+        display: grid;
+        gap: rem(16px) rem(12px);
+        grid-template-columns: 1fr 1fr;
+    }
+}
