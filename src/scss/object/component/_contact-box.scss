@@ -156,6 +156,11 @@
         background-image: url(../img/icon/icon_smartphone_white.svg);
       }
     }
+    &.-none {
+      &::before {
+        display: none;
+      }
+    }
   }
   &__content {
     display: flex;
@@ -219,6 +224,15 @@
     margin-left: rem(8px);
     .c-btn {
       width: rem(264px);
+      &.-lg {
+        font-size: rem(20px);
+        letter-spacing: 0.1;
+        width: rem(300px);
+        height: rem(60px);
+        background-image: url(../img/arrow/arrow_lg_primary.svg);
+        background-size: rem(7px);
+        background-position: right rem(13px) center;
+      }
     }
   }
 }
