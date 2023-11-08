@@ -70,6 +70,10 @@
   margin-left: auto;
   margin-right: auto;
   background: $c-white;
+  width: rem(340px);
+  @include mq-max("sm") {
+    width: 100%;
+  }
   &__heading {
     text-align: center;
     font-size: 16px;
@@ -81,8 +85,7 @@
     box-shadow: 0px rem(4px) 0px $c-base-200;
     cursor: pointer;
     position: relative;
-    @include mq-max("sm") {
-    }
+
     &::after {
       content: "";
       width: rem(20px);
