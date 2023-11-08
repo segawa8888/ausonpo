@@ -27,13 +27,13 @@ ul/olタグの共通スタイル
 }
 
 .c-list-number {
-  counter-reset: number 0;
+  list-style: decimal;
+  display: grid;
+  font-size: rem(14px);
+  line-height: 1.5;
+  gap: 0.5em;
   li {
-    margin: rem(8px) 0 0 rem(28px);
-    text-indent: rem(-28px);
-    &:first-child {
-      margin-top: 0;
-    }
+    margin-left: 1.2em;
   }
 }
 

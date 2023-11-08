@@ -121,3 +121,129 @@
     }
   }
 }
+
+.c-contact-box-4 {
+  border-radius: rem(8px);
+  border: rem(2px) solid $c-primary;
+  &__heading {
+    color: $c-white;
+    font-size: rem(24px);
+    font-weight: 700;
+    line-height: rem(72px);
+    background: $c-primary;
+    text-align: center;
+    @include mq-max("sm") {
+      font-size: rem(22px);
+      line-height: rem(54px);
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(16px) rem(32px);
+    @include mq-max("sm") {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: rem(16px) rem(32px) rem(24px);
+    }
+  }
+  &__title-wrapper {
+    background: url(../img/icon/icon_tel.webp) left center / rem(25px) no-repeat;
+    padding-left: rem(40px);
+  }
+  &__title {
+    color: $c-primary;
+    font-size: rem(20px);
+    font-weight: 700;
+    line-height: 1;
+    @include mq-max("sm") {
+      font-size: rem(22px);
+      line-height: rem(30px);
+    }
+  }
+  &__text {
+    font-size: rem(9px);
+    line-height: 1;
+    margin-top: rem(4px);
+  }
+  &__tel {
+    font-size: rem(36px);
+    font-weight: 700;
+    a {
+      display: flex;
+      align-items: center;
+    }
+    @include mq-max("sm") {
+      font-size: rem(44px);
+      line-height: 1;
+      margin-top: rem(4px);
+      span {
+        font-size: rem(30px);
+      }
+    }
+  }
+  &__separator {
+    height: rem(84px);
+    width: 1px;
+    display: block;
+    background: $c-primary;
+    @include mq-max("sm") {
+      height: 1px;
+      width: rem(300px);
+      margin: rem(24px) 0 rem(20px);
+    }
+  }
+  &__btn {
+    margin-left: rem(8px);
+    .c-btn {
+      width: rem(264px);
+    }
+  }
+}
+
+.c-contact-box-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: rem(24px) rem(48px);
+  border-radius: rem(8px);
+  border: 2px solid $c-primary;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  @include mq-max("sm") {
+    padding: rem(16px) 0;
+    width: 100%;
+  }
+  &__heading {
+    color: $c-primary;
+    font-size: rem(20px);
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: rem(8px);
+    @include mq-max("sm") {
+      line-height: 1.2;
+      span {
+        font-size: rem(16px);
+      }
+    }
+  }
+  &__tel {
+    font-size: rem(44px);
+    letter-spacing: 0.05em;
+    line-height: 1;
+    @include mq-max("sm") {
+      font-size: rem(40px);
+    }
+    a {
+      display: flex;
+      align-items: center;
+    }
+    span {
+      font-size: rem(30px);
+    }
+  }
+}

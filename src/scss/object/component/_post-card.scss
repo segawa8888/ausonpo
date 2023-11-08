@@ -38,3 +38,10 @@
     }
   }
 }
+.c-post-card-slider {
+  .splide__list {
+    @include mq-min("sm") {
+      transform: none !important;
+    }
+  }
+}

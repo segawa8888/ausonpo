@@ -19,6 +19,7 @@ object/component
 @use "component/post-pickup";
 @use "component/step-list";
 @use "component/table";
+@use "component/tel";
 @use "component/text";
 @use "component/textbox-has-link";
 
@@ -32,3 +33,5 @@ object/project
 @use "project/process-list";
 @use "project/qr";
 @use "project/scene-cards";
+@use "project/worries";
+@use "project/accordion-check";
