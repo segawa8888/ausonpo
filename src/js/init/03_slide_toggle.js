@@ -3,7 +3,7 @@ jQUeryのslideUp/slideDown/slideToggleの
 Vanilla JSでの再現
 ex.slideDown(element);slideUp(element);slideToggle(element);
 ------------------------------------*/
-const slideDown = (element, duration = 400) => {
+const slideDown = (element, triggerButton, duration = 400) => {
   element.style.display = "block";
   const displayHeight = element.offsetHeight;
   element.style.height = "0px";
@@ -20,9 +20,11 @@ const slideDown = (element, duration = 400) => {
     element.style.height = "";
     element.style.transitionDuration = "";
   }, duration);
+
+  triggerButton.classList.add("is-active");
 };
 
-const slideUp = (element, duration = 400) => {
+const slideUp = (element, triggerButton, duration = 400) => {
   element.style.height = `${element.offsetHeight}px`;
   element.style.overflow = "hidden";
   element.style.transitionProperty = "height";
@@ -38,14 +40,14 @@ const slideUp = (element, duration = 400) => {
     element.style.height = "";
     element.style.transitionDuration = "";
   }, duration);
+
+  triggerButton.classList.remove("is-active");
 };
 
 const slideToggle = (element, triggerButton, duration = 400) => {
   if (window.getComputedStyle(element).display === "none") {
-    slideDown(element, duration);
-    triggerButton.classList.add("is-active");
+    slideDown(element, triggerButton, duration);
   } else {
-    slideUp(element, duration);
-    triggerButton.classList.remove("is-active");
+    slideUp(element, triggerButton, duration);
   }
 };

@@ -1,5 +1,5 @@
 @use "../global" as *;
-@include mq-min("lg") {
+@include mq-min("sm") {
   .lg\:u-hidden {
     display: none;
   }
@@ -7,6 +7,12 @@
 
 @include mq-max("sm") {
   .sm\:u-hidden {
+    display: none;
+  }
+}
+
+@include mq-min("sm") {
+  .sm-min\:u-hidden {
     display: none;
   }
 }

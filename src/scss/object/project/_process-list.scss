@@ -96,7 +96,7 @@
         list-style: disc;
         display: grid;
         line-height: 1.5;
-        gap: 0.5em;
+        gap: 0.4em;
     }
     
     &__dot{
@@ -114,7 +114,7 @@
     &__text{
         font-size: rem(14px);
         padding-left: rem(16px);
-        margin-top: rem(8px);
+        margin-top: rem(2px);
         line-height: 1.5;
 
         @include mq-max("sm"){
