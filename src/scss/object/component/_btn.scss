@@ -116,6 +116,10 @@
     background-image: url(../img/arrow/arrow_lg_primary.svg);
     background-size: rem(7px);
     background-position: right rem(13px) center;
+
+    &.-s {
+      font-size: rem(14px);
+    }
   }
   &.-md {
     font-size: rem(16px);

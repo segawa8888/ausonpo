@@ -1,0 +1,15 @@
+@use "../global" as *;
+/*********************************************
+align-items
+**********************************************/
+$align-items: (flex-start, flex-end, center, baseline, stretch);
+@each $value in $align-items {
+    .u-align-items-#{$value} {
+        align-items: $value;
+    }
+    @include mq-max("sm") {
+        .sm\:align-items-#{$value} {
+            align-items: $value;
+        }
+    }
+}
