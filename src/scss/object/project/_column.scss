@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-column {
+    &__article,
+    &__article .c-list-dot,
+    &__article .c-list-dot ul,
+    &__article .c-list-number,
+    &__article .c-download-pdf {
+        font-size: rem(16px);
+        line-height: 1.8;
+        @include mq-max("sm") {
+            font-size: rem(14px);
+            line-height: 1.5;
+        }
+    }
+    &__eyecatch {
+        margin-top: rem(56px);
+        margin-bottom: rem(48px);
+        border-radius: rem(8px);
+        overflow: hidden;
+        img {
+            display: block;
+        }
+    }
+    &__heading {
+        font-size: rem(24px);
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        background: $c-base-050;
+        border-left: rem(4px) solid $c-primary;
+        line-height: 1.4;
+        padding: rem(2px) 0 rem(2px) rem(12px);
+        margin: rem(48px) 0 rem(24px);
+        @include mq-max("sm") {
+            font-size: rem(20px);
+        }
+    }
+}
+
+.p-column-toc {
+    &__heading {
+        font-size: rem(18px);
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        margin-bottom: rem(16px);
+    }
+    &__list {
+        font-size: rem(14px);
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 0.1em;
+        display: grid;
+        gap: rem(4px);
+        padding-left: rem(10px);
+    }
+    &__item {
+        padding-left: rem(28px);
+        background: url(../img/keiyakusya/toc_arrow.svg) left center / rem(12px) no-repeat;
+        a {
+            transition: color 0.2s;
+            @include hover {
+                color: $c-primary;
+            }
+        }
+    }
+}
