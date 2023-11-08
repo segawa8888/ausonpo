@@ -1,0 +1,15 @@
+@use "../global" as *;
+/*********************************************
+justify-content
+**********************************************/
+$justify-content: (flex-start, flex-end, center, space-between, space-around, space-evenly);
+@each $value in $justify-content {
+    .u-justify-#{$value} {
+        justify-content: $value;
+    }
+    @include mq-max("sm") {
+        .sm\:justify-#{$value} {
+            justify-content: $value;
+        }
+    }
+}
