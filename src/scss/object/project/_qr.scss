@@ -2,15 +2,16 @@
 @use "../../global" as *;
 
 .p-qr {
-}
-
-.p-qr__block {
+  justify-content: center;
 }
 
 .p-qr__image {
   width: rem(220px);
   height: auto;
   overflow: hidden;
+  @include mq-max("sm") {
+    display: none;
+  }
 }
 
 .p-qr__image img {
@@ -19,20 +20,29 @@
   object-fit: cover;
 }
 
-.p-qr__text-block {
-}
-
-.p-qr__text {
-  font-size: rem(20px);
-  font-weight: bold;
-  line-height: 1;
-}
-
 .p-qr__link {
-  margin-top: rem(12px);
+  width: rem(178px);
+  @include mq-max("sm") {
+    width: rem(173px);
+    // margin-right: rem(13px);
+  }
 }
 
 .p-qr__link img {
-  width: rem(178px);
+  width: 100%;
   height: auto;
+}
+
+.p-qr__text-block {
+  // margin-top: rem(80px);
+  @include mq-max("sm") {
+    display: inline-block;
+    // margin-top: 0;
+  }
+}
+
+.p-qr__text {
+  @include mq-max("sm") {
+    display: none;
+  }
 }
