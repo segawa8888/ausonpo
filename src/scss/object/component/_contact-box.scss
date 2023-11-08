@@ -136,6 +136,11 @@
       font-size: rem(22px);
       line-height: rem(54px);
     }
+    &.-icon-smartphone {
+      &::before {
+        background-image: url(../img/icon/icon_smartphone.svg);
+      }
+    }
   }
   &__content {
     display: flex;
