@@ -132,9 +132,29 @@
     line-height: rem(72px);
     background: $c-primary;
     text-align: center;
+    display: flex;
+    justify-content: center;
+
     @include mq-max("sm") {
       font-size: rem(22px);
       line-height: rem(54px);
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: rem(30px);
+      height: rem(72px);
+      background: center center no-repeat;
+      background-size: 100%;
+      margin-right: rem(20px);
+      @include mq-max("sm") {
+        width: rem(28px);
+      }
+    }
+    &.-icon-smartphone {
+      &::before {
+        background-image: url(../img/icon/icon_smartphone_white.svg);
+      }
     }
   }
   &__content {
