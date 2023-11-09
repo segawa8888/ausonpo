@@ -25,6 +25,10 @@
   margin-bottom: 0;
   position: relative;
   width: 100%;
+  @include mq-max("sm") {
+    padding: 1rem 0.5rem 1rem 3.75rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
   &::before {
     align-items: center;
     background: #ea5404;
@@ -50,14 +54,24 @@
   border-radius: 0 0 0.25rem 0.25rem;
   &.-flex {
     align-items: center;
+    padding: rem(32px) rem(56px);
+    display: flex;
+    @include mq-max("sm") {
+      display: block;
+      padding: rem(12px) rem(12px) rem(24px);
+    }
   }
 }
 .p-step-list__down-img {
   width: rem(133px);
 }
 .p-step-list__icon {
-  //margin-right: 20px;
-  //width: rem(178px);
+  margin-right: rem(16px);
+  @include mq-max("sm") {
+    margin-right: 0;
+    margin-bottom: rem(16px);
+    text-align: center;
+  }
   img {
     height: rem(114px);
     width: auto;
