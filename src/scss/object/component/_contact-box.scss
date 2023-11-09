@@ -144,7 +144,7 @@
       font-size: rem(22px);
       line-height: rem(54px);
     }
-    &::before {
+    /*&::before {
       content: "";
       display: block;
       width: rem(30px);
@@ -165,7 +165,7 @@
       &::before {
         display: none;
       }
-    }
+    }*/
   }
   &__content {
     display: flex;
