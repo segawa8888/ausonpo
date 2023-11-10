@@ -22,9 +22,11 @@ layout/_header.scss
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: rem(30px);
     @include mq-max("md") {
       height: rem(68px);
       padding-right: rem(68px);
+      margin-bottom: 0;
     }
   }
   &__logo {
@@ -118,16 +120,28 @@ layout/_header.scss
   }
 }
 .l-header-nav {
-  margin-top: rem(30px);
   font-weight: 700;
   @include mq-max("md") {
-    margin-top: 0;
     overflow-x: auto;
     position: relative;
   }
   &__list {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    &.-col-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    &.-col-6 {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    &.-col-7 {
+      grid-template-columns: repeat(7, 1fr);
+    }
+    &.-col-8 {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    &.-col-9 {
+      grid-template-columns: repeat(9, 1fr);
+    }
     min-height: rem(46px);
     @include mq-max("sm") {
       display: flex;
