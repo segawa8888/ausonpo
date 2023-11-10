@@ -291,28 +291,28 @@
   width: rem(414px);
   border-radius: rem(10px);
   border: rem(2px) solid $c-primary;
-  padding-top: rem(24px);
+  padding: rem(24px) rem(32px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   @include mq-max("sm") {
     width: 100%;
-    padding-top: rem(20px);
+    padding: rem(24px) rem(16px);
   }
   &__heading {
     color: $c-primary;
-    text-align: center;
-    font-size: rem(22px);
+    font-size: rem(20px);
     font-weight: 700;
     line-height: 1;
-    background-size: rem(30px);
+    /*background-size: rem(30px);
     background-position: left center;
     width: fit-content;
-    position: relative;
+    position: relative;*/
     @include mq-max("sm") {
-      font-size: rem(22px);
+      font-size: rem(20px);
+      /*font-size: rem(22px);
       background-size: rem(28px);
-      padding-left: rem(36px);
+      padding-left: rem(36px);*/
     }
     &::before {
       content: "";
