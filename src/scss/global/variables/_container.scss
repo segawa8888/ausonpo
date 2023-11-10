@@ -1,0 +1,16 @@
+/*********************************************
+コンテナサイズの設定
+foundation/setting/_container.scss
+**********************************************/
+@mixin container-full {
+  max-width: rem(1100px);
+  width: 82.58%;
+}
+@mixin container-md {
+  max-width: rem(888px);
+  width: 66.67%;
+}
+@mixin container-sm {
+  max-width: rem(654px);
+  width: 49.09%;
+}

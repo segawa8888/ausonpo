@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-post-heading {
+  background: $c-primary;
+  padding: rem(32px);
+  color: $c-white;
+  font-weight: 700;
+  margin-bottom: rem(32px);
+
+  @include mq-max("sm") {
+    margin-left: rem(-10px);
+    margin-right: rem(-10px);
+    padding: rem(32px) rem(10px);
+  }
+  &__title {
+    font-size: rem(24px);
+    line-height: 1.5;
+  }
+  .c-post-meta {
+    margin-top: rem(4px);
+  }
+}

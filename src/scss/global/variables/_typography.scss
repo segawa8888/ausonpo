@@ -1,0 +1,40 @@
+@use "sass:map";
+/*********************************************
+scss/global/variables/_typography.scss
+フォントの指定
+**********************************************/
+//1.基本設定
+/* 日本語のフォントの指定 */
+$font-ja:
+  "Zen Kaku Gothic New",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Hiragino Kaku Gothic ProN",
+  sans-serif;
+/* 英語フォントの指定 */
+$font-en: "Lato", sans-serif;
+
+/* WEBフォントのインポート */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&display=swap");
+
+//2.bodyの設定
+$body-font-family: $font-ja; //基本のfont-family。通常は日本語。
+$body-font-weight: 500; //基本の文字の太さ。
+
+// 文字サイズ(px)
+$base-font-size-lg: 16px; //pc
+$base-font-size-md: 1.201vw; //note
+//$base-font-size-sm: 1.455vw; //tab
+$base-font-size-sm: 1.201vw; //tab
+$base-font-size-xs: 4.21vw; //sp
+
+/*---------------設定ここまで---------------*/
+//font-familyを呼び出すmixin
+/* japanese */
+@mixin font-ja {
+  font-family: $font-ja;
+}
+/* english */
+@mixin font-en {
+  font-family: $font-en;
+}

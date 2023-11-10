@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-post-card {
+  background: $c-white;
+  padding: rem(8px) rem(16px);
+  max-width: rem(300px);
+  &__pic {
+    margin-bottom: rem(12px);
+  }
+  &__title {
+    font-size: rem(14px);
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+  &__readmore {
+    margin-top: rem(16px);
+    text-align: right;
+    a {
+      color: $c-primary;
+      font-size: rem(14px);
+      font-weight: 700;
+      width: fit-content;
+      background: url(../img/arrow/arrow_lg_primary.svg) right center / rem(7px) no-repeat;
+      padding-right: rem(16px);
+      transition: opacity 0.2s;
+      @include hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  .c-post-meta {
+    color: $c-primary;
+    margin-top: rem(12px);
+    &__category {
+      background: $c-base-050;
+    }
+  }
+}
+.c-post-card-slider {
+  .splide__list {
+    @include mq-min("sm") {
+      transform: none !important;
+    }
+  }
+}

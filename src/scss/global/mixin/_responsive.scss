@@ -1,0 +1,16 @@
+@use "../variables/" as *;
+@use "sass:map";
+/*********************************************
+Break Pointの設定に基づいたMedia Queryの生成
+scss/global/mixin/_responsive.scss
+**********************************************/
+@mixin mq-max($breakpoint-size) {
+  @media (max-width: (map.get($breakpoint,$breakpoint-size))-1) {
+    @content;
+  }
+}
+@mixin mq-min($breakpoint-size) {
+  @media (min-width: map.get($breakpoint,$breakpoint-size)) {
+    @content;
+  }
+}

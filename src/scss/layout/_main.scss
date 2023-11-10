@@ -1,0 +1,10 @@
+@use "../global" as *;
+
+/*********************************************
+layout/_main.scss
+**********************************************/
+.l-main {
+    margin-top: rem(16px);
+    margin-bottom: rem(32px);
+    font-size: rem(14px);
+}
