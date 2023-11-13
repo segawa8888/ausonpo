@@ -57,6 +57,37 @@
   }
 }
 
+.c-heading2-has-tag,
+.c-heading3-has-tag {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  &__tag {
+    color: $c-white;
+    font-size: rem(16px);
+    line-height: rem(40px);
+    border-radius: rem(12px);
+    background: $c-primary;
+    margin-right: rem(20px);
+    padding: 0 rem(18px);
+    font-weight: 700;
+    letter-spacing: 0;
+    display: inline-block;
+  }
+}
+.c-heading2-has-tag {
+  font-size: rem(24px);
+  margin-top: rem(112px);
+  margin-bottom: rem(56px);
+}
+.c-heading3-has-tag {
+  font-size: rem(20px);
+  margin-top: rem(56px);
+  margin-bottom: rem(32px);
+}
 .c-heading3 {
   font-size: rem(20px);
   font-weight: 700;

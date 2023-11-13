@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-ankerlink {
+  margin-top: rem(16px);
+  margin-bottom: rem(16px);
+  a {
+    color: $c-primary;
+    font-size: rem(16px);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    background: url(../img/icon/icon_anker-link.svg) left center / rem(14px) no-repeat;
+    padding-left: rem(30px);
+    transition: opacity 0.2s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
