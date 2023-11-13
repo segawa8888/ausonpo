@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-keiyakusya-kaigai-estimate__title {
+    max-width: rem(331.41px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-keiyakusya-kaigai-estimate {
+    max-width: rem(812px);
+    background-color: #F5F5F5;
+    padding-bottom: rem(56.14px);
+}
+
+.p-keiyakusya-kaigai-estimate__container {
+    max-width: rem(264px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-keiyakusya-kaigai-estimate-form__wrap {
+        display: flex;
+        align-items: center;
+    }
+
+.p-keiyakusya-kaigai-estimate-form__label {
+    font-size: rem(14px);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.p-keiyakusya-kaigai-estimate-form__select {
+    margin-left: rem(8px);
+}
+
+.p-keiyakusya-kaigai-estimate-form-select {
+    max-width: rem(228px);
+    width: 100%;
+}
+
+.p-keiyakusya-kaigai-estimate-form-select select {
+    padding: rem(11.5px) rem(50px) rem(11.5px) rem(15px);
+    width: 100%;
+    font-size: rem(14px);
+    color: #BDBDBD;
+    line-height: 1;
+    border-radius: rem(5px);
+    background-color: $c-white;
+    border: 1px solid #BDBDBD;
+    background-image: url(/assets/img/keiyakusya/kaigai/kaigai_icon_select.webp);
+    background-repeat: no-repeat;
+    background-size: rem(8px);
+    background-position: right rem(15px) top 50%;
+    appearance: none;
+    cursor: pointer;
+}
+
+.p-keiyakusya-kaigai-estimate-form-select select::-ms-expand {
+    display: none;
+}
+
+.p-keiyakusya-kaigai-estimate-form-select select:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    outline: none;
+}
+
+.p-keiyakusya-kaigai-estimate-form-select select::-ms-expand {
+    display: none;
+}
+
+.p-keiyakusya-kaigai-estimate-form-select select:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    outline: none;
+}
+
+.p-keiyakusya-kaigai-estimate__text {
+    position: relative;
+    max-width: rem(359px);
+    margin-top: rem(28px);
+    &::before {
+        content: '';
+        background-color: $c-primary;
+        width:rem(40px);
+        height:rem(0.5px);
+        position: absolute;
+        top:60%;
+        left:0;
+        transform: translateY(-50%);
+    }
+
+    &::after {
+        content: '';
+        background-color: $c-primary;
+        width:rem(40px);
+        height:rem(0.5px);
+        position: absolute;
+        top:60%;
+        right:0;
+        transform: translateY(-50%);
+    }
+}
+
+.p-keiyakusya-kaigai-estimate__img {
+    max-width: rem(359px);
+}

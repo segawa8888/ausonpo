@@ -195,3 +195,38 @@ Promise.all([
   .catch((error) => {
     console.error("Error loading components:", error);
   });
+
+  // p-keiyakusya slide
+
+  const splide = new Splide(".splide01", {
+    autoplay: false, // 自動再生
+    arrows:false,
+    speed: 2000, // スライダーの移動時間
+    destroy: true, // スライダーを破棄
+    perPage: 2,
+    perMove:1,
+    flickMaxPages:1,
+    pagination: true,
+    breakpoints: {
+      768: {
+        destroy: false, 
+      },
+    },
+  }).mount();
+
+  // p-keiyakusya-point slide
+
+  const splide02 = new Splide(".splide02", {
+    autoplay: false, // 自動再生
+    arrows:false,
+    speed: 2000, // スライダーの移動時間
+    destroy: true, // スライダーを破棄
+    perPage: 1,
+    flickMaxPages:1,
+    pagination: true,
+    breakpoints: {
+      768: {
+        destroy: false, 
+      },
+    },
+  }).mount();
