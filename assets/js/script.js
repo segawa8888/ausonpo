@@ -419,7 +419,6 @@ Promise.all([
     console.error("Error loading components:", error);
   });
 
-<<<<<<< HEAD
   // p-keiyakusya slide
 
   const splide = new Splide(".splide01", {
@@ -454,6 +453,3 @@ Promise.all([
       },
     },
   }).mount();
-=======
-//if (currentUrl.includes("/keiyakusya/") && index === 1) {
->>>>>>> refs/remotes/origin/develop
