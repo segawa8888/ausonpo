@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-faq {
+  display: grid;
+  gap: rem(12px);
+  &__item {
+    padding: 0 rem(20px);
+    border-radius: rem(4px);
+    background: $c-base-050;
+  }
+  &__title {
+    font-size: rem(14px);
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    cursor: pointer;
+    padding: rem(24px) rem(32px) rem(24px) rem(36px);
+    @include mq-max("sm") {
+    }
+    &::before {
+      content: "Q";
+      color: $c-primary;
+      font-size: rem(26px);
+      font-weight: 700;
+      line-height: 1;
+      left: 0;
+      top: rem(18px);
+      position: absolute;
+    }
+    &::after {
+      content: "";
+      width: rem(20px);
+      height: rem(20px);
+      background: url(../img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
+      position: absolute;
+      right: rem(0px);
+      top: rem(24px);
+      @include mq-max("sm") {
+        right: rem(0px);
+      }
+    }
+    &.is-active {
+      &::after {
+        background-image: url(../img/icon/icon_toggle_minus.svg);
+      }
+    }
+  }
+  &__wrapper {
+    display: none;
+    @include mq-max("sm") {
+    }
+  }
+  &__content {
+    border-top: 1px $c-base-200 solid;
+    padding-top: rem(24px);
+    padding-left: rem(36px);
+    padding-bottom: rem(24px);
+    font-size: rem(14px);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    position: relative;
+    &::before {
+      content: "A";
+      color: $c-primary;
+      font-size: rem(26px);
+      font-weight: 700;
+      line-height: 1;
+      left: 0;
+      top: rem(18px);
+      position: absolute;
+    }
+  }
+}

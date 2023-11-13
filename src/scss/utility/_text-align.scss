@@ -1,0 +1,21 @@
+@use "../global" as *;
+.u-text-right {
+  text-align: right;
+}
+.u-text-left {
+  text-align: left;
+}
+.u-text-center {
+  text-align: center;
+}
+@include mq-max("sm") {
+  .sm\:u-text-right {
+    text-align: right;
+  }
+  .sm\:u-text-left {
+    text-align: left;
+  }
+  .sm\:u-text-center {
+    text-align: center;
+  }
+}
