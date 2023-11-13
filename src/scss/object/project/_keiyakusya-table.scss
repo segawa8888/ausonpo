@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-keiyakusya-table {
+    max-width: rem(812px);
+    @include mq-max("md") {
+        overflow-x: scroll;
+      }
+}
+
+.p-keiyakusya-table__wrapper  {
+	border-radius: rem(10px);
+    border: rem(1px) solid #BDBDBD;
+    padding:rem(20px) rem(21px);
+}
+
+.p-keiyakusya-table table td:first-child {
+    min-width:rem(215.715px);
+    padding: 0;
+    margin-right: rem(-14px);
+    font-size: rem(12px);
+    @include mq-max("md") {
+        min-width: rem(123px);
+        margin-right: rem(-8px);
+      }
+}
+
+.p-keiyakusya-table table tr {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: rem(14px);
+    @include mq-max("md") {
+        column-gap: rem(8px);
+      }
+}
+
+.p-keiyakusya-table table tbody tr:not(:last-child) {
+    border-bottom: rem(2px) dashed #C9C9C9;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: rem(-2px);
+        width: rem(215.715px);
+        height: rem(2px);
+        background: $c-white;
+        @include mq-max("md") {
+            width:rem(123px);
+        }
+    }
+}
+
+.p-keiyakusya-table table tbody td {
+    font-size:rem(14px);
+	font-weight: bold;
+    text-align: right;
+    padding:rem(15px) rem(28px) rem(23px) 0;
+    @include mq-max("md") {
+        padding:rem(2px) rem(8px);
+        min-width:rem(100px);
+        height: rem(56px);
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+        align-items: center;
+    }
+    strong {
+        font-size: rem(18px);
+    }
+    span {
+        margin-top: rem(3px);
+        display: flex;
+        align-items: baseline;
+        justify-content: right;
+        strong {
+            margin-left: rem(6px);
+        }
+    }
+}
+
+/* --リスト名ブロック */
+.p-keiyakusya-table table tbody td:first-child {
+    border-radius: 5px 0px 0px 5px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: rem(1px) solid $c-white;
+
+    a {
+        position: relative;
+        line-height: calc(17/12);
+        span {
+            position: absolute;
+            top: 50%;
+            right: rem(-20px);
+            transform: translateY(-50%);
+            max-width: rem(14px);
+        }
+    }
+}
+/* --2,3列目 */
+.p-keiyakusya-table table td:nth-child(2),
+.p-keiyakusya-table table td:nth-child(3) {
+	border-right: 1px solid #ffffff;
+	background: #a9bce2;
+}
+
+.p-keiyakusya-table table td:nth-child(2) {
+	background-color: rgba(176, 134, 69, 0.10);
+}
+
+.p-keiyakusya-table table td:nth-child(3) {
+	background-color: rgba(144, 144, 144, 0.10);
+}
+
+.p-keiyakusya-table table td:nth-child(4) {
+	background-color: rgba(189, 159, 0, 0.10);
+}
+
+/*Header テキストブロック*/
+.p-keiyakusya-table table thead td {
+	border-top: none;
+	border-radius: 6px 6px 0 0;
+    height:rem(26px);
+    text-align: center;
+    line-height: rem(26px);
+    padding: 0;
+}
+
+.p-keiyakusya-table table thead td:nth-child(n+2) {
+    color: $c-white;
+}
+
+.p-keiyakusya-table table thead td:nth-child(2) {
+    background-color: #B08645;
+}
+
+.p-keiyakusya-table table thead td:nth-child(3) {
+    background-color: #909090;
+}
+
+.p-keiyakusya-table table thead td:nth-child(4) {
+    background-color: #BD9F00;
+}

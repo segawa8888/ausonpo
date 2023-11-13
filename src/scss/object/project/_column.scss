@@ -2,6 +2,9 @@
 @use "../../global" as *;
 
 .p-column {
+    &__article {
+        margin-bottom: rem(80px);
+    }
     &__article,
     &__article .c-list-dot,
     &__article .c-list-dot ul,
