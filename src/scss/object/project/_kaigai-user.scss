@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-kaigai__user {
+    margin-top: rem(117px);
+    @include mq-max("md") {
+        margin-top: rem(90px);
+    }
+}
+
+.p-kaigai-user__img {
+    max-width: rem(192px);
+}
