@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-pet-photo-sample {
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    color: #EA5404;
+    font-size: rem(21px);
+    text-align: center;
+    font-weight: 700;
+  
+  }
+  &__images {
+    display: flex;
+    gap: rem(30px);
+
+    @include mq-max("sm"){
+      flex-direction: column;
+  }
+  
+  }
+  &__body {
+    width: 50%;
+    margin-top: rem(16px);
+
+    @include mq-max("sm"){
+      width: 100%;
+      display: flex;
+      gap: rem(10px);
+  }
+  
+  }
+  &__img {
+    width: 100%;
+    aspect-ratio: 423 / 250;
+    overflow: hidden;
+
+    @include mq-max("sm"){
+      width: 31.11%;
+  }
+  }
+  &__img img{
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  &__text{
+    margin-left: 29.24%;
+    font-size: rem(14px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+    @include mq-max("sm"){
+      width: 66.11%;
+      margin-left: 0;
+      display: flex;
+      align-items: center;
+  }
+  }
+}
+
+
+
+
+
+

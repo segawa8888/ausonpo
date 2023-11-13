@@ -13,6 +13,7 @@ object/component
 @use "component/faq";
 @use "component/heading";
 @use "component/list";
+@use "component/point-box";
 @use "component/post-card";
 @use "component/post-heading";
 @use "component/post-meta";
@@ -37,8 +38,13 @@ object/project
 @use "project/worries";
 @use "project/accordion-check";
 @use "project/keiyakusya-step-list";
+<<<<<<< HEAD
 @use "project/keiyakusya-kaigai";
 @use "project/keiyakusya-kaigai-type";
 @use "project/keiyakusya-kaigai-estimate";
 @use "project/keiyakusya-table";
 @use "project/keiyakusya-point";
+=======
+@use "project/pet-photo-sample";
+@use "project/pet-type-info";
+>>>>>>> refs/remotes/origin/develop

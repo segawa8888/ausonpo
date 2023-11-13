@@ -3,13 +3,42 @@ Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 ・全てのコードの最後に読み込む
 ・初期表示時のレイアウト崩れ対応処理含む
 ----------------------------------------------------------*/
+
+//ナビゲーションコンポーネント一覧
+const navComponents = {
+  "/corporate/": "/component/nav-corporate.html",
+  "/keiyakusya/bike/": "/component/nav-keiyakusya-bycle.html",
+  "/keiyakusya/pet/": "/component/nav-keiyakusya-pet.html",
+  "/keiyakusya/kaigai/": "/component/nav-keiyakusya-kaigai.html",
+  "/keiyakusya/kokunai/": "/component/nav-keiyakusya-kokunai.html",
+  "/keiyakusya/sports/": "/component/nav-keiyakusya-sports.html",
+  "/keiyakusya/golf/": "/component/nav-keiyakusya-golf.html",
+  "/pc/bycle": "/component/nav-bicycle.html",
+  "/pc/pet-dog": "/component/nav-pet-dog.html",
+  "/pc/pet-cat": "/component/nav-pet-cat.html",
+};
+
+// 対応するコンポーネントを決定する関数
+function determineNavComponent(url) {
+  for (const pattern in navComponents) {
+    if (url.includes(pattern)) {
+      console.log(navComponents[pattern]);
+      return navComponents[pattern];
+    }
+  }
+  console.log("go");
+  return "/component/blank.html"; // 該当無しの場合はblank
+}
+
 // 全てのコンポーネントの読み込みを管理
 Promise.all([
   //コンポーネントの読み込み処理
   loadComponent("/component/meta.html", "head", "afterbegin"),
   loadComponent("/component/ogp.html", "head", "beforeend"),
-  loadComponent("/component/header.html", "body", "afterbegin"),
   loadComponent("/component/footer.html", ".l-main", "afterend"),
+  loadComponent("/component/header.html", "body", "afterbegin").then(() => {
+    return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
+  }),
 ])
   .then(() => {
     // 全てのコンポーネントが読み込まれたことを示すイベントをディスパッチ
@@ -49,3 +78,5 @@ Promise.all([
   .catch((error) => {
     console.error("Error loading components:", error);
   });
+
+//if (currentUrl.includes("/keiyakusya/") && index === 1) {
