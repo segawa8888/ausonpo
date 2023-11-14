@@ -2,9 +2,10 @@
 /*********************************************
 border-radius
 **********************************************/
-@for $i from 1 through 6 {
+@for $i from 0 through 6 {
   .u-radius-#{$i} {
     border-radius: rem($i * 4px);
+    overflow: hidden;
     & > img {
       border-radius: rem($i * 4px);
     }
@@ -12,6 +13,7 @@ border-radius
   @include mq-max("sm") {
     .sm\:u-radius-#{$i} {
       border-radius: rem($i * 4px);
+      overflow: hidden;
       & > img {
         border-radius: rem($i * 4px);
       }

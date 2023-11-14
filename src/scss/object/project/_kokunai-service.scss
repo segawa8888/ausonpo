@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-kokunai-service {
+    max-width: rem(1100px);
+}
+
+.p-kokunai-service__items {
+    display: flex;
+    justify-content: center;
+    gap:rem(20px) rem(40px);
+    flex-wrap:wrap;
+    @include mq-max("md") {
+        gap:rem(16px) rem(11px);
+     }
+}
+
+.p-kokunai-service__item {
+    border-radius: rem(8px);
+    border: rem(1px) solid #DEDEDE;
+    padding:rem(27px) rem(16px) rem(37px) rem(16px);
+    max-width: rem(340px);
+    width: 100%;
+    @include mq-max("md") {
+        max-width: rem(165px);
+        border-radius: rem(10px);
+        padding:rem(27px) 0 rem(37px) 0;
+        min-height:rem(178px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .c-btn {
+        width: rem(307px);
+        height: rem(38px);
+        @include mq-max("md") {
+            width: rem(151px);
+        }
+    }
+}

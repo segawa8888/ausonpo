@@ -48,12 +48,15 @@
     border-radius: rem(5px);
     background-color: $c-white;
     border: 1px solid #BDBDBD;
-    background-image: url(/assets/img/keiyakusya/kaigai/kaigai_icon_select.webp);
+    background-image: url(/assets/img/kaigai/kaigai_icon_select.webp);
     background-repeat: no-repeat;
     background-size: rem(8px);
     background-position: right rem(15px) top 50%;
     appearance: none;
     cursor: pointer;
+    @include mq-max("md") {
+        padding:rem(8px);
+    }
 }
 
 .p-keiyakusya-kaigai-estimate-form-select select::-ms-expand {

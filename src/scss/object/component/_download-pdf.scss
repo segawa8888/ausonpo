@@ -5,7 +5,7 @@
   font-size: rem(12px);
   line-height: 1.5;
   font-weight: 700;
-  background: url(../img/icon/icon_pdf.webp) left center no-repeat;
+  background: url(../img/icon/icon_pdf.webp) left 0.3em no-repeat;
   background-size: rem(32px);
   min-height: rem(32px);
   padding: rem(8px) 0 rem(8px) rem(44px);
@@ -20,6 +20,21 @@
   }
   @include mq-max("sm") {
     font-size: rem(12px);
-    padding: rem(8px) rem(12px) rem(8px) rem(56px);
+    padding: rem(8px) 0 rem(8px) rem(36px);
+    background-size: rem(24px);
+  }
+  &.-external {
+    &::after {
+      content: "";
+      background: url(../img/icon/icon_external.svg) center center / contain no-repeat;
+      width: rem(15px);
+      height: rem(12px);
+      display: inline-block;
+      margin-left: 0.75em;
+      @include mq-max("sm") {
+        width: rem(15px);
+        height: rem(12px);
+      }
+    }
   }
 }
