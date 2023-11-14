@@ -5,15 +5,26 @@ ul/olタグの共通スタイル
 @use "../../global" as *;
 
 .c-list-dot,
-.c-list-dot ul {
-  list-style: disc;
+.c-list-number,
+.c-list-check,
+.c-list-number-bracketed,
+.c-list-asterisk {
   display: grid;
   font-size: rem(14px);
   line-height: 1.5;
   gap: 0.5em;
+  font-weight: 700;
+}
+.c-list-dot,
+.c-list-number {
   li {
     margin-left: 1.2em;
   }
+}
+
+.c-list-dot,
+.c-list-dot ul {
+  list-style: disc;
   ul {
     list-style: circle;
     margin-top: 0.5em;
@@ -28,12 +39,36 @@ ul/olタグの共通スタイル
 
 .c-list-number {
   list-style: decimal;
-  display: grid;
-  font-size: rem(14px);
-  line-height: 1.5;
-  gap: 0.5em;
+}
+
+.c-list-number-bracketed {
+  counter-reset: item;
   li {
-    margin-left: 1.2em;
+    counter-increment: item;
+    &::before {
+      content: "(" counter(item) ") ";
+    }
+  }
+}
+
+.c-list-asterisk {
+  counter-reset: item;
+  li {
+    counter-increment: item;
+    &::before {
+      content: "*" counter(item);
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.c-list-check {
+  li {
+    background: url(../img/icon/icon-check.webp) left #{rem(5px)} / rem(12px) no-repeat;
+    padding-left: 1.2em;
+    .no-webp-support & {
+      background-image: url(../img/icon/icon-check.png);
+    }
   }
 }
 
