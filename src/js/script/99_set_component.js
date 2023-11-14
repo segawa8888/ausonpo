@@ -7,7 +7,7 @@ Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 //ナビゲーションコンポーネント一覧
 const navComponents = {
   "/corporate/": "/component/nav-corporate.html",
-  "/keiyakusya/bike/": "/component/nav-keiyakusya-bycle.html",
+  "/keiyakusya/bycle/": "/component/nav-keiyakusya-bycle.html",
   "/keiyakusya/pet/": "/component/nav-keiyakusya-pet.html",
   "/keiyakusya/kaigai/": "/component/nav-keiyakusya-kaigai.html",
   "/keiyakusya/kokunai/": "/component/nav-keiyakusya-kokunai.html",
