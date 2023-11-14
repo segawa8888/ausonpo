@@ -5,21 +5,38 @@
   font-size: rem(12px);
   line-height: 1.5;
   font-weight: 700;
-  background: url(../img/icon/icon_pdf.webp) left center no-repeat;
+  background: url(../img/icon/icon_pdf.webp) left 0.3em no-repeat;
   background-size: rem(32px);
   min-height: rem(32px);
   padding: rem(8px) 0 rem(8px) rem(44px);
   display: inline-block;
   margin-top: rem(16px);
   margin-bottom: rem(16px);
+
+  &::after {
+    content: "";
+    background: url(../img/icon/icon_external.webp) center center / contain no-repeat;
+    width: rem(19px);
+    height: rem(16px);
+    display: inline-block;
+    margin-left: 0.5em;
+  }
   .no-webp-support & {
     background-image: url(../img/icon/icon_pdf.png);
+    &::after {
+      background-image: url(../img/icon/icon_external.png);
+    }
   }
   @include hover {
     text-decoration: underline;
   }
   @include mq-max("sm") {
     font-size: rem(12px);
-    padding: rem(8px) rem(12px) rem(8px) rem(56px);
+    padding: rem(8px) 0 rem(8px) rem(36px);
+    background-size: rem(24px);
+    &::after {
+      width: rem(15px);
+      height: rem(12px);
+    }
   }
 }
