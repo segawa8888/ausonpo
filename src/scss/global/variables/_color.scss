@@ -19,10 +19,8 @@ $c-primary: #ea5404; //brand color
 $c-primary-100: #fff0c9; //background color
 $c-primary-050: #fff5ed; //background color
 //3.product Color
-
 $c-pet-dog: #c2f0ff; //ペット（犬）
 $c-pet-cat: #ffdad4; //ペット（猫）
-
 @mixin c-bycle-best {
   background: linear-gradient(180deg, #3a2019 0%, #992322 100%); //自転車（Bycle Best）
 }
@@ -34,9 +32,8 @@ $c-link: #057cd8; //リンクカラー
 $c-cta: #0ab606; //CTAボタン
 $c-login: #404ac7; //ログインボタン
 $c-success: #00a059; //緑系
-//$c-info: #1982eb; //青系
-//$-warning: #f2cc0c; //黄系
 $c-danger: #f20000; //赤系
+$c-yellow: #fff682; //黄色系
 
 /* 以下、上記で指定した変数内で指定する */
 
