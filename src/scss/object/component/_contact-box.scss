@@ -63,6 +63,15 @@
       }
     }
   }
+
+  &__call-free {
+    width: 44px;
+    height: auto;
+    display: inline-block;
+    line-height: 1em;
+    margin: -0.5em 0 -0.25em rem(6px);
+    vertical-align: middle;
+  }
   &__btn {
     flex: 1;
     display: flex;
