@@ -5,7 +5,6 @@ object/component
 @use "component/splide";
 @use "component/accordion";
 @use "component/alertbox";
-@use "component/ankerlink";
 @use "component/breadcrumbs";
 @use "component/btn";
 @use "component/download-app";
@@ -14,7 +13,6 @@ object/component
 @use "component/faq";
 @use "component/heading";
 @use "component/list";
-@use "component/point-box";
 @use "component/post-card";
 @use "component/post-heading";
 @use "component/post-meta";
@@ -44,12 +42,6 @@ object/project
 @use "project/keiyakusya-kaigai-estimate";
 @use "project/keiyakusya-table";
 @use "project/keiyakusya-point";
-@use "project/pet-application";
-@use "project/pet-btn";
-@use "project/pet-column";
-@use "project/pet-customer";
-@use "project/pet-link";
-@use "project/pet-meta";
-@use "project/pet-payment";
-@use "project/pet-photo-sample";
-@use "project/pet-type-info";
+@use "project/kaigai-payment";
+@use "project/kaigai-user";
+@use "project/kokunai-feature";
