@@ -14,6 +14,9 @@
   justify-content: flex-start;
   padding: 0 rem(36px) 0 rem(12px);
   transition: all 0.2s ease;
+  &.-external {
+    background-image: url(../img/icon/icon_external_primary.svg);
+  }
   &__icon {
     width: rem(56px);
     height: auto;
@@ -101,9 +104,9 @@
   align-items: center;
   justify-content: center;
   transition:
-  transform 0.2s ease,
-  box-shadow 0.2s ease,
-  border-color 0.2s ease 0.1s;
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease 0.1s;
   @include hover {
     box-shadow: none;
     transform: translateY(rem(4px));
@@ -135,5 +138,14 @@
     background-image: url(../img/arrow/arrow_md_primary.svg);
     background-position: right rem(8px) center;
     background-size: rem(6px);
+  }
+  &.-external {
+    background-image: url(../img/icon/icon_external_primary.svg);
+    &.-md {
+      background-size: rem(16px);
+    }
+    &.-lg {
+      background-size: rem(18px);
+    }
   }
 }

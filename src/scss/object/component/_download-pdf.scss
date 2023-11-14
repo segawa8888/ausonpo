@@ -15,7 +15,7 @@
 
   &::after {
     content: "";
-    background: url(../img/icon/icon_external.webp) center center / contain no-repeat;
+    background: url(../img/icon/icon_external.svg) center center / contain no-repeat;
     width: rem(19px);
     height: rem(16px);
     display: inline-block;
@@ -23,9 +23,6 @@
   }
   .no-webp-support & {
     background-image: url(../img/icon/icon_pdf.png);
-    &::after {
-      background-image: url(../img/icon/icon_external.png);
-    }
   }
   @include hover {
     text-decoration: underline;
