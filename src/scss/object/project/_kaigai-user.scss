@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-kaigai__user {
+    margin-top: rem(117px);
+    max-width: rem(812px);
+    border-radius: rem(20px);
+    border: rem(3px) solid #EA5404;
+    @include mq-max("md") {
+        margin-top: rem(90px);
+        padding:0 rem(20px);
+    }
+}
+
+.p-kaigai-user__img {
+    max-width: rem(192px);
+}

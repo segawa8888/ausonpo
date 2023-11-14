@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-keiyakusya-point__heading {
+    p {
+        max-width: rem(300px);
+        display: flex;
+        align-items: center;
+        gap:0 rem(20px);
+        margin-left: auto;
+        margin-right: auto;
+        white-space: nowrap;
+        @include mq-max("md") {
+            max-width: initial;
+            gap:0 rem(5px);
+          }
+        span {
+            display: block;
+            strong {
+                font-size: rem(35px);
+                 @include mq-max("md") {
+                    font-size: rem(30px);
+                 }
+            }
+        }
+    
+        small {
+            font-size: rem(14px);
+            line-height: calc(22.4/14);
+        }
+    }
+}
+
+.p-keiyakusya-point__img {
+    max-width: rem(320px);
+}
+
+/* PC時のスタイル */
+
+.p-keiyakusya-point__wrapper {
+
+    .splide01:not(.is-overflow) .splide__pagination {
+        display: flex;
+        margin-top: rem(21px);
+    }
+
+    .splide01.is-initialized:not(.is-active) .splide__list {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      /* スライドのサイズ調整 */
+      .splide__slide img {
+        height: auto;
+        width: 100%;
+      }
+
+      .splide__list {
+        @include mq-max("md") {
+            gap:0 rem(8px);
+          }
+      }
+}
+
+.p-keiyakusya-point__contents {
+    max-width: rem(682px);
+    @include mq-max("md") {
+        padding:0 rem(6px);
+
+        .sm\:u-mt-11 {
+            margin-top: rem(43px);
+        }
+      }
+}
+
+.p-keiyakusya__tryangle {
+    max-width: rem(36px);
+    margin-top: rem(30px);
+}
+
+.p-keiyakusya-point__content {
+    max-width: rem(682px);
+    background-color: $c-white;
+    padding:rem(12px) rem(50px) rem(32px) rem(50px);
+    @include mq-max("md") {
+        padding:rem(14px) rem(9px) rem(22px) rem(9px);
+    }
+}
+
+.p-keiyakusya-point__items {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: rem(67.5px);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: rem(37px);
+    @include mq-max("md") {
+        grid-template-columns: repeat(2,1fr);
+        column-gap: rem(5px);
+        grid-template-rows: repeat(3,1fr);
+        row-gap: rem(34px); 
+    }
+}
+
+.p-keiyakusya-point__item {
+
+    .c-text-accent {
+        white-space: nowrap;
+    }
+
+    .c-btn {
+        font-size: rem(15px);
+        width: rem(151px);
+        height: rem(38px);
+        background-image: url(../img/arrow/arrow_md_primary.svg);
+        background-position: right rem(8px) center;
+        background-size: rem(6px);
+    }
+}
+
+.p-keiyakusya-point__icon {
+    max-width: rem(40px);
+    height:rem(34px);
+}
+
+.p-keiyakusya-point-item__text {
+    min-height: rem(120px);
+}
+
+.p-keiyakusya-point-item__text.sm-initial {
+    min-height:initial;
+}
+
+.p-keiyakusya-point-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:rem(20px) rem(36px);
+    @include mq-max("md") {
+        flex-wrap:nowrap;
+    }
+}
+
+.p-keiyakusya-point-box {
+    max-width: rem(340px);
+    width: 100%;
+    border-radius: rem(10px);
+    border: rem(1px) solid #CFCFCF;
+    background: #FFF;
+    min-height:rem(224.104px);
+}
+
+.p-keiyakusya-point-box__heading {
+    border-radius: rem(10px) rem(10px) 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0 rem(22px);
+    height:rem(80px);
+}
+
+.p-keiyakusya-point-box__icon {
+    max-width: rem(47px);
+}
+
+.p-keiyakusya-point-box__wrap {
+    padding:rem(11px) rem(20px) rem(16px) rem(20px);
+}
+
+.splide02 {
+    visibility: initial;
+    &:not(.is-overflow) .splide__pagination {
+        display: flex;
+        margin-top: rem(21px);
+    }
+  }
+
+  .splide02.is-initialized:not(.is-active) .splide__list {
+    display: flex;
+  }
+
+  .p-keiyakusya-point__banner {
+    max-width: rem(716px);
+}
