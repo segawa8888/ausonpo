@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-pet-meta {
+  &__head {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: 0.1em;
+    text-align: center;
+    position: relative;
+    margin-top: 7rem;
+    margin-bottom: 1.25rem;
+    &::after {
+      content: "";
+      width: 2.5rem;
+      height: 0.1875rem;
+      background: #ea5404;
+      display: block;
+      margin: 0.5rem auto 0;
+    }
+  }
+  &__sub {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+  }
+  &__body {
+    display: flex;
+    justify-content: center;
+    gap: rem(32px);
+    @include mq-max("sm") {
+      gap: rem(13px);
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-box {
+      display: flex;
+      align-items: center;
+      &-img {
+        object-fit: cover;
+        aspect-ratio: 82/37;
+        width: rem(82px);
+        height: rem(37px);
+        @include mq-max("sm") {
+          aspect-ratio: 38/17;
+          width: rem(38px);
+          height: rem(17px);
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      &-text {
+        font-weight: bold;
+        font-size: rem(20px);
+        letter-spacing: 0.1em;
+        color: $c-base-600;
+        display: block;
+        @include mq-max("sm") {
+          font-size: rem(12px);
+          letter-spacing: -0.1em;
+        }
+      }
+    }
+  }
+}

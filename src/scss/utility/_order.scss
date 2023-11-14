@@ -1,0 +1,14 @@
+@use "../global" as *;
+/*********************************************
+border-radius
+**********************************************/
+@for $i from 1 through 12 {
+  .u-order-#{$i} {
+    order: $i;
+  }
+  @include mq-max("sm") {
+    .sm\:u-order-#{$i} {
+      order: $i;
+    }
+  }
+}

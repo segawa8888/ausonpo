@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-feature-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(24px);
+  .c-feature-card {
+    gap: rem(16px);
+  }
+  .c-text-accent {
+    margin-bottom: rem(12px);
+  }
+  @include mq-max("sm") {
+    grid-template-columns: 1fr;
+    gap: rem(32px);
+  }
+}

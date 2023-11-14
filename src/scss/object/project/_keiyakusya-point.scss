@@ -12,11 +12,15 @@
         white-space: nowrap;
         @include mq-max("md") {
             max-width: initial;
+            gap:0 rem(5px);
           }
         span {
             display: block;
             strong {
                 font-size: rem(35px);
+                 @include mq-max("md") {
+                    font-size: rem(30px);
+                 }
             }
         }
     
@@ -173,3 +177,7 @@
   .splide02.is-initialized:not(.is-active) .splide__list {
     display: flex;
   }
+
+  .p-keiyakusya-point__banner {
+    max-width: rem(716px);
+}
