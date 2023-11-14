@@ -120,8 +120,8 @@
   }
   &.-lg {
     font-size: rem(20px);
-    letter-spacing: 0.1;
-    width: rem(300px);
+    letter-spacing: 0;
+    min-width: rem(300px);
     height: rem(60px);
     background-image: url(../img/arrow/arrow_lg_primary.svg);
     background-size: rem(7px);
@@ -142,10 +142,11 @@
   &.-external {
     background-image: url(../img/icon/icon_external_primary.svg);
     &.-md {
-      background-size: rem(16px);
+      background-size: rem(14px);
     }
     &.-lg {
-      background-size: rem(18px);
+      background-size: rem(14px);
+      background-position: right rem(11px) center;
     }
   }
 }
