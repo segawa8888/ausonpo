@@ -1,57 +1,49 @@
 @charset "UTF-8";
 @use "../../global" as *;
 
-
 .p-pet-type-info {
-
   &__title {
-  
   }
 
-
   &__box {
-    margin-top:rem(33px) ;
+    margin-top: rem(33px);
     text-align: center;
     display: flex;
-    gap:2.9%;
+    gap: 2.9%;
 
-    @include mq-max("sm"){
+    @include mq-max("sm") {
       flex-direction: column;
       text-align: left;
       gap: 1em;
-  }
-  
+    }
   }
 
   &__type {
-    border: 2px solid #EA5404;
+    border: 2px solid #ea5404;
     width: 48.55%;
     max-width: rem(534px);
     border-radius: 5px;
 
-    @include mq-max("sm"){
+    @include mq-max("sm") {
       width: 100%;
       display: flex;
     }
-    
   }
 
-  &__type--yellow{
-    border: 2px solid #FFF682; 
+  &__type--yellow {
+    border: 2px solid $c-yellow;
     color: #000000;
   }
-  
-  
-  
+
   &__name {
-    color:#fff;
-    background-color: #EA5404;
+    color: #fff;
+    background-color: #ea5404;
     font-size: rem(24px);
     font-weight: 700;
     padding: 0.5em;
     position: relative;
 
-    @include mq-max("sm"){
+    @include mq-max("sm") {
       width: 34%;
       display: flex;
       align-items: center;
@@ -59,11 +51,8 @@
       padding: 0;
     }
 
-
-    & p{
-
-
-      &::before{
+    & p {
+      &::before {
         content: "";
         display: block;
         position: absolute;
@@ -73,20 +62,19 @@
         mask-repeat: no-repeat;
         mask-position: center;
         mask-size: contain;
-        background-color: #FFDABA;
+        background-color: #ffdaba;
         top: 50%;
         left: 26%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
 
-        @include mq-max("sm"){
+        @include mq-max("sm") {
           display: none;
-      }
+        }
       }
 
-
-      &::after{
+      &::after {
         content: "";
         display: block;
         position: absolute;
@@ -96,42 +84,37 @@
         mask-repeat: no-repeat;
         mask-position: center;
         mask-size: contain;
-        background-color: #FFDABA;
+        background-color: #ffdaba;
         top: 50%;
         right: 26%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
 
-        @include mq-max("sm"){
+        @include mq-max("sm") {
           display: none;
-      }
+        }
       }
 
-      & span{
-        @include mq-max("sm"){
+      & span {
+        @include mq-max("sm") {
           font-size: rem(14px);
           text-align: right;
           margin-left: auto;
           display: block;
           line-height: 150%;
           padding-right: rem(5px);
-
         }
-
       }
-      
     }
-    
   }
-  
-  &__type--yellow  .p-pet-type-info__name{
-    background-color: #FFF682;
+
+  &__type--yellow .p-pet-type-info__name {
+    background-color: $c-yellow;
     color: #000000;
 
-
-    & p{
-      &::before{
+    & p {
+      &::before {
         content: "";
         display: block;
         position: absolute;
@@ -141,18 +124,18 @@
         mask-repeat: no-repeat;
         mask-position: center;
         mask-size: contain;
-        background-color: #EA5404;
+        background-color: #ea5404;
         top: 50%;
         left: 26%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
-        @include mq-max("sm"){
+        @include mq-max("sm") {
           display: none;
-      }
+        }
       }
 
-      &::after{
+      &::after {
         content: "";
         display: block;
         position: absolute;
@@ -162,19 +145,18 @@
         mask-repeat: no-repeat;
         mask-position: center;
         mask-size: contain;
-        background-color: #EA5404;
+        background-color: #ea5404;
         top: 50%;
         right: 26%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
-        @include mq-max("sm"){
+        @include mq-max("sm") {
           display: none;
+        }
       }
-      }
-
+    }
   }
-}
 
   &__text {
     font-size: rem(16px);
@@ -184,34 +166,29 @@
     line-height: 150%;
     letter-spacing: rem(0.8px);
 
-    @include mq-max("sm"){
+    @include mq-max("sm") {
       width: 66%;
       font-size: rem(14px);
       padding: rem(20px) rem(2px) rem(20px) rem(10px);
     }
 
-    & span{
-      color: #EA5404;
+    & span {
+      color: #ea5404;
     }
-    
   }
-  &__type--yellow{
-    color:#000000 ;
-    
+  &__type--yellow {
+    color: #000000;
   }
 }
 
-
 ///// 補償内容 ////
 
-.p-pet-type-info{
+.p-pet-type-info {
   &__body {
     max-width: rem(340px);
     margin-left: auto;
     margin-right: auto;
-
-}
-
+  }
 
   &__feature {
     display: inline-block;
@@ -222,123 +199,106 @@
     color: #000;
     font-size: 16px;
     border-radius: 5px;
-    background: #FFF682;
+    background: $c-yellow;
     font-weight: 700;
     position: relative;
 
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       top: 100%;
       left: 50%;
       margin-left: -15px;
       border: 10px solid transparent;
-      border-top: 10px solid #FFF682;
+      border-top: 10px solid $c-yellow;
     }
-
   }
 
   &__tableSection {
-
   }
 
   &__tableName {
     font-size: rem(16px);
     font-weight: 700;
-    line-height: 150%; 
+    line-height: 150%;
     letter-spacing: 1.6px;
-
   }
 
-  &__table{
+  &__table {
     border-bottom: 1px solid #afafaf;
     border-right: 1px solid #afafaf;
     width: 100%;
     margin-top: rem(15px);
 
-    & th, td{
+    & th,
+    td {
       border-bottom: 1px solid #afafaf;
       border-right: 1px solid #afafaf;
       width: 25%;
       padding: rem(10px);
     }
-    
   }
-  
-  &__tableHeading{
+
+  &__tableHeading {
     color: #fff;
-    background-color: #EA5404;
+    background-color: #ea5404;
     text-align: center;
     font-size: rem(12px);
     font-weight: 700;
-    line-height: 166%; 
-
+    line-height: 166%;
   }
 
-  &__tableBody{
+  &__tableBody {
     aspect-ratio: 24 / 24;
     max-width: rem(24px);
     max-height: rem(24px);
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-  
-    
-    & img{
+
+    & img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
 
-  &__priceBox{
+  &__priceBox {
     color: #fff;
     text-align: center;
     font-weight: 700;
-    background-color: #EA5404;;
+    background-color: #ea5404;
 
-    & p{
+    & p {
       font-size: 13.555px;
       font-weight: 700;
-      line-height: 276%; 
-
+      line-height: 276%;
     }
-
   }
 
-  &__price{
+  &__price {
     display: flex;
     justify-content: center;
     gap: rem(4px);
-
   }
 
   &__priceLeft {
     font-size: rem(13px);
     -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  border: 1px solid #fff;
-  padding: rem(2px) rem(4px);
+    writing-mode: vertical-rl;
+    border: 1px solid #fff;
+    padding: rem(2px) rem(4px);
   }
-  
+
   &__priceRight {
     font-size: rem(17px);
 
-    & span{
+    & span {
       font-size: rem(47px);
     }
 
-    & i{
+    & i {
       font-family: Meiryo;
     }
-
-  
   }
-  
-  
 }
-
-
-
-
-
