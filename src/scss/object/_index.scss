@@ -12,6 +12,7 @@ object/component
 @use "component/download-pdf";
 @use "component/contact-box";
 @use "component/faq";
+@use "component/feature-card";
 @use "component/heading";
 @use "component/list";
 @use "component/point-box";
@@ -31,6 +32,7 @@ object/project
 @use "project/anipos-feature";
 @use "project/cards";
 @use "project/column";
+@use "project/feature-card-grid";
 @use "project/home";
 @use "project/keiyakusya";
 @use "project/process-list";
