@@ -1,0 +1,15 @@
+@use "../global" as *;
+/*********************************************
+justify-items
+**********************************************/
+$justify-items: (start, end, center, stretch);
+@each $value in $justify-items {
+    .u-justify-items-#{$value} {
+        justify-items: $value;
+    }
+    @include mq-max("sm") {
+        .sm\:justify-items-#{$value} {
+            justify-items: $value;
+        }
+    }
+}

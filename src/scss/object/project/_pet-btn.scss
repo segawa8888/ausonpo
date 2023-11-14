@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-pet-btn {
+  display: inline-block;
+  padding: rem(20px) rem(20px) rem(20px) rem(10px);
+  border-radius: 10px;
+  width: rem(389px);
+  transition: all 0.2s ease;
+  @include hover {
+    box-shadow: none;
+    transform: translateY(rem(4px));
+  }
+  @include mq-max("sm") {
+    width: auto;
+    padding: 0 rem(30px) rem(10px);
+  }
+  &--dog {
+    background-color: #ABECF1;
+    box-shadow: 0 rem(4px) 0 #60898C;
+  }
+  &--cat {
+    background-color: #FDF060;
+    box-shadow: 0 rem(4px) 0 #ABA120;
+  }
+  &__container {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    @include mq-max("sm")  {
+      flex-direction: column;
+    }
+    &-img {
+      aspect-ratio: 115/84;
+      object-fit: cover;
+      width: rem(115px);
+      height: rem(84px);
+      @include mq-max("sm")  {
+        aspect-ratio: 88/66;
+        width: rem(88px);
+        height: rem(66px);
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &-text {
+      font-weight: bold;
+      font-size: rem(18px);
+      letter-spacing: 0.01em;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      @include mq-max("sm")  {
+        font-size: rem(14px);
+        line-height: calc(20/14);
+        display: flex;
+        flex-direction: column;
+        margin-top: rem(14px);
+      }
+      &::after {
+        background-image: url(../img/pet/pet_arrow_bold_primary.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: rem(18px);
+        height: rem(15px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content:"";
+        margin-left: rem(19px);
+
+        @include mq-max("sm")  {
+          margin-left: 0;
+          margin-top: rem(12px);
+        }
+      }
+    }
+  }
+}

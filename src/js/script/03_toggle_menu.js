@@ -12,8 +12,6 @@ document.addEventListener("componentsLoaded", () => {
       }
     });
   });
-
-  const currentUrl = window.location.href;
   document.querySelectorAll(".js-footer-toggle-btn").forEach((button, index) => {
     button.addEventListener("click", function () {
       // このボタンの隣接要素にslideToggleを適用

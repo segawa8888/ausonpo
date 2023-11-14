@@ -5,14 +5,17 @@ object/component
 @use "component/splide";
 @use "component/accordion";
 @use "component/alertbox";
+@use "component/ankerlink";
 @use "component/breadcrumbs";
 @use "component/btn";
 @use "component/download-app";
 @use "component/download-pdf";
 @use "component/contact-box";
 @use "component/faq";
+@use "component/feature-card";
 @use "component/heading";
 @use "component/list";
+@use "component/point-box";
 @use "component/post-card";
 @use "component/post-heading";
 @use "component/post-meta";
@@ -29,6 +32,7 @@ object/project
 @use "project/anipos-feature";
 @use "project/cards";
 @use "project/column";
+@use "project/feature-card-grid";
 @use "project/home";
 @use "project/keiyakusya";
 @use "project/process-list";

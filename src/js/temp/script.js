@@ -61,8 +61,6 @@ document.addEventListener("componentsLoaded", () => {
       }
     });
   });
-
-  const currentUrl = window.location.href;
   document.querySelectorAll(".js-footer-toggle-btn").forEach((button, index) => {
     button.addEventListener("click", function () {
       // このボタンの隣接要素にslideToggleを適用
@@ -100,18 +98,20 @@ Pocket.Inc グローバルナビのスクロールアイコンのフェードア
 document.addEventListener("componentsLoaded", () => {
   // 対象となる要素を取得
   const headerNav = document.querySelector(".l-header-nav");
-  const headerNavScroll = document.querySelector(".l-header-nav__scroll");
-  // 初回スクロールのフラグ
-  let isFirstScroll = true;
-  // スクロールイベントのリスナーを追加
-  headerNav.addEventListener("scroll", function () {
-    // 初回スクロール時にのみクラスを追加する
-    if (isFirstScroll) {
-      headerNavScroll.classList.add("is-scrolled");
-      // 初回のスクロールを検知した後はフラグをfalseにしてイベントが再発火しないようにする
-      isFirstScroll = false;
-    }
-  });
+  if (headerNav) {
+    const headerNavScroll = document.querySelector(".l-header-nav__scroll");
+    // 初回スクロールのフラグ
+    let isFirstScroll = true;
+    // スクロールイベントのリスナーを追加
+    headerNav.addEventListener("scroll", function () {
+      // 初回スクロール時にのみクラスを追加する
+      if (isFirstScroll) {
+        headerNavScroll.classList.add("is-scrolled");
+        // 初回のスクロールを検知した後はフラグをfalseにしてイベントが再発火しないようにする
+        isFirstScroll = false;
+      }
+    });
+  }
 });
 
 /*----------------------------------------------------------
@@ -142,6 +142,45 @@ document.addEventListener("componentsLoaded", () => {
       },
     }).mount();
   }
+
+  // p-keiyakusya slide
+  const keiyakusyaSlider = document.querySelector(".splide01");
+  if (keiyakusyaSlider) {
+    new Splide(keiyakusyaSlider, {
+      autoplay: false, // 自動再生
+      arrows: false,
+      speed: 2000, // スライダーの移動時間
+      destroy: true, // スライダーを破棄
+      perPage: 2,
+      perMove: 1,
+      flickMaxPages: 1,
+      pagination: true,
+      breakpoints: {
+        768: {
+          destroy: false,
+        },
+      },
+    }).mount();
+  }
+
+  // p-keiyakusya-point slide
+  const keiyakusyaSlider2 = document.querySelector(".splide02");
+  if (keiyakusyaSlider2) {
+    new Splide(keiyakusyaSlider2, {
+      autoplay: false, // 自動再生
+      arrows: false,
+      speed: 2000, // スライダーの移動時間
+      destroy: true, // スライダーを破棄
+      perPage: 1,
+      flickMaxPages: 1,
+      pagination: true,
+      breakpoints: {
+        768: {
+          destroy: false,
+        },
+      },
+    }).mount();
+  }
 });
 
 /*----------------------------------------------------------
@@ -149,13 +188,42 @@ Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 ・全てのコードの最後に読み込む
 ・初期表示時のレイアウト崩れ対応処理含む
 ----------------------------------------------------------*/
+
+//ナビゲーションコンポーネント一覧
+const navComponents = {
+  "/corporate/": "/component/nav-corporate.html",
+  "/keiyakusya/bike/": "/component/nav-keiyakusya-bycle.html",
+  "/keiyakusya/pet/": "/component/nav-keiyakusya-pet.html",
+  "/keiyakusya/kaigai/": "/component/nav-keiyakusya-kaigai.html",
+  "/keiyakusya/kokunai/": "/component/nav-keiyakusya-kokunai.html",
+  "/keiyakusya/sports/": "/component/nav-keiyakusya-sports.html",
+  "/keiyakusya/golf/": "/component/nav-keiyakusya-golf.html",
+  "/pc/bycle": "/component/nav-bicycle.html",
+  "/pc/pet-dog": "/component/nav-pet-dog.html",
+  "/pc/pet-cat": "/component/nav-pet-cat.html",
+};
+
+// 対応するコンポーネントを決定する関数
+function determineNavComponent(url) {
+  for (const pattern in navComponents) {
+    if (url.includes(pattern)) {
+      console.log(navComponents[pattern]);
+      return navComponents[pattern];
+    }
+  }
+  console.log("go");
+  return "/component/blank.html"; // 該当無しの場合はblank
+}
+
 // 全てのコンポーネントの読み込みを管理
 Promise.all([
   //コンポーネントの読み込み処理
   loadComponent("/component/meta.html", "head", "afterbegin"),
   loadComponent("/component/ogp.html", "head", "beforeend"),
-  loadComponent("/component/header.html", "body", "afterbegin"),
   loadComponent("/component/footer.html", ".l-main", "afterend"),
+  loadComponent("/component/header.html", "body", "afterbegin").then(() => {
+    return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
+  }),
 ])
   .then(() => {
     // 全てのコンポーネントが読み込まれたことを示すイベントをディスパッチ
@@ -195,3 +263,5 @@ Promise.all([
   .catch((error) => {
     console.error("Error loading components:", error);
   });
+
+//if (currentUrl.includes("/keiyakusya/") && index === 1) {

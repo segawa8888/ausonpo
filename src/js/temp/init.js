@@ -29,7 +29,7 @@ Pocket.Inc Common Script - 2023-10-15
 const ua = window.navigator.userAgent.toLowerCase();
 const isiOS = ["iphone", "ipad", "macintosh"].some((device) => ua.includes(device) && "ontouchend" in document); //iOS(iPad含む)の判定
 const isMobile = ["iphone", "ipad", "macintosh", "android"].some((device) => ua.includes(device) && "ontouchend" in document); //Mobile判定
-
+const currentUrl = window.location.href; //URLの取得
 const resizeTimerCmn = null; //resizeイベント用タイマー
 let ww; //window width
 let wh; //window height
