@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-pet-column {
+  background-color: #F5F5F5;
+  border-radius: rem(10px);
+  @include mq-max("sm") {
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
+  }
+  &__head {
+    text-align: center;
+    &-sub {
+      color: $c-primary;
+      font-size: rem(16px);
+      font-weight: bold;
+    }
+    &-title {
+      position: relative;
+      display: inline-block;
+      font-size: rem(24px);
+      font-weight: bold;
+      letter-spacing: 0.02em;
+      &::before {
+        background-image: url(../img/pet/pet_pad_icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: rem(29px);
+        height: rem(29px);
+        position: absolute;
+        content: '';
+        top: 3%;
+        left: rem(-30px);
+        transform: rotate(-20deg);
+        @include mq-max("sm") {
+          left: rem(-15px);
+        }
+      }
+      &::after {
+        background-image: url(../img/pet/pet_pad_icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: rem(29px);
+        height: rem(29px);
+        position: absolute;
+        content: '';
+        top: 50%;
+        right: rem(-25px);
+        transform: translateY(-50%);
+        @include mq-max("sm") {
+          top: 58%;
+          right: rem(45px);
+        }
+      }
+    }
+    &-text {
+      font-size: rem(16px);
+      font-weight: bold;
+      line-height: calc(22/14);
+      @include mq-max("sm") {
+        font-size: rem(14px);
+        line-height: calc(20/14);
+      }
+    }
+  }
+}
