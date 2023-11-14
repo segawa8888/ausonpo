@@ -8,6 +8,10 @@
     display: flex;
     justify-content: center;
     gap:0 rem(20px);
+    @include mq-max("md") {
+        flex-wrap:wrap;
+        gap:rem(8px) 0;
+     }
 }
 
 .p-kokunai-feature__card {
@@ -16,6 +20,9 @@
     min-height: rem(282px);
     border-radius: rem(5px);
     border: rem(1px) solid #BDBDBD;
+    @include mq-max("md") {
+        max-width: 100%;
+     }
 }
 
 .p-kokunai-feature__heading {
@@ -27,6 +34,10 @@
     background: #F3F3F3;
     margin:rem(8px) rem(10px) 0 rem(10px);
     text-align: center;
+    height:rem(80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .p-kokunai-feature__img {
