@@ -23,8 +23,6 @@ document.addEventListener("componentsLoaded", () => {
     if (currentUrl.includes("/keiyakusya/") && index === 1) {
       // このボタンの隣接要素にslideToggleを適用
       const adjacentElement = button.nextElementSibling;
-      console.log(ww);
-      console.log(button.nextElementSibling);
       if (adjacentElement && adjacentElement.classList.contains("js-footer-toggle-content") && ww <= 520) {
         slideDown(adjacentElement, button);
       }

@@ -8,9 +8,9 @@
   </head>
 
   <body style="visibility: hidden">
-    <nav class="c-breadcrumbs">
-      <ol class="c-breadcrumbs__list l-container lg:-full sm:-full">
-        <li class="c-breadcrumbs__item">コンポーネントリスト</li>
+    <nav class="c-breadcrumbs" aria-label="breadcrumb">
+      <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="c-breadcrumbs__list l-container lg:-full sm:-full">
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page">コンポーネントリスト<meta itemprop="position" content="4" /></li>
       </ol>
     </nav>
     <main class="l-main l-container lg:-full sm:-full js-main">
@@ -20,6 +20,7 @@
         <ul class="c-list-dot u-grid u-grid-cols-2 u-mt-10">
           <li><a href="flow.html" class="u-link-text">開発の流れ、フォルダ構成等</a></li>
           <li><a href="template.html" class="u-link-text">HTMLテンプレートについて</a></li>
+          <li><a href="c-breadcrumbs.html" class="u-link-text">パンくずリスト</a></li>
         </ul>
         <h2 class="c-heading2-has-line">共通コンポーネント</h2>
         <ul class="c-list-dot u-grid u-grid-cols-2 u-mt-10">
