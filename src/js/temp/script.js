@@ -204,6 +204,102 @@ document.addEventListener("componentsLoaded", () => {
 });
 
 /*----------------------------------------------------------
+ペットの保険 スライダー - 2023-11-14
+----------------------------------------------------------*/
+//コンポーネント読み込み後
+document.addEventListener("componentsLoaded", () => {
+  //mvスライダー
+  const mvSlider = document.querySelector(".js-mv-slider"); // 対象となる要素を取得
+  if (mvSlider) {
+    var splide = new Splide( mvSlider, {
+      autoplay: true,
+      type   : 'loop',
+      perMove: 1,
+      arrows: false,
+      gap: '-1.8rem',
+      focus: 0,
+      padding: '9.625rem',
+      updateOnMove: true,
+      autoScroll: {
+        speed: 0.3,
+        pauseOnHover: false,
+      },
+      classes: {
+        pagination: "splide__pagination p-pet-column-pagination",
+        page: "splide__pagination__page p-pet-column-page",
+      },
+      breakpoints: {
+        520:{
+        perPage: 1,
+        gap: '0.78rem',
+        padding: '2.099rem',
+        }
+      }
+    }).mount();
+  }
+
+  //ワンちゃんとの暮らしに役立つコラムのスライダー
+  const petSlider = document.querySelector(".js-column-slider"); // 対象となる要素を取得
+  if (petSlider) {
+    var splide = new Splide( petSlider, {
+      autoplay: true,
+      type   : 'loop',
+      perPage: 3,
+      perMove: 1,
+      arrows: false,
+      gap: '3.125rem',
+      focus: 0,
+      padding: '3.125rem',
+      autoScroll: {
+        speed: 0.5,
+        pauseOnHover: false,
+      },
+      classes: {
+        pagination: "splide__pagination p-pet-column-pagination",
+        page: "splide__pagination__page p-pet-column-page",
+      },
+      breakpoints: {
+        520:{
+        type: "loop",
+        perPage: 1,
+        gap: '.625rem',
+        padding: '1.875rem',
+        }
+      }
+    }).mount();
+  }
+});
+/*----------------------------------------------------------
+Pocket.Inc ペット保険/補償内容のタブ切り替え
+----------------------------------------------------------*/
+
+document.querySelectorAll('.js-pet-info').forEach(tab => {
+  tab.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // すべてのタブから is-active クラスを削除
+    document.querySelectorAll('.js-pet-info').forEach(t => {
+      t.classList.remove('is-active');
+      // 親要素からも is-active クラスを削除
+      t.parentNode.classList.remove('is-active');
+    });
+
+    // クリックされたタブとその親要素に is-active クラスを追加
+    this.classList.add('is-active');
+    this.parentNode.classList.add('is-active');
+
+    // すべてのコンテンツから is-active クラスを取り除く
+    document.querySelectorAll("[id^='pet-cont']").forEach(content => {
+      content.classList.remove('is-active');
+    });
+
+    // 対応するコンテンツに is-active クラスを追加
+    const id = this.dataset.id;
+    document.getElementById(id).classList.add('is-active');
+  });
+});
+
+/*----------------------------------------------------------
 Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 ・全てのコードの最後に読み込む
 ・初期表示時のレイアウト崩れ対応処理含む
@@ -212,7 +308,7 @@ Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 //ナビゲーションコンポーネント一覧
 const navComponents = {
   "/corporate/": "/component/nav-corporate.html",
-  "/keiyakusya/bike/": "/component/nav-keiyakusya-bycle.html",
+  "/keiyakusya/bycle/": "/component/nav-keiyakusya-bycle.html",
   "/keiyakusya/pet/": "/component/nav-keiyakusya-pet.html",
   "/keiyakusya/kaigai/": "/component/nav-keiyakusya-kaigai.html",
   "/keiyakusya/kokunai/": "/component/nav-keiyakusya-kokunai.html",

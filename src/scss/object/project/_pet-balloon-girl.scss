@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-pet-balloon-girl {
+    display: flex;
+    max-width: rem(800px);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq-max("sm"){
+        gap: 10px;
+    }
+
+
+
+    &__img {
+        aspect-ratio: 122 / 112;
+        overflow: hidden;
+        max-width: rem(122px);
+        width: 30%;
+
+        @include mq-max("sm"){
+            width: 45%;
+        }
+
+        
+        & img{
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+        }
+    }
+    
+    &_right {
+        width: 70%;
+        @include mq-max("sm"){ 
+            width: 55%;
+        }
+    
+    }
+    
+    &__balloon {
+        padding: rem(12px) rem(10px);
+        position: relative;
+        background: #fff;
+        border: rem(2px) solid #EA5404;
+        border-radius: 5px;
+        line-height: 150%;
+
+
+        @include mq-max("sm"){ 
+            padding: rem(10px) rem(4px) rem(10px) rem(10px) ;
+
+        }
+
+
+        &::before{
+            right: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(234, 84, 4, 0);
+            border-right-color: #EA5404;
+            border-width: rem(9px);
+            margin-top: rem(-9px);
+
+        }
+
+        &::after{
+            right: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(255, 255, 255, 0);
+            border-right-color: #fff;
+            border-width: rem(6px);
+            margin-top: rem(-6px);
+        }
+
+        & p {
+            font-size: rem(18px);
+            font-weight: 700;
+            color: #000;
+
+            @include mq-max("sm"){
+                font-size: rem(14px);
+            }
+
+            & span{
+                color: #EA5404;
+            }
+            & i{
+                font-size: rem(32px);
+
+                @include mq-max("sm"){
+                    font-size: rem(19px);
+                }
+
+
+            }
+
+
+        }
+    
+    }
+    
+    &__us-stamp {
+        margin-top: rem(2px);
+        color: #5C5C5C;
+        font-size: rem(10px);
+        font-weight: 700;
+        line-height: 150%; /* 15px */
+        letter-spacing: 1px;
+            
+    }
+    
+    &__text {
+        margin-top: rem(14px);
+        color: #5C5C5C;
+        font-size: rem(10px);
+        font-weight: 700;
+        line-height: 150%; /* 15px */
+        letter-spacing: 1px;
+        padding-left: 1em;
+        text-indent: -1em;
+
+
+    }
+}
+
+

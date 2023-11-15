@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-pet-compensation-cont{
+    
+    &__balloon{
+        margin-top: rem(55px);
+
+        @include mq-max("sm"){ 
+            margin-top: rem(33px);
+        }
+
+    }
+}
+
+

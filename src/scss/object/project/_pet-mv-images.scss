@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-pet-mv-images {
+  @include mq-max("sm") {
+    margin-top: rem(8px);
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
+  }
+  &__img {
+    aspect-ratio: 785/320;
+    @include mq-max("sm") {
+      aspect-ratio: 311/190;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.p-pet-mv-images__img.splide__slide {
+  transition: transform 0.3s;
+}
+
+.p-pet-mv-images__img.splide__slide.is-prev,
+.p-pet-mv-images__img.splide__slide.is-next {
+  transform: scale(0.85);
+  @include mq-max("sm") {
+    transform: scale(1);
+  }
+}
+
+.splide:not(.is-overflow) .splide__pagination {
+  display: flex; //リロードしたときにdisplay: none;でpaginationが非表示になることを防ぐ処理
+}
