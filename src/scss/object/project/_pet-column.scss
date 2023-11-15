@@ -65,4 +65,75 @@
       }
     }
   }
+  &__body {
+    margin-top: rem(17px);
+    @include mq-max("sm") {
+      margin-top: rem(26px);
+    }
+    .p-pet-column-page {
+      background-color: #CBCBCB;
+      height: rem(2px);
+      width: rem(35px);
+      transition: .5s all;
+      margin-top: rem(18px);
+      &.is-active {
+        background-color: $c-primary;
+        opacity: 1;
+      }
+    }
+  }
+  &__post-card {
+    padding: rem(18px) rem(10px) rem(7px);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: rem(292px);
+    @include mq-max("sm") {
+      padding: rem(10px);
+      min-height: rem(276px);
+    }
+    &-img {
+      aspect-ratio: 280/157;
+      @include mq-max("sm") {
+        aspect-ratio: 299/149;
+      }
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &-title {
+      font-size: rem(14px);
+      font-weight: 700;
+      line-height: calc(22/14);
+      letter-spacing: 0.03em;
+      margin-top: rem(10px);
+      @include mq-max("sm") {
+        margin-top: rem(22px);
+        letter-spacing: 0.02em;
+        color: #4B4B4B;
+      }
+    }
+    &-readmore {
+      margin-top: auto;
+      text-align: right;
+      & a {
+        color: #ea5404;
+        font-size: rem(14px);
+        font-weight: 700;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        background: url(../img/arrow/arrow_lg_primary.svg) right center/0.4375rem no-repeat;
+        padding-right: 1rem;
+        transition: opacity 0.2s;
+      }
+    }
+  }
+  &__btn {
+    margin-top: rem(32px);
+  }
+  .splide:not(.is-overflow) .splide__pagination {
+    display: flex; //リロードしたときにdisplay: none;でpaginationが非表示になることを防ぐ処理
+  }
 }
