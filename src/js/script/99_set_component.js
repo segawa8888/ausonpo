@@ -26,7 +26,6 @@ function determineNavComponent(url) {
       return navComponents[pattern];
     }
   }
-  console.log("go");
   return "/component/blank.html"; // 該当無しの場合はblank
 }
 
@@ -78,5 +77,3 @@ Promise.all([
   .catch((error) => {
     console.error("Error loading components:", error);
   });
-
-//if (currentUrl.includes("/keiyakusya/") && index === 1) {
