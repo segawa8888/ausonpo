@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-koutsuujiko__recommend {
+    max-width: rem(830px);
+    margin-left: auto;
+    margin-right: auto;
+    padding:rem(24px) 0;
+    border-radius: rem(16px);
+    border: rem(1px) solid #BDBDBD;
+    margin-top: rem(37px);
+
+    @include mq-max("md") {
+        padding:rem(24px) rem(12px);
+      }
+
+    .c-list-dot {
+        max-width: rem(413px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

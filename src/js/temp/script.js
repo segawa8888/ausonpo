@@ -181,6 +181,21 @@ document.addEventListener("componentsLoaded", () => {
   }
 });
 
+// スクロールイベントの処理
+window.addEventListener("scroll", function() {
+  var floatingElement = document.querySelector('.p-hoken-floating');
+  if (!floatingElement) return;  // 要素がない場合は何もしない
+
+  if (window.scrollY > 800) {
+      // スクロールが100ピクセルを超えた場合、要素を表示
+      floatingElement.classList.add('visible');
+  } else {
+      // そうでない場合は非表示に
+      floatingElement.classList.remove('visible');
+  }
+});
+
+
 /*----------------------------------------------------------
 Pocket.Inc PCでの電話リンクの無効化処理 - 2023-11-13
 ----------------------------------------------------------*/

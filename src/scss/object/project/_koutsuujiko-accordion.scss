@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.js-up-accordion-body {
+    transition: height 0.5s ease;
+    overflow: hidden;
+    padding-bottom: rem(30px);
+  }
+
+  .u-link-has-arrow.--right {
+    padding-left: initial;
+    padding-right: rem(20px);
+    background: url(../img/arrow/arrow_sm_black.svg) right center no-repeat;
+    background-size: rem(10px) ;
+  }

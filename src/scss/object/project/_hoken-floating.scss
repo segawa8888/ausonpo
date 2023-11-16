@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-hoken-floating {
+    position: fixed;
+	right: rem(16px);
+    top:35%;
+    width: rem(134px);
+    height: rem(98px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index:10001;
+}
+
+.p-hoken-floating.visible {
+    opacity: 1;
+    visibility: visible;
+}
