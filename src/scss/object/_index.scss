@@ -47,6 +47,7 @@ object/project
 @use "project/keiyakusya-kaigai-type";
 @use "project/keiyakusya-kaigai-estimate";
 @use "project/keiyakusya-table";
+@use "project/keiyakusya-table-type";
 @use "project/keiyakusya-point";
 @use "project/kaigai-payment";
 @use "project/kaigai-user";
@@ -54,3 +55,11 @@ object/project
 @use "project/kokunai-service";
 @use "project/kokunai-payment";
 @use "project/golf-feature";
+@use "project/koutsuujiko";
+@use "project/koutsuujiko-point";
+@use "project/koutsuujiko-detail";
+@use "project/_koutsuujiko-accordion";
+@use "project/_koutsuujiko-accordion-lists";
+@use "project/_koutsuujiko-accordion-service";
+@use "project/sports-point";
+@use "project/hoken-floating";

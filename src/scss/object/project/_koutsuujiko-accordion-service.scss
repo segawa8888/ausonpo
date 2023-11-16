@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-koutsuujiko-accordion-service {
+    max-width: rem(980px);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: rem(16px);
+    border: rem(2px) solid #EA5404;
+    margin-top: rem(17px);
+    padding:rem(16px) 0 rem(13px) 0;
+    @include mq-max("md") {
+        padding:rem(25px) 0 rem(41px) 0;
+    }
+}
+
+.p-koutsuujiko-accordion-service__wrap {
+    display: flex;
+    justify-content:center;
+    gap:0 rem(24px);
+    padding:0 rem(47px);
+    margin-top: rem(14px);
+    @include mq-max("md") {
+        flex-wrap:wrap;
+        padding:0 rem(18px);
+    }
+}
+
+.p-koutsuujiko-accordion-service__img {
+    max-width: rem(218px);
+}
+
+.p-koutsuujiko-accordion-service__text {
+    max-width: rem(496px);
+}
+
+.p-koutsuujiko-accordion-service__choice {
+    max-width: rem(692px);
+    margin-left: auto;
+    margin-right: auto;
+    @include mq-max("md") {
+        padding-left: rem(15px);
+        padding-right: rem(15px);
+    }
+}
+
+.p-koutsuujiko-accordion-service__content {
+    max-width: rem(720px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-koutsuujiko-accordion-service__items {
+    display: flex;
+    gap:rem(20px) rem(40px);
+    flex-wrap:wrap;
+    @include mq-max("md") {
+        gap:rem(16px) 0;
+        justify-content: space-between;
+     }
+}
+
+.p-koutsuujiko-accordion-service__item {
+    border-radius: rem(8px);
+    border: rem(1px) solid #DEDEDE;
+    padding:rem(27px) rem(16px) rem(37px) rem(16px);
+    max-width: rem(340px);
+    width: 100%;
+    @include mq-max("md") {
+        max-width: rem(165px);
+        border-radius: rem(10px);
+        padding:rem(27px) 0 rem(37px) 0;
+        min-height:rem(178px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+        small {
+            color: #5c5c5c;
+    }
+
+    .c-btn {
+        width: rem(307px);
+        height: rem(38px);
+        @include mq-max("md") {
+            width: rem(151px);
+        }
+    }
+}
+
+.p-koutsuujiko-accordion-service__item__announce {
+    position: relative;
+
+    small {
+        position: absolute;
+        bottom:rem(-20px);
+        left: 0;
+        @include mq-max("md") {
+            white-space: nowrap;
+            left:8%;
+        }
+    }
+}

@@ -241,3 +241,55 @@
 .p-keiyakusya-accordion-sub-inner__icon {
     max-width: rem(36px);
 }
+
+.p-keiyakusya-type__title {
+    font-size: rem(24px);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: rem(2.4px);
+    position: relative;
+    width:fit-content;
+    margin:0 auto;
+    padding:0 rem(40px);
+    @include mq-max("md") {
+        font-size: rem(16px);
+        white-space: nowrap;
+      }
+    span {
+        color: $c-primary;
+        font-size: rem(32px);
+        letter-spacing: rem(3.2px);
+        @include mq-max("md") {
+            font-size: rem(28px);
+          }
+    }
+
+    &::before {
+        content: '';
+        width:rem(37px);
+        height:rem(63.72px);
+        position: absolute;
+        bottom:0;
+        left:0;
+        background-image: url(../img/koutsuujiko/koutsuujiko_section_title_before.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        content: '';
+        width:rem(37px);
+        height:rem(63.72px);
+        position: absolute;
+        bottom:0;
+        right:0;
+        background-image: url(../img/koutsuujiko/koutsuujiko_section_title_after.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.p-keiyakusya-type__banner {
+    max-width: rem(812px);
+}
