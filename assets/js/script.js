@@ -529,16 +529,16 @@ Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 
 //ナビゲーションコンポーネント一覧
 const navComponents = {
-  "/corporate/": "/component/nav-corporate.html",
-  "/keiyakusya/bycle/": "/component/nav-keiyakusya-bycle.html",
-  "/keiyakusya/pet/": "/component/nav-keiyakusya-pet.html",
-  "/keiyakusya/kaigai/": "/component/nav-keiyakusya-kaigai.html",
-  "/keiyakusya/kokunai/": "/component/nav-keiyakusya-kokunai.html",
-  "/keiyakusya/sports/": "/component/nav-keiyakusya-sports.html",
-  "/keiyakusya/golf/": "/component/nav-keiyakusya-golf.html",
-  "/pc/bycle": "/component/nav-bicycle.html",
-  "/pc/pet-dog": "/component/nav-pet-dog.html",
-  "/pc/pet-cat": "/component/nav-pet-cat.html",
+  "/corporate/": "/component/layout/nav-corporate.html",
+  "/keiyakusya/bycle/": "/component/layout/nav-keiyakusya-bycle.html",
+  "/keiyakusya/pet/": "/component/layout/nav-keiyakusya-pet.html",
+  "/keiyakusya/kaigai/": "/component/layout/nav-keiyakusya-kaigai.html",
+  "/keiyakusya/kokunai/": "/component/layout/nav-keiyakusya-kokunai.html",
+  "/keiyakusya/sports/": "/component/layout/nav-keiyakusya-sports.html",
+  "/keiyakusya/golf/": "/component/layout/nav-keiyakusya-golf.html",
+  "/pc/bycle": "/component/layout/nav-bicycle.html",
+  "/pc/pet-dog": "/component/layout/nav-pet-dog.html",
+  "/pc/pet-cat": "/component/layout/nav-pet-cat.html",
 };
 
 // 対応するコンポーネントを決定する関数
@@ -555,13 +555,23 @@ function determineNavComponent(url) {
 // 全てのコンポーネントの読み込みを管理
 Promise.all([
   //コンポーネントの読み込み処理
-  loadComponent("/component/meta.html", "head", "afterbegin"),
-  loadComponent("/component/ogp.html", "head", "beforeend"),
-  loadComponent("/component/footer.html", ".l-main", "afterend"),
-  loadComponent("/component/header.html", "body", "afterbegin").then(() => {
+  loadComponent("/component/head/meta.html", "head", "afterbegin"),
+  loadComponent("/component/head/ogp.html", "head", "beforeend"),
+  loadComponent("/component/layout/footer.html", ".l-main", "afterend"),
+  loadComponent("/component/layout/header.html", "body", "afterbegin").then(() => {
     return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
   }),
 ])
+  .then(() => {
+    // data-component属性を持つ要素をすべて取得
+    const dataComponentElements = document.querySelectorAll("[data-component]");
+    // 各要素に対してコンポーネントを読み込む
+    dataComponentElements.forEach((elm) => {
+      const componentName = elm.getAttribute("data-component");
+      const componentPath = `/component/${componentName}.html`;
+      loadComponent(componentPath, `[data-component="${componentName}"]`, "afterbegin");
+    });
+  })
   .then(() => {
     // 全てのコンポーネントが読み込まれたことを示すイベントをディスパッチ
     document.dispatchEvent(componentsLoaded);
