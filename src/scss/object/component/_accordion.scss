@@ -60,6 +60,12 @@
       }
     }
   }
+  & + & {
+    margin-top: rem(32px);
+    @include mq-max("sm") {
+      margin-top: rem(10px);
+    }
+  }
 }
 
 .c-accordion-4 {

@@ -8,11 +8,11 @@
   </head>
 
   <body style="visibility: hidden">
-    <nav class="c-breadcrumbs">
-      <ol class="c-breadcrumbs__list l-container lg:-full sm:-full">
-        <li class="c-breadcrumbs__item"><a href="/">au損保トップ</a></li>
-        <li class="c-breadcrumbs__item"><a href="./">コンポーネント一覧</a></li>
-        <li class="c-breadcrumbs__item">here</li>
+    <nav class="c-breadcrumbs" aria-label="breadcrumb">
+      <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="c-breadcrumbs__list l-container lg:-full sm:-full">
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/">au損保トップ</a><meta itemprop="position" content="1" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="./">コンポーネント一覧</a><meta itemprop="position" content="1" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page">here<meta itemprop="position" content="4" /></li>
       </ol>
     </nav>
     <main class="l-main l-container lg:-full sm:-full js-main">
@@ -77,6 +77,13 @@ background-image: url(../img/common/header_icon_login_pc.webp);
 </code>
 </pre>
         </li>
+      </ul>
+
+      <h2 class="c-heading2-has-line">JavaScriptのコーディングについて</h2>
+      <ul class="c-list-dot l-container lg:-sm u-mt-10">
+        <li>ソースは/src/js/script/。保存すると/assets/フォルダにコンパイルされます。</li>
+        <li>スライダー系を追加する場合は/src/js/script/05_slider.jsにまとめて下さい。</li>
+        <li>新しい機能を実装する際は「連番_機能名.js」でファイルを追加して下さい。</li>
       </ul>
     </main>
 

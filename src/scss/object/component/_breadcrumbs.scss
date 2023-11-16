@@ -22,9 +22,10 @@
   &__item {
     white-space: nowrap;
     &:not(:first-child)::before {
-      content: "＞";
+      content: "\003e";
       display: inline-block;
-      margin: 0 1em;
+      margin: 0 1em 0.1em;
+      transform: translateY(rem(-1px));
     }
     a {
       @include hover {

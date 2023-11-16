@@ -50,6 +50,7 @@
       }
     }
     &.-icon-tel {
+      padding-right: rem(52px);
       &::before {
         background-image: url(../img/icon/icon_tel.webp);
         .no-webp-support & {
@@ -65,12 +66,14 @@
   }
 
   &__call-free {
-    width: 44px;
+    width: rem(44px);
     height: auto;
-    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: rem(-10px);
+    //display: inline-block;
     line-height: 1em;
-    margin: -0.5em 0 -0.25em rem(6px);
-    vertical-align: middle;
+    //margin: -0.5em 0 -0.25em rem(6px);
   }
   &__btn {
     flex: 1;
@@ -92,9 +95,9 @@
     font-size: rem(14px);
     font-weight: 700;
     border-bottom: dotted $c-black rem(2px);
-    padding-left: rem(28px);
+    //padding-left: rem(28px);
     padding-bottom: rem(6px);
-    background: url(../img/icon/icon_operator.svg) left top / rem(20px) no-repeat;
+    //background: url(../img/icon/icon_operator.svg) left top / rem(20px) no-repeat;
     width: fit-content;
     span {
       font-size: rem(24px);

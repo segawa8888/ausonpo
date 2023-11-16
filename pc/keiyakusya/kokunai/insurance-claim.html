@@ -8,16 +8,12 @@
   </head>
 
   <body style="visibility: hidden">
-    <nav class="c-breadcrumbs">
-      <ol class="c-breadcrumbs__list l-container lg:-full sm:-full">
-        <li class="c-breadcrumbs__item"><a href="/pc/">au損保トップ</a></li>
-        <li class="c-breadcrumbs__item">
-          <a href="/pc/keiyakusya/">ご契約者さまへ</a>
-        </li>
-        <li class="c-breadcrumbs__item">
-          <a href="/pc/keiyakusya/kokunai/">【国内旅行保険】契約者さま情報ページ</a>
-        </li>
-        <li class="c-breadcrumbs__item">保険金請求をしたい</li>
+    <nav class="c-breadcrumbs" aria-label="breadcrumb">
+      <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="c-breadcrumbs__list l-container lg:-full sm:-full">
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/pc/">au損保トップ</a><meta itemprop="position" content="1" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/pc/keiyakusya/">ご契約者さまへ</a><meta itemprop="position" content="1" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/pc/keiyakusya/kokunai">国内旅行の保険</a><meta itemprop="position" content="1" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page">保険金の請求をしたい<meta itemprop="position" content="4" /></li>
       </ol>
     </nav>
 
@@ -33,7 +29,7 @@
             <p class="u-text-center">
               <a href="https://webjiko-self.au-sonpo.co.jp/cs/bims/efnol/input_infection" class="c-btn -lg -external">Webから保険金を請求する</a>
             </p>
-            <p class="u-text-center u-text-10 u-mt-4">※請求区分で「損害」を選択してください。</p>
+            <p class="u-text-center u-text-10 u-mt-4">※遷移先で、請求区分から「傷害」を選択してください。</p>
           </div>
         </section>
 
@@ -112,7 +108,7 @@
           </div>
         </div>
 
-        <div class="c-accordion u-mt-12">
+        <div class="c-accordion">
           <h3 class="c-accordion__heading js-accordion-toggle-btn">保険金のお支払いにあたり、<br class="lg:u-hidden" />ご理解・ご協力いただきたいこと</h3>
           <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
             <div class="c-accordion__content">
@@ -144,7 +140,7 @@
           </div>
         </div>
 
-        <div class="c-accordion u-mt-12">
+        <div class="c-accordion">
           <h3 class="c-accordion__heading js-accordion-toggle-btn">保険請求の対象外となるものについて</h3>
           <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
             <div class="c-accordion__content">
