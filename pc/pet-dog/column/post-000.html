@@ -17,16 +17,17 @@
       </ol>
     </nav>
     <main class="l-main l-container lg:-full sm:-full js-main">
-      <article class="p-column__article">
+      <article class="p-column__article" itemscope itemtype="http://schema.org/Article">
         <!--▼記事タイトル-->
         <header class="c-post-heading">
-          <h1 class="c-post-heading__title">コラムタイトルが入ります</h1>
+          <h1 class="c-post-heading__title" itemprop="headline">コラムタイトルが入ります</h1>
           <div class="c-post-meta">
-            <time class="c-post-meta__date" datetime="2023-10-12">2023.10.19</time>
-            <div class="c-post-meta__category">カテゴリー名がはいる</div>
+            <time class="c-post-meta__date" datetime="2023-10-19">2023.10.19</time>
+            <meta itemprop="datePublished" content="2023-10-19" />
+            <div class="c-post-meta__category" itemprop="articleSection">カテゴリー名がはいる</div>
             <ul class="c-post-meta__tag-list">
-              <li class="c-post-meta__tag"><a href="#">#タグ</a></li>
-              <li class="c-post-meta__tag"><a href="#">#タグ</a></li>
+              <li class="c-post-meta__tag"><a href="#" itemprop="keywords">#タグ</a></li>
+              <li class="c-post-meta__tag"><a href="#" itemprop="keywords">#タグ</a></li>
             </ul>
           </div>
         </header>
@@ -37,7 +38,7 @@
             <source srcset="/assets/img/sample/column_eycatche_sp.webp" media="(max-width: 519px)" type="image/webp" />
             <source srcset="/assets/img/sample/column_eycatche_sp.jpg" media="(max-width: 519px)" />
             <source srcset="/assets/img/sample/column_eycatche_pc.webp" type="image/webp" />
-            <img src="/assets/img/sample/column_eycatche_pc.jpg" alt="アイキャッチ画像" />
+            <img src="/assets/img/sample/column_eycatche_pc.jpg" alt="アイキャッチ画像" itemprop="image" />
           </picture>
         </figure>
 
@@ -51,13 +52,15 @@
           </ul>
         </nav>
 
-        <!--▼以下コンテンツ-->
-        <h3 class="p-column__heading" id="001">画像の格納先について</h3>
-        <p>/assets/img/pet-dog/column/ フォルダ内に格納して下さい。</p>
-        <h3 class="p-column__heading" id="002">犬の風邪とは？受診する目安(見出しサンプル)</h3>
-        <p>
-          １行あたり30~40文字が読みやすいとされている。これで40文字です。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
-        </p>
+        <div itemprop="articleBody">
+          <!--▼以下コンテンツ-->
+          <h3 class="p-column__heading" id="001">画像の格納先について</h3>
+          <p>/assets/img/pet-dog/column/ フォルダ内に格納して下さい。</p>
+          <h3 class="p-column__heading" id="002">犬の風邪とは？受診する目安(見出しサンプル)</h3>
+          <p>
+            １行あたり30~40文字が読みやすいとされている。これで40文字です。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+          </p>
+        </div>
       </article>
     </main>
 
