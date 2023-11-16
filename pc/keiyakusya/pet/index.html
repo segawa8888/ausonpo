@@ -10,9 +10,9 @@
   <body style="visibility: hidden">
     <nav class="c-breadcrumbs" aria-label="breadcrumb">
       <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="c-breadcrumbs__list l-container lg:-full sm:-full">
-        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/pc/keiyakusya/">au損保トップ</a><meta itemprop="position" content="1" /></li>
-        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/pc/keiyakusya/">ご契約者さまへ</a><meta itemprop="position" content="1" /></li>
-        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page">ペットの保険<meta itemprop="position" content="4" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/pc/">au損保トップ</a><meta itemprop="position" content="1" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/pc/keiyakusya/">ご契約者さまへ</a><meta itemprop="position" content="2" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page">ペットの保険<meta itemprop="position" content="3" /></li>
       </ol>
     </nav>
 
@@ -40,7 +40,7 @@
             </a>
           </li>
           <li>
-            <a href="/pc/keiyakusya/pet/covenants.html" class="c-btn-important-1">
+            <a href="/pc/keiyakusya/pet/jyusetsu.html" class="c-btn-important-1">
               <picture class="c-btn-important-1__icon">
                 <source srcset="/assets/img/keiyakusya/icon_document.webp" type="image/webp" />
                 <img src="/assets/img/keiyakusya/icon_document.png" alt="" loading="eager" />
@@ -116,55 +116,57 @@
           </div>
         </section>
 
-        <h2 class="c-heading2-has-line sm:u-mt-28">ペットの保険ご契約者様からの<br class="lg:u-hidden" />よくあるご質問</h2>
-        <ol class="c-faq l-container lg:-md u-mt-12">
-          <li class="c-faq__item">
-            <h4 class="c-faq__title js-accordion-toggle-btn">【ペットの保険】一度加入すれば終身継続できますか？</h4>
-            <div class="c-faq__wrapper js-accordion-toggle-content">
-              <div class="c-faq__content">原則、終身ご継続いただくことが可能です。但し、保険期間中における保険金のお支払い合計額が、保険証券記載の支払限度額に達した場合による失効等の事由が発生した場合はご継続いただけません。</div>
-            </div>
-          </li>
-          <li class="c-faq__item">
-            <h4 class="c-faq__title js-accordion-toggle-btn">【ペットの保険】保険金を受け取った場合、継続時の保険料は高くなりますか？</h4>
-            <div class="c-faq__wrapper js-accordion-toggle-content">
-              <div class="c-faq__content">保険金の受領によって保険料が高くなることはありません。保険料はご契約の保険開始日時点の補償の対象となる犬または猫の満年齢で決まります。</div>
-            </div>
-          </li>
-          <li class="c-faq__item">
-            <h4 class="c-faq__title js-accordion-toggle-btn">【ペットの保険】継続時の保険料は毎年変わりますか？</h4>
-            <div class="c-faq__wrapper js-accordion-toggle-content">
-              <div class="c-faq__content">継続契約の保険開始日時点における対象ペットの年齢により、保険料が毎年変更となります。</div>
-            </div>
-          </li>
-          <li class="c-faq__item">
-            <h4 class="c-faq__title js-accordion-toggle-btn">【ペットの保険】ペットの保険で保険期間の途中でタイプもしくはコースを変更することはできますか？</h4>
-            <div class="c-faq__wrapper js-accordion-toggle-content">
-              <div class="c-faq__content">
-                保険期間（ご契約期間）中に、タイプ・コースともに変更はできません。<br />
-                タイプ・コースの変更をご希望の場合、「お客さま専用ページ」から現在の契約を解約し、改めてご希望のタイプ・コースにご加入いただくことになります。なお、解約して新たにご加入される場合には、改めてその時点における補償の対象となる犬または猫の健康状態を告知いただくことになります。そのため、その告知の内容によりお引受けできない場合や特定の疾病や特定の身体部位を補償の対象外としてお引受けする場合があるなど、お客さまにとって不利益となる場合がありますのでご注意ください。
+        <section itemscope itemtype="http://schema.org/FAQPage">
+          <h2 class="c-heading2-has-line sm:u-mt-28">ペットの保険ご契約者様からの<br class="lg:u-hidden" />よくあるご質問</h2>
+          <ol class="c-faq l-container lg:-md u-mt-12">
+            <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
+              <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">【ペットの保険】一度加入すれば終身継続できますか？</h4>
+              <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
+                <div itemprop="text" class="c-faq__content">原則、終身ご継続いただくことが可能です。但し、保険期間中における保険金のお支払い合計額が、保険証券記載の支払限度額に達した場合による失効等の事由が発生した場合はご継続いただけません。</div>
               </div>
-            </div>
-          </li>
-          <li class="c-faq__item">
-            <h4 class="c-faq__title js-accordion-toggle-btn">【ペットの保険】申込み手続き完了後すぐに補償を受けられますか？(待機期間とはなんですか？)</h4>
-            <div class="c-faq__wrapper js-accordion-toggle-content">
-              <div class="c-faq__content">
-                すぐに補償は開始しません。この保険の保険開始日は以下のとおりです。<br />
-                ■　初年度契約（新規のご契約）の場合<br />
-                ①毎月1日から20日までにお申込み手続きを完了した場合は、その翌月1日の午前0時<br />
-                ②毎月21日から月末までにお申込み手続きを完了した場合は、その翌々月1日の午前0時<br />
-                <br />
-                なお、保険契約が初年度契約である場合において、保険期間の初日からその日を含めて30日間（待機期間）に発症した「病気」についてはお支払の対象にはなりません。ただし、継続契約には待機期間はありません。<br />
-                <br />
-                ■　継続契約の場合<br />
-                満期を迎えるご契約の末日の午後4時（ただし、満期を迎えるご契約の末日の午後4時以降にお申込み手続きをされた場合は、ご契約成立後に保険責任が開始されます。）なお、継続契約には待機期間はありません。
+            </li>
+            <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
+              <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">【ペットの保険】保険金を受け取った場合、継続時の保険料は高くなりますか？</h4>
+              <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
+                <div itemprop="text" class="c-faq__content">保険金の受領によって保険料が高くなることはありません。保険料はご契約の保険開始日時点の補償の対象となる犬または猫の満年齢で決まります。</div>
               </div>
-            </div>
-          </li>
-        </ol>
-        <p class="u-text-center u-mt-8">
-          <a href="https://faq.au-sonpo.co.jp/" class="c-btn -md"> よくある質問をもっとみる </a>
-        </p>
+            </li>
+            <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
+              <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">【ペットの保険】継続時の保険料は毎年変わりますか？</h4>
+              <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
+                <div itemprop="text" class="c-faq__content">継続契約の保険開始日時点における対象ペットの年齢により、保険料が毎年変更となります。</div>
+              </div>
+            </li>
+            <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
+              <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">【ペットの保険】ペットの保険で保険期間の途中でタイプもしくはコースを変更することはできますか？</h4>
+              <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
+                <div itemprop="text" class="c-faq__content">
+                  保険期間（ご契約期間）中に、タイプ・コースともに変更はできません。<br />
+                  タイプ・コースの変更をご希望の場合、「お客さま専用ページ」から現在の契約を解約し、改めてご希望のタイプ・コースにご加入いただくことになります。なお、解約して新たにご加入される場合には、改めてその時点における補償の対象となる犬または猫の健康状態を告知いただくことになります。そのため、その告知の内容によりお引受けできない場合や特定の疾病や特定の身体部位を補償の対象外としてお引受けする場合があるなど、お客さまにとって不利益となる場合がありますのでご注意ください。
+                </div>
+              </div>
+            </li>
+            <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
+              <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">【ペットの保険】申込み手続き完了後すぐに補償を受けられますか？(待機期間とはなんですか？)</h4>
+              <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
+                <div itemprop="text" class="c-faq__content">
+                  すぐに補償は開始しません。この保険の保険開始日は以下のとおりです。<br />
+                  ■　初年度契約（新規のご契約）の場合<br />
+                  ①毎月1日から20日までにお申込み手続きを完了した場合は、その翌月1日の午前0時<br />
+                  ②毎月21日から月末までにお申込み手続きを完了した場合は、その翌々月1日の午前0時<br />
+                  <br />
+                  なお、保険契約が初年度契約である場合において、保険期間の初日からその日を含めて30日間（待機期間）に発症した「病気」についてはお支払の対象にはなりません。ただし、継続契約には待機期間はありません。<br />
+                  <br />
+                  ■　継続契約の場合<br />
+                  満期を迎えるご契約の末日の午後4時（ただし、満期を迎えるご契約の末日の午後4時以降にお申込み手続きをされた場合は、ご契約成立後に保険責任が開始されます。）なお、継続契約には待機期間はありません。
+                </div>
+              </div>
+            </li>
+          </ol>
+          <p class="u-text-center u-mt-8">
+            <a href="https://faq.au-sonpo.co.jp/" class="c-btn -md"> よくある質問をもっとみる </a>
+          </p>
+        </section>
       </div>
     </main>
     <!--javascript-->
