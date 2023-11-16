@@ -14,15 +14,18 @@
     align-items: center;
     justify-content: space-between;
     margin: rem(24px) auto 0;
-    width: rem(378px);
+    width: rem(358px);
     @include mq-max("sm") {
-      width: 100%;
+      width: rem(340px);
     }
   }
   &__item {
-    width: rem(180px);
-    @include mq-max("sm") {
-      width: rem(172px);
+    img {
+      width: auto;
+      height: rem(53px);
+      @include mq-max("sm") {
+        height: rem(50px);
+      }
     }
   }
   &__btn {
