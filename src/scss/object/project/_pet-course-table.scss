@@ -4,136 +4,118 @@
 .p-pet-course-table {
   border-radius: 5px;
   width: 100%;
-  border-collapse:separate;
+  border-collapse: separate;
   border: none;
   border-radius: 3px;
   position: relative;
 
-  &::before{
+  &::before {
     content: "人気";
-        display: block;
-        position: absolute;
-        width: rem(34px);
-        height: rem(34px);
-        mask-image: url(../img/pet/pet_cat_star.svg);
-        mask-repeat: no-repeat;
-        mask-position: center;
-        mask-size: contain;
-        background-color: #FFF682;
-        color:#EA5404 ;
-        top: 0;
-        left: 4px;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        padding-top: 4%;
-        font-size: rem(10px);
-        font-weight: 700;
+    display: block;
+    position: absolute;
+    width: rem(34px);
+    height: rem(34px);
+    mask-image: url(/pc/pet/assets/img/pet_cat_star.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    background-color: #fff682;
+    color: #ea5404;
+    top: 0;
+    left: 4px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    padding-top: 4%;
+    font-size: rem(10px);
+    font-weight: 700;
   }
-
-
-
 
   &__heading {
-    color: #FFF;
+    color: #fff;
     text-align: center;
-    font-family:'メイリオ', 'Meiryo', sans-serif;
+    font-family: "メイリオ", "Meiryo", sans-serif;
     font-size: rem(18px);
     font-weight: 700;
-    line-height: 276%; 
-    background-color: #EA5404;
+    line-height: 276%;
+    background-color: #ea5404;
 
-    & span{
+    & span {
       font-size: rem(13px);
       font-family: $body-font-family;
-
     }
-  
   }
-  
+
   &__title {
-    color: #EA5404;
+    color: #ea5404;
     font-size: rem(16px);
     font-weight: 700;
-    line-height: 236%; 
-    background: #FFDABA;
-  
+    line-height: 236%;
+    background: #ffdaba;
   }
-  
+
   &__price {
     color: #000;
     font-size: rem(56px);
     font-weight: 700;
-    background: #FFF3E8;
+    background: #fff3e8;
     padding: rem(10px) rem(10px) rem(10px) rem(30px);
 
-    & span{
+    & span {
       font-size: rem(17px);
       font-weight: 700;
-      
     }
-
-   
   }
-  & th,& td{
-    border-left: rem(6px) solid #FFDABA;
-    
-      &:first-child{
-        border-left:none;
+  & th,
+  & td {
+    border-left: rem(6px) solid #ffdaba;
 
-    
+    &:first-child {
+      border-left: none;
     }
-
   }
   /* 左上 */
-  & th:first-child{
+  & th:first-child {
     border-radius: 3px 0 0 0;
   }
   /* 右上 */
-  & th:last-child{
+  & th:last-child {
     border-radius: 0 3px 0 0;
   }
   /* 左下 */
-  & tr:last-child td:first-child{
+  & tr:last-child td:first-child {
     border-radius: 0 0 0 3px;
   }
   /* 右下 */
-  & tr:last-child td:last-child{
+  & tr:last-child td:last-child {
     border-radius: 0 0 3px 0;
   }
-
 }
 
-.p-pet-course-table--yellow{
-  .p-pet-course-table{
-
+.p-pet-course-table--yellow {
+  .p-pet-course-table {
     &__heading {
       color: #000;
-      background-color: #FFF682;
+      background-color: #fff682;
     }
-    
+
     &__title {
       color: #000;
-      background: #FFFABA;
-      
+      background: #fffaba;
     }
-    
+
     &__price {
       color: #000;
-      background: #FFFEEA;
+      background: #fffeea;
       padding: rem(10px);
     }
-    
   }
-  &::before{
-        background-color: #EA5404 ;
-        color:#fff ;
+  &::before {
+    background-color: #ea5404;
+    color: #fff;
   }
-  & th,& td{
-    border-left: rem(6px) solid #FFF;
-  
-
+  & th,
+  & td {
+    border-left: rem(6px) solid #fff;
+  }
 }
-}
-
-

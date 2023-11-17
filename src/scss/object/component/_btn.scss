@@ -2,7 +2,7 @@
 @use "../../global" as *;
 
 .c-btn-important-1 {
-  background: url(../img/arrow/arrow_bold_primary.svg) right rem(16px) center no-repeat;
+  background: url(/common_2024/img/arrow/arrow_bold_primary.svg) right rem(16px) center no-repeat;
   background-size: rem(18px);
   border: 1px solid $c-base-200;
   border-radius: rem(20px);
@@ -15,7 +15,7 @@
   padding: 0 rem(36px) 0 rem(12px);
   transition: all 0.2s ease;
   &.-external {
-    background-image: url(../img/icon/icon_external_primary.svg);
+    background-image: url(/common_2024/img/icon/icon_external_primary.svg);
   }
   &__icon {
     width: rem(56px);
@@ -63,7 +63,7 @@
 .c-btn-login {
   width: 100%;
   max-width: rem(308px);
-  background: $c-white url(../img/arrow/arrow_bold_login.svg) right rem(22px) center no-repeat;
+  background: $c-white url(/common_2024/img/arrow/arrow_bold_login.svg) right rem(22px) center no-repeat;
   background-size: rem(18px);
   box-shadow: 0 rem(4px) 0 $c-base-200;
   height: rem(58px);
@@ -82,7 +82,7 @@
   &__icon {
     width: rem(58px);
     height: 100%;
-    background: url(../img/icon/icon_user.svg) center center / rem(20px) $c-login no-repeat;
+    background: url(/common_2024/img/icon/icon_user.svg) center center / rem(20px) $c-login no-repeat;
   }
   &__text {
     flex: 1;
@@ -123,7 +123,7 @@
     letter-spacing: 0;
     min-width: rem(300px);
     height: rem(60px);
-    background-image: url(../img/arrow/arrow_lg_primary.svg);
+    background-image: url(/common_2024/img/arrow/arrow_lg_primary.svg);
     background-size: rem(7px);
     background-position: right rem(13px) center;
 
@@ -135,12 +135,12 @@
     font-size: rem(16px);
     width: rem(340px);
     height: rem(40px);
-    background-image: url(../img/arrow/arrow_md_primary.svg);
+    background-image: url(/common_2024/img/arrow/arrow_md_primary.svg);
     background-position: right rem(8px) center;
     background-size: rem(6px);
   }
   &.-external {
-    background-image: url(../img/icon/icon_external_primary.svg);
+    background-image: url(/common_2024/img/icon/icon_external_primary.svg);
     &.-md {
       background-size: rem(14px);
     }

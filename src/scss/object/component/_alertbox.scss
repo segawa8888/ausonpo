@@ -8,7 +8,7 @@
   line-height: 1.6;
   letter-spacing: 0.03em;
   padding: rem(16px) rem(12px) rem(16px) rem(56px);
-  background: url(../img/icon/icon_alert.svg) rem(12px) center no-repeat;
+  background: url(/common_2024/img/icon/icon_alert.svg) rem(12px) center no-repeat;
   background-size: rem(32px);
   border: 1px solid $c-danger;
   @include mq-max("sm") {

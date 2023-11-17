@@ -5,7 +5,7 @@
   position: relative;
   &:not(:first-child) {
     &::after {
-      background: url(../img/arrow/arrow_round_primary.svg) center center/contain no-repeat;
+      background: url(/common_2024/img/arrow/arrow_round_primary.svg) center center/contain no-repeat;
       content: "";
       display: block;
       height: 1.25rem;
