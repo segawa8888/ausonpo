@@ -64,7 +64,11 @@
       }
     }
   }
-
+  &__heading-sub {
+    display: block;
+    font-size: rem(10px);
+    margin-top: rem(4px);
+  }
   &__call-free {
     width: rem(44px);
     height: auto;

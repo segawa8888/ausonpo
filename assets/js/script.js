@@ -374,6 +374,68 @@ document.addEventListener("componentsLoaded", () => {
       },
     }).mount();
   }
+
+    //ペットの保険 mvスライダー
+    const mvSlider = document.querySelector(".js-mv-slider"); // 対象となる要素を取得
+    if (mvSlider) {
+      new Splide(mvSlider, {
+        autoplay: true,
+        type   : 'loop',
+        perMove: 1,
+        arrows: false,
+        gap: '-1.8rem',
+        focus: 0,
+        padding: '9.625rem',
+        updateOnMove: true,
+        autoScroll: {
+          speed: 0.3,
+          pauseOnHover: false,
+        },
+        classes: {
+          pagination: "splide__pagination p-pet-column-pagination",
+          page: "splide__pagination__page p-pet-column-page",
+        },
+        breakpoints: {
+          520:{
+          perPage: 1,
+          gap: '0.78rem',
+          padding: '2.099rem',
+          }
+        }
+      }).mount();
+    }
+  
+    //ワンちゃんとの暮らしに役立つコラムのスライダー
+    const petSlider = document.querySelector(".js-column-slider"); // 対象となる要素を取得
+    if (petSlider) {
+      new Splide(petSlider, {
+        autoplay: true,
+        type   : 'loop',
+        perPage: 3,
+        perMove: 1,
+        arrows: false,
+        gap: '3.125rem',
+        focus: 0,
+        padding: '3.125rem',
+        autoScroll: {
+          speed: 0.5,
+          pauseOnHover: false,
+        },
+        classes: {
+          pagination: "splide__pagination p-pet-column-pagination",
+          page: "splide__pagination__page p-pet-column-page",
+        },
+        breakpoints: {
+          520:{
+          type: "loop",
+          perPage: 1,
+          gap: '.625rem',
+          padding: '1.875rem',
+          }
+        }
+      }).mount();
+    }
+  
 });
 
 /*----------------------------------------------------------
@@ -396,72 +458,6 @@ document.addEventListener("componentsLoaded", () => {
   }
 });
 
-/*----------------------------------------------------------
-ペットの保険 スライダー - 2023-11-14
-----------------------------------------------------------*/
-//コンポーネント読み込み後
-document.addEventListener("componentsLoaded", () => {
-  //mvスライダー
-  const mvSlider = document.querySelector(".js-mv-slider"); // 対象となる要素を取得
-  if (mvSlider) {
-    var splide = new Splide( mvSlider, {
-      autoplay: true,
-      type   : 'loop',
-      perMove: 1,
-      arrows: false,
-      gap: '-1.8rem',
-      focus: 0,
-      padding: '9.625rem',
-      updateOnMove: true,
-      autoScroll: {
-        speed: 0.3,
-        pauseOnHover: false,
-      },
-      classes: {
-        pagination: "splide__pagination p-pet-column-pagination",
-        page: "splide__pagination__page p-pet-column-page",
-      },
-      breakpoints: {
-        520:{
-        perPage: 1,
-        gap: '0.78rem',
-        padding: '2.099rem',
-        }
-      }
-    }).mount();
-  }
-
-  //ワンちゃんとの暮らしに役立つコラムのスライダー
-  const petSlider = document.querySelector(".js-column-slider"); // 対象となる要素を取得
-  if (petSlider) {
-    var splide = new Splide( petSlider, {
-      autoplay: true,
-      type   : 'loop',
-      perPage: 3,
-      perMove: 1,
-      arrows: false,
-      gap: '3.125rem',
-      focus: 0,
-      padding: '3.125rem',
-      autoScroll: {
-        speed: 0.5,
-        pauseOnHover: false,
-      },
-      classes: {
-        pagination: "splide__pagination p-pet-column-pagination",
-        page: "splide__pagination__page p-pet-column-page",
-      },
-      breakpoints: {
-        520:{
-        type: "loop",
-        perPage: 1,
-        gap: '.625rem',
-        padding: '1.875rem',
-        }
-      }
-    }).mount();
-  }
-});
 /*----------------------------------------------------------
 Pocket.Inc PCでの電話リンクの無効化処理 - 2023-11-13
 ----------------------------------------------------------*/
@@ -492,33 +488,53 @@ document.addEventListener("componentsLoaded", () => {
 });
 
 /*----------------------------------------------------------
-Pocket.Inc ペット保険/補償内容のタブ切り替え
+Yoshiaki Numajiri ペット保険/補償内容のタブ切り替え
 ----------------------------------------------------------*/
+//コンポーネント読み込み後
+document.addEventListener("componentsLoaded", () => {
+  document.querySelectorAll(".js-pet-info").forEach((tab) => {
+    tab.addEventListener("click", function (event) {
+      event.preventDefault();
 
-document.querySelectorAll('.js-pet-info').forEach(tab => {
-  tab.addEventListener('click', function(event) {
-    event.preventDefault();
+      // すべてのタブから is-active クラスを削除
+      document.querySelectorAll(".js-pet-info").forEach((t) => {
+        t.classList.remove("is-active");
+        // 親要素からも is-active クラスを削除
+        t.parentNode.classList.remove("is-active");
+      });
 
-    // すべてのタブから is-active クラスを削除
-    document.querySelectorAll('.js-pet-info').forEach(t => {
-      t.classList.remove('is-active');
-      // 親要素からも is-active クラスを削除
-      t.parentNode.classList.remove('is-active');
+      // クリックされたタブとその親要素に is-active クラスを追加
+      this.classList.add("is-active");
+      this.parentNode.classList.add("is-active");
+
+      // すべてのコンテンツから is-active クラスを取り除く
+      document.querySelectorAll("[id^='pet-cont']").forEach((content) => {
+        content.classList.remove("is-active");
+      });
+
+      // 対応するコンテンツに is-active クラスを追加
+      const id = this.dataset.id;
+      document.getElementById(id).classList.add("is-active");
     });
-
-    // クリックされたタブとその親要素に is-active クラスを追加
-    this.classList.add('is-active');
-    this.parentNode.classList.add('is-active');
-
-    // すべてのコンテンツから is-active クラスを取り除く
-    document.querySelectorAll("[id^='pet-cont']").forEach(content => {
-      content.classList.remove('is-active');
-    });
-
-    // 対応するコンテンツに is-active クラスを追加
-    const id = this.dataset.id;
-    document.getElementById(id).classList.add('is-active');
   });
+});
+
+/*----------------------------------------------------------
+Haruto Segawa 保険 フローティングボタン- 2023-11-14
+----------------------------------------------------------*/
+document.addEventListener("componentsLoaded", () => {
+  const floatingElement = document.querySelector(".p-hoken-floating");
+  if (floatingElement) {
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 800) {
+        // スクロールが100ピクセルを超えた場合、要素を表示
+        floatingElement.classList.add("visible");
+      } else {
+        // そうでない場合は非表示に
+        floatingElement.classList.remove("visible");
+      }
+    });
+  }
 });
 
 /*----------------------------------------------------------
@@ -529,16 +545,16 @@ Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 
 //ナビゲーションコンポーネント一覧
 const navComponents = {
-  "/corporate/": "/component/nav-corporate.html",
-  "/keiyakusya/bycle/": "/component/nav-keiyakusya-bycle.html",
-  "/keiyakusya/pet/": "/component/nav-keiyakusya-pet.html",
-  "/keiyakusya/kaigai/": "/component/nav-keiyakusya-kaigai.html",
-  "/keiyakusya/kokunai/": "/component/nav-keiyakusya-kokunai.html",
-  "/keiyakusya/sports/": "/component/nav-keiyakusya-sports.html",
-  "/keiyakusya/golf/": "/component/nav-keiyakusya-golf.html",
-  "/pc/bycle": "/component/nav-bicycle.html",
-  "/pc/pet-dog": "/component/nav-pet-dog.html",
-  "/pc/pet-cat": "/component/nav-pet-cat.html",
+  "/corporate/": "/component/layout/nav-corporate.html",
+  "/keiyakusya/bycle/": "/component/layout/nav-keiyakusya-bycle.html",
+  "/keiyakusya/pet/": "/component/layout/nav-keiyakusya-pet.html",
+  "/keiyakusya/kaigai/": "/component/layout/nav-keiyakusya-kaigai.html",
+  "/keiyakusya/kokunai/": "/component/layout/nav-keiyakusya-kokunai.html",
+  "/keiyakusya/sports/": "/component/layout/nav-keiyakusya-sports.html",
+  "/keiyakusya/golf/": "/component/layout/nav-keiyakusya-golf.html",
+  "/pc/bycle": "/component/layout/nav-bicycle.html",
+  "/pc/pet-dog": "/component/layout/nav-pet-dog.html",
+  "/pc/pet-cat": "/component/layout/nav-pet-cat.html",
 };
 
 // 対応するコンポーネントを決定する関数
@@ -555,13 +571,23 @@ function determineNavComponent(url) {
 // 全てのコンポーネントの読み込みを管理
 Promise.all([
   //コンポーネントの読み込み処理
-  loadComponent("/component/meta.html", "head", "afterbegin"),
-  loadComponent("/component/ogp.html", "head", "beforeend"),
-  loadComponent("/component/footer.html", ".l-main", "afterend"),
-  loadComponent("/component/header.html", "body", "afterbegin").then(() => {
+  loadComponent("/component/head/meta.html", "head", "afterbegin"),
+  loadComponent("/component/head/ogp.html", "head", "beforeend"),
+  loadComponent("/component/layout/footer.html", ".l-main", "afterend"),
+  loadComponent("/component/layout/header.html", "body", "afterbegin").then(() => {
     return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
   }),
 ])
+  .then(() => {
+    // data-component属性を持つ要素をすべて取得
+    const dataComponentElements = document.querySelectorAll("[data-component]");
+    // 各要素に対してコンポーネントを読み込む
+    dataComponentElements.forEach((elm) => {
+      const componentName = elm.getAttribute("data-component");
+      const componentPath = `/component/${componentName}.html`;
+      loadComponent(componentPath, `[data-component="${componentName}"]`, "afterbegin");
+    });
+  })
   .then(() => {
     // 全てのコンポーネントが読み込まれたことを示すイベントをディスパッチ
     document.dispatchEvent(componentsLoaded);
