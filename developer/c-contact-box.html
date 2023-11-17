@@ -36,24 +36,31 @@
         <h3 class="c-contact-box__heading -icon-tel">お電話でのご連絡</h3>
         <div class="c-contact-box__content">
           <p class="c-contact-box__time">受付時間<span>24</span>時間<span>365</span>日</p>
-          <p class="c-contact-box__tel"><a href="tel:0077780365"> 0077<span>-</span>78<span>-</span>0365 </a></p>
+          <p class="c-contact-box__tel"><a href="tel:0077780365"> 0077<span>-</span>78<span>-</span>0365</a></p>
           <p class="c-contact-box__note">※携帯電話からもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
           <p class="c-contact-box__note">※通話はサービス向上のため録音させていただきます。</p>
         </div>
       </div>
 
+      <h3 class="c-heading3">コンポーネントとして読み込む場合</h3>
       <pre>
         <code class="language-html">
-          &lt;div class="c-contact-box u-mx-auto"&gt;
-            &lt;h3&gt; class="c-contact-box__heading -icon-tel"&gt;お電話でのご連絡&lt;/h3&gt;
-            &lt;div class="c-contact-box__content"&gt;
-              &lt;p class="c-contact-box__time"&gt;受付時間&lt;span&gt;24&lt;/span&gt;時間&lt;span&gt;365&lt;/span&gt;日&lt;/p&gt;
-              &lt;p class="c-contact-box__tel"&gt;&lt;a href="tel:0077780365"&gt; 0077&lt;span&gt;-&lt;/span&gt;78&lt;span&gt;-&lt;/span&gt;0365 &lt;/a&gt;&lt;/p&gt;
-              &lt;p&gt; class="c-contact-box__note"&gt;※携帯電話からもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。&lt;/p&gt;
-              &lt;p&gt; class="c-contact-box__note"&gt;※通話はサービス向上のため録音させていただきます。&lt;/p&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
+&lt;div class="c-contact-box" data-component="contact-box-tel"&gt;&lt;/div&gt;
         </code>
+      </pre>
+
+      <h3 class="c-heading3">HTMLコード</h3>
+      <pre>
+<code class="language-html">
+  &lt;div class="c-contact-box u-mx-auto"&gt;
+    &lt;h3 class="c-contact-box__heading -icon-tel"&gt;お電話でのご連絡&lt;/h3&gt;
+    &lt;div class="c-contact-box__content"&gt;
+      &lt;p class="c-contact-box__time"&gt;受付時間&lt;span&gt;24&lt;/span&gt;時間&lt;span&gt;365&lt;/span&gt;日&lt;/p&gt;
+      &lt;p class="c-contact-box__tel"&gt;&lt;a href="tel:0077780365"&gt; 0077&lt;span&gt;-&lt;/span&gt;78&lt;span&gt;-&lt;/span&gt;0365 &lt;/a&gt;&lt;/p&gt;
+      &lt;p class="c-contact-box__note"&gt;※携帯電話からもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。&lt;/p&gt;
+      &lt;p class="c-contact-box__note"&gt;※通話はサービス向上のため録音させていただきます。&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
       </pre>
 
       <div class="u-grid u-grid-cols-2 sm:u-grid-cols-1 u-gap-6 u-w-fit sm:u-w-full u-mx-auto u-mt-10">
@@ -61,34 +68,18 @@
           <h3 class="c-contact-box__heading -icon-smartphone">Webからのご連絡</h3>
           <p class="c-contact-box__btn"><a href="#" class="c-btn -lg">事故連絡をする</a></p>
         </div>
-        <div class="c-contact-box">
-          <h3 class="c-contact-box__heading -icon-tel">お電話でのご連絡</h3>
-          <div class="c-contact-box__content">
-            <p class="c-contact-box__time">受付時間<span>24</span>時間<span>365</span>日</p>
-            <p class="c-contact-box__tel"><a href="tel:0077780365"> 0077<span>-</span>78<span>-</span>0365 </a></p>
-            <p class="c-contact-box__note">※携帯電話からもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
-            <p class="c-contact-box__note">※通話はサービス向上のため録音させていただきます。</p>
-          </div>
-        </div>
+        <div class="c-contact-box" data-component="contact-box-tel"></div>
       </div>
 
       <pre>
         <code class="language-html">
-          &lt;div class="u-grid u-grid-cols-2 sm:u-grid-cols-1 u-gap-6 u-w-fit sm:u-w-full u-mx-auto u-mt-10"&gt;
-          &lt;div class="c-contact-box"&gt;
-            &lt;h3 class="c-contact-box__heading -icon-smartphone"&gt;Webサイトからのご連絡&lt;/h3&gt;
-            &lt;p class="c-contact-box__btn"&gt;&lt;a href="#" class="c-btn -lg"&gt;事故連絡をする&lt;/a&gt;&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div class="c-contact-box"&gt;
-            &lt;h3 class="c-contact-box__heading -icon-tel"&gt;お電話でのご連絡&lt;/h3&gt;
-            &lt;div class="c-contact-box__content"&gt;
-              &lt;p class="c-contact-box__time"&gt;受付時間&lt;span&gt;24&lt;/span&gt;時間&lt;span&gt;365&lt;/span&gt;日&lt;/p&gt;
-              &lt;p class="c-contact-box__tel"&gt;&lt;a href="tel:0077780365"&gt; 0077&lt;span&gt;-&lt;/span&gt;78&lt;span&gt;-&lt;/span&gt;0365 &lt;/a&gt;&lt;/p&gt;
-              &lt;p class="c-contact-box__note"&gt;※携帯電話からもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。&lt;/p&gt;
-              &lt;p class="c-contact-box__note"&gt;※通話はサービス向上のため録音させていただきます。&lt;/p&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
+&lt;div class="u-grid u-grid-cols-2 sm:u-grid-cols-1 u-gap-6 u-w-fit sm:u-w-full u-mx-auto u-mt-10"&gt;
+  &lt;div class="c-contact-box"&gt;
+    &lt;h3 class="c-contact-box__heading -icon-smartphone"&gt;Webサイトからのご連絡&lt;/h3&gt;
+    &lt;p class="c-contact-box__btn"&gt;&lt;a href="#" class="c-btn -lg"&gt;事故連絡をする&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="c-contact-box" data-component="contact-box-tel"&gt;&lt;/div&gt;
+&lt;/div&gt;
         </code>
       </pre>
     </main>
