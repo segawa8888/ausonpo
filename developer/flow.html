@@ -30,8 +30,8 @@
           <pre>
 <code class="language-html">
 &lt;picture&gt;
-  &lt;source srcset="/assets/img/common/header_logo.webp" type="image/webp" /&gt;
-  &lt;img src="/assets/img/common/header_logo.png" alt="au損保" loading="eager" /&gt;
+  &lt;source srcset="/common_2024/img/header_logo.webp" type="image/webp" /&gt;
+  &lt;img src="/common_2024/img/header_logo.png" alt="au損保" loading="eager" /&gt;
 &lt;/picture&gt;
 </code>
 </pre>
@@ -42,7 +42,7 @@
       <h2 class="c-heading2-has-line">画像の書き出しについて</h2>
 
       <ul class="c-list-dot l-container lg:-sm u-mt-10">
-        <li>画像ファイルは/src/img/フォルダに保存して下さい。同名の圧縮した画像ファイルおよびWebP形式のファイルが/assets/img/フォルダに出力されます。</li>
+        <li>画像ファイルは/src/img/フォルダに保存して下さい。同名の圧縮した画像ファイルおよびWebP形式のファイルが/pc/フォルダに出力されます。</assets/img/li>
         <li>共通で使用する素材はcommonフォルダに、各ページ固有のファイルはページのカテゴリ名のフォルダを作成して保存。</li>
       </ul>
 
@@ -70,9 +70,9 @@
 
           <pre>
 <code class="language-css">
-background-image: url(../img/common/header_icon_login_pc.webp);
+background-image: url(/common_2024/img/header_icon_login_pc.webp);
 .no-webp-support & {
-  background-image: url(../img/common/header_icon_login_pc.png);
+  background-image: url(/common_2024/img/header_icon_login_pc.png);
 }
 </code>
 </pre>
@@ -88,7 +88,7 @@ background-image: url(../img/common/header_icon_login_pc.webp);
     </main>
 
     <!--javascript-->
-    <script src="/assets/js/script.js"></script>
+    <script src="/common_2024/js/script.min.js"></script>
     <script src="prism.js"></script>
     <link rel="stylesheet" href="prism.css" />
   </body>

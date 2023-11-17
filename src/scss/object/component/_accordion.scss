@@ -20,7 +20,7 @@
       content: "";
       width: rem(20px);
       height: rem(20px);
-      background: url(../img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
+      background: url(/common_2024/img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
       position: absolute;
       right: rem(20px);
       top: rem(25px);
@@ -30,7 +30,7 @@
     }
     &.is-active {
       &::after {
-        background-image: url(../img/icon/icon_toggle_minus.svg);
+        background-image: url(/common_2024/img/icon/icon_toggle_minus.svg);
       }
     }
   }
@@ -96,7 +96,7 @@
       content: "";
       width: rem(20px);
       height: rem(20px);
-      background: url(../img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
+      background: url(/common_2024/img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
       position: absolute;
       right: rem(20px);
       top: rem(14px);
@@ -106,7 +106,7 @@
     }
     &.is-active {
       &::after {
-        background-image: url(../img/icon/icon_toggle_minus.svg);
+        background-image: url(/common_2024/img/icon/icon_toggle_minus.svg);
       }
     }
   }

@@ -10,21 +10,21 @@
 .p-koutsuujiko-detail__cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-    gap:rem(30px) 0;
+    justify-content: center;
+    gap: rem(30px) 0;
     @include mq-max("md") {
-        gap:rem(15px) 0;
-     }
+        gap: rem(15px) 0;
+    }
 }
 
 .p-koutsuujiko-detail__card {
-    max-width:100%;
+    max-width: 100%;
     width: 100%;
     border-radius: rem(5px);
-    border: rem(1px) solid #BDBDBD;
+    border: rem(1px) solid #bdbdbd;
     @include mq-max("md") {
-        position:relative;
-      }
+        position: relative;
+    }
 }
 
 .p-koutsuujiko-detail__heading {
@@ -33,10 +33,10 @@
     color: $c-primary;
     font-weight: 700;
     border-radius: rem(5px);
-    background: #F3F3F3;
-    margin:rem(8px) rem(10px) 0 rem(10px);
+    background: #f3f3f3;
+    margin: rem(8px) rem(10px) 0 rem(10px);
     text-align: center;
-    height:rem(80px);
+    height: rem(80px);
     line-height: rem(64px);
     display: flex;
     justify-content: center;
@@ -49,21 +49,21 @@
 
 .p-koutsuujiko-detail__wrap {
     display: flex;
-    gap:0 rem(24px);
-    padding:0 rem(47px);
+    gap: 0 rem(24px);
+    padding: 0 rem(47px);
     @include mq-max("md") {
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         padding: 0 rem(25px);
     }
 }
 
 .p-koutsuujiko-detail__wrap.no__wrap {
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-     gap:0 rem(8px);
+    gap: 0 rem(8px);
     @include mq-max("md") {
-        gap:0 rem(5px);
+        gap: 0 rem(5px);
     }
 }
 
@@ -81,14 +81,14 @@
         max-width: rem(117px);
         top: 0;
         right: rem(4px);
-      }
+    }
 }
 
 .p-koutsuujiko-detail__text {
     max-width: rem(642px);
 
     .c-text-accent.--check {
-        background: url(../img/icon/check_circle.webp) left top 3px no-repeat;
+        background: url(/common_2024/img/icon/check_circle.webp) left top 3px no-repeat;
         background-size: rem(14.7px);
         padding-left: rem(25px);
         display: inline-block;
@@ -101,7 +101,7 @@
 
 .p-koutsuujiko-detail__card .c-accordion-4 {
     width: 100%;
-    border:none;
+    border: none;
 }
 
 .p-koutsuujiko-detail__card .c-accordion-4__heading {
@@ -111,22 +111,22 @@
 
 .p-koutsuujiko-detail__recommend {
     border-radius: rem(16px);
-    border: rem(2px) solid #EA5404;
+    border: rem(2px) solid #ea5404;
     position: relative;
-    padding:rem(16px) 0;
+    padding: rem(16px) 0;
 
     .c-btn-important-1 {
         width: rem(340px);
         height: rem(69px);
-        justify-content:center;
-        gap:rem(20px);
-        padding:0 rem(8px);
+        justify-content: center;
+        gap: rem(20px);
+        padding: 0 rem(8px);
         @include mq-max("md") {
             width: 100%;
-            gap:initial;
+            gap: initial;
             background-position: right 1rem center;
             flex-direction: initial;
-            min-height:initial;
+            min-height: initial;
         }
     }
 
@@ -135,14 +135,14 @@
     }
 
     @include mq-max("md") {
-        padding:rem(27px) rem(10px) rem(24px) rem(10px);
-        margin:rem(35px) rem(-15px) 0;
+        padding: rem(27px) rem(10px) rem(24px) rem(10px);
+        margin: rem(35px) rem(-15px) 0;
     }
 }
 
 .p-koutsuujiko-detail__fukidashi {
     position: absolute;
-    top:rem(-12.5px);
-    left:rem(20px);
+    top: rem(-12.5px);
+    left: rem(20px);
     max-width: rem(102px);
 }

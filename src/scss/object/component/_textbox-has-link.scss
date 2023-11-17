@@ -13,7 +13,7 @@
     text-align: right;
     a {
       color: $c-primary;
-      background: url(../img/arrow/arrow_md_primary.svg) right center/rem(6px) no-repeat;
+      background: url(/common_2024/img/arrow/arrow_md_primary.svg) right center/rem(6px) no-repeat;
       padding-right: rem(12px);
       @include hover {
         text-decoration: underline;

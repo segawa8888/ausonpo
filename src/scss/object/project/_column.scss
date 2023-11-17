@@ -81,7 +81,7 @@
             &::after {
                 width: rem(16px);
                 height: rem(18px);
-                background: url(/assets/img/icon/icon_footprints.svg) center center/contain no-repeat;
+                background: url(/common_2024/img/icon/icon_footprints.svg) center center/contain no-repeat;
                 content: "";
             }
         }
@@ -109,14 +109,14 @@
             @include mq-max("sm") {
                 color: $c-white;
                 background-color: $c-primary;
-                background-image: url(../img/arrow/arrow_bold_white.svg);
+                background-image: url(/common_2024/img/arrow/arrow_bold_white.svg);
                 box-shadow: 0px rem(4px) 0px 0px #ab3b00;
             }
         }
         &.-yellow {
             @include mq-max("sm") {
                 background-color: $c-yellow;
-                background-image: url(../img/arrow/arrow_bold_black.svg);
+                background-image: url(/common_2024/img/arrow/arrow_bold_black.svg);
                 border: rem(3px) solid #ffef28;
                 box-shadow: 0px rem(4px) 0px 0px #a69c1b;
             }
@@ -181,7 +181,7 @@
     }
     &__item {
         padding-left: rem(28px);
-        background: url(../img/keiyakusya/toc_arrow.svg) left center / rem(12px) no-repeat;
+        background: url(/pc/keiyakusya/assets/img/toc_arrow.svg) left center / rem(12px) no-repeat;
         a {
             transition: color 0.2s;
             @include hover {

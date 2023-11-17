@@ -88,14 +88,14 @@ layout/_header.scss
     &.-login {
       a {
         border-color: $c-login;
-        background-image: url(../img/common/header_icon_login_pc.webp);
+        background-image: url(/common_2024/img/header_icon_login_pc.webp);
         .no-webp-support & {
-          background-image: url(../img/common/header_icon_login_pc.png);
+          background-image: url(/common_2024/img/header_icon_login_pc.png);
         }
         @include mq-max("md") {
-          background-image: url(../img/common/header_icon_login_sp.webp);
+          background-image: url(/common_2024/img/header_icon_login_sp.webp);
           .no-webp-support & {
-            background-image: url(../img/common/header_icon_login_sp.png);
+            background-image: url(/common_2024/img/header_icon_login_sp.png);
           }
           border-color: $c-base-200;
         }
@@ -104,14 +104,14 @@ layout/_header.scss
     &.-user {
       a {
         border-color: $c-base-400;
-        background-image: url(../img/common/header_icon_user_pc.webp);
+        background-image: url(/common_2024/img/header_icon_user_pc.webp);
         .no-webp-support & {
-          background-image: url(../img/common/header_icon_user_pc.png);
+          background-image: url(/common_2024/img/header_icon_user_pc.png);
         }
         @include mq-max("md") {
-          background-image: url(../img/common/header_icon_user_sp.webp);
+          background-image: url(/common_2024/img/header_icon_user_sp.webp);
           .no-webp-support & {
-            background-image: url(../img/common/header_icon_user_sp.png);
+            background-image: url(/common_2024/img/header_icon_user_sp.png);
           }
           border-color: $c-base-200;
         }

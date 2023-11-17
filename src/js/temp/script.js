@@ -36,7 +36,7 @@ async function supportsWebP() {
       resolve(false);
     };
     // 実際のWebPファイルのパスを指定
-    webp.src = "/assets/img/common/header_logo.webp";
+    webp.src = "/common_2024/img/header_logo.webp";
   });
 }
 (async () => {
@@ -350,16 +350,16 @@ Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 
 //ナビゲーションコンポーネント一覧
 const navComponents = {
-  "/corporate/": "/component/layout/nav-corporate.html",
-  "/keiyakusya/bycle/": "/component/layout/nav-keiyakusya-bycle.html",
-  "/keiyakusya/pet/": "/component/layout/nav-keiyakusya-pet.html",
-  "/keiyakusya/kaigai/": "/component/layout/nav-keiyakusya-kaigai.html",
-  "/keiyakusya/kokunai/": "/component/layout/nav-keiyakusya-kokunai.html",
-  "/keiyakusya/sports/": "/component/layout/nav-keiyakusya-sports.html",
-  "/keiyakusya/golf/": "/component/layout/nav-keiyakusya-golf.html",
-  "/pc/bycle": "/component/layout/nav-bicycle.html",
-  "/pc/pet-dog": "/component/layout/nav-pet-dog.html",
-  "/pc/pet-cat": "/component/layout/nav-pet-cat.html",
+  "/corporate/": "/common_2024/component/layout/nav-corporate.html",
+  "/keiyakusya/bycle/": "/common_2024/component/layout/nav-keiyakusya-bycle.html",
+  "/keiyakusya/pet/": "/common_2024/component/layout/nav-keiyakusya-pet.html",
+  "/keiyakusya/kaigai/": "/common_2024/component/layout/nav-keiyakusya-kaigai.html",
+  "/keiyakusya/kokunai/": "/common_2024/component/layout/nav-keiyakusya-kokunai.html",
+  "/keiyakusya/sports/": "/common_2024/component/layout/nav-keiyakusya-sports.html",
+  "/keiyakusya/golf/": "/common_2024/component/layout/nav-keiyakusya-golf.html",
+  "/pc/bycle": "/common_2024/component/layout/nav-bicycle.html",
+  "/pc/pet-dog": "/common_2024/component/layout/nav-pet-dog.html",
+  "/pc/pet-cat": "/common_2024/component/layout/nav-pet-cat.html",
 };
 
 // 対応するコンポーネントを決定する関数
@@ -370,16 +370,16 @@ function determineNavComponent(url) {
       return navComponents[pattern];
     }
   }
-  return "/component/blank.html"; // 該当無しの場合はblank
+  return "/common_2024/component/blank.html"; // 該当無しの場合はblank
 }
 
 // 全てのコンポーネントの読み込みを管理
 Promise.all([
   //コンポーネントの読み込み処理
-  loadComponent("/component/head/meta.html", "head", "afterbegin"),
-  loadComponent("/component/head/ogp.html", "head", "beforeend"),
-  loadComponent("/component/layout/footer.html", ".l-main", "afterend"),
-  loadComponent("/component/layout/header.html", "body", "afterbegin").then(() => {
+  loadComponent("/common_2024/component/head/meta.html", "head", "afterbegin"),
+  loadComponent("/common_2024/component/head/ogp.html", "head", "beforeend"),
+  loadComponent("/common_2024/component/layout/footer.html", ".l-main", "afterend"),
+  loadComponent("/common_2024/component/layout/header.html", "body", "afterbegin").then(() => {
     return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
   }),
 ])
@@ -411,7 +411,7 @@ Promise.all([
 
     /*初期表示時のレイアウト崩れ対応処理*/
     // CSSファイルのパス
-    const cssPath = "/assets/css/style.css";
+    const cssPath = "/common_2024/css/style.css";
 
     // CSSを読み込むための<link>要素を生成
     const elmCssLink = document.createElement("link");

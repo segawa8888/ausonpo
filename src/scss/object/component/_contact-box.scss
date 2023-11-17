@@ -46,15 +46,15 @@
     }
     &.-icon-smartphone {
       &::before {
-        background-image: url(../img/icon/icon_smartphone.svg);
+        background-image: url(/common_2024/img/icon/icon_smartphone.svg);
       }
     }
     &.-icon-tel {
       padding-right: rem(52px);
       &::before {
-        background-image: url(../img/icon/icon_tel.webp);
+        background-image: url(/common_2024/img/icon/icon_tel.webp);
         .no-webp-support & {
-          background-image: url(../img/icon/icon_tel.png);
+          background-image: url(/common_2024/img/icon/icon_tel.png);
         }
       }
     }
@@ -101,7 +101,7 @@
     border-bottom: dotted $c-black rem(2px);
     //padding-left: rem(28px);
     padding-bottom: rem(6px);
-    //background: url(../img/icon/icon_operator.svg) left top / rem(20px) no-repeat;
+    //background: url(/common_2024/img/icon/icon_operator.svg) left top / rem(20px) no-repeat;
     width: fit-content;
     span {
       font-size: rem(24px);
@@ -114,13 +114,13 @@
     padding-left: rem(48px);
     line-height: 1;
     font-weight: 700;
-    background: url(../img/common/contact_freecall.webp) left 0.28em no-repeat;
+    background: url(/common_2024/img/contact_freecall.webp) left 0.28em no-repeat;
     background-size: rem(37px);
     @include mq-max("sm") {
       margin-top: rem(8px);
     }
     .no-webp-support & {
-      background-image: url(../img/common/contact_freecall.png);
+      background-image: url(/common_2024/img/contact_freecall.png);
     }
     a {
       display: flex;
@@ -242,7 +242,7 @@
       width: rem(26px);
       height: rem(28px);
       margin-right: rem(12px);
-      background: url(/assets/img/icon/icon_tel.webp) center center / cover no-repeat;
+      background: url(/common_2024/img/icon/icon_tel.webp) center center / cover no-repeat;
     }
   }
   &__list {
@@ -335,7 +335,7 @@
     }
     &.-icon-smartphone {
       &::before {
-        background-image: url(../img/icon/icon_smartphone_white.svg);
+        background-image: url(/common_2024/img/icon/icon_smartphone_white.svg);
       }
     }
     &.-none {
@@ -357,7 +357,7 @@
     }
   }
   &__title-wrapper {
-    background: url(../img/icon/icon_tel.webp) left center / rem(25px) no-repeat;
+    background: url(/common_2024/img/icon/icon_tel.webp) left center / rem(25px) no-repeat;
     padding-left: rem(40px);
   }
   &__title {
@@ -415,7 +415,7 @@
         letter-spacing: 0.1;
         width: rem(300px);
         height: rem(60px);
-        background-image: url(../img/arrow/arrow_lg_primary.svg);
+        background-image: url(/common_2024/img/arrow/arrow_lg_primary.svg);
         background-size: rem(7px);
         background-position: right rem(13px) center;
       }

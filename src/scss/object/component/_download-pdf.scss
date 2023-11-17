@@ -5,7 +5,7 @@
   font-size: rem(12px);
   line-height: 1.5;
   font-weight: 700;
-  background: url(../img/icon/icon_pdf.webp) left 0.3em no-repeat;
+  background: url(/common_2024/img/icon/icon_pdf.webp) left 0.3em no-repeat;
   background-size: rem(32px);
   min-height: rem(32px);
   padding: rem(8px) 0 rem(8px) rem(44px);
@@ -13,7 +13,7 @@
   margin-top: rem(16px);
   margin-bottom: rem(16px);
   .no-webp-support & {
-    background-image: url(../img/icon/icon_pdf.png);
+    background-image: url(/common_2024/img/icon/icon_pdf.png);
   }
   @include hover {
     text-decoration: underline;
@@ -26,7 +26,7 @@
   &.-external {
     &::after {
       content: "";
-      background: url(../img/icon/icon_external.svg) center center / contain no-repeat;
+      background: url(/common_2024/img/icon/icon_external.svg) center center / contain no-repeat;
       width: rem(15px);
       height: rem(12px);
       display: inline-block;

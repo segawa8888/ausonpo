@@ -19,7 +19,7 @@
     color: $c-primary;
     font-size: rem(24px);
     line-height: 1.3;
-    background: url(../img/icon/icon_tel.webp) left center / rem(42px) no-repeat;
+    background: url(/common_2024/img/icon/icon_tel.webp) left center / rem(42px) no-repeat;
     padding-left: rem(56px);
     @include mq-max("sm") {
       width: fit-content;

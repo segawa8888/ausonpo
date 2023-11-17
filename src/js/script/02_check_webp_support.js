@@ -13,7 +13,7 @@ async function supportsWebP() {
       resolve(false);
     };
     // 実際のWebPファイルのパスを指定
-    webp.src = "/assets/img/common/header_logo.webp";
+    webp.src = "/common_2024/img/header_logo.webp";
   });
 }
 (async () => {
