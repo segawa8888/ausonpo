@@ -47,6 +47,8 @@
   &__cell {
   }
   a {
-    text-decoration: underline;
+    @include mq-max("sm") {
+      text-decoration: underline;
+    }
   }
 }
