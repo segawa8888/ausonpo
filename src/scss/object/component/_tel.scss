@@ -21,6 +21,7 @@
     line-height: 1.3;
     background: url(/common_2024/img/icon/icon_tel.webp) left center / rem(42px) no-repeat;
     padding-left: rem(56px);
+    position: relative;
     @include mq-max("sm") {
       width: fit-content;
       font-size: rem(22px);
@@ -28,6 +29,21 @@
       padding-left: rem(32px);
       line-height: 1.2;
       margin-bottom: rem(4px);
+    }
+    &::after {
+      content: '';
+      background-image: url(/common_2024/img/icon/icon_freedial.webp);
+      background-size: contain;
+      width:rem(40px);
+      height:rem(40px);
+      position: absolute;
+      right: rem(-20px);
+      top:0;
+      @include mq-max("sm") {
+        width:rem(30px);
+        height:rem(30px);
+        top:rem(15px);
+      }
     }
   }
   &__content {
@@ -39,6 +55,11 @@
     a {
       display: flex;
       align-items: center;
+    }
+    a[href^="tel:"] {
+      @include mq-min("sm") {
+        pointer-events: none;
+      }
     }
     span {
       font-size: rem(30px);

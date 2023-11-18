@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8" />
     <!--▼タイトル・キーワードなどの指定-->
     <title>ご契約者さまへ│au損害保険公式サイト</title>
     <meta name="description" content="ご契約者さま向けた各種サービス、お手続きのご案内を掲載しております。" />
+
+    <script type="text/javascript" src="/pc/common/js/campcd.js"></script>
+    <script type="text/javascript" src="/pc/common/js/checkCookie.js"></script>
   </head>
 
-  <body style="visibility: hidden">
+  <body style="visibility: hidden" onload="javascript:sbSetCAMPCookie();javascript:loadRiyouQrcode();javascript:checkUserAgent();javascript:checkCookie();">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WG9V33"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WG9V33');</script>
+    <!-- End Google Tag Manager -->
+
     <nav class="c-breadcrumbs" aria-label="breadcrumb">
       <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="c-breadcrumbs__list l-container lg:-full sm:-full">
         <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/pc/">au損保トップ</a><meta itemprop="position" content="1" /></li>
@@ -18,7 +31,7 @@
     <main class="l-main l-container lg:-full sm:-full js-main">
       <h1 class="c-heading1-bg-primary">ご契約者さまへ</h1>
       <h2 class="c-heading2-has-line">ご契約者さまメニュー</h2>
-      <p class="u-text-lg u-text-center">事故のご連絡・保険金のご請求・お問合せ・付帯サービスや専用アプリについては、<br />各商品のご契約者さまページをご覧ください。</p>
+      <p class="u-text-lg u-text-center">事故のご連絡・保険金のご請求・お問い合わせ・付帯サービスや専用アプリについては、<br />各商品のご契約者さまページをご覧ください。</p>
       <h3 class="c-heading3">ご契約中の保険商品を選択ください</h3>
       <ul class="l-container lg:-md sm:-md p-keiyakusya-menu u-mt-8">
         <li>
@@ -81,10 +94,12 @@
       </p>
 
       <section class="l-container lg:-md u-radius-4 u-bg-base-050 u-mt-8">
-        <h2 class="c-heading2-bg-primary">お客さま専用ページ</h2>
+        <h2 class="c-heading2-bg-primary">お客さま専用ページ</h2><br>
+        <p class="u-text-lg u-text-center u-mt-7 sm:u-text-left sm:u-pl-2">ご契約内容の確認、住所などご契約者情報の訂正、
+          <br>契約の更新お手続きなど、いつでもご利用できるオンラインページをご利用ください</p>
         <div class="u-p-8 sm:u-px-4">
           <p class="u-text-center">
-            <a class="c-btn-login" href="https://www.au-sonpo.co.jp/pca/popup_mbmyau.html">
+             <a class="c-btn-login" href="/pca/popup_mbmyau.html" target="_blank">
               <i class="c-btn-login__icon"></i>
               <span class="c-btn-login__text">ログインはこちら</span>
             </a>
@@ -100,14 +115,14 @@
           </div>
           <div class="c-accordion-4 u-mt-8">
             <h3 class="c-accordion-4__heading js-accordion-toggle-btn">契約確認書類の提出が必要な方へ</h3>
-            <div class="c-accordion-4__wrapper js-accordion-toggle-content">
+            <div class="c-accordion-4__wrapper js-accordion-toggle-content" style="display: none; transition-property: height;">
               <div class="c-accordion-4__content">
                 <p>
-                  当社ではペーパーレス推進のため、保険証券の発行を省略しています。<br />
-                  契約内容は「お客さま専用ページ」にて、いつでもご確認いただくことができ、「契約確認書」の印刷が可能です。また、電子ファイル（PDF）をスマートフォン・タブレットに保存して携帯することもできます。<br />
-                  勤務先や学校から、保険の加入証明書（付保証明書）の提示を求められた場合は、「契約確認書」をご利用ください。<br />
-                  <span class="u-text-underline">勤務先や学校へ契約確認書類の提出が必要な場合</span><br />
-                  <span class="u-text-underline">海外渡航先へ保険の加入証明書の提示が必要な場合</span><br />
+                  当社ではペーパーレス推進のため、保険証券の発行を省略しています。<br>
+                  契約内容は「お客さま専用ページ」にて、いつでもご確認いただくことができ、「契約確認書」の印刷が可能です。また、電子ファイル（PDF）をスマートフォン・タブレットに保存して携帯することもできます。<br>
+                  勤務先や学校から、保険の加入証明書（付保証明書）の提示を求められた場合は、「契約確認書」をご利用ください。<br>
+                  <a href="https://faq.au-sonpo.co.jp/faq_detail.html?id=10377" class="u-link-has-arrow">勤務先や学校へ契約確認書類の提出が必要な場合</a>
+                  <a href="https://faq.au-sonpo.co.jp/faq_detail.html?id=10378" class="u-link-has-arrow">海外渡航先へ保険の加入証明書の提示が必要な場合</a><br>
                   ※保険証券の発行をご希望の方は、お申込み完了後「お客さま専用ページ」にてお手続きください。
                 </p>
               </div>
@@ -117,16 +132,17 @@
       </section>
 
       <section itemscope itemtype="http://schema.org/FAQPage">
-        <h2 class="c-heading2-has-line sm:u-mt-28">ご契約者さまからのよくあるご質問</h2>
+        <h2 class="c-heading2-has-line sm:u-mt-28">よくあるご質問</h2>
         <ol class="c-faq l-container lg:-md u-mt-7">
           <!-- Q1 -->
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn is-active">自分の契約内容（保険期間等）はどのように確認するのですか？</h4>
-            <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content" style="display: block; transition-property: height">
+            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">自分の契約内容（保険期間等）はどのように確認するのですか？</h4>
+            <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
               <div itemprop="text" class="c-faq__content">
-                「お客さま専用ページ」にログインすることで、ご契約内容をご確認いただけます。<br /><br />
-                《手順》<br />
-                「お客さま専用ページ」にログイン&nbsp;→&nbsp;「契約内容の確認・印刷・保存」から該当契約を選択してください。
+                「お客さま専用ページ」にログインすることで、ご契約内容をご確認いただけます。<br>
+                <br>
+                《手順》<br>
+                「お客さま専用ページ」にログイン 　→　「契約内容の確認・印刷・保存」から該当契約を選択してください。
               </div>
             </div>
           </li>
@@ -135,9 +151,9 @@
             <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">住所の変更や結婚等で改姓した場合の変更の手続きはどうすればよいですか？</h4>
             <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
               <div itemprop="text" class="c-faq__content">
-                「お客さま専用ページ」よりお手続きいただきますようお願いいたします。<br /><br />
-                「お客さま専用ページ」にログイン後、「ご契約内容の確認・変更」の「契約者の住所・電話番号の変更」または「契約者の名前（姓）の変更」のいずれかの項目を選択し、お手続きください。<br />
-                <!-- TODO: スクショ追加 -->
+                「お客さま専用ページ」よりお手続きいただきますようお願いいたします。<br />
+                「お客さま専用ページ」にログイン後、「ご契約内容の確認・変更」の「契約者の住所・電話番号の変更」<br />
+                または「契約者の名前（姓）の変更」のいずれかの項目を選択し、お手続きください。<br />
               </div>
             </div>
           </li>
@@ -146,23 +162,30 @@
             <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「お客さま専用ページ」のログインパスワードを忘れてしまいました。どうすればよいでしょうか？</h4>
             <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
               <div itemprop="text" class="c-faq__content">
-                「お客さま専用ページ」のログイン画面の「パスワードをお忘れの方はこちら」より、新しいパスワードへの変更が可能です。手順は以下のとおりです。<br /><br />
-                ≪手順≫<br />
-                「パスワードをお忘れの方はこちら（パスワード再設定）」を押す<br /><br />
-                登録メールアドレスとご契約者の生年月日（西暦8桁）を半角で入力<br /><br />
-                「メールを送信する」ボタンを押す<br /><br />
-                登録メールアドレス宛にメールが送信されます<br /><br />
-                受信したメールの「認証キー」を確認する<br /><br />
-                ※この時インターネットのブラウザは終了しないでください<br /><br />
-                メールを終了しブラウザに戻る。画面に「認証キー」を入力し「次へ進む」<br /><br />
-                新パスワードを入力（パスワードは半角英数文字を1文字以上含む6～16桁で設定。アルファベットと数字を混合しないとエラーとなります）<br />
-                <!-- TODO: スクショ追加 -->
+                「お客さま専用ページ」のログイン画面の「パスワードをお忘れの方はこちら」より、新しいパスワードへの変更が可能です。<br />
+                手順は以下のとおりです。<br />
+                <p class="u-mt-8">
+                  <a href="https://faq.au-sonpo.co.jp/faq_detail.html?id=10416&category=&page=1" class="u-link-has-arrow" target="_blank">https://faq.au-sonpo.co.jp/faq_detail.html?id=10416&category=&page=1</a>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
+            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「自転車向け保険　Bycle」、「ケガの保険　交通事故」の違いは？</h4>
+            <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
+              <div itemprop="text" class="c-faq__content">
+                自転車向け保険とは、一般的に「傷害保険」と「個人賠償責任保険」がセットの、<br />
+                自転車利用時の事故などのリスクをカバーする保険を指します。<br />
+                傷害保険は、自転車事故を含む交通事故全般でのご自身のケガが補償される保険です。<br />
+                個人賠償責任保険は、自転車運転中に相手にケガをさせてしまった場合だけでなく、<br />
+                日常生活の事故で相手をケガ・死亡させてしまった場合、相手の財産（物）を壊してしまった場合など、<br />
+                法律上の損害賠償責任を負った場合に補償が受けられる保険です。
               </div>
             </div>
           </li>
         </ol>
         <p class="u-text-center u-mt-8 u-mb-32">
-          <a href="https://faq.au-sonpo.co.jp/" class="c-btn -md"> よくある質問をもっとみる </a>
+          <a href="https://faq.au-sonpo.co.jp/" target="_blank" class="c-btn -md"> よくあるご質問をもっとみる </a>
         </p>
       </section>
     </main>
