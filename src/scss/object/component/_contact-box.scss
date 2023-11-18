@@ -80,6 +80,7 @@
         display: none;
       }
     }
+
   }
   &__heading-sub {
     display: block;
@@ -361,6 +362,11 @@
       }
     }*/
   }
+  a[href^="tel:"] {
+    @include mq-min("sm") {
+      pointer-events: none;
+    }
+}
   &__content {
     display: flex;
     justify-content: space-between;
@@ -479,6 +485,11 @@
       display: flex;
       align-items: center;
     }
+    a[href^="tel:"] {
+      @include mq-min("sm") {
+        pointer-events: none;
+      }
+  }
     span {
       font-size: rem(30px);
     }
