@@ -44,6 +44,20 @@
         width: rem(28px);
       }
     }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: rem(40px);
+      height: rem(40px);
+      background: center center no-repeat;
+      background-size: 100%;
+      top: rem(-8px);
+      right: 0;
+      @include mq-max("sm") {
+        width: rem(35px);
+      }
+    }
     &.-icon-smartphone {
       &::before {
         background-image: url(/common_2024/img/icon/icon_smartphone.svg);
@@ -56,6 +70,9 @@
         .no-webp-support & {
           background-image: url(/common_2024/img/icon/icon_tel.png);
         }
+      }
+      &:after {
+        background-image: url(/common_2024/img/icon/icon_freedial.webp);
       }
     }
     &.-none {
