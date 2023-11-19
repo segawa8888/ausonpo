@@ -25,3 +25,9 @@ body {
   position: relative;
   line-height: 1;
 }
+
+a[href^="tel:"] {
+  @include mq-min("sm") {
+    pointer-events: none;
+  }
+}
