@@ -30,21 +30,6 @@
       line-height: 1.2;
       margin-bottom: rem(4px);
     }
-    &::after {
-      content: '';
-      background-image: url(/common_2024/img/icon/icon_freedial.webp);
-      background-size: contain;
-      width:rem(40px);
-      height:rem(40px);
-      position: absolute;
-      right: rem(-20px);
-      top:0;
-      @include mq-max("sm") {
-        width:rem(30px);
-        height:rem(30px);
-        top:rem(15px);
-      }
-    }
   }
   &__content {
   }
