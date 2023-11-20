@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-pet-dog-manzokudo {
+  margin-inline: auto;
+  justify-content: center;
+  max-width: rem(590px);
+  width: 100%;
+  &__icon {
+    margin-right: rem(20px);
+    width: rem(130px);
+  }
+}
