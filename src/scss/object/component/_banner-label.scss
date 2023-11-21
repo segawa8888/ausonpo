@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.c-banner-label a , .c-banner-label a:after , .c-banner-label a:before , .c-banner-label a span {
+    content:"";
+    width:rem(153.81px);
+    height:rem(149.845px);
+    background-color: $c-primary;
+    position:absolute;
+    top:0px;
+  }
+
+  .c-banner-label , .c-banner-label a , .c-banner-label a:after , .c-banner-label a:before {
+    transform: rotate(22.5deg);
+  }
+
+  .c-banner-label a span {
+    transform: rotate(-45deg);
+    text-align: center;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $c-white;
+    font-size: rem(15.381px);
+    letter-spacing: rem(1.538px);
+    line-height: 1.5;
+    font-weight: 700;
+  }
+
+  .c-banner-label {
+    position:relative;
+    width:rem(153.81px);
+    height:rem(149.845px);
+    background-color: $c-primary;
+  }
