@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@use "../../global" as *;
+.p-byclebest-tabbox__switch{
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid $c-primary;
+    .p-byclebest-tab-buttom{
+        max-width: calc(100% / 4);
+        width: 100%;
+        border-right: 1px solid $c-primary;
+        &:last-child{
+            border: none;
+        }
+        &.is-active {
+            background-color: $c-primary;
+            button{
+                background-color: $c-primary;
+                box-shadow: none;
+                color: #fff;
+                span{
+                    color: #fff;
+                }
+            }
+        }
+        button{
+            min-width: 100%;
+            width: 100%;
+            border-radius: 0;
+            border: none;
+        }
+
+    }
+}
+
+.p-byclebest-tab-ranking{
+    img{
+        max-width: 499px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.p-bycle-course{
+    .p-bycle-course-img{
+        img{
+            max-width: 480px;
+        }
+    }
+}
+.bycle-course-text{
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    .bycle-course-text__pic{
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+.p-bycle-loadservice-list{
+    li{
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__point{
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.p-bycle-loadservice-buttom{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.p-bycle-point-wrapper{
+    justify-content: space-between;
+    &__left{
+        max-width: calc((100% - 30px) / 2) ;
+        width: 100%;
+    }
+    &__right{
+        max-width: calc((100% - 30px) / 2) ;
+        width: 100%;
+    }
+}
+.p-bycle-loadservice{
+    height: 100%;
+    .p-koutsuujiko-detail__card{
+        height: 100%;
+    }
+}
+.p-bycle-customer{
+    padding-top: 30px;
+}
+.p-bycle-gimuka-img{
+    justify-content: center;
+    img{
+        max-width: 490px;
+    }
+}
+.p-bycle-case-list{
+    justify-content: space-between;
+    .p-bycle-hoten{
+        max-width: calc((100% - 112px) / 3);
+        width: 100%;
+    }
+}
+.p-bycle-gimuka-note{
+    justify-content: center;
+    align-items: center;
+    .p-bycle-gimuka-note__text{
+        max-width: max-content;
+    }
+}
