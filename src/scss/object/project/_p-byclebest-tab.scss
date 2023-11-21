@@ -31,7 +31,108 @@
 
     }
 }
+.-p-bycle-tab-change{
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 8px;
+    .-p-bycle-tab-change__tabs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .p-bycle-type-info__tab{
+            max-width: calc(100% / 4);
+            width: 100%;
+            padding-bottom: 4px;
+            border: 1px solid $c-primary;
+            border-top: none;
+            border-left: none;
+            &:first-child{
+                border-left: 1px solid $c-primary;
+                border-radius: 8px 0 0 8px ;
+                button{
+                    border-radius: 8px 0 0 8px ;
+                }
+            }
+            &:last-child{
+                border-radius: 0 8px 8px 0 ;
+                button{
+                    border-radius: 0 8px 8px 0;
+                }
+            }
+            &:hover{
+                background-color: $c-primary;
+            }
+            button{
+                min-width: 100%;
+                border-radius: 0;
+                border: none;
+                justify-content: flex-start;
+                font-size: 16px;
+                padding: 10px;
+                color: $c-primary;
+                transform: translateY(0rem);
+                span{
+                    font-size: 1.25rem;
+                    padding-right: 8px;
+                }
+                &:hover{
+                    border: none;
+                    background-color: $c-primary;
+                    color: $c-white;
+                    transform: translateY(0rem);
+                }
+            }
+        }
+        .p-bycle-type-info__tab.is-active{
+            background-color: $c-primary;
+            button{
+                &.is-active{
+                    background-color: $c-primary;
+                    border-radius: 0;
+                    box-shadow: none;
+                    border: none;
+                    color: $c-white;
+                    transition: inherit;
+                    justify-content: flex-start;
+                    padding: 10px;
+                    transform: translateY(0rem);
+                    border-radius: 8px 0 0 8px ;
+                    span{
+                        font-size: 1.25rem;
+                        padding-right: 8px;
+                    }
+                    &:hover{
+                        transform: translateY(0rem);
+                    }
+                }
+            }
+        }
+        &.tabs-bottom{
+            .p-bycle-type-info__tab{
+                border-bottom: none;
+                border-top: 1px solid $c-primary;
+            }
+        }
+    }
+    .p-bycle-type-info__box{
+        .p-bycle-type-info__type{
+            display: none;
+            &.is-active{
+                display: block;
+            }
+        }
+    }
+}
 
+
+
+.p-byclebest-tab-contents{
+    display: none;
+}
+.p-byclebest-tab-contents.show{
+    display: block;
+}
 .p-byclebest-tab-ranking{
     img{
         max-width: 499px;
@@ -115,4 +216,102 @@
     .p-bycle-gimuka-note__text{
         max-width: max-content;
     }
+}
+.p-bycle-compensation-box{
+    justify-content: center;
+    align-items: center;
+    .p-bycle-compensation__pic-icon{
+        max-width: 200px;
+        img{
+            width: 100%;
+        }
+    }
+    .p-bycle-compensation__pic-img{
+        max-width: 392px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.p-tabbox{
+    .p-bycle-point{
+        .p-koutsuujiko-detail__heading{
+            position: relative;
+            &::after{
+                content: "";
+                width: 96px;
+                height: 80px;
+                position: absolute;
+                background-size: contain;
+                bottom: 0;
+                right: 4px;
+            }
+        }
+        .p-byclebest-title-course{
+            &::after{
+                background-image: url(/src/img/bycle-best/bycle_illust02.png);
+            }
+        }
+        .p-byclebest-title-loadservice{
+            &::after{
+                background-image: url(/src/img/bycle-best/bycle_illust06.png);
+            }
+        }
+        .p-byclebest-title-hoten{
+            &::after{
+                background-image: url(/src/img/bycle-best/bycle_illust07.png);
+            }
+        }
+        .p-byclebest-title-customer{
+            &::after{
+                background-image: url(/src/img/bycle-best/bycle_illust08.png);
+            }
+        }
+        .p-byclebest-title-compensation{
+            &::after{
+                background-image: url(/src/img/bycle-best/bycle_illust09.png);
+            }
+        }
+    }
+}
+
+.p-bycle-case{
+    .p-bycle-point{
+        h3{
+            justify-content: flex-start;
+            position: relative;
+            &::after{
+                content: "";
+                height: 100px;
+                width: 115px;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 16px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        &:first-child{
+            h3::after{
+                background-image: url(/src/img/bycle-best/bycle_illust12.png);
+            }
+        }
+        &:nth-child(2){
+            h3::after{
+                background-image: url(/src/img/bycle-best/bycle_illust13.png);
+            }
+        }
+        &:nth-child(3){
+            h3::after{
+                background-image: url(/src/img/bycle-best/bycle_illust14.png);
+            }
+        }
+    }
+}
+
+.-p-bycle-daikou{
+    max-width: 812px;
+    width: 100%;
+    margin: 0 auto;
 }

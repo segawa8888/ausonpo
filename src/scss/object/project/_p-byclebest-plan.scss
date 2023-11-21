@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.-p-bycle-plan-back{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .p-bycle-plan-title{
+        max-width: 316px;
+    }
+}

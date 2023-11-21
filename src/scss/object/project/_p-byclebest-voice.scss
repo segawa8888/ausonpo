@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.-p-bycle-voice{
+    max-width: 100%;
+    width: 100%;
+    &__list{
+        justify-content: space-between;
+    }
+
+}
+.p-bycle-box{
+    max-width: calc((100% - 128px) / 3);
+    width: 100%;
+    .p-bycle-box__type{
+        justify-content: center;
+        align-items: center;
+        &-icon{
+            width: 116PX;
+            height: 116PX;
+        }
+        &-name{
+            width: calc(100% - 116px);
+            .p-bycle-box-voice-typename{
+                justify-content: flex-start;
+                align-items: center;
+                span{
+                    width: 84px;
+                    height: 24px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
