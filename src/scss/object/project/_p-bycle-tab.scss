@@ -40,6 +40,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include mq-max("md") {
+            flex-wrap: wrap;
+        }
         .p-bycle-type-info__tab{
             max-width: calc(100% / 4);
             width: 100%;
@@ -47,6 +50,39 @@
             border: 1px solid $c-primary;
             border-top: none;
             border-left: none;
+            @include mq-max("md") {
+                max-width: calc(100% / 2);
+                flex-wrap: wrap;
+                border: none;
+                border-bottom: 1px solid $c-primary;
+                &:first-child{
+                    border-radius: 8px 0 0 0;
+                    border-left: none;
+                    border-right: 1px solid $c-primary;
+                    button{
+                        border-radius: 8px 0 0 0;
+                    }
+                }
+                &:nth-child(2){
+                    border-radius: 0 8px 0 0;
+                    button{
+                        border-radius: 0 8px 0 0;
+                    }
+                }
+                &:nth-child(3){
+                    border-radius: 0 0 0 8px;
+                    border-right: 1px solid $c-primary;
+                    button{
+                        border-radius: 0 0 0 8px;
+                    }
+                }
+                &:last-child{
+                    border-radius: 0 0 8px 0;
+                    button{
+                        border-radius: 0 0 8px 0;
+                    }
+                }
+            }
             &:first-child{
                 border-left: 1px solid $c-primary;
                 border-radius: 8px 0 0 8px ;
@@ -72,9 +108,18 @@
                 padding: 10px;
                 color: $c-primary;
                 transform: translateY(0rem);
+                @include mq-max("lg") {
+                    font-size: 14px;
+                }
+                @include mq-max("md") {
+                    height: 5rem;
+                }
                 span{
                     font-size: 1.25rem;
                     padding-right: 8px;
+                    @include mq-max("md") {
+                        paddimg-right: 4px;
+                    }
                 }
                 &:hover{
                     border: none;
@@ -116,6 +161,9 @@
         }
     }
     .p-bycle-type-info__box{
+        @include mq-max("md") {
+            padding: 0.625rem;
+        }
         .p-bycle-type-info__type{
             display: none;
             &.is-active{
@@ -144,6 +192,9 @@
     .p-bycle-course-img{
         img{
             max-width: 480px;
+            @include mq-max("md") {
+                padding: 0 2rem;
+            }
         }
     }
 }
@@ -151,6 +202,9 @@
     max-width: 100%;
     width: 100%;
     justify-content: center;
+    @include mq-max("md") {
+        flex-direction: column;
+    }
     .bycle-course-text__pic{
         align-items: center;
         justify-content: center;
@@ -179,13 +233,21 @@
 }
 .p-bycle-point-wrapper{
     justify-content: space-between;
-    &__left{
-        max-width: calc((100% - 30px) / 2) ;
-        width: 100%;
+    @include mq-max("md") {
+        flex-direction: column;
     }
+    &__left,
     &__right{
-        max-width: calc((100% - 30px) / 2) ;
+        max-width: calc((100% - 2rem) / 2) ;
         width: 100%;
+        @include mq-max("md") {
+            max-width: 100%;
+        }
+    }
+    .p-bycle-point-wrapper-box{
+        @include mq-max("md"){
+            padding: 0.625rem;
+        }
     }
 }
 .p-bycle-loadservice{
@@ -195,19 +257,29 @@
     }
 }
 .p-bycle-customer{
-    padding-top: 30px;
+    padding-top: 2rem;
 }
 .p-bycle-gimuka-img{
     justify-content: center;
     img{
-        max-width: 490px;
+        max-width: 30rem;
     }
 }
 .p-bycle-case-list{
     justify-content: space-between;
     .p-bycle-hoten{
-        max-width: calc((100% - 112px) / 3);
+        padding-top: 1rem;
+        max-width: calc((100% - 7rem) / 3);
         width: 100%;
+        @include mq-max("lg"){
+            max-width: calc((100% - 2.5rem) / 3);
+        }
+        @include mq-max("sm"){
+            max-width: 100%;
+        }
+        .p-koutsuujiko-detail__card{
+            height: 100%;
+        }
     }
 }
 .p-bycle-gimuka-note{
@@ -220,14 +292,34 @@
 .p-bycle-compensation-box{
     justify-content: center;
     align-items: center;
-    .p-bycle-compensation__pic-icon{
-        max-width: 200px;
-        img{
-            width: 100%;
+    .p-bycle-compensation-box-text{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @include mq-max("lg") {
+            flex-direction: column;
+            padding-right: 1rem;
+            max-width: 50%;
+            p{
+                text-align: center;
+                padding: 0;
+            }
+        }
+        .p-bycle-compensation__pic-icon{
+            max-width: 12.5rem;
+            @include mq-max("lg") {
+                max-width: 100%;
+            }
+            img{
+                width: 100%;
+            }
         }
     }
     .p-bycle-compensation__pic-img{
-        max-width: 392px;
+        max-width: 24.5rem;
+        @include mq-max("lg") {
+            max-width: 50%;
+        }
         img{
             width: 100%;
         }
@@ -237,10 +329,14 @@
     .p-bycle-point{
         .p-koutsuujiko-detail__heading{
             position: relative;
+            @include mq-max("sm"){
+                justify-content: flex-start;
+                padding-left: 1rem;
+            }
             &::after{
                 content: "";
-                width: 96px;
-                height: 80px;
+                width: 6rem;
+                height: 5rem;
                 position: absolute;
                 background-size: contain;
                 bottom: 0;
@@ -249,27 +345,32 @@
         }
         .p-byclebest-title-course{
             &::after{
-                background-image: url(/src/img/bycle-best/bycle_illust02.png);
+                background-image: url(/src/img/bycle/bycle_illust02.png);
             }
         }
         .p-byclebest-title-loadservice{
             &::after{
-                background-image: url(/src/img/bycle-best/bycle_illust06.png);
+                background-image: url(/src/img/bycle/bycle_illust06.png);
             }
         }
         .p-byclebest-title-hoten{
             &::after{
-                background-image: url(/src/img/bycle-best/bycle_illust07.png);
+                background-image: url(/src/img/bycle/bycle_illust07.png);
             }
         }
         .p-byclebest-title-customer{
             &::after{
-                background-image: url(/src/img/bycle-best/bycle_illust08.png);
+                background-image: url(/src/img/bycle/bycle_illust08.png);
             }
         }
         .p-byclebest-title-compensation{
             &::after{
-                background-image: url(/src/img/bycle-best/bycle_illust09.png);
+                background-image: url(/src/img/bycle/bycle_illust09.png);
+            }
+        }
+        .c-btn.-md{
+            @include mq-max("sm"){
+                max-width: calc(100% - 1.25rem);
             }
         }
     }
@@ -282,8 +383,8 @@
             position: relative;
             &::after{
                 content: "";
-                height: 100px;
-                width: 115px;
+                height: 6.25rem;
+                width: 7.25rem;
                 display: block;
                 position: absolute;
                 bottom: 0;
@@ -294,24 +395,24 @@
         }
         &:first-child{
             h3::after{
-                background-image: url(/src/img/bycle-best/bycle_illust12.png);
+                background-image: url(/src/img/bycle/bycle_illust12.png);
             }
         }
         &:nth-child(2){
             h3::after{
-                background-image: url(/src/img/bycle-best/bycle_illust13.png);
+                background-image: url(/src/img/bycle/bycle_illust13.png);
             }
         }
         &:nth-child(3){
             h3::after{
-                background-image: url(/src/img/bycle-best/bycle_illust14.png);
+                background-image: url(/src/img/bycle/bycle_illust14.png);
             }
         }
     }
 }
 
 .-p-bycle-daikou{
-    max-width: 812px;
+    max-width: 50.75rem;
     width: 100%;
     margin: 0 auto;
 }

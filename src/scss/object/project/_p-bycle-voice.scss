@@ -10,23 +10,30 @@
 
 }
 .p-bycle-box{
-    max-width: calc((100% - 128px) / 3);
+    max-width: calc((100% - 12rem) / 3);
+    @include mq-max("md"){
+        max-width: calc((100% - 6rem) / 3);
+    }
+    @include mq-max("sm"){
+        max-width: 100%;
+        width: 100%;
+    }
     width: 100%;
     .p-bycle-box__type{
         justify-content: center;
         align-items: center;
         &-icon{
-            width: 116PX;
-            height: 116PX;
+            width: 7.25rem;
+            height: 7.25rem;
         }
         &-name{
-            width: calc(100% - 116px);
+            width: calc(100% - 7.25rem);
             .p-bycle-box-voice-typename{
                 justify-content: flex-start;
                 align-items: center;
                 span{
-                    width: 84px;
-                    height: 24px;
+                    width: 5.25rem;
+                    height: 1.5rem;
                     justify-content: center;
                     align-items: center;
                 }

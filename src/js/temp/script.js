@@ -240,7 +240,33 @@ document.addEventListener("componentsLoaded", () => {
         }
       }).mount();
     }
-  
+    //バイクルのお客様の声のスライダー
+    const byclebvoiceSlider = document.querySelector(".js-voice-slider"); // 対象となる要素を取得
+    if (byclebvoiceSlider) {
+      new Splide(byclebvoiceSlider, {
+        perPage: 3,
+        arrows: false,
+        gap: "0.5rem",
+        breakpoints: {
+          520: {
+            perPage: 1,
+          },
+        },
+      }).mount();
+    }
+    //バイクルのお客様の声のスライダー
+    const SPbyclebcaseSlider = document.querySelector(".js-byclecase-slider"); // 対象となる要素を取得
+    if (SPbyclebcaseSlider) {
+      new Splide(SPbyclebcaseSlider, {
+        perPage: 3,
+        arrows: false,
+        breakpoints: {
+          520: {
+            perPage: 1,
+          },
+        },
+      }).mount();
+    }
 });
 
 /*----------------------------------------------------------
