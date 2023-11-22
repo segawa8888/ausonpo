@@ -181,7 +181,7 @@
     }
     &__item {
         padding-left: rem(28px);
-        background: url(/pc/keiyakusya/assets/img/toc_arrow.svg) left center / rem(12px) no-repeat;
+        background: url(/pc/keiyakusya/assets/img/toc_arrow.svg) left #{rem(9px)} / rem(12px) no-repeat;
         a {
             transition: color 0.2s;
             @include hover {
