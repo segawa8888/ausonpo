@@ -38,6 +38,14 @@
 /* PC時のスタイル */
 
 .p-keiyakusya-point__wrapper {
+    padding-bottom: rem(16px);
+    border-radius: 0px 0px 5px 5px;
+    margin-left: rem(24px);
+    margin-right: rem(24px);
+    @include mq-max("md") {
+     margin-left: initial;
+     margin-right: initial;   
+    }
     .splide01:not(.is-overflow) .splide__pagination {
         display: flex;
         margin-top: rem(21px);
@@ -80,6 +88,8 @@
 .p-keiyakusya-point__content {
     max-width: rem(682px);
     background-color: $c-white;
+    border: 1px solid #c9c9c9;
+    border-radius: rem(8px);
     padding: rem(12px) rem(50px) rem(32px) rem(50px);
     @include mq-max("md") {
         padding: rem(14px) rem(9px) rem(22px) rem(9px);

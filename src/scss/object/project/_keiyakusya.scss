@@ -36,6 +36,7 @@
 
 .p-keiyakusya-accordion__heading {
     background-color: #dcdcdc;
+    border-radius: rem(6px);
     &::after {
         top: 50%;
         transform: translateY(-50%);
