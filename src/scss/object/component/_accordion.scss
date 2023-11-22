@@ -37,7 +37,7 @@
   &__wrapper {
     display: none;
     @include mq-max("sm") {
-      padding: 0 rem(10px);
+      // padding: 0 rem(10px);
     }
   }
   &__content {

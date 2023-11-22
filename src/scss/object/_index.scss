@@ -27,6 +27,7 @@ object/component
 @use "component/text";
 @use "component/text-box";
 @use "component/textbox-has-link";
+@use "component/banner-label";
 
 /*********************************************
 object/project
@@ -80,3 +81,7 @@ object/project
 @use "project/_koutsuujiko-accordion-service";
 @use "project/sports-point";
 @use "project/hoken-floating";
+@use "project/_p-bycle-mv";
+@use "project/_p-bycle-tab";
+@use "project/_p-bycle-voice";
+@use "project/_p-bycle-plan";
