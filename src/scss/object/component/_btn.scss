@@ -139,6 +139,14 @@
     background-position: right rem(8px) center;
     background-size: rem(6px);
   }
+  &.-bottom{
+    font-size: rem(16px);
+    width: rem(340px);
+    height: rem(40px);
+    background-image: url(/common_2024/img/arrow/arrow_bold_dawn.svg);
+    background-position: right rem(14px) center;
+    background-size: rem(12px);
+  }
   &.-external {
     background-image: url(/common_2024/img/icon/icon_external_primary.svg);
     &.-md {
