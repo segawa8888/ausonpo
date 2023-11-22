@@ -27,7 +27,8 @@
     padding: 0 rem(4px);
     border-radius: rem(2px);
   }
-  &__date + &__category {
+  &__date + &__category,
+  meta + &__category {
     margin-left: rem(12px);
     @include mq-max("sm") {
       margin-left: 0;
@@ -35,6 +36,7 @@
     }
   }
   &__date + &__tag-list,
+  meta + &__tag-list,
   &__category + &__tag-list {
     margin-left: rem(12px);
     @include mq-max("sm") {
