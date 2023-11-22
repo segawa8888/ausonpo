@@ -466,6 +466,12 @@
         }
     }
 }
+.additional_services{
+    li span{
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+}
 //プラン診断
 .-p-bycle-plan {
     &-title {
