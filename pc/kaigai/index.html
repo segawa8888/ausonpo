@@ -55,7 +55,7 @@
         </div>
 
         <p class="u-text-center u-mt-5">
-          <a href="#" class="c-btn -bottom">保険料・補償内容を確認する</a>
+          <a href="#price" class="c-btn -bottom">保険料・補償内容を確認する</a>
         </p>
 
 
@@ -75,7 +75,7 @@
             <div class="p-keiyakusya-accordion__item">
               <div class="p-keiyakusya-accordion__wrap sm:u-mt-12">
                 <div class="p-keiyakusya-accordion__btn">
-                  <a href="">
+                  <a href="/pc/keiyakusya/kaigai/while-traveling.html">
                     <div class="p-keiyakusya-accordion__icon -sm u-mx-auto">
                       <picture>
                         <source srcset="/pc/keiyakusya/assets/img/icon_tel02.webp" type="image/webp" />
@@ -89,8 +89,8 @@
                   </a>
                 </div>
                 <div class="p-keiyakusya-accordion__btn">
-                  <a href="">
-                    <div class="p-keiyakusya-accordion__icon -md u-mx-auto">
+                  <a href="/pc/keiyakusya/kaigai/after-traveling.html">
+                    <div class="p-keiyakusya-accordion__icon -md u-mx-auto  u-mt-2">
                       <picture>
                         <source srcset="/pc/keiyakusya/assets/img/icon_seikyu.webp" type="image/webp" />
                         <img src="/pc/keiyakusya/assets/img/icon_seikyu.png" alt="au損保" loading="lazy" />
@@ -103,7 +103,7 @@
                   </a>
                 </div>
                 <p class="u-text-center u-mt-6 sm:u-mt-9 u-text-14">
-                  <a href="#" class="p-keiyakusya-accordion-btn">その他のお問い合わせ・アプリなどの<br>
+                  <a href="/pc/keiyakusya/kaigai/index.html" class="p-keiyakusya-accordion-btn">その他のお問い合わせ・アプリなどの<br>
                     ご契約者向け情報はこちら</a>
                 </p>
               </div>
@@ -113,7 +113,7 @@
       </div>
 
 
-      <h2 class="c-heading2-has-line">保険料・補償内容について</h2>
+      <h2 id="price" class="c-heading2-has-line">保険料・補償内容について</h2>
       <p class="u-text-lg u-text-16 u-mt-7 u-text-center">旅行スタイルにあわせた<br class="lg:u-hidden" />タイプとコースをお選びいただけます</p>
       <h3 class="c-heading3">保険料</h3>
       <p class="u-text-lg u-text-16 u-text-center">お一人様でも、ご家族まとめてでも<br class="lg:u-hidden" />
@@ -140,12 +140,12 @@
                   <img src="/pc/kaigai/assets/img/kaigai_type02.png" alt="au損保" loading="lazy" />
                 </picture>
               </div>
-              <p class="p-keiyakusya-kaigai-type__text u-mt-2">ご家族5人でまとめて<br class="sm-min:u-hidden">お申し込みができて、<br>一人あたりの保険料が<br class="sm-min:u-hidden">おトクに！</p>
+              <p class="p-keiyakusya-kaigai-type__text u-mt-2">ご家族最大5人で加入できて、<br>一人あたりの保険料がおトクに！</p>
             </div>
           </div>
         </div>
         <div class="p-keiyakusya-kaigai-type__link u-text-center">
-          <a href="">各タイプ詳細および<br>ご加入いただける年齢はこちらから</a>
+          <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/common/popup/pu_c_47.html','myau');">各タイプ詳細および<br>ご加入いただける年齢はこちらから</a>
         </div>
       </div>
 
@@ -167,10 +167,11 @@
                 <dd class="p-keiyakusya-kaigai-estimate-form__select p-keiyakusya-kaigai-estimate-form-select">
                   <select>
                     <option hidden>1人</option>
-                    <option value="1人">1人</option>
-                    <option value="2人">2人</option>
-                    <option value="3人">3人</option>
-                    <option value="その他">その他</option>
+                    <option value="1人（本人タイプ）">1人（本人タイプ）</option>
+                    <option value="2人（家族タイプ）">2人（家族タイプ）</option>
+                    <option value="3人（家族タイプ）">3人（家族タイプ）</option>
+                    <option value="4人（家族タイプ）">4人（家族タイプ）</option>
+                    <option value="5人（家族タイプ）">5人（家族タイプ）</option>
                   </select>
                 </dd>
               </dl>
@@ -180,7 +181,6 @@
                 <dd class="p-keiyakusya-kaigai-estimate-form__select p-keiyakusya-kaigai-estimate-form-select">
                   <select>
                     <option hidden>3日間</option>
-                    <option value="日帰り">日帰り</option>
                     <option value="1日間">1日間</option>
                     <option value="2日間">2日間</option>
                     <option value="3日間">3日間</option>
@@ -196,7 +196,6 @@
                     <option value="13日間">13日間</option>
                     <option value="14日間">14日間</option>
                     <option value="15日間">15日間</option>
-                    <option value="その他">その他</option>
                   </select>
                 </dd>
               </dl>
@@ -205,7 +204,7 @@
         </div>
 
         <p class="p-keiyakusya-kaigai-estimate__text u-text-center u-text-12 u-text-bold u-mx-auto">ご契約者と旅行される方が<span class="u-text-16">同じ</span>場合</p>
-        <div class="p-keiyakusya-kaigai-estimate__img u-mt-3 u-mx-auto">
+        <div class="p-keiyakusya-kaigai-estimate__img u-mt-3 u-mx-auto u-pl-3 u-pr-3">
           <picture>
             <source srcset="/pc/kaigai/assets/img/kaigai_course01.webp" type="image/webp" />
             <img src="/pc/kaigai/assets/img/kaigai_course01.png" alt="au損保" loading="lazy" />
@@ -213,7 +212,7 @@
         </div>
 
         <p class="p-keiyakusya-kaigai-estimate__text u-text-center u-text-12 u-text-bold u-mx-auto">ご契約者と旅行される方が<span class="u-text-16">異なる</span>場合</p>
-        <div class="p-keiyakusya-kaigai-estimate__img u-mt-3 u-mx-auto">
+        <div class="p-keiyakusya-kaigai-estimate__img u-mt-3 u-mx-auto u-pl-3 u-pr-3">
           <picture>
             <source srcset="/pc/kaigai/assets/img/kaigai_course02.webp" type="image/webp" />
             <img src="/pc/kaigai/assets/img/kaigai_course02.png" alt="au損保" loading="lazy" />
@@ -246,32 +245,94 @@
             <tbody>
               <tr>
                 <td>
-                  <a href="">治療<br class="sm-min:u-hidden">・<br class="sm-min:u-hidden">救援費用
-                    <!-- <span>
+                  <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_1.html','myau');">治療<br class="sm-min:u-hidden">・<br class="sm-min:u-hidden">救援費用
+                    <span>
                       <picture>
                         <source srcset="/common_2024/img/icon/icon_external.webp" type="image/webp" />
                         <img style="width:13px; height: 13px;" src="/common_2024/img/icon/icon_external.png" alt="au損保" loading="lazy" />
                       </picture>
-                    </span> -->
+                    </span>
                   </a>
               </td>
-                <td><strong>1,500</strong>万円</td>
-                <td><strong>2,500</strong>万円</td>
-                <td><strong>1,500</strong>万円</td>
+                <td class="sm:u-leading-loose"><strong>1,500</strong>万円</td>
+                <td class="sm:u-leading-loose"><strong>2,500</strong>万円</td>
+                <td class="sm:u-leading-loose"><strong>1,500</strong>万円</td>
               </tr>
               <tr>
                 <td>
-                  <a href="">傷害死亡
-                    <!-- <span>
+                  <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_2.html','myau');">傷害死亡
+                    <span>
                       <picture>
                         <source srcset="/common_2024/img/icon/icon_external.webp" type="image/webp" />
                         <img style="width:13px; height: 13px;" src="/common_2024/img/icon/icon_external.png" alt="au損保" loading="lazy" />
                       </picture>
-                    </span> -->
+                    </span>
                   </a>
               </td>
-                <td><strong>500</strong>万円</td>
-                <td><strong>1,500</strong>万円<br><span class="u-text-primary">
+                <td class="sm:u-leading-loose"><strong>500</strong>万円</td>
+                <td class="sm:u-leading-tight"><strong>1,500</strong>万円<br><span class="u-text-primary">
+                  <span>
+                    <picture>
+                      <source srcset="/pc/kaigai/assets/img/kaigai_smark.webp" type="image/webp" />
+                      <img style="width:13px; height: 13px;" src="/pc/kaigai/assets/img/kaigai_smark.png" alt="au損保" loading="lazy" />
+                    </picture>
+                  </span>
+                  <strong>1,000</strong>万円</span>
+                </td>
+                <td class="sm:u-leading-tight"><strong>2,500</strong>万円<br><span class="u-text-primary">
+                  <span>
+                    <picture>
+                      <source srcset="/pc/kaigai/assets/img/kaigai_smark.webp" type="image/webp" />
+                      <img style="width:13px; height: 13px;" src="/pc/kaigai/assets/img/kaigai_smark.png" alt="au損保" loading="lazy" />
+                    </picture>
+                  </span>
+                  <strong>1,000</strong>万円</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_3.html','myau');">傷害後遺障害
+                    <span>
+                      <picture>
+                        <source srcset="/common_2024/img/icon/icon_external.webp" type="image/webp" />
+                        <img style="width:13px; height: 13px;" src="/common_2024/img/icon/icon_external.png" alt="au損保" loading="lazy" />
+                      </picture>
+                    </span>
+                  </a>
+                </td>
+                <td class="sm:u-leading-loose"><strong>500</strong>万円</td>
+                <td class="sm:u-leading-tight"><strong>1,500</strong>万円<br><span class="u-text-primary">
+                  <span>
+                    <picture>
+                      <source srcset="/pc/kaigai/assets/img/kaigai_smark.webp" type="image/webp" />
+                      <img style="width:13px; height: 13px;" src="/pc/kaigai/assets/img/kaigai_smark.png" alt="au損保" loading="lazy" />
+                    </picture>
+                  </span>
+                  <strong>1,000</strong>万円</span>
+                </td>
+                <td class="sm:u-leading-tight"><strong>2,500</strong>万円<br><span class="u-text-primary">
+                  <span>
+                    <picture>
+                      <source srcset="/pc/kaigai/assets/img/kaigai_smark.webp" type="image/webp" />
+                      <img style="width:13px; height: 13px;" src="/pc/kaigai/assets/img/kaigai_smark.png" alt="au損保" loading="lazy" />
+                    </picture>
+                  </span>
+                  <strong>1,000</strong>万円</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_4.html','myau');">疫病死亡
+                    <span>
+                      <picture>
+                        <source srcset="/common_2024/img/icon/icon_external.webp" type="image/webp" />
+                        <img style="width:13px; height: 13px;" src="/common_2024/img/icon/icon_external.png" alt="au損保" loading="lazy" />
+                      </picture>
+                    </span>
+                  </a>
+              </td>
+                <td class="sm:u-leading-loose"><strong>500</strong>万円</td>
+                <td class="sm:u-leading-tight"><strong>1,500</strong>万円<br><span class="u-text-primary">
                   <span>
                     <picture>
                       <source srcset="/pc/kaigai/assets/img/kaigai_smark.webp" type="image/webp" />
@@ -291,116 +352,56 @@
               </tr>
               <tr>
                 <td>
-                  <a href="">傷害後遺障害
-                    <!-- <span>
+                  <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_6.html','myau');">個人賠償責任<br class="sm-min:u-hidden"><small class="u-text-10">（自己負担額なし）</small>
+                    <span>
                       <picture>
                         <source srcset="/common_2024/img/icon/icon_external.webp" type="image/webp" />
                         <img style="width:13px; height: 13px;" src="/common_2024/img/icon/icon_external.png" alt="au損保" loading="lazy" />
                       </picture>
-                    </span> -->
-                  </a>
-                </td>
-                <td><strong>500</strong>万円</td>
-                <td><strong>1,500</strong>万円<br><span class="u-text-primary">
-                  <span>
-                    <picture>
-                      <source srcset="/pc/kaigai/assets/img/kaigai_smark.webp" type="image/webp" />
-                      <img style="width:13px; height: 13px;" src="/pc/kaigai/assets/img/kaigai_smark.png" alt="au損保" loading="lazy" />
-                    </picture>
-                  </span>
-                  <strong>1,000</strong>万円</span>
-                </td>
-                <td><strong>2,500</strong>万円<br><span class="u-text-primary">
-                  <span>
-                    <picture>
-                      <source srcset="/pc/kaigai/assets/img/kaigai_smark.webp" type="image/webp" />
-                      <img style="width:13px; height: 13px;" src="/pc/kaigai/assets/img/kaigai_smark.png" alt="au損保" loading="lazy" />
-                    </picture>
-                  </span>
-                  <strong>1,000</strong>万円</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="">疫病死亡
-                    <!-- <span>
-                      <picture>
-                        <source srcset="/common_2024/img/icon/icon_external.webp" type="image/webp" />
-                        <img style="width:13px; height: 13px;" src="/common_2024/img/icon/icon_external.png" alt="au損保" loading="lazy" />
-                      </picture>
-                    </span> -->
+                    </span>
                   </a>
               </td>
-                <td><strong>500</strong>万円</td>
-                <td><strong>1,500</strong>万円<br><span class="u-text-primary">
-                  <span>
-                    <picture>
-                      <source srcset="/pc/kaigai/assets/img/kaigai_smark.webp" type="image/webp" />
-                      <img style="width:13px; height: 13px;" src="/pc/kaigai/assets/img/kaigai_smark.png" alt="au損保" loading="lazy" />
-                    </picture>
-                  </span>
-                  <strong>1,000</strong>万円</span>
-                </td>
-                <td><strong>2,500</strong>万円<br><span class="u-text-primary">
-                  <span>
-                    <picture>
-                      <source srcset="/pc/kaigai/assets/img/kaigai_smark.webp" type="image/webp" />
-                      <img style="width:13px; height: 13px;" src="/pc/kaigai/assets/img/kaigai_smark.png" alt="au損保" loading="lazy" />
-                    </picture>
-                  </span>
-                  <strong>1,000</strong>万円</span></td>
+                <td class="sm:u-leading-loose"><strong>1</strong>億円</td>
+                <td class="sm:u-leading-loose"><strong>1</strong>億円</td>
+                <td class="sm:u-leading-loose"><strong>1</strong>億円</td>
               </tr>
               <tr>
                 <td>
-                  <a href="">個人賠償責任<br class="sm-min:u-hidden"><small class="u-text-10">（自己負担額なし）</small>
-                    <!-- <span>
-                      <picture>
-                        <source srcset="/common_2024/img/icon/icon_external.webp" type="image/webp" />
-                        <img style="width:13px; height: 13px;" src="/common_2024/img/icon/icon_external.png" alt="au損保" loading="lazy" />
-                      </picture>
-                    </span> -->
-                  </a>
-              </td>
-                <td><strong>1</strong>億円</td>
-                <td><strong>1</strong>億円</td>
-                <td><strong>1</strong>億円</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="">携行品損害<br class="sm-min:u-hidden"><small>（自己負担額なし）<br>※１、※２、※３</small>
-                    <!-- <span>
+                  <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_7.html','myau');">携行品損害<br class="sm-min:u-hidden"><small>（自己負担額なし）<br>※１、※２、※３</small>
+                    <span>
                     <picture>
                       <source srcset="/common_2024/img/icon/icon_external.webp" type="image/webp" />
                       <img style="width:13px; height: 13px;" src="/common_2024/img/icon/icon_external.png" alt="au損保" loading="lazy" />
                     </picture>
-                  </span> -->
+                  </span>
                   </a>
             
               </td>
-                <td><strong>30</strong>万円</td>
-                <td><strong>30</strong>万円</td>
-                <td><strong>50</strong>万円</td>
+                <td class="sm:u-leading-loose"><strong>30</strong>万円</td>
+                <td class="sm:u-leading-loose"><strong>30</strong>万円</td>
+                <td class="sm:u-leading-loose"><strong>50</strong>万円</td>
               </tr>
               <tr>
                 <td>
-                  <a href="">航空機寄託手荷物<br>遅延等費用
-                    <!-- <span>
+                  <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp//pc/hosyo_naiyo/kaigai/K_1_H_8.html','myau');">航空機寄託手荷物<br>遅延等費用
+                    <span>
                       <picture>
                         <source srcset="/common_2024/img/icon/icon_external.webp" type="image/webp" />
                         <img style="width:13px; height: 13px;" src="/common_2024/img/icon/icon_external.png" alt="au損保" loading="lazy" />
                       </picture>
-                    </span> -->
+                    </span>
                   </a>
               </td>
-                <td><strong>10</strong>万円</td>
-                <td><strong>10</strong>万円</td>
-                <td><strong>10</strong>万円</td>
+                <td class="sm:u-leading-loose"><strong>10</strong>万円</td>
+                <td class="sm:u-leading-loose"><strong>10</strong>万円</td>
+                <td class="sm:u-leading-loose"><strong>10</strong>万円</td>
               </tr>
             </tbody>
           </table>
           </div>
-          <p class="u-text-10 u-leading-tight u-mt-1 u-text-indent-2">※1　盗難、強盗及び航空会社に預けた手荷物の不着による損害に対する限度額は、保険期間を通じて30万円となります。</p>
-          <p class="u-text-10 u-leading-tight u-text-indent-2">※2　損害の額は携行品1個、1組または1対あたり10万円（乗車券等は5万円）が限度となります。</p>
-          <p class="u-text-10 u-leading-tight u-text-indent-2">※3　損害の額とは修理費、または再調達価額（同等のものを再度新品で購入するために要する費用をいいます）から減価償却した時価額のいずれか低い方をいい、運転免許証に<br class="sm:u-hidden">
+          <p class="u-text-10 u-leading-tight u-mt-1 u-text-indent-2">※1盗難、強盗及び航空会社に預けた手荷物の不着による損害に対する限度額は、保険期間を通じて30万円となります。</p>
+          <p class="u-text-10 u-leading-tight u-text-indent-2">※2損害の額は携行品1個、1組または1対あたり10万円（乗車券等は5万円）が限度となります。</p>
+          <p class="u-text-10 u-leading-tight">※3損害の額とは修理費、または再調達価額（同等のものを再度新品で購入するために要する費用をいいます）から減価償却した時価額のいずれか低い方をいい、運転免許証に<br class="sm:u-hidden">
           ついては再発給手数料を、パスポートについては再取得費用（現地にて負担した場合に限ります。交通費、宿泊費を含み5万円を限度とします）をいいます。</p>
         </div>
 
@@ -410,7 +411,7 @@
             <div class="c-accordion p-keiyakusya-accordion u-mt-5 u-mx-auto">
               <h3 class="c-accordion__heading p-keiyakusya-accordion__heading js-accordion-toggle-btn u-text-left u-text-primary u-leading-none p-keiyakusya-point__heading u-bg-base-050"><p><span class="u-text-18">Point.<strong>1</strong></span><small>手続きはカンタン！<br>出発当日まで加入できます！</small></p></h3>
               <div class="c-accordion__wrapper p-keiyakusya-accordion__wrapper lg:-md js-accordion-toggle-content">
-                <p class="u-text-center u-mt-5 u-text-14 u-leading-normal" >PC・スマホ・タブレットから、<br>その場でお申し込みができます。</p>
+                <p class="u-text-center u-mt-5 u-text-14 u-leading-normal" >PC・スマホ・タブレットから、<br>その場でお申込みができます。</p>
                 <p class="u-text-center u-mt-4 p-keiyakusya-point__img u-mx-auto">
                   <picture>
                     <source srcset="/pc/kaigai/assets/img/kaigai_point01.webp" type="image/webp" />
@@ -468,7 +469,7 @@
                       </picture>
                     </p>
                     <p class="u-text-center u-mt-4 u-text-primary u-leading-snug u-text-bold">家を出発してからご帰宅までの<br class="lg:u-hidden"/>ケガや病気を<br>しっかりサポート！</p>
-                    <p class="u-text-center u-mt-4 u-text-14 u-leading-normal u-text-bold" >海外旅行の思わぬケガや病気、<br>携行品の損害に対しても補償いたします</p>
+                    <p class="u-text-center u-mt-8 u-text-14 u-leading-normal u-text-bold" >海外旅行の思わぬケガや病気、<br>携行品の損害に対しても補償いたします</p>
 
                     <div class="p-keiyakusya-point__content u-mt-8 u-mx-auto">
                       <p class="c-text-accent u-text-center">充実の保証内容</p>
@@ -486,7 +487,7 @@
                             <p class="u-has-check u-mt-1">旅行先で長期入院、<br>家族が日本から<br>駆け付けた</p>
                           </div>
                           <p class="u-text-center u-mt-3">
-                            <a href="#" class="c-btn">詳細はこちら</a>
+                            <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_1.html','myau');" class="c-btn">詳細はこちら</a>
                           </p>
                         </div>
                         <div class="p-keiyakusya-point__item">
@@ -501,7 +502,7 @@
                             <p class="u-has-check u-mt-2">旅行中に<br>デジカメを破損した</p>
                           </div>
                           <p class="u-text-center u-mt-3">
-                            <a href="#" class="c-btn">詳細はこちら</a>
+                            <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_7.html','myau');" class="c-btn">詳細はこちら</a>
                           </p>
                         </div>
                         <div class="p-keiyakusya-point__item">
@@ -517,7 +518,7 @@
                             <p class="u-has-check u-mt-1">他人の物を<br>壊してしまった</p>
                           </div>
                           <p class="u-text-center u-mt-3 u-mt-4">
-                            <a href="#" class="c-btn">詳細はこちら</a>
+                            <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp///pc/hosyo_naiyo/kaigai/K_1_H_6.html','myau');" class="c-btn">詳細はこちら</a>
                           </p>
                         </div>
                         <div class="p-keiyakusya-point__item">
@@ -532,7 +533,7 @@
                             <p class="u-has-check u-mt-2">航空会社に預けた<br>手荷物の到着が<br>遅れて身の回り品を<br>購入</p>
                           </div>
                           <p class="u-text-center u-mt-2">
-                            <a href="#" class="c-btn">詳細はこちら</a>
+                            <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_8.html','myau');" class="c-btn">詳細はこちら</a>
                           </p>
                         </div>
                         <div class="p-keiyakusya-point__item">
@@ -547,7 +548,7 @@
                             <p class="u-has-check u-mt-6">ケガにより<br>後遺障害が生じた</p>
                           </div>
                           <p class="u-text-center u-mt-6">
-                            <a href="#" class="c-btn">詳細はこちら</a>
+                            <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_3.html','myau');" class="c-btn">詳細はこちら</a>
                           </p>
                         </div>
                         <div class="p-keiyakusya-point__item">
@@ -562,14 +563,14 @@
                             <p class="u-has-check u-mt-3">ケガや病気により<br>死亡</p>
                           </div>
                           <p class="u-text-center sm:u-mt-2">
-                            <a href="#" class="c-btn">詳細はこちら</a>
+                            <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_9.html','myau');" class="c-btn">詳細はこちら</a>
                           </p>
                         </div>
                       </div>
                     </div>
 
                     <p class="u-text-center u-mt-5">
-                      <a href="#" class="c-btn -up">保険料・補償内容を確認する</a>
+                      <a href="#price" class="c-btn -up">保険料・補償内容を確認する</a>
                     </p>
                 </div>
               </div>
@@ -596,7 +597,7 @@
                         <div class="p-keiyakusya-point-box__wrap">
                           <p class="u-text-14 u-mt-3 u-text-bold u-leading-normal">提携医療機関なら、その場での治療費のお支払いは不要です。提携医療機関、日本語対応ＯＫな病院は「海外サポート」アプリでかんたんに検索できます。</p>
                           <p class="u-mt-4">
-                            <a href="" class="u-text-12 u-text-underline">提携医療機関はこちらからもご確認いただけます ＞</a>
+                            <a href="/pc/kaigai/medical/" class="u-text-12 u-text-underline">提携医療機関はこちらからご確認いただけます  ＞</a>
                           </p>
                         </div>
                       </div>
@@ -608,7 +609,8 @@
                                 <img src="/pc/kaigai/assets/img/kaigai_point_icon08.png" alt="au損保" loading="lazy" />
                               </picture>
                             </div>
-                            <p class="u-ml-5 u-text-18 u-text-bold u-leading-snug">緊急医療・<br>アシスタンスサービス</p>
+                            <p class="u-ml-5 u-text-18 u-text-bold u-leading-snug">緊急医療<br>
+                              アシスタントサービス</p>
                           </div>
                           <div class="p-keiyakusya-point-box__wrap">
                             <p class="u-text-14 u-mt-3 u-text-bold u-leading-normal">不慮のケガや病気に見舞われ、医療施設への緊急移送の必要がある場合などは、海外サポートデスクへお電話ください。</p>
@@ -651,7 +653,7 @@
                     <p class="u-text-18 u-ml-6">キャッシュレス・<br>リペアサービス</p>
                   </h3>
                   <p class="u-text-center u-mt-3 u-text-14 u-leading-normal u-text-bold" >事故で破損したスーツケース・デジタルカメラ・ビデオカメラ・パソコンの修理代金を<br class="sm:u-hidden">当社が修理業者へ直接保険金としてお支払いさせていただくことで、<br class="sm:u-hidden">お客さまでの修理代金のお立替が不要となるサービスです。</p>
-                  <p class="u-text-center u-mt-8 u-text-bold u-text-18">回収・修理・お届けまでの流れ</p>
+                  <p class="u-text-center u-mt-8 u-text-bold u-text-18 ">回収・修理・お届けまでの流れ</p>
                   <p class="u-mt-8 p-keiyakusya-accordion-inner__number">
                     <span>
                       <picture>
@@ -706,7 +708,7 @@
                   <div class="u-grid u-grid-cols-2 sm:u-grid-cols-1 u-gap-8 u-w-fit sm:u-w-full u-mx-auto u-mt-5">
                     <div class="c-contact-box">
                       <h3 class="c-contact-box__heading -icon-tel">海外の旅行先から</h3>
-                      <p class="c-contact-box__btn"><a href="#" class="c-btn -md">ワールドフリーフォン番号一覧</a></p>
+                      <p class="c-contact-box__btn"><a href="/pc/keiyakusya/kaigai/while-traveling.html#tel" class="c-btn -md">ワールドフリーフォン番号一覧</a></p>
                     </div>
                     <div class="c-contact-box">
                       <h3 class="c-contact-box__heading -icon-tel">日本国内から</h3>
@@ -730,16 +732,18 @@
               <p class="u-text-center u-mt-5 u-text-14 u-leading-normal u-text-bold">ご出発前に海外で便利な無料アプリ<br>
                 「海外サポート」をダウンロードしましょう！</p>
               <p class="u-text-center u-mt-4 p-keiyakusya-point__banner u-mx-auto">
+                <a href="javascript:void(0)" onclick="openwin2('https://app.au-sonpo.co.jp/oversea/','myau');">
                 <picture>
                   <source srcset="/pc/kaigai/assets/img/kaigai_point_banner01.webp" media="(min-width:768px)" type="image/webp">
                   <img src="/pc/kaigai/assets/img/kaigai_point_banner01_sp 1.webp" alt="au損保" loading="lazy">
                 </picture>
+              </a>
               </p>
             </div>
           </div>
 
           <div class="p-keiyakusya-kaigai-cta u-mt-8 u-mx-auto">
-            <a href="">
+            <a href="https://www.au-sonpo.co.jp/pca/MBK_1_1.do?pcTopFlg=1&CAMP_CD=DR1D000214&mbFilterFlg=1">
               <picture>
                 <source srcset="/pc/kaigai/assets/img/kaigai_cta01.webp" type="image/webp">
                 <img src="/pc/kaigai/assets/img/kaigai_cta01.png" alt="au損保" loading="lazy">
@@ -864,14 +868,14 @@
             <p class="u-text-sm u-mt-4">auかんたん決済(au/UQ mobile/povo)ではPontaポイントを1ポイント=1円相当でご利用いただけます。<br>
               au PAY、コンビニは一時払のみとなります。</p>
               <p class="u-text-center u-mt-4">
-                <a href="#" class="c-btn -md">詳細はこちら</a>
+                <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/common/popup/PU_C_39.html','myau')" class="c-btn -md">詳細はこちら</a>
               </p>
           </div>
 
         </div>
 
         <div class="p-kaigai-user p-kaigai__user u-mx-auto">
-          <p class="u-text-24 u-text-primary u-text-center u-mt-10 u-text-bold">auユーザーの皆さまへ</p>
+          <p class="u-text-24 u-text-primary u-text-center u-mt-10 u-text-bold"><a href="https://www.au-sonpo.co.jp/pc/lp_auid/">auユーザーの皆さまへ</a></p>
           <div class="p-kaigai-user__img u-mx-auto u-mt-6">
             <picture>
               <source srcset="/pc/kaigai/assets/img/kaigai_au_user_pc.webp" type="image/webp" />
@@ -891,7 +895,7 @@
 
           <ol class="c-faq l-container lg:-md u-mt-12">
             <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-              <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">Wi-Fiルーターをレンタルして海外旅行に出かけます。「海外旅行の保険」はWi-Fiルーターを破損させてしまった場合や、<br class="sm:u-hidden">盗難、紛失をしてしまった場合は個人賠償責任の補償の対象になりますか？</h4>
+              <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">Wi-Fiルーターをレンタルして海外旅行に出かけます。「海外旅行の保険」はWi-Fiルーターを破損させてしまった場合や、<br class="sm:u-hidden">盗難、紛失をしてしまった場合は個人賠償責任の補償の対象になりますか？</h3>
               <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
                 <div itemprop="text" class="c-faq__content">
                   レンタル業者からご契約者または被保険者（補償の対象となる方）が直接借り入れた旅行用品または生活用品を海外旅行中の偶然な事故により、破損したり紛失したりして損害を与え、法律上の賠償責任を負った場合には、「海外旅行の保険」にセットされる個人賠償責任補償特約で補償の対象となります。<br>
@@ -900,7 +904,7 @@
               </div>
             </li>
             <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-              <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「海外旅行の保険」は帰国後の保険金請求はどうすればよいですか？</h4>
+              <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「海外旅行の保険」は帰国後の保険金請求はどうすればよいですか？</h3>
               <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
                 <div itemprop="text" class="c-faq__content">
                   帰国後の保険金請求の際は<br>
@@ -913,7 +917,7 @@
               </div>
             </li>
             <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-              <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「海外旅行の保険」は海外旅行中に<br class="lg:u-hidden" />事故にあった際はどこに連絡すればよいですか？</h4>
+              <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「海外旅行の保険」は海外旅行中に<br class="lg:u-hidden" />事故にあった際はどこに連絡すればよいですか？</h3>
               <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
                 <div itemprop="text" class="c-faq__content">
                   事故の際は「海外サポートデスク」までご連絡ください。（24時間・365日・日本語受付）<br>
@@ -925,7 +929,7 @@
               </div>
             </li>
             <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-              <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「海外旅行の保険」契約後に旅行期間（保険期間）の延長はできますか？</h4>
+              <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「海外旅行の保険」契約後に旅行期間（保険期間）の延長はできますか？</h3>
               <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
                 <div itemprop="text" class="c-faq__content">
                   ご出発前であれば、お申込み済のご契約を解約（取消し）いただき、新たに正しい旅行期間でご契約し直していただきますようお願いいたします。<br>
@@ -940,7 +944,7 @@
               </div>
             </li>
             <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-              <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「海外サポート」アプリとは何ですか？</h4>
+              <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「海外サポート」アプリとは何ですか？</h3>
               <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
                 <div itemprop="text" class="c-faq__content">
                   「海外旅行保険サポートガイド」や「いざという時の連絡先（旅行先を登録いただくと旅行先の大使館、領事館の連絡先がご覧いただけます）」、
@@ -960,11 +964,11 @@
           <h2 class="c-heading2-has-line">重要事項説明書・約款</h2>
           <p class="u-text-lg sm:u-text-left u-text-center  u-mt-5">電子ファイル（PDF）でのご提供となります。<br>特に「重要事項のご説明」については、印刷し書面で保管いただくか、パソコンなどに保存いただくことをおすすめします。</p>
           <ul class="p-kaigai-pdf u-mt-5 u-mx-auto u-pl-8">
-            <li>
-              <a href="#" class="c-download-pdf">重要事項のご説明<br class="lg:u-hidden" />（重要事項説明書）PDF</a>
+            <li class="u-text-center">
+              <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/common/pdf/kaigai_ryoko/kairyo_jyusetsu_20191201.pdf','myau');" class="c-download-pdf -external">重要事項のご説明<br class="lg:u-hidden" />（重要事項説明書）PDF</a>
             </li>
-            <li>
-              <a href="#" class="c-download-pdf">ご契約のしおり<br class="lg:u-hidden" />（普通保険約款・特約集）PDF</a>
+            <li class="u-text-center">
+              <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/common/popup/PU_C_16.html#content_c16_02','myau');" class="c-download-pdf -external">ご契約のしおり<br class="lg:u-hidden" />（普通保険約款・特約集）PDF</a>
             </li>
           </ul>
 
@@ -986,7 +990,7 @@
       </div>
 
       <div class="p-hoken-floating">
-        <a href="#">
+        <a href="javascript:void(0)" onclick="openwin2('https://www.au.com/lp/oversea-trip/?_ebx=106hrhogqsu.1681871431.7t5lz2b','myau');">
           <picture>
             <source srcset="/assets/img//kaigai/floating.webp"  loading="lazy" type="image/webp" />
             <img src="/assets/img//kaigai/floating.png" alt="au損保の自転車向け保険" loading="lazy">
