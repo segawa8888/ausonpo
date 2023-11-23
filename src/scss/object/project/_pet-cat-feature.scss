@@ -40,14 +40,30 @@
   }
 }
 .p-pet-cat-feature__point3-flex {
-  flex-direction: column-reverse;
+  @include mq-max("sm") {
+    flex-direction: column-reverse;
+  }
 }
 .p-pet-cat-feature__consultation-img {
+  position: relative;
   width: rem(112px);
   min-width: (112px);
   @include mq-max("sm") {
     width: 100%;
     margin: 0 auto;
+  }
+  img {
+    vertical-align: bottom;
+  }
+}
+.p-pet-cat-feature__consultation-img-label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: rem(59px);
+  @include mq-max("sm") {
+    top: 0;
+    width: rem(138px);
   }
 }
 .p-pet-cat-point-box__photo {
@@ -61,19 +77,36 @@
 .p-pet-cat-feature__point4-head {
   align-items: center;
   justify-content: center;
+  @include mq-max("sm") {
+    flex-direction: column-reverse;
+  }
 }
 .p-pet-cat-feature__point4-head-img {
+  margin-right: rem(24px);
   width: rem(200px);
   min-width: (200px);
+  @include mq-max("sm") {
+    margin-right: 0;
+  }
 }
 .p-pet-cat-feature__point4-card {
   width: rem(280px);
+  @include mq-max("sm") {
+    //width: fit-content;
+  }
 }
 .p-pet-cat-feature__point4-card-list {
   display: flex;
-
   justify-content: center;
   gap: rem(40px);
+  @include mq-max("sm") {
+    //margin-top: rem(50px);
+    justify-content: normal;
+    gap: 0;
+  }
+}
+.splide.is-initialized:not(.is-active) .splide__list {
+  display: flex;
 }
 .p-pet-cat-feature__point4-card-head {
   color: #fff;
@@ -89,6 +122,12 @@
   margin-inline: auto;
   width: rem(190px);
 }
+.p-pet-cat-feature__anipos-item {
+  margin-right: rem(40px);
+  @include mq-max("sm") {
+    margin-right: rem(16px);
+  }
+}
 .p-pet-cat-feature__anipos-logo {
   margin-inline: auto;
   width: rem(230px);
@@ -99,12 +138,29 @@
 .p-pet-cat-feature__anipos-download-link {
   display: block;
   width: rem(178px);
+  @include mq-max("sm") {
+    width: auto;
+  }
 }
 .p-pet-cat-feature__pethouse-wrap {
   align-items: center;
+  @include mq-max("sm") {
+    flex-direction: column;
+  }
+}
+.p-pet-cat-feature__pethouse-iten {
+  margin-right: rem(56px);
+  @include mq-max("sm") {
+    margin-right: rem(24px);
+  }
 }
 .p-pet-cat-feature__pethouse-img {
+  margin-right: rem(40px);
   width: rem(408px);
+  @include mq-max("sm") {
+    margin-right: 0;
+    width: fit-content;
+  }
 }
 .p-pet-cat-feature__pethouse-qr {
   width: rem(68px);
@@ -115,4 +171,7 @@
 .p-pet-cat-feature__pethouse-download-link {
   display: block;
   width: rem(82px);
+  @include mq-max("sm") {
+    width: fit-content;
+  }
 }
