@@ -14,7 +14,7 @@
     line-height: 1.5;
     cursor: pointer;
     @include mq-max("sm") {
-      padding: rem(20px) rem(16px);
+      padding: rem(20px) rem(10px);
     }
     &::after {
       content: "";

@@ -12,6 +12,7 @@
 	border-radius: rem(10px);
     border: rem(1px) solid #BDBDBD;
     padding:rem(20px) rem(21px);
+    min-width: rem(477px);
 }
 
 .p-keiyakusya-table table td:first-child {
@@ -61,10 +62,10 @@
         min-width:rem(100px);
         height: rem(56px);
         white-space: nowrap;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: right;
-        align-items: center;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: right;
+        // align-items: center;
     }
     strong {
         font-size: rem(18px);
@@ -95,6 +96,8 @@
     justify-content: center;
     text-align: center;
     border-bottom: rem(1px) solid $c-white;
+    padding-right: rem(38px);
+    padding-left: rem(5px);
 
     a {
         position: relative;
