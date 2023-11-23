@@ -17,7 +17,7 @@
 .p-kokunai-feature__card {
     max-width: rem(320px);
     width: 100%;
-    min-height: rem(282px);
+    min-height: rem(300px);
     border-radius: rem(5px);
     border: rem(1px) solid #BDBDBD;
     @include mq-max("md") {

@@ -51,6 +51,7 @@
     display: flex;
     gap: 0 rem(24px);
     padding: 0 rem(47px);
+    justify-content: center;
     @include mq-max("md") {
         flex-wrap: wrap;
         padding: 0 rem(25px);
@@ -66,8 +67,14 @@
         gap: 0 rem(5px);
     }
 }
-
 .p-koutsuujiko-detail__img {
+    max-width: rem(240px);
+    @include mq-max("md") {
+        max-width: rem(450px);
+    }
+}
+
+.p-koutsuujiko-detail__sub-img {
     max-width: rem(240px);
     @include mq-max("md") {
         max-width: rem(112px);
