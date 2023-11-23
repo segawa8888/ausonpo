@@ -11,6 +11,8 @@
     padding:rem(16px) 0 rem(13px) 0;
     @include mq-max("md") {
         padding:rem(25px) 0 rem(41px) 0;
+        margin-left: rem(10px);
+        margin-right: rem(10px);
     }
 }
 
