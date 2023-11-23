@@ -8,6 +8,10 @@
     background-color: $c-primary;
     position:absolute;
     top:0px;
+    @include mq-max("sm") {
+        width:rem(141px);
+        height:rem(65px);
+    }
   }
 
   .c-banner-label , .c-banner-label a , .c-banner-label a:after , .c-banner-label a:before {
@@ -26,6 +30,12 @@
     letter-spacing: rem(1.538px);
     line-height: 1.5;
     font-weight: 700;
+    @include mq-max("sm") {
+        width:rem(141px);
+        height:rem(65px);
+        font-size: rem(10px);
+        letter-spacing: rem(1px);
+    }
   }
 
   .c-banner-label {
@@ -33,4 +43,8 @@
     width:rem(153.81px);
     height:rem(149.845px);
     background-color: $c-primary;
+    @include mq-max("sm") {
+        width:rem(141px);
+        height:rem(65px);
+    }
   }
