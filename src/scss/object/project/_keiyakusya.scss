@@ -177,6 +177,29 @@
 .p-keiyakusya-accordion-inner__icon {
     max-width: rem(64px);
 }
+.p-keiyakusya-accordion-inner__sub-heading{
+    @include mq-max("sm") {
+        position: relative;
+        cursor: pointer;
+    }
+    &::after {
+        content: "";
+        width: rem(20px);
+        height: rem(20px);
+        background: url(/common_2024/img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
+        position: absolute;
+        right: rem(20px);
+        top: rem(0px);
+        @include mq-max("sm") {
+          right: rem(10px);
+        }}
+}
+.p-keiyakusya-accordion-inner__sub-heading.is-active::after{
+    @include mq-max("sm") {
+        background-image: url(/common_2024/img/icon/icon_toggle_minus.svg);
+       
+} 
+    }
 
 .p-keiyakusya-accordion-inner__number {
     display: flex;
