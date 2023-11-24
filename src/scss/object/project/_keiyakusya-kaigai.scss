@@ -2,19 +2,28 @@
 @use "../../global" as *;
 
 .p-keiyakusya-kaigai-cta {
-    max-width:rem(360px);
+    max-width: rem(360px);
     margin-bottom: rem(32px);
+&.-sticky{
+    @include mq-max("sm") {
+        position: sticky;
+        bottom: rem(10px);
+        left: 0;
+    }
 }
+}
+
 
 .p-keiyakusya-kaigai-cta a {
     width: 100%;
     display: block;
     transition: 0.3s;
     transition: transform .2s ease;
+
     @include hover {
         // box-shadow: 0 rem(1px) 0 $c-base-200;
         transform: translateY(rem(3px));
-      }
+    }
 }
 
 .p-kaigai-pdf {
