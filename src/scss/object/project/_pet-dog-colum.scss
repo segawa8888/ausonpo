@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-pet-dog-colum__title{
+    position: relative;
+    max-width: rem(700px);
+    
+
+}
+
+.p-pet-dog-colum__title::before{
+content: "";
+ background-image: url(/pc/pet-dog/assets/img/column/pet_icon01_pc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: rem(29px);
+    height: rem(29px);
+    position: absolute;
+    top: rem(18px);
+    left:14%;
+    transform: rotate(-25deg);
+    @include mq-max("sm") {
+        top: rem(24px);
+        left:7%;
+    }
+}
+.p-pet-dog-colum__title::after{
+    content: "";
+    background-image: url(/pc/pet-dog/assets/img/column/pet_icon02_pc.png);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       position: absolute;
+       width: rem(29px);
+       height: rem(29px);
+       top: rem(40px);
+       right: 13%;
+       @include mq-max("sm") {
+        top: rem(72px);
+        right: 23%;
+       }
+    
+}
