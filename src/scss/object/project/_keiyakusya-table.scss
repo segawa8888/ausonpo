@@ -82,8 +82,13 @@
 
     .important {
         position: absolute;
-        top:rem(-10px);
-        right: rem(2px);
+        top: rem(16px);
+        right: rem(8px);
+        @include mq-max("md") {
+            top:rem(-10px);
+            right: rem(2px);
+        }
+     
     }
 }
 
