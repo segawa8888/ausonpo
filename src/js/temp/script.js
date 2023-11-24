@@ -167,7 +167,7 @@ document.addEventListener("componentsLoaded", () => {
     new Splide(keiyakusyaSlider2, {
       autoplay: false, // 自動再生
       arrows: false,
-      speed: 2000, // スライダーの移動時間
+      //speed: 2000, // スライダーの移動時間
       destroy: true, // スライダーを破棄
       perPage: 1,
       flickMaxPages: 1,

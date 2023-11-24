@@ -136,12 +136,14 @@
 }
 
 .p-keiyakusya-point-boxes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: rem(20px) rem(36px);
+    @include mq-min("md") {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: rem(20px) rem(36px);
+    }
     @include mq-max("md") {
-        flex-wrap: nowrap;
+        //flex-wrap: nowrap;
     }
 }
 
@@ -152,6 +154,11 @@
     border: rem(1px) solid #cfcfcf;
     background: #fff;
     min-height: rem(224.104px);
+    @include mq-max("md") {
+        &:not(:first-child) {
+            margin-left: rem(18px);
+        }
+    }
 }
 
 .p-keiyakusya-point-box__heading {
