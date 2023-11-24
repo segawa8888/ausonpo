@@ -181,6 +181,7 @@
     @include mq-max("sm") {
         position: relative;
         cursor: pointer;
+        
     }
     &::after {
         content: "";
@@ -194,10 +195,14 @@
           right: rem(10px);
         }}
 }
+.p-keiyakusya-accordion-inner__sub-content{
+    @include mq-max("sm") {
+    display: none;
+    }
+}
 .p-keiyakusya-accordion-inner__sub-heading.is-active::after{
     @include mq-max("sm") {
         background-image: url(/common_2024/img/icon/icon_toggle_minus.svg);
-       
 } 
     }
 
