@@ -5,7 +5,7 @@
     @include mq-max("sm") {
         margin-top: 50px;
     }
-   & h3{
+   & h2{
     line-height: 1.5;   
         font-size: rem(20px);
         font-weight: bold;
@@ -14,9 +14,9 @@
         padding: rem(15px) 0 0 rem(118px);
         @include mq-max("sm") {
             padding-left: 0;
-        }
+        }}
         & .ex_list {
-            padding: rem(25px) 0 0 rem(50px);
+            padding: rem(25px) 0 0 0;
             @include mq-max("sm") {
                 padding: 0 0 rem(15px) rem(10px);   
             }
@@ -27,7 +27,7 @@
             }
         }
     }
-}
+
 .p-block-area__text{
     line-height: 1.5;
     max-width: rem(860px);
