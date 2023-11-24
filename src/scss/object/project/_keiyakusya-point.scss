@@ -43,8 +43,8 @@
     margin-left: rem(24px);
     margin-right: rem(24px);
     @include mq-max("md") {
-     margin-left: initial;
-     margin-right: initial;   
+        margin-left: initial;
+        margin-right: initial;
     }
     .splide01:not(.is-overflow) .splide__pagination {
         display: flex;
@@ -119,9 +119,6 @@
         font-size: rem(15px);
         width: rem(151px);
         height: rem(38px);
-        background-image: url(/common_2024/img/arrow/arrow_md_primary.svg);
-        background-position: right rem(8px) center;
-        background-size: rem(6px);
     }
 }
 
