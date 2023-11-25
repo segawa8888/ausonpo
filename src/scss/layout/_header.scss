@@ -32,6 +32,9 @@ layout/_header.scss
   &__logo {
     width: rem(141px);
     height: auto;
+    a {
+      display: block;
+    }
     @include mq-max("md") {
       width: rem(104px);
       margin-left: rem(10px);
@@ -51,6 +54,11 @@ layout/_header.scss
     padding: 0 rem(24px);
     @include mq-max("md") {
       display: none;
+    }
+    a {
+      @include hover {
+        text-decoration: underline;
+      }
     }
   }
   &__btn {
@@ -192,11 +200,10 @@ layout/_header.scss
       height: rem(20px);
       background: $c-white;
     }
-    &.-current,
-    &:hover {
-      a {
-        background: $c-primary;
-      }
+    &.-current a,
+    a:hover,
+    a:focus {
+      background: $c-primary;
     }
   }
   &__scroll {

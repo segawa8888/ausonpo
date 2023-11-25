@@ -31,3 +31,8 @@ a[href^="tel:"] {
     pointer-events: none;
   }
 }
+
+a:focus {
+  outline: 1px solid $c-primary;
+  //box-shadow: 0px 0px 4px #0066ff;
+}
