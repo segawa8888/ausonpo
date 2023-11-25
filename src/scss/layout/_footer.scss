@@ -110,9 +110,9 @@ layout/_footer.scss
       padding: 0 0 0 rem(20px);
     }
   }
-  &__content.-block{
+  &__content.-block {
     @include mq-max("md") {
-    display: block;
+      display: block;
     }
   }
   @include mq-max("sm") {
@@ -157,6 +157,11 @@ layout/_footer.scss
     background: url(/common_2024/img/footer_nav_arrow.svg) left rem(9px) no-repeat;
     background-size: rem(5px);
     padding-left: rem(12px);
+    a {
+      @include hover {
+        text-decoration: underline;
+      }
+    }
     &.-external {
       a {
         &::after {

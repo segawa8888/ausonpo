@@ -142,6 +142,9 @@ layout/_header.scss
       padding-left: rem(14px);
       font-size: rem(12px);
       line-height: 2;
+      @include hover {
+        text-decoration: underline;
+      }
     }
   }
   &__grid-1 {
@@ -237,6 +240,9 @@ layout/_header.scss
     flex-direction: column;
     position: relative;
     cursor: pointer;
+    &:focus {
+      outline: $c-primary 1px solid;
+    }
     @include mq-max("sm") {
       height: rem(48px);
       font-size: rem(16px);
@@ -320,6 +326,9 @@ layout/_header.scss
     a {
       color: $c-primary;
       padding-left: rem(14px);
+      @include hover {
+        text-decoration: underline;
+      }
     }
     & & {
       font-size: rem(12px);
