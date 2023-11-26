@@ -1,7 +1,24 @@
 @charset "UTF-8";
 @use "../../global" as *;
 
-.p-pet-cat-feature__card {
+.p-pet-cat-feature__ttl-nikukyu {
+  font-size: rem(30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before,
+  &::after {
+    background-image: url(/pc/pet/assets/img/pet_cat_icon01.svg);
+    content: "";
+    width: rem(35px);
+    height: rem(35px);
+  }
+  &::before {
+    rotate: -20deg;
+  }
+  &::after {
+    rotate: 20deg;
+  }
 }
 .p-pet-cat-feature__card-img {
   margin-inline: auto;
