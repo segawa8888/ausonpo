@@ -79,4 +79,26 @@
       }
     }
   }
+  &--single {
+    @include mq-max("sm") {
+      width: rem(340px);
+      padding: rem(14px) rem(22px) rem(13px) rem(17px);
+    }
+    .p-pet-btn__container {
+      @include mq-max("sm") {
+        flex-direction: row;
+        gap:0 rem(21.6px);
+      }
+      &-text {
+        @include mq-max("sm") {
+          flex-direction: row;
+          margin-top: initial;
+          &::after {
+            margin-top: initial;
+            margin-left: rem(27px);
+          }
+        }
+      }
+    }
+  }
 }
