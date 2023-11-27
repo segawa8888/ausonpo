@@ -31,7 +31,7 @@
     <nav class="c-breadcrumbs">
       <ol class="c-breadcrumbs__list l-container lg:-full sm:-full">
         <li class="c-breadcrumbs__item"><a href="/pc/">au損保トップ</a></li>
-        <li class="c-breadcrumbs__item"><a href="/pc/sports">ペット医療費用保険</a></li>
+        <li class="c-breadcrumbs__item"><a href="/pc/sports">ペット保険</a></li>
         <li class="c-breadcrumbs__item">ペット保険の料金とお見積りシミュレーション</li>
       </ol>
     </nav>
@@ -72,7 +72,19 @@
               </select>
             </dd>
           </dl>
-          <p class="u-mt-2 u-ml-14 sm:u-mx-20"><a href="#" class="u-link-text u-text-bold">混血種について</a></p>
+          <div class="modal-overlay closed" id="modal-overlay"></div>
+          <div class="modal closed" id="modal">
+            <button class="close-button" id="close-button"><span>
+              <picture>
+                <source srcset="/pc/pet/assets/img/pet_close_btn.webp" type="image/webp">
+                <img src="/pc/pet/assets/img/pet_close_btn.png" alt="" loading="lazy">
+              </picture>
+            </span><br>閉じる</button>
+            <div class="modal-guts">
+              <p>混血犬の場合は、申込時点の体重（成犬でない場合には成犬時の予想体重）を選択してください。</p>
+            </div>
+          </div>
+          <p class="u-mt-2 u-ml-14 sm:u-mx-20"><a href="#" id="open-button" class="u-link-text u-text-bold">混血種について</a></p>
           <p class="u-text-indent-1 u-text-gray u-mt-3 u-text-10 u-text-bold">※新規でお申込みいただけるペットの年齢は、生後30日から10歳までとなります。ご継続契約には年齢制限はありません。</p>
           <p class="u-text-indent-1 u-text-gray u-text-10 u-text-bold">※ペットの年齢は保険開始日時点での満年齢を選択してください。保険開始日は、毎月20日までにお申込みの場合は、<br>
             その翌月１日となります。21日以降にお申込みの場合は、その翌々月１日が保険開始日となります。</p>
@@ -102,137 +114,93 @@
           </div>
       </div>
 
-      <p class="u-text-center u-mt-8">
-        <a href="#" class="c-btn -lg">カンタンお見積もり</a>
-      </p>
 
-      <div class="p-pet-compensation-cont">
-        <div class="p-pet-compensation-cont__title">
-          <h2 class="c-heading2-has-line">補償内容</h2>
-        </div>
-        <div class="p-pet-compensation-cont__type p-pet-type-info p-pet-type-info--tabChange">
-          <div class="p-pet-type-info__tabs">
-            <div class="p-pet-type-info__tab is-active">
-              <button type="button" class="p-pet-type-info__name is-active lg:u-hidden js-pet-info" data-id="pet-cont01">
-                <span>通院あり<br><span>タイプ</span></span>
-              </button>
-            </div>
-            <div class="p-pet-type-info__tab p-pet-type-info__tab--yellow">
-              <button type="button" class="p-pet-type-info__name p-pet-type-info__name--yellow lg:u-hidden js-pet-info" data-id="pet-cont02">
-                <span>通院なし<br><span>タイプ</span></span>
-              </button>
-            </div>
-          </div>
-          <div class="p-pet-type-info__box u-justify-center">
-            <div id="pet-cont02" class="p-pet-type-info__type p-pet-type-info__type--yellow">
-              <div class="p-pet-type-info__name sm:u-hidden">
-                <p>通院なし<span>タイプ</span></p>
-              </div>
-              <div class="p-pet-type-info__body">
-                <div class="p-pet-type-info__feature">
-                  <p>手術・入院にお手頃価格で備える</p>
+      <div class="c-accordion-4 u-mt-12 u-w-1/2">
+        <h3 class="c-accordion-4__heading js-accordion-toggle-btn -angle">見積もりをシミュレーションする</h3>
+        <div class="c-accordion-4__wrapper js-accordion-toggle-content">
+          <div class="c-accordion-4__content">
+            <div class="p-pet-premium__box u-justify-center" style="flex-wrap:wrap;">
+              <div class="p-pet-premium__type u-w-full">
+                <div class="p-pet-premium__name">
+                  <p>通院あり<span>タイプ</span></p>
                 </div>
-                <div class="p-pet-type-info__tableSection">
-                  <div class="p-pet-type-info__tableName">
-                    <p>補償の範囲</p>
-                  </div>
-                  <table class="p-pet-type-info__table">
-                    <thead>
-                      <tr>
-                        <th class="p-pet-type-info__tableHeading">通院</th>
-                        <th class="p-pet-type-info__tableHeading">入院手術</th>
-                        <th class="p-pet-type-info__tableHeading">日帰り手術</th>
-                        <th class="p-pet-type-info__tableHeading">入院のみ</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="p-pet-type-info__tableBody">
-                            <picture>
-                              <source srcset="/pc/pet/assets/img/pet_cat_cross.webp" type="image/webp">
-                              <img src="/pc/pet/assets/img/pet_cat_cross.png" alt="" loading="lazy">
-                            </picture>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="p-pet-type-info__tableBody">
-                            <picture>
-                              <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp">
-                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="" loading="lazy">
-                            </picture>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="p-pet-type-info__tableBody">
-                            <picture>
-                              <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp">
-                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="" loading="lazy">
-                            </picture>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="p-pet-type-info__tableBody">
-                            <picture>
-                              <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp">
-                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="" loading="lazy">
-                            </picture>
-                          </div>
-                        </td>
-                      </tr>
-                    </thead>
-                  </table>
-                  <div class="p-pet-type-info__priceBox">
-                    <p>通院なしタイプの保険料は</p>
-                    <div class="p-pet-type-info__price">
-                      <div class="p-pet-type-info__priceLeft">月&nbsp;々</div>
-                      <div class="p-pet-type-info__priceRight"><span>830</span>円~</div>
+                <div class="p-pet-premium__body">
+                  <div class="p-pet-premium__bodyWrap">
+                    <div class="p-pet-premium__targetBox">
+                      <div class="p-pet-premium__target">
+                        <p>補償の対象</p>
+                      </div>
+                      <div class="p-pet-premium__targetList">
+                        <p>入院</p>
+                        <p>手術</p>
+                        <p>退院</p>
+                      </div>
+                    </div>
+                    <div class="p-pet-premium__course">
+                      <div class="p-pet-premium__courseList">
+                        <p>70% <span>コース</span></p>
+                        <div class="p-pet-premium__price">
+                          <div class="p-pet-premium__priceLeft">月&nbsp;々</div>
+                          <div class="p-pet-premium__priceRight"><span>2<i>,</i>030</span>円~</div>
+                        </div>
+                      </div>
+                      <div class="p-pet-premium__courseList">
+                        <p>50% <span>コース</span></p>
+                        <div class="p-pet-premium__price">
+                          <div class="p-pet-premium__priceLeft">月&nbsp;々</div>
+                          <div class="p-pet-premium__priceRight"><span>1<i>,</i>600</span>円~</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!--p-type-info__tableSection-->
-                <div class="p-pet-type-info__course">
-                  <div class="p-pet-type-info__courseTitle">
-                    <p>補償の割合(保険金お支払い割合)</p>
-                  </div>
-                  <table class="p-pet-type-info__courseTable p-pet-course-table p-pet-course-table--yellow">
-                    <thead>
-                      <tr>
-                        <th class="p-pet-course-table__heading">70%<span>コース</span></th>
-                        <th class="p-pet-course-table__heading">50%<span>コース</span></th>
-                      </tr>
-                      <tr>
-                        <td colspan="2" class="p-pet-course-table__title">年間の入院・手術の限度額</td>
-                      </tr>
-                      <tr>
-                        <td class="p-pet-course-table__price">70<span>万円</span></td>
-                        <td class="p-pet-course-table__price">50<span>万円</span></td>
-                      </tr>
-                      <tr>
-                        <td colspan="2" class="p-pet-course-table__title">年間の通院の限度額</td>
-                      </tr>
-                      <tr>
-                        <td class="p-pet-course-table__price">ー</td>
-                        <td class="p-pet-course-table__price">ー</td>
-                      </tr>
-                    </thead>
-                  </table>
-                </div>
-                <a href="p-pet-application__box-btn">
-                  <p class="p-pet-application__box-btn--no u-mt-3"><strong>通院なし</strong>タイプ<br class="lg:u-hidden">お申込み<span class="lg:u-hidden">はこちら</span></p>
-                </a>
               </div>
+              <a href="p-pet-application__box-btn">
+                <p class="p-pet-application__box-btn--yes"><strong>通院あり</strong>タイプ<br class="lg:u-hidden">お申込み<span class="lg:u-hidden">はこちら</span></p>
+              </a>
+              <!--p-pet-premium__type-->
+              <div class="p-pet-premium__type p-pet-premium__type--yellow u-w-full">
+                <div class="p-pet-premium__name">
+                  <p>通院なし<span>タイプ</span></p>
+                </div>
+                <div class="p-pet-premium__body">
+                  <div class="p-pet-premium__bodyWrap">
+                    <div class="p-pet-premium__targetBox">
+                      <div class="p-pet-premium__target">
+                        <p>補償の対象</p>
+                      </div>
+                      <div class="p-pet-premium__targetList">
+                        <p>入院</p>
+                        <p>手術</p>
+                      </div>
+                    </div>
+                    <div class="p-pet-premium__course">
+                      <div class="p-pet-premium__courseList">
+                        <p>70% <span>コース</span></p>
+                        <div class="p-pet-premium__price">
+                          <div class="p-pet-premium__priceLeft">月&nbsp;々</div>
+                          <div class="p-pet-premium__priceRight"><span>1<i>,</i>030</span>円~</div>
+                        </div>
+                      </div>
+                      <div class="p-pet-premium__courseList">
+                        <p>50% <span>コース</span></p>
+                        <div class="p-pet-premium__price">
+                          <div class="p-pet-premium__priceLeft">月&nbsp;々</div>
+                          <div class="p-pet-premium__priceRight"><span>830</span>円~</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="p-pet-application__box-btn">
+                <p class="p-pet-application__box-btn--no"><strong>通院なし</strong>タイプ<br class="lg:u-hidden">お申込み<span class="lg:u-hidden">はこちら</span></p>
+              </a>
+              <!--p-pet-premium__type-->
             </div>
           </div>
         </div>
       </div>
-
-      <p class="u-mt-6 l-container" style="max-width:33.25rem;">
-        <a href="">
-          <picture>
-            <source srcset="/pc/pet/assets/img/pet_simulation_btn_01.webp" media="(min-width:768px)" type="image/webp">
-            <img src="/pc/pet/assets/img/pet_simulation_btn_01_sp.webp" alt="クレジットカード" loading="lazy">
-          </picture>
-        </a>
-      </p>
 
       <section class="p-byclebest-tab">
         <h2 class="c-heading2-has-line">保険料表</h2>

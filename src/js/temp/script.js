@@ -421,6 +421,26 @@ document.addEventListener("componentsLoaded", () => {
 });
 
 /*----------------------------------------------------------
+pet ポップアップウィンドウ - 2023-11-27
+----------------------------------------------------------*/
+
+var modal = document.querySelector("#modal");
+var modalOverlay = document.querySelector("#modal-overlay");
+var closeButton = document.querySelector("#close-button");
+var openButton = document.querySelector("#open-button");
+
+//閉じるボタン
+closeButton.addEventListener("click", function () {
+  modal.classList.toggle("closed");
+  modalOverlay.classList.toggle("closed");
+});
+
+//開くボタン
+openButton.addEventListener("click", function () {
+  modal.classList.toggle("closed");
+  modalOverlay.classList.toggle("closed");
+});
+/*----------------------------------------------------------
 Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 ・全てのコードの最後に読み込む
 ・初期表示時のレイアウト崩れ対応処理含む
