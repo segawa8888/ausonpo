@@ -132,8 +132,15 @@
   }
   &__content {
     padding: rem(16px) rem(24px);
-    font-size: rem(12px);
+    font-size: rem(14px);
     font-weight: 700;
     line-height: 1.3;
+
+    p {
+      a {
+        display: block;
+        margin-top: rem(14px);
+      }
+    }
   }
 }
