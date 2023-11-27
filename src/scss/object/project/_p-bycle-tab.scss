@@ -837,3 +837,17 @@
         }
     }
 }
+
+.p-keiyakusya-table table tr.-p-byclepic-ful{
+    max-width: 100%;
+    width: 100%;
+    grid-template-areas: "p-bycle-hoken-title p-bycle-hoken-pic p-bycle-hoken-pic p-bycle-hoken-pic"; 
+    .p-bycle-hoken-title{
+        grid-area: p-bycle-hoken-title;
+    }
+    .p-bycle-hoken-pic{
+        grid-area: p-bycle-hoken-pic;
+        text-align: center;
+        background-color: rgba(144,144,144,.1);
+    }
+}
