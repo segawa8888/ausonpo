@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@use "../../global" as *;
+.p-news-header {
+    margin-bottom: rem(32px);
+    .c-post-heading {
+        margin-bottom: rem(24px);
+    }
+    .c-post-meta {
+        &__date {
+            font-weight: 700;
+        }
+        &__category {
+            color: $c-black;
+            background: $c-base-100;
+            font-weight: 700;
+            &.-orange {
+                background: #f4ddc0;
+            }
+            &.-yellow {
+                background: $c-yellow;
+            }
+        }
+    }
+}
