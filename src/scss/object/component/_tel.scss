@@ -37,6 +37,7 @@
     font-size: rem(44px);
     letter-spacing: 0.04em;
     line-height: 1;
+    position: relative;
     a {
       display: flex;
       align-items: center;
@@ -48,6 +49,23 @@
     }
     span {
       font-size: rem(30px);
+    }
+    &::after {
+      content: '';
+      width:rem(44px);
+      height:rem(44px);
+      background: url(/common_2024/img/icon/icon_freedial.webp) left no-repeat;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: rem(-45.5px);
+      @include mq-max("sm") {
+        background-position: right;
+        top: rem(-45px);
+        left:initial;
+        right: rem(-30px);
+      }
     }
   }
   &__text {

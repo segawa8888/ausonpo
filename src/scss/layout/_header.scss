@@ -150,6 +150,9 @@ layout/_header.scss
     &.-col-9 {
       grid-template-columns: repeat(9, 1fr);
     }
+    &.-col-10 {
+      grid-template-columns: repeat(10, 1fr);
+    }
     min-height: rem(46px);
     @include mq-max("sm") {
       display: flex;
