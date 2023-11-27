@@ -29,12 +29,30 @@
     <!-- End Google Tag Manager -->
 
     <nav class="c-breadcrumbs">
-      <ol class="c-breadcrumbs__list l-container lg:-full sm:-full">
-        <li class="c-breadcrumbs__item"><a href="/pc/">au損保トップ</a></li>
-        <li class="c-breadcrumbs__item"><a href="/pc/sports">ペット保険</a></li>
-        <li class="c-breadcrumbs__item">ペット保険の料金とお見積りシミュレーション</li>
+      <ol class="c-breadcrumbs__list l-container lg:-full sm:-full"
+      itemscope
+      itemtype="http://schema.org/BreadcrumbList"
+      class="c-breadcrumbs__list l-container lg:-full sm:-full">
+        <li class="c-breadcrumbs__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="http://schema.org/ListItem">
+        <a href="/pc/">au損保トップ</a><meta itemprop="position" content="1" />
+      </li>
+        <li class="c-breadcrumbs__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="http://schema.org/ListItem"
+        ><a href="/pc/sports">ペット保険</a><meta itemprop="position" content="2" />
+      </li>
+        <li class="c-breadcrumbs__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="http://schema.org/ListItem">ペット保険の料金とお見積りシミュレーション
+        <meta itemprop="position" content="3" /></li>
       </ol>
     </nav>
+
     <main class="l-main l-container lg:-full sm:-full js-main u-mb-20">
       <!--コンテンツはこちら-->
 
@@ -155,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <a href="p-pet-application__box-btn">
+              <a href="/pca/popup_mbt.htm|?tPet=1">
                 <p class="p-pet-application__box-btn--yes"><strong>通院あり</strong>タイプ<br class="lg:u-hidden">お申込み<span class="lg:u-hidden">はこちら</span></p>
               </a>
               <!--p-pet-premium__type-->
@@ -193,7 +211,7 @@
                   </div>
                 </div>
               </div>
-              <a href="p-pet-application__box-btn">
+              <a href="/pca/popup_mbt.html?tPet=0">
                 <p class="p-pet-application__box-btn--no"><strong>通院なし</strong>タイプ<br class="lg:u-hidden">お申込み<span class="lg:u-hidden">はこちら</span></p>
               </a>
               <!--p-pet-premium__type-->
@@ -483,7 +501,7 @@
       </p>
 
       <div class="u-text-center u-mt-12">
-        <a href="#" class="p-pet-btn p-pet-btn--cat p-pet-btn--single">
+        <a href="/pc/pet-cat/index.html" class="p-pet-btn p-pet-btn--cat p-pet-btn--single">
           <div class="p-pet-btn__container">
             <picture class="p-pet-btn__container-img">
               <source srcset="/pc/pet/assets/img/pet_cat_consider.webp" type="image/webp">
