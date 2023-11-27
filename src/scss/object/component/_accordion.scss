@@ -44,6 +44,10 @@
     border-top: 2px $c-base-300 dotted;
     padding: rem(24px) 0 rem(32px);
 
+    @include mq-max("sm") {
+      padding: rem(24px) rem(10px) rem(32px);
+    }
+
     dt {
       font-size: rem(14px);
       font-weight: 700;
