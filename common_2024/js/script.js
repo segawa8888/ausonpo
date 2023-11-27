@@ -619,22 +619,26 @@ document.addEventListener("componentsLoaded", () => {
 pet ポップアップウィンドウ - 2023-11-27
 ----------------------------------------------------------*/
 
-var modal = document.querySelector("#modal");
-var modalOverlay = document.querySelector("#modal-overlay");
-var closeButton = document.querySelector("#close-button");
-var openButton = document.querySelector("#open-button");
+var petModal = document.querySelector("#modal");
+var petModalOverlay = document.querySelector("#modal-overlay");
+var petCloseButton = document.querySelector("#close-button");
+var petOpenButton = document.querySelector("#open-button");
 
-//閉じるボタン
-closeButton.addEventListener("click", function () {
-  modal.classList.toggle("closed");
-  modalOverlay.classList.toggle("closed");
-});
+// 要素が存在する場合にのみイベントリスナーを追加
+if (petCloseButton && petModal && petModalOverlay) {
+  petCloseButton.addEventListener("click", function () {
+    petModal.classList.toggle("closed");
+    petModalOverlay.classList.toggle("closed");
+  });
+}
 
-//開くボタン
-openButton.addEventListener("click", function () {
-  modal.classList.toggle("closed");
-  modalOverlay.classList.toggle("closed");
-});
+if (petOpenButton && petModal && petModalOverlay) {
+  petOpenButton.addEventListener("click", function () {
+    petModal.classList.toggle("closed");
+    petModalOverlay.classList.toggle("closed");
+  });
+}
+
 /*----------------------------------------------------------
 Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 ・全てのコードの最後に読み込む
