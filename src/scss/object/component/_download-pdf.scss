@@ -25,6 +25,14 @@
     background-size: rem(24px);
     background: url(/common_2024/img/icon/icon_pdf.webp) left 1.2em no-repeat;
   }
+  &.-one-line {
+    @include mq-max("sm") {
+      font-size: rem(12px);
+      padding: rem(8px) 0 rem(8px) rem(36px);
+      background-size: rem(24px);
+      background: url(/common_2024/img/icon/icon_pdf.webp) left 0.5em no-repeat;
+    }
+  }
   &.-external {
     &::after {
       content: "";
