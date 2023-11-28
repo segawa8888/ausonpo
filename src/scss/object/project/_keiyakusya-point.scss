@@ -12,10 +12,14 @@
         white-space: nowrap;
         @include mq-max("md") {
             max-width: initial;
-            gap: 0 rem(5px);
+            gap: 0 rem(11px);
+            letter-spacing: 0;
         }
         span {
             display: block;
+            @include mq-max("md") {
+                padding-left: rem(25px);
+            }
             strong {
                 font-size: rem(35px);
                 @include mq-max("md") {
@@ -154,11 +158,6 @@
     border: rem(1px) solid #cfcfcf;
     background: #fff;
     min-height: rem(224.104px);
-    @include mq-max("md") {
-        &:not(:first-child) {
-            margin-left: rem(18px);
-        }
-    }
 }
 
 .p-keiyakusya-point-box__heading {

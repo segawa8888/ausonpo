@@ -58,6 +58,7 @@
     padding:rem(15px) rem(28px) rem(23px) 0;
     position: relative;
     display: flex;
+    flex-wrap:wrap;
     align-items: flex-end;
     justify-content: flex-end;
     @include mq-max("md") {
@@ -105,7 +106,7 @@
     justify-content: center;
     text-align: center;
     border-bottom: rem(1px) solid $c-white;
-    padding-right: rem(38px);
+    padding-right: rem(18px);
     padding-left: rem(5px);
 
     a {
