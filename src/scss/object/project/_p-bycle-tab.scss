@@ -889,9 +889,14 @@
                 }
             }
             td {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
                 @include mq-max("sm") {
                     line-height: 1rem;
                     min-width: 8.75rem;
+                    justify-content: center;
+                    align-items: center;
                 }
                 span {
                     @include mq-max("md") {
@@ -1051,10 +1056,7 @@
             }
         }
         table tbody td {
-            justify-content: space-between;
-            @include mq-max("md") {
-                justify-content: end;
-            }
+            justify-content: end;
             &:first-child {
                 border-bottom: none;
                 @include mq-max("sm") {
