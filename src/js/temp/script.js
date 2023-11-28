@@ -171,6 +171,7 @@ document.addEventListener("componentsLoaded", () => {
       destroy: true, // スライダーを破棄
       perPage: 1,
       flickMaxPages: 1,
+      type: "loop",
       pagination: true,
       breakpoints: {
         768: {
