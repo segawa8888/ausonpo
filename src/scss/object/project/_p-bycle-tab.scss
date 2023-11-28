@@ -831,6 +831,14 @@
         }
     }
 }
+//決済方法
+.p-kokunai-payment__icons.bycle {
+    grid-template-columns:repeat(6, 1fr);
+    @include mq-max("md") {
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
 
 .p-keiyakusya-table table tr.-p-byclepic-ful {
     max-width: 100%;
