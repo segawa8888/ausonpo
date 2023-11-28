@@ -239,6 +239,11 @@
         width: rem(336px);
         border-radius: rem(5px);
         border: rem(2px) solid #b3b3b3;
+        @include mq-max("md") {
+            width: 100%;
+            padding-left: rem(12px);
+            padding-right: rem(12px);
+        }
     }
 
     .c-contact-box__btn .c-btn {
