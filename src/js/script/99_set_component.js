@@ -33,7 +33,7 @@ function determineNavComponent(url) {
 Promise.all([
   //コンポーネントの読み込み処理
   loadComponent("/common_2024/component/head/meta.html", "head", "afterbegin"),
-  loadComponent("/common_2024/component/head/ogp.html", "head", "beforeend"),
+  //loadComponent("/common_2024/component/head/ogp.html", "head", "beforeend"),
   loadComponent("/common_2024/component/layout/footer.html", ".l-main", "afterend"),
   loadComponent("/common_2024/component/layout/header.html", "body", "afterbegin").then(() => {
     return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
@@ -45,7 +45,7 @@ Promise.all([
     // 各要素に対してコンポーネントを読み込む
     dataComponentElements.forEach((elm) => {
       const componentName = elm.getAttribute("data-component");
-      const componentPath = `/component/${componentName}.html`;
+      const componentPath = `/common_2024/component/${componentName}.html`;
       loadComponent(componentPath, `[data-component="${componentName}"]`, "afterbegin");
     });
   })

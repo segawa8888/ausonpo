@@ -364,7 +364,7 @@
     }
 
     &__courseTable {
-      margin-top: rem(5px);
+      margin-top: rem(28px);
     }
   }
 }
@@ -606,5 +606,55 @@
         gap: 0;
       }
     }
+  }
+}
+
+.p-pet-type-info__sub-title {
+  font-size: rem(20px);
+  font-weight: 700;
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0 rem(40px);
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-size: rem(40px);
+    background-repeat: no-repeat;
+    width:rem(40px);
+    height:rem(40px);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-size: rem(40px);
+    background-repeat: no-repeat;
+    width:rem(40px);
+    height:rem(40px);
+  }
+}
+
+.p-pet-type-info__sub-title.--yellow {
+  &::before {
+    background-image: url(/pc/pet/assets/img/pet_yellow_icon.webp);
+  }
+  &::after {
+    background-image: url(/pc/pet/assets/img/pet_yellow_icon.webp);
+  }
+}
+
+.p-pet-type-info__sub-title.--orange {
+  &::before {
+    background-image: url(/pc/pet/assets/img/pet_orange_icon.webp);
+  }
+  &::after {
+    background-image: url(/pc/pet/assets/img/pet_orange_icon.webp);
   }
 }

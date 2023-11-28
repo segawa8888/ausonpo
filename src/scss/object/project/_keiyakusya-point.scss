@@ -38,6 +38,14 @@
 /* PC時のスタイル */
 
 .p-keiyakusya-point__wrapper {
+    padding-bottom: rem(16px);
+    border-radius: 0px 0px 5px 5px;
+    margin-left: rem(24px);
+    margin-right: rem(24px);
+    @include mq-max("md") {
+        margin-left: initial;
+        margin-right: initial;
+    }
     .splide01:not(.is-overflow) .splide__pagination {
         display: flex;
         margin-top: rem(21px);
@@ -80,6 +88,8 @@
 .p-keiyakusya-point__content {
     max-width: rem(682px);
     background-color: $c-white;
+    border: 1px solid #c9c9c9;
+    border-radius: rem(8px);
     padding: rem(12px) rem(50px) rem(32px) rem(50px);
     @include mq-max("md") {
         padding: rem(14px) rem(9px) rem(22px) rem(9px);
@@ -109,9 +119,6 @@
         font-size: rem(15px);
         width: rem(151px);
         height: rem(38px);
-        background-image: url(/common_2024/img/arrow/arrow_md_primary.svg);
-        background-position: right rem(8px) center;
-        background-size: rem(6px);
     }
 }
 
@@ -129,12 +136,14 @@
 }
 
 .p-keiyakusya-point-boxes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: rem(20px) rem(36px);
+    @include mq-min("md") {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: rem(20px) rem(36px);
+    }
     @include mq-max("md") {
-        flex-wrap: nowrap;
+        //flex-wrap: nowrap;
     }
 }
 
@@ -145,6 +154,11 @@
     border: rem(1px) solid #cfcfcf;
     background: #fff;
     min-height: rem(224.104px);
+    @include mq-max("md") {
+        &:not(:first-child) {
+            margin-left: rem(18px);
+        }
+    }
 }
 
 .p-keiyakusya-point-box__heading {

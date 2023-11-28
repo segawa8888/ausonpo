@@ -36,6 +36,7 @@
 
 .p-keiyakusya-accordion__heading {
     background-color: #dcdcdc;
+    border-radius: rem(6px);
     &::after {
         top: 50%;
         transform: translateY(-50%);
@@ -176,6 +177,34 @@
 .p-keiyakusya-accordion-inner__icon {
     max-width: rem(64px);
 }
+.p-keiyakusya-accordion-inner__sub-heading {
+    @include mq-max("sm") {
+        position: relative;
+        cursor: pointer;
+    }
+    &::after {
+        content: "";
+        width: rem(20px);
+        height: rem(20px);
+        background: url(/common_2024/img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
+        position: absolute;
+        right: rem(20px);
+        top: rem(0px);
+        @include mq-max("sm") {
+            right: rem(10px);
+        }
+    }
+}
+.p-keiyakusya-accordion-inner__sub-content {
+    @include mq-max("sm") {
+        display: none;
+    }
+}
+.p-keiyakusya-accordion-inner__sub-heading.is-active::after {
+    @include mq-max("sm") {
+        background-image: url(/common_2024/img/icon/icon_toggle_minus.svg);
+    }
+}
 
 .p-keiyakusya-accordion-inner__number {
     display: flex;
@@ -223,6 +252,9 @@
 
     .sm\:u-grid-cols-1 {
         justify-items: center;
+    }
+    .c-contact-box__heading.-icon-tel {
+        padding-right: 0;
     }
 }
 
@@ -291,4 +323,41 @@
 
 .p-keiyakusya-type__banner {
     max-width: rem(812px);
+}
+
+.p-keiyakusha-covenants {
+    &_description {
+        font-size: rem(14px);
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
+        text-align: left;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    &_text {
+        margin-top: rem(16px);
+        font-size: rem(10px);
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+    ul {
+        text-align: left;
+        margin: 0 auto;
+        max-width: fit-content;
+    }
+}
+
+.p-keiyakusya-roadservice {
+    &_text {
+        font-size: rem(14px);
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
+        text-align: left;
+        width: fit-content;
+        margin: 0 auto;
+    }
 }

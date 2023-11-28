@@ -32,6 +32,9 @@ layout/_header.scss
   &__logo {
     width: rem(141px);
     height: auto;
+    a {
+      display: block;
+    }
     @include mq-max("md") {
       width: rem(104px);
       margin-left: rem(10px);
@@ -51,6 +54,11 @@ layout/_header.scss
     padding: 0 rem(24px);
     @include mq-max("md") {
       display: none;
+    }
+    a {
+      @include hover {
+        text-decoration: underline;
+      }
     }
   }
   &__btn {
@@ -142,6 +150,9 @@ layout/_header.scss
     &.-col-9 {
       grid-template-columns: repeat(9, 1fr);
     }
+    &.-col-10 {
+      grid-template-columns: repeat(10, 1fr);
+    }
     min-height: rem(46px);
     @include mq-max("sm") {
       display: flex;
@@ -192,11 +203,10 @@ layout/_header.scss
       height: rem(20px);
       background: $c-white;
     }
-    &.-current,
-    &:hover {
-      a {
-        background: $c-primary;
-      }
+    &.-current a,
+    a:hover,
+    a:focus {
+      background: $c-primary;
     }
   }
   &__scroll {

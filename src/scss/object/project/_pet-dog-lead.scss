@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-pet-dog-lead {
+  &__img {
+    margin-inline: auto;
+    width: rem(240px);
+  }
+}

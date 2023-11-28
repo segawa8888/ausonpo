@@ -7,7 +7,7 @@
 
 .p-kokunai-service__items {
     display: flex;
-    justify-content: center;
+
     gap:rem(20px) rem(40px);
     flex-wrap:wrap;
     @include mq-max("md") {
@@ -28,7 +28,7 @@
         min-height:rem(178px);
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         flex-wrap: wrap;
     }
 

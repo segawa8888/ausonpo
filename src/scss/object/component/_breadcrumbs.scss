@@ -12,6 +12,7 @@
     font-size: rem(10px);
     height: rem(40px);
     overflow-x: auto;
+    padding-left: 1px;
     @include mq-max("md") {
       @include mq-min("sm") {
         width: 100% !important;
