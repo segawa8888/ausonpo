@@ -23,7 +23,8 @@
 .p-qr__link {
   width: rem(178px);
   @include mq-max("sm") {
-    width: rem(173px);
+    height: rem(48px);
+    width: auto;
     // margin-right: rem(13px);
   }
 }
