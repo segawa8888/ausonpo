@@ -67,20 +67,20 @@
         padding: 0 rem(50px);
         &-login {
           width: 100%;
-          max-width: 19.25rem;
-          background: #fff url(/common_2024/img/arrow/arrow_bold_login.svg) right 1.375rem center no-repeat;
-          background-size: 1.125rem;
-          box-shadow: 0 0.25rem 0 #d1d1d1;
-          height: 3.625rem;
+          max-width: rem(308px);
+          background: $c-white url(/common_2024/img/arrow/arrow_bold_login.svg) right rem(22px) center no-repeat;
+          background-size: rem(18px);
+          box-shadow: 0 rem(4px) 0 $c-base-200;
+          height: rem(58px);
           text-align: center;
-          font-size: 1.25rem;
+          font-size: rem(20px);
           font-weight: 700;
           line-height: 1;
           display: inline-flex;
           align-items: center;
-          border-radius: 0.625rem;
+          border-radius: rem(10px);
           overflow: hidden;
-          padding-right: 1.5rem;
+          padding-right: rem(24px);
           transition:
             transform 0.2s ease,
             box-shadow 0.2s ease;
@@ -115,9 +115,9 @@
           }
         }
         @include mq-max("sm") {
-          width: auto;
+          width: 100%;
           display: inline-block;
-          padding: 0 rem(25px);
+          padding: 0;
           text-align: center;
         }
       }
