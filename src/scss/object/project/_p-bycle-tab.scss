@@ -1,183 +1,154 @@
 @charset "UTF-8";
 @use "../../global" as *;
-.p-byclebest-tabbox__switch {
-    max-width: 100%;
-    width: 100%;
-    border: 1px solid $c-primary;
-    .p-byclebest-tab-buttom {
-        max-width: calc(100% / 4);
-        width: 100%;
-        border-right: 1px solid $c-primary;
-        &:last-child {
-            border: none;
-        }
-        &.is-active {
-            background-color: $c-primary;
-            button {
-                background-color: $c-primary;
-                box-shadow: none;
-                color: #fff;
-                span {
-                    color: #fff;
-                }
-            }
-        }
-        button {
-            min-width: 100%;
-            width: 100%;
-            border-radius: 0;
-            border: none;
-        }
-    }
-}
-.-p-bycle-tab-change {
-    max-width: 100%;
-    width: 100%;
-    border: 1px solid;
-    border-radius: 8px;
-    .-p-bycle-tab-change__tabs {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include mq-max("md") {
-            flex-wrap: wrap;
-        }
-        .p-bycle-type-info__tab {
-            max-width: calc(100% / 4);
-            width: 100%;
-            padding-bottom: 4px;
-            border: 1px solid $c-primary;
-            border-top: none;
-            border-left: none;
-            @include mq-max("md") {
-                max-width: calc(100% / 2);
-                flex-wrap: wrap;
-                border: none;
-                border-bottom: 1px solid $c-primary;
-                &:first-child {
-                    border-radius: 8px 0 0 0;
-                    border-left: none;
-                    border-right: 1px solid $c-primary;
-                    button {
-                        border-radius: 8px 0 0 0;
-                    }
-                }
-                &:nth-child(2) {
-                    border-radius: 0 8px 0 0;
-                    button {
-                        border-radius: 0 8px 0 0;
-                    }
-                }
-                &:nth-child(3) {
-                    border-radius: 0 0 0 8px;
-                    border-right: 1px solid $c-primary;
-                    button {
-                        border-radius: 0 0 0 8px;
-                    }
-                }
-                &:last-child {
-                    border-radius: 0 0 8px 0;
-                    button {
-                        border-radius: 0 0 8px 0;
-                    }
-                }
-            }
-            &:first-child {
-                border-left: 1px solid $c-primary;
-                border-radius: 8px 0 0 8px;
-                button {
-                    border-radius: 8px 0 0 8px;
-                }
-            }
-            &:last-child {
-                border-radius: 0 8px 8px 0;
-                button {
-                    border-radius: 0 8px 8px 0;
-                }
-            }
-            &:hover {
-                background-color: $c-primary;
-            }
-            button {
-                min-width: 100%;
-                border-radius: 0;
-                border: none;
-                justify-content: flex-start;
-                font-size: 16px;
-                padding: 10px;
-                color: $c-primary;
-                transform: translateY(0rem);
-                @include mq-max("lg") {
-                    font-size: 14px;
-                }
-                @include mq-max("md") {
-                    height: 5rem;
-                }
-                span {
-                    font-size: 1.25rem;
-                    padding-right: 8px;
-                    @include mq-max("md") {
-                        paddimg-right: 4px;
-                    }
-                }
-                &:hover {
-                    border: none;
-                    background-color: $c-primary;
-                    color: $c-white;
-                    transform: translateY(0rem);
-                }
-            }
-        }
-        .p-bycle-type-info__tab.is-active {
-            background-color: $c-primary;
-            button {
-                &.is-active {
-                    background-color: $c-primary;
-                    border-radius: 0;
-                    box-shadow: none;
-                    border: none;
-                    color: $c-white;
-                    transition: inherit;
-                    justify-content: flex-start;
-                    padding: 10px;
-                    transform: translateY(0rem);
-                    border-radius: 8px 0 0 8px;
-                    span {
-                        font-size: 1.25rem;
-                        padding-right: 8px;
-                    }
-                    &:hover {
-                        transform: translateY(0rem);
-                    }
-                }
-            }
-        }
-        &.tabs-bottom {
-            .p-bycle-type-info__tab {
-                border-bottom: none;
-                border-top: 1px solid $c-primary;
-            }
-        }
-    }
-    .p-bycle-type-info__box {
-        @include mq-max("md") {
-            padding: 0.625rem;
-        }
-        .p-bycle-type-info__type {
-            display: none;
-            &.is-active {
-                display: block;
-            }
-        }
-    }
-}
 
-.p-byclebest-tab-contents {
+/*　タブ切り替え　ベース　*/
+.tab-buttons {
+    display: flex;
+    justify-content: space-between;
+    button {
+        cursor: pointer;
+    }
+}
+.tab-content {
     display: none;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    &.active {
+        display: block;
+        opacity: 1;
+    }
+    .p-bycletab-inner{
+        padding: 3rem;
+        @include mq-max("sm"){
+            padding: 0.5rem;
+        }
+    }
 }
-.p-byclebest-tab-contents.show {
-    display: block;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+.p-bycle-tab-change{
+    border: 1px solid $c-primary;
+    border-radius: 1rem;
+    margin-top: 10px;
+    position: relative;
+    padding: 4rem 0;
+    @include mq-max("sm"){
+        padding: 6.25rem 0;
+        border-radius: 0.625rem;
+    } 
+    .p-bycle-tab-change__tabs{
+        width: 100%;
+        border: 1px solid $c-primary;
+        border-radius: 1rem;
+        @include mq-max("sm"){
+            flex-wrap: wrap;
+            height: 6.6rem;
+            border-radius: 0.625rem;
+            align-content: start;
+        }
+        &:first-child{
+            position: absolute;
+            bottom: auto;
+            top: -1px;
+            margin-bottom: 0.625rem;
+        }
+        &:last-child{
+            position: absolute;
+            top: auto;
+            bottom: -1px;
+        }
+        .tab-button{
+            min-width: calc(100% / 4);
+            width: 100%;
+            border-radius: 0rem;
+            border: none;
+            padding: 0.625rem;
+            justify-content: start;
+            align-items: center;
+            color: $c-primary;
+            font-size: 1rem;
+            font-weight: bold;
+            position: relative;
+            @include mq-max("sm"){
+                min-width: 50%;
+                width: 50%;
+                height: 3rem;
+                font-size: 0.8125rem;
+            }
+            &::after{
+                content: "";
+                width: 1px;
+                height: 4rem;
+                background-color: $c-primary;
+                position: absolute;
+                top: 0;
+                right: 0;
+                @include mq-max("sm"){
+                    height: 3.25rem;
+                }
+            }
+            span{
+                font-size: 1.5rem;
+                padding-right: 0.625rem;
+                @include mq-max("sm"){
+                    font-size: 1.25rem;
+                }
+            }
+            &:first-child{
+                border-radius: 1rem 0 0 1rem;
+                @include mq-max("sm"){
+                    border-radius: 0.625rem 0 0 0;
+                }
+            }
+            &:nth-child(2){
+                @include mq-max("sm"){
+                    border-radius: 0 0.625rem 0 0;
+                    &::after{
+                        content: none;
+                    }
+                }
+            }
+            &:nth-child(3){
+                @include mq-max("sm"){
+                    border-radius: 0 0 0 0.625rem;
+                    border-top: 1px solid $c-primary;
+                }
+            }
+            &:last-child{
+                border-radius: 0 1rem 1rem 0;
+                @include mq-max("sm"){
+                    border-radius: 0 0 0.625rem 0;
+                    border-top: 1px solid $c-primary;
+                }
+                &::after{
+                    content: none;
+                }
+            }
+            &.active{
+                background-color: $c-primary;
+                color: $c-white;
+                height: calc(3.75rem + 0.25rem);
+                box-shadow:none;
+                @include mq-max("sm"){
+                    min-width: calc(100% / 2);
+                    height: calc(3rem + 0.25rem);
+                }
+            }
+            &:focus{
+                transform: translateY(0rem);
+                -webkit-transform: translateY(0rem);
+                box-shadow: none;
+            }
+        }
+    }
+}
+/*　---------------　*/
 .p-byclebest-tab-ranking {
     img {
         max-width: 499px;
@@ -327,6 +298,7 @@
         }
     }
 }
+
 .p-tabbox {
     .p-bycle-point {
         .p-koutsuujiko-detail__heading {

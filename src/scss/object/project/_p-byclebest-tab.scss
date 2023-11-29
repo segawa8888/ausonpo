@@ -1,2 +1,109 @@
 @charset "UTF-8";
 @use "../../global" as *;
+.p-bycle-list{
+    li{
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        &::before{
+            content: "";
+            width: 0.875rem;
+            height: 0.875rem;
+            margin-top: 0.5rem;
+            background-repeat: no-repeat;
+            background-image: url(/common_2024/img/icon/check_circle.png);
+            background-size: contain;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding-left: 0.5rem;
+            line-height: 1.6;
+        }
+        &:last-child{
+            padding-bottom: 0;
+        }
+    }
+}
+.p-byclebest-about{
+    &__inner{
+        .p-byclebest-about__inner-text{
+            font-size: 1rem;
+            font-weight: bold;
+            span{
+                color: #367AD1;
+                font-size: 2rem;
+            }
+        }
+        .p-byclebest-about__inner-sabtitle{
+            padding: 2rem 0 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: calc(100% - 7rem);
+            margin: 0 auto;
+            &::after,
+            &::before{
+                content: "";
+                width: 3.5rem;
+                height: 5.75rem;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            &::after{
+                background-image: url(/src/img/sub/bycle-best/byclebest_tab-about03_pc.svg);
+            }
+            &::before{
+                background-image: url(/src/img/sub/bycle-best/byclebest_tab-about02_pc.svg);
+            }
+            p{
+                color: #367AD1;
+                font-size: 2rem;
+                font-weight: bold;
+                padding-left: 2rem;
+            }
+            img{
+                width: 8.125rem;
+                height: 8.125rem;
+            }
+        }
+    }
+    &__box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 52.25rem;
+        margin: 0 auto;
+        .p-byclebest-about__box-img{
+            width: 12.5rem;
+        }
+        .p-byclebest-about__box-text{
+            max-width: calc(100% - 1.25rem);
+            width: 100%;
+            padding-left: 2rem;
+            p{
+                font-size: 1.125rem;
+                line-height: 1.6;
+            }
+        }
+    }
+    &__picup{
+        padding-bottom: 5rem;
+        .p-byclebest-picup{
+            max-width: 50.5rem;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__img{
+                width: 10rem;
+            }
+            &__list{
+                max-width: calc(100% - 10rem);
+                padding-left: 2.5rem;
+            }
+        }
+    }
+}
