@@ -28,7 +28,6 @@
 }
 
 .p-koutsuujiko-detail__heading {
-    text-align: center;
     font-size: rem(30px);
     color: $c-primary;
     font-weight: 700;
@@ -39,12 +38,14 @@
     line-height: rem(64px);
     display: flex;
     align-items: center;
+    justify-content: center;
 
     @include mq-max("sm") {
         text-align: left;
         font-size: rem(20px);
         padding-left: rem(10px);
         line-height: rem(25px);
+        justify-content: left;
     }
 
     span {

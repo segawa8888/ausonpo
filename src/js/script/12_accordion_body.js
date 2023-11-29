@@ -11,7 +11,6 @@ document.addEventListener("componentsLoaded", () => {
     accordionBody.style.display = 'none';
 
     const toggleAccordion = () => {
-      // slideToggleを適用
       slideToggle(accordionBody, toggleButton);
 
       // ボタンのテキストを切り替える
