@@ -12,6 +12,7 @@
     flex-wrap:wrap;
     @include mq-max("md") {
         gap:rem(16px) rem(11px);
+        justify-content: center;
      }
 }
 
