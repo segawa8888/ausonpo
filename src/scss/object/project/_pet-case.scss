@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-pet-case {
+    border: rem(2px) solid $c-primary;
+    border-radius: rem(8px);
+    padding:rem(45px) 0 rem(40px) rem(34px);
+    @include mq-max("sm") {
+        padding:rem(12px) rem(11.7px) rem(27px) rem(11.7px);
+    }
+}
+
+.p-pet-case__contents {
+    @include mq-min("md") {
+        display: flex;
+        gap:0 rem(48px);
+      }
+}
+
+.p-pet-case__icon {
+    max-width: rem(205px);
+    width: 100%;
+    @include mq-max("sm") {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-pet-case__content {
+    @include mq-min("md") {
+        max-width: rem(545px);
+      }
+}
+
+.p-pet-case__heading {
+    .c-heading3-has-tag__tag {
+        @include mq-max("sm") {
+            min-width: rem(89px);
+            padding:rem(5px) rem(8px);
+            text-align: center;
+            line-height: initial;
+          }
+    }
+}

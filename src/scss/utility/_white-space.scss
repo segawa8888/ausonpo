@@ -1,0 +1,13 @@
+@use "../global" as *;
+
+$white-space: (wrap, nowrap);
+@each $value in $white-space {
+    .u-white-space-#{$value} {
+        white-space: $value;
+    }
+    @include mq-max("sm") {
+        .sm\:u-white-space-#{$value} {
+            white-space: $value;
+        }
+    }
+}
