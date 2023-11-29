@@ -10,12 +10,12 @@
 .p-koutsuujiko-point__cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
-    gap:rem(24px) 0;
+    justify-content: space-between;
+    gap: rem(24px) 0;
     @include mq-max("md") {
         justify-content: center;
-        gap:rem(15px) 0;
-     }
+        gap: rem(15px) 0;
+    }
 }
 
 .p-koutsuujiko-point__card {
@@ -23,28 +23,27 @@
     width: 100%;
     min-height: rem(295px);
     border-radius: rem(5px);
-    border: rem(1px) solid #BDBDBD;
+    border: rem(1px) solid #bdbdbd;
     @include mq-max("md") {
         max-width: 100%;
-     }
+    }
 
     .c-text-accent {
         @include mq-max("md") {
             font-size: rem(20px);
         }
     }
-
-     }
+}
 
 .p-koutsuujiko-point__heading {
     font-size: rem(30px);
     color: $c-primary;
     font-weight: 700;
     border-radius: rem(5px);
-    background: #F3F3F3;
-    margin:rem(8px) rem(10px) 0 rem(10px);
-padding-left: rem(36px);
-    height:rem(80px);
+    background: #f3f3f3;
+    margin: rem(8px) rem(10px) 0 rem(10px);
+    padding-left: rem(36px);
+    height: rem(80px);
     line-height: rem(64px);
     // display: flex;
     // justify-content: center;
@@ -58,20 +57,25 @@ padding-left: rem(36px);
 
 .p-koutsuujiko-point__icon {
     position: absolute;
-    top:35%;
-    right:rem(15px);
+    top: 45%;
+    right: rem(15px);
     transform: translateY(-50%);
     max-width: rem(88px);
+
+    &.-point4 {
+        top: 55%;
+        max-width: rem(98px);
+    }
 }
 
 .p-koutsuujiko-point__recommend {
     margin-top: rem(24px);
     border-radius: rem(8px);
-    border: rem(2px) solid #EA5404;
-    padding:rem(30px) 0 rem(37px) 0;
+    border: rem(2px) solid #ea5404;
+    padding: rem(30px) 0 rem(37px) 0;
 
     @include mq-max("md") {
-        padding:rem(31px) rem(9px) rem(21px) rem(9px);
+        padding: rem(31px) rem(9px) rem(21px) rem(9px);
     }
 
     .c-text-accent.--underline {
