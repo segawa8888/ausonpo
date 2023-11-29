@@ -36,7 +36,7 @@ async function supportsWebP() {
       resolve(false);
     };
     // 実際のWebPファイルのパスを指定
-    webp.src = "/assets/img/common/header_logo.webp";
+    webp.src = "/common_2024/img/header_logo.webp";
   });
 }
 (async () => {
@@ -167,10 +167,11 @@ document.addEventListener("componentsLoaded", () => {
     new Splide(keiyakusyaSlider2, {
       autoplay: false, // 自動再生
       arrows: false,
-      speed: 2000, // スライダーの移動時間
+      //speed: 2000, // スライダーの移動時間
       destroy: true, // スライダーを破棄
       perPage: 1,
       flickMaxPages: 1,
+      type: "loop",
       pagination: true,
       breakpoints: {
         768: {
@@ -180,67 +181,110 @@ document.addEventListener("componentsLoaded", () => {
     }).mount();
   }
 
-    //ペットの保険 mvスライダー
-    const mvSlider = document.querySelector(".js-mv-slider"); // 対象となる要素を取得
-    if (mvSlider) {
-      new Splide(mvSlider, {
-        autoplay: true,
-        type   : 'loop',
-        perMove: 1,
-        arrows: false,
-        gap: '-1.8rem',
-        focus: 0,
-        padding: '9.625rem',
-        updateOnMove: true,
-        autoScroll: {
-          speed: 0.3,
-          pauseOnHover: false,
-        },
-        classes: {
-          pagination: "splide__pagination p-pet-column-pagination",
-          page: "splide__pagination__page p-pet-column-page",
-        },
-        breakpoints: {
-          520:{
+  //ペットの保険 mvスライダー
+  const mvSlider = document.querySelector(".js-mv-slider"); // 対象となる要素を取得
+  if (mvSlider) {
+    new Splide(mvSlider, {
+      autoplay: true,
+      type: "loop",
+      perMove: 1,
+      arrows: false,
+      gap: "-1.8rem",
+      focus: 0,
+      padding: "9.625rem",
+      updateOnMove: true,
+      autoScroll: {
+        speed: 0.3,
+        pauseOnHover: false,
+      },
+      classes: {
+        pagination: "splide__pagination p-pet-column-pagination",
+        page: "splide__pagination__page p-pet-column-page",
+      },
+      breakpoints: {
+        520: {
           perPage: 1,
-          gap: '0.78rem',
-          padding: '2.099rem',
-          }
-        }
-      }).mount();
-    }
-  
-    //ワンちゃんとの暮らしに役立つコラムのスライダー
-    const petSlider = document.querySelector(".js-column-slider"); // 対象となる要素を取得
-    if (petSlider) {
-      new Splide(petSlider, {
-        autoplay: true,
-        type   : 'loop',
-        perPage: 3,
-        perMove: 1,
-        arrows: false,
-        gap: '3.125rem',
-        focus: 0,
-        padding: '3.125rem',
-        autoScroll: {
-          speed: 0.5,
-          pauseOnHover: false,
+          gap: "0.78rem",
+          padding: "2.099rem",
         },
-        classes: {
-          pagination: "splide__pagination p-pet-column-pagination",
-          page: "splide__pagination__page p-pet-column-page",
-        },
-        breakpoints: {
-          520:{
+      },
+    }).mount();
+  }
+
+  //ワンちゃんとの暮らしに役立つコラムのスライダー
+  const petSlider = document.querySelector(".js-column-slider"); // 対象となる要素を取得
+  if (petSlider) {
+    new Splide(petSlider, {
+      autoplay: true,
+      type: "loop",
+      perPage: 3,
+      perMove: 1,
+      arrows: false,
+      gap: "3.125rem",
+      focus: 0,
+      padding: "3.125rem",
+      autoScroll: {
+        speed: 0.5,
+        pauseOnHover: false,
+      },
+      classes: {
+        pagination: "splide__pagination p-pet-column-pagination",
+        page: "splide__pagination__page p-pet-column-page",
+      },
+      breakpoints: {
+        520: {
           type: "loop",
           perPage: 1,
-          gap: '.625rem',
-          padding: '1.875rem',
-          }
-        }
-      }).mount();
-    }
-  
+          gap: ".625rem",
+          padding: "1.875rem",
+        },
+      },
+    }).mount();
+  }
+  //バイクルのお客様の声のスライダー
+  const byclebvoiceSlider = document.querySelector(".js-voice-slider"); // 対象となる要素を取得
+  if (byclebvoiceSlider) {
+    new Splide(byclebvoiceSlider, {
+      perPage: 3,
+      arrows: false,
+      gap: "0.5rem",
+      breakpoints: {
+        520: {
+          perPage: 1,
+        },
+      },
+    }).mount();
+  }
+  //バイクルのお客様の声のスライダー
+  const SPbyclebcaseSlider = document.querySelector(".js-byclecase-slider"); // 対象となる要素を取得
+  if (SPbyclebcaseSlider) {
+    new Splide(SPbyclebcaseSlider, {
+      perPage: 3,
+      arrows: false,
+      breakpoints: {
+        520: {
+          perPage: 1,
+        },
+      },
+    }).mount();
+  }
+  //猫の保険特長のスライダー
+  const catFeatureSlider = document.querySelector(".js-cat-feature-slider"); // 対象となる要素を取得
+  if (catFeatureSlider) {
+    new Splide(catFeatureSlider, {
+      destroy: true,
+      breakpoints: {
+        519: {
+          destroy: false,
+          arrows: false,
+          perPage: 1,
+          gap: "0.857142857rem",
+          padding: { right: "3rem" },
+          type: "loop",
+        },
+      },
+    }).mount();
+  }
 });
 
 /*----------------------------------------------------------
@@ -342,6 +386,65 @@ document.addEventListener("componentsLoaded", () => {
   }
 });
 
+var win2
+function openwin2(pop,winname){
+	var avW = 700;
+	var avH = 650;
+	win2 = open(pop,'popup',"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,top=0,left=0,width=" + avW + ",height=" + avH + "");
+	win2.opener = self;
+	win2.focus();
+}
+// 親ウインドウが閉じる際に子ウインドウも閉じる
+onunload = function() {
+	if(!win2) return false;
+	win2.close();
+}
+/*----------------------------------------------------------
+Akeru Iwamotoでのアコーディオン - 2023-11-24
+----------------------------------------------------------*/
+document.addEventListener("componentsLoaded", () => {
+  const accordionBody = document.querySelector('.js-up-accordion-body');
+  const toggleButton = document.querySelector('.js-up-accordion-toggle');
+
+  // 初期状態でコンテンツを非表示にする
+  accordionBody.style.display = 'none';
+
+  const toggleAccordion = () => {
+    // slideToggleを適用
+    slideToggle(accordionBody, toggleButton);
+
+    // ボタンのテキストを切り替える
+    const buttonText = toggleButton.innerText.trim();
+    toggleButton.innerText = buttonText === '詳しくはこちら' ? '閉じる' : '詳しくはこちら';
+  };
+
+  toggleButton.addEventListener('click', toggleAccordion);
+});
+
+/*----------------------------------------------------------
+pet ポップアップウィンドウ - 2023-11-27
+----------------------------------------------------------*/
+
+var petModal = document.querySelector("#modal");
+var petModalOverlay = document.querySelector("#modal-overlay");
+var petCloseButton = document.querySelector("#close-button");
+var petOpenButton = document.querySelector("#open-button");
+
+// 要素が存在する場合にのみイベントリスナーを追加
+if (petCloseButton && petModal && petModalOverlay) {
+  petCloseButton.addEventListener("click", function () {
+    petModal.classList.toggle("closed");
+    petModalOverlay.classList.toggle("closed");
+  });
+}
+
+if (petOpenButton && petModal && petModalOverlay) {
+  petOpenButton.addEventListener("click", function () {
+    petModal.classList.toggle("closed");
+    petModalOverlay.classList.toggle("closed");
+  });
+}
+
 /*----------------------------------------------------------
 Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 ・全てのコードの最後に読み込む
@@ -350,16 +453,16 @@ Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 
 //ナビゲーションコンポーネント一覧
 const navComponents = {
-  "/corporate/": "/component/layout/nav-corporate.html",
-  "/keiyakusya/bycle/": "/component/layout/nav-keiyakusya-bycle.html",
-  "/keiyakusya/pet/": "/component/layout/nav-keiyakusya-pet.html",
-  "/keiyakusya/kaigai/": "/component/layout/nav-keiyakusya-kaigai.html",
-  "/keiyakusya/kokunai/": "/component/layout/nav-keiyakusya-kokunai.html",
-  "/keiyakusya/sports/": "/component/layout/nav-keiyakusya-sports.html",
-  "/keiyakusya/golf/": "/component/layout/nav-keiyakusya-golf.html",
-  "/pc/bycle": "/component/layout/nav-bicycle.html",
-  "/pc/pet-dog": "/component/layout/nav-pet-dog.html",
-  "/pc/pet-cat": "/component/layout/nav-pet-cat.html",
+  "/corporate/": "/common_2024/component/layout/nav-corporate.html",
+  "/keiyakusya/bycle/": "/common_2024/component/layout/nav-keiyakusya-bycle.html",
+  "/keiyakusya/pet/": "/common_2024/component/layout/nav-keiyakusya-pet.html",
+  "/keiyakusya/kaigai/": "/common_2024/component/layout/nav-keiyakusya-kaigai.html",
+  "/keiyakusya/kokunai/": "/common_2024/component/layout/nav-keiyakusya-kokunai.html",
+  "/keiyakusya/sports/": "/common_2024/component/layout/nav-keiyakusya-sports.html",
+  "/keiyakusya/golf/": "/common_2024/component/layout/nav-keiyakusya-golf.html",
+  "/pc/bycle": "/common_2024/component/layout/nav-bicycle.html",
+  "/pc/pet-dog": "/common_2024/component/layout/nav-pet-dog.html",
+  "/pc/pet-cat": "/common_2024/component/layout/nav-pet-cat.html",
 };
 
 // 対応するコンポーネントを決定する関数
@@ -370,16 +473,16 @@ function determineNavComponent(url) {
       return navComponents[pattern];
     }
   }
-  return "/component/blank.html"; // 該当無しの場合はblank
+  return "/common_2024/component/blank.html"; // 該当無しの場合はblank
 }
 
 // 全てのコンポーネントの読み込みを管理
 Promise.all([
   //コンポーネントの読み込み処理
-  loadComponent("/component/head/meta.html", "head", "afterbegin"),
-  loadComponent("/component/head/ogp.html", "head", "beforeend"),
-  loadComponent("/component/layout/footer.html", ".l-main", "afterend"),
-  loadComponent("/component/layout/header.html", "body", "afterbegin").then(() => {
+  loadComponent("/common_2024/component/head/meta.html", "head", "afterbegin"),
+  //loadComponent("/common_2024/component/head/ogp.html", "head", "beforeend"),
+  loadComponent("/common_2024/component/layout/footer.html", ".l-main", "afterend"),
+  loadComponent("/common_2024/component/layout/header.html", "body", "afterbegin").then(() => {
     return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
   }),
 ])
@@ -389,7 +492,7 @@ Promise.all([
     // 各要素に対してコンポーネントを読み込む
     dataComponentElements.forEach((elm) => {
       const componentName = elm.getAttribute("data-component");
-      const componentPath = `/component/${componentName}.html`;
+      const componentPath = `/common_2024/component/${componentName}.html`;
       loadComponent(componentPath, `[data-component="${componentName}"]`, "afterbegin");
     });
   })
@@ -411,7 +514,7 @@ Promise.all([
 
     /*初期表示時のレイアウト崩れ対応処理*/
     // CSSファイルのパス
-    const cssPath = "/assets/css/style.css";
+    const cssPath = "/common_2024/css/style.css";
 
     // CSSを読み込むための<link>要素を生成
     const elmCssLink = document.createElement("link");

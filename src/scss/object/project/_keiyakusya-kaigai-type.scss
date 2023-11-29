@@ -9,7 +9,7 @@
 
 .p-keiyakusya-kaigai-type__items {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: rem(27.53px);
     @include mq-max("md") {
         column-gap: rem(12px);
@@ -18,11 +18,11 @@
 
 .p-keiyakusya-kaigai-type__item {
     border-radius: rem(15px);
-    border: rem(1px) solid #C9C9C9;
+    border: rem(1px) solid #c9c9c9;
     min-height: rem(263px);
     @include mq-max("md") {
         min-height: rem(261px);
-      }
+    }
 }
 
 .p-keiyakusya-kaigai-type__title {
@@ -32,10 +32,10 @@
     @include mq-max("md") {
         font-size: rem(14px);
         letter-spacing: rem(0.42px);
-      }
+    }
     span {
         font-size: rem(10px);
-        line-height: calc(14/10);
+        line-height: calc(14 / 10);
     }
 }
 
@@ -43,43 +43,45 @@
     width: 100%;
     text-align: center;
     margin-top: rem(8px);
-    picture,img {
+    picture,
+    img {
         max-width: rem(200px);
         margin-right: auto;
         margin-left: auto;
         @include mq-max("md") {
             max-width: 100%;
-          }
+        }
     }
 }
 
 .p-keiyakusya-kaigai-type__text {
     font-size: rem(14px);
-    line-height: calc(21/14);
+    line-height: calc(21 / 14);
     font-weight: 700;
     text-align: center;
+    letter-spacing: rem(0.42px);
 }
 
 .p-keiyakusya-kaigai-type__link {
     margin-top: rem(15px);
     @include mq-max("md") {
         margin-top: rem(27px);
-      }
+    }
 
-      a {
+    a {
         text-decoration: underline;
         position: relative;
         font-size: rem(14px);
-        line-height: calc(21/14);
+        line-height: calc(21 / 14);
         &::after {
-            content: '';
-            background-image: url(/assets/img/icon/icon_external.webp);
-            background-size:rem(14px);
+            content: "";
+            background-image: url(/common_2024/img/icon/icon_external.webp);
+            background-size: rem(14px);
             position: absolute;
-            bottom:rem(3.33px);
+            bottom: rem(3.33px);
             right: rem(-20px);
-            width:rem(14px);
+            width: rem(14px);
             height: rem(11.67px);
         }
-      }
+    }
 }

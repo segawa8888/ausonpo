@@ -3,14 +3,20 @@
 
 .p-hoken-floating {
     position: fixed;
+    top: 35%;
 	right: rem(16px);
-    top:35%;
     width: rem(134px);
     height: rem(98px);
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
     z-index:10001;
+    @include mq-max("md") {
+        top:initial;
+        bottom:0;
+        width:80%;
+        right:10.5%;
+    }
 }
 
 .p-hoken-floating.visible {

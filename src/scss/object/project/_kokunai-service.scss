@@ -7,11 +7,12 @@
 
 .p-kokunai-service__items {
     display: flex;
-    justify-content: center;
+
     gap:rem(20px) rem(40px);
     flex-wrap:wrap;
     @include mq-max("md") {
         gap:rem(16px) rem(11px);
+        justify-content: center;
      }
 }
 
@@ -28,7 +29,7 @@
         min-height:rem(178px);
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         flex-wrap: wrap;
     }
 

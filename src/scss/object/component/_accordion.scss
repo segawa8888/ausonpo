@@ -14,13 +14,14 @@
     line-height: 1.5;
     cursor: pointer;
     @include mq-max("sm") {
-      padding: rem(20px) rem(16px);
+      font-size: rem(18px);
+      padding: rem(20px) rem(32px) rem(20px) rem(10px);
     }
     &::after {
       content: "";
       width: rem(20px);
       height: rem(20px);
-      background: url(../img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
+      background: url(/common_2024/img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
       position: absolute;
       right: rem(20px);
       top: rem(25px);
@@ -30,19 +31,23 @@
     }
     &.is-active {
       &::after {
-        background-image: url(../img/icon/icon_toggle_minus.svg);
+        background-image: url(/common_2024/img/icon/icon_toggle_minus.svg);
       }
     }
   }
   &__wrapper {
     display: none;
     @include mq-max("sm") {
-      padding: 0 rem(10px);
+      // padding: 0 rem(10px);
     }
   }
   &__content {
     border-top: 2px $c-base-300 dotted;
     padding: rem(24px) 0 rem(32px);
+
+    @include mq-max("sm") {
+      padding: rem(24px) rem(10px) rem(32px);
+    }
 
     dt {
       font-size: rem(14px);
@@ -82,7 +87,7 @@
   }
   &__heading {
     text-align: center;
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 700;
     line-height: 1.25;
     padding: rem(14px) rem(16px);
@@ -96,7 +101,7 @@
       content: "";
       width: rem(20px);
       height: rem(20px);
-      background: url(../img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
+      background: url(/common_2024/img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
       position: absolute;
       right: rem(20px);
       top: rem(14px);
@@ -106,7 +111,21 @@
     }
     &.is-active {
       &::after {
-        background-image: url(../img/icon/icon_toggle_minus.svg);
+        background-image: url(/common_2024/img/icon/icon_toggle_minus.svg);
+      }
+    }
+    &.-angle {
+      &::after {
+        content: "";
+        width: rem(14px);
+        height: rem(14px);
+        background: url(/common_2024/img/icon/icon_tryangle_orange.png) center center/contain no-repeat;
+        position: absolute;
+        right: rem(14px);
+        top: rem(14px);
+        @include mq-max("sm") {
+          right: rem(10px);
+        }
       }
     }
   }
@@ -118,8 +137,15 @@
   }
   &__content {
     padding: rem(16px) rem(24px);
-    font-size: rem(12px);
+    font-size: rem(14px);
     font-weight: 700;
     line-height: 1.3;
+
+    p {
+      a {
+        display: block;
+        margin-top: rem(14px);
+      }
+    }
   }
 }

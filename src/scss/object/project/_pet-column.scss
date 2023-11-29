@@ -2,7 +2,7 @@
 @use "../../global" as *;
 
 .p-pet-column {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: rem(10px);
   @include mq-max("sm") {
     margin-left: -0.625rem;
@@ -22,14 +22,14 @@
       font-weight: bold;
       letter-spacing: 0.02em;
       &::before {
-        background-image: url(../img/pet/pet_pad_icon.png);
+        background-image: url(/pc/pet/assets/img/pet_pad_icon.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         width: rem(29px);
         height: rem(29px);
         position: absolute;
-        content: '';
+        content: "";
         top: 3%;
         left: rem(-30px);
         transform: rotate(-20deg);
@@ -38,14 +38,14 @@
         }
       }
       &::after {
-        background-image: url(../img/pet/pet_pad_icon.png);
+        background-image: url(/pc/pet/assets/img/pet_pad_icon.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         width: rem(29px);
         height: rem(29px);
         position: absolute;
-        content: '';
+        content: "";
         top: 50%;
         right: rem(-25px);
         transform: translateY(-50%);
@@ -58,10 +58,10 @@
     &-text {
       font-size: rem(16px);
       font-weight: bold;
-      line-height: calc(22/14);
+      line-height: calc(22 / 14);
       @include mq-max("sm") {
         font-size: rem(14px);
-        line-height: calc(20/14);
+        line-height: calc(20 / 14);
       }
     }
   }
@@ -71,10 +71,10 @@
       margin-top: rem(26px);
     }
     .p-pet-column-page {
-      background-color: #CBCBCB;
+      background-color: #cbcbcb;
       height: rem(2px);
       width: rem(35px);
-      transition: .5s all;
+      transition: 0.5s all;
       margin-top: rem(18px);
       &.is-active {
         background-color: $c-primary;
@@ -105,13 +105,13 @@
     &-title {
       font-size: rem(14px);
       font-weight: 700;
-      line-height: calc(22/14);
+      line-height: calc(22 / 14);
       letter-spacing: 0.03em;
       margin-top: rem(10px);
       @include mq-max("sm") {
         margin-top: rem(22px);
         letter-spacing: 0.02em;
-        color: #4B4B4B;
+        color: #4b4b4b;
       }
     }
     &-readmore {
@@ -124,7 +124,7 @@
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
-        background: url(../img/arrow/arrow_lg_primary.svg) right center/0.4375rem no-repeat;
+        background: url(/common_2024/img/arrow/arrow_lg_primary.svg) right center/0.4375rem no-repeat;
         padding-right: 1rem;
         transition: opacity 0.2s;
       }

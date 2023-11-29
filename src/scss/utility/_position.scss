@@ -1,0 +1,20 @@
+@use "../global" as *;
+/*********************************************
+display
+**********************************************/
+$position: (relative, absolute, static);
+@each $property in $position {
+  .u-#{$property} {
+    position: $property;
+  }
+  @include mq-max("sm") {
+    .sm\:u-#{$property} {
+      position: $property;
+    }
+  }
+  @include mq-min("sm") {
+    .sm-min\:u-#{$property} {
+      position: $property;
+    }
+  }
+}

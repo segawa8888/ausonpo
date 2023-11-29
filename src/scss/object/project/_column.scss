@@ -78,10 +78,11 @@
             align-items: center;
             justify-content: center;
             margin-bottom: rem(12px);
+
             &::after {
                 width: rem(16px);
                 height: rem(18px);
-                background: url(/assets/img/icon/icon_footprints.svg) center center/contain no-repeat;
+                background: url(/common_2024/img/icon/icon_footprints.svg) center center/contain no-repeat;
                 content: "";
             }
         }
@@ -105,20 +106,30 @@
         box-shadow: 0px rem(6px) 0px 0px $c-base-200;
         &.-primary {
             color: $c-primary;
-            border: none;
             @include mq-max("sm") {
+                border: none;
                 color: $c-white;
                 background-color: $c-primary;
-                background-image: url(../img/arrow/arrow_bold_white.svg);
+                background-image: url(/common_2024/img/arrow/arrow_bold_white.svg);
                 box-shadow: 0px rem(4px) 0px 0px #ab3b00;
             }
         }
         &.-yellow {
             @include mq-max("sm") {
                 background-color: $c-yellow;
-                background-image: url(../img/arrow/arrow_bold_black.svg);
+                background-image: url(/common_2024/img/arrow/arrow_bold_black.svg);
                 border: rem(3px) solid #ffef28;
                 box-shadow: 0px rem(4px) 0px 0px #a69c1b;
+            }
+        }
+        &.-green {
+            color: $c-cta;
+            @include mq-max("sm") {
+                border: none;
+                color: $c-white;
+                background-color: $c-cta;
+                background-image: url(/common_2024/img/arrow/arrow_bold_white.svg);
+                box-shadow: 0px rem(4px) 0px 0px #037100;
             }
         }
         @include mq-max("sm") {
@@ -133,6 +144,7 @@
         font-weight: 700;
         border: 2px solid $c-white;
         line-height: rem(32px);
+        border-radius: rem(8px) rem(8px) 0 0;
         @include mq-max("sm") {
             display: none;
         }
@@ -143,6 +155,10 @@
     }
     &__item.-yellow &__title {
         background: $c-yellow;
+    }
+    &__item.-green &__title {
+        color: $c-white;
+        background: $c-cta;
     }
     &__text {
         text-align: center;
@@ -181,7 +197,7 @@
     }
     &__item {
         padding-left: rem(28px);
-        background: url(../img/keiyakusya/toc_arrow.svg) left center / rem(12px) no-repeat;
+        background: url(/pc/keiyakusya/assets/img/toc_arrow.svg) left #{rem(9px)} / rem(12px) no-repeat;
         a {
             transition: color 0.2s;
             @include hover {

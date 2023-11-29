@@ -1,12 +1,16 @@
 //フォルダパスの設定
 const options = {
   SASS_SRC_PATH: "./src/scss",
-  SASS_BUILD_PATH: "./assets/css",
+  SASS_BUILD_PATH: "./common_2024/css",
   JS_SRC_PATH: "./src/js",
   JS_BUILD_PATH: "./src/js/temp",
-  JS_PUBLIC_PATH: "./assets/js",
-  IMG_SRC_PATH: "./src/img",
-  IMG_PUBLIC_PATH: "./assets/img",
+  JS_PUBLIC_PATH: "./common_2024/js",
+  IMG_CMN_SRC_PATH: "./src/img/common_2024",
+  IMG_SUB_SRC_PATH: "./src/img/sub",
+  IMG_CORP_SRC_PATH: "./src/img/corporate",
+  IMG_CMN_PUBLIC_PATH: "./common_2024/img",
+  IMG_SUB_PUBLIC_PATH: "./pc",
+  IMG_CORP_PUBLIC_PATH: "./corporate/assets/img",
   MINIFY_JS: true,
 };
 const gulp = require("gulp");
@@ -14,7 +18,6 @@ const sass = require("gulp-sass")(require("sass")); //Sassコンパイル
 const plumber = require("gulp-plumber"); //エラー時の強制終了を防止
 const notify = require("gulp-notify"); //エラー発生時にデスクトップ通知する
 const sassGlob = require("gulp-sass-glob"); //@importの記述を簡潔にする
-const browserSync = require("browser-sync"); //ブラウザへの自動反映
 const postcss = require("gulp-postcss"); //autoprefixerとセット
 const autoprefixer = require("autoprefixer"); //ベンダープレフィックスの自動付与
 const cssdeclsort = require("css-declaration-sorter"); //cssプロパティーの並べ替え
@@ -28,6 +31,16 @@ const pngquant = require("imagemin-pngquant"); //.pngの圧縮率を上げる
 const changed = require("gulp-changed"); //画像の再圧縮を監視
 const webp = require("gulp-webp");
 const connect = require("gulp-connect"); //localhostの起動
+const path = require("path");
+const fs = require("fs");
+
+// サブフォルダを取得する関数
+function getFolders(dir) {
+  return fs.readdirSync(dir).filter(function (subDir) {
+    return fs.statSync(path.join(dir, subDir)).isDirectory();
+  });
+}
+
 // scssのコンパイル
 const compileSass = () => {
   const postcssPlugins = [
@@ -122,35 +135,64 @@ const jsMin = () => {
     .pipe(gulp.dest(`${options.JS_PUBLIC_PATH}`));
 };
 
-const imageTiny = () => {
+const imageTinyCmn = () => {
   return gulp
-    .src(`${options.IMG_SRC_PATH}/**`)
+    .src(`${options.IMG_CMN_SRC_PATH}/**/*.{jpg,jpeg,png,gif,svg}`, { base: options.IMG_CMN_SRC_PATH })
     .pipe(
       plumber({
         errorHandler: notify.onError("Error: <%= error.message %>"),
       })
     ) //エラーチェック
-    .pipe(changed(`${options.IMG_PUBLIC_PATH}/`))
-    .pipe(
-      imageMin([
-        pngquant({
-          quality: [0.7, 0.8],
-          speed: 1,
-        }),
-        mozjpeg({
-          quality: 80,
-        }),
-        imageMin.svgo(),
-        imageMin.optipng(),
-        imageMin.gifsicle({
-          optimizationLevel: 3,
-        }),
-      ])
-    )
-    .pipe(gulp.dest(`${options.IMG_PUBLIC_PATH}/`))
+    .pipe(changed(`${options.IMG_CMN_PUBLIC_PATH}/`))
+    .pipe(imageMin([pngquant({ quality: [0.7, 0.8], speed: 1 }), mozjpeg({ quality: 80 }), imageMin.svgo(), imageMin.optipng(), imageMin.gifsicle({ optimizationLevel: 3 })]))
+    .pipe(gulp.dest(`${options.IMG_CMN_PUBLIC_PATH}/`))
     .pipe(webp())
-    .pipe(gulp.dest(`${options.IMG_PUBLIC_PATH}/`));
+    .pipe(gulp.dest(`${options.IMG_CMN_PUBLIC_PATH}/`));
 };
+
+const imageTinyCorp = () => {
+  return gulp
+    .src(`${options.IMG_CORP_SRC_PATH}/**/*.{jpg,jpeg,png,gif,svg}`, { base: options.IMG_CORP_SRC_PATH })
+    .pipe(
+      plumber({
+        errorHandler: notify.onError("Error: <%= error.message %>"),
+      })
+    ) //エラーチェック
+    .pipe(changed(`${options.IMG_CORP_PUBLIC_PATH}/`))
+    .pipe(imageMin([pngquant({ quality: [0.7, 0.8], speed: 1 }), mozjpeg({ quality: 80 }), imageMin.svgo(), imageMin.optipng(), imageMin.gifsicle({ optimizationLevel: 3 })]))
+    .pipe(gulp.dest(`${options.IMG_CORP_PUBLIC_PATH}/`))
+    .pipe(webp())
+    .pipe(gulp.dest(`${options.IMG_CORP_PUBLIC_PATH}/`));
+};
+
+// サブフォルダごとの画像処理タスクを生成する関数
+function createSubImageTasks(srcPath, baseDestPath) {
+  const folders = getFolders(srcPath);
+
+  folders.forEach(function (folder) {
+    const destPath = path.join(baseDestPath, folder, "assets/img");
+
+    gulp.task(`imageTinySub-${folder}`, function () {
+      return gulp
+        .src(path.join(srcPath, folder, "/**/*.+(png|jpg|jpeg|gif|svg)"))
+        .pipe(imageMin([pngquant({ quality: [0.7, 0.8], speed: 1 }), mozjpeg({ quality: 80 }), imageMin.svgo(), imageMin.optipng(), imageMin.gifsicle({ optimizationLevel: 3 })]))
+        .pipe(gulp.dest(destPath))
+        .pipe(webp())
+        .pipe(gulp.dest(destPath));
+    });
+  });
+}
+
+// タスクの生成
+createSubImageTasks(options.IMG_SUB_SRC_PATH, options.IMG_SUB_PUBLIC_PATH);
+
+// 全てのサブフォルダタスクを監視するタスク
+function watchSubFolders() {
+  const folders = getFolders(options.IMG_SUB_SRC_PATH);
+  folders.forEach(function (folder) {
+    gulp.watch(path.join(options.IMG_SUB_SRC_PATH, folder, "/**/*.+(png|jpg|jpeg|gif|svg)"), gulp.series(`imageTinySub-${folder}`));
+  });
+}
 
 // 開発用サーバーを立ち上げる
 function serve(done) {
@@ -175,9 +217,15 @@ function watchFiles() {
   gulp.watch(`${options.JS_SRC_PATH}/script/*.js`, gulp.series(concatScript));
   gulp.watch(`${options.JS_BUILD_PATH}/*.js`, gulp.series(concatAll));
   gulp.watch(`${options.JS_PUBLIC_PATH}/script.js`, gulp.series(jsMin));
-  gulp.watch(`${options.IMG_SRC_PATH}/**/*`, gulp.series(imageTiny));
+  gulp.watch(`${options.IMG_CMN_SRC_PATH}/**/*.{jpg,jpeg,png,gif,svg}`, gulp.series(imageTinyCmn));
+  gulp.watch(`${options.IMG_CORP_SRC_PATH}/**/*.{jpg,jpeg,png,gif,svg}`, gulp.series(imageTinyCorp));
 }
 
-// serveとwatchFilesタスクを並行して実行する
-const watch = gulp.parallel(watchFiles, serve);
-exports.default = watch;
+function watch() {
+  watchFiles();
+  watchSubFolders();
+}
+
+// serveとwatchタスクを並行して実行する
+const serveAndWatch = gulp.parallel(watch, serve);
+exports.default = serveAndWatch;

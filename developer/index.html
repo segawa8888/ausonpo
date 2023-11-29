@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8" />
     <!--▼タイトル・キーワードなどの指定-->
@@ -10,12 +10,15 @@
   <body style="visibility: hidden">
     <nav class="c-breadcrumbs" aria-label="breadcrumb">
       <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="c-breadcrumbs__list l-container lg:-full sm:-full">
-        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page">コンポーネントリスト<meta itemprop="position" content="4" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page"><span itemprop="name">コンポーネントリスト</span><meta itemprop="position" content="4" /></li>
       </ol>
     </nav>
     <main class="l-main l-container lg:-full sm:-full js-main">
       <h1 class="c-heading1-bg-primary">コンポーネントリスト</h1>
-      <h2 class="c-heading2-has-line">開発環境etc</h2>
+
+      <p class="c-alertbox l-container lg:-md u-mt-12">ドキュメントの追加が追いついていないパーツがあるため、<a href="/pc/pet-cat/column/components.html" class="u-link-text">こちらのコンポーネント</a>もご参照ください。</p>
+
+      <h2 class="c-heading2-has-line u-mt-12">開発環境etc</h2>
       <div class="l-container lg:-sm u-mt-12">
         <ul class="c-list-dot u-grid u-grid-cols-2 u-mt-10">
           <li><a href="flow.html" class="u-link-text">開発の流れ、フォルダ構成等</a></li>
@@ -36,7 +39,7 @@
           <li><a href="c-accordion.html" class="u-link-text">アコーディオン</a></li>
           <li><a href="c-faq.html" class="u-link-text">よくある質問</a></li>
           <li><a href="c-tel.html" class="u-link-text">電話番号パーツ</a></li>
-          <li><a href="c-contact-box.html" class="u-link-text">お問合せ(Webからの/電話でのお問合せ)</a></li>
+          <li><a href="c-contact-box.html" class="u-link-text">お問い合わせ(Webからの/電話でのお問い合わせ)</a></li>
           <li><a href="c-contact-box-2.html" class="u-link-text">お問い合わせパーツ</a></li>
           <li><a href="c-download-app.html" class="u-link-text">アプリダウンロードボタン</a></li>
           <li><a href="c-post-heading.html" class="u-link-text">コラム / 記事タイトル(h1)</a></li>
@@ -48,6 +51,10 @@
         <h2 class="c-heading2-has-line">契約者ページ 固有コンポーネント</h2>
         <ul class="c-list-dot u-grid u-grid-cols-2 u-mt-10">
           <li><a href="keiyakusya-login.html" class="u-link-text">お客さま専用ページ ログイン</a></li>
+        </ul>
+        <h2 class="c-heading2-has-line">コラムページ 固有コンポーネント</h2>
+        <ul class="c-list-dot u-grid u-grid-cols-2 u-mt-10">
+          <li><a href="p-column-cta.html" class="u-link-text">追従ボタン</a></li>
         </ul>
         <h2 class="c-heading2-has-line">ユーティリティクラス</h2>
         <ul class="c-list-dot u-grid u-grid-cols-2 u-mt-10">
@@ -72,6 +79,6 @@
     </main>
 
     <!--javascript-->
-    <script src="/assets/js/script.js"></script>
+    <script src="/common_2024/js/script.min.js"></script>
   </body>
 </html>

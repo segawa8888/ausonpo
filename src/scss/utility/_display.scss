@@ -12,4 +12,9 @@ $display: (block, inline-block, inline, flex, inline-flex, grid, inline-grid);
       display: $property;
     }
   }
+  @include mq-min("sm") {
+    .sm-min\:u-#{$property} {
+      display: $property;
+    }
+  }
 }

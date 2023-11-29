@@ -47,6 +47,12 @@
   &__cell {
   }
   a {
-    text-decoration: underline;
+      text-decoration: underline;
   }
+  a[href^="tel:"] {
+    @include mq-min("sm") {
+      pointer-events: none;
+      text-decoration: none;
+    }
+}
 }

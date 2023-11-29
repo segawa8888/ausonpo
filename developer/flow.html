@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8" />
     <!--▼タイトル・キーワードなどの指定-->
@@ -10,9 +10,9 @@
   <body style="visibility: hidden">
     <nav class="c-breadcrumbs" aria-label="breadcrumb">
       <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="c-breadcrumbs__list l-container lg:-full sm:-full">
-        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/pc/">au損保トップ</a><meta itemprop="position" content="1" /></li>
-        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="./">コンポーネント一覧</a><meta itemprop="position" content="1" /></li>
-        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page">here<meta itemprop="position" content="4" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/pc/"><span itemprop="name">au損保トップ</span></a><meta itemprop="position" content="1" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="./"><span itemprop="name">コンポーネント一覧</span></a><meta itemprop="position" content="1" /></li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page"><span itemprop="name">here</span><meta itemprop="position" content="4" /></li>
       </ol>
     </nav>
     <main class="l-main l-container lg:-full sm:-full js-main">
@@ -22,7 +22,7 @@
         <li>初回はgitからファイルをpullし「npm install」を実行して下さい。</li>
         <li>「npx gulp」でタスクランナーが起動します。</li>
         <li>localhostが起動します。(http://localhost:8080/)</li>
-        <li>HTMLファイルのフォルダパス、ファイル名は<a href="https://docs.google.com/spreadsheets/d/1KFhKdXM7P4xw6Le0nn6dDn51NqO_bcgf/edit#gid=75666688" target="_blank" class="u-link-text">ディレクトリリスト</a>参照。</li>
+        <li>HTMLファイルのフォルダパス、ファイル名は<a href="https://docs.google.com/spreadsheets/d/11KPE1NxL0QK4oDAWWmQvjUEiWzidtET8/edit#gid=361903611" target="_blank" class="u-link-text">ディレクトリリスト</a>参照。</li>
         <li>HTMLテンプレートについては<a href="/developer/template.html" class="u-link-text">こちら</a>を参照。</li>
         <li>ファーストビュー内の画像には「loading="eager"」以降の画像は「loading="lazy"」を指定する。</li>
         <li>
@@ -30,8 +30,8 @@
           <pre>
 <code class="language-html">
 &lt;picture&gt;
-  &lt;source srcset="/assets/img/common/header_logo.webp" type="image/webp" /&gt;
-  &lt;img src="/assets/img/common/header_logo.png" alt="au損保" loading="eager" /&gt;
+  &lt;source srcset="/common_2024/img/header_logo.webp" type="image/webp" /&gt;
+  &lt;img src="/common_2024/img/header_logo.png" alt="au損保" loading="eager" /&gt;
 &lt;/picture&gt;
 </code>
 </pre>
@@ -42,7 +42,7 @@
       <h2 class="c-heading2-has-line">画像の書き出しについて</h2>
 
       <ul class="c-list-dot l-container lg:-sm u-mt-10">
-        <li>画像ファイルは/src/img/フォルダに保存して下さい。同名の圧縮した画像ファイルおよびWebP形式のファイルが/assets/img/フォルダに出力されます。</li>
+        <li>画像ファイルは/src/img/フォルダに保存して下さい。同名の圧縮した画像ファイルおよびWebP形式のファイルが/pc/フォルダに出力されます。</assets/img/li>
         <li>共通で使用する素材はcommonフォルダに、各ページ固有のファイルはページのカテゴリ名のフォルダを作成して保存。</li>
       </ul>
 
@@ -70,9 +70,9 @@
 
           <pre>
 <code class="language-css">
-background-image: url(../img/common/header_icon_login_pc.webp);
+background-image: url(/common_2024/img/header_icon_login_pc.webp);
 .no-webp-support & {
-  background-image: url(../img/common/header_icon_login_pc.png);
+  background-image: url(/common_2024/img/header_icon_login_pc.png);
 }
 </code>
 </pre>
@@ -88,7 +88,7 @@ background-image: url(../img/common/header_icon_login_pc.webp);
     </main>
 
     <!--javascript-->
-    <script src="/assets/js/script.js"></script>
+    <script src="/common_2024/js/script.min.js"></script>
     <script src="prism.js"></script>
     <link rel="stylesheet" href="prism.css" />
   </body>

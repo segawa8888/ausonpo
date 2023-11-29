@@ -2,7 +2,7 @@
 @use "../../global" as *;
 
 .p-pet-application {
-  background-color: #FFFCD1;
+  background-color: #fffcd1;
   padding-top: rem(14px);
   padding-bottom: rem(18px);
   @include mq-max("sm") {
@@ -16,14 +16,14 @@
     justify-content: center;
     align-items: center;
     &-title {
-    font-weight: bold;
-    font-size: rem(20px);
-    letter-spacing: 0.01em;
-    text-align: center;
-    position: relative;
-    @include mq-max("sm") {
-      font-size: rem(16px);
-    }
+      font-weight: bold;
+      font-size: rem(20px);
+      letter-spacing: 0.01em;
+      text-align: center;
+      position: relative;
+      @include mq-max("sm") {
+        font-size: rem(16px);
+      }
       strong {
         font-size: rem(25px);
         @include mq-max("sm") {
@@ -33,14 +33,14 @@
       }
     }
     ::after {
-      background-image: url(../img/pet/pet_pad_icon.png);
+      background-image: url(/pc/pet/assets/img/pet_pad_icon.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       width: rem(47px);
       height: rem(47px);
       position: absolute;
-      content: '';
+      content: "";
       top: 50%;
       right: rem(-48px);
       transform: translateY(-50%);
@@ -61,12 +61,11 @@
     }
 
     &-btn {
-
       &--yes {
-        color: #FFF;
+        color: #fff;
         background-color: $c-primary;
         border: 1px solid $c-primary;
-        box-shadow: 0 rem(5px) 0 #AB3B00;
+        box-shadow: 0 rem(5px) 0 #ab3b00;
         font-weight: bold;
         font-size: rem(12px);
         padding-top: rem(16px);
@@ -90,8 +89,8 @@
         }
         ::after {
           position: absolute;
-          content: '';
-          background-image: url(../img/pet/pet_arrow_bold_white.svg);
+          content: "";
+          background-image: url(/pc/pet/assets/img/pet_arrow_bold_white.svg);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
@@ -113,9 +112,9 @@
       }
       &--no {
         color: #000;
-        background-color: #FFF682;
-        border: 3px solid #FFEF28;
-        box-shadow: 0 rem(5px) 0 #D9DD00;
+        background-color: #fff682;
+        border: 3px solid #ffef28;
+        box-shadow: 0 rem(5px) 0 #d9dd00;
         font-weight: bold;
         font-size: rem(12px);
         padding-top: rem(14px);
@@ -139,8 +138,8 @@
         }
         ::after {
           position: absolute;
-          content: '';
-          background-image: url(../img/pet/pet_arrow_bold_black.svg);
+          content: "";
+          background-image: url(/pc/pet/assets/img/pet_arrow_bold_black.svg);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;

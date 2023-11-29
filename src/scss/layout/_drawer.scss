@@ -73,7 +73,7 @@ layout/_header.scss
     position: absolute;
     width: rem(48px);
     height: rem(40px);
-    background: url(../img/common/drawer_search_icon.png) center center / rem(20px) no-repeat;
+    background: url(/common_2024/img/drawer_search_icon.png) center center / rem(20px) no-repeat;
     right: 0;
     top: 0;
     z-index: 2;
@@ -135,13 +135,16 @@ layout/_header.scss
     margin-top: rem(12px);
   }
   &__item {
-    background: url(../img/common/drawer_icon_arrow_white.svg) left rem(8px) no-repeat;
+    background: url(/common_2024/img/drawer_icon_arrow_white.svg) left rem(8px) no-repeat;
     background-size: rem(6px);
     a {
       color: $c-white;
       padding-left: rem(14px);
       font-size: rem(12px);
       line-height: 2;
+      @include hover {
+        text-decoration: underline;
+      }
     }
   }
   &__grid-1 {
@@ -237,6 +240,9 @@ layout/_header.scss
     flex-direction: column;
     position: relative;
     cursor: pointer;
+    &:focus {
+      outline: $c-primary 1px solid;
+    }
     @include mq-max("sm") {
       height: rem(48px);
       font-size: rem(16px);
@@ -251,16 +257,16 @@ layout/_header.scss
       }
     }
     &.-icon-bicycle {
-      background-image: url(../img/common/drawer_icon_bicycle.svg);
+      background-image: url(/common_2024/img/drawer_icon_bicycle.svg);
     }
     &.-icon-pet {
-      background-image: url(../img/common/drawer_icon_pet.svg);
+      background-image: url(/common_2024/img/drawer_icon_pet.svg);
     }
     &::after {
       content: "";
       width: rem(20px);
       height: rem(20px);
-      background: url(../img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
+      background: url(/common_2024/img/icon/icon_toggle_plus.svg) center center/cover no-repeat;
       position: absolute;
       right: 0;
       top: rem(18px);
@@ -270,7 +276,7 @@ layout/_header.scss
     }
     &.is-active {
       &::after {
-        background-image: url(../img/icon/icon_toggle_minus.svg);
+        background-image: url(/common_2024/img/icon/icon_toggle_minus.svg);
       }
     }
   }
@@ -315,11 +321,14 @@ layout/_header.scss
     line-height: 1.5;
     letter-spacing: 0.08em;
     font-weight: 700;
-    background: url(../img/common/drawer_icon_arrow_primary_bold.svg) left rem(9.5px) no-repeat;
+    background: url(/common_2024/img/drawer_icon_arrow_primary_bold.svg) left rem(9.5px) no-repeat;
     background-size: rem(6px);
     a {
       color: $c-primary;
       padding-left: rem(14px);
+      @include hover {
+        text-decoration: underline;
+      }
     }
     & & {
       font-size: rem(12px);
@@ -376,26 +385,26 @@ layout/_header.scss
     }
   }
   &.-icon-earth {
-    background-image: url(../img/common/drawer_icon_earth.svg);
+    background-image: url(/common_2024/img/drawer_icon_earth.svg);
   }
 
   &.-icon-first-aid-kit {
-    background-image: url(../img/common/drawer_icon_first_aid_kit.svg);
+    background-image: url(/common_2024/img/drawer_icon_first_aid_kit.svg);
   }
   &.-icon-japan {
-    background-image: url(../img/common/drawer_icon_japan.svg);
+    background-image: url(/common_2024/img/drawer_icon_japan.svg);
   }
   &.-icon-hurt {
-    background-image: url(../img/common/drawer_icon_hurt.svg);
+    background-image: url(/common_2024/img/drawer_icon_hurt.svg);
   }
   &.-icon-golf {
-    background-image: url(../img/common/drawer_icon_golf.svg);
+    background-image: url(/common_2024/img/drawer_icon_golf.svg);
   }
   &::after {
     content: "";
     width: rem(6px);
     height: rem(11px);
-    background: url(../img/common/drawer_icon_arrow_primary.svg) center center/contain no-repeat;
+    background: url(/common_2024/img/drawer_icon_arrow_primary.svg) center center/contain no-repeat;
     position: absolute;
     right: rem(8px);
     top: rem(21px);

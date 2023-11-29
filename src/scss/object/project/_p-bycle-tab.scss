@@ -1,0 +1,848 @@
+@charset "UTF-8";
+@use "../../global" as *;
+.p-byclebest-tabbox__switch {
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid $c-primary;
+    .p-byclebest-tab-buttom {
+        max-width: calc(100% / 4);
+        width: 100%;
+        border-right: 1px solid $c-primary;
+        &:last-child {
+            border: none;
+        }
+        &.is-active {
+            background-color: $c-primary;
+            button {
+                background-color: $c-primary;
+                box-shadow: none;
+                color: #fff;
+                span {
+                    color: #fff;
+                }
+            }
+        }
+        button {
+            min-width: 100%;
+            width: 100%;
+            border-radius: 0;
+            border: none;
+        }
+    }
+}
+.-p-bycle-tab-change {
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 8px;
+    .-p-bycle-tab-change__tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mq-max("md") {
+            flex-wrap: wrap;
+        }
+        .p-bycle-type-info__tab {
+            max-width: calc(100% / 4);
+            width: 100%;
+            padding-bottom: 4px;
+            border: 1px solid $c-primary;
+            border-top: none;
+            border-left: none;
+            @include mq-max("md") {
+                max-width: calc(100% / 2);
+                flex-wrap: wrap;
+                border: none;
+                border-bottom: 1px solid $c-primary;
+                &:first-child {
+                    border-radius: 8px 0 0 0;
+                    border-left: none;
+                    border-right: 1px solid $c-primary;
+                    button {
+                        border-radius: 8px 0 0 0;
+                    }
+                }
+                &:nth-child(2) {
+                    border-radius: 0 8px 0 0;
+                    button {
+                        border-radius: 0 8px 0 0;
+                    }
+                }
+                &:nth-child(3) {
+                    border-radius: 0 0 0 8px;
+                    border-right: 1px solid $c-primary;
+                    button {
+                        border-radius: 0 0 0 8px;
+                    }
+                }
+                &:last-child {
+                    border-radius: 0 0 8px 0;
+                    button {
+                        border-radius: 0 0 8px 0;
+                    }
+                }
+            }
+            &:first-child {
+                border-left: 1px solid $c-primary;
+                border-radius: 8px 0 0 8px;
+                button {
+                    border-radius: 8px 0 0 8px;
+                }
+            }
+            &:last-child {
+                border-radius: 0 8px 8px 0;
+                button {
+                    border-radius: 0 8px 8px 0;
+                }
+            }
+            &:hover {
+                background-color: $c-primary;
+            }
+            button {
+                min-width: 100%;
+                border-radius: 0;
+                border: none;
+                justify-content: flex-start;
+                font-size: 16px;
+                padding: 10px;
+                color: $c-primary;
+                transform: translateY(0rem);
+                @include mq-max("lg") {
+                    font-size: 14px;
+                }
+                @include mq-max("md") {
+                    height: 5rem;
+                }
+                span {
+                    font-size: 1.25rem;
+                    padding-right: 8px;
+                    @include mq-max("md") {
+                        paddimg-right: 4px;
+                    }
+                }
+                &:hover {
+                    border: none;
+                    background-color: $c-primary;
+                    color: $c-white;
+                    transform: translateY(0rem);
+                }
+            }
+        }
+        .p-bycle-type-info__tab.is-active {
+            background-color: $c-primary;
+            button {
+                &.is-active {
+                    background-color: $c-primary;
+                    border-radius: 0;
+                    box-shadow: none;
+                    border: none;
+                    color: $c-white;
+                    transition: inherit;
+                    justify-content: flex-start;
+                    padding: 10px;
+                    transform: translateY(0rem);
+                    border-radius: 8px 0 0 8px;
+                    span {
+                        font-size: 1.25rem;
+                        padding-right: 8px;
+                    }
+                    &:hover {
+                        transform: translateY(0rem);
+                    }
+                }
+            }
+        }
+        &.tabs-bottom {
+            .p-bycle-type-info__tab {
+                border-bottom: none;
+                border-top: 1px solid $c-primary;
+            }
+        }
+    }
+    .p-bycle-type-info__box {
+        @include mq-max("md") {
+            padding: 0.625rem;
+        }
+        .p-bycle-type-info__type {
+            display: none;
+            &.is-active {
+                display: block;
+            }
+        }
+    }
+}
+
+.p-byclebest-tab-contents {
+    display: none;
+}
+.p-byclebest-tab-contents.show {
+    display: block;
+}
+.p-byclebest-tab-ranking {
+    img {
+        max-width: 499px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.p-bycle-course {
+    .p-bycle-course-img {
+        img {
+            max-width: 480px;
+            @include mq-max("md") {
+                padding: 0 2rem;
+            }
+        }
+    }
+}
+.bycle-course-text {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    @include mq-max("md") {
+        flex-direction: column;
+    }
+    .bycle-course-text__pic {
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+.p-bycle-loadservice-list {
+    li {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__point {
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.p-bycle-loadservice-buttom {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.p-bycle-point-wrapper {
+    justify-content: space-between;
+    @include mq-max("md") {
+        flex-direction: column;
+    }
+    &__left,
+    &__right {
+        max-width: calc((100% - 2rem) / 2);
+        width: 100%;
+        @include mq-max("md") {
+            max-width: 100%;
+        }
+    }
+    &__right {
+        @include mq-max("md") {
+            padding-top: 2rem;
+        }
+    }
+    .p-bycle-point-wrapper-box {
+        @include mq-max("md") {
+            padding: 0.625rem;
+        }
+    }
+}
+.p-bycle-loadservice {
+    height: 100%;
+    .p-koutsuujiko-detail__card {
+        height: 100%;
+    }
+}
+.p-bycle-customer {
+    padding-top: 2rem;
+}
+.p-bycle-gimuka-img {
+    justify-content: center;
+    img {
+        max-width: 30rem;
+    }
+}
+.p-bycle-case-list {
+    justify-content: space-between;
+    .p-bycle-hoten {
+        padding-top: 1rem;
+        max-width: calc((100% - 7rem) / 3);
+        width: 100%;
+        @include mq-max("lg") {
+            max-width: calc((100% - 2.5rem) / 3);
+        }
+        @include mq-max("sm") {
+            max-width: 100%;
+        }
+        .p-koutsuujiko-detail__card {
+            height: 100%;
+        }
+    }
+}
+.p-bycle-gimuka-note {
+    justify-content: center;
+    align-items: center;
+    .p-bycle-gimuka-note__text {
+        max-width: max-content;
+    }
+}
+.p-bycle-compensation-box {
+    justify-content: center;
+    align-items: center;
+    .p-bycle-compensation-box-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @include mq-max("lg") {
+            flex-direction: column;
+            padding-right: 1rem;
+            max-width: 50%;
+            p {
+                text-align: center;
+                padding: 0;
+            }
+        }
+        .p-bycle-compensation__pic-icon {
+            max-width: 12.5rem;
+            @include mq-max("lg") {
+                max-width: 100%;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .p-bycle-compensation__pic-img {
+        max-width: 24.5rem;
+        @include mq-max("lg") {
+            max-width: 50%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+.p-tabbox {
+    .p-bycle-point {
+        .p-koutsuujiko-detail__heading {
+            position: relative;
+            @include mq-max("sm") {
+                justify-content: flex-start;
+                padding-left: 1rem;
+            }
+            &::after {
+                content: "";
+                width: 6rem;
+                height: 5rem;
+                position: absolute;
+                background-size: contain;
+                bottom: 0;
+                right: 4px;
+            }
+        }
+        .p-byclebest-title-course {
+            &::after {
+                background-image: url(/src/img/sub/bycle/bycle_illust02.png);
+            }
+        }
+        .p-byclebest-title-loadservice {
+            &::after {
+                background-image: url(/src/img/sub/bycle/bycle_illust06.png);
+            }
+        }
+        .p-byclebest-title-hoten {
+            &::after {
+                background-image: url(/src/img/sub/bycle/bycle_illust07.png);
+            }
+        }
+        .p-byclebest-title-customer {
+            &::after {
+                background-image: url(/src/img/sub/bycle/bycle_illust08.png);
+            }
+        }
+        .p-byclebest-title-compensation {
+            &::after {
+                background-image: url(/src/img/sub/bycle/bycle_illust09.png);
+            }
+        }
+        .c-btn.-md {
+            @include mq-max("sm") {
+                max-width: calc(100% - 1.25rem);
+            }
+        }
+    }
+}
+
+.p-bycle-case {
+    .p-bycle-point {
+        h3 {
+            justify-content: flex-start;
+            position: relative;
+            &::after {
+                content: "";
+                height: 6.25rem;
+                width: 7.25rem;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 16px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        &:first-child {
+            h3::after {
+                background-image: url(/src/img/sub/bycle/bycle_illust12.png);
+                background-image: url(/src/img/sub/bycle/bycle_illust12.png);
+            }
+        }
+        &:nth-child(2) {
+            h3::after {
+                background-image: url(/src/img/sub/bycle/bycle_illust13.png);
+            }
+        }
+        &:nth-child(3) {
+            h3::after {
+                background-image: url(/src/img/sub/bycle/bycle_illust14.png);
+            }
+        }
+    }
+}
+
+//タブ2
+//タブ2
+.tab2.bycle-hosyou {
+    .p-koutsuujiko-detail__card {
+        .p-koutsuujiko-detail__wrap {
+            .p-koutsuujiko-detail__recommend {
+                padding: 1.5rem;
+            }
+        }
+        .p-koutsuujiko-accordion-service {
+            max-width: 100%;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            &__wrap {
+                padding: 0;
+            }
+            .c-accordion-4 {
+                &__content {
+                    border-color: $c-base-050;
+                }
+                &__heading {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .js-up-accordion-body {
+        padding-bottom: 0;
+    }
+    .p-koutsuujiko-accordion {
+        padding-bottom: 0;
+    }
+    .p-koutsuujiko-detail__text {
+        @include mq-max("md") {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .point02 {
+        .p-koutsuujiko-detail__heading {
+            position: relative;
+            picture {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: -1rem;
+                max-width: 6rem;
+                @include mq-max("md") {
+                    display: block;
+                }
+                @include mq-max("md") {
+                    top: -0.5rem;
+                }
+            }
+        }
+        .p-koutsuujiko-detail__icon {
+            @include mq-max("md") {
+                display: none;
+            }
+        }
+        .p-koutsuujiko-accordion__list {
+            grid-template-rows: none;
+        }
+        .p-koutsuujiko-detail__recommend {
+            p {
+                display: block;
+            }
+        }
+    }
+    .point03 {
+        .p-koutsuujiko-detail__heading {
+            position: relative;
+            picture {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: -0.5rem;
+                max-width: 6rem;
+                @include mq-max("md") {
+                    display: block;
+                }
+            }
+        }
+    }
+    .point04 {
+        .p-koutsuujiko-detail__icon {
+            @include mq-max("md") {
+                max-width: 5rem;
+                top: 1.5rem;
+                right: 0.5rem;
+            }
+        }
+        .p-koutsuujiko-detail__wrap {
+            @include mq-max("sm") {
+                padding: 0;
+            }
+        }
+        .p-koutsuujiko-detail__text {
+            max-width: 27.25rem;
+            width: 100%;
+            @include mq-max("md") {
+                max-width: 100%;
+            }
+        }
+    }
+    .bycle__smart-service {
+        padding: 2.5rem 1rem;
+        .p-koutsuujiko-accordion-service__img {
+            @include mq-max("md") {
+                max-width: 8rem;
+            }
+            @include mq-max("sm") {
+                max-width: 15rem;
+            }
+        }
+        .p-koutsuujiko-accordion-service__wrap {
+            display: flex;
+            align-items: center;
+            @include mq-max("sm") {
+                padding: 0;
+            }
+        }
+    }
+}
+.p-bycle__orange-content {
+    position: relative;
+    border: 0.125rem solid $c-primary;
+    border-radius: 1rem;
+    padding: 2.5rem 0;
+    .fukidasi {
+        position: absolute;
+        width: 100%;
+        max-width: 10.5rem;
+        top: -2.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+    @include mq-max("sm") {
+        padding: 1.5rem 0;
+    }
+    &__flex {
+        display: flex;
+        justify-content: left;
+        @include mq-max("sm") {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &--img {
+            width: 100%;
+        }
+        &--text {
+            @include mq-max("sm") {
+                width: 100%;
+            }
+        }
+    }
+}
+.p-bycle__btn-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem 1.5rem;
+    @include mq-max("sm") {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+    &--btn {
+        border: 0.0625rem solid #bdbdbd;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+        border-radius: 0.5rem;
+        p {
+            width: 100%;
+        }
+        &.annot {
+            small {
+                bottom: -1.25rem;
+                left: 0;
+                position: absolute;
+            }
+        }
+    }
+}
+.list-img {
+    display: flex;
+    justify-content: left;
+    align-items: end;
+
+    &__imgblock {
+        padding-left: 1rem;
+        max-width: 3.75rem;
+        width: 100%;
+        @include mq-max("sm") {
+            padding-left: 0rem;
+            width: 20%;
+        }
+    }
+}
+.gray_block {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $c-base-050;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    &--title {
+        background-color: $c-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 3.75rem;
+        height: 3.75rem;
+        border-radius: 0.25rem;
+        p {
+            width: 100%;
+            white-space: nowrap;
+        }
+    }
+    &--contents {
+        padding-left: 1rem;
+        @include mq-max("sm") {
+            padding-left: 0.5rem;
+        }
+    }
+}
+.c-btn.-lg {
+    padding: 0 2.5rem;
+    font-size: 0.875rem;
+    @include mq-max("sm") {
+        padding: 0 0.75rem;
+    }
+}
+.c-btn.-md {
+    width: 100%;
+    max-width: 21.25rem;
+}
+.additional_services {
+    li span {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+}
+//プラン診断
+.-p-bycle-plan {
+    &-title {
+        img {
+            width: 20rem;
+        }
+    }
+    &-progressbar {
+        display: flex;
+        width: 100%;
+        padding: 0 6rem;
+        @include mq-max("sm") {
+            padding: 0;
+        }
+        &-step {
+            position: relative;
+            width: 33%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 0;
+            background: $c-white;
+            &:not(:last-child) {
+                &::before {
+                    position: absolute;
+                    z-index: 2;
+                    top: 0;
+                    bottom: 0;
+                    left: 100%;
+                    content: "";
+                    border: 2rem solid transparent;
+                    border-left: 1rem solid $c-white;
+                    margin: auto;
+                }
+                &::after {
+                    position: absolute;
+                    z-index: 2;
+                    top: 0;
+                    bottom: 0;
+                    left: 100%;
+                    content: "";
+                    border: 2rem solid transparent;
+                    border-left: 1rem solid $c-white;
+                    margin: auto;
+                }
+            }
+            &:not(:last-child)::before {
+                margin-left: 2px;
+                border-left-color: $c-base-050;
+            }
+            &.active {
+                z-index: 1;
+                background: $c-primary;
+                color: $c-white;
+                &:not(:last-child)::after {
+                    border-left-color: $c-primary;
+                }
+                &:not(:last-child)::before {
+                    border-left: none;
+                }
+            }
+        }
+    }
+    &-select {
+        width: 100%;
+        padding: 0 15rem;
+        @include mq-max("sm") {
+            padding: 0.5rem;
+        }
+        &-btn {
+            background: $c-white;
+            label {
+                padding: 0.5rem;
+                padding-top: 2rem;
+                width: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                cursor: pointer;
+                height: 100%;
+                border: 0.0625rem solid #d1d1d1;
+                picture {
+                    max-width: 5rem;
+                    width: 100%;
+                }
+                &.honin {
+                    picture {
+                        max-width: 3.5rem;
+                    }
+                }
+                &.kazoku {
+                    picture {
+                        max-width: 3.5rem;
+                    }
+                }
+                &.sinzoku {
+                    picture {
+                        max-width: 4.5rem;
+                    }
+                }
+                &::before {
+                    content: "";
+                    display: block;
+                    border-radius: 50%;
+                    position: absolute;
+                    transform: translateY(-50%) translateX(-50%);
+                    top: 1rem;
+                    left: 50%;
+                    border: 0.0625rem solid #d1d1d1;
+                    border-radius: 50%;
+                    width: 1rem;
+                    height: 1rem;
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    border-radius: 50%;
+                    position: absolute;
+                    transform: translateY(-50%) translateX(-50%);
+                    top: 1rem;
+                    left: 50%;
+                    background-color: $c-primary;
+                    border-radius: 50%;
+                    opacity: 0;
+                    width: 0.5rem;
+                    height: 0.5rem;
+                }
+                .tag-area {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include mq-max("sm") {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row-reverse;
+                    }
+                    .tag {
+                        padding: 0.25rem;
+                        border: 0.0625rem solid #d1d1d1;
+                        &.recom {
+                            background-color: #fff682;
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            input:checked + label::after {
+                opacity: 1;
+            }
+            input:checked + label {
+                border: 0.0625rem dashed $c-primary;
+            }
+            .visually-hidden {
+                position: absolute;
+                white-space: nowrap;
+                border: 0;
+                clip: rect(0 0 0 0);
+                clip-path: inset(50%);
+                overflow: hidden;
+                height: 1px;
+                width: 1px;
+                margin: -1px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.p-keiyakusya-table table tr.-p-byclepic-ful {
+    max-width: 100%;
+    width: 100%;
+    grid-template-areas: "p-bycle-hoken-title p-bycle-hoken-pic p-bycle-hoken-pic p-bycle-hoken-pic";
+    .p-bycle-hoken-title {
+        grid-area: p-bycle-hoken-title;
+    }
+    .p-bycle-hoken-pic {
+        grid-area: p-bycle-hoken-pic;
+        text-align: center;
+        background-color: rgba(144, 144, 144, 0.1);
+    }
+}

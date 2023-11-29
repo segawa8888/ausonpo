@@ -64,10 +64,10 @@ ul/olタグの共通スタイル
 
 .c-list-check {
   li {
-    background: url(../img/icon/icon-check.webp) left #{rem(5px)} / rem(12px) no-repeat;
+    background: url(/common_2024/img/icon/icon-check.webp) left #{rem(5px)} / rem(12px) no-repeat;
     padding-left: 1.2em;
     .no-webp-support & {
-      background-image: url(../img/icon/icon-check.png);
+      background-image: url(/common_2024/img/icon/icon-check.png);
     }
   }
 }

@@ -1,289 +1,253 @@
 @charset "UTF-8";
 @use "../../global" as *;
 
-.p-pet-premium{
+.p-pet-premium {
+  &__title {
+    text-align: center;
+  }
 
-    &__title{
-        text-align: center;
+  &__info {
+    max-width: rem(830px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__box {
+    margin-top: rem(33px);
+    text-align: center;
+    display: flex;
+    gap: rem(32px);
+
+    @include mq-max("sm") {
+      flex-direction: column;
+      text-align: left;
+      gap: 1em;
     }
+  }
 
-    &__info{
-      max-width: rem(830px);
-      margin-left: auto;
-      margin-right: auto;
-    }
+  &__type {
+    width: calc(50% - rem(16px));
+    max-width: rem(534px);
+    border-radius: 5px;
 
-    &__box{
-        margin-top:rem(33px) ;
-        text-align: center;
-        display: flex;
-        gap: rem(32px);
-
-        @include mq-max("sm"){
-            flex-direction: column;
-            text-align: left;
-            gap: 1em;
-        }
-          }
-
-
-    &__type{
-        width: calc(50% - rem(16px));
-        max-width: rem(534px);
-        border-radius: 5px;
-    
-        @include mq-max("sm"){
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-        }
-
-    }
-
-    &__name{
-        color:#fff;
-        background-color: #EA5404;
-        font-size: rem(24px);
-        font-weight: 700;
-        padding: 0.5em;
-        border-radius: rem(10px) rem(10px) 0 0;
-        position: relative;
-    
-        @include mq-max("sm"){
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: rem(20px);
-    
-        }
-    
-    
-        & p{
-          display: flex;
-          justify-content: center;
-          align-items: baseline;
-
-          &::before,
-          &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            width: rem(40px);
-            height: rem(40px);
-            mask-image: url(../img/pet/pet_cat_icon01.svg);
-            mask-repeat: no-repeat;
-            mask-position: center;
-            mask-size: contain;
-            background-color: #FFDABA;
-            top: 50%;
-            transform: translateY(-50%);
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-    
-          }
-
-          &::before{
-            left: 20%;
-
-            @include mq-max("sm"){
-              left: 15%;
-            }
-
-          }
-    
-          &::after{
-            right: 20%;
-
-            @include mq-max("sm"){
-              right: 15%;
-            }
-          }
-    
-          & span{
-            font-size: rem(14px);
-
-            @include mq-max("sm"){
-              font-size: rem(20px);
-              text-align: right;
-              margin-left: auto;
-              display: block;
-              line-height: 150%;
-              padding-right: rem(5px);
-    
-            }
-          }
-          
-        }
-
-    }
-
-    &__type--yellow  .p-pet-premium__name{
-      background-color: #FFF682;
-      color: #000000;
-
-      & p{
-        &::before,
-        &::after {
-          background-color: #EA5404;
-  
-        }
-      }
-
-
-    }
-
-    &__body{
-      border-radius: 0 0 rem(10px) rem(10px);
-      background-color: #FFDABA;
-
-    }
-
-    &__bodyWrap{
-      max-width: rem(320px);
-      margin-right: auto;
-      margin-left: auto;
-      padding: rem(12px);
-
-    }
-
-    &__targetBox{
+    @include mq-max("sm") {
+      width: 100%;
       display: flex;
-      gap:rem(20px) ;
+      flex-direction: column;
+    }
+  }
+
+  &__name {
+    color: #fff;
+    background-color: #ea5404;
+    font-size: rem(24px);
+    font-weight: 700;
+    padding: 0.5em;
+    border-radius: rem(10px) rem(10px) 0 0;
+    position: relative;
+
+    @include mq-max("sm") {
+      display: flex;
       align-items: center;
-      background-color: #fff;
-      padding: rem(8px) rem(20px);
-      margin-right: auto;
-      margin-left: auto;
-      border-radius: rem(5px);
       justify-content: center;
-
+      font-size: rem(20px);
     }
 
-    &__target{
-      color: #000;
-      font-size: rem(16px);
-      font-weight: 700;
-      line-height: 133%; 
-
-    }
-
-    &__targetList{
-      color: #EA5404;
-      text-align: center;
-      font-size: rem(16px);
-      font-weight: 700;
-      line-height: 133%;
+    & p {
       display: flex;
-      gap: rem(8px);
+      justify-content: center;
+      align-items: baseline;
 
-      & p{
-        display: flex;
-        background-color: #FFF682;
-        padding: rem(4px);
-        align-items: center;
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: rem(40px);
+        height: rem(40px);
+        mask-image: url(/pc/pet/assets/img/pet_cat_icon01.svg);
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+        background-color: #ffdaba;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
       }
 
-    }
+      &::before {
+        left: 20%;
 
-    &__course{
-      display: flex;
-      gap: rem(9px);
-      margin-top: rem(12px);
-      margin-left: auto;
-      margin-right: auto;
-
-    }
-
-    &__courseList{
-      color: #000;
-      text-align: center;
-      width: calc(50% - rem(4.5px));
-      background-color: #fff;
-      padding: rem(6px);
-      border-radius: rem(5px);
-
-      & p{
-        font-size: rem(16px);
-        font-weight: 700;
-        line-height: 125%; 
-        letter-spacing: rem(0.8px);
-        & span{
-          font-size: rem(12px);
+        @include mq-max("sm") {
+          left: 15%;
         }
       }
 
-    }
+      &::after {
+        right: 20%;
 
-    &__price{
-      display: flex;
-      gap: rem(2px);
-      justify-content: space-around;
-
-    }
-
-    &__priceLeft{
-      color: #fff;
-      background-color: #EA5404;
-      font-weight: 700;
-      font-size: rem(13px);
-      -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
-      padding: rem(2px) rem(4px);
-      text-align: center;
-
-    }
-
-    &__priceRight{
-
-      color: #EA5404;
-      font-weight: 700;
-      font-size: rem(14px);
-      
-      & span{
-        font-size: rem(36px);
-        
-      }
-      & i{
-        font-family:'メイリオ', 'Meiryo', sans-serif;
-      }
-
-    }
-
-    &__type--yellow{
-
-      .p-pet-premium{
-        &__body{
-          background-color: #FFFBCC;;
+        @include mq-max("sm") {
+          right: 15%;
         }
       }
 
-    }
-    
-    &__bottom{
-      margin-top: rem(46px);
-      margin-right: auto;
-      margin-left: auto;
+      & span {
+        font-size: rem(14px);
 
+        @include mq-max("sm") {
+          font-size: rem(20px);
+          text-align: right;
+          margin-left: auto;
+          display: block;
+          line-height: 150%;
+          padding-right: rem(5px);
+        }
+      }
     }
+  }
 
-    &__btnTxt{
-      color: #EA5404;
-      text-align: center;
-      font-size: rem(14px);
+  &__type--yellow .p-pet-premium__name {
+    background-color: #fff682;
+    color: #000000;
+
+    & p {
+      &::before,
+      &::after {
+        background-color: #ea5404;
+      }
+    }
+  }
+
+  &__body {
+    border-radius: 0 0 rem(10px) rem(10px);
+    background-color: #ffdaba;
+  }
+
+  &__bodyWrap {
+    max-width: rem(320px);
+    margin-right: auto;
+    margin-left: auto;
+    padding: rem(12px);
+  }
+
+  &__targetBox {
+    display: flex;
+    gap: rem(20px);
+    align-items: center;
+    background-color: #fff;
+    padding: rem(8px) rem(20px);
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: rem(5px);
+    justify-content: center;
+  }
+
+  &__target {
+    color: #000;
+    font-size: rem(16px);
+    font-weight: 700;
+    line-height: 133%;
+  }
+
+  &__targetList {
+    color: #ea5404;
+    text-align: center;
+    font-size: rem(16px);
+    font-weight: 700;
+    line-height: 133%;
+    display: flex;
+    gap: rem(8px);
+
+    & p {
+      display: flex;
+      background-color: #fff682;
+      padding: rem(4px);
+      align-items: center;
+    }
+  }
+
+  &__course {
+    display: flex;
+    gap: rem(9px);
+    margin-top: rem(12px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__courseList {
+    color: #000;
+    text-align: center;
+    width: calc(50% - rem(4.5px));
+    background-color: #fff;
+    padding: rem(6px);
+    border-radius: rem(5px);
+
+    & p {
+      font-size: rem(16px);
       font-weight: 700;
-      line-height: 213% ;
-
+      line-height: 125%;
+      letter-spacing: rem(0.8px);
+      & span {
+        font-size: rem(12px);
+      }
     }
+  }
 
-    &__btn{
-      margin-top: rem(8px);
-      text-align: center;
+  &__price {
+    display: flex;
+    gap: rem(2px);
+    justify-content: space-around;
+  }
 
+  &__priceLeft {
+    color: #fff;
+    background-color: #ea5404;
+    font-weight: 700;
+    font-size: rem(13px);
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    padding: rem(2px) rem(4px);
+    text-align: center;
+  }
+
+  &__priceRight {
+    color: #ea5404;
+    font-weight: 700;
+    font-size: rem(14px);
+
+    & span {
+      font-size: rem(36px);
     }
+    & i {
+      font-family: "メイリオ", "Meiryo", sans-serif;
+    }
+  }
 
+  &__type--yellow {
+    .p-pet-premium {
+      &__body {
+        background-color: #fffbcc;
+      }
+    }
+  }
 
+  &__bottom {
+    margin-top: rem(46px);
+    margin-right: auto;
+    margin-left: auto;
+  }
 
+  &__btnTxt {
+    color: #ea5404;
+    text-align: center;
+    font-size: rem(14px);
+    font-weight: 700;
+    line-height: 213%;
+  }
 
-
-
+  &__btn {
+    margin-top: rem(8px);
+    text-align: center;
+  }
 }
