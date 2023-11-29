@@ -136,4 +136,10 @@
   .splide:not(.is-overflow) .splide__pagination {
     display: flex; //リロードしたときにdisplay: none;でpaginationが非表示になることを防ぐ処理
   }
+  &__medical-text{
+    margin-left: rem(20px);
+    @include mq-max("sm") {
+      margin-left: 0;
+    }
+  }
 }
