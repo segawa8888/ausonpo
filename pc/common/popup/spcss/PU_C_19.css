@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+
+/* bread_crumb
+ * -----------------------------*/
+.block_bread_crumb_head {
+  margin:10px 0.5em;
+}
+.block_bread_crumb_foot {
+  margin:15px 0.5em;
+}
+.bread_crumb {
+  font-size: 12px;
+  letter-spacing: -0.4em;
+}
+.bread_crumb li {
+  color: #605f5d;
+  letter-spacing: normal;
+  display: inline-block;
+  margin-right: 8px;
+}
+.bread_crumb li a,
+.bread_crumb li a:visited {
+	text-decoration: underline;
+	color:#336699;
+}
+.bread_crumb li:before {
+  content: "";
+  width: 4px;
+  height: 7px;
+  display: inline-block;
+  background: url('../../img_20150623/pc/common/arrow_pankuzu.png') no-repeat;
+  background-position: left top;
+  margin-right: 5px;
+}
+.bread_crumb li:first-child:before {
+  display: none;
+}
+.bread_crumb li a:hover {
+	color:#009966;
+}

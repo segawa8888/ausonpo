@@ -1,0 +1,170 @@
+/* reset
+----------------------------------------*/
+#description div,
+#description dl,
+#description dt,
+#description dd,
+#description ul,
+#description ol,
+#description li,
+#description h1,
+#description h2,
+#description h3,
+#description h4,
+#description h5,
+#description h6,
+#description pre,
+#description code,
+#description form,
+#description fieldset,
+#description legend,
+#description input,
+#description textarea,
+#description p,
+#description blockquote,
+#description th,
+#description td{
+    margin:0;padding:0;
+}
+#description fieldset,
+#description img{
+	border:0;
+}
+#description address,
+#description caption,
+#description cite,
+#description code,
+#description dfn,
+#description em,
+#description strong,
+#description th,
+#description var{
+    font-style:normal;font-weight:normal;
+}
+#description caption,
+#description th{
+	text-align:left;
+}
+#description h1,#description h2,#description h3,#description h4,#description h5,#description h6{
+    font-size:100%;font-weight:normal;
+}
+#description {
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+}
+
+#description li {
+	list-style: none;
+}
+
+#description h2 {
+	border-bottom:3px #a9a9a9 solid;
+	width:99%;
+	margin-bottom: 10px;
+	padding: 5px 3px 1px 0px;
+	margin-left:2px;
+	text-indent:1.2em;
+	text-align: left;
+	line-height:22px;
+	font-size: 14px;
+	font-weight:bold;
+	background-image: url(../spimg/img_titledeco_pur.png);
+	background-size: 8px 25px;
+	-webkit-background-size: 8px 25px;
+	-moz-background-size: 8px 25px;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	z-index:1;
+}
+
+/*===========================================
+  フッターcloseボタン
+-----------------------------------------*/
+div#floteArea {
+	position: fixed !important;
+	position:absolute;
+	//position:fixed;
+	/*bottom: 1px;*/
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+div#floteArea a{
+	font-weight:bold;
+	color:#FFF;
+	text-decoration:none;
+	font-size:16px;
+}
+
+.close_float {
+	margin:0;padding:0;
+	font-size:18px;
+	//font-size:40px;
+	font-weight:bold;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align:center;
+	padding: 10px;
+	//padding: 32px;
+	//padding-bottm: 30px;
+	/*padding: 11px 10px 9px 10px;*/
+	background:#585657;
+	background-size:10px 4px;
+}
+
+.close_float a{
+	color:#fff;
+	text-decoration:none;
+}
+
+/*
+ * --- 各ページ毎スタイル [overwrite] ---
+ */
+#description div.caption0,
+#description div.caption1{
+	background: #5096ff;
+}
+#description div.caption2{
+	background: #afcdeb;
+}
+#description div.caption2 .box{
+	border:1px solid #5096ff;
+}
+#description div.caption3{
+	color:#5096ff;
+}
+#description .strong-bg{
+	background: #f7fff7;
+}
+#description .strong-border1{
+	border: 1px solid #5096ff;
+}
+#description .strong-color1{
+	color:#5096ff;
+}
+#description .strong-color2{
+	color:#afcdeb;
+}
+#description table th{
+	background-color: #5096ff;
+}
+#description table td.tdcaption,
+#description table th.thcaption{
+	background-color: #c8def2;
+}
+#description table.green_table .i_b{
+	display:inline-block;
+}
+
+#description table.green_table th{
+	background-color: #5096ff;
+	//font-size:90%;
+}
+#description table.green_table th.th2{
+	padding:5px;
+	background-color: #c8def2;
+}
+#description table.green_table td{
+	text-align:center;
+}
+

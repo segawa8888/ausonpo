@@ -1,0 +1,25 @@
+/*******************************
+ * SP表示用CSS
+ *******************************/
+
+/*------------------------------
+ * PU_C_13
+ *-----------------------------*/
+#page_menu_c13_01 ul li.first {
+    padding: 0;
+}
+
+#div_c13_02 dl {
+    width: auto;
+}
+
+#div_c13_02 dl dt {
+    float: none;
+    width: auto;
+    padding:0 0 0 0.5em;
+}
+#div_c13_02 dl dd {
+    float: none;
+    width: auto;
+    padding:0 0 0 1em;
+}

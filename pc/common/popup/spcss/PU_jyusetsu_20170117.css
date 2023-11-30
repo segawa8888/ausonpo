@@ -1,0 +1,534 @@
+/* 初期化 */
+body.init{
+	color:#000;
+	margin: 0;
+	padding:0;
+	border:0;
+}
+#description{
+	-webkit-text-size-adjust: 100%;
+	position: relative;
+	margin:0 auto;
+	padding:0;
+	font-size: 15px;
+	font-family: Hiragino Kaku Gothic Pro,"ヒラギノ角ゴ Pro W3",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+	max-width:980px;
+	color:#000;
+	background:#FFF;
+}
+#description p,
+#description ol,
+#description ul,
+#description li{
+	margin:0;
+	padding:0;
+	border:0;
+	line-height:1.6em;
+}
+
+/* listまわり */
+#description ol,
+#description ul{
+	list-style-type:none;
+}
+#description li ol.spacer0 li,
+#description ul.spacer0 li{
+	margin-bottom:0;
+}
+#description li ol.spacer1 li,
+#description ul.spacer1 li{
+	margin-bottom:0.7em;
+}
+#description li ol.spacer2 li,
+#description ul.spacer2 li{
+	margin-bottom:0.2em;
+}
+#description ul.lower-alpha li{
+	margin-left:2em;
+	list-style-position:outside;
+	list-style-type:lower-alpha;
+}
+
+#description ul.circle li{
+	margin-left:2em;
+	list-style-position:outside;
+	list-style-type:circle;
+}
+
+#description ul.disc li{
+	margin-left:2em;
+	list-style-position:outside;
+	list-style-type:disc;
+}
+
+/* tableまわり */
+#description table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+#description table td{
+	vertical-align:top;
+	line-height:1.6em;
+}
+#description table.border1 th,
+#description table.border1 td{
+	border:1px solid black;
+}
+#description table.padding1 th,
+#description table.padding1 td{
+	padding:5px;
+}
+#description table.padding2 th,
+#description table.padding2 td{
+	padding:5px 3px;
+}
+#description table.padding2tb td{
+	padding:5px 0;
+}
+#description table th{
+	font-weight:normal;
+	vertical-align:middle;
+	background-color: #f0f0ff;
+}
+#description table td.tdcaption{
+	vertical-align:middle;
+	background-color: #f0f0ff;
+}
+
+/* align */
+#description table.va-top td{
+	vertical-align:top;
+}
+#description table.va-middle td{
+	vertical-align:middle;
+}
+#description table.va-bottom td{
+	vertical-align:bottom;
+}
+#description table.th-left th,
+#description table.td-left td,
+#description table.ta-left th,
+#description table.ta-left td,
+#description .ta-left{
+	text-align:left;
+}
+#description table.th-center th,
+#description table.td-center td,
+#description table.ta-center th,
+#description table.ta-center td,
+#description .ta-center{
+	text-align:center;
+	line-height: 1.8em;
+}
+#description table.va-middle th,
+#description table.va-middle td,
+#description table.va-middle th,
+#description table.va-middle td,
+#description .va-middle{
+	vertical-align:middle;
+} 
+#description table.th-right th,
+#description table.td-right td,
+#description table.ta-right th,
+#description table.ta-right td,
+#description .ta-right{
+	text-align:right;
+}
+
+/* 角丸 */
+#description .radius1{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+#description .radius2{
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+}
+
+/*
+ * キャプション
+ * 契約概要と注意喚起情報を置いた場合のheight調整をするためにpaddingはテキスト要素にも付与
+ */
+#description div.caption0{
+	padding: 6px 8px 4px;
+	background: #965F4B;
+	color:white;
+	clear:both;
+	text-align:center;
+}
+#description div.caption0 p{
+	font-size:16px;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+#description div.caption1{
+	padding: 7px 8px 4px;
+	background: #965F4B;
+	color:white;
+	clear:both;
+}
+#description div.caption1 p{
+	padding: 3px 0 4px 0;
+	font-size:16px;
+	font-weight: bold;
+	float:left;
+	line-height: 1em;
+}
+
+#description div.caption2{
+	margin-top:5px;
+	padding: 5px 8px 4px;
+	background: #ffdcbe;
+/*
+	color:black;
+*/
+	clear:both;
+}
+#description div.caption2 .box{
+	background: #ffffff;
+	margin-right:3px;
+	border:1px solid #ddba9c;
+	padding:0 3px;
+}
+#description div.caption2 p{
+	text-indent: -1.8em;
+	margin-left: 1.8em;
+	margin-bottom:3px;
+	font-weight: bold;
+	float:left;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+#description div.caption3{
+	margin:15px 0px 0;
+	background: #ffffff;
+	color:#662f1b;
+}
+#description div.caption3 p{
+	font-weight: bold;
+	float:left;
+	line-height: 1.6em;
+	font-size: 16px;
+}
+#description .canceller{
+	clear:both;
+	margin:0;
+	padding:0;
+}
+
+/* インデント */
+#description .indent1 li,
+#description li .indent1 li,
+#description p.indent1{
+	text-indent:-1em;
+	margin-left: 1em;
+}
+#description .indent1h li,
+#description li .indent1h li,
+#description p.indent1h{
+	text-indent:-1.5em;
+	margin-left: 1.5em;
+}
+#description .indent2 li,
+#description li .indent2 li,
+#description p.indent2{
+	text-indent:-2em;
+	margin-left: 2em;
+}
+#description .indent2h li,
+#description li .indent2h li,
+#description p.indent2h{
+	text-indent:-2.5em;
+	margin-left: 2.5em;
+}
+#description .indent3 li,
+#description li .indent3 li,
+#description p.indent3{
+	text-indent:-3em;
+	margin-left: 3em;
+}
+#description .indent3h li,
+#description li .indent3h li,
+#description p.indent3h{
+	text-indent:-3.5em;
+	margin-left: 3.5em;
+}
+#description .indent4 li,
+#description li .indent4 li,
+#description p.indent4{
+	text-indent:-4em;
+	margin-left: 4em;
+}
+
+/*
+ * コンテンツ
+ * 左右幅調整のためのコンテナ
+ */
+#description div.contents1{
+	clear:both;
+	padding:2px;
+	margin-bottom:15px;
+}
+#description div.contents1 .text1{
+	margin-left:0px;
+	margin-right:0px;
+}
+#description div.contents1 .text2{
+	margin-left:12px;
+	margin-right:2px;
+}
+#description div.contents1 .text3{
+	margin-left:18px;
+	margin-right:2px;
+}
+#description div.contents1 .text4{
+	margin-left:24px;
+	margin-right:2px;
+}
+/*
+ * 各マークを格納するコンテナ
+ */
+#description .mark1,
+#description .mark2{
+	padding:0;
+	margin:0;
+	float:right;
+}
+#description .mark1{
+	width:auto;
+}
+#description .mark2{
+	width:auto;
+}
+/*
+ * しおり
+ */
+#description div p.siori,
+#description div span.siori{
+	font-weight:bold;
+	width:4em;
+	background-color:#33cc33;
+	color:#ffffff;
+	line-height:1.6em;
+	padding:1px 3px 0 3px;
+	text-align:center;
+	font-size: 14px;
+}
+#description div span.siori{
+	margin-right:3px;
+}
+/*
+ * 契約概要
+ */
+#description div p.keiyaku{
+	font-weight:bold;
+	width:7em;
+	line-height:1.6em;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color:#0070c0;
+	padding:0 3px;
+	text-align:center;
+	color:white;
+	margin-right:3px;
+	margin-left: 0;
+	text-indent: 0;
+	font-size: 14px;
+}
+/*
+ * 注意喚起情報
+ */
+#description div p.tyuuikanki{
+	font-weight:bold;
+	width:7em;
+	line-height:1.6em;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color:#ff6e6e;
+	padding:0 3px;
+	text-align:center;
+	color:white;
+	margin-right:3px;
+	margin-left: 0;
+	text-indent: 0;
+	font-size: 14px;
+}
+
+/*
+ * 吹きだし風強調
+ */
+#description .message{
+	background-color:#ffffcc;
+	padding:3px 10px;
+	border:1px solid black;
+}
+
+/*
+ * 注意書き風
+ */
+#description .attention{
+	border:1px dotted #ff0000;
+	color: #ff0000;
+	background-color:#fff2f2; padding:6px;
+}
+/*
+ * タイプ
+ */
+#description div.type_pie{
+	margin:0 auto;
+	text-align:center;
+	width:auto;
+	line-height:1.6em;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	text-align:center;
+	color:white;
+	text-indent: 0;
+	max-width: 9em;
+	font-size: 14px;
+}
+#description div.cyan{
+	background-color:#00b0e0;
+}
+#description div.green{
+	background-color:#00b050;
+}
+#description div.purple{
+	background-color:#7030a0;
+}
+#description div.orange{
+	background-color:#de700a;
+}
+#description div.azur{
+	background-color:#1f4a80;
+}
+/*
+ * その他表示形式系
+ */
+/*
+#description .notes1{
+	font-size: 0.9em;
+}
+*/
+#description .notes2{
+	font-size: 0.8em;
+}
+.memo{
+	color:#000;
+	font-weight:normal;
+}
+
+#description .mt1{
+	margin-top:10px;
+}
+#description .mt2{
+	margin-top:4px;
+}
+#description .ha-center{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+#description .strong-color1{
+	color:#965F4B;
+}
+#description .strong-color2{
+	color:#984807;
+}
+#description .strong-bg{
+	background: #ffefd7;
+}
+
+
+#description .notes2,
+#description div.contents1 .text1{
+	font-size:15px;
+	line-height:1.8em;
+	margin-top:10px;
+}
+#description div.contents1 .text2 .mt2,
+#description .indent3h li,
+#description .indent3 li,{
+	font-size:13px;
+}
+#description li ol.spacer1 li,
+#description ul.spacer1 li,
+#description ul.spacer2 li,
+#description .indent1 li{
+	line-height:1.8em;
+}
+
+#description ul.lower-alpha li,
+#description ul.spacer1 li,
+#description table,{
+	margin-top:0.6em;
+}
+
+#description table td.tdcaption,
+#description table.padding1 td,
+#description table.padding2 td{
+	padding: 5px;
+}
+/*
+#description .indent4 li{
+	font-size:13px;
+	margin-top:0.6em;
+}
+*/
+#description .radius2,
+#description table,
+#description .mt2,
+#description .strong-border1{
+	font-size:15px;
+}
+#description ul.spacer1 li{
+	margin-bottom:0;
+}
+#description .mt1,
+#description div.contents1 .text1{
+	color:#000000;
+}
+
+#description div.caption0,
+#description div.caption1,
+#description div.caption2,
+#description div.caption3,
+#description div.contents1{
+	padding-left:2.5em;
+	padding-right:2.5em;
+}
+
+div#floteArea {
+	opacity: 0.83;
+}
+
+@media screen and (max-width:767px) {
+	#description div.caption0.midashi p{
+		line-height:1.4;
+		height:41px;
+		padding-top:0;
+	}
+	#description div.caption0,
+	#description div.caption1,
+	#description div.caption2,
+	#description div.caption3{
+		padding-left:8px;
+		padding-right:8px;
+	}
+		
+	#description div.contents1{
+		padding-left:2px;
+		padding-right:2px;
+	}
+	#description div.contents1 .text1{
+		margin-left:6px;
+		margin-right:6px;
+	}
+}

@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.8.2r1
+*/
+html {color: #000;background: #FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,button,textarea,p,th,td {margin: 0;padding: 0;}table{border-collapse: collapse;border-spacing: 0;}img {border: 0;}address,em,strong,th {font-style: inherit;font-weight: inherit;}li{list-style: none;}th{text-align: left;}h1,h2,h3,h4,h5,h6 {font-size: 100%;font-weight: normal;}input,textarea,select,option{font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;}input,textarea,select { *font-size: 100%;}
+body {font:13px/1.231 'メイリオ','Meiryo','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック', arial,helvetica,clean,sans-serif; *font-size:small;*font:x-small;}select,input,textarea{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}
+
+/*
+===========================================
+	
+	common settings
+	
+	=01. html
+	=02. clearfix
+	=03. radius（角丸）
+	=04. image replace（画像置換）
+	=05. spacing
+	=06. layout
+	=07. font
+	
+-----------------------------------------*/
+
+/*
+===========================================
+	=01. html
+-----------------------------------------*/
+html {overflow-y: scroll;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}
+
+
+/*
+===========================================
+	=02. clearfix
+-----------------------------------------*/
+.c			{/zoom : 1;}
+.c:after	{content: ''; display: block; clear: both;}
+.cb			{clear: both;}
+
+/*
+===========================================
+	=03. radius（角丸）
+	
+	t, r, b, l = top, right, bottom, left
+-----------------------------------------*/
+.r {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.rt {
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-ms-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+}
+
+.rr {
+	border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+	-ms-border-radius: 0 5px 5px 0;
+	-o-border-radius: 0 5px 5px 0;
+}
+
+.rb {
+	border-radius: 0 0 5px 5px;
+	-webkit-border-radius:0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-ms-border-radius: 0 0 5px 5px;
+	-o-border-radius: 0 0 5px 5px;
+}
+
+.rl {
+	border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+	-ms-border-radius: 5px 0 0 5px;
+	-o-border-radius: 5px 0 0 5px;
+}
+
+
+/*
+===========================================
+	=04. image replacement（画像置換）
+-----------------------------------------*/
+.ir {
+	display: inline-block;
+	/display: inline;
+	/zoom: 1;
+	text-indent: -9999;
+}
+
+.ir span {
+	max-width: 0; /*for webkit*/
+}
+
+/*
+===========================================
+	=05. spacing
+	
+	p, m = padding,margin
+	a, t, r, b, l, h, v = all, top, right, bottom, left, horizontal, vertical
+-----------------------------------------*/
+.pt0, .pv0, .pa0 { padding-top: 0px !important; }
+.pr0, .ph0, .pa0 { padding-right: 0px !important; }
+.pb0, .pv0, .pa0 { padding-bottom: 0px !important; }
+.pl0, .ph0, .pa0 { padding-left: 0px !important; }
+
+.mt0, .mv0, .ma0 { margin-top: 0px !important; }
+.mr0, .mh0, .ma0 { margin-right: 0px !important; }
+.mb0, .mv0, .ma0 { margin-bottom: 0px !important; }
+.ml0, .mh0, .ma0 { margin-left: 0px !important; }
+
+.pt5, .pv5, .pa5 { padding-top: 5px !important; }
+.pr5, .ph5, .pa5 { padding-right: 5px !important; }
+.pb5, .pv5, .pa5 { padding-bottom: 5px !important; }
+.pl5, .ph5, .pa5 { padding-left: 5px !important; }
+
+.mt5, .mv5, .ma5 { margin-top: 5px !important; }
+.mr5, .mh5, .ma5 { margin-right: 5px !important; }
+.mb5, .mv5, .ma5 { margin-bottom: 5px !important; }
+.ml5, .mh5, .ma5 { margin-left: 5px !important; }
+
+.pt10, .pv10, .pa10 { padding-top: 10px !important; }
+.pr10, .ph10, .pa10 { padding-right: 10px !important; }
+.pb10, .pv10, .pa10 { padding-bottom: 10px !important; }
+.pl10, .ph10, .pa10 { padding-left: 10px !important; }
+
+.mt10, .mv10, .ma10 { margin-top: 10px !important; }
+.mr10, .mh10, .ma10 { margin-right: 10px !important; }
+.mb10, .mv10, .ma10 { margin-bottom: 10px !important; }
+.ml10, .mh10, .ma10 { margin-left: 10px !important; }
+
+.pt15, .pv15, .pa15 { padding-top: 15px !important; }
+.pr15, .ph15, .pa15 { padding-right: 15px !important; }
+.pb15, .pv15, .pa15 { padding-bottom: 15px !important; }
+.pl15, .ph15, .pa15 { padding-left: 15px !important; }
+
+.mt15, .mv15, .ma15 { margin-top: 15px !important; }
+.mr15, .mh15, .ma15 { margin-right: 15px !important; }
+.mb15, .mv15, .ma15 { margin-bottom: 15px !important; }
+.ml15, .mh15, .ma15 { margin-left: 15px !important; }
+
+.pt20, .pv20, .pa20 { padding-top: 20px !important; }
+.pr20, .ph20, .pa20 { padding-right: 20px !important; }
+.pb20, .pv20, .pa20 { padding-bottom: 20px !important; }
+.pl20, .ph20, .pa20 { padding-left: 20px !important; }
+
+.mt20, .mv20, .ma20 { margin-top: 20px !important; }
+.mr20, .mh20, .ma20 { margin-right: 20px !important; }
+.mb20, .mv20, .ma20 { margin-bottom: 20px !important; }
+.ml20, .mh20, .ma20 { margin-left: 20px !important; }
+
+/*
+===========================================
+	=06. layout
+	
+	ta, va, fl = text-align, vertical-align, float
+	c, t, r, b, l, m, n = center, top, right, bottom, left, middle, none
+-----------------------------------------*/
+.tac { text-align: center !important; }
+.tal { text-align: left !important; }
+.tar { text-align: right !important; }
+
+.vat { vertical-align: top !important; }
+.vam { vertical-align: middle !important; }
+.vab { vertical-align: bottom !important; }
+
+.fll { float: left !important; }
+.flr { float: right !important; }
+.fln { float: none !important; }
+
+
+/*
+===========================================
+	=07. font
+-----------------------------------------*/
+.f10 {font-size: 77%}
+.f11 {font-size: 85%}
+.f12 {font-size: 93%}
+.f13 {font-size: 100%}
+.f14 {font-size: 108%}
+.f15 {font-size: 116%}
+.f16 {font-size: 123.1%}
+.f17 {font-size: 131%}
+.f18 {font-size: 138.5%}
+.f19 {font-size: 146.5%}
+.f20 {font-size: 153.9%}
+.f21 {font-size: 161.6%}
+.f22 {font-size: 167%}
+.f23 {font-size: 174%}
+.f24 {font-size: 182%}
+.f25 {font-size: 189%}
+.f26 {font-size: 197%}

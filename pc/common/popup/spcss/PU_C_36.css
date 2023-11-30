@@ -1,0 +1,346 @@
+body{
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+div{
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    max-width: 980px;
+    padding: 0 2px 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.button_area{
+    width: 100%;
+    padding: 20px 10px 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.type_button{
+    width: 33%;
+    padding: 5px;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+    position: relative;
+    transition-duration: 0.3s;
+}
+.type_button div{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 25px 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ccc;
+}
+.type_button div::after{
+    content: "";
+    display: block;
+    border-bottom: solid 3px #fff;
+    border-right: solid 3px #fff;
+    width: 10px;
+    height: 10px;
+    right: 25px;
+    top: 28px;
+    position: absolute;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform: rotate(45deg);
+}
+.type_button img{
+    width: 40px;
+    position: absolute;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    left: 15px;
+    top: 16px;
+    transition-duration: 0.3s;
+}
+#honnin_button div{ background-color: #f57e1b;}
+#kazoku_button div{ background-color: #00cc99;}
+#shinzoku_button div{ background-color: #31859c;}
+.type_button a {
+	text-decoration: none;
+	outline-style: none;
+}
+.type_button a:visited {
+	text-decoration: none;
+}
+.type_button a:hover {
+	text-decoration: none;
+}
+
+.type_area{
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    margin-bottom: 30px;
+}
+.type_detail_area{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 10px 4px 10px;
+}
+#honnin_type{ border-color: #f57e1b;}
+#kazoku_type{ border-color: #00cc99;}
+#shinzoku_type{ border-color: #31859c;}
+
+h2{
+    color: #fff;
+    background-color: #ccc;
+    padding: 5px;
+    line-height: 1.5em;
+}
+h2 span{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#honnin_type h2{ background-color: #f57e1b;}
+#kazoku_type h2{ background-color: #00cc99;}
+#shinzoku_type h2{ background-color: #31859c;}
+
+.type_detail_area ul{
+    max-width: 100%;
+    margin-left: 1.5em;
+    box-sizing: border-box;
+}
+.type_detail_area ul li{
+    line-height: normal;
+    margin-bottom: 1.5em;
+    list-style-type: square;
+}
+.icon_wrap{
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    overflow: hidden;
+    clear: both;
+}
+.icon_col{
+    width: 33.3333%;
+    font-size: 13px;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+}
+.icon_col img{
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 5px;
+    padding: 0 2px;
+    box-sizing: border-box;
+}
+
+.kome_text{
+    font-size: 14px;
+    margin-top: 1em;
+    text-indent: -1em;
+    margin-left: 1em;
+}
+.kome_text ul{
+    max-width: 100%;
+    margin-top: 0.3em;
+    margin-left: 1.5em;
+    box-sizing: border-box;
+}
+.kome_text ul li{
+    line-height: normal;
+    margin-bottom: 0.1em;
+    list-style-type: disc;
+    text-indent: -0.3em;
+}
+
+
+.target_erea{
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    border: 2px #fff dotted;
+    border-radius: 10px;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+.target_erea.clicked{
+    border-color: #ccc;
+}
+.target_erea p{
+    text-indent: -1em;
+    margin-left: 1em;
+    margin-top: 20px;
+    padding: 0 1em;
+    display: block;
+    clear: both;
+    float: left;
+}
+.target_button div{
+    position: relative;
+    text-align: right;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.target_button div::after{
+    content: "";
+    border-bottom: solid 2px #000;
+    border-right: solid 2px #000;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    position: absolute;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform: rotate(45deg);
+}
+.target_erea.clicked .target_button div::after{
+    top: 5px;
+    -moz-transform:rotate(225deg);
+    -webkit-transform:rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.target_wrap{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+    display: none;
+}
+.target_col{
+    float: left;
+    text-align: center;
+}
+.target_col img{
+    max-width: 100px;
+    padding: 0 10px;
+}
+.target_col:nth-child(1){
+    width: 60%;
+    background-color: #ffeadf;
+    margin: 0 2.5%;
+    padding: 31px 20px 20px;
+    box-sizing: border-box;
+}
+.target_col:nth-child(2){
+    width: 5%;
+}
+.target_col:nth-child(3){
+    width: 25%;
+    background-color: #f2efe6;
+    margin: 0 2.5%;
+    padding: 8px 20px 20px;
+    box-sizing: border-box;
+}
+
+.mikon span{
+    display: block;
+    padding-bottom: 5px;
+}
+
+
+.square{
+    width:50px;
+    height:50px;
+    margin:20px;
+    position:relative;
+    background: #666;
+}
+.square.cross {
+    width: 8px;
+    margin: 50px auto;
+}
+.cross::before {
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform: rotate(90deg);
+    background: #666;
+}
+
+.under_list{
+    font-size: 13px;
+    margin-left: 1.5em;
+    box-sizing: border-box;
+}
+.under_list li{
+    line-height: normal;
+    margin-bottom: 0.2em;
+    list-style-type: disc;
+}
+
+.bobun{
+    text-align: right;
+    font-size: 12px;
+    padding: 30px 0;
+}
+
+#floteArea{
+    width: 100%;
+    height: 46px;
+    position: fixed;
+    bottom: 0;
+    background-color: #585657;
+    opacity: 0.83;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+#floteArea a{
+    color: #fff;
+}
+
+#floteArea a {
+	text-decoration: none;
+	outline-style: none;
+}
+#floteArea a:visited {
+	text-decoration: none;
+}
+#floteArea a:hover {
+	text-decoration: none;
+}
+@media screen and (max-width: 767px){
+    .type_button{
+        width: 50%;
+    }
+    .type_button div{
+        padding: 18px 5px;
+        padding-left: 35px;
+        font-size: 13px
+    }
+    .type_button img{
+        width: 30px;
+        top: 13px;
+        left: 13px;
+    }
+    .type_button div::after{
+        border-bottom: solid 2px #fff;
+        border-right: solid 2px #fff;
+        width: 8px;
+        height: 8px;
+        right: 18px;
+        top: 25px;
+    }
+    .target_col{ float: none; max-width: 400px;}
+    .target_col:nth-child(1){ width: 100%; margin: 0 auto;}
+    .target_col:nth-child(2){ width: 100%; margin: 0 auto;}
+    .target_col:nth-child(3){ width: 100%; margin: 0 auto;}
+    .target_col img{ max-width: 70px;}
+    .square{ width: 30px; height: 30px;}
+    .square.cross{ width: 5px; margin: 15px auto;}
+}
+@media screen and (max-width: 480px){
+    .type_button{ width: 100%;}
+}
