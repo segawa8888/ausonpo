@@ -1,8 +1,12 @@
 @charset "UTF-8";
 @use "../../global" as *;
+ .gray_block__custom {
+        background-color: $c-base-050;
+        width: 100%;
+        padding: 0.5rem;
+    }
 .p-bycle-s-tab {
-   
-    .p-bycle-type-info__tab {
+    .p-bycle-tab-change__tabs {
         .ruby-text {
             display: flex;
             align-items: end;
@@ -25,11 +29,7 @@
     .p-bycle-customer {
         padding-top: 0;
     }
-    .gray_block__custom {
-        background-color: $c-base-050;
-        width: 100%;
-        padding: 0.5rem;
-    }
+   
     //バイクルS　タブ１
     .bycle-s__tab1 {
         .c-btn.-md {
@@ -100,14 +100,6 @@
                         right: 0;
                     }
                 }
-            }
-        }
-    }
-    //バイクルS　タブ２
-    .bycle-s__tab2 {
-        .point04 {
-            .p-koutsuujiko-detail__wrap {
-                align-items: center;
             }
         }
     }

@@ -4,7 +4,7 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
   <meta charset="utf-8" />
   <!--▼タイトル・キーワードなどの指定-->
-  <title> Bycle(バイクル)｜au損保</title>
+  <title> Bycle S(バイクルエス)｜au損保</title>
   <meta name="description" content="ご契約者さま向けた各種サービス、お手続きのご案内を掲載しております。" />
 </head>
 
@@ -25,7 +25,51 @@
       </li>
     </ol>
   </nav>
-
+  <button type="button" class="popup-open"><img src="/src/img/sub/bycle/bycle_popupbutton02_pc.svg" alt=""></button>
+  <div class="p-bycle-popup popup-input">
+    <div class="p-bycle-popup__back bg"></div>
+    <div class="p-bycle-pouupcontent popup-input-content">
+      <div class="p-bycle-popupclose close">
+        <div class="p-bycle-popupclose__cross">
+          <span></span>
+          <span></span>
+        </div>
+        <p>閉じる</p>
+      </div>
+      <div class="p-bycle-pouupcontent__banner">
+        <p class="u-text-bold u-text-primary p-bycle-pouupcontent-text">保険商品を選んで<br class="lg:u-hidden">お申込みへお進みください</p>
+        <ul>
+          <li>
+            <a href="##">
+              <p>自転車事故の補償を重視</p>
+              <picture>
+                <source srcset="/pc/bycle/assets/img/bycle_popup01_pc.webp" media="(min-width:768px)" loading="easer"/>
+                <img src="/pc/bycle/assets/img/bycle_popup01_sp.png" alt="自転車向け保険Bycle" loading="easer">
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a href="##">
+              <p>自転車事故に加えて、<br class="sm:u-hidden">日常のケガにも備える</p>
+              <picture>
+                <source srcset="/pc/bycle/assets/img/bycle_popup02_pc.webp" media="(min-width:768px)" loading="easer"/>
+                <img src="/pc/bycle/assets/img/bycle_popup02_sp.png" alt="自転車向け保険BycleBest" loading="easer">
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a href="##">
+              <p>70才以上の方専用！<br class="sm:u-hidden">自転車事故に備える</p>
+              <picture>
+                <source srcset="/pc/bycle/assets/img/bycle_popup03_pc.webp" media="(min-width:768px)" loading="easer"/>
+                <img src="/pc/bycle/assets/img/bycle_popup03_pc.png" alt="自転車向け保険BycleS" loading="easer">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <main class="l-main l-container lg:-full sm:-full js-main">
     <!--コンテンツはこちら-->
     <div class="p-keiyakusya-kaigai">
@@ -55,6 +99,7 @@
       <p class="u-text-center u-mt-8">
         <a href="#" class="c-btn -md">ご継続手続きについて</a>
       </p>
+      <!-- ご契約中のお客様へ -->
       <div class="c-accordion p-keiyakusya-accordion u-bg-base-050 u-mt-4 u-mx-auto">
         <h3
           class="c-accordion__heading p-keiyakusya-accordion__heading js-accordion-toggle-btn u-text-center u-leading-none">
@@ -114,33 +159,22 @@
       <!-- ここまで -->
       <!-- タブ切り替え -->
       <section class="p-byclebest-tab p-bycle-s-tab u-mt-14">
-        <div class="-p-bycle-tab-change u-border-primary">
-          <div class="-p-bycle-tab-change__tabs">
-            <div class="p-bycle-type-info__tab is-active">
-              <button type="button" class="js-pet-info is-active tab-buttom c-btn -lg"
-                data-id="pet-cont01"><span>01</span>
-                <div class="ruby-text">
-                  <p><ruby>Bycle S<rt>バイクルエス</rt></ruby>の</p>
-                  <p class="sm:u-mt-1">6つのポイント</p>
-                </div>
-              </button>
-            </div>
-            <div class="p-bycle-type-info__tab">
-              <button type="button" class="js-pet-info tab-buttom c-btn -lg"
-                data-id="pet-cont02"><span>02</span>補償内容</button>
-            </div>
-            <div class="p-bycle-type-info__tab">
-              <button type="button" class="js-pet-info tab-buttom c-btn -lg"
-                data-id="pet-cont03"><span>03</span>保険金額と保険料</button>
-            </div>
-            <div class="p-bycle-type-info__tab">
-              <button type="button" class="js-pet-info tab-buttom c-btn -lg"
-                data-id="pet-cont04"><span>04</span>自転車ロードサービス</button>
-            </div>
+        <div class="p-bycle-tab-change u-border-primary">
+          <div class="tab-buttons p-bycle-tab-change__tabs">
+            <button class="tab-button tab-button1 c-btn -lg active" data-tab="1"><span>01</span>
+              <div class="ruby-text">
+                <p><ruby>Bycle S<rt>バイクルエス</rt></ruby>の</p>
+                <p>6つのポイント</p>
+              </div>
+            </button>
+            <button class="tab-button tab-button2 c-btn -lg" data-tab="2"><span>02</span>補償内容</button>
+            <button class="tab-button tab-button3 c-btn -lg" data-tab="3"><span>03</span>保険金額と保険料</button>
+            <button class="tab-button tab-button4 c-btn -lg" data-tab="4"><span>04</span>自転車<br
+                class="lg:u-hidden">ロードサービス</button>
           </div>
-          <div class="p-bycle-type-info__box u-p-14">
-            <!-- タブ1 -->
-            <div id="pet-cont01" class="p-bycle-type-info__type is-active bycle-s__tab1">
+          <!-- 5つポイント -->
+          <div id="tab1" class="tab-content p-bycle-type-info__type active">
+            <div class="p-bycletab-inner">
               <div class="p-tabbox">
                 <div class="bycle-s__tab1__block1">
                   <p class="u-text-bold u-text-center u-text-16 u-text-primary u-leading-normal">「70才以上のシニア世代専用」の<br>
@@ -237,20 +271,20 @@
                           </div>
                           <div class="gray_block--contents ">
                             <p class="u-text-bold u-text-12 ">ご希望の場所へ</p>
-                            <p class="u-text-bold u-text-24 u-text-primary u-mt-1">50㎞まで無料搬送！</p>
+                            <p class="u-text-bold u-text-24 u-text-primary u-mt-1 sm:u-text-20">50㎞まで無料搬送！</p>
                           </div>
                         </div>
                         <div class="gray_block__custom">
                           <p class="u-text-12 u-text-bold">ご近所へのお買い物など、お出かけ先やご自宅からもご利用いただけます</p>
                           <p class="u-text-xs u-mt-1">※ロードサービスカーには原則として人は同乗できません。</p>
                         </div>
-                        <div class="gray_block u-mt-4">
+                        <div class="gray_block u-mt-2">
                           <div class="gray_block--title u-text-white">
                             <p class="u-text-center">出張<br>修理</p>
                           </div>
-                          <div class="gray_block--contents ">
+                          <div class="gray_block--contents">
                             <p class="u-text-bold u-text-12 ">パンクやチェーン・ブレーキトラブルなど軽微なトラブルは、</p>
-                            <p class="u-text-bold u-text-24 u-text-primary u-mt-1">ご自宅まで出張修理！</p>
+                            <p class="u-text-bold u-text-24 u-text-primary u-mt-1 sm:u-text-20">ご自宅まで出張修理！</p>
                           </div>
                         </div>
                         <div class="gray_block__custom">
@@ -258,7 +292,7 @@
                         </div>
                       </div>
                       <p class="u-text-center u-mt-5 u-text-center">
-                        <a href="/pc/bycle/roadservice/roadservice.html" class="c-btn -md">自転車ロードサービスの詳細はこちら</a>
+                        <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/standard/S_2_H_22.html','myau');" class="c-btn -md"><span class="p-bycle-boder">自転車ロードサービスの詳細はこちら</span></a>
                       </p>
                     </div>
                   </div>
@@ -321,13 +355,14 @@
                 </div>
               </div>
             </div>
-            <!-- タブ1ここまで -->
-            <!-- タブ2 -->
-            <div id="pet-cont02" class="p-bycle-type-info__type tab2 bycle-hosyou bycle-s__tab2">
-              <p class="c-text-accent u-text-center">個人賠償責任補償の保険金が対人・対物どちらの事故でも補償されます。</p>
+          </div>
+          <!-- 補償内容 -->
+          <div id="tab2" class="tab-content p-bycle-type-info__type tab2 bycle-hosyou">
+            <div class="p-bycletab-inner">
+              <p class="c-text-accent u-text-center">個人賠償責任補償の保険金が<br class="sm-min:u-hidden">対人・対物どちらの事故でも<br
+                  class="sm-min:u-hidden">補償されます。</p>
               <div class="p-koutsuujiko-detail u-mt-8">
                 <div class="p-koutsuujiko-detail__wrapper">
-
                   <div class="p-koutsuujiko-detail__card point01">
                     <h3 class="p-koutsuujiko-detail__heading">
                       Point.<span>1</span>
@@ -338,9 +373,9 @@
                         <div class="p-koutsuujiko-detail__icon">
                           <picture>
                             <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_icon01.webp"
-                              type="image/webp" />
+                              type="image/webp">
                             <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_icon01.png" alt="au損保"
-                              loading="lazy" />
+                              loading="lazy">
                           </picture>
                         </div>
                         <div class="p-koutsuujiko-detail__text">
@@ -349,8 +384,8 @@
                           <div class="p-koutsuujiko-detail__recommend u-mt-8">
                             <span class="p-koutsuujiko-detail__fukidashi">
                               <picture>
-                                <!-- <source srcset="/pc/bycle/assets/img/bycle_illust42.webp" type="image/webp" /> -->
-                                <img src="/pc/bycle/assets/img/bycle_illust42.png" alt="au損保" loading="lazy" />
+                                <source srcset="/pc/bycle/assets/img/bycle_tab2-point02_pc.webp" type="image/webp">
+                                <img src="/pc/bycle/assets/img/bycle_tab2-point02_pc.png" alt="ポイント" loading="lazy">
                               </picture>
                             </span>
                             <p class="c-text-accent --check">全てのコースで｢個人賠償責任補償｣の保険金額が<span
@@ -367,133 +402,134 @@
                           </div>
                         </div>
                       </div>
-                      <div class="p-koutsuujiko-accordion accordion-1">
-                        <div class="p-koutsuujiko-accordion__body">
-                          <p class="c-text-accent u-text-center u-mt-14">個人賠償責任補償例</p>
-                          <p class="u-text-lg u-mt-8 u-text-center">自転車での事故などはもちろん、自転車以外の日常の賠償にも対応！</p>
-                          <div class="p-koutsuujiko-accordion-lists u-mt-6">
-                            <div class="p-koutsuujiko-accordion__inner">
-                              <ol class="u-grid u-grid-cols-3 u-gap-4 sm:u-grid-cols-2 sm:u-gap-2">
-                                <li>
-                                  <picture>
-                                    <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img01.webp"
-                                      type="image/webp" />
-                                    <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img01.png"
-                                      alt="au損保" loading="lazy" />
-                                  </picture>
-                                  <h4 class="p-koutsuujiko-accordion-list__title">自転車で接触、<br>相手にケガをさせた</h4>
-                                </li>
-                                <li>
-                                  <picture>
-                                    <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img02.webp"
-                                      type="image/webp" />
-                                    <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img02.png"
-                                      alt="au損保" loading="lazy" />
-                                  </picture>
-                                  <h4 class="p-koutsuujiko-accordion-list__title">停車中の車に<br>自転車でキズをつけた</h4>
-                                </li>
-                                <li>
-                                  <picture>
-                                    <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img03.webp"
-                                      type="image/webp" />
-                                    <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img03.png"
-                                      alt="au損保" loading="lazy" />
-                                  </picture>
-                                  <h4 class="p-koutsuujiko-accordion-list__title">飼い犬が他人に噛みつき<br>ケガをさせた</h4>
-                                </li>
-                                <li>
-                                  <picture>
-                                    <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img04.webp"
-                                      type="image/webp" />
-                                    <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img04.png"
-                                      alt="au損保" loading="lazy" />
-                                  </picture>
-                                  <h4 class="p-koutsuujiko-accordion-list__title">水漏れでマンションの<br>階下の部屋を水浸しにした</h4>
-                                </li>
-                                <li>
-                                  <picture>
-                                    <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img05.webp"
-                                      type="image/webp" />
-                                    <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img05.png"
-                                      alt="au損保" loading="lazy" />
-                                  </picture>
-                                  <h4 class="p-koutsuujiko-accordion-list__title">ゴルフ場でボールが<br>他人にぶつかり<br
-                                      class="sm-min:u-hidden">ケガをさせた</h4>
-                                </li>
-                                <li>
-                                  <picture>
-                                    <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img06.webp"
-                                      type="image/webp" />
-                                    <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img06.png"
-                                      alt="au損保" loading="lazy" />
-                                  </picture>
-                                  <h4 class="p-koutsuujiko-accordion-list__title">買い物中にお店の商品を<br>壊してしまった</h4>
-                                </li>
-                              </ol>
-
-                              <p class="u-text-center u-mt-8">
-                                <a href="#" class="c-btn -md">補償内容はこちら</a>
-                              </p>
-                              <p class="u-mt-3 u-text-center u-text-10">※自動車・バイクでの賠償事故など、一部の事故は補償対象外となります。</p>
-                            </div>
-                          </div>
-
-                          <div class="u-mt-5">
-                            <div class="p-koutsuujiko-accordion-service u-py-8 sm:u-px-2">
-                              <p class="c-text-accent u-text-center u-text-primary">示談代行サービス<br
-                                  class="sm-min:u-hidden">（賠償事故解決特約）</p>
-                              <div class="p-koutsuujiko-accordion-service__wrap">
-                                <div class="p-koutsuujiko-accordion-service__img">
-                                  <picture>
-                                    <source
-                                      srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion-service__img.webp"
-                                      type="image/webp">
-                                    <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion-service__img.jpg"
-                                      alt="au損保" loading="lazy">
-                                  </picture>
-                                </div>
-                                <div class="p-koutsuujiko-accordion-service__text">
-                                  <p class="u-text-lg u-mt-8 sm:u-mt-4">賠償事故を起こし加害者となってしまった<br
-                                      class="sm-min:u-hidden">場合に、お客さまに代わって、<br class="sm:u-hidden">
-                                    au損保が<br class="sm-min:u-hidden">相手側と解決に向けて交渉するサービスです。</p>
-                                  <p class="u-text-10 u-mt-2 u-leading-normal u-text-gray">
-                                    ※相手方がau損保との交渉に同意されない場合など、示談代行をお引受けできない場合もあります。<br>
-                                    なお、詳細はご契約のしおり（普通保険約款・特約集）をご確認ください。</p>
-                                </div>
-                              </div>
-                              <div class="c-accordion-4 u-mt-5">
-                                <h3 class="c-accordion-4__heading js-accordion-toggle-btn">契約確認書類の提出が必要な方へ</h3>
-                                <div class="c-accordion-4__wrapper js-accordion-toggle-content">
-                                  <div class="c-accordion-4__content u-border u-radius-1">
-                                    <ul class="c-list-dot">
-                                      <li>日本国外において発生した賠償事故の場合</li>
-                                      <li>1回の事故につき、被保険者が負担する法律上の損害賠償責任の額が個人賠償責任保険金額を明らかに超える場合</li>
-                                      <li>相手の方がau損保との交渉に同意されない場合</li>
-                                      <li>相手の方との交渉に際し、正当な理由なく被保険者がau損保への協力を拒んだ場合</li>
-                                      <li>賠償事故について、被保険者に対する損害賠償請求に関する訴訟が日本国外の裁判所に提起された場合など</li>
-                                    </ul>
-                                    <p>
-                                      ※上記内容は、補償内容等の概要をご説明したものです。ご加入にあたっては、必ず、重要事項のご説明（重要事項説明書）、ご契約のしおり（普通保険約款・特約集）をお読みください。
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <p class="u-text-10 u-text-bold u-mt-2 u-mx-2">
-                              ※「ブロンズコース」は、個人賠償責任補償を外してご契約することも可能です。お申込み手続き画面のコース選択でお選びいただけます。個人賠償責任補償を外してご契約の場合、示談代行サービ
-                              ス（賠償事故解決特約）も対象外となります。</p>
-                          </div>
+                      <p class="c-text-accent u-text-center u-mt-14 u-px-2">個人賠償責任補償例</p>
+                      <p class="u-text-lg u-mt-8 u-text-center u-px-2">自転車での事故などはもちろん、自転車以外の日常の賠償にも対応！</p>
+                      <div class="p-koutsuujiko-accordion-lists u-mt-6">
+                        <div class="p-koutsuujiko-accordion__inner">
+                          <ol class="u-grid u-grid-cols-3 u-gap-4 sm:u-grid-cols-2 sm:u-gap-2">
+                            <li>
+                              <picture>
+                                <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img01.webp"
+                                  type="image/webp">
+                                <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img01.png" alt="au損保"
+                                  loading="lazy">
+                              </picture>
+                              <h4 class="p-koutsuujiko-accordion-list__title">自転車で接触、<br class="sm:u-hidden">相手にケガをさせた
+                              </h4>
+                            </li>
+                            <li>
+                              <picture>
+                                <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img02.webp"
+                                  type="image/webp">
+                                <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img02.png" alt="au損保"
+                                  loading="lazy">
+                              </picture>
+                              <h4 class="p-koutsuujiko-accordion-list__title">停車中の車に<br class="sm:u-hidden">自転車でキズをつけた
+                              </h4>
+                            </li>
+                            <li>
+                              <picture>
+                                <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img03.webp"
+                                  type="image/webp">
+                                <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img03.png" alt="au損保"
+                                  loading="lazy">
+                              </picture>
+                              <h4 class="p-koutsuujiko-accordion-list__title">飼い犬が他人に噛みつき<br class="sm:u-hidden">ケガをさせた
+                              </h4>
+                            </li>
+                            <li>
+                              <picture>
+                                <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img04.webp"
+                                  type="image/webp">
+                                <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img04.png" alt="au損保"
+                                  loading="lazy">
+                              </picture>
+                              <h4 class="p-koutsuujiko-accordion-list__title">水漏れでマンションの<br
+                                  class="sm:u-hidden">階下の部屋を水浸しにした</h4>
+                            </li>
+                            <li>
+                              <picture>
+                                <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img05.webp"
+                                  type="image/webp">
+                                <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img05.png" alt="au損保"
+                                  loading="lazy">
+                              </picture>
+                              <h4 class="p-koutsuujiko-accordion-list__title">ゴルフ場でボールが<br
+                                  class="sm:u-hidden">他人にぶつかりケガをさせた</h4>
+                            </li>
+                            <li>
+                              <picture>
+                                <source srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img06.webp"
+                                  type="image/webp">
+                                <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion_img06.png" alt="au損保"
+                                  loading="lazy">
+                              </picture>
+                              <h4 class="p-koutsuujiko-accordion-list__title">買い物中にお店の商品を<br class="sm:u-hidden">壊してしまった
+                              </h4>
+                            </li>
+                          </ol>
+                          <p class="u-text-center u-mt-8">
+                            <a href="#" class="c-btn -md">補償内容はこちら</a>
+                          </p>
+                          <p class="u-mt-3 u-text-center u-text-10">※自動車・バイクでの賠償事故など、一部の事故は補償対象外となります。</p>
                         </div>
                       </div>
-                    </div>
+                      <div class="u-mt-5 u-px-2">
+                        <div class="p-koutsuujiko-accordion-service u-py-8 sm:u-px-2">
+                          <p class="c-text-accent u-text-center u-text-primary">示談代行サービス<br
+                              class="sm-min:u-hidden">（賠償事故解決特約）</p>
+                          <div class="jidan-daikou__flex u-pt-4">
+                            <div class="jidan-daikou__flex--img">
+                              <picture>
+                                <source
+                                  srcset="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion-service__img.webp"
+                                  type="image/webp">
+                                <img src="/pc/koutsuujiko/assets/img/koutsuujiko_detail_accordion-service__img.jpg"
+                                  alt="au損保" loading="lazy">
+                              </picture>
+                            </div>
+                            <div class="jidan-daikou__flex--text">
+                              <p class="u-text-lg">賠償事故を起こし加害者となってしまった<br class="sm-min:u-hidden">場合に、お客さまに代わって、<br
+                                  class="sm:u-hidden">
+                                au損保が<br class="sm-min:u-hidden">相手側と解決に向けて交渉するサービスです。</p>
+                              <p class="u-text-10 u-mt-2 u-leading-normal u-text-gray">
+                                ※相手方がau損保との交渉に同意されない場合など、示談代行をお引受けできない場合もあります。<br>
+                                なお、詳細はご契約のしおり（普通保険約款・特約集）をご確認ください。</p>
+                            </div>
+                          </div>
+                          <div class="c-accordion-4 u-mt-5">
+                            <h3 class="c-accordion-4__heading js-accordion-toggle-btn sm:u-text-12">示談交渉を行うことができない主な場合
+                            </h3>
+                            <div class="c-accordion-4__wrapper js-accordion-toggle-content">
+                              <div class="c-accordion-4__content u-border u-radius-1">
+                                <ul class="c-list-dot">
+                                  <li>日本国外において発生した賠償事故の場合</li>
+                                  <li>1回の事故につき、被保険者が負担する法律上の損害賠償責任の額が個人賠償責任保険金額を明らかに超える場合</li>
+                                  <li>相手の方がau損保との交渉に同意されない場合</li>
+                                  <li>相手の方との交渉に際し、正当な理由なく被保険者がau損保への協力を拒んだ場合</li>
+                                  <li>賠償事故について、被保険者に対する損害賠償請求に関する訴訟が日本国外の裁判所に提起された場合など</li>
+                                </ul>
+                                <p class="u-mt-1">
+                                  ※上記内容は、補償内容等の概要をご説明したものです。ご加入にあたっては、必ず、重要事項のご説明（重要事項説明書）、ご契約のしおり（普通保険約款・特約集）をお読みください。
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="u-text-10 u-text-bold u-mt-2 u-mx-2 u-text-gray">
+                          ※「ブロンズコース」は、個人賠償責任補償を外してご契約することも可能です。お申込み手続き画面のコース選択でお選びいただけます。個人賠償責任補償を外してご契約の場合、示談代行サービ
+                          ス（賠償事故解決特約）も対象外となります。</p>
+                      </div>
 
+
+                    </div>
                   </div>
                   <div class="p-koutsuujiko-detail__card point02 u-mt-10">
                     <h3 class="p-koutsuujiko-detail__heading">
                       Point.<span>2</span>
                       <picture>
-                        <!-- <source srcset="/pc/bycle/assets/img/bycle_illust45.webp" type="image/webp" /> -->
-                        <img src="/pc/bycle/assets/img/bycle_illust45.png" alt="au損保" loading="lazy" />
+                        <source srcset="/pc/bycle/assets/img/bycle_tab2-point15_sp.webp" type="image/webp">
+                        <img src="/pc/bycle/assets/img/bycle_tab2-point15_sp.png" alt="ポイント2" loading="lazy">
                       </picture>
                     </h3>
                     <div class="u-py-10">
@@ -501,8 +537,8 @@
                       <div class="p-koutsuujiko-detail__wrap u-mt-4">
                         <div class="p-koutsuujiko-detail__icon">
                           <picture>
-                            <!-- <source srcset="/pc/bycle/assets/img/bycle_illust24.webp" type="image/webp" /> -->
-                            <img src="/pc/bycle/assets/img/bycle_illust24.png" alt="au損保" loading="lazy" />
+                            <source srcset="/pc/bycle/assets/img/bycle_tab2-point10_pc.webp" type="image/webp">
+                            <img src="/pc/bycle/assets/img/bycle_tab2-point10_pc.png" alt="ケガの補償" loading="lazy">
                           </picture>
                         </div>
                         <div class="p-koutsuujiko-detail__text">
@@ -510,14 +546,14 @@
                           <div class="p-koutsuujiko-detail__recommend u-mt-14">
                             <span class="p-koutsuujiko-detail__fukidashi">
                               <picture>
-                                <!-- <source srcset="/pc/bycle/assets/img/bycle_illust42.webp" type="image/webp" /> -->
-                                <img src="/pc/bycle/assets/img/bycle_illust42.png" alt="au損保" loading="lazy" />
+                                <source srcset="/pc/bycle/assets/img/bycle_tab2-point02_pc.webp" type="image/webp">
+                                <img src="/pc/bycle/assets/img/bycle_tab2-point02_pc.png" alt="ポイント" loading="lazy">
                               </picture>
                             </span>
                             <p class="c-text-accent --check">自転車事故以外の交通事故でもご自身のケガを補償！</p>
-                            <p class="c-text-accent --check u-mt-5">自転車事故でケガをした場合は、保険金が２倍に！</p>
+                            <p class="c-text-accent --check u-mt-5">自転車事故でケガをした場合は、保険金が２倍に！
+                            </p>
                           </div>
-
                         </div>
                       </div>
                       <div class="u-flex u-justify-center">
@@ -530,66 +566,65 @@
                         <div class="p-koutsuujiko-accordion__body">
                           <div class="p-koutsuujiko-accordion-lists">
                             <div class="p-koutsuujiko-accordion__inner">
-                              <ol class="u-grid u-grid-cols-3 u-gap-4 sm:u-grid-cols-1">
+                              <ol class="u-grid u-grid-cols-3 u-gap-4 sm:u-grid-cols-2 sm:u-gap-2">
                                 <li>
                                   <picture>
-                                    <!-- <source srcset="/pc/bycle/assets/img/bycle_illust25.webp" type="image/webp" /> -->
-                                    <img src="/pc/bycle/assets/img/bycle_illust25.png" alt="au損保" loading="lazy" />
+                                    <source srcset="/pc/bycle/assets/img/bycle_tab2-point11_pc.webp" type="image/webp">
+                                    <img src="/pc/bycle/assets/img/bycle_tab2-point11_pc.png" alt="自転車事故1"
+                                      loading="lazy">
                                   </picture>
                                   <h4 class="p-koutsuujiko-accordion-list__title">自転車で転倒しケガ</h4>
                                 </li>
                                 <li>
                                   <picture>
-                                    <!-- <source
-                                        srcset="/pc/bycle/assets/img/bycle_illust26.webp"
-                                        type="image/webp" /> -->
-                                    <img src="/pc/bycle/assets/img/bycle_illust26.png" alt="au損保" loading="lazy" />
+                                    <source srcset="/pc/bycle/assets/img/bycle_tab2-point13_pc.webp" type="image/webp">
+                                    <img src="/pc/bycle/assets/img/bycle_tab2-point13_pc.png" alt="自転車事故2"
+                                      loading="lazy">
                                   </picture>
-                                  <h4 class="p-koutsuujiko-accordion-list__title">走行してきた<br>自転車にぶつけられケガ</h4>
+                                  <h4 class="p-koutsuujiko-accordion-list__title">走行してきた<br
+                                      class="sm:u-hidden">自転車にぶつけられケガ</h4>
                                 </li>
                                 <li>
                                   <picture>
-                                    <!-- <source
-                                        srcset="/pc/bycle/assets/img/bycle_illust27.webp"
-                                        type="image/webp" /> -->
-                                    <img src="/pc/bycle/assets/img/bycle_illust27.png" alt="au損保" loading="lazy" />
+                                    <source srcset="/pc/bycle/assets/img/bycle_tab2-point12_pc.webp" type="image/webp">
+                                    <img src="/pc/bycle/assets/img/bycle_tab2-point12_pc.png" alt="自転車事故3"
+                                      loading="lazy">
                                   </picture>
-                                  <h4 class="p-koutsuujiko-accordion-list__title">誤って<br>電柱にぶつかってケガ</h4>
+                                  <h4 class="p-koutsuujiko-accordion-list__title">誤って<br class="sm:u-hidden">電柱にぶつかってケガ
+                                  </h4>
                                 </li>
                               </ol>
-                              <p class="c-text-accent u-text-center u-mt-14 u-mb-8">自転車事故以外の交通事故の場合</p>
-                              <ol class="u-grid u-grid-cols-3 u-gap-4 sm:u-grid-cols-1">
+                              <p class="c-text-accent u-text-center u-mt-14 u-mb-8">自転車事故以外の<br
+                                  class="sm-min:u-hidden">交通事故の場合</p>
+                              <ol class="u-grid u-grid-cols-3 u-gap-4 sm:u-grid-cols-2 sm:u-gap-2">
                                 <li>
                                   <picture>
-                                    <!-- <source
-                                        srcset="/pc/bycle/assets/img/bycle_illust28.webp"
-                                        type="image/webp" /> -->
-                                    <img src="/pc/bycle/assets/img/bycle_illust28.png" alt="au損保" loading="lazy" />
+                                    <source srcset="/pc/bycle/assets/img/bycle_tab2-point14_pc.webp" type="image/webp">
+                                    <img src="/pc/bycle/assets/img/bycle_tab2-point14_pc.png" alt="自転車事故4"
+                                      loading="lazy">
                                   </picture>
                                   <h4 class="p-koutsuujiko-accordion-list__title">車と接触しケガ</h4>
                                 </li>
                                 <li>
                                   <picture>
-                                    <!-- <source
-                                        srcset="/pc/bycle/assets/img/bycle_illust29.webp"
-                                        type="image/webp" /> -->
-                                    <img src="/pc/bycle/assets/img/bycle_illust29.png" alt="au損保" loading="lazy" />
+                                    <source srcset="/pc/bycle/assets/img/bycle_tab2-point15_pc.webp" type="image/webp">
+                                    <img src="/pc/bycle/assets/img/bycle_tab2-point15_pc.png" alt="自転車事故5"
+                                      loading="lazy">
                                   </picture>
-                                  <h4 class="p-koutsuujiko-accordion-list__title">バイクでスリップ、<br>転倒しケガ</h4>
+                                  <h4 class="p-koutsuujiko-accordion-list__title">バイクでスリップ、<br class="sm:u-hidden">転倒しケガ
+                                  </h4>
                                 </li>
                                 <li>
                                   <picture>
-                                    <!-- <source
-                                        srcset="/pc/bycle/assets/img/bycle_illust30.webp"
-                                        type="image/webp" /> -->
-                                    <img src="/pc/bycle/assets/img/bycle_illust30.png" alt="au損保" loading="lazy" />
+                                    <source srcset="/pc/bycle/assets/img/bycle_tab2-point16_pc.webp" type="image/webp">
+                                    <img src="/pc/bycle/assets/img/bycle_tab2-point16_pc.png" alt="自転車事故6"
+                                      loading="lazy">
                                   </picture>
                                   <h4 class="p-koutsuujiko-accordion-list__title">駅構内で転倒しケガ</h4>
                                 </li>
                               </ol>
-
                               <p class="u-text-center u-mt-8">
-                                <a href="#" class="c-btn -md">補償内容はこちら</a>
+                                <a href="/pc/hosyo_naiyo/standard/S_2_H_10.html" class="c-btn -md">補償内容はこちら</a>
                               </p>
                               <p class="u-text-14 u-mt-4 u-text-center u-text-bold u-text-gray">
                                 ※自動車・バイクでの賠償事故など、一部の事故は補償対象外となります。
@@ -597,26 +632,28 @@
                             </div>
                             <p class="c-text-accent u-text-primary u-text-center u-mt-12 u-mb-2">「Bycle
                               Best」にするとケガの補償がワイドに！</p>
+                            <p class="u-text-lg u-text-center u-mt-2">部活やアウトドア、ご自宅などでの<br
+                                class="sm-min:u-hidden">身近なケガも補償します。</p>
                             <div
-                              class="u-mt-10 u-grid u-grid-cols-2 u-gap-10 u-justify-center u-px-16 sm:u-grid-cols-1  sm:u-px-2">
+                              class="u-mt-10 u-grid u-grid-cols-2 u-gap-10 u-justify-center u-px-16 sm:u-grid-cols-1  sm:u-px-0">
                               <div>
                                 <h4 class="u-text-16 u-text-center u-text-bold">日常生活中の事故</h4>
                                 <div class="u-grid u-grid-cols-2 u-gap-4 u-mt-4 sm:u-gap-2">
                                   <div>
                                     <picture>
-                                      <!-- <source
-                                          srcset="/pc/bycle/assets/img/bycle_illust31.webp"
-                                          type="image/webp" /> -->
-                                      <img src="/pc/bycle/assets/img/bycle_illust31.png" alt="au損保" loading="lazy" />
+                                      <source srcset="/pc/bycle/assets/img/bycle_tab2-point17_pc.webp"
+                                        type="image/webp">
+                                      <img src="/pc/bycle/assets/img/bycle_tab2-point17_pc.png" alt="自宅で転倒しケガ"
+                                        loading="lazy">
                                     </picture>
                                     <p class="u-text-16 u-mt-1 u-text-center u-text-bold">自宅で転倒しケガ</p>
                                   </div>
                                   <div>
                                     <picture>
-                                      <!-- <source
-                                          srcset="/pc/bycle/assets/img/bycle_illust32.webp"
-                                          type="image/webp" /> -->
-                                      <img src="/pc/bycle/assets/img/bycle_illust32.png" alt="au損保" loading="lazy" />
+                                      <source srcset="/pc/bycle/assets/img/bycle_tab2-point18_pc.webp"
+                                        type="image/webp">
+                                      <img src="/pc/bycle/assets/img/bycle_tab2-point18_pc.png" alt="公園で転んでケガ"
+                                        loading="lazy">
                                     </picture>
                                     <p class="u-text-16 u-mt-1 u-text-center u-text-bold">公園で転んでケガ</p>
                                   </div>
@@ -627,19 +664,19 @@
                                 <div class="u-grid u-grid-cols-2 u-gap-4 u-mt-4 sm:u-gap-2">
                                   <div>
                                     <picture>
-                                      <!-- <source
-                                          srcset="/pc/bycle/assets/img/bycle_illust33.webp"
-                                          type="image/webp" /> -->
-                                      <img src="/pc/bycle/assets/img/bycle_illust33.png" alt="au損保" loading="lazy" />
+                                      <source srcset="/pc/bycle/assets/img/bycle_tab2-point19_pc.webp"
+                                        type="image/webp">
+                                      <img src="/pc/bycle/assets/img/bycle_tab2-point19_pc.png" alt="スキー・スノボ中のケガ"
+                                        loading="lazy">
                                     </picture>
                                     <p class="u-text-16 u-mt-1 u-text-center u-text-bold">スキー・スノボ中のケガ</p>
                                   </div>
                                   <div>
                                     <picture>
-                                      <!-- <source
-                                          srcset="/pc/bycle/assets/img/bycle_illust34.webp"
-                                          type="image/webp" /> -->
-                                      <img src="/pc/bycle/assets/img/bycle_illust34.png" alt="au損保" loading="lazy" />
+                                      <source srcset="/pc/bycle/assets/img/bycle_tab2-point20_pc.webp"
+                                        type="image/webp">
+                                      <img src="/pc/bycle/assets/img/bycle_tab2-point20_pc.png" alt="テニスやサッカー中のケガ"
+                                        loading="lazy">
                                     </picture>
                                     <p class="u-text-16 u-mt-1 u-text-center u-text-bold">テニスやサッカー中のケガ</p>
                                   </div>
@@ -650,8 +687,9 @@
                               <a href="#" class="u-link-has-arrow -primary -lg">Bycle Bestのプランの詳細について詳しく見る</a>
                             </p>
                             <p class="u-text-center u-mt-8 sm:u-text-left">
-                              <a href="#" class="c-btn -lg">自転車事故以外の傷害・自転車搭乗中等の<br
-                                  class="sm-min:u-hidden">傷害2倍支払特約について</a>
+                              <a href="javascript:void(0)"
+                                onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/standard/S_2_H_1_3.html','myau');"
+                                class="c-btn -lg">自転車事故以外の傷害・自転車搭乗中等の<br class="sm-min:u-hidden">傷害2倍支払特約について</a>
                             </p>
                           </div>
                         </div>
@@ -661,13 +699,11 @@
                   <div class="p-bycle__orange-content outer u-mt-10">
                     <p class="c-text-accent u-text-center u-text-primary">自転車事故でケガをした場合、保険金が2倍に！<br>
                       （自転車搭乗中等の損害２倍支払特約）</p>
-                    <div class="p-bycle__orange-content__flex u-mt-6 u-px-20 u-gap-10 sm:u-px-4">
+                    <div class="p-bycle__orange-content__flex u-mt-6 u-gap-10 u-mx-auto">
                       <div class="p-bycle__orange-content__flex--img" style="max-width: 15rem;">
                         <picture>
-                          <!-- <source
-                              srcset="/pc/bycle/assets/img/bycle_illust35.webp"
-                              type="image/webp"> -->
-                          <img src="/pc/bycle/assets/img/bycle_illust35.png" alt="au損保" loading="lazy">
+                          <source srcset="/pc/bycle/assets/img/bycle_tab2-point21_pc.webp" type="image/webp">
+                          <img src="/pc/bycle/assets/img/bycle_tab2-point21_pc.png" alt="保険金が２倍" loading="lazy">
                         </picture>
                       </div>
                       <div class="p-bycle__orange-content__flex--text">
@@ -682,15 +718,13 @@
                         <div class="list-img">
                           <p class="list-img-txtblock u-text-bold u-mt-6 u-leading-relaxed">
                             <span class="u-text-primary">●｢自転車事故｣の場合</span><br>
-                            自転車で転倒。骨折してしまい４日間入院<br>
+                            自転車で転倒。<br class="sm-min:u-hidden">骨折してしまい４日間入院<br>
                             入院保険金日額（1日につき）<br>
                             8,000円×4日間 =32,000円
                           </p>
                           <picture class="list-img__imgblock">
-                            <!-- <source
-                              srcset="/pc/bycle/assets/img/bycle_icon01.webp"
-                              type="image/webp"> -->
-                            <img src="/pc/bycle/assets/img/bycle_icon01.png" alt="au損保" loading="lazy">
+                            <source srcset="/pc/bycle/assets/img/bycle_tab2-seal01_pc.webp" type="image/webp">
+                            <img src="/pc/bycle/assets/img/bycle_tab2-seal01_pc.png" alt="保険金が２倍" loading="lazy">
                           </picture>
                         </div>
                       </div>
@@ -698,94 +732,96 @@
                   </div>
                   <div class="u-mt-8 u-flex u-justify-center">
                     <picture>
-                      <!-- <source srcset="/pc/bycle/assets/img/bycle_icon02.webp" type="image/webp" /> -->
-                      <img src="/pc/bycle/assets/img/bycle_icon02.png" alt="au損保" loading="lazy" />
+                      <source srcset="/pc/bycle/assets/img/bycle_tab2-plus01_pc.webp" type="image/webp">
+                      <img src="/pc/bycle/assets/img/bycle_tab2-plus01_pc.png" alt="さらに" loading="lazy">
                     </picture>
                   </div>
                   <div class="p-bycle__orange-content u-mt-16">
                     <picture class="fukidasi">
-                      <!-- <source
-                        srcset="/pc/bycle/assets/img/bycle_illust43.webp"
-                        type="image/webp"> -->
-                      <img src="/pc/bycle/assets/img/bycle_illust43.png" alt="au損保" loading="lazy">
+                      <source srcset="/pc/bycle/assets/img/bycle_tab2-point22_pc.webp" type="image/webp">
+                      <img src="/pc/bycle/assets/img/bycle_tab2-point22_pc.png" alt="追加料金なし！" loading="lazy">
                     </picture>
                     <p class="c-text-accent u-text-center u-text-primary">ヘルメット着用中補償！<br>
                       （ヘルメット着用中死亡特別保険金補償特約）</p>
-                    <div class="p-bycle__orange-content__flex u-mt-6 u-px-20 u-gap-10 sm:u-px-4">
+                    <div class="p-bycle__orange-content__flex u-mt-6 u-gap-10 u-mx-auto">
                       <div class="p-bycle__orange-content__flex--img" style="max-width: 11rem;">
                         <picture>
-                          <!-- <source
-                              srcset="/pc/bycle/assets/img/bycle_illust36.webp"
-                              type="image/webp"> -->
-                          <img src="/pc/bycle/assets/img/bycle_illust36.png" alt="au損保" loading="lazy">
+                          <source srcset="/pc/bycle/assets/img/bycle_tab2-point23_pc.webp" type="image/webp">
+                          <img src="/pc/bycle/assets/img/bycle_tab2-point23_pc.png" alt="ヘルメット着用" loading="lazy">
                         </picture>
                       </div>
                       <div class="p-bycle__orange-content__flex--text">
-                        <p class="u-text-bold u-text-20 u-pt-4">
-                          ヘルメットを着用して自転車に乗っている時の事故により<br>死亡した場合、死亡保険金とは別に100万円をお支払いします。</span></p>
+                        <p class="u-text-bold u-text-20 u-leading-relaxed">
+                          ヘルメットを着用して自転車に乗っている時の事故により<br>死亡した場合、死亡保険金とは別に100万円をお支払いします。</p>
                         <p class="u-text-bold u-mt-6">■関連リンク</p>
+                        <p class="u-mt-2">
+                          <a href="/pc/lp_helmet2" class="u-link-has-arrow -sm">ヘルメットのお悩み解決法をご紹介！</a>
                         </p>
                         <p class="u-mt-1">
-                          <a href="#" class="u-link-has-arrow -sm">ヘルメットのお悩み解決法をご紹介！</a>
-                        </p>
-                        </p>
-                        <p class="u-mt-1">
-                          <a href="#" class="u-link-has-arrow -sm">ヘルメットって本当に役立つの？</a>
-                        </p>
+                          <a href="/pc/lp_helmet/" class="u-link-has-arrow -sm">ヘルメットって本当に役立つの？</a>
                         </p>
                         <p class="u-mt-1">
-                          <a href="#" class="u-link-has-arrow -sm">補償の対象となるヘルメットについて</a>
+                          <a href="/pc/lp_helmet_guide/#p3" class="u-link-has-arrow -sm">補償の対象となるヘルメットについて</a>
                         </p>
                       </div>
                     </div>
                   </div>
-
-
-                  <p class="c-text-accent u-text-center u-mt-14">ケガでお支払いできる保険金と補償内容</p>
-                  <div class="p-bycle__btn-grid u-mt-6">
-
+                  <p class="c-text-accent u-text-center u-mt-14">ケガでお支払いできる<br class="sm-min:u-hidden">保険金と補償内容</p>
+                  <div class="p-bycle__btn-grid u-mt-6 u-mx-auto">
                     <div class="p-bycle__btn-grid--btn">
                       <p class="u-text-bold u-text-18 u-text-center">死亡保険金・<br class="sm-min:u-hidden">後遺障害保険金</p>
                       <p class="u-text-center u-mt-4">
-                        <a href="#" class="c-btn -md">保証内容</a>
+                        <a href="javascript:void(0)"
+                          onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/standard/S_2_H_2.html','myau');"
+                          class="c-btn -md">保証内容</a>
                       </p>
                     </div>
                     <div class="p-bycle__btn-grid--btn">
                       <p class="u-text-bold u-text-18 u-text-center">入院保険金</p>
                       <p class="u-text-center u-mt-4 sm:u-mt-12">
-                        <a href="#" class="c-btn -md">保証内容</a>
+                        <a href="javascript:void(0)"
+                          onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/standard/S_2_H_5.html','myau');"
+                          class="c-btn -md">保証内容</a>
                       </p>
                     </div>
                     <div class="p-bycle__btn-grid--btn">
                       <p class="u-text-bold u-text-18 u-text-center">入院一時金<span class="u-text-10">※</span><br><small
                           class="u-text-10">（3日以上の入院で）</small></p>
                       <p class="u-text-center u-mt-4">
-                        <a href="" class="c-btn -md">保証内容</a>
+                        <a href="javascript:void(0)"
+                          onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/standard/S_2_H_3.html','myau');"
+                          class="c-btn -md">保証内容</a>
                       </p>
                     </div>
                     <div class="p-bycle__btn-grid--btn">
                       <p class="u-text-bold u-text-18 u-text-center">手術保険金</p>
                       <p class="u-text-center u-mt-4">
-                        <a href="#" class="c-btn -md">保証内容</a>
+                        <a href="javascript:void(0)"
+                          onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/standard/S_2_H_6.html','myau');"
+                          class="c-btn -md">保証内容</a>
                       </p>
                     </div>
                     <div class="p-bycle__btn-grid--btn annot">
                       <p class="u-text-bold u-text-18 u-text-center">通院保険金<span class="u-text-10">※</span>
                       </p>
                       <p class="u-text-center u-mt-4">
-                        <a href="#" class="c-btn -md">保証内容</a>
+                        <a href="javascript:void(0)"
+                          onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/standard/S_2_H_7.html','myau');"
+                          class="c-btn -md">保証内容</a>
                       </p>
-                      <small class="u-text-10">※｢入院一時金｣｢通院保険金｣はブロンズコースにはセットされません。</small>
+                      <small class="u-text-10 sm:u-hidden">※｢入院一時金｣｢通院保険金｣はブロンズコースにはセットされません。</small>
                     </div>
                     <div class="p-bycle__btn-grid--btn annot">
                       <p class="u-text-bold u-text-18 u-text-center">ヘルメット着用中死亡特別保険金
                       </p>
                       <p class="u-text-center u-mt-4">
-                        <a href="#" class="c-btn -md">保証内容</a>
+                        <a href="javascript:void(0)"
+                          onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/standard/S_2_H_22.html','myau');"
+                          class="c-btn -md">保証内容</a>
                       </p>
                     </div>
-
                   </div>
+                  <p class="u-text-xs u-mt-2 sm-min:u-hidden">※｢入院一時金｣｢通院保険金｣はブロンズコースにはセットされません。</p>
                   <div class="p-koutsuujiko-detail__card u-mt-16 point03">
                     <h3 class="p-koutsuujiko-detail__heading">
                       Point.<span>3</span>
@@ -796,8 +832,9 @@
                     </h3>
 
                     <div class="u-py-10 u-px-2">
-                      <p class="c-text-accent -underline u-text-center">法律相談費用・弁護士費用等の補償</p>
-                      <p class="u-text-lg u-mt-8 u-text-center">ゴールドコース限定で、弁護士費用や法律相談費用等を補償します。</p>
+                      <p class="c-text-accent -underline u-text-center">法律相談費用・<br class="sm-min:u-hidden">弁護士費用等の補償</p>
+                      <p class="u-text-lg u-mt-8 u-text-center">ゴールドコース限定で、弁護士費用や<br
+                          class="sm-min:u-hidden">法律相談費用等を補償します。</p>
                       <div class="p-koutsuujiko-accordion u-pb-8 accordion-3">
                         <div class="p-koutsuujiko-accordion__body">
                           <div class="p-koutsuujiko-accordion-service u-mt-8">
@@ -836,10 +873,11 @@
                               </div>
                             </div>
                             <p class="u-text-center u-mt-8">
-                              <a href="#" class="c-btn -md">補償内容はこちら</a>
+                              <a href="javascript:void(0)"
+                                onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/standard/S_2_H_16.html','myau');"
+                                class="c-btn -md">補償内容はこちら</a>
                             </p>
                           </div>
-
                           <div class="p-koutsuujiko-accordion-service u-mt-4">
                             <p class="c-text-accent u-text-center u-text-primary">弁護士費用等補償</p>
                             <div class="p-koutsuujiko-accordion-service__wrap">
@@ -876,10 +914,11 @@
                               </div>
                             </div>
                             <p class="u-text-center u-mt-8">
-                              <a href="#" class="c-btn -md">補償内容はこちら</a>
+                              <a href="javascript:void(0)"
+                                onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/standard/S_2_H_17.html','myau');"
+                                class="c-btn -md">補償内容はこちら</a>
                             </p>
                           </div>
-
                         </div>
                       </div>
                     </div>
@@ -892,15 +931,14 @@
                       Point.<span>4</span>
                     </h3>
                     <div class="u-py-10 u-px-2">
-                      <p class="u-text-center u-text-bold">「トラブルでの搬送」や「自宅への出張修理」に対応！</p>
+                      <p class="u-text-center u-text-bold">「トラブルでの搬送」や<br class="sm-min:u-hidden">「自宅への出張修理」に対応！</p>
                       <p class="u-mt-1 c-text-accent -underline u-text-center u-text-24 sm:u-text-20">
                         自転車ロードサービス</p>
-                      <div class="p-koutsuujiko-detail__wrap u-mt-8">
+                      <div class="p-koutsuujiko-detail__wrap u-mt-8 u-mx-auto">
                         <div class="p-koutsuujiko-detail__icon">
                           <picture>
-                            <!-- <source srcset="/pc/bycle/assets/img/bycle_illust44.webp"
-                                type="image/webp" /> -->
-                            <img src="/pc/bycle/assets/img/bycle_illust44.png" alt="au損保" loading="lazy" />
+                            <source srcset="/pc/bycle/assets/img/bycle_tab2-point26_pc.webp" type="image/webp">
+                            <img src="/pc/bycle/assets/img/bycle_tab2-point26_pc.png" alt="自動車ロードサービス" loading="lazy">
                           </picture>
                         </div>
                         <div class="p-koutsuujiko-detail__text">
@@ -910,7 +948,7 @@
                             </div>
                             <div class="gray_block--contents ">
                               <p class="u-text-bold u-text-12 ">ご希望の場所へ</p>
-                              <p class="u-text-bold u-text-24 u-text-primary u-mt-1">50㎞まで無料搬送！</p>
+                              <p class="u-text-bold u-text-24 u-text-primary u-mt-1 sm:u-text-20">50㎞まで無料搬送！</p>
                             </div>
                           </div>
                           <div class="gray_block__custom">
@@ -923,7 +961,7 @@
                             </div>
                             <div class="gray_block--contents">
                               <p class="u-text-bold u-text-12 ">パンクやチェーン・ブレーキトラブルなど軽微なトラブルは、</p>
-                              <p class="u-text-bold u-text-24 u-text-primary u-mt-1">ご自宅まで出張修理！</p>
+                              <p class="u-text-bold u-text-24 u-text-primary u-mt-1 sm:u-text-20">ご自宅まで出張修理！</p>
                             </div>
                           </div>
                           <div class="gray_block__custom">
@@ -932,59 +970,68 @@
                         </div>
                       </div>
                       <p class="u-text-center u-mt-8">
-                        <a href="#" class="c-btn -md">自転車ロードサービスを詳しくみる</a>
+                        <a href="/pc/bycle/roadservice/roadservice.html" class="c-btn -md">自転車ロードサービスを詳しくみる</a>
                       </p>
                     </div>
                   </div>
                   <div class="p-koutsuujiko-accordion-service bycle__smart-service u-mt-14">
-                    <p class="u-text-center u-text-bold">いつでも、どこでも、お手軽に。</p>
-                    <p class="u-mt-1 c-text-accent -underline u-text-center u-text-24 sm:u-text-20">
-                      au損保のスマートなサービス!!</p>
+                  
+                    <p class="u-mt-1 c-text-accent -underline u-text-center u-text-24">
+                      au損保のスマートな<br class="sm-min:u-hidden">サービス!!</p>
                     <div class="u-mt-10">
-                      <div class="p-koutsuujiko-accordion-service__wrap">
-                        <div class="p-koutsuujiko-accordion-service__img">
+                      <div class="bycle__smart-service__wrap u-mx-auto">
+                        <div class="bycle__smart-service__wrap--img">
                           <picture>
-                            <!-- <source
-                              srcset="/pc/bycle/assets/img/bycle_illust39.webp"
-                              type="image/webp"> -->
-                            <img src="/pc/bycle/assets/img/bycle_illust39.png" alt="au損保" loading="lazy">
+                            <source srcset="/pc/bycle/assets/img/bycle_tab2-point27_pc.webp" type="image/webp">
+                            <img src="/pc/bycle/assets/img/bycle_tab2-point27_pc.png" alt="自転車の日" loading="lazy">
                           </picture>
                         </div>
-                        <div class="p-koutsuujiko-accordion-service__text sm:u-mt-4">
+                        <div class="bycle__smart-service__wrap--text sm:u-mt-4">
                           <p class="u-text-primary u-text-bold u-text-20">
                             スマートに呼び出せる！無料アプリ「自転車の日」</p>
-                          <p class="u-text-bold u-mt-4">GPSを使って、自転車ロードサービスをカンタンに呼び出せる！<br>
+                          <p class="u-text-lg u-text-bold u-mt-4 sm:u-hidden">GPSを使って、自転車ロードサービスをカンタンに呼び出せる！<br>
                             他にもご契約内容の確認など便利な機能やお役立ちコンテンツが満載！</p>
-                          <p class="u-mt-6">
-                            <a href="#" class="c-btn -lg">詳しくはこちら</a>
+                          <p class="u-mt-6 sm:u-hidden">
+                            <a href="ttps://www.ausonpo-app.jp" target="_blank" class="c-btn -md">詳しくはこちら</a>
                           </p>
                         </div>
                       </div>
-                      <div class="p-koutsuujiko-accordion-service__wrap u-mt-10">
-                        <div class="p-koutsuujiko-accordion-service__img">
+                      <div class="sm-min:u-hidden u-mt-4">
+                        <p class="u-text-lg u-text-bold">GPSを使って、自転車ロードサービスをカンタンに呼び出せる！<br>
+                          他にもご契約内容の確認など便利な機能やお役立ちコンテンツが満載！</p>
+                        <p class="u-mt-16">
+                          <a href="ttps://www.ausonpo-app.jp" target="_blank" class="c-btn -md">詳しくはこちら</a>
+                        </p>
+                      </div>
+                      <div class="bycle__smart-service__wrap u-mx-auto u-mt-10">
+                        <div class="bycle__smart-service__wrap--img">
                           <picture>
-                            <!-- <source
-                              srcset="/pc/bycle/assets/img/bycle_illust40.webp"
-                              type="image/webp"> -->
-                            <img src="/pc/bycle/assets/img/bycle_illust40.png" alt="au損保" loading="lazy">
+                            <source srcset="/pc/bycle/assets/img/bycle_tab2-point28_pc.webp" type="image/webp">
+                            <img src="/pc/bycle/assets/img/bycle_tab2-point28_pc.png" alt="自転車の日" loading="lazy">
                           </picture>
                         </div>
-                        <div class="p-koutsuujiko-accordion-service__text sm:u-mt-4">
+                        <div class="bycle__smart-service__wrap--text sm:u-mt-4">
                           <p class="u-text-primary u-text-bold u-text-20">
                             ご契約内容の確認もスマートに！</p>
-                          <p class="u-text-bold u-mt-4">もし補償内容を忘れてしまっても大丈夫！<br>
+                          <p class="u-text-lg u-text-bold u-mt-4 sm:u-hidden">もし補償内容を忘れてしまっても大丈夫！<br>
                             お客さま専用ページの「契約確認書」で、お客さまのご契約内容をいつでもどこでも確認いただけます。<br>
                             印刷や、電子ファイル（PDF）での保管もできて、あんしん便利！</p>
                         </div>
+                      </div>
+                      <div class="sm-min:u-hidden u-mt-4">
+                        <p class="u-text-lg u-text-bold">もし補償内容を忘れてしまっても大丈夫！<br>
+                          お客さま専用ページの「契約確認書」で、お客さまのご契約内容をいつでもどこでも確認いただけます。<br>
+                          印刷や、電子ファイル（PDF）での保管もできて、あんしん便利！</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- タブ2ここまで -->
-            <!-- タブ3 -->
-            <div id="pet-cont03" class="p-bycle-type-info__type bycle-s__tab3">
+          </div>
+          <!-- 保険金額と保険料 -->
+          <div id="tab3" class="tab-content p-bycle-type-info__type tab3 bycle-s__tab3">
+            <div class="p-bycletab-inner">
               <div class="bycle-s__tab3__block01">
                 <h2 class="c-heading2-has-line u-mt-0">
                   保険金額について
@@ -1130,8 +1177,8 @@
               </div>
               <div class="u-mt-8 u-flex u-justify-center">
                 <picture>
-                  <!-- <source srcset="/pc/bycle/assets/img/bycle_icon02.webp" type="image/webp" /> -->
-                  <img src="/pc/bycle/assets/img/bycle_icon02.png" alt="au損保" loading="lazy" />
+                  <source srcset="/pc/bycle/assets/img/bycle_tab2-plus01_pc.webp" type="image/webp" />
+                  <img src="/pc/bycle/assets/img/bycle_tab2-plus01_pc.png" alt="au損保" loading="lazy" />
                 </picture>
               </div>
               <div class="bycle-s__tab3__block02 u-mt-8">
@@ -1210,12 +1257,14 @@
                 </div>
               </div>
             </div>
-            <!-- タブ3ここまで -->
-            <!-- タブ4 -->
-            <div id="pet-cont04" class="p-bycle-type-info__type tab4 bycle-roadservice bycle-s__tab4">
+          </div>
+          <!-- 自動車ロードサービス -->
+          <div id="tab4" class="tab-content p-bycle-type-info__type bycle-roadservice tab4">
+            <div class="p-bycletab-inner">
               <p class="u-text-lg u-text-center u-text-bold">トラブルでの搬送」や<br class="sm-min:u-hidden">「自宅への出張修理」に対応！</p>
-              <p class="c-text-accent -underline u-text-center u-mt-1">自転車ロードサービス<span
-                  class="sm:u-hidden">がパワーアップ</span></p>
+              <p class="c-text-accent -underline u-text-center u-mt-1">自転車ロードサービス<spanclass="sm:u-hidden">がパワーアップ
+                  </spanclass=>
+              </p>
               <div class="bycle-roadservice__block01 u-grid u-grid-cols-2 u-gap-6 u-mt-10 sm:u-grid-cols-1 sm:u-mt-8">
                 <div class="bycle-roadservice__block01__box">
                   <div class="gray_block">
@@ -1230,10 +1279,8 @@
                   <p class="c-text-accent u-text-center u-mt-10 sm:u-mt-6">自転車を運びたい</p>
                   <div class="bycle-roadservice__block01__box--img u-mt-4">
                     <picture>
-                      <!-- <source
-                        srcset="/pc/bycle/assets/img/bycle_photo04.webp"
-                        type="image/webp"> -->
-                      <img src="/pc/bycle/assets/img/bycle_photo04.png" alt="au損保" loading="lazy">
+                      <source srcset="/pc/bycle/assets/img/bycle_tab4-loadservice01_pc.webp" type="image/webp" />
+                      <img src="/pc/bycle/assets/img/bycle_tab4-loadservice01_pc.png" alt="ロードサービス" loading="lazy" />
                     </picture>
                     <div class="cover-text u-p-2">
                       <p class="u-text-center u-text-18 u-text-bold u-leading-normal">外出先で電動アシスト付き<br>
@@ -1260,10 +1307,8 @@
                   <p class="c-text-accent u-text-center u-mt-10 sm:u-mt-6">家に修理を呼びたい</p>
                   <div class="bycle-roadservice__block01__box--img u-mt-4">
                     <picture>
-                      <!-- <source
-                        srcset="/pc/bycle/assets/img/bycle_photo05.webp"
-                        type="image/webp"> -->
-                      <img src="/pc/bycle/assets/img/bycle_photo05.png" alt="au損保" loading="lazy">
+                      <source srcset="/pc/bycle/assets/img/bycle_tab4-loadservice02_pc.webp" type="image/webp" />
+                      <img src="/pc/bycle/assets/img/bycle_tab4-loadservice02_pc.png" alt="ロードサービス" loading="lazy" />
                     </picture>
                     <div class="cover-text u-p-2">
                       <p class="u-text-center u-text-18 u-text-bold u-leading-normal">
@@ -1303,10 +1348,8 @@
                 <div class="bycle-flexbox01 u-mt-8">
                   <div class="bycle-flexbox01__left">
                     <picture>
-                      <!-- <source
-                          srcset="/pc/bycle/assets/img/bycle_tab4-illust01.webp"
-                          type="image/webp"> -->
-                      <img src="/pc/bycle/assets/img/bycle_tab4-illust01.png" alt="au損保" loading="lazy">
+                      <source srcset="/pc/bycle/assets/img/bycle_tab4-loadservice03_pc.webp" type="image/webp" />
+                      <img src="/pc/bycle/assets/img/bycle_tab4-loadservice03_pc.png" alt="提供地域" loading="lazy" />
                     </picture>
                   </div>
                   <div class="bycle-flexbox01__right">
@@ -1315,65 +1358,56 @@
                     </p>
                     <div class="bycle-flexbox01__right--btns u-mt-4 u-grid u-grid-cols-4 sm:u-hidden">
                       <p class="u-text-center">
-                        <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area/#hokkaido" target="_blank"
-                          class="c-btn -md">北海道</a>
+                        <a href="/pc/lp_rs_area/#hokkaido" class="c-btn -md">北海道</a>
                       </p>
                       <p class="u-text-center">
-                        <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area/#tohoku" target="_blank"
-                          class="c-btn -md">東北</a>
+                        <a href="/pc/lp_rs_area/#tohoku" class="c-btn -md">東北</a>
                       </p>
                       <p class="u-text-center">
-                        <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area/#kanto" target="_blank"
-                          class="c-btn -md">関東</a>
+                        <a href="/pc/lp_rs_area/#kanto" class="c-btn -md">関東</a>
                       </p>
                       <p class="u-text-center">
-                        <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area/#tyubu" target="_blank"
-                          class="c-btn -md">中部</a>
+                        <a href="/pc/lp_rs_area/#tyubu" class="c-btn -md">中部</a>
                       </p>
                       <p class="u-text-center">
-                        <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area#kinki" target="_blank"
-                          class="c-btn -md">近畿</a>
+                        <a href="/pc/lp_rs_area/#kinki" class="c-btn -md">近畿</a>
                       </p>
                       <p class="u-text-center">
-                        <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area#tyugoku" target="_blank"
-                          class="c-btn -md">中国</a>
+                        <a href="/pc/lp_rs_area/#tyugoku" class="c-btn -md">中国</a>
                       </p>
                       <p class="u-text-center">
-                        <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area#shikoku" target="_blank"
-                          class="c-btn -md">四国</a>
+                        <a href="/pc/lp_rs_area/#shikoku" class="c-btn -md">四国</a>
                       </p>
                       <p class="u-text-center">
-                        <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area#kyusyu" target="_blank"
-                          class="c-btn -md">九州</a>
+                        <a href="/pc/lp_rs_area/#shikoku" class="c-btn -md">九州</a>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="u-mt-4 u-grid u-grid-cols-2 u-gap-4 sm-min:u-hidden">
                   <p class="u-text-center">
-                    <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area/#hokkaido" target="_blank"
-                      class="c-btn -md">北海道</a>
+                    <a href="/pc/lp_rs_area/#hokkaido" class="c-btn -md">北海道</a>
                   </p>
                   <p class="u-text-center">
-                    <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area/#tohoku" target="_blank" class="c-btn -md">東北</a>
+                    <a href="/pc/lp_rs_area/#tohoku" class="c-btn -md">東北</a>
                   </p>
                   <p class="u-text-center">
-                    <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area/#kanto" target="_blank" class="c-btn -md">関東</a>
+                    <a href="/pc/lp_rs_area/#kanto" class="c-btn -md">関東</a>
                   </p>
                   <p class="u-text-center">
-                    <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area/#tyubu" target="_blank" class="c-btn -md">中部</a>
+                    <a href="/pc/lp_rs_area/#tyubu" class="c-btn -md">中部</a>
                   </p>
                   <p class="u-text-center">
-                    <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area#kinki" target="_blank" class="c-btn -md">近畿</a>
+                    <a href="/pc/lp_rs_area/#kinki" class="c-btn -md">近畿</a>
                   </p>
                   <p class="u-text-center">
-                    <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area#tyugoku" target="_blank" class="c-btn -md">中国</a>
+                    <a href="/pc/lp_rs_area/#tyugoku" class="c-btn -md">中国</a>
                   </p>
                   <p class="u-text-center">
-                    <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area#shikoku" target="_blank" class="c-btn -md">四国</a>
+                    <a href="/pc/lp_rs_area/#shikoku" class="c-btn -md">四国</a>
                   </p>
                   <p class="u-text-center">
-                    <a href="https://www.au-sonpo.co.jp/pc/lp_rs_area#kyusyu" target="_blank" class="c-btn -md">九州</a>
+                    <a href="/pc/lp_rs_area/#shikoku" class="c-btn -md">九州</a>
                   </p>
                 </div>
               </div>
@@ -1383,10 +1417,8 @@
                   <div class="bycle__c-voice">
                     <div class="bycle__c-voice--img">
                       <picture>
-                        <!-- <source
-                            srcset="/pc/bycle/assets/img/bycle_tab4-illust03.webp"
-                            type="image/webp"> -->
-                        <img src="/pc/bycle/assets/img/bycle_tab4-illust03.png" alt="au損保" loading="lazy">
+                        <source srcset="/pc/bycle/assets/img/bycle_tab4-voice01.webp" type="image/webp" />
+                        <img src="/pc/bycle/assets/img/bycle_tab4-voice01.png" alt="お客様の声" loading="lazy" />
                       </picture>
                     </div>
                     <div class="bycle__c-voice--text">
@@ -1398,10 +1430,8 @@
                   <div class="bycle__c-voice">
                     <div class="bycle__c-voice--img">
                       <picture>
-                        <!-- <source
-                            srcset="/pc/bycle/assets/img/bycle_tab4-illust04.webp"
-                            type="image/webp"> -->
-                        <img src="/pc/bycle/assets/img/bycle_tab4-illust04.png" alt="au損保" loading="lazy">
+                        <source srcset="/pc/bycle/assets/img/bycle_tab4-voice02.webp" type="image/webp" />
+                        <img src="/pc/bycle/assets/img/bycle_tab4-voice02.png" alt="お客様の声" loading="lazy" />
                       </picture>
                     </div>
                     <div class="bycle__c-voice--text">
@@ -1411,10 +1441,8 @@
                   <div class="bycle__c-voice">
                     <div class="bycle__c-voice--img">
                       <picture>
-                        <!-- <source
-                            srcset="/pc/bycle/assets/img/bycle_tab4-illust05.webp"
-                            type="image/webp"> -->
-                        <img src="/pc/bycle/assets/img/bycle_tab4-illust05.png" alt="au損保" loading="lazy">
+                        <source srcset="/pc/bycle/assets/img/bycle_tab4-voice03.webp" type="image/webp" />
+                        <img src="/pc/bycle/assets/img/bycle_tab4-voice03.png" alt="お客様の声" loading="lazy" />
                       </picture>
                     </div>
                     <div class="bycle__c-voice--text">
@@ -1425,10 +1453,8 @@
                   <div class="bycle__c-voice">
                     <div class="bycle__c-voice--img">
                       <picture>
-                        <!-- <source
-                            srcset="/pc/bycle/assets/img/bycle_tab4-illust06.webp"
-                            type="image/webp"> -->
-                        <img src="/pc/bycle/assets/img/bycle_tab4-illust06.png" alt="au損保" loading="lazy">
+                        <source srcset="/pc/bycle/assets/img/bycle_tab4-voice04.webp" type="image/webp" />
+                        <img src="/pc/bycle/assets/img/bycle_tab4-voice04.png" alt="お客様の声" loading="lazy" />
                       </picture>
                     </div>
                     <div class="bycle__c-voice--text">
@@ -1442,7 +1468,7 @@
                 <section class="l-container lg:-md u-border u-radius-4  u-border-primary">
                   <h2 class="c-heading2-bg-primary">自転車ロードサービスの<br class="sm-min:u-hidden">ご要請はこちら　</h2>
                   <div class="u-p-8 sm:u-p-4">
-                    <a href="pc/keiyakusya/bycle/roadservice.html" class="c-btn-important-1 u-mx-auto">
+                    <a href="/pc/keiyakusya/bycle/roadservice.html" class="c-btn-important-1 u-mx-auto">
                       <h3 class="c-btn-important-1__text u-text-center">自転車ロードサービスを<br>呼びたい</h3>
                     </a>
                   </div>
@@ -1451,10 +1477,8 @@
               <div class="bycle-roadservice__block06 u-mt-14">
                 <div class="bycle-roadservice__block06--img">
                   <picture>
-                    <!-- <source
-                        srcset="/pc/bycle/assets/img/bycle_tab4-illust02.webp"
-                        type="image/webp"> -->
-                    <img src="/pc/bycle/assets/img/bycle_tab4-illust02.png" alt="au損保" loading="lazy">
+                    <source srcset="/pc/bycle/assets/img/bycle_tab4-seal_01.webp" type="image/webp" />
+                    <img src="/pc/bycle/assets/img/bycle_tab4-seal_01.png" alt="徹底解説" loading="lazy" />
                   </picture>
                 </div>
                 <p class="u-mt-2 u-text-center sm:u-text-left">
@@ -1465,27 +1489,20 @@
                 <p class="u-text-20 u-text-center u-text-bold u-text-primary">ご利用規約</p>
                 <p class="u-text-lg u-text-center u-mt-2">自転車ロードサービスに関する内容が<br class="sm-min:u-hidden">記載されています。<br
                     class="sm-min:u-hidden">ご利用の前に必ずご確認ください。</p>
-                <p class="u-text-center u-mt-8 sm:u-mt-6"><a
-                    href="/pc/common/pdf/standard_shogai/road_service_kiyaku.pdf" target="_blank"
+                <p class="u-text-center u-mt-8 sm:u-mt-6"><a href="javascript:void(0)"
+                    onclick="openwin2('https://www.au-sonpo.co.jp/pc/common/pdf/standard_shogai/road_service_kiyaku.pdf','myau');"
                     class="c-download-pdf">自転車ロードサービスご利用規約</a></p>
               </div>
             </div>
-            <!-- <div class="-p-bycle-tab-change__tabs tabs-bottom">
-            <div class="p-bycle-type-info__tab is-active">
-              <button type="button" class="js-pet-info is-active tab-buttom c-btn -lg" data-id="pet-cont01"><span>01</span>5つのポイント</button>
-            </div>
-            <div class="p-bycle-type-info__tab">
-              <button type="button" class="js-pet-info tab-buttom c-btn -lg" data-id="pet-cont02"><span>02</span>補償内容</button>
-            </div>
-            <div class="p-bycle-type-info__tab">
-              <button type="button" class="js-pet-info tab-buttom c-btn -lg" data-id="pet-cont03"><span>03</span>保険金額と保険料</button>
-            </div>
-            <div class="p-bycle-type-info__tab">
-              <button type="button" class="js-pet-info tab-buttom c-btn -lg" data-id="pet-cont04"><span>04</span>自転車ロードサービス</button>
-            </div>
-          </div> -->
           </div>
-          <!-- タブ4ここまで -->
+          <div class="tab-buttons p-bycle-tab-change__tabs">
+            <button class="tab-button tab-button1 c-btn -lg active" data-tab="1"><span>01</span>5つのポイント</button>
+            <button class="tab-button tab-button2 c-btn -lg" data-tab="2"><span>02</span>補償内容</button>
+            <button class="tab-button tab-button3 c-btn -lg" data-tab="3"><span>03</span>保険金額と保険料</button>
+            <button class="tab-button tab-button4 c-btn -lg" data-tab="4"><span>04</span>自転車<br
+                class="lg:u-hidden">ロードサービス</button>
+          </div>
+        </div>
       </section>
       <!-- ここまで -->
       <div class="p-keiyakusya-kaigai-cta u-mt-10 u-mx-auto u-mb-0">
@@ -1702,7 +1719,8 @@
             </div>
           </li>
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「自転車向け保険」に加入中です。自転車を買い替えましたが、手続きは必要でしょうか？</h4>
+            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「自転車向け保険」に加入中です。自転車を買い替えましたが、手続きは必要でしょうか？
+            </h4>
             <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"
               class="c-faq__wrapper js-accordion-toggle-content">
               <div itemprop="text" class="c-faq__content">
@@ -1762,7 +1780,7 @@
             </div>
           </div>
         </div>
-        <p class="u-text-center u-mt-12"><a href="#" class="c-btn -md">記事をもっと見る</a></p>
+        <p class="u-text-center u-mt-12"><a href="#" class="c-btn -md">コラムTOPへ</a></p>
       </section>
       <!-- ここまで -->
       <!-- 重要事項説明書・約款 -->
@@ -1772,11 +1790,12 @@
           電子ファイル（PDF）でのご提供となります。<br>特に「重要事項のご説明」については、印刷し書面で保管いただくか、パソコンなどに保存いただくことをおすすめします。</p>
         <ul class="p-kaigai-pdf u-mt-5 u-mx-auto u-pl-8">
           <li>
-            <a href="#" class="c-download-pdf">重要事項のご説明（重要事項説明書）PDF</a>
-          </li>
-          <li>
-            <a href="#" class="c-download-pdf">ご契約のしおり（普通保険約款・特約集）PDF</a>
-          </li>
+            <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.au-sonpo.co.jp/pc/common/pdf/standard_shogai/standard_jyusetsu_20191201.pdf" class="c-download-pdf">重要事項のご説明（重要事項説明書）PDF</a>
+        </li>
+        <li>
+            
+            <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/common/popup/PU_C_16.html#content_c16_01','myau');" class="c-download-pdf">ご契約のしおり（普通保険約款・特約集）PDF</a>
+        </li>
         </ul>
         <div class="c-textbox-has-link l-container lg:-sm">
           <p class="c-textbox-has-link__text">本商品は、自治体への寄付をする旨の協定が締結された都道府県にお住まいの方がご契約された場合、au損保から保険料収益の一部が寄付される制度の対象です。

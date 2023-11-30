@@ -451,7 +451,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("click", function (event) {
         const clickedElement = event.target;
         // クリックされた要素が背景または閉じるボタンである場合
-        if (clickedElement.matches(".popup-input .bg, .popup-input .close")) {
+        if (clickedElement.matches(".popup-input .bg, .close")) {
         const popupInput = clickedElement.closest(".popup-input");
         popupInput.classList.remove("active");
         }

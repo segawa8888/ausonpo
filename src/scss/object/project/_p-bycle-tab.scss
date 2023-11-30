@@ -150,6 +150,7 @@
     }
 }
 /*　---------------　*/
+/*　タブ切り替え　5つのポイント　*/
 .p-byclebest-tab-ranking {
     img {
         max-width: 499px;
@@ -158,47 +159,116 @@
     }
 }
 .p-bycle-course {
-    .p-bycle-course-img {
-        img {
-            max-width: 480px;
-            @include mq-max("md") {
-                padding: 0 2rem;
+    &__title{
+        p{
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+    }
+    &__img {
+        max-width: 29.5rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.bycle-course-type{
+    &__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 2.5rem;
+        p{
+            font-weight: bold;
+            line-height: 1.6;
+        }
+        h2{
+            line-height: 1.6;
+            font-size: 1.25rem;
+            font-weight: bold;
+            border-bottom: 0.125rem dotted $c-primary;
+        }
+    }
+    .bycle-course-text {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        @include mq-max("md") {
+            flex-direction: column;
+        }
+        .bycle-course-text__pic {
+            align-items: center;
+            justify-content: center;
+            .bycle-course-text__pic-icon{
+                width: 5rem;
+                height: 5rem;
             }
         }
     }
-}
-.bycle-course-text {
-    max-width: 100%;
-    width: 100%;
-    justify-content: center;
-    @include mq-max("md") {
-        flex-direction: column;
+    &__advice{
+        text-align: center;
+        color: $c-primary;
+        font-size: 0.875rem;
+        font-weight: bold;
+        padding-top: 2rem;
     }
-    .bycle-course-text__pic {
-        align-items: center;
+}
+.p-bycle-loadservice{
+    .p-bycle-loadservice-text{
+        display: flex;
         justify-content: center;
-        img {
-            width: 80px;
-            height: 80px;
+        align-items: center;
+        flex-direction: column;
+        p{
+            text-align: center;
+            font-weight: bold;
+            &.p-bycle-loadservice-level{
+                padding-bottom: 0.25rem;
+            }
+            &.p-bycle-loadservice-service{
+                font-size: 0.875rem;
+                line-height: 1.6;
+            }
         }
     }
-}
-.p-bycle-loadservice-list {
-    li {
-        justify-content: flex-start;
-        align-items: center;
+    .p-bycle-loadservice-list {
+        li {
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__point {
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        &__text{
+            span{
+                line-height: 1.6;
+            }
+            p{
+                line-height: 1.6;
+            }
+        }
     }
-    &__point {
-        width: 40px;
-        height: 40px;
+    .p-bycle-loadservice-buttom {
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        .p-bycle-loadservice-buttom-size{
+            padding: 2rem 0 0.25rem 0;
+            max-width: 20rem;
+            width: 100%;
+            a span{
+                border-bottom: 0.0625rem solid;
+            }
+            p{
+                text-align: left;
+                padding-top: 0.25rem;
+                line-height: 1.6;
+            }
+        }
     }
-}
-.p-bycle-loadservice-buttom {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 .p-bycle-point-wrapper {
     justify-content: space-between;
@@ -239,23 +309,31 @@
         max-width: 30rem;
     }
 }
-.p-bycle-case-list {
-    justify-content: space-between;
-    .p-bycle-hoten {
-        padding-top: 1rem;
-        max-width: calc((100% - 7rem) / 3);
-        width: 100%;
-        @include mq-max("lg") {
-            max-width: calc((100% - 2.5rem) / 3);
+.p-bycle-case{
+    .p-bycle-case-subtitle{
+        p{
+            line-height: 1.5;
         }
-        @include mq-max("sm") {
-            max-width: 100%;
-        }
-        .p-koutsuujiko-detail__card {
-            height: 100%;
+    }
+    .p-bycle-case-list {
+        justify-content: space-between;
+        .p-bycle-hoten {
+            padding-top: 1rem;
+            max-width: calc((100% - 7rem) / 3);
+            width: 100%;
+            @include mq-max("lg") {
+                max-width: calc((100% - 2.5rem) / 3);
+            }
+            @include mq-max("sm") {
+                max-width: 100%;
+            }
+            .p-koutsuujiko-detail__card {
+                height: 100%;
+            }
         }
     }
 }
+
 .p-bycle-gimuka-note {
     justify-content: center;
     align-items: center;
@@ -350,7 +428,6 @@
         }
     }
 }
-
 .p-bycle-case {
     .p-bycle-point {
         h3 {
@@ -385,24 +462,32 @@
         }
     }
 }
-
-//タブ2
-//タブ2
+/*　--------------------　*/
+/*　タブ切り替え　補償内容　*/
 .tab2.bycle-hosyou {
     .p-koutsuujiko-detail__card {
         .p-koutsuujiko-detail__wrap {
+            padding: 0 0.5rem;
             .p-koutsuujiko-detail__recommend {
                 padding: 1.5rem;
+                @include mq-max("sm") {
+                    padding: 1rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
             }
         }
         .p-koutsuujiko-accordion-service {
             max-width: 100%;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
             &__wrap {
                 padding: 0;
             }
             .c-accordion-4 {
+                &__wrapper {
+                    padding: 0;
+                }
                 &__content {
                     border-color: $c-base-050;
                 }
@@ -419,11 +504,36 @@
     .p-koutsuujiko-accordion {
         padding-bottom: 0;
     }
-    .p-koutsuujiko-detail__text {
-        @include mq-max("md") {
-            max-width: 100%;
-            width: 100%;
+    .point01 {
+        .p-koutsuujiko-detail__wrap {
+            .p-koutsuujiko-detail__text {
+                max-width: 43rem;
+            }
         }
+        .jidan-daikou__flex {
+            max-width: 50.5rem;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: center;
+            gap: 1.5rem;
+            @include mq-max("sm") {
+                justify-content: center;
+                gap: 1rem;
+            }
+            &--img {
+                max-width: 13.625rem;
+                width: 100%;
+            }
+            &--text {
+                @include mq-max("sm") {
+                    width: 100%;
+                }
+            }
+        }
+       
     }
     .point02 {
         .p-koutsuujiko-detail__heading {
@@ -480,6 +590,10 @@
             }
         }
         .p-koutsuujiko-detail__wrap {
+            max-width: 50.5rem;
+            width: 100%;
+            justify-content: left;
+            align-items: center;
             @include mq-max("sm") {
                 padding: 0;
             }
@@ -494,19 +608,26 @@
     }
     .bycle__smart-service {
         padding: 2.5rem 1rem;
-        .p-koutsuujiko-accordion-service__img {
-            @include mq-max("md") {
-                max-width: 8rem;
-            }
-            @include mq-max("sm") {
-                max-width: 15rem;
-            }
-        }
-        .p-koutsuujiko-accordion-service__wrap {
+        &__wrap {
+            max-width: 50.5rem;
+            width: 100%;
             display: flex;
-            align-items: center;
+            justify-content: left;
+            gap: 2.5rem;
             @include mq-max("sm") {
-                padding: 0;
+                gap: 1rem;
+                align-items: center;
+            }
+            &--img {
+                max-width: 5.375rem;
+                width: 100%;
+                @include mq-max("sm") {
+                    max-width: 3.5rem;
+                }
+            }
+            &--text {
+                max-width: 42.5rem;
+                width: 100%;
             }
         }
     }
@@ -515,7 +636,7 @@
     position: relative;
     border: 0.125rem solid $c-primary;
     border-radius: 1rem;
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
     .fukidasi {
         position: absolute;
         width: 100%;
@@ -526,9 +647,11 @@
         -webkit-transform: translateX(-50%);
     }
     @include mq-max("sm") {
-        padding: 1.5rem 0;
+        padding: 1.5rem 1rem;
     }
     &__flex {
+        max-width: 51.25rem;
+        width: 100%;
         display: flex;
         justify-content: left;
         @include mq-max("sm") {
@@ -546,12 +669,13 @@
     }
 }
 .p-bycle__btn-grid {
+    max-width: 45rem;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2.5rem 1.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 2.5rem;
     @include mq-max("sm") {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1rem;
+        gap: 0.5rem;
     }
     &--btn {
         border: 0.0625rem solid #bdbdbd;
@@ -578,14 +702,14 @@
     display: flex;
     justify-content: left;
     align-items: end;
-
+    gap: 1.5rem;
     &__imgblock {
-        padding-left: 1rem;
-        max-width: 3.75rem;
+        max-width: 4rem;
         width: 100%;
         @include mq-max("sm") {
             padding-left: 0rem;
             width: 20%;
+            max-width: 3rem;
         }
     }
 }
@@ -596,24 +720,23 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    gap: 1rem;
+    @include mq-max("sm") {
+        gap: 0.5rem;
+    }
     &--title {
         background-color: $c-primary;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        width: 3.75rem;
+        max-width: 3.75rem;
+        width: 100%;
         height: 3.75rem;
         border-radius: 0.25rem;
         p {
             width: 100%;
             white-space: nowrap;
-        }
-    }
-    &--contents {
-        padding-left: 1rem;
-        @include mq-max("sm") {
-            padding-left: 0.5rem;
         }
     }
 }
@@ -634,206 +757,45 @@
         height: 3.75rem;
     }
 }
-//プラン診断
-.-p-bycle-plan {
-    &-title {
-        img {
-            width: 20rem;
-        }
-    }
-    &-progressbar {
-        display: flex;
-        width: 100%;
-        padding: 0 6rem;
-        @include mq-max("sm") {
-            padding: 0;
-        }
-        &-step {
-            position: relative;
-            width: 33%;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem 0;
-            background: $c-white;
-            &:not(:last-child) {
-                &::before {
-                    position: absolute;
-                    z-index: 2;
-                    top: 0;
-                    bottom: 0;
-                    left: 100%;
-                    content: "";
-                    border: 2rem solid transparent;
-                    border-left: 1rem solid $c-white;
-                    margin: auto;
-                }
-                &::after {
-                    position: absolute;
-                    z-index: 2;
-                    top: 0;
-                    bottom: 0;
-                    left: 100%;
-                    content: "";
-                    border: 2rem solid transparent;
-                    border-left: 1rem solid $c-white;
-                    margin: auto;
-                }
-            }
-            &:not(:last-child)::before {
-                margin-left: 2px;
-                border-left-color: $c-base-050;
-            }
-            &.active {
-                z-index: 1;
-                background: $c-primary;
-                color: $c-white;
-                &:not(:last-child)::after {
-                    border-left-color: $c-primary;
-                }
-                &:not(:last-child)::before {
-                    border-left: none;
-                }
-            }
-        }
-    }
-    &-select {
-        width: 100%;
-        padding: 0 15rem;
-        @include mq-max("sm") {
-            padding: 0.5rem;
-        }
-        &-btn {
-            background: $c-white;
-            label {
-                padding: 0.5rem;
-                padding-top: 2rem;
-                width: 100%;
-                position: relative;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                cursor: pointer;
-                height: 100%;
-                border: 0.0625rem solid #d1d1d1;
-                picture {
-                    max-width: 5rem;
-                    width: 100%;
-                }
-                &.honin {
-                    picture {
-                        max-width: 3.5rem;
-                    }
-                }
-                &.kazoku {
-                    picture {
-                        max-width: 3.5rem;
-                    }
-                }
-                &.sinzoku {
-                    picture {
-                        max-width: 4.5rem;
-                    }
-                }
-                &::before {
-                    content: "";
-                    display: block;
-                    border-radius: 50%;
-                    position: absolute;
-                    transform: translateY(-50%) translateX(-50%);
-                    top: 1rem;
-                    left: 50%;
-                    border: 0.0625rem solid #d1d1d1;
-                    border-radius: 50%;
-                    width: 1rem;
-                    height: 1rem;
-                }
-                &::after {
-                    content: "";
-                    display: block;
-                    border-radius: 50%;
-                    position: absolute;
-                    transform: translateY(-50%) translateX(-50%);
-                    top: 1rem;
-                    left: 50%;
-                    background-color: $c-primary;
-                    border-radius: 50%;
-                    opacity: 0;
-                    width: 0.5rem;
-                    height: 0.5rem;
-                }
-                .tag-area {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    @include mq-max("sm") {
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        flex-direction: row-reverse;
-                    }
-                    .tag {
-                        padding: 0.25rem;
-                        border: 0.0625rem solid #d1d1d1;
-                        &.recom {
-                            background-color: #fff682;
-                            border: none;
-                        }
-                    }
-                }
-            }
-
-            input:checked + label::after {
-                opacity: 1;
-            }
-            input:checked + label {
-                border: 0.0625rem dashed $c-primary;
-            }
-            .visually-hidden {
-                position: absolute;
-                white-space: nowrap;
-                border: 0;
-                clip: rect(0 0 0 0);
-                clip-path: inset(50%);
-                overflow: hidden;
-                height: 1px;
-                width: 1px;
-                margin: -1px;
-                padding: 0;
-            }
-        }
-    }
-}
-//決済方法
+/*　----------------　*/
+/*　決済方法　*/
 .p-kokunai-payment__icons.bycle {
     grid-template-columns:repeat(6, 1fr);
     @include mq-max("md") {
         grid-template-columns:repeat(3, 1fr);
     }
 }
-
-
-.p-keiyakusya-table table tr.-p-byclepic-ful {
-    max-width: 100%;
-    width: 100%;
-    grid-template-areas: "p-bycle-hoken-title p-bycle-hoken-pic p-bycle-hoken-pic p-bycle-hoken-pic";
-    .p-bycle-hoken-title {
-        grid-area: p-bycle-hoken-title;
-        @include mq-max("md") {
-            min-width: 7.6875rem;
-        }
-    }
-    .p-bycle-hoken-pic {
-        grid-area: p-bycle-hoken-pic;
-        text-align: center;
-        background-color: rgba(144, 144, 144, 0.1);
-        @include mq-max("md") {
-            min-width: 100%;
+/*　------　*/
+/*　タブ切り替え　保険金額と保険料　*/
+.p-byclehoken-tab-money{
+    .p-keiyakusya-table table {
+        width: 100%;
+        tr.-p-byclepic-ful {
+            max-width: 100%;
+            width: 100%;
+            grid-template-areas: "p-bycle-hoken-title p-bycle-hoken-pic p-bycle-hoken-pic p-bycle-hoken-pic";
+            .p-bycle-hoken-title {
+                grid-area: p-bycle-hoken-title;
+                @include mq-max("md") {
+                    min-width: 7.6875rem;
+                }
+            }
+            .p-bycle-hoken-pic {
+                grid-area: p-bycle-hoken-pic;
+                text-align: center;
+                background-color: rgba(144, 144, 144, 0.1);
+                @include mq-max("md") {
+                    min-width: 100%;
+                }
+                strong{
+                    line-height: 1.2;
+                    font-size: 0.875rem;
+                }
+            }
         }
     }
 }
 
-//タブ3 保険金額と保険料
 .p-byclehoken-tab-money {
     .P-byclehoken-text {
         line-height: 1.5rem;
@@ -913,7 +875,13 @@
             }
         }
         span.u-bycle-subtext {
-            font-size: 1rem;
+            font-size: 1.5rem;
+            @include mq-max("md"){
+                font-size: 1rem;
+            }
+            @include mq-max("sm"){
+                font-size: 1.2rem;
+            }
         }
         @include mq-max("sm") {
             width: 100%;
@@ -931,9 +899,11 @@
         }
         table tbody .p-byclytable-twocolumn {
             position: relative;
+            border: none;
             grid-template-areas:
                 "p-byclehoten-type p-byclehoten-price1 p-byclehoten-price2 p-byclehoten-price3"
                 "p-byclehoten-type p-byclehoten-price4 p-byclehoten-price5 p-byclehoten-price6";
+            &::before,
             &::after {
                 background: #fff;
                 position: absolute;
@@ -945,6 +915,16 @@
                 border-top: 0.125rem dashed #c9c9c9;
                 @include mq-max("md") {
                     width: calc(100% - 9.0625rem);
+                }
+            }
+            &::before{
+                top: auto;
+                bottom: 0;
+                z-index: 1;
+            }
+            &:last-child{
+                &::before{
+                    content: none;
                 }
             }
             td {
@@ -989,36 +969,45 @@
                         }
                     }
                 }
-                .p-byclehoten-type {
-                    &__inner {
+                &.p-byclehoten-type {
+                    justify-content: space-between;
+                    padding: 0;
+                    border: none;
+                    .p-byclehoten-type__inner{
                         width: calc(100% - 5rem);
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        .p-byclehoten-type__inner-img {
-                            width: 100%;
+                        padding: 0.5rem;
+                        @include mq-max("md"){
+                            width: calc(100% - 3.5rem);
                         }
-                        .p-byclehoten-type__inner-text {
-                            .p-bycle-boder {
-                                border-bottom: 1px solid $c-black;
+                        @include mq-max("sm"){
+                            width: calc(100% - 5rem);
+                        }
+                        .p-byclehoten-type__inner-img{
+                            padding-bottom: 0.25rem;
+                        }
+                        .p-byclehoten-type__inner-text{
+                            width: 100%;
+                            a{
+                                padding-right: 1rem;
+                                padding-bottom: 0.0625rem;
+                                border-bottom: 0.0625rem solid $c-black;
+                                span{
+                                    right: 0;
+                                    width: 0.875rem;
+                                    margin: 0;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
                             }
-                            p {
-                                text-align: center;
-                                max-width: 100%;
+                            p{
+                                width: 100%;
+                                line-height: 1.6;
                             }
                         }
                     }
                 }
-            }
-        }
-        table tbody tr:not(:last-child)::before {
-            width: 8.482188rem;
-            @include mq-max("md") {
-                width: 7.0625rem;
-            }
-            @include mq-max("md") {
-                width: 9.0625rem;
             }
         }
         table thead td {
@@ -1029,23 +1018,50 @@
             }
         }
         table tbody td {
-            justify-content: end;
+            @include mq-max("md") {
+                height: 100%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+            }
             &:first-child {
                 border-bottom: none;
                 @include mq-max("sm") {
                     min-width: 14rem;
                 }
             }
-            p {
-                max-width: calc(100% - 5rem);
-                width: 100%;
-            }
             .p-byclehoten-pay-temporary {
                 max-width: 5rem;
                 width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: #ffe8dc;
+                @include mq-max("md"){
+                    max-width: 3.5rem;
+                }
+                @include mq-max("sm"){
+                    max-width: 5rem;
+                }
                 p {
                     max-width: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .p-bycle-table_course{
+        table tbody tr{
+            @include mq-max("md"){
+                height: 3.5rem;
+            }
+            td:first-child{
+                justify-content: space-between;
+                padding: 0;
+                p{
+                    width: 100%;
+                    text-align: center;
                 }
             }
         }
@@ -1069,7 +1085,8 @@
         }
     }
 }
-// タブ4
+/*　----------------------　*/
+/*　タブ切り替え　自転車ロードサービス　*/
 .tab4.bycle-roadservice {
     .bycle-roadservice__block01 {
         &__box {
@@ -1199,3 +1216,4 @@
         height: 1rem;
     }
 }
+/*　-------------------------　*/
