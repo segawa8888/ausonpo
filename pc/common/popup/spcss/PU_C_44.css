@@ -1,0 +1,59 @@
+@charset "UTF-8";
+body {
+	width: 100%;
+	text-align: left;
+	background: none;
+	line-height: 1.5;
+	font-size: 15px;
+	font-family: "Open Sans", "ü‡ÉSÉVÉbÉNëÃ", "Yu Gothic", YuGothic, "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, sans-serif;
+	color: #464646;
+}
+
+.centering{
+	text-align:center
+}
+
+.box_style_head{
+    word-break: break-all;
+    line-height: 1.3em;
+    font-size: 1em;
+    padding: 12px;
+    border: 1px solid #000;
+}
+
+.box_style{
+    word-break: break-all;
+    line-height: 1.3em;
+    font-size: 1em;
+    padding: 2px;
+    padding-left: 8px;
+    border: 1px solid #000;
+}
+
+.indent_1em{
+	text-indent: 1em;
+}
+
+.table_deco{
+	border: solid 1px black;
+	background-color:white;
+	border-collapse:collapse;
+}
+
+.margin_b{
+	margin-bottom:1em;
+}
+.maintitle{
+	margin:0 auto 30px;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	color: #003366;
+	background-color: #def;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.tx_area {
+	margin:0 20px;
+}

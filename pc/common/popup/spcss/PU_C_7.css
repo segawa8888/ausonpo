@@ -1,0 +1,62 @@
+#content_c07_07 > .tx_area > .Nm_circle {
+	margin-left: 1.5em;
+	text-indent: -1em;
+}
+
+#content_c07_07 > .tx_area > .Nm_title {
+	margin-left: 1.5em;
+	text-indent: -0.5em;
+}
+
+#content_c07_07 > .tx_area > .last {
+	font-weight:bold;
+}
+
+#content_c07_07 > .tx_area > .Nm_title > .IRoHa {
+	margin-bottom:0;
+	margin-left: 15px;
+	text-indent: -1.5em;
+}
+
+#content_c07_14 > .tx_area > .contact {
+	margin-left: 10px;
+}
+
+#content_c07_14 > .tx_area > .contact > .time {
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+#content_c07_09 ul li {
+	list-style: none;
+	margin-left: 1.5em;
+	text-indent: -1em;
+}
+
+table.pu_c_48{
+    border: 1px solid #000;
+    margin-bottom: 1em;
+}
+table.pu_c_48 th, table.pu_c_48 td{
+    padding: 0.3em;
+    border: 1px solid #000;
+}
+table.pu_c_48 th{
+    text-align: center;
+    padding: 0.3em 4em;
+}
+#content_c07_11 p.last{
+    margin-left: 1em;
+    text-indent: -1em;
+}
+
+@media (max-width: 767px){
+    table.pu_c_48{
+        width: 100%;
+        max-width: ;
+    }
+    table.pu_c_48 th{
+        padding: 0.3em;
+        width: 50%;
+    }
+}
