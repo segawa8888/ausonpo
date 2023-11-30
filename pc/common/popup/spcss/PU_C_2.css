@@ -1,0 +1,111 @@
+body{ margin:0;}
+
+#dangerous_occupation{
+    margin:0;font-size:15px;line-height:1.8;font-family: 'メイリオ','Meiryo','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック', arial,helvetica,clean,sans-serif;color:#000;
+}
+#dangerous_occupation .instance_title_7 {
+    background-color: #EC5601;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px auto 10px;
+}
+#dangerous_occupation h2 {
+    padding: 0 10px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: normal;
+    margin:0;
+    text-align: left;
+}
+#dangerous_occupation p{
+    margin:0;
+    padding:0;
+}
+#dangerous_occupation ul{
+    margin:0;
+    padding:0;
+}
+#dangerous_occupation li {
+    list-style-type: none;
+}
+#dangerous_occupation .row_interval {
+    margin-top: 0.6em;
+}
+#dangerous_occupation .indent1 {
+    text-indent: -1em;
+    margin-left: 1em;
+}
+#dangerous_occupation .indent28 {
+    text-indent: -2.8em;
+    margin-left: 2.8em;
+}
+#dangerous_occupation .indent43 {
+    margin-left: 4em;
+    text-indent: -3em;
+}
+#dangerous_occupation .blue_bold_txt {
+    color: #2D8CB2;
+    font-weight: bold;
+}
+#dangerous_occupation .instance_inner_part2 {
+    padding: 0 8px;
+}
+#dangerous_occupation .instance_title_7 div{
+	padding:8px 0 !important;
+	max-width: 910px;
+    margin:0 auto;
+    text-align: left;
+    line-height: 22px;
+    font-size: 16px;
+}
+#dangerous_occupation .instance_inner_PUC2popup {
+    max-width: 910px;
+    margin: 0 auto;
+}
+#document_no {
+    text-align: right;
+}
+/*閉じるボタン*/
+div#floteArea {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+div#floteArea a {
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+div#floteArea .close_float {
+    padding: 4px 0 2px;
+    text-align: center;
+    background: #585657;
+}
+	@media screen and (max-width:768px) and ( max-width:919px){
+		#dangerous_occupation .instance_inner_part2 {
+    		padding: 0 1.5em;
+		}
+		#dangerous_occupation .instance_title_7 h2{
+			padding:0 15px 0 2.5% !important;
+		}
+	}
+	@media screen and (max-width:767px){
+		#dangerous_occupation .instance_title_7{
+			width:100%;
+			max-width:100%;
+			padding:0;
+		}
+		#dangerous_occupation .instance_title_7 h2{
+			font-weight:normal !important;
+			padding:0 15px 0 1em !important;
+		}
+		#dangerous_occupation .instance_inner_part2{
+    		padding: 0 1em;
+		}
+	}

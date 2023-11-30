@@ -1,0 +1,60 @@
+#pup3 table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#pup3 #floteArea {
+	bottom: 0;
+	height: auto;
+	left: 0;
+	position: fixed !important;
+	width: 100%;
+}
+#pup3 fieldset,
+#pup3 img {
+	border: 0 none;
+}
+#pup3 #floteArea a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#pup3 .close_float {
+	background:#99cc66;
+	background-size:10px 4px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+}
+
+/*
+ * --- 各ページ毎スタイル [overwrite] ---
+ */
+#description div.caption0,
+#description div.caption1{
+	background: #965F4B;
+}
+#description div.caption2{
+	background: #ffdcbe;
+}
+#description div.caption2 .box{
+	border:1px solid #ddba9c;
+}
+#description div.caption3{
+	color:#662f1b;
+}
+#description .strong-bg{
+	background: #ffefd7;
+}
+#description .strong-border1{
+	border: 1px solid #965F4B;
+}
+#description .strong-color1{
+	color:#965F4B;
+}
+#description .strong-color2{
+	color:#984807;
+}

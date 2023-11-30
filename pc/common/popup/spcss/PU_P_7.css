@@ -1,0 +1,59 @@
+.accordionBlock_pet_camp{
+max-width: 640px;
+margin: 0px auto;
+}
+
+.accordionBlock_pet_camp img{
+max-width: 100%;
+}
+
+.pet_camp_in{
+max-width: 600px;
+margin: 0px auto;
+padding:0 10px;
+}
+
+.pet_camp_title{
+background-color:#dad7d6;
+border:2px solid #c8c6c5;
+}
+
+.pet_camp_title p{
+font-weight:bold;
+color:#231815;
+font-size:1.375rem;
+}
+
+.pet_camp_sub, .pet_camp_sub1, .pet_camp_sub2{
+text-align:left;
+color:#231815;
+}
+
+.pet_camp_sub{
+margin:15px 0;
+}
+
+.pet_camp_sub1{
+font-weight:bold;
+font-size:0.9375rem;
+}
+
+.pet_camp_sub2{
+font-size:0.875rem;
+}
+
+.pet_camp_sub ul li{
+list-style:none;
+margin-bottom:8px;
+font-size:0.875rem;
+text-indent:-0.6em;
+margin-left:1em;
+}
+
+.pet_bold{
+font-weight:bold;
+}
+
+.pet_small{
+font-size:0.75rem;
+}

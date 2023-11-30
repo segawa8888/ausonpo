@@ -1,0 +1,137 @@
+h3 {
+	text-align:center;
+	background-color:#16365C;
+	border:none;
+	font-weight:bold;
+	color:#fff;
+	font-size:120%;
+	padding:5px;
+}
+
+.top_list li {
+	padding:5px;
+	font-size:120%;
+}
+
+#content_c03_01 .form_title,
+#content_c03_01 table.tel th.cian_area{
+	background-color:#538DD5;
+	font-weight:bold;
+	color:#fff;
+	font-size: 120%;
+}
+.hoken_list dl{
+	text-align:left;
+	margin-bottom:1em;
+}
+.hoken_list dt{
+	font-size:120%;
+	font-weight:bold;
+}
+#content_c03_01 table.customer_table td {
+	border:none;
+}
+.customer_title{
+	font-size:130%;
+	font-weight:bold;
+}
+.customer_table .customer_tel{
+	font-size:150%;
+}
+.customer_table .customer_vat,
+#content_c03_01 table.tel td.customer_vat{
+	vertical-align:top;
+}
+#toi_form{
+	margin:0 auto;
+	background-color:#D99694;
+	border:2px solid #385D8A;
+	text-align:center;
+	padding:5px;
+	color:#fff;
+	width:14em;
+	border-radius: 5px;
+}
+#toi_form a{
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#content_c03_01 .tx_area {
+	padding: 0px;
+}
+
+#content_c03_01 p.accident_txt{
+	font-size: 130%;
+	background-color: #538DD5;
+	margin-top: 20px;
+	margin-bottom:0px;
+	width: 30%;
+	padding: 5px 0px 5px 15px;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.traffic_txt,
+.other_txt{
+	position:relative;
+	padding:2px 0;
+	cursor:pointer;
+	border-top:1px solid #153111;
+	border-bottom:1px solid #153111;
+}
+
+.traffic_txt{
+	background-color:#69b076;
+}
+
+.traffic_txt:hover{
+	opacity:0.8;
+}
+
+.other_txt{
+	background-color:#98d98e;
+}
+
+.other_txt:hover{
+	opacity:0.8;
+}
+
+.customer-center{
+	width: 90%;
+	margin: 0 auto 0 3em;
+}
+
+
+.margin10{
+	margin:10px;
+}
+
+.roadservice_txt{
+	width: 55%;
+	margin: 0px auto;
+}
+
+.indent1{
+	text-indent:-1em;
+	margin-left:1em;
+}
+
+.margin1{
+	margin-left:1em;
+}
+
+#document_no {
+	margin-top:0px;
+	margin-bottom: 20px;
+}
+
+#content_c03_01 table.tel td.hoken_list {
+    padding: 10px 5px;
+    vertical-align:top;
+}
+
+#content_c03_01 table.tel td ul.small li{
+	font-size:90%;
+}
