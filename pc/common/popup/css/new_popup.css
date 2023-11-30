@@ -1,0 +1,1357 @@
+body {
+    font-family: メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", arial, helvetica, clean, sans-serif;
+}
+.instance_inner_newpopup a{
+    color: #00009e;
+}
+.instance_title_1 {
+    max-width: 980px !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    background-color: #ec5601 !important;
+    padding: 8px 2.5em !important;
+    margin-bottom: 10px !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+    line-height: 1.5 !important;
+    margin: 10px auto 15px !important;
+}
+.instance_title_7_popup {
+    margin: 20px auto 10px!important;
+    background-color: #EC5601;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    font-size: 16px;
+}
+.instance_title_7_popup > div {
+	max-width: 880px;
+	margin:0 auto;
+    text-align: left;
+    line-height: 22px;
+    font-size: 16px;
+    padding: 8px 0 !important;
+}
+
+.instance_title_7_popup {
+	margin: 20px auto 10px!important;
+}
+.instance_title_7_popup h2{
+    font-weight:normal !important;
+    padding:0 2.8em !important;
+}
+.instance_title_7_popup p{
+    font-weight:normal !important;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+.instance_title_7_popup div{
+    padding:8px !important;
+}
+
+.instance_inner_newpopup{
+    max-width: 880px;
+    margin: 0 auto;
+}
+.instance_inner_newpopup_part2{
+    padding:0;
+}
+.instance_inner_newpopup_part2_1{
+    border-bottom: dotted;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+.instance_inner_newpopup_number{
+    max-width: 980px;
+    margin: 0 auto;
+}
+#document_no {
+    text-align: right;
+}
+#document_no{text-align:right; }
+div#floteArea {position: fixed !important;bottom: 0;left: 0;width: 100%;font-size: 15px;line-height: 1.8;z-index:999;}
+div#floteArea a {font-weight: bold;color: #FFF;text-decoration: none;font-size: 24px;font-weight: bold;font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;}
+div#floteArea .close_float {padding:4px 0 2px;text-align: center;background: #585657;}
+
+/*補償内容・保険料の一覧（Bycle）*/
+.page3 p{
+    color:#333;
+}
+.PUS30_txt0{
+    font-weight:bold !important;
+}
+.PUS30_txt1{
+    margin-bottom:0.8em !important;
+    margin-top:0.8em !important;
+}
+.PUS30_txt2{
+    font-size:13px !important;
+    color:#000;
+}
+sup {
+    font-weight: normal!important;
+}
+.br_pc_hide {
+    display:none;
+}
+.br_pc_show{
+    display:block;
+}
+.br_sp_show {
+    display: none;
+}
+.fs16 {
+    font-size: 16px;
+}
+.fs20 {
+    font-size: 20px;
+}
+.orange2 {
+    color: #eb5505;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.gray {
+    color: #3d3c3c;
+}
+.notice {
+    font-size: 80%;
+}
+#page_contents .hosyo_ttl_img{
+    max-width:27%;
+    margin:0 auto;
+}
+#page_contents .hoshou_title {
+    text-align: center;
+    border-top: 1px solid;
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+#page_contents .hoshou_title p {
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    background-color: #FFF;
+    font-weight: bold;
+}
+
+.page3 #page_contents .table_bg {
+    background: none;
+    clear: both;
+}
+.page3 #page_contents .table table td {
+    font-size: 16px;
+}
+.page3 #page_contents .table .text02 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.page3 #page_contents .table ul.notice li {
+    font-size: 13px;
+}
+.page3 #page_contents .table_top_text {
+    text-align: left;
+    display: block!important;
+    padding: 0px!important;
+    margin-bottom: 10px!important;
+}
+.page3 #page_contents .table .vertical {
+    height: auto;
+    width: 230px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:#333;
+}
+.page3 #page_contents .table2 td.left {
+    padding-left: 0px!important;
+    text-align: center;
+    color:#333;
+}
+.page3 #page_contents .table .vertical img {
+    width: 145px;
+    margin: 0 auto;
+    display: block;
+}
+.page3 #page_contents .table .vertical p:nth-of-type(1) {
+    margin-top: 15px;
+}
+.page3 #page_contents .table2 tr:nth-of-type(1) td.bg01{
+    color:#000;
+}
+.page3 #page_contents .table2 tr:nth-of-type(1) td.bg01 span {
+    font-size: 1.2em;
+}
+.page3 #page_contents .table .vertical a + p {
+    font-size: 13px;
+    margin-top: 8px;
+}
+.page3 #page_contents .table .vertical p {
+    width: auto !important;
+    margin-left: 0em;
+    font-weight: bold;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    text-align: center;
+}
+.page3 #page_contents .table_top_text2 {
+    margin-bottom: -10px!important;
+}
+#page_contents .table .text03 span.notice {
+    font-size: 12px;
+    text-align: right;
+    display: block;
+    font-weight: normal;
+}
+#page_contents .table ul.notice li {
+    margin-bottom: 5px;
+}
+.page3 #page_contents .table ul.notice li {
+    font-size: 13px;
+}
+.page3 #page_contents .table .text03 span.notice {
+    font-size: 13px;
+    text-indent: -2em;
+}
+.page3 #page_contents .table_arrow {
+    text-align: center;
+    background: url(/pc/common/img_20170606/pc/bycle/arrow.png) center top no-repeat;
+    height: 90px;
+    color: #eb5400;
+    font-size: 34px!important;
+    padding-top: 10px;
+    display: block!important;
+}
+#page_contents .table table tr:nth-of-type(1) td.bg_white {
+    color: #000;
+}
+#page_contents .table {
+    max-width: 980px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    clear: both;
+}
+
+#page_contents .table table {
+    border: solid 4px #ea5504;
+    width: 100%;
+}
+#page_contents .table table td {
+    border: solid 1px #ea5504;
+    border-right: 2px solid #ea5504;
+    border-left: none;
+    width: 20%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#page_contents .table .text02 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#page_contents .table .text03 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+#page_contents .table .text03 p {
+    padding: 0.5em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1;
+    margin-right: 15px;
+}
+.page3 #page_contents .table .text02 span:nth-of-type(1) {
+    border-bottom: 1px solid #333;
+}
+#page_contents .table2 td {
+    width: auto !important;
+}
+.page3 #page_contents .table table td .sup {
+    font-size: 0.8em;
+    position: relative;
+    top: -0.5em;
+    font-weight: normal;
+}
+#page_contents .table .text02 img {
+    width: 2em;
+}
+#page_contents .table .table_pc td img {
+    width: 1em;
+    margin-left: 0.5em;
+    margin-bottom: 0.3em;
+}
+#page_contents .table table td.bg_white {
+    background-color: #FFFFFF;
+    font-size: 16px;
+    color: #000;
+    padding-left: 1em;
+}
+#page_contents .table table td.brown {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    background-color: #DD9161;
+    color: #000000;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#page_contents .table table td.bg_brown {
+    background-color: #FBF5F2;
+    font-size: 14px;
+    color: #333;
+    height: 4em;
+    text-align: right;
+    padding-right: 0.5em;
+}
+#page_contents .table table td.silver {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    background-color: #D4D3C7;
+    color: #000000;
+}
+#page_contents .table table td.bg_silver {
+    background-color: #F1F2EE;
+    font-size: 14px;
+    color: #333;
+    height: 4em;
+    padding-right: 0.5em;
+    text-align: right;
+}
+#page_contents .table table td.gold {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    background-color: #DACF67;
+    color: #000000;
+}
+#page_contents .table table td.bg_gold {
+    background-color: #F9F8F2;
+    font-size: 14px;
+    color: #333;
+    padding-right: 0.5em;
+    text-align: right;
+}
+#page_contents .table table td .bg_orange3 {
+    background-color: #ea5504;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding-left: 0em;
+    font-weight: bold;
+    height: 2em;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100em;
+    text-align: center;
+}
+#page_contents .table table td.mark {
+    text-align: center;
+}
+#page_contents .table ul.notice {
+    margin-left: 2em;
+}
+#page_contents .table ul.notice li {
+    margin-bottom: 5px;
+    text-indent: -2em;
+}
+
+.page3 img {
+    width:100%;/*IE対策*/
+}
+
+/*補償内容・保険料の一覧（BycleBest）*/
+.byclebest_bg{
+    background-color: #f0f7fc !important;
+}
+.bg_white2{
+    background-color:#fff !important;
+}
+.blue2{
+    color: #047cd8 !important;
+}
+.white1{
+    color:#fff !important;
+    background: url(/pc/common/img_20170606/pc/byclebest/arrow.png) center top no-repeat !important;
+    margin-top:-1px;
+}
+#page_contents .table .byclebest {
+    border: solid 4px #047cd8 !important;
+    width: 100%;
+}
+#page_contents .table .byclebest td {
+    border: solid 1px #047cd8 !important;
+    border-right: 2px solid #047cd8 !important;
+}
+.bg_blue3 {
+    background-color: #047cd8 !important;
+}
+/*補償内容・保険料の一覧（日常の事故）*/
+.hosyo_ttl_img{
+    max-width:27%;
+    margin:0 auto;
+}
+.block_bg_orange {
+    width: 100%;
+    padding:0;
+}
+.top_title2 {
+    color: #e6551e;
+    font-size: 34px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom:10px;
+    text-align: center;
+}
+.top_title2 img {
+    margin-bottom: 5px;
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    outline: medium none;
+    vertical-align:middle;
+}
+.container_new {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.block_table {
+    margin-bottom: 50px;
+}
+.block_table .title_table_block {
+    color: #f05600;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: #f05600 7px solid;
+    padding: 5px 0 5px 20px;
+    margin: 0px 0px 10px;
+}
+.premium_table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    width: 100%;
+    padding-left:0.4em;
+    padding-right:0.4em;
+}
+.premium_table .col1 {
+    width: 25%;
+}
+.premium_table .col2 {
+    width: 25%;
+}
+.premium_table th {
+    color: #FFF;
+    height: 2.5em;
+    text-align: center;
+}
+.premium_table td {
+    font-size: 14px;
+    font-weight: bold;
+    height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    color: #595757;
+}
+.premium_table th.coverage02 {
+    background-color: #f05600;
+    border: 2px solid #f05600;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.premium_table th.bronz {
+    background-color: #fff;
+    border: 2px solid #d87255;
+    color: #CE3123;
+    font-weight: bold;
+    text-decoration: none;
+}
+.premium_table td.bronz {
+    text-shadow: 1px 0px 0px #FFF;
+    border-right: 1px solid #d29d72;
+    border-bottom: 1px solid #d29d72;
+    background-color: #ffead8;
+}
+.premium_table th.silver {
+    text-shadow:none;
+    border: 2px solid #8c8585;
+    color: #000;
+    font-weight: bold;
+    background-color: #fff;
+}
+.premium_table .silver {
+    text-shadow: 1px 0px 0px #FFF;
+    border-right: 1px solid #b1adad;
+    border-bottom: 1px solid #b1adad;
+    background-color: #ececec;
+}
+.premium_table th.gold {
+    border: 2px solid #bba64c;
+    color: #9E6A13;
+    background-color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow:none;
+}
+.premium_table .gold {
+    border-right: 1px solid #b9b587;
+    border-bottom: 1px solid #b9b587;
+    background-color: #fdf4cc;
+    text-shadow: 1px 0px 0px #FFF;
+}
+.premium_table td.coverage {
+    background-color: #FFF;
+    border-bottom: 1px solid #5771b9;
+    border-right: 1px solid #5771b9;
+    border-left: 1px solid #5771b9;
+    font-weight: normal;
+    cursor:default !important;
+}
+.block_table .table_list {
+    color: #474643;
+    line-height: 1.5;
+    padding-left:0.6em;
+    padding-right:0.6em;
+}
+.block_table .table_list li {
+    padding-top: 10px;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+.td_center{
+    padding:10px 5px;
+}
+/*補償内容・保険料の一覧（サイクルパートナー）*/
+.popup_top_ttl_img{
+    max-width:980px;
+    margin:25px auto;
+}
+.popup_top_ttl_img p{
+    text-align: center;
+}
+.popup_inner{
+    max-width:980px;
+    margin: 0 auto;
+    padding:0 0.4em;
+}
+.popup_inner table {
+    border-collapse: collapse;
+    border: 1px solid #dadada;
+    width: 100%;
+    background-color: #ffffff;
+}
+.popup_inner table th {
+    height: 100%;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+.popup_inner table td {
+    border: 1px solid #dadada;
+    height: 80px;
+    padding: 0 20px;
+    font-size: 17px;
+    vertical-align: middle;
+    position: relative;
+}
+.popup_inner table td span {
+    font-size: 13px;
+    display: block;
+}
+.popup_inner table th img {
+    vertical-align: middle;
+}
+.popup_inner table th.t {
+    border-right: 1px solid #dadada;
+}
+.popup_inner table th.t h2 {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f09dc1;
+    display: inline-block;
+    vertical-align: middle;
+}
+.popup_inner table th.t h2 i {
+    font-size: 13px;
+    display: block;
+    font-style: normal;
+}
+.popup_inner table td.h {
+    padding: 0;
+}
+.popup_inner table td.h p {
+    padding:20px;
+    height: 100%;
+    display: block;
+    position: relative;
+    color: #333333;
+}
+.popup_inner table th.single {
+    background-color: #33b2c7;
+}
+.popup_inner table th.single img {
+    margin-right: -15px;
+}
+.popup_inner table th.family {
+    background-color: #f18a4c;
+}
+.popup_inner table th.single, .popup_inner table th.family {
+    width: 280px;
+    text-align: center;
+    padding: 10px 0;
+}
+.popup_inner table th.single span, .popup_inner table th.family span {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 78px;
+    vertical-align: middle;
+}
+.popup_inner table th.single p, .popup_inner table th.family p {
+    font-size: 11px;
+    color: #ffffff;
+    font-weight:bold;
+}
+.popup_inner table td.price, .popup_inner table td.single, .popup_inner table td.family {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color:#333;
+}
+.skyblue{
+    color:#33b2c7 !important;
+}
+.mais_orange{
+    color:#f18a4c !important;
+}
+.popup_inner .tb {
+    margin: 10px 0 40px 0;
+    position: relative;
+}
+.popup_inner .tb .at {
+    font-size: 13px;
+    position: relative;
+    text-indent: -1.8em;
+    padding-left: 1.8em;
+}
+.popup_inner .tb .at + .at {
+    margin-top: 3px;
+}
+.popup_inner .tb .at2 {
+    text-indent: -2em;
+    padding-left: 2em;
+}
+.gray2{
+    color: #333333;
+}
+.td_txt1{
+    padding-top: 37px !important;
+}
+/*補償内容・保険料の一覧（サイクルlight）*/
+.cyclelight table th.t h2 {
+    color: rgb(51, 51, 51);
+}
+.cyclelight table th.t h2 p {
+    margin-top: 5px;
+    color: #fac300;
+    font-weight: bold;
+    font-size: 15px;
+}
+.cyclelight table th.single {
+    background-color: #40b4d1;
+}
+.cyclelight table th.family {
+    background-color: #8bba20;
+    position: relative;
+}
+.cyclelight table td.price, .cyclelight table td.single, .cyclelight table td.family{
+    font-size: 23px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.cyclelight table td.price .cb img {
+    margin-right: 5px;
+    vertical-align: baseline;
+}
+.cyclelight table td.price .cb {
+    color: #fac300;
+    margin-top: 5px;
+    margin-left: -35px;
+}
+.skyblue2{
+    color: #40b4d1 !important;
+}
+.light_green{
+    color: #8bba20 !important;
+}
+.cyclelight table th.family .i2 {
+    position: absolute;
+    z-index: 998;
+    top: 2px;
+    right: -80px;
+}
+.br_sp_show2{
+    display:none;
+}
+#cyclelight_table{
+    width:92%;
+}
+@media screen and (max-width: 1160px){
+    /*補償内容・保険料の一覧（サイクルlight）*/
+    .cyclelight table th.family .i2 {
+        top: -15px;
+        right: -8%;
+    }
+    .cyclelight table th.family .i2 img {
+        width: 90px;
+        height: auto;
+    }
+    #cyclelight_table{
+        width:98%;
+    }
+}
+@media screen and (max-width: 1020px){
+    /*補償内容・保険料の一覧（サイクルlight）*/
+    .cyclelight table th.family .i2 {
+        top: -20px;
+        right: -4%;
+    }
+}
+@media screen and ( max-width:938px){
+    .br_sp_show2{
+        display: block;
+    }
+    .td_txt1 {
+        padding:40px 5% 0 5%  !important;
+    }
+    .td_txt2{
+        padding: 40px 5% 0 5% !important;
+    }
+    .td_txt3{
+        padding: 25px 5% 0 5% !important;
+    }
+    /*補償内容・保険料の一覧（サイクルlight）*/
+    .cyclelight table td{
+        font-size: 15px;
+        padding:0 2%;
+    }
+    .cyclelight table td.h p{
+        font-size: 15px;
+        padding:20% 3%;
+    }
+    .cyclelight table td.price, .cyclelight table td.single, .cyclelight table td.family{
+        font-size: 19px;
+    }
+    .cyclelight table th.single, .cyclelight table th.family {
+        padding: 10px;
+        width: 160px;
+    }
+    .cyclelight table th.t h2 {
+        font-size: 17px;
+    }
+    .cyclelight table th.t img {
+        width: 50px;
+        height: auto;
+    }
+    .cyclelight table th.single,.cyclelight table th.family {
+        padding: 10px;
+        width: 160px;
+    }
+    .cyclelight table th.single .icon, .cyclelight table th.family .icon {
+        width: 40px;
+        height: auto;
+    }
+    .cyclelight table th.single img {
+        margin-right: -10px;
+    }
+    .cyclelight table th.single span, .cyclelight table th.family span {
+        font-size: 19px;
+        line-height: 60px;
+    }
+    .cyclelight table th.single, .cyclelight table th.family {
+        padding: 10px;
+        width: 160px;
+    }
+    .cyclelight table th.family .i2 {
+        top: -20px;
+        right: -4%;
+    }
+    .cyclelight table th.family .i2 img {
+        width: 90px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:768px) and ( max-width:919px){
+    .instance_title_7_popup p{
+        padding-left:0.8em;
+    }
+    .instance_inner_newpopup_part2{
+        padding-left:1.3em;
+    }
+    /*補償内容・保険料の一覧（サイクルパートナー）*/
+    .popup_inner table th.t img {
+        width: 50px;
+        height: auto;
+    }
+    .popup_inner table th.t h2 {
+        font-size: 17px;
+    }
+    .popup_inner table td {
+        font-size: 15px;
+    }
+    .popup_inner table td.h p {
+        padding-top: 26px;
+    }
+    .popup_inner table th.single, .popup_inner table th.family {
+        padding: 10px;
+        width: 160px;
+    }
+    .popup_inner table th.single .icon, .popup_inner table th.family .icon {
+        width: 40px;
+        height: auto;
+    }
+    .popup_inner table th.single img {
+        margin-right: -10px;
+    }
+    .popup_inner table th.single span, .popup_inner table th.family span {
+        font-size: 19px;
+        line-height: 60px;
+    }
+    .popup_inner table td.price, .popup_inner table td.single, .popup_inner table td.family {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .instance_title_1 {
+        padding: 8px 8px !important;
+    }
+    .instance_title_7_popup{
+        width:100%;
+        max-width:100%;
+        padding:0;
+    }
+    .instance_title_7_popup h2{
+        font-weight:normal !important;
+        padding:0 15px 0 8px !important;
+    }
+    .instance_title_7_popup p{
+        font-weight:normal !important;
+        padding:0 15px 0 8px !important;
+    }
+    .instance_inner_newpopup{
+        padding:0 1em;
+    }
+    /*補償内容・保険料の一覧（Bycle）*/
+    .PUS30_txt0{
+        font-weight:bold !important;
+    }
+    .PUS30_txt2{
+        font-size:12px !important;
+    }
+    .PUS30_txt3{
+        width:8.5em!important;
+    }
+    .PUS30_img{
+        margin-right:0 !important;
+    }
+    .PUS30_img2{
+        max-width:95% !important;
+        margin:0 auto;
+    }
+    .br_pc_hide {
+        display:block;
+    }
+    .br_pc_show{
+        display:none;
+    }
+    .br_sp_show {
+        display: block;
+    }
+    .table_top_text2{
+        margin-top:1em;
+    }
+    #page_contents .hosyo_ttl_img {
+        max-width: 70%;
+    }
+    #page_contents .hoshou_title {
+        margin-top: 35px;
+    }
+    #page_contents .hoshou_title p {
+        font-size: 18px;
+    }
+    #page_contents .table {
+        max-width: 980px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        clear: both;
+    }
+    
+    .page3 #page_contents .table {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #page_contents .table .text02 img {
+        width: 1.5em;
+    }
+    .page3 #page_contents .table .text02 {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    #page_contents .table table.table_pc td {
+        font-size: 0.8em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    #page_contents .table table.table_pc td .fs16 {
+        font-size: 1em;
+        margin-left: -0.8em;
+    }
+    #page_contents .table table.table_pc td.obi {
+        padding: 0px;
+        background:#ea5504;
+    }
+    #page_contents .table table.table_pc td .bg_orange3 {
+        font-size: 1em;
+    }
+    #page_contents .table table tr:last-child td.mark {
+        text-align: left;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    #page_contents .table .text03 {
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    #page_contents .table .text03 p {
+        padding: 0em;
+        font-size: 1em;
+        display: inline-block;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-right: 15px;
+    }
+    .page3 #page_contents .table table td {
+        font-size: 12px!important;
+    }
+    .page3 #page_contents .table .text02 span:nth-of-type(1) {
+        font-size: 16px;
+    }
+    .page3 #page_contents .table table.table_pc td:nth-of-type(1) {
+        width: 30%;
+        padding-left:0.5em;
+        padding-right:0.5em;
+    }
+    .page3 #page_contents .table ul.notice {
+        margin-left: 2em!important;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .page3 #page_contents .table ul.notice li {
+        font-size: 12px;
+        line-height:1.5;
+    }
+    .page3 #page_contents .table_top_text {
+        font-size: 14px!important;
+        padding-left: 0.5em!important;
+    }
+    .page3 #page_contents .table .vertical img {
+        width: 80%;
+    }
+    .page3 #page_contents .table2 td.left {
+        width: 5em!important;
+        text-align: center;
+        padding: 0px!important;
+        height: 80px!important;
+    }
+    .page3 #page_contents .table .vertical p {
+        font-size: 13px;
+        margin-top: 10px!important;
+    }
+    .page3 #page_contents .table table td.bg_brown {
+        padding-right: 0.2em;
+    }
+    #page_contents .table table td.brown {
+        width: 70px!important;
+    }
+    .page3 #page_contents .table .vertical {
+        width: 30%!important;
+    }
+    #page_contents .table table td.silver {
+        width: 70px!important;
+    }
+    #page_contents .table table td.gold {
+        width: 70px!important;
+    }
+    .page3 #page_contents .table .vertical a + p {
+        font-size: 12px;
+        width: 95%!important;
+        margin: 0 auto;
+    }
+    .page3 #page_contents .table_arrow {
+        height: 70px;
+        background-size: 60%;
+        font-size: 20px !important;
+        padding-top: 20px;
+    }
+    .page3 #page_contents .table .text03 span.notice {
+        font-size: 12px!important;
+        margin-top:1em;
+    }
+    #page_contents .table .text03 span.notice {
+        font-size: 0.65em!important;
+    }
+
+    /*補償内容・保険料の一覧（BycleBest）*/
+    .white1{
+        height: 70px !important;
+        background-size: 70% !important;
+        font-size: 20px!important;
+        padding-top: 5px !important;
+    }
+    /*補償内容・保険料の一覧（日常の事故）*/
+    .top_title2 {
+        color: #ea5504;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding-top:20px;
+        padding-bottom:5px;
+    }
+    .top_title2 img {
+        margin-bottom:0;
+        border: 0 none;
+        height: auto;
+        width: 3%;
+        outline: medium none;
+        vertical-align:middle;
+    }
+    .container_new {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+    }
+    .block_table {
+        margin-bottom: 32px;
+    }
+    .block_table .title_table_block {
+        font-size: 15px;
+        border-left: #f05600 4px solid;
+        padding: 7px 0 5px 10px;
+        margin-bottom: 5px;
+    }
+    .premium_table .col1 {
+        width: 34%;
+    }
+    .premium_table .col2 {
+        width: 22%;
+    }
+    .block_table .table_list {
+        margin-top: 13px;
+        font-size: 10px;
+    }
+    .block_table .table_list li {
+        margin-top: 5px;
+    }
+    .premium_table td.coverage {
+        font-weight: normal;
+        font-size: 80%;
+        text-align: left;
+        padding-left:5px;
+        padding-right:1px;
+    }
+    .td_center{
+        padding:0 1px;
+    }
+    .premium_table th.coverage02 {
+        font-size:15px;
+    }
+    .premium_table th.bronz {
+        font-size:15px;
+    }
+    .premium_table th.silver {
+        font-size: 15px;
+    }
+    .premium_table th.gold {
+        font-size: 15px;
+    }
+    /*補償内容・保険料の一覧（サイクルパートナー）*/
+    .s03sp {
+        display: block;
+        background-color: #33b2c7;
+        padding: 5px;
+    }
+    .s03sp .inner .head {
+        position: relative;
+        cursor: pointer;
+    }
+    .s03sp .inner .head h3 {
+        font-size: 21px;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 50px;
+        margin-left: 5px;
+        margin-top:0;
+        margin-bottom:0;
+    }
+    .s03sp .inner .head h3 img {
+        vertical-align: middle;
+    }
+    .s03sp .inner .body {
+        margin-top: 10px;
+        display: none;
+    }
+    .s03sp .inner .body .block {
+        background-color: #ffffff;
+        padding: 10px 5px;
+    }
+    .s03sp .inner .body .t_link {
+        margin-bottom: 10px;
+    }
+    .s03sp .inner .body .t_link p {
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-size: 11px;
+        padding: 10px 5px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        color: #ffffff;
+        background-color: #33b2c7;
+        vertical-align: middle;
+    }
+    .s03sp .inner .body .block h2 {
+        font-size: 17px;
+        font-weight: bold;
+        color: #f09dc1;
+        line-height: 50px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .s03sp .inner .body .block h2 img {
+        vertical-align: middle;
+    }
+    .s03sp .inner .body .block .col {
+        border: 1px solid #dadada;
+    }
+    .s03sp .inner .body .block .col + .col {
+        margin-top: 10px;
+    }
+    .s03sp .inner .body .block .col .t {
+        font-size: 17px;
+        padding: 20px 0 20px 15px;
+        border-bottom: 1px solid #dadada;
+        position: relative;
+    }
+    .s03sp .inner .body .block .col dl dt, .s03sp .inner .body .block .col dl dd {
+        margin: 0 15px;
+    }
+    .s03sp .inner .body .block .col dl + dl {
+        border-top: 1px solid #dadada;
+    }
+    .s03sp .inner .body .block .col dl dt {
+        border-bottom: 1px solid #dadada;
+        position: relative;
+        font-size: 15px;
+        padding: 19px 0;
+    }
+    .s03sp .inner .body .block .col dl dd {
+        font-size: 19px;
+        text-align: center;
+        font-weight: bold;
+        padding: 17px 0;
+    }
+    .s03sp .inner .body .block .col dl dt.w {
+        padding: 12px 0;
+    }
+    .s03sp .inner .body .block .col dl dt span {
+        display: block;
+        font-size: 13px;
+        line-height: 1;
+    }
+    .s03sp sup {
+        font-size: 75.5%;
+        vertical-align: top;
+        position: relative;
+        top: -0.1em;
+    }
+    .s03sp .inner .body .block .at {
+        font-size: 13px;
+        margin-top: 10px;
+        line-height: 1.4;
+        text-indent: -1.8em;
+        margin-left: 1.8em;
+    }
+    .s03sp .inner .body .block .at2 {
+        text-indent: -2em;
+        margin-left: 2em;
+    }
+    .s03sp .inner .body .block + .block {
+        margin-top: 10px;
+    }
+    .s03sp .inner .body .block h2 i {
+        font-style: normal;
+        font-size: 13px;
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .s03sp .inner .body .block table {
+        border-collapse: collapse;
+        border: 1px solid #dadada;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .s03sp .inner .body .block table td, .s03sp .inner .body .block table th {
+        border: 1px solid #dadada;
+    }
+    .s03sp .inner .body .block table th {
+        font-size: 15px;
+        line-height: 50px;
+        background-color: #f7f7f7;
+        width: 50%;
+        text-align: center;
+        font-weight:bold;
+    }
+    .s03sp .inner .body .block table td {
+        font-size: 19px;
+        font-weight: bold;
+        color: #33b2c7;
+        line-height: 60px;
+    }
+    .s03sp .inner .head .toggle {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .s03sp .inner .head .toggle span {
+        display: block;
+        position: absolute;
+        top: 24px;
+        width: 20px;
+        height: 2px;
+        background-color: #ffffff;
+        --webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    .s03sp .inner .head .toggle span.b01 {
+        -webkit-transform: rotate(40deg);
+        -moz-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+        -o-transform: rotate(40deg);
+        transform: rotate(40deg);
+        right: 22px;
+    }
+    .s03sp .inner .head .toggle span.b02 {
+        -webkit-transform: rotate(-40deg);
+        -moz-transform: rotate(-40deg);
+        -ms-transform: rotate(-40deg);
+        -o-transform: rotate(-40deg);
+        transform: rotate(-40deg);
+        left: 22px;
+    }
+    .s03sp .inner .head .toggle.open span.b01 {
+        right: 8px;
+    }
+    .s03sp .inner .head .toggle.open span.b02 {
+        left: 8px;
+    }
+    .s03sp.family {
+        background-color: #f18a4c;
+        margin-top: 0;
+    }
+    .s03sp.family .inner .body .t_link p {
+        background-color: #f18a4c;
+    }
+    .s03sp.family .inner .body .block table td {
+        color: #f18a4c;
+    }
+    .popup_top_ttl_img img{
+        max-width:100%;
+    }
+    /*補償内容・保険料の一覧（サイクルlight）*/
+    #cyclelight_sp .body .block h2 {
+        color: #333333;
+        line-height: 1.4;
+        padding: 10px 0;
+    }
+    #cyclelight_sp .body .block h2 p {
+        margin-top: 5px;
+        color: #fac300;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    #cyclelight_sp .body .block h2 p img {
+        margin-right: 3px;
+    }
+    #cyclelight_sp .body .block .col dl dd {
+        padding: 15px 0;
+    }
+    #cyclelight_sp .body .block .col dl dd .cb {
+        color: #fac300;
+        margin-top: 5px;
+        margin-left: -35px;
+    }
+    #cyclelight_sp .body .block .col dl dd .cb img {
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    #cyclelight_sp .body .block .at2 {
+        margin-top:0;
+    }
+    #cyclelight_sp_family .family {
+        background-color: #8bba20;
+        margin-top: 0;
+    }
+    #cyclelight_sp_family .inner .body .t_link p {
+        background-color: #8bba20;
+    }
+    #cyclelight_sp_family .body .block table td{
+        color: #8bba20;
+    }
+    #cyclelight_sp_family .ev b {
+        background-color: #dd2526;
+        color: #ffffff;
+        display: block;
+        font-size: 13px;
+        line-height: 24px;
+        width: 160px;
+        margin: 20px auto 0 auto;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -o-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -moz-border-radius: 12px;
+    }
+
+}

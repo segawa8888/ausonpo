@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+/* 青枠タイトル */
+.title_box {
+	padding: 5px;
+	margin-bottom:5px;
+}
+/* max-width:770pxの箱 */
+.inner-block {
+	width: 100%;
+	margin: 10px auto 0;
+}
+/***インデント***/
+.margin_l20 {
+	margin-left: 5px;
+}
+.margin_l36 {
+	margin-left: 22px;
+}
+/* 一番大きい文字 */
+.title_mega{
+	font-size:16px;
+}
+/* ニュース背景 */
+.back_gray.news{
+	background-color:#f2f2f2;
+	padding:8px 5px;
+}
+/***数字の箱***/
+.number_box {
+	width: 1.5em;
+	height: 1.8em;
+}
+.number_box p {
+	margin-top: -4px;
+}
+
+
+h1{display:none;}
+
+
+.bread_crumb{display:none;}
+
+/***保険金請求***/
+.hokenkinseikyuu{
+	display:none;
+}
+.hokenkinseikyuu_sp{
+	display:block;
+	border-spacing: 5px;
+	border-collapse: separate;
+}
+
+/***ポイントテーブル***/
+.point_label_tbl{
+	display:none;
+}
+/*
+.point_label_blue {
+	height: 2em;
+}
+*/
+.point_label_tbl_sp{
+	display:table;
+	border-collapse:separate;
+	border-spacing: 5px 10px;
+}
+.point_label_tbl_sp td {
+	border: 3px solid #375799;
+	border-radius: 3px;
+	background-color: #FFF;
+	text-align: left;
+}
+.preparation_txt {
+	padding: 5px 0;
+	margin-bottom: -10px;
+}
+.img_point1 {
+	padding: 5px 0px;
+}
+.img_point2_1,.img_point2_2{
+	padding-top:10px;
+}
+.img_point4_2 {
+	margin-top: -20px;
+}
+.point_wrap_in {
+    height: 9.5em;
+}
+/***お見積り（保険料）テーブル***/
+.mistumori_notice {
+	width: 96%;
+}
+.mitsumori_table_box .kirikae_txt {
+	width: 98%;
+}
+/***補償内容テーブル***/
+.world_sick_table{
+	display:none;
+}
+.world_sick_table_sp{
+	display: table;
+	width: 96%;
+	margin: 0 auto;
+}
+.world_sick_table_sp ul li{
+	padding:5px 0;
+}
+.hosyou_txt {
+	margin: 10px 5px;
+}
+.hosyou_img {
+	margin: 10px auto;
+}
+.hosyou_img1, .hosyou_img2, .hosyou_img3, .hosyou_img4, .hosyou_img5, .hosyou_img6 {
+	height: 50px;
+}
+.hosyou_img1 {
+	width: 56px;
+}
+.hosyou_img2 {
+	width: 62px;
+}
+.hosyou_img3 {
+	width: 62px;
+}
+.hosyou_img4 {
+	width: 32px;
+}
+.hosyou_img5 {
+	width: 36px;
+}
+.hosyou_img6 {
+	width: 56px;
+}
+.kaigai_ex_txt{
+	font-size:16px;
+}
+/***サービステーブル***/
+.service_table{
+	display:none;
+}
+.service_table_sp{
+	display:table;
+}
+.number_box_nagare {
+	width: 75%;
+	margin:20px auto 10px;
+}
+.nagare_txt {
+	padding-top: 6px;
+}
+.back_gray_in {
+	background-color: #F2F2F2;
+	padding: 5px;
+}
+.assistance_txt{
+	text-align:left;
+}
+.number_title.title_mega {
+	font-size: 17px;
+}
+.number_box_txt {
+	padding-left: 32px;
+	padding-top: 0px;
+}
+.service_center_in {
+	max-width: 80%;
+	width: 100%;
+	margin: 0px auto;
+}
+.service_table_sp ul{
+	padding-left:32px;
+}
+.service_table_sp ul li{
+	padding:10px 0;
+}
+.assistance_txt {
+	font-size:17px;
+}
+.service_table_img1{
+	width:100%;
+	max-width:68px;
+	height:60px;
+	margin:10px 0;
+}
+.service_table_img2{
+	width:100%;
+	max-width:35px;
+	height:60px;
+	margin:10px 0;
+}
+.assist_tbl{
+	display:none;
+}
+.assist_tbl_sp{
+	display:table;
+}
+.assistance_img1{
+	padding:10px 0;
+}
+.assistance_img2{
+	padding:10px 0;
+}
+.oversea_call{
+	width: 125px;
+	height: auto;
+}
+.denwa_kochira_btn{
+	width: 145px;
+	height: 25px;
+}
+.world_desc_txt {
+	padding: 0px 5px;
+	margin-left: 0px;
+}
+.money_big_title.assistance_pink{
+	max-width: 296px;
+}
+/***ご出発前の準備***/
+.assistant_service_tbl{
+	display:none;
+}
+.assistant_service_tbl_sp{
+	border-collapse:separate;
+	border-spacing:3px;
+}
+.assistant_service_tbl_sp td{
+	border:3px solid #375799;
+	border-radius: 3px;
+	background-color:#fff;
+}
+.assistant_service_tbl_sp{
+	display:table;
+}
+.assistant_service_tbl_sp img{
+	width:100%;
+	max-width:140px;
+}
+.tel_number {
+	margin:10px auto;
+	width: 90%;
+}
+.assistant_service_tbl_sp .free_call{
+	max-width:60px;
+	width:100%;
+}
+.tel_number ul li {
+	padding: 5px 12px;
+}
+/***料金表***/
+.pay_box {
+	width: 93%;
+	padding: 5px;
+}
+.money_big_title {
+	max-width: 195px;
+	margin: 10px auto;
+}
+.money_big_title .title_mega{
+	font-size:15px;
+}
+/***既存の上書き***/
+.mitsumori_body .mitsumori_table{
+	border-spacing: 3px 0px;
+}
+.mitsumori_body .mitsumori_table_box {
+	margin: 10px auto;
+	width: 98%;
+}
+.block_premium_case dl dt {
+	font-size: 13px;
+	padding: 5px 3px;
+}
+.mitsumori_body .mitsumori_table caption {
+	width: 96%;
+}
+.block_lower_narrow_space {
+	padding: 0px;
+}
+.premium_case_text {
+	font-size: 17px;
+}
+.block_premium_case dl {
+	width: 31.5%;
+	margin: 2px;
+}
+.block_premium_case dl dd li small {
+	font-size: 13px;
+}
+.block_premium_case .premium_case_lower_text .type_family_text {
+	font-size: 13px;
+}
+.block_assistant_service > p {
+	font-size: 17px;
+}
+.block_assistant_service {
+	padding: 0px;
+}
+.lower_title.mitsumori {
+	font-size: 15px;
+	margin: 0px auto 10px;
+}
+.lower_title {
+	padding: 9px 0px 12px;
+}
+.mitsumori_body .mitsumori_table tr:first-child th {
+	font-size: 15px;
+}
+.mitsumori_body .mitsumori_table td {
+	font-size: 15px;
+}
+.icon_app_text {
+	font-size: 15px;
+	margin:10px 0;
+	padding-left: 38px;
+}
+.icon_app_text em {
+	font-size: 17px;
+}
+.block_premium_case .premium_case_lower_text .type_family {
+	font-size: 15px;
+}
+.block_premium_case dl dd {
+	margin-top: -10px;
+}
+.bnr_app {
+	width: 95%;
+}
+.block_application {
+	padding: 0;
+}
+.block_print_info {
+	padding: 0;
+	margin: 0;
+}
+.block_print_info li {
+	width: 95%;
+}
+.block_print_info li a {
+	font-size: 15px;
+}
+.block_agreement dl {
+	width: 95%;
+	margin: 0 auto;
+}
+.block_lower_narrow_space.block_mitumori {
+	border: 3px solid #2A4287;
+	margin: 0 5px;
+	width: 97%;
+}
+.block_premium_case .premium_case_lower_text {
+	margin-top: 10px;
+}
+.block_table {
+	margin-bottom: 15px;
+}
+.block_agreement ul {
+	margin-bottom:0;
+}
+.radio_btn_table li label {
+	padding: 5px 0;
+}
+.radio_btn_table label {
+	min-width: 100%;
+}
+.radio_btn_table li {
+	font-size: 15px;
+}
+.lower_main_image.ver02.travel.kaigai .pc_main_text .top_veiw_text {
+	font-size: 17px;
+}
+.premium_table {
+	width: 98%;
+}
+.premium_table td.coverage {
+	padding: 20px 0px 2px;
+}
+
+.telNoText{
+	text-decoration:underline;
+}
+
+/***ご継続の手続きについて***/
+
+.orange_area {
+	width:auto;
+}
+.center_ttl {
+	padding-top: 0px;
+}
+#page-top .cyan_area {
+	background: #6783D0 none repeat scroll 0% 0%;
+	border: medium none;
+	max-width: 100%;
+}
+#page-top .brown_area,#page-top .title_box.navy_area,#page-top .title_box.green_area{
+	max-width: 100%;
+}
+#hoken_oshiharai .title_navy {
+	margin: 20px 0px -10px;
+}
+#hoken_oshiharai h4.indent1_sp{
+	margin: 1em 0px 0.5em 1em;
+	text-indent: -1em;
+}
+.ate_0a2 {
+	margin: 8px 0px 0px 14px;
+}
+
+#page-top .navy_area .point_label_blue{
+	border-radius:3px;
+}
+.title_sub {
+	margin-left: 35px;
+}

@@ -1,0 +1,43 @@
+#content_c03_01 p.accident_txt {
+    font-size: 130%;
+    background-color: #538DD5;
+    margin-top: 20px;
+    width: 50%;
+    padding: 10px 0px 10px 5px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+ul.top_list.margin10{
+	text-indent: -1em;
+	margin-left: 1em;
+}
+
+.customer-center {
+    margin: 0 auto 0 1em;
+}
+
+.hoken_list{
+	padding:0px;
+}
+
+.hoken_list dd{
+	text-indent:-1em;
+	margin-left:1em;
+}
+
+.roadservice_txt{
+	width: 95%;
+}
+
+.customer_table img{
+	width:40px;
+}
+
+.customer_table .customer_tel {
+    font-size: 100%;
+}
+
+.top_list li {
+	padding: 5px 13px;
+}

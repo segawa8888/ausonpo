@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+.roadservice_table {
+	margin: 0px;
+}
+.road_service_title.basic {
+	margin-top: 0px;
+}
+.basic_service_text {
+    padding: 0px 5px 30px;
+}
+
+
+/******2015”N11ŒŽ17“ú’Ç‹L******/
+.road_service_title {
+	font-size: 17px;
+}
+.basic_service_text p {
+	font-size: 13px;
+}
+.basic_service_text p small {
+	font-size: 12px;
+}
+.roadservice_table table th {
+	font-size: 13px;
+}
+.roadservice_table table.basic_service td span {
+	font-size: 13px;
+	text-align: left;
+}
+.roadservice_table table td img {
+	width: 100%;
+}
+.roadservice_table table td {
+	font-size: 13px;
+}
+.roadservice_table table.basic_service td small {
+	font-size: 13px;
+}
+.roadservice_table ul {
+	font-size: 13px;
+	margin-top: 10px;
+}
+.roadservice_table table.basic_service td span {
+	margin-top: 5px;
+	word-break: break-all;
+}
+.bottom_list{
+	padding:5px;
+}
+.roadservice_table {
+	padding-bottom: 0px;
+}
+.road_service_title {
+	margin: 0px 0px 10px;
+}
+.basic_service_text {
+	padding: 0px 5px 10px;
+}
+.explanation li {
+	margin-bottom: 10px;
+	word-break: break-all;
+}
+.roadservice_table table td img {
+	max-width: 125px;
+	width:100%;
+}

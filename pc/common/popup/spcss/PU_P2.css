@@ -1,0 +1,650 @@
+﻿@charset "utf-8";
+@import url("common_keiyakusho.css");
+
+/*
+===========================================
+	=01. common
+-----------------------------------------*/
+body {
+	//background: #fff;
+	background: #D36CA1;
+	color: #333;
+	font-size: 12px;
+	line-height: 1.4;
+	margin:0px; 
+	padding:0px;
+
+
+	color: #595757;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	border: 5px solid #d36ca1;
+	background: url(../spimg/bg_body.jpg) repeat 0 0;
+	-webkit-text-size-adjust: 100%;	
+}
+
+/* font-size */
+.xl	{ font-size: 18px; }
+.l	{ font-size: 16px; }
+.m	{ font-size: 14px; }
+.s	{ font-size: 12px; }
+.xs { font-size: 10px; }
+.b	{ font-weight: bold; }
+
+/* anchor */
+a { outline: none; }
+a:link { color: #0066cc; }
+a:hover { color: #f00; }
+a:visited { color: #f00; }
+a:active { color: #f00; }
+
+
+.td-3 {
+	width: 10px !important;
+	text-align: center;
+}
+
+.td-4 {
+	width: 155px !important;
+}
+
+.td-bg {
+	background: #ebebeb;
+	font-weight: bold;
+}
+
+
+dt, dd {
+	white-space: nowrap;
+}
+
+
+/*
+===========================================
+	=02. 
+-----------------------------------------*/
+.wrap {
+	font-size: 93%;
+	margin: 0 auto;
+	width: 680px;
+}
+
+.data_area{
+	padding:10px 15px 5px 15px;
+	background: #fff;
+	margin-bottom: 50px;
+}
+
+.heading-1 {
+	text-align: center;
+	padding: 10px;
+}
+
+.heading-1 img {
+	padding: 4px 10px 0 0;
+	vertical-align: top;
+}
+
+.h1-span {
+	display: inline-block;
+	/display: inline;
+	font-size: 189%;
+	font-weight: bold;
+	vertical-align: top;
+	/zoom: 1;
+}
+
+.left-col {
+	float: left;
+	width: 310px;
+}
+
+
+.right-col {
+	float: right;
+	width: 330px;
+}
+
+.petleft_col {
+	float: left;
+	width: 300px;
+}
+
+.left_col {
+	float: left;
+	width: 335px;
+}
+
+.right_col {
+	float: right;
+	width: 340px;
+}
+
+.left_col2 {
+	float: left;
+	width: 316px;
+}
+
+.right_col2 {
+	float: right;
+	width: 334px;
+}
+
+.right_col3 {
+	margin-top: -55px;
+	float: right;
+	width: 330px;
+}
+
+
+.left_position {
+	float: left;
+	width: 430px;
+}
+
+.right_col_half {
+	float: right;
+	width: 370px;
+}
+
+.left_col_half {
+	float: left;
+	width: 600px;
+}
+
+
+.h-border {
+	border-bottom: 1px solid #d9d9d9;
+	margin: 0 0 5px 0;
+	padding: 0 0 5px 5px;
+	
+}
+
+.h-border2 {
+	border-bottom: 1px solid #d9d9d9;
+	margin: 0 0 5px 0;
+	padding: 0 0 2px 5px;
+	font-weight:bold;
+}
+
+.h_petprofil_border {
+	border-bottom: 1px solid #d9d9d9;
+	margin: 0 0 0px 0;
+	padding: 0 0 2px 5px;
+	font-weight:bold;
+	font-size:13px;
+	width: 310px;
+}
+
+
+.h-border_empty {
+	border-bottom: 1px solid #FFFFFF;
+	margin: 0 0 5px 0;
+	padding: 0 0 2px 0;
+	
+}
+
+table {
+	width: 100%;
+}
+
+table th, td {
+	border: 1px solid #d9d9d9;
+	font-weight: normal;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.policyholder {
+	//border: 1px solid #d9d9d9;
+	padding: 5px;
+	width: 318px;
+}
+
+.petholder {
+	//border: 1px solid #d9d9d9;
+	padding: 5px 5px 0px 5px;
+	width: 100px;
+}
+
+.policyholder h2 {
+	padding: 0 0 5px 0;
+}
+
+.policyholder dl.contract_profil dd,
+.policyholder dl.contract_profil li {
+	font-size: 14px;
+}
+
+.pet_profil_data {
+}
+
+.ddname1 {
+	margin:28px 0 0px 0;
+}
+
+.ddname2 {
+	margin:29px 0 0px 0;
+}
+
+.ddname3 {
+	margin:18px 0 0px 0;
+}
+
+.policyholder dd {
+	padding: 0 0 0px 10px;
+}
+
+.policyholder .tel-dt {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.policyholder .tel-dd {
+	padding: 0 0 0 10px;
+}
+
+/**/
+
+
+/* 日本語 */
+#ja {}
+
+#ja .insured dt {
+	display: none;
+}
+
+/* 英語 */
+#en {}
+
+/* 印刷用。印刷ボタンを非表示 */
+@print {
+	#print-area {
+		display: none;
+	}
+}
+
+.tbl_pet{
+	width:100%
+}
+
+.tbl_pet td{
+	border: 0px solid #FFFFFF;
+	padding-left:0px;
+	padding-bottom:0px;
+	text-align:left;
+}
+
+
+
+table.valign_m th, 
+table.valign_m td {
+	vertical-align: middle !important;
+}
+
+table td.period {
+	line-height: 1.5;
+}
+
+.ate {
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+.ate14 {
+	margin-left: 1.1em;
+	text-indent: -1.1em;
+}
+
+.lh15 {
+	line-height: 1.5;
+}
+
+div.blank_space {
+	height: 30px;
+}
+
+table.heading2 {
+	width: 100%;
+	border: none;
+	text-align: center;
+}
+
+table.heading2 td {
+	margin: 0;
+	padding: 0px 0 2px 40px;
+	border: none;
+}
+
+table.freephone_base {
+	border: none !important;
+	font-size: 10px;
+}
+
+table.freephone_base th {
+	padding: 2px;
+	background: none repeat scroll 0 0 #EBEBEB;
+}
+
+table.freephone_base td {
+	margin: 0;
+	padding: 0 5px 0 0;
+}
+
+table.freephone_base td.last_td {
+	padding: 0;
+}
+
+table.freephone_table td {
+	padding: 2px;
+	border: 1px solid #d9d9d9 !important;
+}
+
+table.policyholder_table {
+	//border: none;
+	//margin-top: 10px;
+}
+
+table.policyholder_table > tr {
+	border: none;
+}
+
+table.policyholder_table td.border_none {
+	border: none;
+	padding: 0;
+}
+
+
+.border_none_pet {
+	border: none;
+	padding: 2px 10px 2px 0;
+}
+
+table.policyholder_table td.width_size50 {
+	width: 50px;
+}
+
+table.petdata_table {
+	width:100px;  
+	table-layout:fixed;
+}
+
+table.petdata_table td {
+	//word-break:break-all;
+	//word-break: keep-all;
+	word-wrap:break-word;
+	//word-break: normal;
+}
+
+table.petdata_table td p {
+	//word-break:break-all;
+	//word-break: keep-all;
+	width:100px;
+	word-wrap:break-word;
+	word-break: normal;
+}
+
+table.petdata_table td p.addr {
+	padding-bottom:3px;
+	padding-top:5px;
+}
+
+table.profildata_table {
+	width:100px;  
+	table-layout:fixed;
+}
+
+table.profildata_table td {
+	//word-break:break-all;
+	//word-break: keep-all;
+	word-wrap:break-word;
+	//word-break: normal;
+	padding-right:20px;
+}
+
+table.profildata_table td p {
+	//word-break:break-all;
+	//word-break: keep-all;
+	width:100px;
+	word-wrap:break-word;
+	word-break: normal;
+}
+
+table.profildata_table td p.addr {
+	padding-bottom:3px;
+	padding-top:5px;
+}
+
+.addr1 {
+	padding-right:1px;
+}
+
+.nowrap{  
+	white-space:nowrap;  
+	overflow:hidden;  
+}  
+
+
+table.policyholder_table td.valign_b {
+	//vertical-align: bottom;
+	//vertical-align: middle;
+	padding-bottom: 0px;
+}
+
+
+.contain {
+    display: inline-block;
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    //border: 1px solid #f9f9f9;
+    border: 1px solid #d9d9d9;
+    background-size: contain;
+}
+
+.contain2 {
+    border: 1px solid #d9d9d9;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contain3 {
+    //display:block;
+	//margin:auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fafafa;
+    //border: 1px solid #f9f9f9;
+    //border: 1px solid #990000;	/* 赤 */
+    text-align: center;
+    vertical-align: middle ;
+}
+
+.contain3 img {
+	padding-bottom: 0px;
+}
+
+p {
+	width: 220px;
+	//border: 1px #808080 solid;
+}
+
+p.example1 { word-wrap: normal; }
+p.example2 { word-wrap: break-word; }
+
+.wordBreak {
+	word-break: break-all;
+}
+
+.petprofil {
+	border: 2px solid #990000;	/* 赤 */
+	padding:5px 10px 0px 10px;
+	//margin-bottom:-10px;
+	//margin-bottom: 10px;
+}
+
+.pin_style {
+	margin-top:-5px;
+	text-align:center;
+	margin-bottom:-15px;
+}
+
+.pet_pic_title {
+	vertical-align: middle;
+	text-align: center;
+}
+.pet_pic_sample {
+	vertical-align: middle;
+	text-align:right
+}
+
+.pet_name {
+	//font-size:16pt;
+	//text-align:center;
+	width:300px;
+	padding-left: 10px;
+}
+
+.ext_txt {
+	margin-bottom:-7px;
+	margin-top:-7px;
+}
+
+.kokuchi_txt {
+	padding:3px 15px 5px 5px;
+}
+
+.corp_addr_txt {
+	margin:1px 0 0 0;
+}
+
+.keiyaku_day {
+	margin:5px 0 0 0;
+	text-align:right;
+	padding:0px;
+}
+
+.contractprofil {
+	margin-top:10px;
+}
+
+.compensation {
+	text-align:right;
+}
+
+.view_right {
+	text-align: right;
+}
+.view_center {
+	text-align: center;
+}
+.view_left {
+	text-align: left;
+}
+
+.mb2 {
+	margin-bottom: 2px;
+}
+.mb3 {
+	margin-bottom: 2px;
+}
+
+.mb29 {
+	margin-bottom: 29px;
+}
+.mb30 {
+	margin-bottom: 30px;
+}
+.mb35 {
+	margin-bottom: 35px;
+}
+
+.mb40 {
+	margin-bottom: 40px;
+}
+
+.noborder {
+	border: none;
+}
+
+.hght20 {
+	height: 25px;
+}
+
+.fs8 { font-size: 8px !important; }
+.fs8b{ font-size: 8px; font-weight: bold !important; }
+.fs9 { font-size: 9px !important; }
+.fs9b{ font-size: 9px; font-weight: bold !important; }
+.fs10 { font-size: 10px !important; }
+.fs10b{ font-size: 10px; font-weight: bold !important; }
+.fs11 { font-size: 11px !important; }
+.fs11b{ font-size: 11px; font-weight: bold !important; }
+.fs12 { font-size: 12px !important; }
+.fs12b{ font-size: 12px; font-weight: bold !important; }
+.fs13 { font-size: 13px !important; }
+.fs13b{ font-size: 13px; font-weight: bold !important; }
+.fs14 { font-size: 14px !important; }
+.fs14b{ font-size: 14px; font-weight: bold !important; }
+.fs15 { font-size: 15px !important; }
+.fs15b{ font-size: 15px; font-weight: bold !important; }
+.fs16 { font-size: 16px !important; }
+.fs16b{ font-size: 16px; font-weight: bold !important; }
+.fs17 { font-size: 17px !important; }
+.fs17b{ font-size: 17px; font-weight: bold !important; }
+
+.fs12t { font-size: 12pt !important; }
+.fs13t { font-size: 13pt !important; }
+.fs14t { font-size: 14pt !important; }
+.fs15t { font-size: 15pt !important; }
+.fs16t { font-size: 16pt !important; }
+.fs17t { font-size: 17pt !important; }
+
+.policyholder dd.kei_nm {
+	white-space: normal;
+	padding-right: 10px;
+}
+
+/*===========================================
+  フッターcloseボタン
+-----------------------------------------*/
+div#floteArea {
+	position: fixed !important;
+	position:absolute;
+	/*bottom: 1px;*/
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+div#floteArea a{
+	font-weight:bold;
+	color:#FFF;
+	text-decoration:none;
+	font-size:16px;
+}
+
+.close_float {
+	margin:0;padding:0;
+	font-size:18px;
+	font-weight:bold;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align:center;
+	padding: 10px;
+	/*padding: 11px 10px 9px 10px;*/
+	background:#585657;
+	background-size:10px 4px;
+}
+
+.close_float a{
+	color:#fff;
+	text-decoration:none;
+	
+}
+
+.petstyl {
+	padding-bottom: 20px;
+}
+
