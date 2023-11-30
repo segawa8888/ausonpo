@@ -47,14 +47,16 @@
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         background-color: #fff;
-        width: 100vw;
-        max-width: 80vw;
+        width:60rem;
+        height: 24rem;
+        border-radius: 0.5rem;
+        @include mq-max("sm"){
+            width:22.5rem;
+            height: calc(100vh - 10rem);
+        }
     }
 }
 .p-bycle-pouupcontent {
-    width: 60rem;
-    height: 24rem;
-    border-radius: 0.5rem;
     .p-bycle-popupclose{
         width: 5.6rem;
         height: 5.6rem;
@@ -63,6 +65,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0 0.5rem 0 0;
+        @include mq-max("sm"){
+            width: 3.5rem;
+            height: 3.5rem;
+        }
         &__cross{
             width: 1.5rem;
             height: 1.5rem;
@@ -92,22 +102,49 @@
             padding-top: 0.625rem;
             color: $c-white;
             text-align: center;
+            @include mq-max("sm"){
+                font-size: 0.75rem;
+            }
         }
     }
     &__banner{
         width: 100%;
+        height: 100%;
         padding: 3.125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include mq-max("sm"){
+            padding: 1.5rem 0.625rem;
+        }
         .p-bycle-pouupcontent-text{
             font-size: 1.5rem;
             text-align: center;
             padding-bottom: 4rem;
+            @include mq-max("sm"){
+                font-size: 1.125rem;
+                line-height: 1.6;
+            }
         }
         ul{
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: end;
+            @include mq-max("sm"){
+                flex-direction: column;
+            }
             li{
                 max-width: calc((100% - 4rem) / 3);
+                width: 100%;
+                @include mq-max("sm"){
+                    max-width: 100%;
+                    margin-bottom: 2rem;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
                 p{
                     font-size: 1.125rem;
                     font-weight: bold;
@@ -117,6 +154,10 @@
                 img{
                     width: auto;
                     height: 6.25rem;
+                    @include mq-max("sm"){
+                        width: 100%;
+                        height: auto;
+                    }
                 }
             }
         }

@@ -75,6 +75,10 @@
         align-items: center;
         max-width: 52.25rem;
         margin: 0 auto;
+        padding-top: 4rem;
+        @include mq-max("sm"){
+            padding-top: 1rem;
+        }
         .p-byclebest-about__box-img{
             width: 12.5rem;
         }
@@ -99,11 +103,23 @@
             align-items: center;
             &__img{
                 width: 10rem;
+                &-box{
+                    &:first-child{
+                        padding-bottom: 0.5rem;
+                    }
+                }
             }
             &__list{
                 max-width: calc(100% - 10rem);
                 padding-left: 2.5rem;
             }
+        }
+    }
+}
+.p-byclehoken-tab-price{
+    .p-keiyakusya-type__title{
+        span{
+            color: #367AD1;
         }
     }
 }
