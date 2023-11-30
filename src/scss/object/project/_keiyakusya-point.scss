@@ -100,18 +100,19 @@
     }
 }
 
-.p-keiyakusya-point__items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: rem(67.5px);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: rem(37px);
+.p-keiyakusya-point__item {
+    max-width: rem(160px);
+    width: 100%;
     @include mq-max("md") {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: rem(5px);
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: rem(34px);
+        max-width: rem(151px);
     }
+}
+
+.p-keiyakusya-point__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: rem(37px) 0;
 }
 
 .p-keiyakusya-point__item {
@@ -121,14 +122,20 @@
 
     .c-btn {
         font-size: rem(15px);
-        width: rem(151px);
+        width: 100%;
         height: rem(38px);
     }
 }
 
 .p-keiyakusya-point__icon {
     max-width: rem(40px);
-    height: rem(34px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        height: rem(34px);
+        object-fit: contain;
+    }
 }
 
 .p-keiyakusya-point-item__text {
