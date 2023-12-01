@@ -4,8 +4,8 @@
     li{
         padding-bottom: 2rem;
         display: flex;
-        justify-content: start;
-        align-items: start;
+        justify-content: flex-start;
+        align-items: flex-start;
         @include mq-max("sm"){
             padding-bottom: 1.5rem;
         }

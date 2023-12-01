@@ -136,14 +136,14 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            align-items: end;
+            align-items: flex-end;
             @include mq-max("sm"){
                 flex-direction: column;
             }
             li{
                 height: 10rem;
                 display: flex;
-                justify-content: end;
+                justify-content: flex-end;
                 align-items: center;
                 flex-direction: column;
                 padding: 0 1rem;

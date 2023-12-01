@@ -50,7 +50,7 @@
             flex-wrap: wrap;
             height: 6.6rem;
             border-radius: 0.625rem;
-            align-content: start;
+            align-content: flex-start;
         }
         &:first-child{
             position: absolute;
@@ -69,7 +69,7 @@
             border-radius: 0rem;
             border: none;
             padding: 0.625rem;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             color: $c-primary;
             font-size: 1rem;
@@ -701,7 +701,7 @@
 .list-img {
     display: flex;
     justify-content: left;
-    align-items: end;
+    align-items: flex-end;
     gap: 1.5rem;
     &__imgblock {
         max-width: 4rem;
@@ -826,7 +826,7 @@
             td {
                 display: flex;
                 flex-direction: column;
-                justify-content: end;
+                justify-content: flex-end;
                 @include mq-max("sm") {
                     line-height: 1rem;
                     min-width: 8.75rem;
@@ -1021,7 +1021,7 @@
             @include mq-max("md") {
                 height: 100%;
                 display: flex;
-                justify-content: end;
+                justify-content: flex-end;
                 align-items: center;
             }
             &:first-child {
