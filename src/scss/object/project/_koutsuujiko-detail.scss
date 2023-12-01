@@ -1,166 +1,167 @@
 @charset "UTF-8";
-@use "../../global" as *;
+@use '../../global' as *;
 
 .p-koutsuujiko-detail__wrapper {
-    max-width: rem(1000px);
-    margin-left: auto;
-    margin-right: auto;
+	max-width: rem(1000px);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .p-koutsuujiko-detail__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: rem(30px) 0;
-    @include mq-max("md") {
-        gap: rem(15px) 0;
-    }
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: rem(30px) 0;
+	@include mq-max('md') {
+		gap: rem(15px) 0;
+	}
 }
 
 .p-koutsuujiko-detail__card {
-    max-width: 100%;
-    width: 100%;
-    border-radius: rem(5px);
-    border: rem(1px) solid #bdbdbd;
-    @include mq-max("md") {
-        position: relative;
-    }
+	max-width: 100%;
+	width: 100%;
+	border-radius: rem(5px);
+	border: rem(1px) solid #bdbdbd;
+	@include mq-max('md') {
+		position: relative;
+	}
 }
 
 .p-koutsuujiko-detail__heading {
-    font-size: rem(30px);
-    color: $c-primary;
-    font-weight: 700;
-    border-radius: rem(5px);
-    background: #f3f3f3;
-    margin: rem(8px) rem(10px) 0 rem(10px);
-    height: rem(80px);
-    line-height: rem(64px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	font-size: rem(30px);
+	color: $c-primary;
+	font-weight: 700;
+	border-radius: rem(5px);
+	background: #f3f3f3;
+	margin: rem(8px) rem(10px) 0 rem(10px);
+	height: rem(80px);
+	line-height: rem(64px);
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	padding-left: 30%;
 
-    @include mq-max("sm") {
-        text-align: left;
-        font-size: rem(20px);
-        padding-left: rem(10px);
-        line-height: rem(25px);
-        justify-content: left;
-    }
+	@include mq-max('sm') {
+		text-align: left;
+		font-size: rem(20px);
+		padding-left: rem(10px);
+		line-height: rem(25px);
+	}
 
-    span {
-        font-size: rem(48px);
-        padding-right: rem(30px);
+	span {
+		font-size: rem(48px);
+		padding-right: rem(30px);
 
-        @include mq-max("sm") {
-            padding-right: rem(10px);
-        }
-    }
+		@include mq-max('sm') {
+			padding-right: rem(10px);
+		}
+	}
 }
 
 .p-koutsuujiko-detail__wrap {
-    display: flex;
-    gap: 0 rem(24px);
-    padding: 0 rem(47px);
-    justify-content: center;
-    @include mq-max("md") {
-        flex-wrap: wrap;
-        padding: 0 rem(25px);
-    }
+	display: flex;
+	gap: 0 rem(24px);
+	padding: 0 rem(47px);
+	justify-content: center;
+	@include mq-max('md') {
+		flex-wrap: wrap;
+		padding: 0 rem(25px);
+	}
 }
 
 .p-koutsuujiko-detail__wrap.no__wrap {
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0 rem(8px);
-    @include mq-max("md") {
-        gap: 0 rem(5px);
-    }
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 0 rem(8px);
+	@include mq-max('md') {
+		gap: 0 rem(5px);
+	}
 }
 .p-koutsuujiko-detail__img {
-    max-width: rem(240px);
-    @include mq-max("md") {
-        max-width: rem(450px);
-    }
+	max-width: rem(240px);
+	@include mq-max('md') {
+		max-width: rem(450px);
+	}
 }
 
 .p-koutsuujiko-detail__sub-img {
-    max-width: rem(240px);
-    @include mq-max("md") {
-        max-width: rem(112px);
-    }
+	max-width: rem(240px);
+	@include mq-max('md') {
+		max-width: rem(112px);
+	}
 }
 
 .p-koutsuujiko-detail__icon {
-    max-width: rem(240px);
-    @include mq-max("md") {
-        position: absolute;
-        max-width: rem(117px);
-        top: 0;
-        right: rem(4px);
-    }
+	max-width: rem(240px);
+	@include mq-max('md') {
+		position: absolute;
+		max-width: rem(117px);
+		top: 0;
+		right: rem(4px);
+	}
 }
 
 .p-koutsuujiko-detail__text {
-    max-width: rem(642px);
+	max-width: rem(642px);
 
-    .c-text-accent.--check {
-        background: url(/common_2024/img/icon/check_circle.webp) left top 3px no-repeat;
-        background-size: rem(14.7px);
-        padding-left: rem(25px);
-        display: inline-block;
-        line-height: 1.5;
-        @include mq-max("md") {
-            font-size: rem(14px);
-        }
-    }
+	.c-text-accent.--check {
+		background: url(/common_2024/img/icon/check_circle.webp) left center
+			no-repeat;
+		background-size: rem(14.7px);
+		padding-left: rem(25px);
+		display: inline-block;
+		line-height: 1.5;
+		@include mq-max('md') {
+			font-size: rem(14px);
+		}
+	}
 }
 
 .p-koutsuujiko-detail__card .c-accordion-4 {
-    width: 100%;
-    border: none;
+	width: 100%;
+	border: none;
 }
 
 .p-koutsuujiko-detail__card .c-accordion-4__heading {
-    max-width: rem(340px);
-    border: 1px solid #d1d1d1;
+	max-width: rem(340px);
+	border: 1px solid #d1d1d1;
 }
 
 .p-koutsuujiko-detail__recommend {
-    border-radius: rem(16px);
-    border: rem(2px) solid #ea5404;
-    position: relative;
-    padding: rem(16px) 0;
+	border-radius: rem(16px);
+	border: rem(2px) solid #ea5404;
+	position: relative;
+	padding: rem(16px) 0;
 
-    .c-btn-important-1 {
-        width: rem(340px);
-        height: rem(69px);
-        justify-content: center;
-        gap: rem(20px);
-        padding: 0 rem(8px);
-        @include mq-max("md") {
-            width: 100%;
-            gap: initial;
-            background-position: right 1rem center;
-            flex-direction: initial;
-            min-height: initial;
-        }
-    }
+	.c-btn-important-1 {
+		width: rem(340px);
+		height: rem(69px);
+		justify-content: center;
+		gap: rem(20px);
+		padding: 0 rem(8px);
+		@include mq-max('md') {
+			width: 100%;
+			gap: initial;
+			background-position: right 1rem center;
+			flex-direction: initial;
+			min-height: initial;
+		}
+	}
 
-    .c-btn-important-1__text {
-        white-space: nowrap;
-    }
+	.c-btn-important-1__text {
+		white-space: nowrap;
+	}
 
-    @include mq-max("md") {
-        padding: rem(27px) rem(10px) rem(24px) rem(10px);
-        margin: rem(35px) rem(-15px) 0;
-    }
+	@include mq-max('md') {
+		padding: rem(27px) rem(10px) rem(24px) rem(10px);
+		margin: rem(35px) rem(-15px) 0;
+	}
 }
 
 .p-koutsuujiko-detail__fukidashi {
-    position: absolute;
-    top: rem(-12.5px);
-    left: rem(20px);
-    max-width: rem(102px);
+	position: absolute;
+	top: rem(-12.5px);
+	left: rem(20px);
+	max-width: rem(102px);
 }
