@@ -118,12 +118,17 @@
 .p-keiyakusya-point__item {
     .c-text-accent {
         white-space: nowrap;
+        height:rem(58px);
+        display: flex;
+        align-items:center;
+        justify-content: center;
     }
 
     .c-btn {
         font-size: rem(15px);
         width: 100%;
         height: rem(38px);
+        margin-top: rem(13px);
     }
 }
 
@@ -140,6 +145,7 @@
 
 .p-keiyakusya-point-item__text {
     min-height: rem(120px);
+    margin-top: rem(8px);
 }
 
 .p-keiyakusya-point-item__text.sm-initial {
