@@ -1,21 +1,31 @@
 /*********************************************
 letter-spacing
 **********************************************/
+@use '../global' as *;
+
 .u-tracking-tighter {
-  letter-spacing: -0.08em;
+	letter-spacing: -0.08em;
 }
 .u-tracking-tight {
-  letter-spacing: -0.04em;
+	letter-spacing: -0.04em;
 }
 .u-tracking-normal {
-  letter-spacing: 0em;
+	letter-spacing: 0em;
 }
 .u-tracking-wide {
-  letter-spacing: 0.04em;
+	letter-spacing: 0.04em;
 }
 .u-tracking-wider {
-  letter-spacing: 0.08em;
+	letter-spacing: 0.08em;
 }
 .u-tracking-widest {
-  letter-spacing: 0.1em;
+	letter-spacing: 0.1em;
+}
+@include mq-max('sm') {
+	.sm\:u-tracking-tight {
+		letter-spacing: -0.04em;
+	}
+	.sm\:u-tracking-normal {
+		letter-spacing: 0em;
+	}
 }

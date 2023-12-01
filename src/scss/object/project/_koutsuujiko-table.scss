@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@use '../../global' as *;
+
+@include mq-max('sm') {
+	.p-koutsuujiko-table_pt10 {
+		padding-top: rem(12px) !important;
+		.important {
+			top: rem(-6px) !important;
+		}
+	}
+}
