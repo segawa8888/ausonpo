@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@use "../../global" as *;
+ .gray_block__custom {
+        background-color: $c-base-050;
+        width: 100%;
+        padding: 0.5rem;
+    }
+.p-bycle-s-tab {
+    .p-bycle-tab-change__tabs {
+        .ruby-text {
+            display: flex;
+            align-items: flex-end;
+            @include mq-max("sm") {
+                flex-wrap: wrap;
+            }
+        }           
+        ruby {
+            rt {
+                text-align: left;
+                font-size: 0.625rem;
+            }
+        }
+    }
+    .max700 {
+        max-width: 44.375rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .p-bycle-customer {
+        padding-top: 0;
+    }
+   
+    //バイクルS　タブ１
+    .bycle-s__tab1 {
+        .c-btn.-md {
+            @include mq-max("sm") {
+                max-width: 100%;
+             }
+        }
+        &__block1 {
+            &__flexbox {
+                display: flex;
+                justify-content: space-between;
+                max-width: 48rem;
+                width: 100%;
+                .img {
+                    max-width: 9.5rem;
+                    width: 100%;
+                    @include mq-max("sm") {
+                        max-width: 100%;
+                    }
+                }
+                .text {
+                    max-width: calc(100% - 11.5rem);
+                    width: 100%;
+                    @include mq-max("sm") {
+                        max-width: 100%;
+                    }
+                    .sp-img {
+                        max-width: 7.625rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &__block2 {
+            .l-container {
+                .c-heading2-bg-primary {
+                    border-radius: 0.25rem 0.25rem 0 0;
+                    @include mq-max("sm") {
+                        padding: 0.625rem 0.5rem;
+                     }
+                }
+                
+            }
+        }
+        .bycle-s__points {
+            .point03 {
+                .p-byclebest-title-hoten {
+                    &::after {
+                        background-image: url(/pc/bycle-s/assets/img/bycle-s_tab1-illust02.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 9.25rem;
+                        height: 4.8125rem;
+                        bottom: 1rem;
+                        right: 0;
+                    }
+                }
+            }
+            .point04 {
+                .p-byclebest-title-bengosi {
+                    &::after {
+                        background-image: url(/pc/bycle-s/assets/img/bycle-s_tab1-illust03.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 7.25rem;
+                        height: 5.25rem;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    //バイクルS　タブ３
+    .bycle-s__tab3 {
+        // テーブル　特殊デザイン
+        .c-table.special {
+            @include mq-max("sm") {
+                overflow-x: scroll;
+                margin-right: 0;
+                padding-right: 0;
+            }
+            .c-table__table {
+                border-collapse: collapse;
+                border-color: $c-primary;
+                @include mq-max("sm") {
+                    width: 34.375rem;
+                }
+                td {
+                    font-size: 1.25rem;
+                    &.c-table__heading {
+                        font-size: 1rem;
+                    }
+                    &.text {
+                        font-size: 0.875rem;
+                    }
+                }
+                th,
+                td {
+                    height: 3rem;
+                    padding: 0.75rem;
+                    border-left: 1px solid $c-primary;
+                    border-right: 1px solid $c-primary;
+                    border-top: 1px solid $c-primary;
+                }
+                .double-img {
+                    position: relative;
+                    picture {
+                        position: absolute;
+                        max-width: 5.5rem;
+                        width: 100%;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%) translateX(50%);
+                        -webkit-transform: translateY(-50%) translateX(50%);
+                        @include mq-max("sm") {
+                            max-width: 4rem;
+                        }
+                    }
+                }
+                .c-table__gray {
+                    background-color: $c-base-600;
+                    border-right: 1px solid $c-base-600;
+                }
+                .price {
+                    font-size: 1.25rem;
+                    span {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+        }
+        &__block01 {
+            .c-table__table {
+                th,
+                td {
+                    &.heading {
+                        @include mq-max("sm") {
+                            min-width: 13.0625rem;
+                        }
+                    }
+                }
+            }
+            .u-text-xs {
+                max-width: 55.5rem;
+                width: 100%;
+            }
+        }
+        &__block02 {
+            .fukidasi {
+                max-width: 10.5rem;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .u-text-xs {
+                max-width: 55.5rem;
+                width: 100%;
+            }
+        }
+        &__block03 {
+            .special-txt {
+                font-size: 2.5rem;
+                span {
+                    font-size: 3rem;
+                }
+            }
+            .c-table {
+                max-width: 45.5625rem;
+                width: 100%;
+                @include mq-max("sm") {
+                    overflow-x: scroll;
+                    margin-right: 0;
+                    padding-right: 0;
+                }
+                .c-table__table {
+                    @include mq-max("sm") {
+                        width: 45.5625rem;
+                    }
+                    th,
+                    td {
+                        width: 50%;
+                    }
+                    tbody {
+                        th,
+                        td {
+                            padding: 0.5rem;
+                        }
+                    }
+                    .price {
+                        font-size: 1.25rem;
+                        span {
+                            font-size: 1.75rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
