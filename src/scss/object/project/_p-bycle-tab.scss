@@ -1,183 +1,156 @@
 @charset "UTF-8";
 @use "../../global" as *;
-.p-byclebest-tabbox__switch {
-    max-width: 100%;
-    width: 100%;
-    border: 1px solid $c-primary;
-    .p-byclebest-tab-buttom {
-        max-width: calc(100% / 4);
-        width: 100%;
-        border-right: 1px solid $c-primary;
-        &:last-child {
-            border: none;
-        }
-        &.is-active {
-            background-color: $c-primary;
-            button {
-                background-color: $c-primary;
-                box-shadow: none;
-                color: #fff;
-                span {
-                    color: #fff;
-                }
-            }
-        }
-        button {
-            min-width: 100%;
-            width: 100%;
-            border-radius: 0;
-            border: none;
-        }
-    }
-}
-.-p-bycle-tab-change {
-    max-width: 100%;
-    width: 100%;
-    border: 1px solid;
-    border-radius: 8px;
-    .-p-bycle-tab-change__tabs {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include mq-max("md") {
-            flex-wrap: wrap;
-        }
-        .p-bycle-type-info__tab {
-            max-width: calc(100% / 4);
-            width: 100%;
-            padding-bottom: 4px;
-            border: 1px solid $c-primary;
-            border-top: none;
-            border-left: none;
-            @include mq-max("md") {
-                max-width: calc(100% / 2);
-                flex-wrap: wrap;
-                border: none;
-                border-bottom: 1px solid $c-primary;
-                &:first-child {
-                    border-radius: 8px 0 0 0;
-                    border-left: none;
-                    border-right: 1px solid $c-primary;
-                    button {
-                        border-radius: 8px 0 0 0;
-                    }
-                }
-                &:nth-child(2) {
-                    border-radius: 0 8px 0 0;
-                    button {
-                        border-radius: 0 8px 0 0;
-                    }
-                }
-                &:nth-child(3) {
-                    border-radius: 0 0 0 8px;
-                    border-right: 1px solid $c-primary;
-                    button {
-                        border-radius: 0 0 0 8px;
-                    }
-                }
-                &:last-child {
-                    border-radius: 0 0 8px 0;
-                    button {
-                        border-radius: 0 0 8px 0;
-                    }
-                }
-            }
-            &:first-child {
-                border-left: 1px solid $c-primary;
-                border-radius: 8px 0 0 8px;
-                button {
-                    border-radius: 8px 0 0 8px;
-                }
-            }
-            &:last-child {
-                border-radius: 0 8px 8px 0;
-                button {
-                    border-radius: 0 8px 8px 0;
-                }
-            }
-            &:hover {
-                background-color: $c-primary;
-            }
-            button {
-                min-width: 100%;
-                border-radius: 0;
-                border: none;
-                justify-content: flex-start;
-                font-size: 16px;
-                padding: 10px;
-                color: $c-primary;
-                transform: translateY(0rem);
-                @include mq-max("lg") {
-                    font-size: 14px;
-                }
-                @include mq-max("md") {
-                    height: 5rem;
-                }
-                span {
-                    font-size: 1.25rem;
-                    padding-right: 8px;
-                    @include mq-max("md") {
-                        paddimg-right: 4px;
-                    }
-                }
-                &:hover {
-                    border: none;
-                    background-color: $c-primary;
-                    color: $c-white;
-                    transform: translateY(0rem);
-                }
-            }
-        }
-        .p-bycle-type-info__tab.is-active {
-            background-color: $c-primary;
-            button {
-                &.is-active {
-                    background-color: $c-primary;
-                    border-radius: 0;
-                    box-shadow: none;
-                    border: none;
-                    color: $c-white;
-                    transition: inherit;
-                    justify-content: flex-start;
-                    padding: 10px;
-                    transform: translateY(0rem);
-                    border-radius: 8px 0 0 8px;
-                    span {
-                        font-size: 1.25rem;
-                        padding-right: 8px;
-                    }
-                    &:hover {
-                        transform: translateY(0rem);
-                    }
-                }
-            }
-        }
-        &.tabs-bottom {
-            .p-bycle-type-info__tab {
-                border-bottom: none;
-                border-top: 1px solid $c-primary;
-            }
-        }
-    }
-    .p-bycle-type-info__box {
-        @include mq-max("md") {
-            padding: 0.625rem;
-        }
-        .p-bycle-type-info__type {
-            display: none;
-            &.is-active {
-                display: block;
-            }
-        }
-    }
-}
 
-.p-byclebest-tab-contents {
+/*　タブ切り替え　ベース　*/
+.tab-buttons {
+    display: flex;
+    justify-content: space-between;
+    button {
+        cursor: pointer;
+    }
+}
+.tab-content {
     display: none;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    &.active {
+        display: block;
+        opacity: 1;
+    }
+    .p-bycletab-inner{
+        padding: 3rem;
+        @include mq-max("sm"){
+            padding: 0.5rem;
+        }
+    }
 }
-.p-byclebest-tab-contents.show {
-    display: block;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+.p-bycle-tab-change{
+    border: 1px solid $c-primary;
+    border-radius: 1rem;
+    margin-top: 10px;
+    position: relative;
+    padding: 4rem 0;
+    @include mq-max("sm"){
+        padding: 6.25rem 0;
+        border-radius: 0.625rem;
+    } 
+    .p-bycle-tab-change__tabs{
+        width: 100%;
+        border: 1px solid $c-primary;
+        border-radius: 1rem;
+        @include mq-max("sm"){
+            flex-wrap: wrap;
+            height: 6.6rem;
+            border-radius: 0.625rem;
+            align-content: flex-start;
+        }
+        &:first-child{
+            position: absolute;
+            bottom: auto;
+            top: -1px;
+            margin-bottom: 0.625rem;
+        }
+        &:last-child{
+            position: absolute;
+            top: auto;
+            bottom: -1px;
+        }
+        .tab-button{
+            min-width: calc(100% / 4);
+            width: 100%;
+            border-radius: 0rem;
+            border: none;
+            padding: 0.625rem;
+            justify-content: flex-start;
+            align-items: center;
+            color: $c-primary;
+            font-size: 1rem;
+            line-height: 1.6;
+            font-weight: bold;
+            position: relative;
+            @include mq-max("sm"){
+                min-width: 50%;
+                width: 50%;
+                height: 3rem;
+                font-size: 0.8125rem;
+            }
+            &::after{
+                content: "";
+                width: 1px;
+                height: 4rem;
+                background-color: $c-primary;
+                position: absolute;
+                top: 0;
+                right: 0;
+                @include mq-max("sm"){
+                    height: 3.25rem;
+                }
+            }
+            span{
+                font-size: 1.5rem;
+                padding-right: 0.625rem;
+                @include mq-max("sm"){
+                    font-size: 1.25rem;
+                }
+            }
+            &:first-child{
+                border-radius: 1rem 0 0 1rem;
+                @include mq-max("sm"){
+                    border-radius: 0.625rem 0 0 0;
+                }
+            }
+            &:nth-child(2){
+                @include mq-max("sm"){
+                    border-radius: 0 0.625rem 0 0;
+                    &::after{
+                        content: none;
+                    }
+                }
+            }
+            &:nth-child(3){
+                @include mq-max("sm"){
+                    border-radius: 0 0 0 0.625rem;
+                    border-top: 1px solid $c-primary;
+                }
+            }
+            &:last-child{
+                border-radius: 0 1rem 1rem 0;
+                @include mq-max("sm"){
+                    border-radius: 0 0 0.625rem 0;
+                    border-top: 1px solid $c-primary;
+                }
+                &::after{
+                    content: none;
+                }
+            }
+            &.active{
+                background-color: $c-primary;
+                color: $c-white;
+                height: calc(3.75rem + 0.25rem);
+                box-shadow:none;
+                @include mq-max("sm"){
+                    min-width: calc(100% / 2);
+                    height: calc(3rem + 0.25rem);
+                }
+            }
+            &:focus{
+                transform: translateY(0rem);
+                -webkit-transform: translateY(0rem);
+                box-shadow: none;
+            }
+        }
+    }
+}
+/*　---------------　*/
+/*　タブ切り替え　5つのポイント　*/
 .p-byclebest-tab-ranking {
     img {
         max-width: 499px;
@@ -186,47 +159,116 @@
     }
 }
 .p-bycle-course {
-    .p-bycle-course-img {
-        img {
-            max-width: 480px;
-            @include mq-max("md") {
-                padding: 0 2rem;
+    &__title{
+        p{
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+    }
+    &__img {
+        max-width: 29.5rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.bycle-course-type{
+    &__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 2.5rem;
+        p{
+            font-weight: bold;
+            line-height: 1.6;
+        }
+        h2{
+            line-height: 1.6;
+            font-size: 1.25rem;
+            font-weight: bold;
+            border-bottom: 0.125rem dotted $c-primary;
+        }
+    }
+    .bycle-course-text {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        @include mq-max("md") {
+            flex-direction: column;
+        }
+        .bycle-course-text__pic {
+            align-items: center;
+            justify-content: center;
+            .bycle-course-text__pic-icon{
+                width: 5rem;
+                height: 5rem;
             }
         }
     }
-}
-.bycle-course-text {
-    max-width: 100%;
-    width: 100%;
-    justify-content: center;
-    @include mq-max("md") {
-        flex-direction: column;
+    &__advice{
+        text-align: center;
+        color: $c-primary;
+        font-size: 0.875rem;
+        font-weight: bold;
+        padding-top: 2rem;
     }
-    .bycle-course-text__pic {
-        align-items: center;
+}
+.p-bycle-loadservice{
+    .p-bycle-loadservice-text{
+        display: flex;
         justify-content: center;
-        img {
-            width: 80px;
-            height: 80px;
+        align-items: center;
+        flex-direction: column;
+        p{
+            text-align: center;
+            font-weight: bold;
+            &.p-bycle-loadservice-level{
+                padding-bottom: 0.25rem;
+            }
+            &.p-bycle-loadservice-service{
+                font-size: 0.875rem;
+                line-height: 1.6;
+            }
         }
     }
-}
-.p-bycle-loadservice-list {
-    li {
-        justify-content: flex-start;
-        align-items: center;
+    .p-bycle-loadservice-list {
+        li {
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__point {
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        &__text{
+            span{
+                line-height: 1.6;
+            }
+            p{
+                line-height: 1.6;
+            }
+        }
     }
-    &__point {
-        width: 40px;
-        height: 40px;
+    .p-bycle-loadservice-buttom {
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        .p-bycle-loadservice-buttom-size{
+            padding: 2rem 0 0.25rem 0;
+            max-width: 20rem;
+            width: 100%;
+            a span{
+                border-bottom: 0.0625rem solid;
+            }
+            p{
+                text-align: left;
+                padding-top: 0.25rem;
+                line-height: 1.6;
+            }
+        }
     }
-}
-.p-bycle-loadservice-buttom {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 .p-bycle-point-wrapper {
     justify-content: space-between;
@@ -267,23 +309,31 @@
         max-width: 30rem;
     }
 }
-.p-bycle-case-list {
-    justify-content: space-between;
-    .p-bycle-hoten {
-        padding-top: 1rem;
-        max-width: calc((100% - 7rem) / 3);
-        width: 100%;
-        @include mq-max("lg") {
-            max-width: calc((100% - 2.5rem) / 3);
+.p-bycle-case{
+    .p-bycle-case-subtitle{
+        p{
+            line-height: 1.5;
         }
-        @include mq-max("sm") {
-            max-width: 100%;
-        }
-        .p-koutsuujiko-detail__card {
-            height: 100%;
+    }
+    .p-bycle-case-list {
+        justify-content: space-between;
+        .p-bycle-hoten {
+            padding-top: 1rem;
+            max-width: calc((100% - 7rem) / 3);
+            width: 100%;
+            @include mq-max("lg") {
+                max-width: calc((100% - 2.5rem) / 3);
+            }
+            @include mq-max("sm") {
+                max-width: 100%;
+            }
+            .p-koutsuujiko-detail__card {
+                height: 100%;
+            }
         }
     }
 }
+
 .p-bycle-gimuka-note {
     justify-content: center;
     align-items: center;
@@ -327,6 +377,7 @@
         }
     }
 }
+
 .p-tabbox {
     .p-bycle-point {
         .p-koutsuujiko-detail__heading {
@@ -347,27 +398,27 @@
         }
         .p-byclebest-title-course {
             &::after {
-                background-image: url(/src/img/sub/bycle/bycle_illust02.png);
+                background-image: url(/src/img/sub/bycle/bycle_tabpoint1-01_pc.png);
             }
         }
         .p-byclebest-title-loadservice {
             &::after {
-                background-image: url(/src/img/sub/bycle/bycle_illust06.png);
+                background-image: url(/src/img/sub/bycle/bycle_tabpoint2-01_pc.png);
             }
         }
         .p-byclebest-title-hoten {
             &::after {
-                background-image: url(/src/img/sub/bycle/bycle_illust07.png);
+                background-image: url(/src/img/sub/bycle/bycle_tabpoint3-01_pc.png);
             }
         }
         .p-byclebest-title-customer {
             &::after {
-                background-image: url(/src/img/sub/bycle/bycle_illust08.png);
+                background-image: url(/src/img/sub/bycle/bycle_tabpoint4-01_pc.png);
             }
         }
         .p-byclebest-title-compensation {
             &::after {
-                background-image: url(/src/img/sub/bycle/bycle_illust09.png);
+                background-image: url(/src/img/sub/bycle/bycle_tabpoint5-01_pc.png);
             }
         }
         .c-btn.-md {
@@ -377,7 +428,6 @@
         }
     }
 }
-
 .p-bycle-case {
     .p-bycle-point {
         h3 {
@@ -397,40 +447,47 @@
         }
         &:first-child {
             h3::after {
-                background-image: url(/src/img/sub/bycle/bycle_illust12.png);
-                background-image: url(/src/img/sub/bycle/bycle_illust12.png);
+                background-image: url(/src/img/sub/bycle/bycle_gimu02_pc.png);
             }
         }
         &:nth-child(2) {
             h3::after {
-                background-image: url(/src/img/sub/bycle/bycle_illust13.png);
+                background-image: url(/src/img/sub/bycle/bycle_gimu03_pc.png);
             }
         }
         &:nth-child(3) {
             h3::after {
-                background-image: url(/src/img/sub/bycle/bycle_illust14.png);
+                background-image: url(/src/img/sub/bycle/bycle_gimu04_pc.png);
             }
         }
     }
 }
-
-//タブ2
-//タブ2
+/*　--------------------　*/
+/*　タブ切り替え　補償内容　*/
 .tab2.bycle-hosyou {
     .p-koutsuujiko-detail__card {
         .p-koutsuujiko-detail__wrap {
+            padding: 0 0.5rem;
             .p-koutsuujiko-detail__recommend {
                 padding: 1.5rem;
+                @include mq-max("sm") {
+                    padding: 1rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
             }
         }
         .p-koutsuujiko-accordion-service {
             max-width: 100%;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
             &__wrap {
                 padding: 0;
             }
             .c-accordion-4 {
+                &__wrapper {
+                    padding: 0;
+                }
                 &__content {
                     border-color: $c-base-050;
                 }
@@ -447,11 +504,36 @@
     .p-koutsuujiko-accordion {
         padding-bottom: 0;
     }
-    .p-koutsuujiko-detail__text {
-        @include mq-max("md") {
-            max-width: 100%;
-            width: 100%;
+    .point01 {
+        .p-koutsuujiko-detail__wrap {
+            .p-koutsuujiko-detail__text {
+                max-width: 43rem;
+            }
         }
+        .jidan-daikou__flex {
+            max-width: 50.5rem;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: center;
+            gap: 1.5rem;
+            @include mq-max("sm") {
+                justify-content: center;
+                gap: 1rem;
+            }
+            &--img {
+                max-width: 13.625rem;
+                width: 100%;
+            }
+            &--text {
+                @include mq-max("sm") {
+                    width: 100%;
+                }
+            }
+        }
+       
     }
     .point02 {
         .p-koutsuujiko-detail__heading {
@@ -508,6 +590,10 @@
             }
         }
         .p-koutsuujiko-detail__wrap {
+            max-width: 50.5rem;
+            width: 100%;
+            justify-content: left;
+            align-items: center;
             @include mq-max("sm") {
                 padding: 0;
             }
@@ -522,19 +608,26 @@
     }
     .bycle__smart-service {
         padding: 2.5rem 1rem;
-        .p-koutsuujiko-accordion-service__img {
-            @include mq-max("md") {
-                max-width: 8rem;
-            }
-            @include mq-max("sm") {
-                max-width: 15rem;
-            }
-        }
-        .p-koutsuujiko-accordion-service__wrap {
+        &__wrap {
+            max-width: 50.5rem;
+            width: 100%;
             display: flex;
-            align-items: center;
+            justify-content: left;
+            gap: 2.5rem;
             @include mq-max("sm") {
-                padding: 0;
+                gap: 1rem;
+                align-items: center;
+            }
+            &--img {
+                max-width: 5.375rem;
+                width: 100%;
+                @include mq-max("sm") {
+                    max-width: 3.5rem;
+                }
+            }
+            &--text {
+                max-width: 42.5rem;
+                width: 100%;
             }
         }
     }
@@ -543,7 +636,7 @@
     position: relative;
     border: 0.125rem solid $c-primary;
     border-radius: 1rem;
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
     .fukidasi {
         position: absolute;
         width: 100%;
@@ -554,9 +647,11 @@
         -webkit-transform: translateX(-50%);
     }
     @include mq-max("sm") {
-        padding: 1.5rem 0;
+        padding: 1.5rem 1rem;
     }
     &__flex {
+        max-width: 51.25rem;
+        width: 100%;
         display: flex;
         justify-content: left;
         @include mq-max("sm") {
@@ -574,12 +669,13 @@
     }
 }
 .p-bycle__btn-grid {
+    max-width: 45rem;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2.5rem 1.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 2.5rem;
     @include mq-max("sm") {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1rem;
+        gap: 0.5rem;
     }
     &--btn {
         border: 0.0625rem solid #bdbdbd;
@@ -605,15 +701,15 @@
 .list-img {
     display: flex;
     justify-content: left;
-    align-items: end;
-
+    align-items: flex-end;
+    gap: 1.5rem;
     &__imgblock {
-        padding-left: 1rem;
-        max-width: 3.75rem;
+        max-width: 4rem;
         width: 100%;
         @include mq-max("sm") {
             padding-left: 0rem;
             width: 20%;
+            max-width: 3rem;
         }
     }
 }
@@ -624,24 +720,23 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    gap: 1rem;
+    @include mq-max("sm") {
+        gap: 0.5rem;
+    }
     &--title {
         background-color: $c-primary;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        width: 3.75rem;
+        max-width: 3.75rem;
+        width: 100%;
         height: 3.75rem;
         border-radius: 0.25rem;
         p {
             width: 100%;
             white-space: nowrap;
-        }
-    }
-    &--contents {
-        padding-left: 1rem;
-        @include mq-max("sm") {
-            padding-left: 0.5rem;
         }
     }
 }
@@ -662,187 +757,463 @@
         height: 3.75rem;
     }
 }
-//プラン診断
-.-p-bycle-plan {
-    &-title {
-        img {
-            width: 20rem;
+/*　----------------　*/
+/*　決済方法　*/
+.p-kokunai-payment__icons.bycle {
+    grid-template-columns:repeat(6, 1fr);
+    @include mq-max("md") {
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+/*　------　*/
+/*　タブ切り替え　保険金額と保険料　*/
+.p-byclehoken-tab-money{
+    .p-keiyakusya-table table {
+        width: 100%;
+        tr.-p-byclepic-ful {
+            max-width: 100%;
+            width: 100%;
+            grid-template-areas: "p-bycle-hoken-title p-bycle-hoken-pic p-bycle-hoken-pic p-bycle-hoken-pic";
+            .p-bycle-hoken-title {
+                grid-area: p-bycle-hoken-title;
+                @include mq-max("md") {
+                    min-width: 7.6875rem;
+                }
+            }
+            .p-bycle-hoken-pic {
+                grid-area: p-bycle-hoken-pic;
+                text-align: center;
+                background-color: rgba(144, 144, 144, 0.1);
+                @include mq-max("md") {
+                    min-width: 100%;
+                }
+                strong{
+                    line-height: 1.2;
+                    font-size: 0.875rem;
+                }
+            }
         }
     }
-    &-progressbar {
-        display: flex;
-        width: 100%;
-        padding: 0 6rem;
-        @include mq-max("sm") {
-            padding: 0;
-        }
-        &-step {
-            position: relative;
-            width: 33%;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem 0;
-            background: $c-white;
-            &:not(:last-child) {
-                &::before {
-                    position: absolute;
-                    z-index: 2;
-                    top: 0;
-                    bottom: 0;
-                    left: 100%;
-                    content: "";
-                    border: 2rem solid transparent;
-                    border-left: 1rem solid $c-white;
-                    margin: auto;
+}
+
+.p-byclehoken-tab-money {
+    .P-byclehoken-text {
+        line-height: 1.5rem;
+    }
+    table thead {
+        tr {
+            td {
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    min-width: 8.75rem;
                 }
-                &::after {
-                    position: absolute;
-                    z-index: 2;
-                    top: 0;
-                    bottom: 0;
-                    left: 100%;
-                    content: "";
-                    border: 2rem solid transparent;
-                    border-left: 1rem solid $c-white;
-                    margin: auto;
+            }
+        }
+    }
+    table tbody {
+        tr {
+            .p-bycle-boder {
+                border-bottom: 1px solid $c-black;
+            }
+            &.-p-byclepic-ful {
+                .p-bycle-hoken-pic {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            td {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                @include mq-max("sm") {
+                    line-height: 1rem;
+                    min-width: 8.75rem;
+                    justify-content: center;
+                    align-items: center;
+                }
+                span {
+                    @include mq-max("md") {
+                        margin-top: 0;
+                    }
+                }
+                strong {
+                    @include mq-max("sm") {
+                        font-size: 1rem;
+                    }
                 }
             }
             &:not(:last-child)::before {
-                margin-left: 2px;
-                border-left-color: $c-base-050;
-            }
-            &.active {
-                z-index: 1;
-                background: $c-primary;
-                color: $c-white;
-                &:not(:last-child)::after {
-                    border-left-color: $c-primary;
+                @include mq-max("md") {
+                    width: 11.75rem;
                 }
-                &:not(:last-child)::before {
-                    border-left: none;
+                @include mq-max("sm") {
+                    width: 8.5rem;
                 }
             }
         }
     }
-    &-select {
-        width: 100%;
-        padding: 0 15rem;
-        @include mq-max("sm") {
-            padding: 0.5rem;
+    .p-bycle-table__wrappe {
+        @include mq-max("md") {
+            min-width: 37.9375rem;
         }
-        &-btn {
-            background: $c-white;
-            label {
-                padding: 0.5rem;
-                padding-top: 2rem;
+    }
+}
+.p-byclehoken-tab-price {
+    .p-keiyakusya-type__title {
+        @include mq-max("sm") {
+            padding: 0 2rem;
+        }
+        &::before,
+        &::after {
+            width: 2rem;
+        }
+        span {
+            @include mq-max("sm") {
+                font-size: 1.5rem;
+            }
+        }
+        span.u-bycle-subtext {
+            font-size: 1.5rem;
+            @include mq-max("md"){
+                font-size: 1rem;
+            }
+            @include mq-max("sm"){
+                font-size: 1.2rem;
+            }
+        }
+        @include mq-max("sm") {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+    }
+    .p-bycle-table__wrapper {
+        @include mq-max("md") {
+            min-width: 42.875rem;
+        }
+        table {
+            @include mq-max("md") {
                 width: 100%;
-                position: relative;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                cursor: pointer;
-                height: 100%;
-                border: 0.0625rem solid #d1d1d1;
-                picture {
-                    max-width: 5rem;
-                    width: 100%;
+            }
+        }
+        table tbody .p-byclytable-twocolumn {
+            position: relative;
+            border: none;
+            grid-template-areas:
+                "p-byclehoten-type p-byclehoten-price1 p-byclehoten-price2 p-byclehoten-price3"
+                "p-byclehoten-type p-byclehoten-price4 p-byclehoten-price5 p-byclehoten-price6";
+            &::before,
+            &::after {
+                background: #fff;
+                position: absolute;
+                content: "";
+                width: calc(100% - 8.482188rem);
+                top: 50%;
+                right: 0;
+                height: 1px;
+                border-top: 0.125rem dashed #c9c9c9;
+                @include mq-max("md") {
+                    width: calc(100% - 9.0625rem);
                 }
-                &.honin {
-                    picture {
-                        max-width: 3.5rem;
+            }
+            &::before{
+                top: auto;
+                bottom: 0;
+                z-index: 1;
+            }
+            &:last-child{
+                &::before{
+                    content: none;
+                }
+            }
+            td {
+                &:first-child {
+                    grid-area: p-byclehoten-type;
+                    @include mq-max("md") {
+                        height: 100%;
                     }
                 }
-                &.kazoku {
-                    picture {
-                        max-width: 3.5rem;
-                    }
+                &:nth-child(2) {
+                    grid-area: p-byclehoten-price1;
                 }
-                &.sinzoku {
-                    picture {
-                        max-width: 4.5rem;
-                    }
+                &:nth-child(3) {
+                    grid-area: p-byclehoten-price2;
                 }
-                &::before {
-                    content: "";
-                    display: block;
-                    border-radius: 50%;
-                    position: absolute;
-                    transform: translateY(-50%) translateX(-50%);
-                    top: 1rem;
-                    left: 50%;
-                    border: 0.0625rem solid #d1d1d1;
-                    border-radius: 50%;
-                    width: 1rem;
-                    height: 1rem;
+                &:nth-child(4) {
+                    grid-area: p-byclehoten-price3;
                 }
-                &::after {
-                    content: "";
-                    display: block;
-                    border-radius: 50%;
-                    position: absolute;
-                    transform: translateY(-50%) translateX(-50%);
-                    top: 1rem;
-                    left: 50%;
-                    background-color: $c-primary;
-                    border-radius: 50%;
-                    opacity: 0;
-                    width: 0.5rem;
-                    height: 0.5rem;
+                &:nth-child(5) {
+                    grid-area: p-byclehoten-price4;
+                    background-color: rgba(176, 134, 69, 0.1);
                 }
-                .tag-area {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    @include mq-max("sm") {
-                        width: 100%;
+                &:nth-child(6) {
+                    grid-area: p-byclehoten-price5;
+                    background-color: rgba(144, 144, 144, 0.1);
+                }
+                &:nth-child(7) {
+                    grid-area: p-byclehoten-price6;
+                    background-color: rgba(189, 159, 0, 0.1);
+                }
+                .p-byclehoten-pay-temporary {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    p {
+                        height: 50%;
                         display: flex;
-                        justify-content: space-between;
-                        flex-direction: row-reverse;
+                        justify-content: center;
+                        align-items: center;
+                        &:first-child {
+                            background-color: #fff6f2;
+                        }
                     }
-                    .tag {
-                        padding: 0.25rem;
-                        border: 0.0625rem solid #d1d1d1;
-                        &.recom {
-                            background-color: #fff682;
-                            border: none;
+                }
+                &.p-byclehoten-type {
+                    justify-content: space-between;
+                    padding: 0;
+                    border: none;
+                    .p-byclehoten-type__inner{
+                        width: calc(100% - 5rem);
+                        padding: 0.5rem;
+                        @include mq-max("md"){
+                            width: calc(100% - 3.5rem);
+                        }
+                        @include mq-max("sm"){
+                            width: calc(100% - 5rem);
+                        }
+                        .p-byclehoten-type__inner-img{
+                            padding-bottom: 0.25rem;
+                        }
+                        .p-byclehoten-type__inner-text{
+                            width: 100%;
+                            a{
+                                padding-right: 1rem;
+                                padding-bottom: 0.0625rem;
+                                border-bottom: 0.0625rem solid $c-black;
+                                span{
+                                    right: 0;
+                                    width: 0.875rem;
+                                    margin: 0;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                            p{
+                                width: 100%;
+                                line-height: 1.6;
+                            }
                         }
                     }
                 }
             }
-
-            input:checked + label::after {
-                opacity: 1;
+        }
+        table thead td {
+            &:first-child {
+                @include mq-max("sm") {
+                    min-width: 14rem;
+                }
             }
-            input:checked + label {
-                border: 0.0625rem dashed $c-primary;
+        }
+        table tbody td {
+            @include mq-max("md") {
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
             }
-            .visually-hidden {
-                position: absolute;
-                white-space: nowrap;
-                border: 0;
-                clip: rect(0 0 0 0);
-                clip-path: inset(50%);
-                overflow: hidden;
-                height: 1px;
-                width: 1px;
-                margin: -1px;
+            &:first-child {
+                border-bottom: none;
+                @include mq-max("sm") {
+                    min-width: 14rem;
+                }
+            }
+            .p-byclehoten-pay-temporary {
+                max-width: 5rem;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ffe8dc;
+                @include mq-max("md"){
+                    max-width: 3.5rem;
+                }
+                @include mq-max("sm"){
+                    max-width: 5rem;
+                }
+                p {
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .p-bycle-table_course{
+        table tbody tr{
+            @include mq-max("md"){
+                height: 3.5rem;
+            }
+            td:first-child{
+                justify-content: space-between;
                 padding: 0;
+                p{
+                    width: 100%;
+                    text-align: center;
+                }
             }
         }
     }
 }
-
-.p-keiyakusya-table table tr.-p-byclepic-ful {
-    max-width: 100%;
-    width: 100%;
-    grid-template-areas: "p-bycle-hoken-title p-bycle-hoken-pic p-bycle-hoken-pic p-bycle-hoken-pic";
-    .p-bycle-hoken-title {
-        grid-area: p-bycle-hoken-title;
-    }
-    .p-bycle-hoken-pic {
-        grid-area: p-bycle-hoken-pic;
-        text-align: center;
-        background-color: rgba(144, 144, 144, 0.1);
+.p-byclehoken-tab-money,
+.p-byclehoken-tab-price {
+    @include mq-max("sm") {
+        .p-keiyakusya-table {
+            padding-bottom: 1rem;
+            &::-webkit-scrollbar {
+                width: 2rem;
+                height: 2px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: #cbcbcb;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $c-rss;
+            }
+        }
     }
 }
+/*　----------------------　*/
+/*　タブ切り替え　自転車ロードサービス　*/
+.tab4.bycle-roadservice {
+    .bycle-roadservice__block01 {
+        &__box {
+            &--img {
+                position: relative;
+                .cover-text {
+                    position: absolute;
+                    background: rgb(255, 255, 255, 0.7);
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    min-height: 6.375rem;
+                }
+            }
+        }
+    }
+    .bycle-roadservice__block02 {
+        &__box {
+            &--items {
+                max-width: 36rem;
+                width: 100%;
+            }
+        }
+    }
+    .bycle-roadservice__block04 {
+        &__grid {
+            gap: 2.5rem 5rem;
+            @include mq-max("sm") {
+                gap: 2.5rem;
+            }
+        }
+    }
+    .bycle-roadservice__block05 {
+        .l-container {
+            max-width: 51rem;
+            width: 100%;
+            .c-btn-important-1 {
+                justify-content: center;
+                height: 3.75rem;
+                @include mq-max("sm") {
+                    width: 100%;
+                    height: auto;
+                    min-height: auto;
+                    background-position: right 1rem center;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+    .bycle-roadservice__block06 {
+        &--img {
+            margin: 0 auto;
+            max-width: 21rem;
+            width: 100%;
+            @include mq-max("sm") {
+                max-width: 16.56rem;
+            }
+        }
+    }
+    .bycle-roadservice__block07 {
+        .c-download-pdf {
+            margin: 0;
+        }
+    }
+}
+.bycle-flexbox01 {
+    display: flex;
+    justify-content: space-between;
+    &__left {
+        max-width: 13.43rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        picture {
+            max-width: 10.875rem;
+            width: 100%;
+        }
+    }
+    &__right {
+        max-width: calc(100% - 15.93rem);
+        width: 100%;
+        &--btns {
+            gap: 1.5rem 1rem;
+        }
+    }
+    @include mq-max("sm") {
+        &__left {
+            max-width: 5.5rem;
+            picture {
+                max-width: 100%;
+            }
+        }
+        &__right {
+            max-width: calc(100% - 6rem);
+        }
+    }
+}
+.bycle__c-voice {
+    display: flex;
+    justify-content: space-between;
+    &--img {
+        max-width: 5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        picture {
+            max-width: 3.56rem;
+            width: 100%;
+        }
+    }
+    &--text {
+        max-width: calc(100% - 6rem);
+        width: 100%;
+    }
+}
+.bycle__check-text {
+    padding-left: 1.5625rem;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(/common_2024/img/icon/check_circle.webp) no-repeat;
+        background-size: contain;
+        top: 0.25rem;
+        left: 0;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+/*　-------------------------　*/

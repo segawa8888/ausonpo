@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// 自転車TOP
+.p-keiyakusya-kaigai__mv {
+    p.u-text-xs {
+        color: $c-base-600;
+    }
+}
+.-p-bicycle-banner {
+    &__contents {
+        max-width: 50rem;
+        width: 100%;
+        margin: 0 auto;
+        &__banner {
+            width: 100%;
+            p.u-text-xs {
+                color: $c-base-600;
+            }
+            picture {
+                img {
+                    display: block;
+                }
+            }
+            &--btn {
+                border-radius: 0 0 0.625rem 0.625rem;
+                width: 100%;
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                .c-btn {
+                    background-color: #fff;
+                    max-width: 27.5rem;
+                    width: 100%;
+                    &.-lg {
+                        padding: 0.75rem 1rem;
+                        height: auto;
+                        background-size: 1.4375rem;
+                    }
+                    .u-flex {
+                        width: 100%;
+                        align-items: center;
+                        p {
+                            width: 50%;
+                            &.price {
+                                border-right: $c-base-400 solid 0.0625rem;
+                                span {
+                                    font-size: 1.875rem;
+                                }
+                                @include mq-max("sm") {
+                                    width: 43%;
+                                }
+                            }
+                            &.text {
+                                @include mq-max("sm") {
+                                    width: 57%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.blue-banner {
+                    background-color: $c-link;
+                    .c-btn {
+                        &:hover {
+                            border-color: $c-link;
+                        }
+                        &.-lg {
+                            background-image: url(/common_2024/img/arrow/arrow_bold_blue.svg);
+                        }
+                        .u-flex {
+                            p {
+                                &.price {
+                                    color: $c-link;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.orange-banner {
+                    background-color: $c-primary;
+                    .c-btn {
+                        &:hover {
+                            border-color: $c-primary;
+                        }
+                        &.-lg {
+                            background-image: url(/common_2024/img/arrow/arrow_bold_primary.svg);
+                        }
+                        .u-flex {
+                            p {
+                                &.price {
+                                    color: $c-primary;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.green-banner {
+                    background-color: $c-bycle-s;
+                    .c-btn {
+                        &:hover {
+                            border-color: $c-bycle-s;
+                        }
+                        &.-lg {
+                            background-image: url(/common_2024/img/arrow/arrow_bold_green.svg);
+                        }
+                        .u-flex {
+                            p {
+                                &.price {
+                                    color: $c-bycle-s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
