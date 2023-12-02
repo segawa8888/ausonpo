@@ -13,6 +13,10 @@
         }
     }
 
+    &-top {
+        max-width: 390px;
+    }
+
         &-link {
             background-size: rem(7px);
             color: $c-primary;

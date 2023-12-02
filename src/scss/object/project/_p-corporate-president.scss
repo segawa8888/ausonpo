@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-president {
+
+    &-name {
+        width: 125px;
+        height: rem43px;
+    }
+}
