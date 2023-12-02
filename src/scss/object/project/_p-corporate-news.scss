@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-news {
+    max-width: 813px;
+
+    &-menu {
+        padding: 5px 20px;
+        transition: all .3s ease 0s;
+        border-color: #BFBFBF;
+        display: inline-block;
+
+        @include hover {
+            background-color: $c-primary;
+            color: #fff;
+            border-color: transparent;
+        }
+    }
+
+
+    &-list {
+        background: url(/common_2024/img/arrow/arrow_sm_black.svg) calc(100% - 2rem) center no-repeat;
+        border-bottom: 1px solid #BFBFBF;
+        font-size: rem(12px);
+
+        &:first-child {
+            border-top: 1px solid #BFBFBF;
+        }
+
+        @include hover {
+            opacity: 0.6;
+        }
+
+        @include mq-max("sm") {
+            font-size: rem(14px);
+            background: url(/common_2024/img/arrow/arrow_sm_black.svg) calc(100% - 0.5rem) calc(100% - 4.75rem) no-repeat;
+
+            a {
+                font-weight: 500;
+            }
+
+        }
+    }
+
+    &-left {
+        flex: 0 0 27.5%;
+    }
+
+    &-topics {
+        background-color: #FFDABA;
+    }
+
+    &-release {
+        background-color: #FFF9A9;
+    }
+
+    &-right {
+        flex: 0 1 72.5%;
+    }
+}
