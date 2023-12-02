@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-container {
+    @include mq-min("sm") {
+        width: rem(910px);
+    }
+}
