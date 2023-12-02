@@ -7,5 +7,10 @@
     &-icon {
         width: 2.0rem;
         margin-right: 1rem;
+
+        @include mq-max("sm") {
+            width: 2rem;
+            margin-bottom: 0.5rem;
+        }
     }
 }

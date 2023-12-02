@@ -7,20 +7,28 @@
     &-vw {
         position: relative;
 
+
         &::after {
             content: '';
             position: absolute;
             top: 0;
             left: -50%;
-            width: 150vw;
+            width: 125vw;
             height: 100%;
             background-color: $c-base-050;
             z-index: -1;
-            overflow: hidden;
+            max-width: 1980px;
 
-            @include mq-max("sm") {
-                
+            @include mq-max("md") {
+                left: -20%;
+                width: 100vw;
             }
+
+            @include mq-max("md") {
+                left: -10px;
+                width: calc(100% + 20px);
+            }
+
         }
     }
 }
