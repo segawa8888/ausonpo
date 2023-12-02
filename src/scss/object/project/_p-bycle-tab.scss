@@ -488,6 +488,9 @@
 /*　--------------------　*/
 /*　タブ切り替え　補償内容　*/
 .tab2.bycle-hosyou {
+    .p-koutsuujiko-detail__fukidashi {
+        top: rem(-22px);
+    }
     .p-koutsuujiko-detail__card {
         .p-koutsuujiko-detail__wrap {
             padding: 0 0.5rem;
@@ -513,6 +516,7 @@
                 }
                 &__content {
                     border-color: $c-base-050;
+                    padding: 0.5rem;
                 }
                 &__heading {
                     max-width: 100%;
@@ -528,11 +532,6 @@
         padding-bottom: 0;
     }
     .point01 {
-        .p-koutsuujiko-detail__wrap {
-            .p-koutsuujiko-detail__text {
-                max-width: 43rem;
-            }
-        }
         .jidan-daikou__flex {
             max-width: 50.5rem;
             width: 100%;
@@ -672,21 +671,21 @@
         padding: 1.5rem 1rem;
     }
     &__flex {
-        max-width: 51.25rem;
         width: 100%;
         display: flex;
-        justify-content: left;
+        justify-content: center;
+        gap: 1.5rem;
         @include mq-max("sm") {
             flex-wrap: wrap;
             justify-content: center;
         }
         &--img {
+            max-width: 15rem;
             width: 100%;
         }
         &--text {
-            @include mq-max("sm") {
-                width: 100%;
-            }
+            max-width: 40.125rem;
+            width: 100%;
         }
     }
 }
@@ -704,7 +703,7 @@
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         flex-wrap: wrap;
         padding: 2rem 1rem;
         border-radius: 0.5rem;
