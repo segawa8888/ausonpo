@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-btn {
+
+    &-icon {
+        width: 2.0rem;
+        margin-right: 1rem;
+    }
+}
