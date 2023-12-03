@@ -69,25 +69,50 @@
           <dl class="p-simulation__wrap">
             <dt class="p-simulation__label">種類</dt>
             <dd class="p-simulation__select p-simulation-select">
-              <select>
-                <option hidden>種類を選択してください</option>
-                <option value="東京">東京</option>
-                <option value="大阪">大阪</option>
-                <option value="福岡">福岡</option>
-                <option value="その他">その他</option>
-              </select>
+            
+                <select name="one"  id="petBreed">
+                    <option value="" id="breed_init">種類を選択してください。</option>
+                    <option value="044">ゴールデン・レトリーバー</option>
+                    <option value="048">シー・ズー</option>
+                    <option value="052">柴</option>
+                    <option value="077">チワワ</option>
+                    <option value="079">トイ・プードル</option>
+                    <option value="117">フレンチ・ブルドッグ</option>
+                    <option value="131">ポメラニアン</option>
+                    <option value="138">マルチーズ</option>
+                    <option value="140">ミニチュア・シュナウザー</option>
+                    <option value="141">ミニチュア・ダックスフンド</option>
+                    <option value="145">ヨークシャー・テリア</option>
+                    <option value="">-----------------</option>
+                    <option value="999">その他の犬種</option>
+                    <option value="">-----------------</option>
+                    <option value="300">混血犬(10kg未満)</option>
+                    <option value="301">混血犬(10kg以上20kg未満)</option>
+                    <option value="302">混血犬(20kg以上)</option>
+                    <option value="">-----------------</option>
+                    <option value="400">猫</option>
+                    <option value="">-----------------</option>
+                </select>
+
             </dd>
           </dl>
           <dl class="p-simulation__wrap u-mt-5">
             <dt class="p-simulation__label">年齢</dt>
             <dd class="p-simulation__select p-simulation-select">
-              <select>
-                <option hidden>年齢を選択してください</option>
-                <option value="東京">東京</option>
-                <option value="大阪">大阪</option>
-                <option value="福岡">福岡</option>
-                <option value="その他">その他</option>
-              </select>
+                <select name="one" id="petAge">
+                    <option value="" id="age_init">年齢を選択してください</option>
+                    <option value="0">０歳</option>
+                    <option value="1">１歳</option>
+                    <option value="2">２歳</option>
+                    <option value="3">３歳</option>
+                    <option value="4">４歳</option>
+                    <option value="5">５歳</option>
+                    <option value="6">６歳</option>
+                    <option value="7">７歳</option>
+                    <option value="8">８歳</option>
+                    <option value="9">９歳</option>
+                    <option value="10">１０歳</option>
+                </select>
             </dd>
           </dl>
           <div class="modal-overlay closed" id="modal-overlay"></div>
@@ -118,13 +143,13 @@
           <div class="p-simulation__items">
             <dl class="p-simulation__wrap">
               <dd class="p-simulation__radio p-simulation-radio">
-                <label><input type="radio" name="category" value="月払"><span>月払</span></label>
+                <label><input type="radio" name="group1" value="1"><span>月払</span></label>
               </dd>
               <dt class="p-simulation__text">毎月お支払い！<br>気軽にはじめられる分割払い</dt>
             </dl>
             <dl class="p-simulation__wrap u-mt-5">
               <dd class="p-simulation__radio p-simulation-radio">
-                <label><input type="radio" name="category" value="一時払"><span>一時払</span></label>
+                <label><input type="radio" name="group1" value="2" checked="checked"><span>一時払</span></label>
               </dd>
               <dt class="p-simulation__text">1年分をまとめてお支払い！<br>月払にくらべておトク</dt>
             </dl>
@@ -134,8 +159,8 @@
 
 
       <div class="c-accordion-4 u-mt-12 u-w-1/2">
-        <h3 class="c-accordion-4__heading js-accordion-toggle-btn -angle">見積もりをシミュレーションする</h3>
-        <div class="c-accordion-4__wrapper js-accordion-toggle-content">
+        <h3 class="c-accordion-4__heading js-accordion-toggle-btn -angle" id="pet_price_button">見積もりをシミュレーションする</h3>
+        <div class="c-accordion-4__wrapper js-accordion-toggle-content" id="pet_price_detail">
           <div class="c-accordion-4__content">
             <div class="p-pet-premium__box u-justify-center" style="flex-wrap:wrap;">
               <div class="p-pet-premium__type u-w-full">
@@ -159,14 +184,14 @@
                         <p>70% <span>コース</span></p>
                         <div class="p-pet-premium__price">
                           <div class="p-pet-premium__priceLeft">月&nbsp;々</div>
-                          <div class="p-pet-premium__priceRight"><span>2<i>,</i>030</span>円~</div>
+                          <div class="p-pet-premium__priceRight"><span id="ari_70">2<i>,</i>030</span>円~</div>
                         </div>
                       </div>
                       <div class="p-pet-premium__courseList">
                         <p>50% <span>コース</span></p>
                         <div class="p-pet-premium__price">
                           <div class="p-pet-premium__priceLeft">月&nbsp;々</div>
-                          <div class="p-pet-premium__priceRight"><span>1<i>,</i>600</span>円~</div>
+                          <div class="p-pet-premium__priceRight"><span id="ari_50">1<i>,</i>600</span>円~</div>
                         </div>
                       </div>
                     </div>
@@ -197,14 +222,14 @@
                         <p>70% <span>コース</span></p>
                         <div class="p-pet-premium__price">
                           <div class="p-pet-premium__priceLeft">月&nbsp;々</div>
-                          <div class="p-pet-premium__priceRight"><span>1<i>,</i>030</span>円~</div>
+                          <div class="p-pet-premium__priceRight"><span id="nashi_70">1<i>,</i>030</span>円~</div>
                         </div>
                       </div>
                       <div class="p-pet-premium__courseList">
                         <p>50% <span>コース</span></p>
                         <div class="p-pet-premium__price">
                           <div class="p-pet-premium__priceLeft">月&nbsp;々</div>
-                          <div class="p-pet-premium__priceRight"><span>830</span>円~</div>
+                          <div class="p-pet-premium__priceRight" ><span id="nashi_50">830</span>円~</div>
                         </div>
                       </div>
                     </div>
