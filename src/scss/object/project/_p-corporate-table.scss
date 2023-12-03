@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-table {
+
+    &-overview {
+
+        th {
+            padding: 1.25rem 4rem;
+
+            @include mq-max("sm") {
+                width: rem(124px);
+                padding: 1.25rem 0.5rem;
+            }
+        }
+
+        td {
+            padding: 1.25rem 1.25rem 1.25rem rem(60px);
+
+            @include mq-max("sm") {
+                padding: 1.25rem rem(4px) 1.25rem rem(20px);
+            }
+        }
+
+
+    }
+
+}
