@@ -273,24 +273,24 @@
 }
 .p-bycle-point-wrapper {
     justify-content: space-between;
-    @include mq-max("md") {
+    @include mq-max("sm") {
         flex-direction: column;
     }
     &__left,
     &__right {
         max-width: calc((100% - 2rem) / 2);
         width: 100%;
-        @include mq-max("md") {
+        @include mq-max("sm") {
             max-width: 100%;
         }
     }
     &__right {
-        @include mq-max("md") {
+        @include mq-max("sm") {
             padding-top: 2rem;
         }
     }
     .p-bycle-point-wrapper-box {
-        @include mq-max("md") {
+        @include mq-max("sm") {
             padding: 0.625rem;
         }
     }
@@ -422,6 +422,7 @@
             &::after {
                 background-image: url(/pc/bycle/assets/img/bycle_tabpoint3-01_pc.png);
                 width: 9rem;
+                background-position: right;
                 @include mq-max("sm") {
                     width: 10rem;
                 }
@@ -440,7 +441,6 @@
     }
 }
 .p-bycle-case {
- 
     .p-bycle-point {
         @include mq-max("sm") {
             margin-right: 1rem;
@@ -490,6 +490,9 @@
 .tab2.bycle-hosyou {
     .p-koutsuujiko-detail__fukidashi {
         top: rem(-22px);
+    }
+    .u-text-xs-tight {
+        letter-spacing: -0.04em;
     }
     .p-koutsuujiko-detail__card {
         .p-koutsuujiko-detail__wrap {
@@ -707,6 +710,9 @@
         flex-wrap: wrap;
         padding: 2rem 1rem;
         border-radius: 0.5rem;
+        @include mq-max("sm") {
+            padding: 2rem 0.5rem;
+        }
         p {
             width: 100%;
         }
