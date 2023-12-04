@@ -8,7 +8,9 @@ ul/olタグの共通スタイル
 .c-list-number,
 .c-list-check,
 .c-list-number-bracketed,
-.c-list-asterisk {
+.c-list-asterisk,
+.c-list-indented,
+.c-list-indented-2 {
   display: grid;
   font-size: rem(14px);
   line-height: 1.5;
@@ -19,6 +21,19 @@ ul/olタグの共通スタイル
 .c-list-number {
   li {
     margin-left: 1.2em;
+  }
+}
+
+.c-list-indented {
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+}
+.c-list-indented-2 {
+  li {
+    padding-left: 1.74em;
+    text-indent: -1.74em;
   }
 }
 
