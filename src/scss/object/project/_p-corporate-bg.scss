@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-bg {
+
+    &-vw {
+        position: relative;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 125vw;
+            height: 100%;
+            background-color: $c-base-050;
+            z-index: -1;
+            max-width: 1980px;
+
+            @include mq-max("md") {
+                left: -20%;
+                width: 100vw;
+            }
+
+            @include mq-max("md") {
+                left: -10px;
+                width: calc(100% + 20px);
+            }
+
+        }
+    }
+}

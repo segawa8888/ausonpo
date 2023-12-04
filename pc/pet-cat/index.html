@@ -71,7 +71,7 @@
           itemtype="http://schema.org/ListItem"
           aria-current="page"
         >
-          ペットの保険<meta itemprop="position" content="2" />
+        <a itemprop="item" href="/pc/pet">ペット保険</a><meta itemprop="position" content="2" />
         </li>
         <li
         class="c-breadcrumbs__item"
@@ -84,9 +84,8 @@
       </li>
       </ol>
     </nav>
-
     <main class="l-main l-container lg:-full sm:-full js-main">
-      <div class="p-pet-mv-images u-mt-5 sm:u-mt-2">
+      <div class="p-pet-mv-images u-mt-5 sm:u-mt-2 sm:u-hidden">
         <picture>
           <source srcset="/pc/pet/assets/img/pet_cat_mv_pc.webp" media="(min-width:768px)" type="image/webp" />
           <img
@@ -96,12 +95,54 @@
           />
         </picture>
       </div>
+
+      <div class="p-pet-mv-images u-mt-5 sm:u-mt-2 sm-min:u-hidden">
+        <div class="p-pet-mv-images__slide splide js-mv-slider is-initialized is-overflow splide--loop splide--ltr splide--draggable is-active" id="splide01" role="region" aria-roledescription="carousel">
+          <div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable" id="splide01-track" aria-live="polite" aria-atomic="true" style="padding-left: 9.625rem; padding-right: 9.625rem;" aria-busy="false">
+            <div class="splide__list" id="splide01-list" role="presentation" style="transform: translateX(-1526.4px);">
+              <div class="p-pet-mv-images__img splide__slide splide__slide--clone is-active" id="splide01-clone01" role="tabpanel" aria-roledescription="slide" aria-label="1 of 2" style="margin-right: -1.8rem; width: calc(((100% + -1.8rem) / 1) - -1.8rem);" aria-hidden="true">
+                <picture>
+                  <source srcset="/pc/pet/assets/img/pet_cat_mv_sp.webp" type="image/webp">
+                  <img src="/pc/pet/assets/img/pet_cat_mv_sp.webp" alt="" loading="eager">
+                </picture>
+              </div><div class="p-pet-mv-images__img splide__slide splide__slide--clone is-prev" id="splide01-clone02" role="tabpanel" aria-roledescription="slide" aria-label="2 of 2" style="margin-right: -1.8rem; width: calc(((100% + -1.8rem) / 1) - -1.8rem);" aria-hidden="true">
+                <picture>
+                  <source srcset="/pc/pet/assets/img/pet_mv01.webp" type="image/webp">
+                  <img src="/pc/pet/assets/img/pet_cat_mv_sp.webp" alt="" loading="eager">
+                </picture>
+              </div><div class="p-pet-mv-images__img splide__slide is-active is-visible" id="splide01-slide01" role="tabpanel" aria-roledescription="slide" aria-label="1 of 2" style="margin-right: -1.8rem; width: calc(((100% + -1.8rem) / 1) - -1.8rem);">
+                <picture>
+                  <source srcset="/pc/pet/assets/img/pet_cat_mv_sp.webp" type="image/webp">
+                  <img src="/pc/pet/assets/img/pet_mv.jpg" alt="" loading="eager">
+                </picture>
+              </div>
+              <div class="p-pet-mv-images__img splide__slide is-next" id="splide01-slide02" role="tabpanel" aria-roledescription="slide" aria-label="2 of 2" style="margin-right: -1.8rem; width: calc(((100% + -1.8rem) / 1) - -1.8rem);" aria-hidden="true">
+                <picture>
+                  <source srcset="/pc/pet/assets/img/pet_mv01.webp" type="image/webp">
+                  <img src="/pc/pet/assets/img/pet_mv01.jpg" alt="" loading="eager">
+                </picture>
+              </div>
+            <div class="p-pet-mv-images__img splide__slide splide__slide--clone is-active" id="splide01-clone03" role="tabpanel" aria-roledescription="slide" aria-label="1 of 2" style="margin-right: -1.8rem; width: calc(((100% + -1.8rem) / 1) - -1.8rem);" aria-hidden="true">
+                <picture>
+                  <source srcset="/pc/pet/assets/img/pet_mv.webp" type="image/webp">
+                  <img src="/pc/pet/assets/img/pet_mv.jpg" alt="" loading="eager">
+                </picture>
+              </div><div class="p-pet-mv-images__img splide__slide splide__slide--clone" id="splide01-clone04" role="tabpanel" aria-roledescription="slide" aria-label="2 of 2" style="margin-right: -1.8rem; width: calc(((100% + -1.8rem) / 1) - -1.8rem);" aria-hidden="true">
+                <picture>
+                  <source srcset="/pc/pet/assets/img/pet_mv01.webp" type="image/webp">
+                  <img src="/pc/pet/assets/img/pet_mv01.jpg" alt="" loading="eager">
+                </picture>
+              </div></div>
+          </div>
+        <ul class="splide__pagination p-pet-column-pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show"><li role="presentation"><button class="splide__pagination__page p-pet-column-page is-active" type="button" role="tab" aria-controls="splide01-slide01" aria-label="Go to slide 1" aria-selected="true"></button></li><li role="presentation"><button class="splide__pagination__page p-pet-column-page" type="button" role="tab" aria-controls="splide01-slide02" aria-label="Go to slide 2" tabindex="-1"></button></li></ul></div>
+      </div>
+
       <!-- /.p-pet-mv-images -->
       <div class="p-pet-dog-manzokudo u-flex u-mt-6">
         <figure class="p-pet-dog-manzokudo__icon">
           <picture>
             <source srcset="/pc/pet/assets/img/pet_dog_manzokudo.webp" type="image/webp" />
-            <img src="/pc/pet/assets/img/pet_dog_manzokudo.png" alt="" loading="eager" />
+            <img src="/pc/pet/assets/img/pet_dog_manzokudo.png" alt="お客さま満足度94.4%" loading="eager" />
           </picture>
         </figure>
         <div class="p-pet-dog-manzokudo__text u-text-20 u-text-bold u-leading-relaxed">
@@ -149,7 +190,7 @@
                         <source srcset="/pc/keiyakusya/assets/img/icon_seikyu.webp" type="image/webp" />
                         <img
                           src="/pc/keiyakusya/assets/img/icon_seikyu.png"
-                          alt="保険金を請求したい"
+                          alt=""
                           loading="lazy"
                         />
                       </picture>
@@ -164,7 +205,7 @@
                         <source srcset="/pc/keiyakusya/assets/img/icon_tel02.webp" type="image/webp" />
                         <img
                           src="/pc/keiyakusya/assets/img/icon_tel02.png"
-                          alt="かかりつけ獣医師ダイヤルを利用したい"
+                          alt=""
                           loading="lazy"
                         />
                       </picture>
@@ -284,7 +325,7 @@
                           <div class="p-pet-type-info__tableBody">
                             <picture>
                               <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp" />
-                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="" loading="lazy" />
+                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="〇はご利用いただけます" loading="lazy" />
                             </picture>
                           </div>
                         </td>
@@ -292,7 +333,7 @@
                           <div class="p-pet-type-info__tableBody">
                             <picture>
                               <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp" />
-                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="" loading="lazy" />
+                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="〇はご利用いただけます" loading="lazy" />
                             </picture>
                           </div>
                         </td>
@@ -300,7 +341,7 @@
                           <div class="p-pet-type-info__tableBody">
                             <picture>
                               <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp" />
-                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="" loading="lazy" />
+                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="〇はご利用いただけます" loading="lazy" />
                             </picture>
                           </div>
                         </td>
@@ -308,7 +349,7 @@
                           <div class="p-pet-type-info__tableBody">
                             <picture>
                               <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp" />
-                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="" loading="lazy" />
+                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="〇はご利用いただけます" loading="lazy" />
                             </picture>
                           </div>
                         </td>
@@ -383,7 +424,7 @@
                           <div class="p-pet-type-info__tableBody">
                             <picture>
                               <source srcset="/pc/pet/assets/img/pet_cat_cross.webp" type="image/webp" />
-                              <img src="/pc/pet/assets/img/pet_cat_cross.png" alt="" loading="lazy" />
+                              <img src="/pc/pet/assets/img/pet_cat_cross.png" alt="×はご利用いただけません" loading="lazy" />
                             </picture>
                           </div>
                         </td>
@@ -391,7 +432,7 @@
                           <div class="p-pet-type-info__tableBody">
                             <picture>
                               <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp" />
-                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="" loading="lazy" />
+                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="〇はご利用いただけます" loading="lazy" />
                             </picture>
                           </div>
                         </td>
@@ -399,7 +440,7 @@
                           <div class="p-pet-type-info__tableBody">
                             <picture>
                               <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp" />
-                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="" loading="lazy" />
+                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="〇はご利用いただけます" loading="lazy" />
                             </picture>
                           </div>
                         </td>
@@ -407,7 +448,7 @@
                           <div class="p-pet-type-info__tableBody">
                             <picture>
                               <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp" />
-                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="" loading="lazy" />
+                              <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="〇はご利用いただけます" loading="lazy" />
                             </picture>
                           </div>
                         </td>
@@ -474,7 +515,6 @@
                 <span>約<i>7</i>割</span>の方が<span><i>通院あり</i>タイプ</span>の <span><i>70</i>%コース</span>を選択されています。
               </p>
             </div>
-            <div class="p-pet-balloon-girl__us-stamp">※******より</div>
             <div class="p-pet-balloon-girl__text sm:u-hidden">
               <p>
                 ※70%・50%とは:かかった入院・手術等の費用のうち保険金をお支払いする割合です。<br>
@@ -811,7 +851,7 @@
           <figure>
             <picture>
               <source srcset="/pc/pet/assets/img/pet_comic_banner.webp" type="image/webp" />
-              <img src="/pc/pet/assets/img/pet_comic_banner.png" alt="" loading="lazy" />
+              <img src="/pc/pet/assets/img/pet_comic_banner.png" alt="au損保の「ペット保険」を漫画でわかりやすく解説中！詳しくはこちら。" loading="lazy" />
             </picture>
           </figure>
         </a>
@@ -849,7 +889,7 @@
           <div class="p-pet-btn__container">
             <picture class="p-pet-btn__container-img">
               <source srcset="/pc/pet/assets/img/pet_dog_consider.webp" type="image/webp" />
-              <img src="/pc/pet/assets/img/pet_dog_consider.png" alt="犬の保険をご検討の方" loading="lazy" />
+              <img src="/pc/pet/assets/img/pet_dog_consider.png" alt="" loading="lazy" />
             </picture>
             <h3 class="p-pet-btn__container-text">犬の保険をご検討の方</h3>
           </div>
@@ -1061,12 +1101,12 @@
       </div>
       <!-- /.p-pet-link -->
       <section itemscope itemtype="http://schema.org/FAQPage">
-        <h2 class="c-heading2-has-line">よくある質問</h2>
+        <h2 class="c-heading2-has-line">よくあるご質問</h2>
         <ol class="c-faq l-container lg:-md u-mt-12">
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
+            <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
               保険料はどのように支払うのですか？
-            </h4>
+            </h3>
             <div
               itemprop="acceptedAnswer"
               itemscope
@@ -1357,13 +1397,13 @@
         <h4 class="p-column-cta__heading">保険タイプを選んでお申込みへ</h4>
         <ul class="p-column-cta__list">
           <li class="p-column-cta__item -primary">
-            <a href="#">
+            <a href="/pca/popup_mbt.htm|?tPet=1">
               <h4 class="p-column-cta__title">＼ しっかり備える ／</h4>
               <p class="p-column-cta__text"><span>通院あり</span>タイプ<br />お申込みはこちら</p>
             </a>
           </li>
           <li class="p-column-cta__item -yellow">
-            <a href="#">
+            <a href="/pca/popup_mbt.html?tPet=0">
               <h4 class="p-column-cta__title">＼ お得に備える ／</h4>
               <p class="p-column-cta__text"><span>通院なし</span>タイプ<br />お申込みはこちら</p>
             </a>

@@ -9,6 +9,9 @@
         cursor: pointer;
     }
 }
+.text-gray {
+    color: $c-base-600;
+}
 .tab-content {
     display: none;
     opacity: 0;
@@ -17,10 +20,10 @@
         display: block;
         opacity: 1;
     }
-    .p-bycletab-inner{
+    .p-bycletab-inner {
         padding: 3rem;
-        @include mq-max("sm"){
-            padding: 0.5rem;
+        @include mq-max("sm") {
+            padding: 2.5rem 0.5rem;
         }
     }
 }
@@ -32,38 +35,38 @@
         opacity: 1;
     }
 }
-.p-bycle-tab-change{
+.p-bycle-tab-change {
     border: 1px solid $c-primary;
     border-radius: 1rem;
     margin-top: 10px;
     position: relative;
     padding: 4rem 0;
-    @include mq-max("sm"){
+    @include mq-max("sm") {
         padding: 6.25rem 0;
         border-radius: 0.625rem;
-    } 
-    .p-bycle-tab-change__tabs{
+    }
+    .p-bycle-tab-change__tabs {
         width: 100%;
         border: 1px solid $c-primary;
         border-radius: 1rem;
-        @include mq-max("sm"){
+        @include mq-max("sm") {
             flex-wrap: wrap;
             height: 6.6rem;
             border-radius: 0.625rem;
             align-content: flex-start;
         }
-        &:first-child{
+        &:first-child {
             position: absolute;
             bottom: auto;
             top: -1px;
             margin-bottom: 0.625rem;
         }
-        &:last-child{
+        &:last-child {
             position: absolute;
             top: auto;
             bottom: -1px;
         }
-        .tab-button{
+        .tab-button {
             min-width: calc(100% / 4);
             width: 100%;
             border-radius: 0rem;
@@ -76,13 +79,13 @@
             line-height: 1.6;
             font-weight: bold;
             position: relative;
-            @include mq-max("sm"){
+            @include mq-max("sm") {
                 min-width: 50%;
                 width: 50%;
                 height: 3rem;
                 font-size: 0.8125rem;
             }
-            &::after{
+            &::after {
                 content: "";
                 width: 1px;
                 height: 4rem;
@@ -90,58 +93,58 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                @include mq-max("sm"){
+                @include mq-max("sm") {
                     height: 3.25rem;
                 }
             }
-            span{
+            span {
                 font-size: 1.5rem;
                 padding-right: 0.625rem;
-                @include mq-max("sm"){
+                @include mq-max("sm") {
                     font-size: 1.25rem;
                 }
             }
-            &:first-child{
+            &:first-child {
                 border-radius: 1rem 0 0 1rem;
-                @include mq-max("sm"){
+                @include mq-max("sm") {
                     border-radius: 0.625rem 0 0 0;
                 }
             }
-            &:nth-child(2){
-                @include mq-max("sm"){
+            &:nth-child(2) {
+                @include mq-max("sm") {
                     border-radius: 0 0.625rem 0 0;
-                    &::after{
+                    &::after {
                         content: none;
                     }
                 }
             }
-            &:nth-child(3){
-                @include mq-max("sm"){
+            &:nth-child(3) {
+                @include mq-max("sm") {
                     border-radius: 0 0 0 0.625rem;
                     border-top: 1px solid $c-primary;
                 }
             }
-            &:last-child{
+            &:last-child {
                 border-radius: 0 1rem 1rem 0;
-                @include mq-max("sm"){
+                @include mq-max("sm") {
                     border-radius: 0 0 0.625rem 0;
                     border-top: 1px solid $c-primary;
                 }
-                &::after{
+                &::after {
                     content: none;
                 }
             }
-            &.active{
+            &.active {
                 background-color: $c-primary;
                 color: $c-white;
                 height: calc(3.75rem + 0.25rem);
-                box-shadow:none;
-                @include mq-max("sm"){
+                box-shadow: none;
+                @include mq-max("sm") {
                     min-width: calc(100% / 2);
                     height: calc(3rem + 0.25rem);
                 }
             }
-            &:focus{
+            &:focus {
                 transform: translateY(0rem);
                 -webkit-transform: translateY(0rem);
                 box-shadow: none;
@@ -153,14 +156,14 @@
 /*　タブ切り替え　5つのポイント　*/
 .p-byclebest-tab-ranking {
     img {
-        max-width: 499px;
+        max-width: 31.25rem;
         width: 100%;
         margin: 0 auto;
     }
 }
 .p-bycle-course {
-    &__title{
-        p{
+    &__title {
+        p {
             font-size: 1.5rem;
             line-height: 1.6;
         }
@@ -171,18 +174,18 @@
         margin: 0 auto;
     }
 }
-.bycle-course-type{
-    &__text{
+.bycle-course-type {
+    &__text {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         padding-bottom: 2.5rem;
-        p{
+        p {
             font-weight: bold;
             line-height: 1.6;
         }
-        h2{
+        h2 {
             line-height: 1.6;
             font-size: 1.25rem;
             font-weight: bold;
@@ -190,22 +193,23 @@
         }
     }
     .bycle-course-text {
-        max-width: 100%;
+        max-width: 55.625rem;
         width: 100%;
-        justify-content: center;
-        @include mq-max("md") {
-            flex-direction: column;
-        }
-        .bycle-course-text__pic {
+        &__pic {
+            display: flex;
+            gap: 1rem;
+            justify-content: left;
             align-items: center;
-            justify-content: center;
-            .bycle-course-text__pic-icon{
-                width: 5rem;
-                height: 5rem;
+            &-icon {
+                max-width: 5rem;
+                width: 100%;
+            }
+            &-text {
+                flex-grow: 1;
             }
         }
     }
-    &__advice{
+    &__advice {
         text-align: center;
         color: $c-primary;
         font-size: 0.875rem;
@@ -213,19 +217,19 @@
         padding-top: 2rem;
     }
 }
-.p-bycle-loadservice{
-    .p-bycle-loadservice-text{
+.p-bycle-loadservice {
+    .p-bycle-loadservice-text {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        p{
+        p {
             text-align: center;
             font-weight: bold;
-            &.p-bycle-loadservice-level{
+            &.p-bycle-loadservice-level {
                 padding-bottom: 0.25rem;
             }
-            &.p-bycle-loadservice-service{
+            &.p-bycle-loadservice-service {
                 font-size: 0.875rem;
                 line-height: 1.6;
             }
@@ -242,11 +246,11 @@
             justify-content: center;
             align-items: center;
         }
-        &__text{
-            span{
+        &__text {
+            span {
                 line-height: 1.6;
             }
-            p{
+            p {
                 line-height: 1.6;
             }
         }
@@ -255,14 +259,11 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        .p-bycle-loadservice-buttom-size{
+        .p-bycle-loadservice-buttom-size {
             padding: 2rem 0 0.25rem 0;
             max-width: 20rem;
             width: 100%;
-            a span{
-                border-bottom: 0.0625rem solid;
-            }
-            p{
+            p {
                 text-align: left;
                 padding-top: 0.25rem;
                 line-height: 1.6;
@@ -272,24 +273,24 @@
 }
 .p-bycle-point-wrapper {
     justify-content: space-between;
-    @include mq-max("md") {
+    @include mq-max("sm") {
         flex-direction: column;
     }
     &__left,
     &__right {
         max-width: calc((100% - 2rem) / 2);
         width: 100%;
-        @include mq-max("md") {
+        @include mq-max("sm") {
             max-width: 100%;
         }
     }
     &__right {
-        @include mq-max("md") {
+        @include mq-max("sm") {
             padding-top: 2rem;
         }
     }
     .p-bycle-point-wrapper-box {
-        @include mq-max("md") {
+        @include mq-max("sm") {
             padding: 0.625rem;
         }
     }
@@ -309,9 +310,9 @@
         max-width: 30rem;
     }
 }
-.p-bycle-case{
-    .p-bycle-case-subtitle{
-        p{
+.p-bycle-case {
+    .p-bycle-case-subtitle {
+        p {
             line-height: 1.5;
         }
     }
@@ -386,6 +387,11 @@
                 justify-content: flex-start;
                 padding-left: 1rem;
             }
+            span {
+                @include mq-max("sm") {
+                    font-size: 2.375rem;
+                }
+            }
             &::after {
                 content: "";
                 width: 6rem;
@@ -394,45 +400,62 @@
                 background-size: contain;
                 bottom: 0;
                 right: 4px;
+                background-repeat: no-repeat;
+                @include mq-max("sm") {
+                    width: 7rem;
+                    height: 7rem;
+                    background-position: right;
+                }
             }
         }
         .p-byclebest-title-course {
             &::after {
-                background-image: url(/src/img/sub/bycle/bycle_tabpoint1-01_pc.png);
+                background-image: url(/pc/bycle/assets/img/bycle_tabpoint1-01_pc.png);
             }
         }
         .p-byclebest-title-loadservice {
             &::after {
-                background-image: url(/src/img/sub/bycle/bycle_tabpoint2-01_pc.png);
+                background-image: url(/pc/bycle/assets/img/bycle_tabpoint2-01_pc.png);
             }
         }
         .p-byclebest-title-hoten {
             &::after {
-                background-image: url(/src/img/sub/bycle/bycle_tabpoint3-01_pc.png);
+                background-image: url(/pc/bycle/assets/img/bycle_tabpoint3-01_pc.png);
+                width: 9rem;
+                background-position: right;
+                @include mq-max("sm") {
+                    width: 10rem;
+                }
             }
         }
         .p-byclebest-title-customer {
             &::after {
-                background-image: url(/src/img/sub/bycle/bycle_tabpoint4-01_pc.png);
+                background-image: url(/pc/bycle/assets/img/bycle_tabpoint4-01_pc.png);
             }
         }
         .p-byclebest-title-compensation {
             &::after {
-                background-image: url(/src/img/sub/bycle/bycle_tabpoint5-01_pc.png);
-            }
-        }
-        .c-btn.-md {
-            @include mq-max("sm") {
-                max-width: calc(100% - 1.25rem);
+                background-image: url(/pc/bycle/assets/img/bycle_tabpoint5-01_pc.png);
             }
         }
     }
 }
 .p-bycle-case {
     .p-bycle-point {
+        @include mq-max("sm") {
+            margin-right: 1rem;
+        }
+        @include mq-max("sm") {
+            font-size: 2.375rem;
+        }
         h3 {
             justify-content: flex-start;
             position: relative;
+            span {
+                @include mq-max("sm") {
+                    font-size: 2rem;
+                }
+            }
             &::after {
                 content: "";
                 height: 6.25rem;
@@ -465,6 +488,12 @@
 /*　--------------------　*/
 /*　タブ切り替え　補償内容　*/
 .tab2.bycle-hosyou {
+    .p-koutsuujiko-detail__fukidashi {
+        top: rem(-22px);
+    }
+    .u-text-xs-tight {
+        letter-spacing: -0.04em;
+    }
     .p-koutsuujiko-detail__card {
         .p-koutsuujiko-detail__wrap {
             padding: 0 0.5rem;
@@ -490,6 +519,7 @@
                 }
                 &__content {
                     border-color: $c-base-050;
+                    padding: 0.5rem;
                 }
                 &__heading {
                     max-width: 100%;
@@ -505,11 +535,6 @@
         padding-bottom: 0;
     }
     .point01 {
-        .p-koutsuujiko-detail__wrap {
-            .p-koutsuujiko-detail__text {
-                max-width: 43rem;
-            }
-        }
         .jidan-daikou__flex {
             max-width: 50.5rem;
             width: 100%;
@@ -533,7 +558,6 @@
                 }
             }
         }
-       
     }
     .point02 {
         .p-koutsuujiko-detail__heading {
@@ -650,21 +674,21 @@
         padding: 1.5rem 1rem;
     }
     &__flex {
-        max-width: 51.25rem;
         width: 100%;
         display: flex;
-        justify-content: left;
+        justify-content: center;
+        gap: 1.5rem;
         @include mq-max("sm") {
             flex-wrap: wrap;
             justify-content: center;
         }
         &--img {
+            max-width: 15rem;
             width: 100%;
         }
         &--text {
-            @include mq-max("sm") {
-                width: 100%;
-            }
+            max-width: 40.125rem;
+            width: 100%;
         }
     }
 }
@@ -682,10 +706,13 @@
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         flex-wrap: wrap;
         padding: 2rem 1rem;
         border-radius: 0.5rem;
+        @include mq-max("sm") {
+            padding: 2rem 0.5rem;
+        }
         p {
             width: 100%;
         }
@@ -760,14 +787,14 @@
 /*　----------------　*/
 /*　決済方法　*/
 .p-kokunai-payment__icons.bycle {
-    grid-template-columns:repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     @include mq-max("md") {
-        grid-template-columns:repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 /*　------　*/
 /*　タブ切り替え　保険金額と保険料　*/
-.p-byclehoken-tab-money{
+.p-byclehoken-tab-money {
     .p-keiyakusya-table table {
         width: 100%;
         tr.-p-byclepic-ful {
@@ -787,7 +814,7 @@
                 @include mq-max("md") {
                     min-width: 100%;
                 }
-                strong{
+                strong {
                     line-height: 1.2;
                     font-size: 0.875rem;
                 }
@@ -876,10 +903,10 @@
         }
         span.u-bycle-subtext {
             font-size: 1.5rem;
-            @include mq-max("md"){
+            @include mq-max("md") {
                 font-size: 1rem;
             }
-            @include mq-max("sm"){
+            @include mq-max("sm") {
                 font-size: 1.2rem;
             }
         }
@@ -917,13 +944,13 @@
                     width: calc(100% - 9.0625rem);
                 }
             }
-            &::before{
+            &::before {
                 top: auto;
                 bottom: 0;
                 z-index: 1;
             }
-            &:last-child{
-                &::before{
+            &:last-child {
+                &::before {
                     content: none;
                 }
             }
@@ -973,35 +1000,35 @@
                     justify-content: space-between;
                     padding: 0;
                     border: none;
-                    .p-byclehoten-type__inner{
+                    .p-byclehoten-type__inner {
                         width: calc(100% - 5rem);
                         padding: 0.5rem;
-                        @include mq-max("md"){
+                        @include mq-max("md") {
                             width: calc(100% - 3.5rem);
                         }
-                        @include mq-max("sm"){
+                        @include mq-max("sm") {
                             width: calc(100% - 5rem);
                         }
-                        .p-byclehoten-type__inner-img{
+                        .p-byclehoten-type__inner-img {
                             padding-bottom: 0.25rem;
                         }
-                        .p-byclehoten-type__inner-text{
+                        .p-byclehoten-type__inner-text {
                             width: 100%;
-                            a{
+                            a {
                                 padding-right: 1rem;
                                 padding-bottom: 0.0625rem;
                                 border-bottom: 0.0625rem solid $c-black;
-                                span{
+                                span {
                                     right: 0;
                                     width: 0.875rem;
                                     margin: 0;
-                                    img{
+                                    img {
                                         width: 100%;
                                         height: auto;
                                     }
                                 }
                             }
-                            p{
+                            p {
                                 width: 100%;
                                 line-height: 1.6;
                             }
@@ -1038,10 +1065,10 @@
                 justify-content: center;
                 align-items: center;
                 background-color: #ffe8dc;
-                @include mq-max("md"){
+                @include mq-max("md") {
                     max-width: 3.5rem;
                 }
-                @include mq-max("sm"){
+                @include mq-max("sm") {
                     max-width: 5rem;
                 }
                 p {
@@ -1051,15 +1078,15 @@
             }
         }
     }
-    .p-bycle-table_course{
-        table tbody tr{
-            @include mq-max("md"){
+    .p-bycle-table_course {
+        table tbody tr {
+            @include mq-max("md") {
                 height: 3.5rem;
             }
-            td:first-child{
+            td:first-child {
                 justify-content: space-between;
                 padding: 0;
-                p{
+                p {
                     width: 100%;
                     text-align: center;
                 }
