@@ -453,7 +453,7 @@
             position: relative;
             span {
                 @include mq-max("sm") {
-                    font-size: 2.375rem;
+                    font-size: 2rem;
                 }
             }
             &::after {
