@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-border {
+    &-dot {
+        border-bottom: 2px dotted #C9C9C9;
+        &.-primary{
+            border-bottom: 2px dotted $c-primary;
+        }
+    }
+
+}
