@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-heading {
+
+    &-corporate {
+        font-size: 30px;
+
+        span {
+            
+        }
+    }
+}
