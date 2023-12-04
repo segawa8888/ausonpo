@@ -58,12 +58,20 @@
           <a itemprop="item" href="/pc/">au損保トップ</a><meta itemprop="position" content="1" />
         </li>
         <li
+        class="c-breadcrumbs__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="http://schema.org/ListItem"
+      >
+        <a itemprop="item" href="/pc/pet/">ペット保険</a><meta itemprop="position" content="2" />
+      </li>
+        <li
           class="c-breadcrumbs__item"
           itemprop="itemListElement"
           itemscope
           itemtype="http://schema.org/ListItem"
         >
-          <a itemprop="item" href="/pc/pet-cat/">猫の保険</a><meta itemprop="position" content="2" />
+          <a itemprop="item" href="/pc/pet-cat/">猫の保険</a><meta itemprop="position" content="3" />
         </li>
         <li
           class="c-breadcrumbs__item"
@@ -72,29 +80,22 @@
           itemtype="http://schema.org/ListItem"
           aria-current="page"
         >
-          特長<meta itemprop="position" content="3" />
+          特長<meta itemprop="position" content="4" />
         </li>
       </ol>
     </nav>
 
     <main class="l-main l-container lg:-full sm:-full js-main">
-      <div class="c-heading1-bg-primary u-text-16 u-mb-4 u-py-2 lg:u-hidden">
-        ワンちゃんのために欲しい安心そろってる
-      </div>
-      <div class="u-text-center u-text-primary u-text-bold lg:u-hidden">
-        <p class="u-text-16">au損保のワンコの保険</p>
-        <p class="p-pet-cat-feature__ttl-nikukyu u-mt-2">ワンポの特長</p>
-      </div>
       <div class="p-pet-mv-image u-mt-5 sm:u-mt-2">
         <div class="p-pet-mv-image__img">
           <picture>
-            <source srcset="/pc/pet/assets/img/pet_mv.webp" type="image/webp" />
-            <img src="/pc/pet/assets/img/pet_mv.png" alt="" loading="eager" />
+            <source srcset="/pc/pet/assets/img/pet_cat_feature_mv_pc.webp" media="(min-width:769px)" type="image/webp" />
+            <img src="/pc/pet/assets/img/pet_cat_feature_mv_sp.webp" alt="ネコちゃんのために欲しい安心そろってる
+            au損保のニャンポの保険　ニャンポの特長
+            ネコちゃんは大切な家族の一員だから安心して選べる保険をご用意しました
+            " loading="eager" />
           </picture>
         </div>
-      </div>
-      <div class="c-heading1-bg-primary u-text-16 u-mb-4 u-py-2 lg:u-hidden">
-        ワンちゃんは大切な家族の一員だから<br />安心して選べる保険をご用意しました
       </div>
       <!-- /.p-pet-mv-image -->
       <div class="c-point-box__items">
@@ -118,18 +119,15 @@
           </div>
           <div class="c-point-box__body">
             <div class="c-point-box__main sm:u-leading-normal">
-              <p class="sm:u-hidden">お支払い限度額までなら「何度でも、いくらでも。」</p>
-              <p class="sm-min:u-hidden">お支払い限度額までなら</p>
+              <span class="sm:u-block"> お支払い限度額までなら</span>
               <span class="c-point-box__dashed"></span>
-            </div>
-            <div class="c-point-box__main sm:u-leading-normal">
-              <p class="sm-min:u-hidden">「何度でも、いくらでも。」</p>
-              <span class="c-point-box__dashed sm-min:u-hidden"></span>
+              <span class="u-block u-mt-2"> 「何度でも、いくらでも。」 </span>
+              <span class="c-point-box__dashed"></span>
             </div>
             <div class="c-point-box__text sm:u-text-center">
               <p>
-                お支払い限度額までなら、保険期間中の<br class="lg:u-hidden" />保険金支払いは回数無制限！<br />
-                しかも１回あたりの限度額なし！<br class="lg:u-hidden" />だから保険金をしっかり受け取れて安心。
+                お支払い限度額までなら、保険期間中の<br class="lg:u-hidden">保険金支払いは回数無制限！<br>
+                しかも１回あたりの限度額なし！<br class="lg:u-hidden">だから保険金をしっかり受け取れて安心。
               </p>
             </div>
           </div>
@@ -138,7 +136,7 @@
             「通院ありタイプ・70％コース」の<br class="lg:u-hidden" />保険金お支払い事例
           </p>
           <div class="u-flex u-justify-space-between u-px-32 sm:u-px-0 sm:u-block">
-            <div class="u-mt-2 u-text-center">
+            <div class="u-mt-2 u-text-center u-ml-12 sm:u-mx-0">
               <p class="u-text-20 p-pet-cat-feature__card-ttl u-border u-radius-1 u-p-2 u-inline-block">
                 保険料請求1回目
               </p>
@@ -159,7 +157,7 @@
                 </picture>
               </figure>
             </div>
-            <div class="u-mt-2 u-text-center">
+            <div class="u-mt-2 u-text-center u-mr-12 sm:u-mx-0">
               <p class="u-text-20 p-pet-cat-feature__card-ttl u-border u-radius-1 u-p-2 u-inline-block">
                 保険料請求2回目
               </p>
@@ -185,7 +183,7 @@
             </div>
           </div>
           <p class="u-text-center u-my-8">
-            <a href="#" class="c-btn -md">保険金の受け取り額を徹底解説</a>
+            <a href="/pc/pet/unlimited.html" class="c-btn -md">保険金の受け取り額を徹底解説</a>
           </p>
         </div>
         <!-- /.c-point-box__item -->
@@ -314,7 +312,7 @@
               </picture>
             </div>
             <p class="p-pet-meta__btn u-text-center u-mt-5">
-              <a href="#" class="c-btn -md">「かかりつけ獣医ダイヤル」について</a>
+              <a href="/pc/keiyakusya/pet/anicli24.html" class="c-btn -md">「かかりつけ獣医師ダイヤル」について</a>
             </p>
           </div>
         </div>
@@ -379,7 +377,7 @@
             <div class="splide__track">
               <ul class="u-flex p-pet-cat-feature__point4-card-list u-px-10 splide__list">
                 <li class="p-pet-cat-feature__point4-card splide__slide">
-                  <p class="p-pet-cat-feature__point4-card-head u-py-2 u-text-bold">特長1</p>
+                  <p class="p-pet-cat-feature__point4-card-head u-py-2 u-text-bold" style="background-color: #FF391C;">特長1</p>
                   <div class="p-pet-cat-feature__point4-card-body u-px-5 u-pb-8 u-pt-4">
                     <figure class="p-pet-cat-feature__point4-card-img">
                       <picture>
@@ -394,7 +392,7 @@
                         />
                       </picture>
                     </figure>
-                    <p class="p-pet-cat-feature__point4-card-ttl u-text-16 u-text-primary u-mt-4 u-text-bold">
+                    <p class="p-pet-cat-feature__point4-card-ttl u-text-16 u-text-primary u-mt-4 u-text-bold" style="color: #FF391C;">
                       スマホアプリだけで完結
                     </p>
                     <p class="p-pet-cat-feature__point4-card-text u-text-md u-mt-4 u-text-left u-text-bold">
@@ -404,7 +402,7 @@
                   </div>
                 </li>
                 <li class="p-pet-cat-feature__point4-card splide__slide">
-                  <p class="p-pet-cat-feature__point4-card-head u-py-2 u-text-bold">特長2</p>
+                  <p class="p-pet-cat-feature__point4-card-head u-py-2 u-text-bold" style="background-color: #FF391C;">特長2</p>
                   <div class="p-pet-cat-feature__point4-card-body u-px-5 u-pb-8 u-pt-4">
                     <figure class="p-pet-cat-feature__point4-card-img">
                       <picture>
@@ -419,7 +417,7 @@
                         />
                       </picture>
                     </figure>
-                    <p class="p-pet-cat-feature__point4-card-ttl u-text-16 u-text-primary u-mt-4 u-text-bold">
+                    <p class="p-pet-cat-feature__point4-card-ttl u-text-16 u-text-primary u-mt-4 u-text-bold" style="color:#FF391C;">
                       診療明細を丸投げでOK!
                     </p>
                     <p class="p-pet-cat-feature__point4-card-text u-text-md u-mt-4 u-text-left u-text-bold">
@@ -428,7 +426,7 @@
                   </div>
                 </li>
                 <li class="p-pet-cat-feature__point4-card splide__slide">
-                  <p class="p-pet-cat-feature__point4-card-head u-py-2 u-text-bold">特長3</p>
+                  <p class="p-pet-cat-feature__point4-card-head u-py-2 u-text-bold" style="background-color: #FF391C;">特長3</p>
                   <div class="p-pet-cat-feature__point4-card-body u-px-5 u-pb-8 u-pt-4">
                     <figure class="p-pet-cat-feature__point4-card-img">
                       <picture>
@@ -443,7 +441,7 @@
                         />
                       </picture>
                     </figure>
-                    <p class="p-pet-cat-feature__point4-card-ttl u-text-16 u-text-primary u-mt-4 u-text-bold">
+                    <p class="p-pet-cat-feature__point4-card-ttl u-text-16 u-text-primary u-mt-4 u-text-bold" style="color:#FF391C;">
                       メンドウな書類は不要
                     </p>
                     <p class="p-pet-cat-feature__point4-card-text u-text-md u-mt-4 u-text-left u-text-bold">
@@ -466,22 +464,22 @@
             周りの動物たちもハッピーに。
           </p>
           <p class="u-text-20 u-text-center u-text-bold u-leading-normal u-mt-8 sm:u-mt-4 sm:u-text-14">
-            <span class="sm:u-hidden">アニポス</span>アプリのダウンロードはこちらから
+            <span class="sm:u-hidden">アプリダウンロードはこちらから
           </p>
           <div class="u-flex u-justify-center u-mt-4">
             <div class="u-flex p-pet-cat-feature__anipos-item">
               <figure class="p-pet-cat-feature__anipos-qr u-mr-4 sm:u-hidden">
                 <picture>
-                  <source srcset="/pc/pet/assets/img/pet_anipos_qr_ios.webp" type="image/webp" />
-                  <img src="/pc/pet/assets/img/pet_anipos_qr_ios.png" alt="" loading="lazy" />
+                  <source srcset="/pc/keiyakusya/assets/img/icon_ios.webp" type="image/webp" />
+                  <img src="/pc/keiyakusya/assets/img/icon_ios.png" alt="AppStoreの二次元コード" loading="lazy" />
                 </picture>
               </figure>
               <div class="p-pet-cat-feature__anipos-download">
                 <p class="u-text-16 u-text-bold sm:u-hidden">iPhoneの方はこちらから</p>
-                <a href="#" class="p-pet-cat-feature__anipos-download-link u-mt-2">
+                <a href="https://anipos.co.jp/r/i" target="_blank" class="p-pet-cat-feature__anipos-download-link u-mt-2">
                   <picture>
                     <source srcset="/common_2024/img/btn_download_app.webp" type="image/webp" />
-                    <img src="/common_2024/img/btn_download_app.png" alt="" loading="lazy" />
+                    <img src="/common_2024/img/btn_download_app.png" alt="AppStoreからダウンロード" loading="lazy" />
                   </picture>
                 </a>
               </div>
@@ -489,34 +487,34 @@
             <div class="u-flex">
               <figure class="p-pet-cat-feature__anipos-qr u-mr-4 sm:u-hidden">
                 <picture>
-                  <source srcset="/pc/pet/assets/img/pet_anipos_qr_android.webp" type="image/webp" />
-                  <img src="/pc/pet/assets/img/pet_anipos_qr_android.png" alt="" loading="lazy" />
+                  <source srcset="/pc/keiyakusya/assets/img/icon_android.webp" type="image/webp" />
+                  <img src="/pc/keiyakusya/assets/img/icon_android.png" alt="GooglePlayの二次元コード" loading="lazy" />
                 </picture>
               </figure>
               <div class="p-pet-cat-feature__anipos-download">
                 <p class="u-text-16 u-text-bold sm:u-hidden">Androidの方はこちらから</p>
-                <a href="#" class="p-pet-cat-feature__anipos-download-link u-mt-2">
+                <a href="https://anipos.co.jp/r/a" target="_blank" class="p-pet-cat-feature__anipos-download-link u-mt-2">
                   <picture>
                     <source srcset="/common_2024/img/btn_download_google.webp" type="image/webp" />
-                    <img src="/common_2024/img/btn_download_google.png" alt="" loading="lazy" />
+                    <img src="/common_2024/img/btn_download_google.png" alt="GooglePlayで手に入れよう" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
           </div>
           <p class="p-pet-meta__btn u-text-center u-mt-5 u-mb-8">
-            <a href="#" class="c-btn -md">アニポス詳細はこちら</a>
+            <a href="/pc/keiyakusya/pet/app.html" class="c-btn -md">アニポス詳細はこちら</a>
           </p>
         </div>
       </div>
 
       <h2 class="c-heading2-has-line">
         <span class="u-text-primary u-text-16 u-text-center u-block"
-          >さらに、<br class="lg:u-hidden" />ご契約者さまとペットの生活をサポート</span
+          >さらに、ご契約者さまとペットの生活をサポート</span
         >無料アプリ「ペットの家」
       </h2>
       <div class="u-flex u-justify-center u-mt-6 p-pet-cat-feature__pethouse-wrap">
-        <figure class="p-pet-cat-feature__pethouse-img">
+        <figure class="p-pet-cat-feature__pethouse-img u-mr-10">
           <picture>
             <source srcset="/pc/pet/assets/img/pet_cat_pet_house.webp" type="image/webp" />
             <img src="/pc/pet/assets/img/pet_cat_pet_house.png" alt="" loading="lazy" />
@@ -524,24 +522,22 @@
         </figure>
         <div>
           <div class="u-text-14 u-text-bold u-leading-normal sm:u-text-center sm:u-mt-5">
-            愛犬、愛猫がいつまでも健康で<br
-              class="lg:u-hidden"
-            />長生きすることを応援するアプリ<br />「ペットの家」をご提供します。
+            愛犬、愛猫がいつまでも健康で<br class="sm-min:u-hidden">長生きすることを応援するアプリ<br />「ペットの家」をご提供します。
           </div>
-          <div class="u-flex u-mt-3">
-            <div class="p-pet-cat-feature__pethouse-iten">
+          <div class="u-flex u-mt-3 sm:u-mx-8">
+            <div class="u-mr-14 sm:u-mx-4">
               <p class="u-text-16 u-text-bold sm:u-hidden">iPhoneの方はこちらから</p>
               <div class="u-flex u-mt-3 p-pet-cat-feature__pethouse-download">
                 <figure class="p-pet-cat-feature__pethouse-qr u-mr-3 sm:u-hidden">
                   <picture>
                     <source srcset="/pc/pet/assets/img/pet_pethouse_qr_ios.webp" type="image/webp" />
-                    <img src="/pc/pet/assets/img/pet_pethouse_qr_ios.png" alt="" loading="lazy" />
+                    <img src="/pc/pet/assets/img/pet_pethouse_qr_ios.png" alt="AppStoreの二次元コード" loading="lazy" />
                   </picture>
                 </figure>
-                <a href="#" class="p-pet-cat-feature__pethouse-download-link u-mt-2">
+                <a href="https://itunes.apple.com/jp/app/n-reader/id927295207" target="_blank" class="p-pet-cat-feature__pethouse-download-link u-mt-2">
                   <picture>
                     <source srcset="/common_2024/img/btn_download_app.webp" type="image/webp" />
-                    <img src="/common_2024/img/btn_download_app.png" alt="" loading="lazy" />
+                    <img src="/common_2024/img/btn_download_app.png" alt="AppStoreからダウンロード" loading="lazy" />
                   </picture>
                 </a>
               </div>
@@ -552,13 +548,13 @@
                 <figure class="p-pet-cat-feature__pethouse-qr u-mr-3 sm:u-hidden">
                   <picture>
                     <source srcset="/pc/pet/assets/img/pet_pethouse_qr_android.webp" type="image/webp" />
-                    <img src="/pc/pet/assets/img//pet_pethouse_qr_android.png" alt="" loading="lazy" />
+                    <img src="/pc/pet/assets/img//pet_pethouse_qr_android.png" alt="GooglePlayの二次元コード" loading="lazy" />
                   </picture>
                 </figure>
-                <a href="#" class="p-pet-cat-feature__pethouse-download-link u-mt-2">
+                <a href="https://play.google.com/store/apps/details?id=jp.co.ausonpo.petnoie_android" target="_blank" class="p-pet-cat-feature__pethouse-download-link u-mt-2">
                   <picture>
                     <source srcset="/common_2024/img/btn_download_google.webp" type="image/webp" />
-                    <img src="/common_2024/img/btn_download_google.png" alt="" loading="lazy" />
+                    <img src="/common_2024/img/btn_download_google.png" alt="GooglePlayで手に入れよう" loading="lazy" />
                   </picture>
                 </a>
               </div>
@@ -569,7 +565,7 @@
       </div>
       <!-- /.p-pet-cat-feature__pethouse-wrap -->
       <p class="p-pet-meta__btn u-text-center u-mt-5 u-mb-8">
-        <a href="#" class="c-btn -md"><span class="sm:u-hidden">アプリの</span>詳細はこちら</a>
+        <a href="https://app.au-sonpo.co.jp/pethouse/" target="_blank" class="c-btn -md -external">アプリの詳細はこちら</a>
       </p>
 
       <div class="p-pet-application u-mt-28">
@@ -579,14 +575,14 @@
           </h4>
         </div>
         <div class="p-pet-application__box u-mt-4 sm:u-mt-5">
-          <a href="https://www.au-sonpo.co.jp/pc/pet_nashitype/" class="p-pet-application__box-btn">
+          <a href="/pca/popup_mbt.htm|?tPet=1" class="p-pet-application__box-btn">
             <p class="p-pet-application__box-btn--yes">
               <strong>通院あり</strong>タイプ<br class="lg:u-hidden" />お申込み<span class="lg:u-hidden"
                 >はこちら</span
               >
             </p>
           </a>
-          <a href="https://www.au-sonpo.co.jp/pc/pet/" class="p-pet-application__box-btn">
+          <a href="/pca/popup_mbt.html?tPet=0" class="p-pet-application__box-btn">
             <p class="p-pet-application__box-btn--no">
               <strong>通院なし</strong>タイプ<br class="lg:u-hidden" />お申込み<span class="lg:u-hidden"
                 >はこちら</span
@@ -598,60 +594,58 @@
       </div>
       <!-- /.p-pet-application -->
       <p class="u-mt-1 u-text-center">
-        <a href="/pc/pet-dog/application.html" class="u-link-has-arrow -sm">お申込み時の注意事項はこちら</a>
+        <a href="/pc/pet-cat/application.html" class="u-link-has-arrow -sm">お申込み時の注意事項はこちら</a>
       </p>
       <div class="u-text-center u-mt-10">
-        <a href="/pc/pet-dog/index.html" class="p-pet-btn p-pet-btn--dog">
+        <a href="/pc/pet-dog/index.html" class="p-pet-btn p-pet-btn--dog p-pet-btn--single">
           <div class="p-pet-btn__container">
             <picture class="p-pet-btn__container-img">
-              <source srcset="/pc/pet/assets/img/pet_dog_consider.webp" type="image/webp" />
-              <img src="/pc/pet/assets/img/pet_dog_consider.png" alt="犬の保険をご検討の方" loading="lazy" />
+              <source srcset="/pc/pet/assets/img/pet_dog_consider.webp" type="image/webp">
+              <img src="/pc/pet/assets/img/pet_dog_consider.png" alt="犬の保険をご検討の方" loading="lazy">
             </picture>
-            <h3 class="p-pet-btn__container-text">犬の保険を<br class="lg:u-hidden" />ご検討の方</h3>
+            <h3 class="p-pet-btn__container-text">犬の保険をご検討の方</h3>
           </div>
         </a>
       </div>
 
       <section class="p-pet-payment">
         <h2 class="p-pet-payment__heading c-heading2-has-line">お支払い方法</h2>
-        <p class="p-pet-payment__description">
-          クレジットカード、auかんたん決済(au/UQ mobile/povo)、au PAY、コンビニでのお支払いができます。
-        </p>
+        <p class="p-pet-payment__description">クレジットカード、auかんたん決済(au/UQ mobile/povo)、au PAY、コンビニでのお支払いができます。</p>
         <ul class="p-pet-payment__logo-items">
           <li class="p-pet-payment__logo-item">
             <picture>
-              <source srcset="/pc/pet/assets/img/pet_payment01.webp" type="image/webp" />
-              <img src="/pc/pet/assets/img/pet_payment01.png" alt="クレジットカード" loading="lazy" />
+              <source srcset="/pc/pet/assets/img/pet_payment01.webp" type="image/webp">
+              <img src="/pc/pet/assets/img/pet_payment01.png" alt="クレジットカード" loading="lazy">
             </picture>
           </li>
           <li class="p-pet-payment__logo-item">
             <picture>
-              <source srcset="/pc/pet/assets/img/pet_payment02.webp" type="image/webp" />
-              <img src="/pc/pet/assets/img/pet_payment02.png" alt="auかんたん決済" loading="lazy" />
+              <source srcset="/pc/pet/assets/img/pet_payment02.webp" type="image/webp">
+              <img src="/pc/pet/assets/img/pet_payment02.png" alt="auかんたん決済" loading="lazy">
             </picture>
           </li>
           <li class="p-pet-payment__logo-item">
             <picture>
-              <source srcset="/pc/pet/assets/img/pet_payment03.webp" type="image/webp" />
-              <img src="/pc/pet/assets/img/pet_payment03.png" alt="UQ mobile" loading="lazy" />
+              <source srcset="/pc/pet/assets/img/pet_payment03.webp" type="image/webp">
+              <img src="/pc/pet/assets/img/pet_payment03.png" alt="UQ mobile" loading="lazy">
             </picture>
           </li>
           <li class="p-pet-payment__logo-item">
             <picture>
-              <source srcset="/pc/pet/assets/img/pet_payment04.webp" type="image/webp" />
-              <img src="/pc/pet/assets/img/pet_payment04.png" alt="povo" loading="lazy" />
+              <source srcset="/pc/pet/assets/img/pet_payment04.webp" type="image/webp">
+              <img src="/pc/pet/assets/img/pet_payment04.png" alt="povo" loading="lazy">
             </picture>
           </li>
           <li class="p-pet-payment__logo-item">
             <picture>
-              <source srcset="/pc/pet/assets/img/pet_payment05.webp" type="image/webp" />
-              <img src="/pc/pet/assets/img/pet_payment05.png" alt="au pay" loading="lazy" />
+              <source srcset="/pc/pet/assets/img/pet_payment05.webp" type="image/webp">
+              <img src="/pc/pet/assets/img/pet_payment05.png" alt="au pay" loading="lazy">
             </picture>
           </li>
           <li class="p-pet-payment__logo-item">
             <picture>
-              <source srcset="/pc/pet/assets/img/pet_payment06.webp" type="image/webp" />
-              <img src="/pc/pet/assets/img/pet_payment06.png" alt="コンビニ払い" loading="lazy" />
+              <source srcset="/pc/pet/assets/img/pet_payment06.webp" type="image/webp">
+              <img src="/pc/pet/assets/img/pet_payment06.png" alt="コンビニ払い" loading="lazy">
             </picture>
           </li>
         </ul>
@@ -661,8 +655,8 @@
               <th class="p-pet-payment__th-logo">
                 <div class="p-pet-payment__th-logo-wrapper">
                   <picture>
-                    <source srcset="/pc/pet/assets/img/pet_payment01.webp" type="image/webp" />
-                    <img src="/pc/pet/assets/img/pet_payment01.png" alt="クレジットカード" loading="lazy" />
+                    <source srcset="/pc/pet/assets/img/pet_payment01.webp" type="image/webp">
+                    <img src="/pc/pet/assets/img/pet_payment01.png" alt="クレジットカード" loading="lazy">
                   </picture>
                 </div>
               </th>
@@ -670,12 +664,8 @@
               <td class="p-pet-payment__td">
                 <div class="p-pet-payment__td-inner">
                   <picture>
-                    <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp" />
-                    <img
-                      src="/pc/pet/assets/img/pet_cat_circle.png"
-                      alt="ご利用いただけます"
-                      loading="lazy"
-                    />
+                    <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp">
+                    <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="ご利用いただけます" loading="lazy">
                   </picture>
                 </div>
               </td>
@@ -684,21 +674,17 @@
               <th class="p-pet-payment__th-logo">
                 <div class="p-pet-payment__th-logo-wrapper">
                   <picture>
-                    <source srcset="/pc/pet/assets/img/pet_payment02.webp" type="image/webp" />
-                    <img src="/pc/pet/assets/img/pet_payment02.png" alt="" loading="lazy" />
+                    <source srcset="/pc/pet/assets/img/pet_payment02.webp" type="image/webp">
+                    <img src="/pc/pet/assets/img/pet_payment02.png" alt="" loading="lazy">
                   </picture>
                 </div>
               </th>
-              <th class="p-pet-payment__th-text">auかんたん決済<br />（au/UQ mobile/povo）</th>
+              <th class="p-pet-payment__th-text">auかんたん決済<br>（au/UQ mobile/povo）</th>
               <td class="p-pet-payment__td">
                 <div class="p-pet-payment__td-inner">
                   <picture>
-                    <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp" />
-                    <img
-                      src="/pc/pet/assets/img/pet_cat_circle.png"
-                      alt="ご利用いただけます"
-                      loading="lazy"
-                    />
+                    <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp">
+                    <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="ご利用いただけます" loading="lazy">
                   </picture>
                 </div>
               </td>
@@ -707,8 +693,8 @@
               <th class="p-pet-payment__th-logo">
                 <div class="p-pet-payment__th-logo-wrapper">
                   <picture>
-                    <source srcset="/pc/pet/assets/img/pet_payment05o.webp" type="image/webp" />
-                    <img src="/pc/pet/assets/img/pet_payment03.png" alt="" loading="lazy" />
+                    <source srcset="/pc/pet/assets/img/pet_payment05o.webp" type="image/webp">
+                    <img src="/pc/pet/assets/img/pet_payment03.png" alt="" loading="lazy">
                   </picture>
                 </div>
               </th>
@@ -716,12 +702,8 @@
               <td class="p-pet-payment__td">
                 <div class="p-pet-payment__td-inner">
                   <picture>
-                    <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp" />
-                    <img
-                      src="/pc/pet/assets/img/pet_cat_circle.png"
-                      alt="ご利用いただけます"
-                      loading="lazy"
-                    />
+                    <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp">
+                    <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="ご利用いただけます" loading="lazy">
                   </picture>
                 </div>
               </td>
@@ -730,8 +712,8 @@
               <th class="p-pet-payment__th-logo">
                 <div class="p-pet-payment__th-logo-wrapper">
                   <picture>
-                    <source srcset="/pc/pet/assets/img/pet_payment06o.webp" type="image/webp" />
-                    <img src="/pc/pet/assets/img/pet_payment06o.png" alt="" loading="lazy" />
+                    <source srcset="/pc/pet/assets/img/pet_payment06o.webp" type="image/webp">
+                    <img src="/pc/pet/assets/img/pet_payment06o.png" alt="" loading="lazy">
                   </picture>
                 </div>
               </th>
@@ -739,12 +721,8 @@
               <td class="p-pet-payment__td">
                 <div class="p-pet-payment__td-inner">
                   <picture>
-                    <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp" />
-                    <img
-                      src="/pc/pet/assets/img/pet_cat_circle.png"
-                      alt="ご利用いただけます"
-                      loading="lazy"
-                    />
+                    <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp">
+                    <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="ご利用いただけます" loading="lazy">
                   </picture>
                 </div>
               </td>
@@ -752,16 +730,11 @@
           </tbody>
         </table>
         <p class="p-pet-payment__note">
-          auかんたん決済(au/UQ mobile/povo)ではPontaポイントを1ポイント=1円相当でご利用いただけます。<br />
+          auかんたん決済(au/UQ mobile/povo)ではPontaポイントを1ポイント=1円相当でご利用いただけます。<br>
           au PAY、コンビニは一時払のみとなります。
         </p>
-        <p class="p-pet-payment__btn">
-          <a
-            href="javascript:void(0)"
-            onclick="openwin2('[[/pc/common/popup/PU_C_38.html]]','myau');"
-            class="c-btn -md"
-            >詳細はこちら</a
-          >
+             <p class="p-pet-payment__btn">
+          <a href="javascript:void(0)" onclick="openwin2('/pc/common/popup/PU_C_39.html','myau');" target="_blank" class="c-btn -md -external">詳細はこちら</a>
         </p>
         <!-- 参考 c-download-app__btn -->
       </section>
@@ -820,9 +793,9 @@
         <h2 class="c-heading2-has-line">よくある質問</h2>
         <ol class="c-faq l-container lg:-md u-mt-12">
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
+            <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
               保険料はどのように支払うのですか？
-            </h4>
+            </h3>
             <div
               itemprop="acceptedAnswer"
               itemscope
@@ -850,9 +823,9 @@
             </div>
           </li>
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
+            <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
               【ペットの保険】手術せず入院だけの場合でも補償の対象となりますか？
-            </h4>
+            </h3>
             <div
               itemprop="acceptedAnswer"
               itemscope
@@ -865,9 +838,9 @@
             </div>
           </li>
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
+            <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
               【ペットの保険】ペットが現在治療中ですが、加入できますか？
-            </h4>
+            </h3>
             <div
               itemprop="acceptedAnswer"
               itemscope
@@ -902,9 +875,9 @@
             </div>
           </li>
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
+            <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
               【ペットの保険】他社のペット保険に加入しているのですが、追加で加入できますか？
-            </h4>
+            </h3>
             <div
               itemprop="acceptedAnswer"
               itemscope
@@ -928,9 +901,9 @@
             </div>
           </li>
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
+            <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
               【ペットの保険】何歳の犬・猫まで加入できますか？
-            </h4>
+            </h3>
             <div
               itemprop="acceptedAnswer"
               itemscope
@@ -955,8 +928,8 @@
           </li>
         </ol>
         <p class="u-text-center u-mt-8">
-          <a href="https://faq.au-sonpo.co.jp/" class="c-btn -md" target="_blank" rel="noopener noreferrer"
-            >よくある質問をもっと見る</a
+          <a href="https://faq.au-sonpo.co.jp/" class="c-btn -md -external" target="_blank" rel="noopener noreferrer"
+            >よくあるご質問をもっと見る</a
           >
         </p>
       </section>
@@ -1026,36 +999,40 @@
         </div>
       </div>
       <!-- /.p-pet-column -->
-      <section class="">
-        <h2 class="c-heading2-has-line">重要事項説明書・約款</h2>
-        <div class="u-text-lg u-text-center u-mt-5 sm:u-text-left">
-          電子ファイル（PDF）でのご提供となります。<br class="sm:u-hidden" />
-          特に「重要事項のご説明」については、印刷し書面で保管いただくか、パソコンなどに保存いただくことをおすすめします。
-        </div>
-        <ul class="p-kaigai-pdf u-mt-5 u-mx-auto u-pl-8">
-          <li>
-            <a href="/pc/common/pdf/pet_iryo/pet_jyusetsu_20190801.pdf" class="c-download-pdf"
-              >重要事項のご説明<br class="lg:u-hidden" />（重要事項説明書）PDF</a
-            >
+      <h2 class="c-heading2-has-line">重要事項説明書・約款</h2>
+      <p class="u-text-lg u-text-center u-mt-5">電子ファイル（PDF）でのご提供となります。<br>特に「重要事項のご説明」については、印刷し書面で保管いただくか、パソコンなどに保存いただくことをおすすめします。</p>
+      <ul class="p-kaigai-pdf u-mt-5 u-mx-auto u-pl-8">
+        <li>
+          <a href="/pc/common/pdf/pet_iryo/pet_jyusetsu_20190801.pdf" target="_blank" class="c-download-pdf -external">重要事項のご説明<br class="lg:u-hidden" />（重要事項説明書）PDF</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" onclick="openwin2('/pc/common/popup/PU_P_4.html','myau');" class="c-download-pdf -external">ご契約のしおり<br class="lg:u-hidden" />（普通保険約款・特約集）PDF</a>
+        </li>
+      </ul>
+
+      <ul class="c-list-dot p-kaigai-pdf u-mx-auto u-mt-5">
+        <li>「ペットの保険」は、ペット医療費用保険のプラン名です。</li>
+        <li>「ペットの保険」は、定型タイプ・コースのみの販売となります。ご希望のタイプ・コースをお選びください。</li>
+        <li>当ページの内容は、「ペットの保険」の概要を説明したものです。<br>詳細は、重要事項のご説明（重要事項説明書）、ご契約のしおり（普通保険約款・特約集）をご確認ください。</li>
+      </ul>
+
+      <nav class="p-column-cta">
+        <h4 class="p-column-cta__heading">保険タイプを選んでお申込みへ</h4>
+        <ul class="p-column-cta__list">
+          <li class="p-column-cta__item -primary">
+            <a href="/pca/popup_mbt.htm|?tPet=1">
+              <h4 class="p-column-cta__title">＼ しっかり備える ／</h4>
+              <p class="p-column-cta__text"><span>通院あり</span>タイプ<br />お申込みはこちら</p>
+            </a>
           </li>
-          <li>
-            <a href="/pc/common/popup/PU_P_4.html" class="c-download-pdf"
-              >ご契約のしおり<br class="lg:u-hidden" />（普通保険約款・特約集）PDF</a
-            >
+          <li class="p-column-cta__item -yellow">
+            <a href="/pca/popup_mbt.html?tPet=0">
+              <h4 class="p-column-cta__title">＼ お得に備える ／</h4>
+              <p class="p-column-cta__text"><span>通院なし</span>タイプ<br />お申込みはこちら</p>
+            </a>
           </li>
         </ul>
-        <ul class="c-list-dot p-kaigai-pdf u-mx-auto u-mt-5">
-          <li>「ペットの保険」は、ペット医療費用保険のプラン名です。</li>
-          <li>
-            「ペットの保険」は、定型タイプ・コースのみの販売となります。ご希望のタイプ・コースをお選びください。
-          </li>
-          <li>
-            当ページの内容は、「ペットの保険」の概要を説明したものです。<br
-              class="sm:u-hidden"
-            />詳細は、重要事項のご説明（重要事項説明書）、ご契約のしおり（普通保険約款・特約集）をご確認ください。
-          </li>
-        </ul>
-      </section>
+      </nav>
     </main>
     <!--javascript-->
     <script src="/common_2024/js/script.min.js"></script>
