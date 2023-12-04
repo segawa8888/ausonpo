@@ -1,0 +1,474 @@
+@charset "utf-8";
+
+/* Table Of Contents
+----------------------------------------
+
+# offscreen
+# float clear
+# float
+# align
+# valign
+# rollover
+# font color
+# font size
+# last list 
+# inline-block
+
+----------------------------------------*/
+
+
+/* # clearfix
+---------------------------------------------------------------------------- */
+.clearfix:after,
+.c-fix:after,
+div#header:after,
+div#gnav ul:after,
+div#content div#bnrArea.section:after,
+div.section:after,
+div#itemTab dl:after,
+div#itemTab dl dd ul:after,
+ul.detailTab:after,
+div.itemHeader:after,
+div.itemNav ul:after,
+div.navTab ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix,
+.c-fix,
+div#header,
+div#gnav ul,
+div#content div#bnrArea.section,
+div.section,
+div#itemTab dl,
+div#itemTab dl dd ul,
+ul.detailTab,
+div.itemHeader,
+div.itemNav ul,
+div.navTab ul {
+	display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+
+* html .clearfix,
+* html .c-fix,
+* html div#header,
+* html div#gnav ul,
+* html div#content div#bnrArea.section,
+* html div.section,
+* html div#itemTab dl,
+* html div#itemTab dl dd ul,
+* html ul.detailTab,
+* html div.itemHeader,
+* html div.itemNav ul,
+* html div.navTab ul {
+	height: 1%;
+}
+
+.clearfix,
+.c-fix,
+div#header,
+div#gnav ul,
+div#content div#bnrArea.section,
+div.section,
+div#itemTab dl,
+div#itemTab dl dd ul,
+ul.detailTab,
+div.itemHeader,
+div.itemNav ul,
+div.navTab ul {
+	display: block;
+}
+
+/* End hide from IE-mac */
+
+/* # offscreen
+---------------------------------------------------------------------------- */
+
+.offscreen {
+	text-indent: -9999em;
+	position: absolute;
+	overflow: hidden;
+}
+
+
+/* # float clear
+---------------------------------------------------------------------------- */
+
+.clearLeft  { clear:left; }
+.clearRight { clear:right; }
+.clearBoth  { clear:both; }
+
+
+/* # float
+---------------------------------------------------------------------------- */
+
+.floatLeft  { float:left; margin: 0 10px 10px 0; }
+.floatRight { float:right; margin: 0 0 10px 10px; }
+.f-r { float:right;}
+.f-l { float:left;}
+/* # margin
+---------------------------------------------------------------------------- */
+
+.marginB40  { margin: 0 0 50px 0; }
+/* -----------------------------------------------
+ * margin
+ * -------------------------------------------- */
+
+/* �����z�u ------------------------- */
+.b-center {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+/* all ------------------------------ */
+.mg0  {margin:  0   !important;}
+.mg5  {margin:  5px !important;}
+.mg10 {margin: 10px !important;}
+.mg15 {margin: 15px !important;}
+.mg20 {margin: 20px !important;}
+.mg25 {margin: 25px !important;}
+.mg30 {margin: 30px !important;}
+
+/* all auto ------------------------- */
+.mg0a  {margin:  0   auto !important;}
+.mg5a  {margin:  5px auto !important;}
+.mg10a {margin: 10px auto !important;}
+.mg15a {margin: 15px auto !important;}
+.mg20a {margin: 20px auto !important;}
+.mg25a {margin: 25px auto !important;}
+.mg30a {margin: 30px auto !important;}
+.mg50a {margin: 50px auto !important;}
+
+/* top ------------------------------ */
+.mgt0   {margin-top:   0   !important;}
+.mgt1   {margin-top:   1px !important;}
+.mgt2   {margin-top:   2px !important;}
+.mgt3   {margin-top:   3px !important;}
+.mgt4   {margin-top:   4px !important;}
+.mgt5   {margin-top:   5px !important;}
+.mgt10  {margin-top:  10px !important;}
+.mgt15  {margin-top:  15px !important;}
+.mgt20  {margin-top:  20px !important;}
+.mgt25  {margin-top:  25px !important;}
+.mgt30  {margin-top:  30px !important;}
+.mgt35  {margin-top:  35px !important;}
+.mgt40  {margin-top:  40px !important;}
+.mgt45  {margin-top:  45px !important;}
+.mgt50  {margin-top:  50px !important;}
+
+/* right ---------------------------- */
+.mgr0   {margin-right:   0   !important;}
+.mgr5   {margin-right:   5px !important;}
+.mgr10  {margin-right:  10px !important;}
+.mgr15  {margin-right:  15px !important;}
+.mgr20  {margin-right:  20px !important;}
+.mgr25  {margin-right:  25px !important;}
+.mgr30  {margin-right:  30px !important;}
+.mgr35  {margin-right:  35px !important;}
+.mgr40  {margin-right:  40px !important;}
+.mgr45  {margin-right:  45px !important;}
+.mgr50  {margin-right:  50px !important;}
+
+/* bottom --------------------------- */
+.mgb0   {margin-bottom:   0   !important;}
+.mgb5   {margin-bottom:   5px !important;}
+.mgb10  {margin-bottom:  10px !important;}
+.mgb15  {margin-bottom:  15px !important;}
+.mgb20  {margin-bottom:  20px !important;}
+.mgb25  {margin-bottom:  25px !important;}
+.mgb30  {margin-bottom:  30px !important;}
+.mgb35  {margin-bottom:  35px !important;}
+.mgb40  {margin-bottom:  40px !important;}
+.mgb45  {margin-bottom:  45px !important;}
+.mgb50  {margin-bottom:  50px !important;}
+
+/* left ----------------------------- */
+.mgl0   {margin-left:   0   !important;}
+.mgl5   {margin-left:   5px !important;}
+.mgl10  {margin-left:  10px !important;}
+.mgl15  {margin-left:  15px !important;}
+.mgl20  {margin-left:  20px !important;}
+.mgl25  {margin-left:  25px !important;}
+.mgl30  {margin-left:  30px !important;}
+.mgl35  {margin-left:  35px !important;}
+.mgl40  {margin-left:  40px !important;}
+.mgl45  {margin-left:  45px !important;}
+.mgl50  {margin-left:  50px !important;}
+
+/* # align
+---------------------------------------------------------------------------- */
+
+.alignLeft   { text-align: left !important; }
+.alignCenter { text-align: center !important; }
+.alignRight  { text-align: right !important; }
+.t-l   { text-align: left !important; }
+.t-c { text-align: center !important; }
+.t-r  { text-align: right !important; }
+
+/* # valign
+---------------------------------------------------------------------------- */
+
+.valignBaseline { vertical-align: baseline; }
+
+
+/* # rollover
+---------------------------------------------------------------------------- */
+
+.imgover {}
+
+
+
+/* # form
+---------------------------------------------------------------------------- */
+.focus {
+	background: #e3ffe6;
+}
+
+
+/* # font color
+---------------------------------------------------------------------------- */
+
+.attention { 
+	color: #ff0000; 
+}
+
+.required { 
+	color: #ff6666; 
+}
+
+
+/* # font size
+---------------------------------------------------------------------------- */
+
+.smallText { font-size: 83%; }
+
+
+/* # last list 
+---------------------------------------------------------------------------- */
+
+.lastList {
+	background: none !important;
+	border: none !important;
+	margin-right: 0 !important;
+}
+
+
+/* # inline-block
+---------------------------------------------------------------------------- */
+
+.inlineBlock {
+	display: -moz-inline-box;
+	display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .inlineBlock {
+	display: inline;
+	height: 1%;
+}
+
+*:first-child+html .inlineBlock {
+	display: inline;
+	height: 1%;
+}
+/* End hide from IE-mac */
+
+
+
+/* # other
+---------------------------------------------------------------------------- */
+.inline {
+	display: inline;
+}
+
+
+
+/* slide */
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+/*	display: block;*/
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+	/*left: -5px;*/
+	height: auto !important;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	width: 100%;
+	text-align: right;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: right;
+	font-size: 0;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #fff;
+	text-indent: -9999px;
+	color: #fff;
+	display: block;
+	width: 5px;
+	height: 5px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #d36ca1;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #d36ca1;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url('../images2/controls.png') no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url('../images2/controls.png') no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	/*background: url(images/controls.png) -86px -11px no-repeat;*/
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	/*background: url(images/controls.png) -86px -44px no-repeat;*/
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: right;
+	top: -11px;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}

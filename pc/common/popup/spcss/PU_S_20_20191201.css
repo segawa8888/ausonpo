@@ -1,0 +1,233 @@
+/* reset
+----------------------------------------*/
+#description div,
+#description dl,
+#description dt,
+#description dd,
+#description ul,
+#description ol,
+#description li,
+#description h1,
+#description h2,
+#description h3,
+#description h4,
+#description h5,
+#description h6,
+#description pre,
+#description code,
+#description form,
+#description fieldset,
+#description legend,
+#description input,
+#description textarea,
+#description p,
+#description blockquote,
+#description th,
+#description td{
+    margin:0;padding:0;
+}
+#description fieldset,
+#description img{
+	border:0;
+}
+#description address,
+#description caption,
+#description cite,
+#description code,
+#description dfn,
+#description em,
+#description strong,
+#description th,
+#description var{
+    font-style:normal;font-weight:normal;
+}
+#description caption,
+#description th{
+	text-align:left;
+}
+#description h1,#description h2,#description h3,#description h4,#description h5,#description h6{
+    font-size:100%;font-weight:normal;
+}
+#description {
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+}
+
+#description li {
+	list-style: none;
+}
+
+#description h2 {
+	border-bottom:3px #a9a9a9 solid;
+	width:99%;
+	margin-bottom: 10px;
+	padding: 5px 3px 1px 0px;
+	margin-left:2px;
+	text-indent:1.2em;
+	text-align: left;
+	line-height:22px;
+	font-size: 14px;
+	font-weight:bold;
+	background-image: url(../spimg/img_titledeco_pur.png);
+	background-size: 8px 25px;
+	-webkit-background-size: 8px 25px;
+	-moz-background-size: 8px 25px;
+	background-position: 0% 50%;
+	background-repeat: no-repeat;
+	z-index:1;
+}
+
+/*===========================================
+  フッターcloseボタン
+-----------------------------------------*/
+div#floteArea {
+	position: fixed !important;
+	position:absolute;
+	//position:fixed;
+	/*bottom: 1px;*/
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+div#floteArea a{
+	font-weight:bold;
+	color:#FFF;
+	text-decoration:none;
+	font-size:16px;
+}
+
+.close_float {
+	margin:0;padding:0;
+	font-size:18px;
+	//font-size:40px;
+	font-weight:bold;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align:center;
+	padding: 10px;
+	//padding: 32px;
+	//padding-bottm: 30px;
+	/*padding: 11px 10px 9px 10px;*/
+	background:#585657;
+	background-size:10px 4px;
+}
+
+.close_float a{
+	color:#fff;
+	text-decoration:none;
+}
+
+/*
+ * --- 各ページ毎スタイル [overwrite] ---
+ */
+#description div.caption0,
+#description div.caption1{
+	background: rgb(50,220,100);
+}
+#description div.caption2{
+	background: rgb(150,255,150);
+}
+#description div.caption2 .box{
+	border:1px solid rgb(50,220,100);
+}
+#description div.caption3{
+	color:rgb(50,220,100);
+}
+#description .strong-bg{
+	background: rgb(255,255,180);
+}
+#description .strong-border1{
+	border: 1px solid rgb(50,220,100);
+}
+#description .strong-color1{
+	color:rgb(50,220,100);
+}
+
+/*--PC用タイトル--*/
+.top_ttl_pc{
+	width:560px;
+	height:65px;
+}
+.top_ttl_pc li{
+	float:left;
+}
+.top_ttl_pc .top_ttl_txt{
+	font-size: 25px;
+	letter-spacing: 0.5pt;
+	text-align: center;
+	font-weight:bold;
+	color:rgb(255,200,0);
+}
+
+/*--SP用タイトル--*/
+.top_ttl_sp{
+	width:100%;
+	margin:0 auto;
+}
+.top_ttl ul{
+	width:330px;
+}
+.top_ttl_sp li{
+	text-align: center;
+}
+.top_ttl_sp img{
+	max-width:100%;
+}
+.top_ttl_sp .top_ttl_txt{
+	font-size: 25px;
+	letter-spacing: 0.5pt;
+	text-align: center;
+	font-weight:bold;
+	color:rgb(255,200,0);
+}
+/*--SP用タイトル--*/
+
+.cycle_color_txt{
+	color:rgb(50,220,100);
+}
+.siori_bg{
+	background-color:rgb(255,200,0) !important;
+}
+
+#description .strong-color2{
+	color:#afcdeb;
+}
+#description table th{
+	background-color: rgb(150,255,150);
+}
+#description table td.tdcaption,
+#description table th.thcaption{
+	background-color: rgb(255,255,180);
+}
+#description table.green_table .i_b{
+	display:inline-block;
+}
+
+#description table.green_table th{
+	background-color: rgb(150,255,150);
+	//font-size:90%;
+}
+#description table.green_table th.th2{
+	padding:5px;
+	background-color:rgb(255,255,180);
+}
+#description table.green_table td{
+	text-align:center;
+}
+#description .indent1{ text-indent: -1em; margin-left: 1em;}
+#description .indent1_5{ text-indent: -1.5em; margin-left: 1.5em;}
+#description .indent2{ text-indent: -2em; margin-left: 2em;}
+#description .indent2_5{ text-indent: -2.5em; margin-left: 2.5em;}
+#description .indent3{ text-indent: -3em; margin-left: 3em;}
+#description .indent3_5,
+#description li.indent3_5{ text-indent: -3.5em; margin-left: 3.5em;}
+
+.ml0_must{ margin-left: 0px!important;}
+
+.ti_negative_13{
+	text-indent: -1.3em;
+}
+.box_number{
+	 	border: 1px solid rgb(50,220,100);
+    padding: 0px 3px;
+}

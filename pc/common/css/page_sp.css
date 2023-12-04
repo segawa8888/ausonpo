@@ -1,0 +1,1505 @@
+@charset 'UTF-8';
+/* ==========================================================
+ 【個別スタイル / ページリスト】
+
+ block -
+ 1. bycle
+ 2. sports
+ 3. oversea
+ 4. continue
+ 5. sitemap
+ 6. domestic
+ ========================================================== */
+/*/////////////////////////////
+ 1. bycle
+ - 1. lower_main_image bycle
+ - 2. accident_case
+ - 3. accident_you_know
+ - 4. point_lower_block
+ - 5. block_bycle_smapho
+ - 6. title_block_bycle
+ /////////////////////////////*/
+/* 1. lower_main_image bycle
+ * ------------------------- */
+.lower_main_image.bycle {
+  background: none;
+}
+.lower_main_image.bycle .main_image {
+  display: none;
+}
+.lower_main_image.bycle .sp_main_image {
+  width: 100%;
+  text-align: center;
+}
+
+/* 2. accident_case
+ * ------------------------- */
+.block_case .accident_taxi {
+  background-image: none;
+}
+
+.block_case .accident_bike01 {
+  background-image: none;
+}
+
+.block_case .accident_bike02 {
+  background-image: none;
+}
+
+.block_case .accident_work {
+  background-image: none;
+}
+
+.block_case .accident_bicycle {
+  background-image: none;
+}
+
+.block_case .accident_school {
+  background-image: none;
+}
+
+.block_case .accident_bike03 {
+  background-image: none;
+}
+
+.block_case .accident_bike04 {
+  background-image: none;
+}
+
+.block_case .accident_car {
+  background-image: none;
+}
+
+.block_case .accident_water {
+  background-image: none;
+}
+
+.block_case .accident_dog {
+  background-image: none;
+}
+
+.block_case .accident_shopping {
+  background-image: none;
+}
+
+
+.sub_link_list a {
+font-size:13px!important;
+  
+}
+
+
+.sitemap_section .sp_link_mgt {
+  width: 95%;
+  float: left;
+  margin-right: 0px;
+  display:none;
+}
+.sitemap_section .sp_only{
+	display:block;
+	margin-top:8px;
+}
+
+.sitemap_section .sp_link_mgt .sub_link_list {
+  width: 95%!important;
+  padding-left: 3.3%;
+  margin-top: 10px;
+  font-size:13px!important;
+  overflow:auto!important;
+}
+
+.sitemap_section  ul li  ul li.sub_link_list  dl dd a{
+	color: #605f5d;
+	font-size:13px!important;
+}
+
+
+
+/* 3. accident_you_know
+ * ------------------------- */
+.block_case .accident_you_know {
+  background: none;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin: 20px 0 30px;
+}
+.block_case .accident_you_know h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.block_case .accident_you_know h5:before {
+  width: 29px;
+  height: 28.5px;
+  margin-right: 6px;
+  background-size: contain;
+}
+.block_case .accident_you_know .sub_text {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.block_case .accident_you_know .accident_inner {
+  overflow: hidden;
+}
+.block_case .accident_you_know .sp_image {
+  display: block;
+  width: 28.5%;
+  float: left;
+}
+.block_case .accident_you_know .text {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 71.5%;
+  padding-left: 3%;
+  float: left;
+  font-size: 13px;
+}
+.block_case .accident_you_know .text em {
+  font-size: 13px;
+}
+.block_case .accident_you_know .text em strong {
+  font-size: 18px;
+}
+.block_case .accident_you_know .text small {
+  font-size: 10px;
+  display: block;
+}
+
+/* 4. point_lower_block
+ * ------------------------- */
+.point_lower_block {
+  padding-top: 18px;
+}
+.text_aleat {
+  text-align: left;
+  font-size: 10px;
+  padding: 10px 3.125% 0;
+}
+.link_load_service {
+  margin-bottom: 35px;
+}
+.link_load_service a {
+  font-size: 15px;
+  text-decoration: none;
+}
+.link_load_service a:before, .link_load_service a:after {
+  width: 13.5px;
+  height: 12.5px;
+  background-size: contain;
+}
+.link_load_service a:before {
+  margin-right: 10px;
+}
+.link_load_service a:after {
+  margin-left: 10px;
+}
+
+/* 5. block_bycle_smapho
+ * ------------------------- */
+.block_bycle_smapho {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+.block_bycle_smapho h3 {
+  font-size: 12px;
+  margin-bottom: 8px;
+  letter-spacing: -0.05em;
+}
+.block_bycle_smapho h3 em {
+  font-size: 16px;
+}
+.block_bycle_smapho h3:before, .block_bycle_smapho h3:after {
+  display: none;
+}
+.block_bycle_smapho h3 span {
+  //display: block;
+}
+.block_bycle_smapho h3 span:before, .block_bycle_smapho h3 span:after {
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  vertical-align: middle;
+}
+.block_bycle_smapho h3 span:before {
+  //width: 16.5px;
+  //height: 19.5px;
+  //background-image: url('../../common/img_20150623/pc/common/icon_tel.png');
+  //margin-right: 6px;
+}
+.block_bycle_smapho h3 span:after {
+  //width: 20.5px;
+  //height: 21px;
+  //background-image: url('../../common/img_20150623/pc/common/icon_smaho.png');
+  //margin-left: 6px;
+}
+.block_bycle_smapho .body_bycle_smapho > div {
+  float: none;
+  margin-top: 10px;
+}
+.block_bycle_smapho .body_bycle_smapho > div:first-child {
+  margin-top: 0;
+}
+.block_bycle_smapho .body_bycle_smapho > div h4 {
+  font-size: 14px;
+  line-height: 25px;
+}
+.block_bycle_smapho .body_bycle_smapho > div > div {
+  padding: 10px 0 8px;
+}
+.block_bycle_smapho .body_bycle_smapho .left_side {
+  width: 100%;
+  margin-right: 0;
+}
+.block_bycle_smapho .body_bycle_smapho .left_side .pc_only {
+  display: none;
+}
+.block_bycle_smapho .body_bycle_smapho .left_side .sp_only {
+  display: block;
+  width: 63%;
+  height: auto;
+  margin: 0 auto 15px;
+}
+.block_bycle_smapho .body_bycle_smapho .left_side dl {
+  display: block;
+  padding: 0 3.4%;
+}
+.block_bycle_smapho .body_bycle_smapho .left_side dl dt {
+  font-size: 13px;
+  padding-left: 0;
+}
+.block_bycle_smapho .body_bycle_smapho .left_side dl dd {
+  font-size: 15px;
+  padding-left: 40px;
+}
+.block_bycle_smapho .body_bycle_smapho .left_side dl dd a {
+  color: #2a4287;
+  text-decoration: none;
+}
+.block_bycle_smapho .body_bycle_smapho .left_side dl dd small {
+  font-size: 10px;
+}
+.block_bycle_smapho .body_bycle_smapho .left_side dl dd:before {
+  content: '';
+  width: 30.5px;
+  height: 23.5px;
+  background-size: contain;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side {
+  width: 100%;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul li {
+  letter-spacing: normal;
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  margin: 0 0 25px;
+  padding-top: 0;
+  display: table;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul li .image {
+  text-align: center;
+  display: table-cell;
+  width: 35%;
+  vertical-align: middle;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul li .image img {
+  width: 45%;
+  height: auto;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul li .text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul li .text br {
+  display: none;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul li small {
+  font-size: 10px;
+  display: block;
+  letter-spacing: -0.05em;
+  margin-top: 10px;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul li:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: 7.5px;
+  background-image: url('../../common/img_20150623/sp/bycle/icon_arrow_down.png');
+  background-size: 15px 15px;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul li:first-child:before {
+  display: none;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul .img_phone01 {
+  background-image: none;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul .img_phone02 {
+  background-image: none;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul .img_phone03 {
+  background-image: none;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side ul .img_phone04 {
+  background-image: none;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side a {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding-right: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side a img {
+  width: 69.5px;
+  height: auto;
+}
+.block_bycle_smapho .body_bycle_smapho .right_side a:after {
+  content: '';
+  width: 10.5px;
+  height: 9.5px;
+  background-size: contain;
+  margin-left: 10px;
+}
+
+/* 6. title_block_bycle
+ * ------------------------- */
+.title_block_bycle {
+  padding: 20px 0 18px;
+  text-align: center;
+}
+.title_block_bycle .title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.title_block_bycle .title:before {
+  width: 28.5px;
+  height: 16px;
+  background-size: contain;
+  margin-right: 8px;
+}
+.title_block_bycle p {
+  font-size: 10px;
+}
+.title_block_bycle p:before {
+  width: 17.5px;
+  height: 10px;
+  background-size: contain;
+  margin-right: 8px;
+}
+
+/*/////////////////////////////
+ 2. sports
+ - 1. accident_case
+ - 2. point_lower_block
+ - 3. title_section
+ /////////////////////////////*/
+/* 1. accident_case
+ * ------------------------- */
+.block_case .accident_house {
+  background-image:none;
+}
+
+.block_case .accident_bike05 {
+  background-image:none;
+}
+
+.block_case .accident_heat {
+  background-image:none;
+}
+
+.block_case .accident_ski {
+  background-image:none;
+}
+
+.block_case .accident_tenis {
+  background-image:none;
+}
+
+.block_case .accident_golf {
+  background-image:none;
+}
+
+.block_case .accident_snowbo {
+  background-image:none;
+}
+
+.block_case .accident_shopping02 {
+  background-image:none;
+}
+
+/* 2. point_lower_block
+ * ------------------------- */
+.service_leisure {
+  background: none;
+  padding: 0;
+  width: 100%;
+}
+.service_leisure_title {
+  margin-top: 20px;
+}
+.service_leisure .point_flow_text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.service_leisure .sp_image{
+  width: 40%;
+  display: block;
+  text-align: center;
+  margin: 25px auto 20px;
+}
+.service_leisure ul li {
+  font-size: 13px;
+}
+.service_leisure_inner {
+  padding: 0 3.125%;
+}
+
+/* 3. title_section
+ * ------------------------- */
+.block_lower_main.daily .block_title_purple {
+}
+
+/*/////////////////////////////
+ 3. oversea
+ - 1. lower_title mitsumori
+ - 2. mitsumori_body
+ - 3. block_premium_case
+ - 4. block_assistant_service
+ - 5. icon_app_text
+ - 6. block_trouble
+ - 7. block_sick_alert
+ - 8. block_print_info
+ - 9. radio_btn_table
+ /////////////////////////////*/
+/* 1. lower_title mitsumori
+ * ------------------------- */
+.lower_title.mitsumori {
+  font-size: 16px;
+}
+
+/* 2.mitsumori_body
+ * ------------------------- */
+.mitsumori_body {
+  padding: 0;
+}
+.mitsumori_body .box_selecter {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.mitsumori_body .box_selecter li {
+  margin: 0;
+  font-size: 12px!important;
+  width: 48%;
+  text-align: center;
+}
+.mitsumori_body .box_selecter .select_left {
+  float: left;
+}
+.mitsumori_body .box_selecter .select_right {
+  float: right;
+  text-align: right;
+}
+.mitsumori_body .box_selecter li span {
+  margin-right: 5px;
+}
+.mitsumori_body .box_selecter li select {
+  width: 60%!important;
+  display: inline-block;
+  vertical-align: middle;
+}
+.mitsumori_table {
+  margin-bottom: 10px;
+}
+.mitsumori_body .mitsumori_table_box {
+  padding: 0;
+  margin: 0;
+}
+.mitsumori_body .mitsumori_table {
+  border-spacing: 15px 0;
+}
+.mitsumori_body .mitsumori_table caption {
+  font-size: 13px;
+  border-bottom-width: 0;
+}
+.mitsumori_body .mitsumori_table tr:first-child th {
+  font-size: 12px;
+}
+.mitsumori_body .mitsumori_table th {
+}
+.mitsumori_body .mitsumori_table td {
+  font-size: 12px;
+  padding: 10px 0;
+}
+.block_lower_narrow_space.block_mitumori{
+  padding:0;
+  margin:0;
+  border:none;
+}
+/* 3. block_premium_case
+ * ------------------------- */
+.premium_case_text {
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+}
+
+.block_premium_case {
+  text-align: center;
+  letter-spacing: -0.4em;
+}
+.block_premium_case dl {
+  width: 31%;
+  margin: 0 1% 25px;
+}
+.block_premium_case dl dt {
+  font-size: 12px;
+  padding: 15px 0 0;
+}
+.block_premium_case dl dd {
+  padding-bottom: 10px;
+}
+.block_premium_case dl dd ul {
+  padding: 0 7%;
+  margin-top: 10px;
+  font-size: 10px;
+}
+.block_premium_case dl dd li {
+  text-align: left;
+  display: block;
+}
+.block_premium_case dl dd li small {
+  font-size: 10px;
+  display: inline-block;
+}
+.block_premium_case dl dd .price {
+  font-size: 15px;
+  margin-left: 0;
+  text-align: right;
+}
+.block_premium_case .premium_case_lower_text {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+.block_premium_case .premium_case_lower_text .type_family {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.block_premium_case .premium_case_lower_text .type_family:before, .block_premium_case .premium_case_lower_text .type_family:after {
+  width: 12px;
+  height: 17.5px;
+  background-size: contain;
+}
+.block_premium_case .premium_case_lower_text .type_family:before {
+  margin-right: 5px;
+}
+.block_premium_case .premium_case_lower_text .type_family:after {
+  left: -4px;
+}
+.block_premium_case .premium_case_lower_text .type_family_text {
+  font-size: 12px;
+  margin-bottom: 15px;
+  margin-left: 0;
+  text-align: left;
+}
+.block_premium_case .premium_case_lower_text .type_family_text:before {
+  content: '';
+  width: 61px;
+  height: 31px;
+  display: block;
+  background-size: contain;
+  margin: 0 auto 14px;
+}
+
+/* 4. block_assistant_service
+ * ------------------------- */
+.block_assistant_service {
+  padding: 20px 0 5px;
+  margin-bottom: 30px;
+}
+.block_assistant_service .lower_title {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.block_assistant_service .lower_title br {
+  display: inline;
+}
+.block_assistant_service .sp_image {
+  padding: 0 0 15px;
+  overflow: hidden;
+}
+.block_assistant_service .sp_image img {
+  display: block;
+  width: 43%;
+  height: auto;
+  float: left;
+  margin: 0 3% 0 2%;
+}
+.block_assistant_service .sp_image p{
+    width: 50%;
+    float: left;
+    padding: 0;
+    font-size: 12px;
+}
+.block_assistant_service > .text {
+  font-size: 12px;
+}
+.block_assistant_service > p {
+  font-size: 12px;
+  padding: 0;
+}
+.block_assistant_service > p br {
+  display: none;
+}
+
+.block_assistant_service .service_flow {
+  margin: 25px 0 10px;
+}
+.block_assistant_service .service_flow dt {
+  font-size: 13px;
+  line-height: 30px;
+}
+.block_assistant_service .service_flow dd {
+  padding: 5px 2.5% 18px;
+}
+.block_assistant_service .service_flow dd img {
+  display: block;
+  position: static;
+  width: 97%;
+  height: auto;
+  margin: 20px auto 0;
+}
+.block_assistant_service .service_flow dd ul {
+  color: #605f5d;
+  font-size: 12px;
+}
+.block_assistant_service .service_flow dd li {
+  padding-left: 2em;
+  text-indent: -2em;
+  margin-bottom: 0;
+  margin-top: 10px
+}
+.block_assistant_service .service_flow dd li em {
+  color: #2a4287;
+  font-weight: bold;
+}
+.block_assistant_service .assistant_service_inner {
+  margin: 0;
+  overflow: hidden;
+}
+.block_assistant_service .assistant_service_inner .image {
+  display: none;
+}
+.block_assistant_service .assistant_service_inner dl {
+  width: 48%;
+  float: left;
+  margin: 0 1%;
+}
+.block_assistant_service .assistant_service_inner dl dt {
+  font-size: 13px;
+  line-height: 30px;
+}
+.block_assistant_service .assistant_service_inner dl dd {
+  background: #fff;
+  text-align: center;
+  padding: 13px 0;
+}
+.block_assistant_service .assistant_service_inner dl dd .world_phone {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 10px;
+  padding: 5px 0 5px 15px;
+  width: 85%;
+  height: 60px;
+}
+.block_assistant_service .assistant_service_inner dl dd a span {
+  font-size: 12px;
+}
+.block_assistant_service .assistant_service_inner dl dd .world_phone:before {
+  width: 5px;
+  height: 5px;
+  background-size: contain;
+  top: 50%;
+  left: 5px;
+  margin-top: -2.5px;
+}
+.block_assistant_service .assistant_service_inner dl dd ul li {
+  margin-top: 6px;
+}
+.block_assistant_service .assistant_service_inner dl dd ul li a {
+  color: #2a4287;
+  text-decoration: none;
+}
+.block_assistant_service .assistant_service_inner dl dd ul li:before {
+  content: '';
+  width: 32px;
+  height: 25px;
+  background-size: contain;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.block_assistant_service .assistant_service_inner dl dd ul li:first-child:before {
+  vertical-align: middle;
+}
+.block_assistant_service .assistant_service_inner dl dd ul .tel_number {
+  text-align: right;
+}
+.block_assistant_service .assistant_service_inner dl dd ul .tel_number:before {
+  display: none;
+}
+.block_assistant_service .assistant_service_inner dl dd ul li:first-child {
+  margin-top: 0;
+}
+.block_assistant_service .assistant_service_inner dl dd ul .text_or {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.block_assistant_service .assistant_service_inner dl dd ul li span {
+  display: inline-block;
+  text-align: left;
+  font-size: 10px;
+  vertical-align: middle;
+}
+.block_assistant_service .assistant_service_inner dl dd ul li span em {
+  font-size: 13px;
+}
+.block_assistant_service .cash_image {
+  overflow: hidden;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.block_assistant_service .cash_image li {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 48%;
+  float: left;
+  margin: 0 1%;
+  font-size: 12px;
+  text-align: left;
+  padding: 95px 3% 15px;
+  background-position: center 18px;
+}
+.block_assistant_service .cash_image li br {
+  display: none;
+}
+.block_assistant_service .cash_image .icon_money {
+  background-size: 70.5px auto;
+}
+.block_assistant_service .cash_image .icon_smaho {
+  background-size: 34px auto;
+}
+
+/* 5. icon_app_text
+ * ------------------------- */
+.icon_app_text {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 8px 0 0 38px;
+  position: relative;
+}
+.icon_app_text em {
+  font-size: 18px;
+}
+.icon_app_text br {
+  display: inline;
+}
+.icon_app_text:before {
+  width: 31.5px;
+  height: 29.5px;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bnr_app {
+  width: 81.25%;
+  margin: 0 auto;
+}
+.bnr_app a {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 36.1%;
+  overflow: hidden;
+  background: url('../../common/img_20150623/sp/oversea/img_kaigaisupport.jpg') no-repeat;
+  background-position: left top;
+  background-size: contain;
+}
+
+/* 6. block_trouble
+ * ------------------------- */
+.block_trouble {
+  padding: 20px 0;
+  margin: 0;
+}
+.block_trouble dl {
+  display: block;
+  width: 100%;
+  padding-bottom: 15px;
+  margin: 0 0 10px;
+}
+.block_trouble dl dt {
+  font-size: 13px;
+  line-height: 30px;
+}
+.block_trouble dl dd {
+  font-size: 13px;
+  padding: 13px 0 0;
+}
+.block_trouble dl .image {
+  width: 25%;
+  margin: 0 auto;
+}
+.block_trouble dl .image img {
+  width: 100%;
+  height: auto;
+}
+.block_trouble dl .trouble_align {
+  padding-left: 7%;
+  padding-right: 7%;
+  text-align: left;
+}
+.block_trouble dl .trouble_align br {
+  display: none;
+}
+.block_trouble dl dd ul {
+  color: #605f5d;
+  text-align: left;
+  padding: 0 2.5%;
+}
+.block_trouble dl dd ul li {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.block_trouble dl dd ul li:first-child {
+  margin-top: 0;
+}
+
+/* 7. block_sick_alert
+ * ------------------------- */
+.block_sick_alert {
+  padding: 30px 0 35px;
+}
+.block_sick_alert .title {
+  font-size: 14px;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 0 0 0 38px;
+}
+.block_sick_alert .title span {
+  display: inline-block;
+}
+.block_sick_alert .title:before {
+  width: 33px;
+  height: 34px;
+  display: block;
+  background-size: contain;
+  margin-right: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block_sick_alert .body_sick_alert {
+  overflow: hidden;
+}
+.block_sick_alert .body_sick_alert .image {
+  display: none;
+}
+.block_sick_alert .body_sick_alert .text {
+  width: 100%;
+  float: none;
+}
+.block_sick_alert .body_sick_alert .text .point_flow_text {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.block_sick_alert .body_sick_alert .text ul {
+  font-size: 12px;
+}
+.block_sick_alert .body_sick_alert .text ul li {
+  line-height: 1.5;
+  margin-top: 5px;
+}
+.block_sick_alert .body_sick_alert .text ul li span {
+  display: block;
+  text-align: right;
+}
+.block_sick_alert .body_sick_alert .text > div {
+  overflow: hidden;
+}
+.block_sick_alert .body_sick_alert .text > div .sp_image {
+  display: block;
+  width: 32.5%;
+  float: left;
+  margin-right: 1.7%;
+}
+.block_sick_alert .body_sick_alert .text > div p {
+  width: 65%;
+  float: left;
+  font-size: 10px;
+}
+
+/* 8. block_print_info
+ * ------------------------- */
+.block_print_info {
+  padding: 15px 0 20px;
+  margin: 0 3.125% 0;
+}
+.block_print_info .title {
+  font-size: 15px;
+}
+.block_print_info .title br {
+  display: inline;
+}
+.block_print_info ul {
+  letter-spacing: -0.4em;
+  text-align: center;
+}
+.block_print_info li {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 80%;
+  display: block;
+  margin: 15px auto 0;
+  padding-left: 25px;
+  font-size: 13px;
+}
+.block_print_info li:before {
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-size: contain;
+  left: 0;
+  top: -1px;
+}
+.block_print_info li a {
+  font-size: 13px;
+}
+.block_print_info li small {
+  font-size: 10px;
+}
+
+/* 9. radio_btn_table
+ * ------------------------- */
+.radio_btn_table {
+	letter-spacing: 1em;
+}
+.radio_btn_table li {
+  margin: 5px;
+  font-size: 12px;
+  display:block;
+}
+.radio_btn_table li input {
+//  display: block;
+  margin-right: 5px;
+}
+.radio_btn_table label {
+  display:block;
+  width:80%;
+  min-width:20em;
+}
+
+
+/*/////////////////////////////
+ 4. continue
+ - 1. block_continue
+ - 2. table_continue
+ - 3. continue_section01
+ /////////////////////////////*/
+/* 1. block_continue
+ * ------------------------- */
+.block_continue .title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.block_continue .title:before {
+  width: 30px;
+  height: 32.5px;
+  display: inline-block;
+  background-size: contain;
+  margin-right: 8px;
+}
+.block_continue .text {
+  font-size: 13px;
+  padding-left: 0;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+.block_continue .text em {
+  font-size: 13px;
+}
+.block_continue .continue_alert {
+  font-size: 14px;
+  padding-left: 40px;
+  margin-bottom: 28px;
+}
+.block_continue .continue_alert:before {
+  width: 33px;
+  height: 33px;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+}
+
+/* 2. table_continue
+ * ------------------------- */
+.table_continue {
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+.table_continue .table_outer {
+  margin: 0 -10px;
+}
+.table_continue table {
+  margin-bottom: 15px;
+  border-spacing: 10px 0;
+}
+.table_continue table tr:first-child th {
+  width: 66%;
+  font-size: 12px;
+  padding: 0 0 10px 5%;
+  border-right-width: 10px;
+}
+.table_continue table tr:first-child .cell_end {
+  width: 30%;
+}
+.table_continue table td {
+  font-size: 11px;
+  padding: 12px 0 12px 5%;
+  border-right-width: 10px;
+}
+.table_continue table td small {
+  font-size: 10px;
+}
+.table_continue table .cell_vertical {
+  padding: 6px 0 6px 5%;
+}
+.table_continue table .cell_center {
+  padding-left: 0;
+}
+.table_continue ul {
+  font-size: 10px;
+}
+.table_continue ul > li {
+  margin-top: 5px;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+.table_continue ul > li > ul {
+  padding-left: 3%;
+}
+
+/* 3. continue_section01
+ * ------------------------- */
+.continue_section.section01 {
+  margin-bottom: 25px;
+}
+.continue_section.section02 {
+  padding-top: 35px;
+  margin-bottom: 65px;
+}
+.continue_section h3 {
+  font-size: 18px;
+  padding: 6px 0 4px 10px;
+  margin-bottom: 20px;
+}
+.continue_section p {
+  font-size: 13px;
+  padding-left: 1em;
+}
+.continue_section .please_list {
+  padding-left: 1em;
+  font-size: 13px;
+  margin-bottom: 35px;
+}
+.continue_section .please_list li a {
+  padding-left: 2em;
+  margin: 15px 0;
+}
+.continue_section .please_list li a:before {
+  width: 12.5px;
+  height: 10.5px;
+  background-size: contain;
+}
+.continue_section dl {
+  padding: 15px 0;
+}
+.continue_section dl dt {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.continue_section dl dd {
+  padding: 0 3.3%;
+}
+.continue_section dl dd li {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+.continue_section dl dd li em {
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.continue_section dl dd li span {
+  display: block;
+  font-size: 15px;
+  padding-left: 5em;
+}
+.continue_section dl dd li span small {
+  font-size: 10px;
+}
+.continue_section dl dd li .icon_free:before {
+  content: '';
+  width: 32px;
+  height: 25px;
+  background-size: contain;
+  margin-right: 13px;
+}
+
+/* 4. btn_continue
+ * ------------------------- */
+.btn_continue {
+  padding: 25px 0px;
+}
+.btn_continue a {
+  font-size: 12px;
+  width: 62.5%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.btn_continue a:before {
+  width: 6px;
+  height: 7px;
+  background-size: contain;
+  margin-top: -3px;
+  left: 12%;
+}
+
+/*/////////////////////////////
+ 5. sitemap
+ - 1. block_sitemap
+ - 2. sitemap_section
+ - 3. 
+ /////////////////////////////*/
+/* 1. block_sitemap
+ * ------------------------- */
+.block_sitemap {
+  margin-bottom: 0;
+}
+.block_sitemap h1 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.block_sitemap h1:before {
+  width: 22px;
+  height: 26.5px;
+  background-size: contain;
+  margin-right:2px;
+  margin-left:11px
+}
+
+/* 2. sitemap_section
+ * ------------------------- */
+.sitemap_section {
+  margin-bottom: 16px;
+}
+.sitemap_section h3 {
+  font-size: 18px;
+  padding: 7px 0 5px 11px;
+  margin-bottom: 12px;
+}
+.sitemap_section h3 a:after {
+  margin-left: 10px;
+}
+.sitemap_section ul {
+  padding-left: 3.3%;
+}
+.sitemap_section ul > li {
+  width: 100%;
+  float: none;
+  margin-right: 0;
+}
+.sitemap_section ul > li > ul > li {
+  margin-top: 10px;
+  font-size: 13px!important;
+}
+.sitemap_section ul > li > ul > li > a {
+  font-size: 13px!important;
+}
+.sitemap_section ul > li > ul > li > a:before {
+  margin-right: 8px;
+}
+.sitemap_section ul .sub_link_list {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  padding-left: 3.3%;
+   font-size: 13px!important; 
+}
+.sitemap_section ul .sub_link_list dt {
+  font-size: 13px!important;
+  padding-left: 5%;
+}
+.sitemap_section ul .sub_link_list dd {
+  padding-left: 0;
+  font-size:13px!important;
+}
+.sitemap_section ul .left_side_link {
+  margin-top: 0;
+}
+.sitemap_section ul .left_side_link dl {
+  padding-left: 3.3%;
+  font-size: 13px!important;
+}
+.sitemap_section ul .left_side_link dl dt {
+  padding-left: 0;
+}
+.sitemap_section ul .link_mgb {
+  margin-bottom: 35px;
+}
+.sitemap_section ul .sp_link_mgb {
+  margin-bottom: 35px;
+}
+.sitemap_section ul .sp_link_mgt {
+  margin-top: 10px;
+}
+
+.sitemap_section ul .sp_link_mgb .sub_link_list a {
+  font-size: 13px!important;
+}
+
+
+/*/////////////////////////////
+ 6. domestic
+ - 1. block_domestic_title
+ - 2. domestic_case_body
+ - 3. block_lower_main domestic
+ /////////////////////////////*/
+/* 1. block_domestic_title
+ * ------------------------- */
+.block_domestic_top {
+  padding: 0;
+}
+.block_domestic_title {
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align:left;
+}
+.block_domestic_title em {
+  font-size: 18px;
+}
+.block_domestic_title span {
+  display: inline-block;
+  margin-left:40px;
+  text-indent:-40px;
+}
+.block_domestic_title span:before {
+  width: 27px;
+  height: 22px;
+  background-size: contain;
+  margin-right: 15px;
+}
+.block_domestic_title.golf span:before {
+  width: 26.5px;
+  height: 29.5px;
+  background-size: contain;
+}
+
+.block_domestic_text {
+  font-size: 14px;
+  text-align: left;
+  padding: 0 3%;
+  margin-bottom: 42px;
+}
+
+/* 2. domestic_case_body
+ * ------------------------- */
+.domestic_case_body {
+  overflow: visible;
+}
+.domestic_case_body > div {
+  width: 100%;
+  float: none;
+  margin: 0 0 20px;
+}
+.domestic_case_body > div h3 {
+  font-size: 14px;
+  padding: 3px 0 0 0;
+  position: relative;
+}
+.domestic_case_body > div h3 span {
+  width: 21%;
+  padding: 3px 0 5px;
+}
+.domestic_case_body > div p {
+  background: #fff;
+  padding-top: 0;
+  text-align: center;
+}
+.domestic_case_body > div p img {
+  display: inline-block;
+}
+.domestic_case_body > div p span {
+  text-align: left;
+  font-size: 13px;
+  padding: 5px 1.5%;
+}
+.domestic_case_body.golf > div {
+  width: 100%;
+}
+.domestic_case_body.golf > div h3 span {
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.domestic_case_body.golf > div h3 em {
+  font-size: 14px;
+  position: relative;
+  margin-top: -8px;
+}
+.domestic_case_body.golf > div ul {
+  font-size: 10px;
+}
+.domestic_case_body .accident_myself {
+  background-image: none;
+}
+.domestic_case_body .accident_shopping03 {
+  background-image: none;
+}
+.domestic_case_body .accident_rescue {
+  background-image: none;
+}
+.domestic_case_body .accident_myself02 {
+  background-image: none;
+}
+.domestic_case_body .accident_holeinone {
+  background-image: none;
+}
+.domestic_case_body .accident_human {
+  background-image: none;
+}
+.domestic_case_body .accident_theft {
+  background-image: none;
+}
+.domestic_case_body.golf > div h3 div{
+	display:block;
+}
+/* 3. block_lower_main domestic
+ * ------------------------- */
+.block_lower_main.domestic {
+  margin-bottom: 0;
+}
+
+.domestic_compensation_text {
+  text-align: left;
+  font-size: 13px;
+  padding: 10px 0;
+}
+.domestic_compensation_text.kokunai {
+  text-align: center;
+}
+
+/* lower_main_cont bycle_window */
+.lower_main_cont.bycle_window {
+  padding-bottom: 70px;
+}
+a:link, a:visited {
+    text-decoration: none;;
+}
+a.underline{
+    text-decoration: underline;
+}
+.premium_table td.bronz,
+.premium_table td.gray,
+.premium_table td.silver,
+.premium_table td.gold,
+.premium_table td.purple{
+	font-size:12px;
+	font-weight:normal;
+}
+.premium_table td.bronz div,
+.premium_table td.gray div,
+.premium_table td.silver div,
+.premium_table td.gold div,
+.premium_table td.purple div{
+	font-size:12px;
+	font-weight:normal;
+}
+
+.premium_table th.pay_type{
+	font-size:80%;
+	font-weight:normal;
+}
+.premium_table th.coverage{
+	font-weight:normal;
+	font-size:80%;
+}
+.premium_table.payment_table th.coverage div{
+	height:100%;
+}
+.premium_table td.coverage{
+	font-weight:normal;
+	font-size:80%;
+}
+.premium_table td  div.bycle_order{
+	font-weight:normal;
+	font-size:100%;
+}
+
+.premium_table div.bycle_order img{
+	width:20px;
+	height:12px;
+}
+.premium_table div.bycle_order{
+	font-size:80%;
+	font-weight:normal;
+}
+.premium_table td{
+	height:30px;;
+}
+.premium_table .col1 {
+	width:34%;
+}
+.premium_table .col2 {
+	width:22%;
+}
+.premium_table .col3 {
+	width:1em;
+}
+.premium_table .col4 {
+}
+.premium_table .col5 {
+	width:22%;
+}
+.premium_table .col6 {
+	width:50%;
+}
+
+/******20151117上書き******/
+.domestic_case_body > div p img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+h1{display:none;}
+
+
+.bread_crumb{display:none;}

@@ -3,9 +3,8 @@
 
 .p-pet-mv-image {
   &__img {
-    aspect-ratio: 1100/320;
-    @include mq-max("sm") {
-      aspect-ratio: 360/219;
+    @include mq-min("md") {
+      aspect-ratio: 1100/400;
     }
     & img {
       width: 100%;

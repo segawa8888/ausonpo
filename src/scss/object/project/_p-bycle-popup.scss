@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.popup-open{
+    position: fixed;
+    right: 2rem;
+    bottom: 10rem;
+    z-index: 10000;
+    @include mq-max("md"){
+        right: 1rem;
+        bottom: 1rem;
+    }
+    img{
+        position: relative;
+        z-index: -1;
+    }
+}
+.popup-input {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0; /* 初期状態は非表示 */
+    visibility: hidden; /* 初期状態は非表示 */
+    transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease; /* トランジションを追加 */
+    &.active {
+        opacity: 1; /* 表示時の透明度を1に設定 */
+        visibility: visible; /* 表示時の可視性をvisibleに設定 */
+    }
+    .bg {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 105vw;
+        height: 105vh;
+    }
+    &-content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #fff;
+        width:60rem;
+        height: 24rem;
+        border-radius: 0.5rem;
+        @include mq-max("sm"){
+            width:22.5rem;
+            height: calc(100vh - 10rem);
+        }
+    }
+}
+.p-bycle-pouupcontent {
+    .p-bycle-popupclose{
+        width: 5.6rem;
+        height: 5.6rem;
+        background-color: $c-primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0 0.5rem 0 0;
+        @include mq-max("sm"){
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        &__cross{
+            width: 1.5rem;
+            height: 1.5rem;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                position: absolute;
+                top: 50%;
+                left: 0%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                width: 1.625rem;
+                height: 0.125rem;
+                background-color: $c-white;
+                &:first-child{
+                    transform:rotate(45deg); 
+                }
+                &:last-child{
+                    transform:rotate(135deg); 
+                }
+            }
+        }
+        p{
+            padding-top: 0.625rem;
+            color: $c-white;
+            text-align: center;
+            @include mq-max("sm"){
+                font-size: 0.75rem;
+            }
+        }
+    }
+    &__banner{
+        width: 100%;
+        height: 100%;
+        padding: 3.125rem 2.125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include mq-max("sm"){
+            padding: 1.5rem 0.625rem;
+        }
+        .p-bycle-pouupcontent-text{
+            font-size: 1.5rem;
+            text-align: center;
+            padding-bottom: 4rem;
+            @include mq-max("sm"){
+                font-size: 1.125rem;
+                line-height: 1.6;
+                padding-bottom: 1rem;
+            }
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            @include mq-max("sm"){
+                flex-direction: column;
+            }
+            li{
+                height: 10rem;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex-direction: column;
+                padding: 0 1rem;
+                @include mq-max("sm"){
+                    max-width: 100%;
+                    margin-bottom: 1rem;
+                    height: auto;
+                    width: 100%;
+                    padding: 0 0 0 0;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                a{
+                    width: 100%;
+                    p{
+                        font-size: 1.125rem;
+                        font-weight: bold;
+                        text-align: center;
+                        padding-bottom: 0.5rem;
+                        @include mq-max("sm"){
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

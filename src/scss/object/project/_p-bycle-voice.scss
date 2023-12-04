@@ -1,43 +1,52 @@
 @charset "UTF-8";
 @use "../../global" as *;
 
-.-p-bycle-voice{
+.-p-bycle-voice {
     max-width: 100%;
     width: 100%;
-    &__list{
-        justify-content: space-between;
+    &__list {
+        justify-content: center;
+        gap: 2.5rem;
+        @include mq-max("sm") {
+            justify-content: space-between;
+            gap: 1rem;
+        }
     }
-
 }
-.p-bycle-box{
+.p-bycle-box {
     max-width: calc((100% - 12rem) / 3);
-    @include mq-max("md"){
+    @include mq-max("md") {
         max-width: calc((100% - 6rem) / 3);
     }
-    @include mq-max("sm"){
+    @include mq-max("sm") {
         max-width: 100%;
         width: 100%;
     }
     width: 100%;
-    .p-bycle-box__type{
+    .p-bycle-box__type {
         justify-content: center;
         align-items: center;
-        &-icon{
+        &-icon {
             width: 7.25rem;
             height: 7.25rem;
         }
-        &-name{
+        &-name {
             width: calc(100% - 7.25rem);
-            .p-bycle-box-voice-typename{
+            .p-bycle-box-voice-typename {
                 justify-content: flex-start;
                 align-items: center;
-                span{
+                span {
                     width: 5.25rem;
                     height: 1.5rem;
                     justify-content: center;
                     align-items: center;
                 }
             }
+        }
+    }
+    .p-bycle-box__inner {
+        p {
+            line-height: 1.5;
         }
     }
 }
