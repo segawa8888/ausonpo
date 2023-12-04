@@ -5,5 +5,11 @@
 .p-corporate-container {
     @include mq-min("sm") {
         width: rem(910px);
+        margin-left: auto;
+        margin-right: auto;
+
+        &.-sm {
+            width: rem(748px);
+        }
     }
 }

@@ -22,8 +22,25 @@
                 padding: 1.25rem rem(4px) 1.25rem rem(20px);
             }
         }
+    }
 
+    &-officer {
 
+        th {
+            @include mq-min("sm") {
+                width: rem(357px);
+            }
+            @include mq-max("sm") {
+                padding: 1.25rem 0.25rem;
+            }
+
+        }
+
+        td {
+            @include mq-max("sm") {
+                padding: 1.25rem 0.5rem;
+            }
+        }
     }
 
 }
