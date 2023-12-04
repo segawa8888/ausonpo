@@ -3,32 +3,29 @@
 // TOPメッセージ
 
 .p-corporate-link {
+    color: $c-primary;
+    font-weight: 700;
+    font-size: rem(16px);
+    padding-right: rem(28px);
+    position: relative;
 
-    &-map {
-        color: $c-primary;
-        font-weight: 700;
-        font-size: rem(16px);
-        padding-right: rem(28px);
-        position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 24px;
+        height: rem(20px);
+        background: url(/common_2024/img/icon/icon_external_primary.svg) center center no-repeat;
+        background-size: rem(18px) rem(16px);
 
-        &::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 0;
-            width: 24px;
-            height: rem(20px);
-            background: url(/common_2024/img/icon/icon_external_primary.svg) center center no-repeat;
-            background-size: rem(18px) rem(16px);
-
-            @include mq-max("md") {
-                width: rem(24px);
-            }
+        @include mq-max("md") {
+            width: rem(24px);
         }
+    }
 
-        &:hover {
-            opacity: 0.6;
-        }
+    &:hover {
+        opacity: 0.6;
     }
 }
