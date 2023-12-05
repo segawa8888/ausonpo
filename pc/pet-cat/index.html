@@ -51,50 +51,30 @@
     <!-- End Google Tag Manager -->
 
     <nav class="c-breadcrumbs" aria-label="breadcrumb">
-      <ol
-        itemscope
-        itemtype="http://schema.org/BreadcrumbList"
-        class="c-breadcrumbs__list l-container lg:-full sm:-full"
-      >
-        <li
-          class="c-breadcrumbs__item"
-          itemprop="itemListElement"
-          itemscope
-          itemtype="http://schema.org/ListItem"
-        >
-          <a itemprop="item" href="/pc/">au損保トップ</a><meta itemprop="position" content="1" />
+      <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="c-breadcrumbs__list l-container lg:-full sm:-full">
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="/pc/"><span itemprop="name">au損保トップ</span></a
+          ><meta itemprop="position" content="1" />
         </li>
-        <li
-          class="c-breadcrumbs__item"
-          itemprop="itemListElement"
-          itemscope
-          itemtype="http://schema.org/ListItem"
-          aria-current="page"
-        >
-        <a itemprop="item" href="/pc/pet">ペット保険</a><meta itemprop="position" content="2" />
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="/pc/pet/index.html"><span itemprop="name">ペット保険</span></a
+          ><meta itemprop="position" content="2" />
         </li>
-        <li
-        class="c-breadcrumbs__item"
-        itemprop="itemListElement"
-        itemscope
-        itemtype="http://schema.org/ListItem"
-        aria-current="page"
-      >
-        猫の保険<meta itemprop="position" content="3" />
-      </li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page"><span itemprop="name">猫の保険</span><meta itemprop="position" content="3" /></li>
       </ol>
     </nav>
+    
     <main class="l-main l-container lg:-full sm:-full js-main">
-      <div class="p-pet-mv-images u-mt-5 sm:u-mt-2 sm:u-hidden">
+      <h1 class="p-pet-mv-images u-mt-5 sm:u-mt-2 sm:u-hidden">
         <picture>
           <source srcset="/pc/pet/assets/img/pet_cat_mv_pc.webp" media="(min-width:768px)" type="image/webp" />
           <img
             src="/pc/pet/assets/img/pet_cat_mv_sp.webp"
-            alt="保険金を請求したい"
-            loading="lazy"
+            alt="ほしい安心、そろってる。au損保のニャンコの保険（ニャンポ）"
+            loading="eager"
           />
         </picture>
-      </div>
+      </h1>
 
       <div class="p-pet-mv-images u-mt-5 sm:u-mt-2 sm-min:u-hidden">
         <div class="p-pet-mv-images__slide splide js-mv-slider is-initialized is-overflow splide--loop splide--ltr splide--draggable is-active" id="splide01" role="region" aria-roledescription="carousel">
@@ -138,11 +118,11 @@
       </div>
 
       <!-- /.p-pet-mv-images -->
-      <div class="p-pet-dog-manzokudo u-flex u-mt-6">
+      <div class="p-pet-dog-manzokudo u-flex u-mt-6 sm:u-hidden">
         <figure class="p-pet-dog-manzokudo__icon">
           <picture>
             <source srcset="/pc/pet/assets/img/pet_dog_manzokudo.webp" type="image/webp" />
-            <img src="/pc/pet/assets/img/pet_dog_manzokudo.png" alt="お客さま満足度94.4%" loading="eager" />
+            <img src="/pc/pet/assets/img/pet_dog_manzokudo.png" alt="お客さま満足度93.4%" loading="eager" />
           </picture>
         </figure>
         <div class="p-pet-dog-manzokudo__text u-text-20 u-text-bold u-leading-relaxed">
@@ -154,6 +134,12 @@
           </p>
         </div>
       </div>
+      <div class="p-pet-dog-manzokudo sm-min:u-hidden u-mt-4">
+        <picture>
+          <source srcset="/pc/pet/assets/img/pet_dog_manzokudo_sp.webp" type="image/webp" />
+          <img src="/pc/pet/assets/img/pet_dog_manzokudo_sp.png" alt="お客さま満足度93.4%" loading="eager" />
+        </picture>
+      </div>
       <!-- /.p-pet-dog-manzokudo -->
       <p class="u-text-center u-mt-8">
         <a href="/pc/keizoku_tetsuzuki/index.html" class="c-btn -md"
@@ -161,7 +147,7 @@
         >
       </p>
       <p class="u-mt-2 u-text-center">
-        <a href="/pc/pet-dog/application.html" class="u-link-has-arrow -sm">お申込み時の注意事項はこちら</a>
+        <a href="/pc/pet-cat/application.html" class="u-link-has-arrow -sm">お申込み時の注意事項はこちら</a>
       </p>
       <div class="p-pet-customer u-mt-12">
         <div class="p-pet-customer__inner">
@@ -185,7 +171,7 @@
               <div class="p-pet-customer__body-wrapper-right sm:u-mt-10">
                 <div class="p-pet-customer__body-wrapper-right-container">
                   <a href="/pc/keiyakusya/pet/insurance-claim.html" class="p-pet-customer__body-wrapper-right-container-btn u-mx-auto">
-                    <div class="p-pet-customer__body-wrapper-right-container-btn-icon">
+                    <div class="p-pet-customer__body-wrapper-right-container-btn-icon" style="width:70px; margin-bottom:10px;">
                       <picture>
                         <source srcset="/pc/keiyakusya/assets/img/icon_seikyu.webp" type="image/webp" />
                         <img
@@ -196,7 +182,7 @@
                       </picture>
                     </div>
                     <h3 class="p-pet-customer__body-wrapper-right-container-btn-text">
-                      保険金を<br />請求したい
+                      保険金の<br />請求したい
                     </h3>
                   </a>
                   <a href="/pc/keiyakusya/pet/anicli24.html" class="p-pet-customer__body-wrapper-right-container-btn u-mx-auto">
@@ -268,7 +254,7 @@
             </div>
             <p class="p-pet-type-info__text">
               <span>保険料の負担は抑えたい</span>けど、<br />
-              高額になりがちな<span class="u-text-primary">入院・手術に特化</span>して備えておきたい
+              高額になりがちな<span class="u-text-primary">入院・手術に特化して</span>保険料を抑えたい方へ
             </p>
           </div>
         </div>
@@ -515,19 +501,7 @@
                 <span>約<i>7</i>割</span>の方が<span><i>通院あり</i>タイプ</span>の <span><i>70</i>%コース</span>を選択されています。
               </p>
             </div>
-            <div class="p-pet-balloon-girl__text sm:u-hidden">
-              <p>
-                ※70%・50%とは:かかった入院・手術等の費用のうち保険金をお支払いする割合です。<br>
-                70％コースでは、費用の70％を保険金とし、30％がお客さまの負担割合となります。
-              </p>
-            </div>
           </div>
-        </div>
-        <div class="p-pet-balloon-girl__text lg:u-hidden">
-          <p>
-            ※70%・50%とは:かかった入院・手術等の費用のうち保険金をお支払いする割合です。<br>
-            70％コースでは、費用の70％を保険金とし、30％がお客さまの負担割合となります。
-          </p>
         </div>
       </div>
       <!-- /.p-pet-compensation-cont__balloon -->
@@ -737,7 +711,7 @@
               </div>
               <div class="c-point-box__text">
                 <p>
-                  大切な家族（ネコちゃん）の健康やしつけ、<br />お困りごとなどをアニクリ24の医院長先生を含む獣医師に<br />
+                  大切な家族（ネコちゃん）の健康やしつけ、<br />お困りごとなどをアニクリ24の医院長先生を含む獣医師に<br class="sm:u-hidden">
                   24時間365日無料で電話相談できます
                 </p>
               </div>
@@ -864,14 +838,14 @@
           </h4>
         </div>
         <div class="p-pet-application__box u-mt-4 sm:u-mt-5">
-          <a href="/pca/popup_mbt.htm|?tPet=1" class="p-pet-application__box-btn">
+          <a href="https://www.au-sonpo.co.jp/pca/popup_aute_pet_20140401?tPet=1" class="p-pet-application__box-btn">
             <p class="p-pet-application__box-btn--yes">
               <strong>通院あり</strong>タイプ<br class="lg:u-hidden" />お申込み<span class="lg:u-hidden"
                 >はこちら</span
               >
             </p>
           </a>
-          <a href="/pca/popup_mbt.html?tPet=0" class="p-pet-application__box-btn">
+          <a href="https://www.au-sonpo.co.jp/pca/popup_aute_pet_20140401?tPet=0" class="p-pet-application__box-btn">
             <p class="p-pet-application__box-btn--no">
               <strong>通院なし</strong>タイプ<br class="lg:u-hidden" />お申込み<span class="lg:u-hidden"
                 >はこちら</span
@@ -882,7 +856,7 @@
         <p class="p-pet-application__text u-mt-4 sm:u-mt-5">auユーザー以外もOK！</p>
       </div>
       <p class="u-mt-1 u-text-center">
-        <a href="/pc/pet-dog/application.html" class="u-link-has-arrow -sm">お申込み時の注意事項はこちら</a>
+        <a href="/pc/pet-cat/application.html" class="u-link-has-arrow -sm">お申込み時の注意事項はこちら</a>
       </p>
       <div class="u-text-center u-mt-10">
         <a href="/pc/pet-dog/index.html" class="p-pet-btn p-pet-btn--dog p-pet-btn--single">
@@ -1057,19 +1031,19 @@
             <div class="p-pet-link__img-item">
               <picture>
                 <source srcset="/pc/pet/assets/img/pet_pc_icon.webp" type="image/webp" />
-                <img src="/pc/pet/assets/img/pet_pc_icon.png" alt="" loading="lazy" />
+                <img src="/pc/pet/assets/img/pet_pc_icon.png" alt="PCとauIDの連携イメージ" loading="lazy" />
               </picture>
             </div>
             <div class="p-pet-link__img-item">
               <picture>
                 <source srcset="/pc/pet/assets/img/pet_arrow_icon.webp" type="image/webp" />
-                <img src="/pc/pet/assets/img/pet_arrow_icon.png" alt="" loading="lazy" />
+                <img src="/pc/pet/assets/img/pet_arrow_icon.png" alt="PCとauIDの連携イメージ" loading="lazy" />
               </picture>
             </div>
             <div class="p-pet-link__img-item">
               <picture>
                 <source srcset="/pc/pet/assets/img/pet_id_icon.webp" type="image/webp" />
-                <img src="/pc/pet/assets/img/pet_id_icon.png" alt="" loading="lazy" />
+                <img src="/pc/pet/assets/img/pet_id_icon.png" alt="PCとauIDの連携イメージ" loading="lazy" />
               </picture>
             </div>
           </div>
@@ -1104,55 +1078,21 @@
         <h2 class="c-heading2-has-line">よくあるご質問</h2>
         <ol class="c-faq l-container lg:-md u-mt-12">
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
-              保険料はどのように支払うのですか？
-            </h3>
-            <div
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="http://schema.org/Answer"
-              class="c-faq__wrapper js-accordion-toggle-content"
-            >
             <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">保険料はどのように支払うのですか？</h3>
             <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
               <div itemprop="text" class="c-faq__content">
-                保険料のお支払い方法は、クレジットカード払・auかんたん決済・au PAY・コンビニ払となります。<br />
-                ただし、「ゴルフの保険」、「国内旅行の保険」および「海外旅行の保険」にお申込みの場合には、コンビニエンスストアでのお支払いはお選びいただけません。
-                <p class="u-mt-2">
-                  ※auかんたん決済は、月々のau携帯電話料金と合算して決済するお支払い方法です。
-                </p>
-                <p class="u-mt-2">
-                  ※auかんたん決済の一時払では、Pontaポイントを1ポイント＝1円相当でご利用いただけます。
-                </p>
-                <p class="u-mt-2">
-                  ※当サイトの au PAY は、KDDI株式会社が運営する au PAY（ネット支払い）です。チャージされた au
-                  PAY 残高を利用して保険料をお支払いいただくことができます。
-                </p>
-                <p class="u-mt-2">
-                  ※　「自転車向け保険　Bycle」、「自転車向け保険　Bycle Best」、「自転車向け保険 Bycle
-                  S」、「ケガの保険　交通事故」、「ケガの保険　日常の事故」の保険期間1年のご契約、および「ペットの保険」をクレジットカード払またはauかんたん決済でお申込みの場合、月払をお選びいただくこともできます。
-                </p>
                 保険料のお支払い方法は、クレジットカード払、auかんたん決済、au PAY、コンビニ払となります。ただし、「ゴルフの保険」、「国内旅行の保険」および「海外旅行の保険」にお申込みの場合には、コンビニエンスストアでのお支払いはお選びいただけません。<br><br>
                 <span class="u-text-gray">
-                  ※auかんたん決済は、月々のau携帯電話料金と合算して決済するお支払い方法です。<br><br>
-                  ※auかんたん決済の一時払では、Pontaポイントを1ポイント＝1円相当でご利用いただけます。<br><br>
-                  ※当サイトの au PAY は、KDDI株式会社が運営する au PAY（ネット支払い）です。<br><br>
-                  チャージされた au PAY 残高を利用して保険料をお支払いいただくことができます。<br><br>
+                  ※auかんたん決済は、月々のau携帯電話料金と合算して決済するお支払い方法です。<br>
+                  ※auかんたん決済の一時払では、Pontaポイントを1ポイント＝1円相当でご利用いただけます。<br>
+                  ※当サイトの au PAY は、KDDI株式会社が運営する au PAY（ネット支払い）です。<br>
+                  チャージされた au PAY 残高を利用して保険料をお支払いいただくことができます。<br>
                   ※ 「自転車向け保険 Bycle」、「自転車向け保険 Bycle Best」、「自転車向け保険 Bycle S」、「ケガの保険 交通事故」、「ケガの保険 日常の事故」の保険期間1年のご契約、および「ペットの保険」をクレジットカード払またはauかんたん決済でお申込みの場合、月払をお選びいただくこともできます。
                 </span>
               </div>
             </div>
           </li>
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
-              【ペットの保険】手術せず入院だけの場合でも補償の対象となりますか？
-            </h4>
-            <div
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="http://schema.org/Answer"
-              class="c-faq__wrapper js-accordion-toggle-content"
-            >
             <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">手術せず入院だけの場合でも補償の対象となりますか？</h3>
             <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
               <div itemprop="text" class="c-faq__content">
@@ -1161,109 +1101,29 @@
             </div>
           </li>
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
-              【ペットの保険】ペットが現在治療中ですが、加入できますか？
-            </h4>
-            <div
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="http://schema.org/Answer"
-              class="c-faq__wrapper js-accordion-toggle-content"
-            >
             <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">ペットが現在治療中ですが、加入できますか？</h3>
             <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
               <div itemprop="text" class="c-faq__content">
-                <p>
-                  お申込み日時点において、治療中もしくは経過観察中の病気やケガがある場合、または、過去3か月以内に動物病院にて病気やケガの治療目的で診察を受けたことがある場合には、ご契約いただけません。また、以下の病気であると診断されたことがある場合には、ご契約をお引受けすることができません。
-                </p>
-                <p class="u-mt-4">・悪性腫瘍　・腎疾患（腎不全など）</p>
-                <p>・免疫介在性溶血性貧血（IMHA）</p>
-                <p>・免疫介在性血小板減少症</p>
-                <p>・巨大食道症</p>
-                <p>・膵外分泌不全</p>
-                <p>・肝硬変　・門脈シャント</p>
-                <p>・脳神経疾患（水頭症を含む）</p>
-                <p>・てんかん様発作、けいれん発作　・椎間板ヘルニア</p>
-                <p>・心疾患（僧帽弁閉鎖不全症など）</p>
-                <p>・フィラリア症</p>
-                <p>・甲状腺機能亢進症</p>
-                <p>・甲状腺機能低下症</p>
-                <p>・副腎皮質機能低下症（アジソン病）</p>
-                <p>・副腎皮質機能亢進症（クッシングﾞ病）</p>
-                <p>・糖尿病　・猫伝染性腹膜炎（FIP）</p>
-                <p>・猫白血病（FeLV）</p>
-                <p>・猫後天性免疫不全症候群（FIV）</p>
-                <p>
-                  なお、上記の病気以外でも、特定の疾病や特定の身体部位を補償の対象外とすることでお引受けをさせていただく場合もあります。詳しくはお申込み時の審査結果画面をご確認ください。
-                </p>
-              </div>
-            </div>
-          </li>
-          <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
-              【ペットの保険】他社のペット保険に加入しているのですが、追加で加入できますか？
-            </h4>
-            <div
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="http://schema.org/Answer"
-              class="c-faq__wrapper js-accordion-toggle-content"
-            >
-              <div itemprop="text" class="c-faq__content">
-                <p>いいえ。他社のペット保険と追加(補償期間の重複)して、ご加入はできません。</p>
-                <p>
-                  ただし、当社の保険開始日（※下記を参照）時点において、他社のペット保険にご加入でない場合には、お申込いただくことが出来ます。
-                </p>
-                <p>詳しくは当社カスタマーセンターまでお問い合わせください。</p>
-                <p class="u-mt-4">※「ペットの保険」（ペット医療費用保険）の保険開始日</p>
-                <p>■初年度契約(新規のご契約)の場合</p>
-                <p>①毎月1日から20日までにお申込み手続きを完了した場合は、その翌月1日の午前0時</p>
-                <p>②毎月21日から月末までにお申込み手続きを完了した場合は、その翌々月1日の午前0時</p>
-                <p>(例)</p>
-                <p>・申込日が、11月1日の場合、保険開始日は12月1日</p>
-                <p>・申込日が、11月21日の場合、保険開始日は翌年1月１日</p>
-              </div>
-            </div>
-          </li>
-          <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h4 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
-              【ペットの保険】何歳の犬・猫まで加入できますか？
-            </h4>
-            <div
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="http://schema.org/Answer"
-              class="c-faq__wrapper js-accordion-toggle-content"
-            >
-              <div itemprop="text" class="c-faq__content">
-                <p>
-                  新規のご契約は、保険開始日時点で生後30日から満10歳までとなります。（継続契約の場合、年齢に制限はございません）なお、保険開始日は以下の通り、申込日によって異なります。
-                </p>
-                <p>①毎月1日から20日までにお申込み手続きを完了した場合は、その翌月1日の午前0時</p>
-                <p>②毎月21日から月末までにお申込み手続きを完了した場合は、その翌々月1日の午前0時</p>
-                <p>(例)</p>
-                <p>・申込日が、11月1日の場合、保険開始日は12月1日</p>
-                <p>・申込日が、11月21日の場合、保険開始日は翌年1月1日</p>
-                <p class="u-mt-4">
-                  なお、保険契約が初年度契約である場合において、保険開始日からその日を含めて30日間（待機期間）に発症した「病気」についてはお支払の対象にはなりません。
-                </p>
-                <p>ただし、継続契約には待機期間はありません。</p>
                 お申込み日時点において、治療中もしくは経過観察中の病気やケガがある場合、または、過去3か月以内に動物病院にて病気やケガの治療目的で診察を受けたことがある場合には、ご契約いただけません。また、以下の病気であると診断されたことがある場合には、ご契約をお引受けすることができません。<br><br>
-                ・悪性腫瘍　・腎疾患（腎不全など）<br>
+                ・悪性腫瘍<br>
+                ・腎疾患（腎不全など）<br>
                 ・免疫介在性溶血性貧血（IMHA)<br>
                 ・免疫介在性血小板減少症<br>
                 ・巨大食道症<br>
                 ・膵外分泌不全<br>
-                ・肝硬変　・門脈シャント<br>
+                ・肝硬変<br>
+                ・門脈シャント<br>
                 ・脳神経疾患（水頭症を含む）<br>
-                ・てんかん様発作、けいれん発作　・椎間板ヘルニア<br>
+                ・てんかん様発作、けいれん発作
+                <br>・椎間板ヘルニア<br>
                 ・心疾患（僧帽弁閉鎖不全症など）<br>
                 ・フィラリア症<br>
                 ・甲状腺機能亢進症<br>
                 ・甲状腺機能低下症<br>
                 ・副腎皮質機能低下症（アジソン病）<br>
                 ・副腎皮質機能亢進症（クッシングﾞ病）<br>
-                ・糖尿病　・猫伝染性腹膜炎（FIP)<br>
+                ・糖尿病<br>
+                ・猫伝染性腹膜炎（FIP)<br>
                 ・猫白血病（FeLV)<br>
                 ・猫後天性免疫不全症候群(FIV)<br>
                 なお、上記の病気以外でも、特定の疾病や特定の身体部位を補償の対象外とすることでお引受けをさせていただく場合もあります。詳しくはお申込み時の審査結果画面をご確認ください。
@@ -1397,13 +1257,13 @@
         <h4 class="p-column-cta__heading">保険タイプを選んでお申込みへ</h4>
         <ul class="p-column-cta__list">
           <li class="p-column-cta__item -primary">
-            <a href="/pca/popup_mbt.htm|?tPet=1">
+            <a href="https://www.au-sonpo.co.jp/pca/popup_aute_pet_20140401?tPet=1">
               <h4 class="p-column-cta__title">＼ しっかり備える ／</h4>
               <p class="p-column-cta__text"><span>通院あり</span>タイプ<br />お申込みはこちら</p>
             </a>
           </li>
           <li class="p-column-cta__item -yellow">
-            <a href="/pca/popup_mbt.html?tPet=0">
+            <a href="https://www.au-sonpo.co.jp/pca/popup_aute_pet_20140401?tPet=0">
               <h4 class="p-column-cta__title">＼ お得に備える ／</h4>
               <p class="p-column-cta__text"><span>通院なし</span>タイプ<br />お申込みはこちら</p>
             </a>
