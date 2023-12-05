@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-moushikomi {
+  &__layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(32px) 0;
+    @include mq-max("sm") {
+      flex-direction: column;
+      padding: rem(20px) 0;
+    }
+  }
+  &__pic-1 {
+    width: rem(360px);
+    @include mq-max("sm") {
+      width: rem(228px);
+    }
+  }
+  &__pic-2 {
+    width: rem(260px);
+    margin-left: rem(48px);
+    @include mq-max("sm") {
+      width: rem(198px);
+      margin-left: 0;
+      margin-top: rem(20px);
+    }
+  }
+}
+.p-moushikomi-box {
+  border-radius: rem(4px);
+  border: 2px solid $c-primary;
+  &__heading {
+    color: $c-white;
+    font-size: rem(18px);
+    font-weight: 700;
+    background: $c-primary;
+    padding: rem(12px);
+    line-height: 1.5;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(24px) rem(32px);
+    @include mq-max("sm") {
+      flex-direction: column;
+      padding: rem(20px);
+    }
+  }
+  &__content {
+    flex: 1;
+    order: 2;
+    margin-left: rem(32px);
+    @include mq-max("sm") {
+      margin-left: 0;
+      margin-top: rem(20px);
+    }
+  }
+  &__pic {
+    width: rem(180px);
+    order: 1;
+  }
+}
+.p-moushikomi-box2 {
+  background: $c-base-050;
+  border-radius: rem(12px);
+  padding: rem(24px) rem(36px);
+  @include mq-max("sm") {
+    border-radius: rem(8px);
+    padding: rem(20px);
+  }
+  &__heading {
+    color: $c-primary;
+    font-size: rem(24px);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: rem(16px);
+    @include mq-max("sm") {
+      font-size: rem(20px);
+      margin-bottom: rem(20px);
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq-max("sm") {
+      flex-direction: column;
+    }
+  }
+  &__content {
+    flex: 1;
+    order: 2;
+    margin-left: rem(24px);
+    @include mq-max("sm") {
+      margin-left: 0;
+      margin-top: rem(20px);
+    }
+  }
+  &__pic {
+    width: rem(116px);
+    order: 1;
+    @include mq-max("sm") {
+      width: rem(140px);
+    }
+  }
+  &.-item-1 &__pic {
+    //width: rem(132px);
+  }
+}
