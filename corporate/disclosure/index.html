@@ -3,7 +3,7 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8" />
     <!--▼タイトル・キーワードなどの指定-->
-    <title>会社情報 - au損害保険公式サイト</title>
+    <title>ディスクロージャー・電子公告｜au損害保険公式サイト</title>
     <meta name="description" content="au損害保険株式会社の企業情報や、ニュースリリースなどがご覧いただけます。" />
 
     <script type="text/javascript" src="/pc/common/js/campcd.js"></script>
@@ -44,9 +44,9 @@
     <main class="l-main l-container lg:-full sm:-full js-main">
         <!--コンテンツはこちら-->
         <h1 class="c-heading1-bg-primary p-corporate-title">ディスクロージャー・電子公告</h1>
-        <p class="l-container lg:-md u-mt-6 sm:u-mt-8 sm:u-mx-8 u-text-center u-text-16 u-text-bold u-tracking-wider">
+        <h4 class="l-container lg:-md u-mt-6 sm:u-mt-8 sm:u-mx-8 u-text-center u-text-16 u-text-bold u-tracking-wider">
             当社の経営方針、事業概況等に<br class="lg:u-hidden">ついてご説明した<br class="lg:u-hidden">ディスクロージャー資料です。
-        </p>
+        </h4>
         <h2 class="c-heading2-has-line u-mt-10">ディスクロージャー</h2>
         <!-- ディスクロージャー -->
         <section class="l-container sm:-screen u-bg-base-050 u-py-6 sm:u-mx-auto u-mt-8 sm:u-mt-5">
@@ -153,8 +153,9 @@
         <!-- 電子広告 -->
         <section class="l-container sm:-sm">
             <h2 class="c-heading2-has-line">電子広告</h2>
-            <div class="p-corporate-container -sm u-flex u-mt-8 sm:u-mt-6 sm:u-block sm:u-text-center">
-                <div>
+            <div class="p-corporate-container -sm u-flex sm:u-block u-mt-8 sm:u-mt-6 sm:u-text-center">
+                <div class="u-w-1/2 sm:u-w-full">
+                    <!-- 6番目以降のリンクにはhidden-linkクラスを付与 -->
                     <a href="javascript:void(0)"
                         onclick="openwin2('https://www.au-sonpo.co.jp/corporate/pdf/230612_bs_pl.pdf');"
                         class="c-download-pdf u-my-1 sm:u-pt-4">2022年度（2023年3月31日現在）貸借対照表・損益計算書
@@ -175,16 +176,17 @@
                         onclick="openwin2('https://www.au-sonpo.co.jp/corporate/pdf/190625_bs_pl.pdf');"
                         class="c-download-pdf u-my-1 sm:u-pt-4">2018年度（2019年3月31日現在）貸借対照表・損益計算書
                     </a>
-                </div>
-                <div class="sm:u-hidden">
                     <a href="javascript:void(0)"
                         onclick="openwin2('https://www.au-sonpo.co.jp/corporate/pdf/180626_bs_pl.pdf');"
-                        class="c-download-pdf u-my-1 sm:u-pt-4">2017年度（2018年3月31日現在）貸借対照表・損益計算書
+                        class="c-download-pdf u-my-1 sm:u-pt-4 sm:u-hidden hidden-link">2017年度（2018年3月31日現在）貸借対照表・損益計算書
                     </a>
                     <a href="javascript:void(0)"
                         onclick="openwin2('https://www.au-sonpo.co.jp/corporate/pdf/170628_bs_pl.pdf');"
-                        class="c-download-pdf u-my-1 sm:u-pt-4">2016年度（2017年3月31日現在）貸借対照表・損益計算書
+                        class="c-download-pdf u-my-1 sm:u-pt-4 sm:u-hidden hidden-link">2016年度（2017年3月31日現在）貸借対照表・損益計算書
                     </a>
+                </div>
+                <div class="u-w-1/2 sm:u-w-full u-ml-6 sm:u-mx-0 sm:u-hidden hidden-link">
+                    <!-- PC画面の右側のリンク：hidden-linkは付与しない -->
                     <a href="javascript:void(0)"
                         onclick="openwin2('https://www.au-sonpo.co.jp/corporate/pdf/160622_bs_pl.pdf');"
                         class="c-download-pdf u-my-1 sm:u-pt-4">2015年度（2016年3月31日現在）貸借対照表・損益計算書
@@ -197,8 +199,20 @@
                         onclick="openwin2('https://www.au-sonpo.co.jp/corporate/pdf/140623_bs_pl.pdf');"
                         class="c-download-pdf u-my-1 sm:u-pt-4">2013年度（2014年3月31日現在）貸借対照表・損益計算書
                     </a>
+                    <a href="javascript:void(0)"
+                        onclick="openwin2('https://www.au-sonpo.co.jp/corporate/pdf/130627_bs_pl.pdf');"
+                        class="c-download-pdf u-my-1 sm:u-pt-4">2012年度（2013年3月31日現在）貸借対照表・損益計算書
+                    </a>
+                    <a href="javascript:void(0)"
+                        onclick="openwin2('https://www.au-sonpo.co.jp/corporate/pdf/120627_bs_pl.pdf');"
+                        class="c-download-pdf u-my-1 sm:u-pt-4">2011年度（2012年3月31日現在）貸借対照表・損益計算書
+                    </a>
+                    <a href="javascript:void(0)"
+                        onclick="openwin2('https://www.au-sonpo.co.jp/corporate/pdf/110630_bs_pl.pdf');"
+                        class="c-download-pdf u-my-1 sm:u-pt-4">2010年度（2011年3月31日現在）貸借対照表・損益計算書
+                    </a>
                 </div>
-                <div class="lg:u-hidden u-mt-8">
+                <div id="view-all" class="lg:u-hidden u-mt-8">
                     <a href="#" class="c-btn -md">電子広告を全て見る</a>
                 </div>
             </div>

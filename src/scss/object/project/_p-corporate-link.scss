@@ -10,7 +10,7 @@
     position: relative;
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -27,5 +27,23 @@
 
     &:hover {
         opacity: 0.6;
+    }
+
+    &.-sm {
+        @include mq-max("sm") {
+            &::after {
+                top: 1.75rem;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &-more {
+        background-size: rem(7px);
+        color: $c-primary;
+        display: inline-block;
+        line-height: 1.5;
+        padding-right: rem(15px);
+        background: url(/common_2024/img/arrow/arrow_sm_primary.svg) right 0.45em no-repeat;
     }
 }

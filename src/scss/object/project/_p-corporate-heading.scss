@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-heading {
+
+    &-statement {
+        font-size: rem(30px);
+        position: relative;
+        display: inline-block;
+        padding-left: rem(20px);
+        padding-right: 0.5em;
+
+        &::before {
+            content: '“';
+            position: absolute;
+            top: -0.5rem;
+            left: 0;
+        }
+
+        &::after {
+            content: '”';
+            position: absolute;
+            bottom: -1rem;
+            right: 0;
+        }
+    }
+}
