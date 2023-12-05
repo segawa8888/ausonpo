@@ -10,7 +10,7 @@
     position: relative;
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -34,7 +34,6 @@
             &::after {
                 top: 1.75rem;
                 transform: translateY(0);
-                
             }
         }
     }
