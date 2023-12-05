@@ -34,7 +34,7 @@
         left: rem(-30px);
         transform: rotate(-20deg);
         @include mq-max("sm") {
-          left: rem(-15px);
+          left: rem(-24px);
         }
       }
       &::after {
