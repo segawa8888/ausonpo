@@ -1,0 +1,24 @@
+/* reset
+----------------------------------------*/
+.float_popup .puc_45{
+	color:#000;
+}
+.float_popup.puc_45 dl.margin_none > dd{
+	margin-left:0;
+	text-indent:0;
+}
+
+.float_popup.puc_45 dt{
+	margin-top:1em;
+}
+.float_popup.puc_45 dd{
+	margin-left:2em;
+	text-indent:-2em;
+}
+.float_popup.puc_45 .indent1em dd {
+	margin-left:1em;
+	text-indent:-1em;
+
+.float_popup.puc_45 .margin4em dd{
+	margin-left:4em;
+}

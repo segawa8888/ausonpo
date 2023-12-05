@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@use "../../global" as *;
+.p-keizoku {
+    &__pic {
+        width: rem(768px);
+        margin: 0 auto;
+        @include mq-max("sm") {
+            width: 100%;
+        }
+    }
+    &__box {
+        padding: rem(32px) rem(36px);
+        border-radius: rem(12px);
+        background-color: $c-base-050;
+        @include mq-max("sm") {
+            border-radius: rem(8px);
+            padding: rem(20px);
+        }
+    }
+    &__box-content {
+        background: url(/pc/keizoku_tetsuzuki/assets/img/index_pic_ok.webp) left center/ #{rem(82px)} no-repeat;
+        padding-left: rem(102px);
+        .no-webp-support & {
+            background-image: url(/pc/keizoku_tetsuzuki/assets/img/index_pic_ok.png);
+        }
+        @include mq-max("sm") {
+            padding-left: rem(96px);
+        }
+    }
+    &__box-heading {
+        font-size: rem(24px);
+        color: $c-primary;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: rem(16px);
+        @include mq-max("sm") {
+            font-size: rem(20px);
+        }
+    }
+}
+.p-keizoku-step-list {
+    counter-reset: step-list-num;
+    list-style: none;
+    display: grid;
+    gap: rem(56px);
+    &__item {
+        position: relative;
+
+        border-radius: rem(4px);
+        border: 2px solid $c-primary;
+        &:not(:first-child)::after {
+            content: "";
+            width: 100%;
+            height: rem(20px);
+            position: absolute;
+            display: block;
+            top: rem(-38px);
+            background: url(/common_2024/img/arrow/arrow_round_primary.svg) center center/contain no-repeat;
+        }
+    }
+    &__title {
+        font-size: rem(16px);
+        font-weight: 700;
+        letter-spacing: 0;
+        padding: rem(12px) rem(24px) rem(12px) rem(70px);
+        position: relative;
+        min-height: rem(51px);
+        width: 100%;
+        border-bottom: 2px solid $c-primary;
+        display: flex;
+        align-items: center;
+        line-height: 1.5;
+        @include mq-max("sm") {
+            padding: rem(12px) rem(8px) rem(12px) rem(64px);
+        }
+        &::before {
+            counter-increment: step-list-num; /* counter-resetと同じ文字列 */
+            content: counter(step-list-num); /* カウントした数に応じて番号を表示 */
+            width: rem(51px);
+
+            height: 100%;
+            background: $c-primary;
+            color: $c-white;
+            font-size: rem(26px);
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding: rem(20px) rem(52px);
+        @include mq-max("sm") {
+            flex-direction: column;
+            align-items: center;
+            padding: rem(16px) rem(10px) rem(20px);
+        }
+    }
+    &__content {
+        order: 2;
+        margin-left: rem(20px);
+        @include mq-max("sm") {
+            margin-left: 0;
+            width: 100%;
+            margin-top: rem(12px);
+        }
+    }
+    &__text {
+        font-size: rem(16px);
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+    }
+    &__sub {
+        font-size: rem(10px);
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        margin-top: 0.5em;
+    }
+    &__pic {
+        order: 1;
+        width: rem(178px);
+    }
+}

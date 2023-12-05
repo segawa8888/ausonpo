@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-message {
+    max-width: rem(760px);
+
+    img {
+        max-width: rem(390px);
+
+        @include mq-max("sm") {
+            max-width: 100%;
+        }
+    }
+
+    &-top {
+        max-width: 390px;
+    }
+}

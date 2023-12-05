@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/*/////////////////////////////
+ base
+ /////////////////////////////*/
+
+body {
+	width: 100%;
+	text-align: left;
+	background: none;
+	line-height: 1.5;
+	font-size: 15px;
+	font-family: "Open Sans", "ü‡ÉSÉVÉbÉNëÃ", "Yu Gothic", YuGothic, "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, sans-serif;
+	color: #464646;
+}
+.tx_area {
+	margin:0 20px;
+}
+.maintitle{
+	margin:0 auto 30px;
+}
+.maintitle p {
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	color: #003366;
+	background-color: #def;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 18px;
+}
+
+/*****Numbering Area*****/
+.Num_area {
+	margin-left:0;
+}
+.Num_area p {
+	margin-left:30px;
+}
+.Num_area p.Num_title {
+	margin-left:2em;
+	text-indent:-2em;
+	margin-bottom: 5px;
+}
+
+/*****Plan Name Table*****/
+table.plan_name {
+	border:1px solid black;
+	width:100%;
+	max-width:550px;
+	margin:0 auto;
+}
+table.plan_name th {
+	border:1px solid black;
+	vertical-align:middle;
+	text-align:center;
+}
+table.plan_name td {
+	border:1px solid black;
+	vertical-align:middle;
+	text-align:center;
+}
+table.plan_name td.align_left {
+	text-align:left;
+	padding-left:0.5em;
+}
+table.plan_name2 {
+	border:1px solid black;
+	width:97%;
+	max-width:550px;
+	margin:10px auto 0;
+	font-size:13px;
+}
+table.plan_name2 th {
+	border:1px solid black;
+	vertical-align:middle;
+	text-align:center;
+}
+table.plan_name2 td {
+	border:1px solid black;
+	vertical-align:middle;
+	text-align:center;
+}
+table.plan_name2 td.align_left {
+	text-align:left;
+	padding-left:0.5em;
+}
+
+/*****Generic*****/
+.text_bold {
+	font-weight:bold;
+}
+p.text_last {
+	margin-bottom:30px;
+}
+.align_center {
+	text-align:center;
+}
+.narrow_area_more{
+	max-width: 620px;
+	margin: 0px auto;
+	padding: 0px 5px;
+}
+.margin_T15 {
+	margin-top: 15px;
+}
+.narrow_area{
+	margin: 0px 10px;
+	max-width: 660px;
+}

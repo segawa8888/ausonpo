@@ -5,7 +5,7 @@
   background: $c-primary;
   font-size: rem(26px);
   line-height: 1.5;
-  padding: rem(14px) 1em;
+  padding: rem(14px) 0.5em;
   color: $c-white;
   text-align: center;
   font-weight: 700;
@@ -58,15 +58,15 @@
 }
 
 .c-heading2-has-border {
-  border-left:rem(4px) solid $c-primary;
+  border-left: rem(4px) solid $c-primary;
   font-size: rem(24px);
   line-height: 1.8;
   letter-spacing: rem(0.72px);
-  padding:rem(2.5px) rem(22px);
+  padding: rem(2.5px) rem(22px);
   font-weight: 700;
   @include mq-max("sm") {
     font-size: rem(20px);
-    padding:rem(2.5px) rem(11px);
+    padding: rem(2.5px) rem(11px);
     line-height: 1.6;
   }
 }

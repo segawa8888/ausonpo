@@ -1,0 +1,195 @@
+body{ margin:0;font-size:15px;line-height:1.8;font-family: 'ÉÅÉCÉäÉI','Meiryo','ÉqÉâÉMÉmäpÉS Pro W3','Hiragino Kaku Gothic Pro','ÇlÇr ÇoÉSÉVÉbÉN', arial,helvetica,clean,sans-serif;color:#000;}
+h2,p,ul,dl,dt,dd{ margin:0;padding:0;}
+li{list-style-type:none;}
+input{font-family: inherit;}
+.sp_display{display:none;}
+.pc_display{display:block;}
+
+/***************
+ content
+****************/
+
+#contents{
+	margin-bottom: 50px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+p{
+	margin-bottom: 10px;
+	line-height: 1.6em;
+}
+
+.sp_only{ display: none;}
+.pc_only{ display: block;}
+
+.indent1_5 { text-indent:-1.5em; margin-left:1.5em;}
+.indent1_8 { text-indent:-1.8em; margin-left:1.8em;}
+.indent2_5 { text-indent:-2.5em; margin-left:2.5em;}
+.indent2_8 { text-indent:-2.8em; margin-left:2.8em;}
+.indent3_5 { text-indent:-3.5em; margin-left:3.5em;}
+.indent3_8 { text-indent:-3.8em; margin-left:3.8em;}
+.indent4_8 { text-indent:-4.8em; margin-left:4.8em;}
+.indent1  { text-indent:-1em; margin-left:1em;}
+.indent2  { text-indent:-2em; margin-left:2em;}
+.indent3  { text-indent:-3em; margin-left:3em;}
+.indent4  { text-indent:-4em;margin-left:4em;}
+.indent5  {text-indent:-5em; margin-left:5em;}
+.indent6  { text-indent:-6em; margin-left:6em;}
+
+.mgt5{ margin-top: 5px;}
+.mgt10{ margin-top: 10px;}
+.mgt15{ margin-top: 15px;}
+.mgt20{ margin-top: 20px;}
+.mgt25{ margin-top: 25px;}
+.mgt30{ margin-top: 30px;}
+.mgt35{ margin-top: 35px;}
+.mgt40{ margin-top: 40px;}
+.mgt45{ margin-top: 45px;}
+.mgt50{ margin-top: 50px;}
+
+.mgb5{ margin-bottom: 5px;}
+.mgb10{ margin-bottom: 10px;}
+.mgb15{ margin-bottom: 15px;}
+.mgb20{ margin-bottom: 20px;}
+.mgb25{ margin-bottom: 25px;}
+.mgb30{ margin-bottom: 30px;}
+.mgb35{ margin-bottom: 35px;}
+.mgb40{ margin-bottom: 40px;}
+.mgb45{ margin-bottom: 45px;}
+.mgb50{ margin-bottom: 50px;}
+
+.mgr5{ margin-right: 5px;}
+.mgr10{ margin-right: 10px;}
+.mgr15{ margin-right: 15px;}
+.mgr20{ margin-right: 20px;}
+.mgr25{ margin-right: 25px;}
+.mgr30{ margin-right: 30px;}
+.mgr35{ margin-right: 35px;}
+.mgr40{ margin-right: 40px;}
+.mgr45{ margin-right: 45px;}
+.mgr50{ margin-right: 50px;}
+
+.mgl5{ margin-left: 5px;}
+.mgl10{ margin-left: 10px;}
+.mgl15{ margin-left: 15px;}
+.mgl20{ margin-left: 20px;}
+.mgl25{ margin-left: 25px;}
+.mgl30{ margin-left: 30px;}
+.mgl35{ margin-left: 35px;}
+.mgl40{ margin-left: 40px;}
+.mgl45{ margin-left: 45px;}
+.mgl50{ margin-left: 50px;}
+
+.text_L{ text-align: left;}
+.text_R{ text-align: right;}
+
+h2{
+	background-color: #ec5601;
+	width: 100%;
+	padding: 9px 15px;
+	margin: 0 0 20px;
+	box-sizing: border-box;
+}
+h3{
+	background-color: #2d8cb4;
+	width: 100%;
+	padding: 6px 20px;
+	box-sizing: border-box;
+}
+
+h2 span, h3 span{
+	color: #FFF;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0px 8px;
+}
+h2 span span, h3 span span{
+	padding: 0px 0px;
+}
+
+.contents_inner{
+	max-width: 980px;
+	margin: 0 auto 30px;
+	padding: 0px 8px;
+	box-sizing: border-box;
+}
+.inner_table{
+	padding: 0px 2px;
+	margin-bottom: 50px;
+}
+
+.table_wrapper{
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	table-layout: fixed;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+table th,
+table td{
+	border: 1px solid #000;
+	padding: 5px 5px;
+}
+table caption{ text-align: left;}
+
+.ari_type th, .nashi_type th{ width: 20%;}
+.ari_type th{ background-color: #bad3ff;}
+.nashi_type th{ background-color: #ffa07a;}
+
+.price{ text-align: right;}
+.width_set{ min-width: 80px;}
+
+.old_table th,
+.old_table td{
+	border: 1px solid #c6c6c6;
+	text-align: center;
+}
+.old_table th{
+	background-color: #949494;
+	color: #fff;
+}
+.old_table span{ margin: 0px 10px;}
+
+
+#floteArea{
+	height: 50.5px;
+	background-color: #585657;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+.close_float{
+	padding-top: 15px;
+	line-height: 22.5px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 24px;
+}
+.close_float p{ line-height: inherit;}
+
+#floteArea a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+@media screen and (max-width:767px){
+	.width_set{ min-width: inherit;}
+	.sp_only{ display: block;}
+	.pc_only{ display: none;}
+}
+@media screen and (max-width:480px){
+	.old_table span{ display: block;}
+	.sp_only{ display: none;}
+}

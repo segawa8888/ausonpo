@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-link {
+    color: $c-primary;
+    font-weight: 700;
+    font-size: rem(16px);
+    padding-right: rem(28px);
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 24px;
+        height: rem(20px);
+        background: url(/common_2024/img/icon/icon_external_primary.svg) center center no-repeat;
+        background-size: rem(18px) rem(16px);
+
+        @include mq-max("md") {
+            width: rem(24px);
+        }
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &.-sm {
+        @include mq-max("sm") {
+            &::after {
+                top: 1.75rem;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &-more {
+        background-size: rem(7px);
+        color: $c-primary;
+        display: inline-block;
+        line-height: 1.5;
+        padding-right: rem(15px);
+        background: url(/common_2024/img/arrow/arrow_sm_primary.svg) right 0.45em no-repeat;
+    }
+}
