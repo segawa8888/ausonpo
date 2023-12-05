@@ -164,7 +164,6 @@ document.addEventListener("componentsLoaded", () => {
           arrows: false,
           perPage: 1,
           gap: "0.857142857rem",
-          padding: { right: "3rem" },
           type: "loop",
         },
       },
