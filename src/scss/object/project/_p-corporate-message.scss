@@ -16,13 +16,4 @@
     &-top {
         max-width: 390px;
     }
-
-    &-link {
-        background-size: rem(7px);
-        color: $c-primary;
-        display: inline-block;
-        line-height: 1.5;
-        padding-right: 15px;
-        background: url(/common_2024/img/arrow/arrow_sm_primary.svg) right 0.45em no-repeat;
-    }
 }
