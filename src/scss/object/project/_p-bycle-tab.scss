@@ -47,7 +47,7 @@
         border-radius: 1rem;
         @include mq-max("sm") {
             flex-wrap: wrap;
-            height: 6.6rem;
+            // height: 6.6rem;
             border-radius: 0.625rem;
             align-content: flex-start;
         }
