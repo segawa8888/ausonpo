@@ -2,10 +2,21 @@
 @use "../../global" as *;
 /*　プラン診断　*/
 .-p-bycle-plan {
-    &-title {
-        img {
-            width: 20rem;
+    &-back {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p {
+            width: 100%;
+            text-align: center;
+            a {
+                background-image: url(/common_2024/img/arrow/arrow_sm_white.svg);
+            }
         }
+    }
+    &-title {
+        max-width: 20rem;
+        width: 100%;
     }
     &-progressbar {
         display: flex;
@@ -181,21 +192,6 @@
                 width: 1px;
                 margin: -1px;
                 padding: 0;
-            }
-        }
-    }
-    .-p-bycle-plan-back {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .p-bycle-plan-title {
-            max-width: 316px;
-        }
-        p {
-            width: 100%;
-            text-align: center;
-            a {
-                background-image: url(/common_2024/img/arrow/arrow_sm_white.svg);
             }
         }
     }
