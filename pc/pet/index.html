@@ -73,14 +73,18 @@
     </nav>
 
     <main class="l-main l-container lg:-full sm:-full js-main">
-      <div class="p-pet-mv-image u-mt-5 sm:u-mt-2">
+      <h1 class="p-pet-mv-image u-mt-5 sm:u-mt-2">
         <div class="p-pet-mv-image__img">
-          <picture>
+          <picture class="sm:u-hidden">
             <source srcset="/pc/pet/assets/img/pet_mv.webp" type="image/webp" />
             <img src="/pc/pet/assets/img/pet_mv.png" alt="" loading="eager" />
           </picture>
+          <picture  class="lg:u-hidden">
+            <source srcset="/pc/pet/assets/img/pet_image_mv.webp" type="image/webp" />
+            <img src="/pc/pet/assets/img/pet_image_mv.png" alt="" loading="eager" />
+          </picture>
         </div>
-      </div>
+      </h1>
       <!-- /.p-pet-mv-image -->
       <div class="p-pet-meta">
         <h2 class="p-pet-meta__head u-mt-14">au損保のペットの保険</h2>
@@ -151,7 +155,7 @@
           <div class="p-pet-customer__body js-accordion-toggle-content" style="transition-property: height; display: block;">
             <div class="p-pet-customer__body-wrapper">
               <div class="p-pet-customer__body-wrapper-left">
-                <a class="p-pet-customer__body-wrapper-left-login" href="#">
+                <a class="p-pet-customer__body-wrapper-left-login" href="/pca/popup_mbmyau.html" target="_blank">
                   <i class="p-pet-customer__body-wrapper-left-login-icon"></i>
                   <span class="p-pet-customer__body-wrapper-left-login-text">ログインはこちら</span>
                 </a>
@@ -159,16 +163,16 @@
               </div>
               <div class="p-pet-customer__body-wrapper-right sm:u-mt-10">
                 <div class="p-pet-customer__body-wrapper-right-container">
-                  <a href="#" class="p-pet-customer__body-wrapper-right-container-btn u-mx-auto">
+                  <a href="/pc/keiyakusya/pet/insurance-claim.html" target="_blank" class="p-pet-customer__body-wrapper-right-container-btn u-mx-auto">
                     <div class="p-pet-customer__body-wrapper-right-container-btn-icon">
                       <picture>
                         <source srcset="/pc/keiyakusya/assets/img/icon_seikyu.webp" type="image/webp">
-                        <img src="/pc/keiyakusya/assets/img/icon_seikyu.png" alt="保険金を請求したい" loading="lazy">
+                        <img src="/pc/keiyakusya/assets/img/icon_seikyu.png" alt="保険金の請求したい" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="p-pet-customer__body-wrapper-right-container-btn-text">保険金を<br>請求したい</h3>
+                    <h3 class="p-pet-customer__body-wrapper-right-container-btn-text">保険金の<br>請求したい</h3>
                   </a>
-                  <a href="#" class="p-pet-customer__body-wrapper-right-container-btn u-mx-auto">
+                  <a href="/pc/keiyakusya/pet/anicli24.html" target="_blank" class="p-pet-customer__body-wrapper-right-container-btn u-mx-auto">
                     <div class="p-pet-customer__body-wrapper-right-container-btn-icon">
                       <picture>
                         <source srcset="/pc/keiyakusya/assets/img/icon_tel02.webp" type="image/webp">
@@ -179,7 +183,7 @@
                   </a>
                 </div>
                 <p class="p-pet-customer__body-wrapper-right-info u-text-center u-mt-8">
-                  <a href="#">その他のお問い合わせ・アプリなどの<br>ご契約者向け情報はこちら</a>
+                  <a href="/pc/keiyakusya/pet/index.html" target="_blank">その他のお問い合わせ・アプリなどの<br>ご契約者向け情報はこちら</a>
                 </p>
               </div>
             </div>
@@ -191,13 +195,13 @@
         <h4 class="p-column-cta__heading">保険タイプを選んでお申込みへ</h4>
         <ul class="p-column-cta__list">
           <li class="p-column-cta__item -primary">
-            <a href="#">
+            <a href="/pca/popup_aute_pet_20140401?tPet=1">
               <h4 class="p-column-cta__title">＼ しっかり備える ／</h4>
               <p class="p-column-cta__text"><span>通院あり</span>タイプ<br />お申込みはこちら</p>
             </a>
           </li>
           <li class="p-column-cta__item -yellow">
-            <a href="#">
+            <a href="/pca/popup_aute_pet_20140401?tPet=0">
               <h4 class="p-column-cta__title">＼ お得に備える ／</h4>
               <p class="p-column-cta__text"><span>通院なし</span>タイプ<br />お申込みはこちら</p>
             </a>
