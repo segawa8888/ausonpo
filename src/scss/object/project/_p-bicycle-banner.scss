@@ -4,12 +4,15 @@
     text-decoration:underline;
     line-height: 1.5;
 }
-// 自転車TOP
+
+// bycleメインビジュアル
 .p-keiyakusya-kaigai__mv {
     p.u-text-xs {
         color: $c-base-600;
     }
+
 }
+// 自転車TOP
 .-p-bicycle-banner {
     &__contents {
         max-width: 50rem;

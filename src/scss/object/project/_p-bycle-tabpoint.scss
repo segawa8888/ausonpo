@@ -1,0 +1,492 @@
+@charset "UTF-8";
+@use "../../global" as *;
+.bycle_hominglink{
+    max-width: 8.375rem;
+    width: 100%;
+    height: 6.125;
+    bottom: 10rem;
+    position: fixed;
+    right: 2rem;
+    z-index: 10000;
+    img{
+        width: 100%;
+    }
+}
+/*　タブ切り替え　ベース　*/
+.tab-buttons {
+    display: flex;
+    justify-content: space-between;
+    button {
+        cursor: pointer;
+    }
+}
+.text-gray {
+    color: $c-base-600;
+}
+.tab-content {
+    .p-bycletab-inner {
+        padding: 3rem;
+        @include mq-max("sm") {
+            padding: 2.5rem 0.5rem;
+        }
+    }
+}
+.p-bycle-tab-change {
+    border: 1px solid $c-primary;
+    border-radius: 1rem;
+    margin-top: 10px;
+    position: relative;
+    padding: 4rem 0;
+    @include mq-max("sm") {
+        padding: 6.25rem 0;
+        border-radius: 0.625rem;
+    }
+    .p-bycle-tab-change__tabs {
+        width: 100%;
+        border: 1px solid $c-primary;
+        border-radius: 1rem;
+        @include mq-max("sm") {
+            flex-wrap: wrap;
+            height: 6.6rem;
+            border-radius: 0.625rem;
+            align-content: flex-start;
+        }
+        &:first-child {
+            position: absolute;
+            bottom: auto;
+            top: -1px;
+            margin-bottom: 0.625rem;
+        }
+        &:last-child {
+            position: absolute;
+            top: auto;
+            bottom: -1px;
+        }
+        .tab-button {
+            min-width: calc(100% / 4);
+            width: 100%;
+            border-radius: 0rem;
+            border: none;
+            justify-content: flex-start;
+            align-items: center;
+            color: $c-primary;
+            font-size: 1rem;
+            line-height: 1.6;
+            font-weight: bold;
+            position: relative;
+            padding: 0;
+            @include mq-max("sm") {
+                min-width: 50%;
+                width: 50%;
+                height: 3rem;
+                font-size: 0.8125rem;
+            }
+            &::after {
+                content: "";
+                width: 1px;
+                height: 4rem;
+                background-color: $c-primary;
+                position: absolute;
+                top: 0;
+                right: 0;
+                @include mq-max("sm") {
+                    height: 3.25rem;
+                }
+            }
+            a{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0.625rem;
+            }
+            span {
+                font-size: 1.5rem;
+                padding-right: 0.625rem;
+                @include mq-max("sm") {
+                    font-size: 1.25rem;
+                }
+            }
+            &:first-child {
+                border-radius: 1rem 0 0 1rem;
+                @include mq-max("sm") {
+                    border-radius: 0.625rem 0 0 0;
+                }
+            }
+            &:nth-child(2) {
+                @include mq-max("sm") {
+                    border-radius: 0 0.625rem 0 0;
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                @include mq-max("sm") {
+                    border-radius: 0 0 0 0.625rem;
+                    border-top: 1px solid $c-primary;
+                }
+            }
+            &:last-child {
+                border-radius: 0 1rem 1rem 0;
+                @include mq-max("sm") {
+                    border-radius: 0 0 0.625rem 0;
+                    border-top: 1px solid $c-primary;
+                }
+                &::after {
+                    content: none;
+                }
+            }
+            &.active {
+                background-color: $c-primary;
+                color: $c-white;
+                height: calc(3.75rem + 0.25rem);
+                box-shadow: none;
+                padding: 0.625rem;
+                @include mq-max("sm") {
+                    min-width: calc(100% / 2);
+                    height: calc(3rem + 0.25rem);
+                }
+            }
+            &:focus {
+                transform: translateY(0rem);
+                -webkit-transform: translateY(0rem);
+                box-shadow: none;
+            }
+        }
+    }
+}
+/*　---------------　*/
+/*　タブ切り替え　5つのポイント　*/
+.p-byclebest-tab-ranking {
+    img {
+        max-width: 31.25rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.p-bycle-course {
+    &__title {
+        p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+    }
+    &__img {
+        max-width: 29.5rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.bycle-course-type {
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 2.5rem;
+        p {
+            font-weight: bold;
+            line-height: 1.6;
+        }
+        h2 {
+            line-height: 1.6;
+            font-size: 1.25rem;
+            font-weight: bold;
+            border-bottom: 0.125rem dotted $c-primary;
+        }
+    }
+    .bycle-course-text {
+        max-width: 55.625rem;
+        width: 100%;
+        &__pic {
+            display: flex;
+            gap: 1rem;
+            justify-content: left;
+            align-items: center;
+            &-icon {
+                max-width: 5rem;
+                width: 100%;
+            }
+            &-text {
+                flex-grow: 1;
+            }
+        }
+    }
+    &__advice {
+        text-align: center;
+        color: $c-primary;
+        font-size: 0.875rem;
+        font-weight: bold;
+        padding-top: 2rem;
+    }
+}
+.p-bycle-loadservice {
+    .p-bycle-loadservice-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p {
+            text-align: center;
+            font-weight: bold;
+            &.p-bycle-loadservice-level {
+                padding-bottom: 0.25rem;
+            }
+            &.p-bycle-loadservice-service {
+                font-size: 0.875rem;
+                line-height: 1.6;
+            }
+        }
+    }
+    .p-bycle-loadservice-list {
+        li {
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__point {
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        &__text {
+            span {
+                line-height: 1.6;
+            }
+            p {
+                line-height: 1.6;
+            }
+        }
+    }
+    .p-bycle-loadservice-buttom {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .p-bycle-loadservice-buttom-size {
+            padding: 2rem 0 0.25rem 0;
+            max-width: 20rem;
+            width: 100%;
+            p {
+                text-align: left;
+                padding-top: 0.25rem;
+                line-height: 1.6;
+            }
+        }
+    }
+}
+.p-bycle-point-wrapper {
+    justify-content: space-between;
+    @include mq-max("sm") {
+        flex-direction: column;
+    }
+    &__left,
+    &__right {
+        max-width: calc((100% - 2rem) / 2);
+        width: 100%;
+        @include mq-max("sm") {
+            max-width: 100%;
+        }
+    }
+    &__right {
+        @include mq-max("sm") {
+            padding-top: 2rem;
+        }
+    }
+    .p-bycle-point-wrapper-box {
+        @include mq-max("sm") {
+            padding: 0.625rem;
+        }
+    }
+}
+.p-bycle-loadservice {
+    height: 100%;
+    .p-koutsuujiko-detail__card {
+        height: 100%;
+    }
+}
+.p-bycle-customer {
+    padding-top: 2rem;
+}
+.p-bycle-gimuka-img {
+    justify-content: center;
+    img {
+        max-width: 30rem;
+    }
+}
+.p-bycle-case {
+    .p-bycle-case-subtitle {
+        p {
+            line-height: 1.5;
+        }
+    }
+    .p-bycle-case-list {
+        justify-content: space-between;
+        .p-bycle-hoten {
+            padding-top: 1rem;
+            max-width: calc((100% - 7rem) / 3);
+            width: 100%;
+            @include mq-max("lg") {
+                max-width: calc((100% - 2.5rem) / 3);
+            }
+            @include mq-max("sm") {
+                max-width: 100%;
+            }
+            .p-koutsuujiko-detail__card {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.p-bycle-gimuka-note {
+    justify-content: center;
+    align-items: center;
+    .p-bycle-gimuka-note__text {
+        max-width: max-content;
+    }
+}
+.p-bycle-compensation-box {
+    justify-content: center;
+    align-items: center;
+    .p-bycle-compensation-box-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @include mq-max("lg") {
+            flex-direction: column;
+            padding-right: 1rem;
+            max-width: 50%;
+            p {
+                text-align: center;
+                padding: 0;
+            }
+        }
+        .p-bycle-compensation__pic-icon {
+            max-width: 12.5rem;
+            @include mq-max("lg") {
+                max-width: 100%;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .p-bycle-compensation__pic-img {
+        max-width: 24.5rem;
+        @include mq-max("lg") {
+            max-width: 50%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.p-tabbox {
+    .p-bycle-point {
+        .p-koutsuujiko-detail__heading {
+            position: relative;
+            @include mq-max("sm") {
+                justify-content: flex-start;
+                padding-left: 1rem;
+            }
+            span {
+                @include mq-max("sm") {
+                    font-size: 2.375rem;
+                }
+            }
+            &::after {
+                content: "";
+                width: 6rem;
+                height: 5rem;
+                position: absolute;
+                background-size: contain;
+                bottom: 0;
+                right: 4px;
+                background-repeat: no-repeat;
+                @include mq-max("sm") {
+                    width: 7rem;
+                    height: 7rem;
+                    background-position: right;
+                }
+            }
+        }
+        .p-byclebest-title-course {
+            &::after {
+                background-image: url(/pc/bycle/assets/img/bycle_tabpoint1-01_pc.png);
+            }
+        }
+        .p-byclebest-title-loadservice {
+            &::after {
+                background-image: url(/pc/bycle/assets/img/bycle_tabpoint2-01_pc.png);
+            }
+        }
+        .p-byclebest-title-hoten {
+            &::after {
+                background-image: url(/pc/bycle/assets/img/bycle_tabpoint3-01_pc.png);
+                width: 9rem;
+                background-position: right;
+                @include mq-max("sm") {
+                    width: 10rem;
+                }
+            }
+        }
+        .p-byclebest-title-customer {
+            &::after {
+                background-image: url(/pc/bycle/assets/img/bycle_tabpoint4-01_pc.png);
+            }
+        }
+        .p-byclebest-title-compensation {
+            &::after {
+                background-image: url(/pc/bycle/assets/img/bycle_tabpoint5-01_pc.png);
+            }
+        }
+    }
+}
+.p-bycle-case {
+    .p-bycle-point {
+        @include mq-max("sm") {
+            margin-right: 1rem;
+        }
+        @include mq-max("sm") {
+            font-size: 2.375rem;
+        }
+        h3 {
+            justify-content: flex-start;
+            position: relative;
+            span {
+                @include mq-max("sm") {
+                    font-size: 2rem;
+                }
+            }
+            &::after {
+                content: "";
+                height: 6.25rem;
+                width: 7.25rem;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 16px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        &:first-child {
+            h3::after {
+                background-image: url(/src/img/sub/bycle/bycle_gimu02_pc.png);
+            }
+        }
+        &:nth-child(2) {
+            h3::after {
+                background-image: url(/src/img/sub/bycle/bycle_gimu03_pc.png);
+            }
+        }
+        &:nth-child(3) {
+            h3::after {
+                background-image: url(/src/img/sub/bycle/bycle_gimu04_pc.png);
+            }
+        }
+    }
+}
+/*　--------------------　*/
