@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 rem(36px) 0 rem(12px);
+  padding: 0 rem(40px) 0 rem(12px);
   transition: all 0.2s ease;
   &.-external {
     background-image: url(/common_2024/img/icon/icon_external_primary.svg);
@@ -33,6 +33,7 @@
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: 0.05em;
+    flex: 1;
   }
   @include hover {
     border-color: $c-primary;
@@ -56,6 +57,7 @@
       height: rem(53px);
       display: flex;
       align-items: center;
+      flex-direction: column;
     }
   }
   &--single {
@@ -134,10 +136,10 @@
   &.-bg-yellow {
     background-color: $c-primary-100;
   }
-  &.-xl {
-    font-size: rem(16px);
+  &.-lg {
+    font-size: rem(20px);
     letter-spacing: 0;
-    max-width: rem(300px);
+    min-width: rem(300px);
     height: rem(60px);
     background-image: url(/common_2024/img/arrow/arrow_lg_primary.svg);
     background-size: rem(7px);
@@ -184,5 +186,14 @@
   &.prev {
     background-image: url(/common_2024/img/arrow/arrow_prev_primary.svg);
     background-position: left rem(19px) center;
+  }
+  &.-maintenance {
+    &::before {
+      content: "";
+      width: rem(18px);
+      height: rem(18px);
+      margin-right: 0.4em;
+      background: url(/common_2024/img/icon/icon_gear.svg) center center/cover no-repeat;
+    }
   }
 }
