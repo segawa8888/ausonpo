@@ -9,7 +9,10 @@
         gap: 2.5rem;
         @include mq-max("sm") {
             justify-content: space-between;
-            gap: 1rem;
+            gap: 0rem;
+        }
+        @include mq-min("sm") {
+            transform: none !important;
         }
     }
 }

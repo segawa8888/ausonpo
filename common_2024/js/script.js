@@ -441,10 +441,11 @@ document.addEventListener("componentsLoaded", () => {
     new Splide(byclebvoiceSlider, {
       perPage: 3,
       arrows: false,
-      gap: "0.5rem",
+      pagination: false,
       breakpoints: {
         520: {
           perPage: 1,
+          pagination: true,
         },
       },
     }).mount();

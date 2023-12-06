@@ -63,11 +63,24 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
+                @include mq-max("md"){
+                    justify-content: center;
+                }
                 @include mq-max("sm") {
                     line-height: 1rem;
                     min-width: 8.75rem;
                     justify-content: center;
                     align-items: center;
+                }
+                p{
+                    width: 100%;
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+                    @include mq-max("sm"){
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
                 span {
                     @include mq-max("md") {
@@ -77,6 +90,14 @@
                 strong {
                     @include mq-max("sm") {
                         font-size: 1rem;
+                    }
+                }
+                &.maru{
+                    flex-direction: row;
+                }
+                &:first-child{
+                    @include mq-max("sm"){
+                        min-width: 7.75rem;
                     }
                 }
             }
@@ -93,6 +114,7 @@
     .p-bycle-table__wrappe {
         @include mq-max("md") {
             min-width: 37.9375rem;
+            padding: 0.625rem;
         }
     }
 }
@@ -288,11 +310,14 @@
         }
     }
     .p-bycle-table_course {
+        width: 100%;
         table tbody tr {
             @include mq-max("md") {
                 height: 3.5rem;
             }
             td:first-child {
+                display: flex;
+                flex-wrap: nowrap;
                 justify-content: space-between;
                 padding: 0;
                 p {
@@ -308,6 +333,7 @@
     @include mq-max("sm") {
         .p-keiyakusya-table {
             padding-bottom: 1rem;
+            margin: 0 -0.5rem;
             &::-webkit-scrollbar {
                 width: 2rem;
                 height: 2px;
@@ -318,6 +344,9 @@
             &::-webkit-scrollbar-thumb {
                 background-color: $c-rss;
             }
+        }
+        table tbody td span strong{
+            margin-left: 0;
         }
     }
 }
