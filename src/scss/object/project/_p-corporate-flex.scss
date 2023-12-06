@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@use "../../global" as *;
+// TOPメッセージ
+
+.p-corporate-flex {
+
+    &__lgbtq {
+        div {
+            &:first-child {
+                flex: 0 1 100%;
+            }
+
+            &:nth-child(2) {
+                flex: 0 0 rem(240px);
+            }
+        }
+    }
+}
