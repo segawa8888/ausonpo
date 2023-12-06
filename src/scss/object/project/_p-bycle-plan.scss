@@ -1,21 +1,6 @@
 @charset "UTF-8";
 @use "../../global" as *;
 /*　プラン診断　*/
-.-p-bycle-plan-back{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .p-bycle-plan-title{
-        max-width: 316px;
-    }
-    p{
-        width: 100%;
-        text-align: center;
-        a{
-            background-image: url(/common_2024/img/arrow/arrow_sm_white.svg);
-        }
-    }
-}
 .-p-bycle-plan {
     &-title {
         img {
@@ -27,16 +12,19 @@
         width: 100%;
         padding: 0 6rem;
         @include mq-max("sm") {
-            padding: 0;
+            padding: 0 0.5rem;
         }
         &-step {
             position: relative;
-            width: 33%;
+            width: calc(100% / 3);
             text-align: center;
             align-items: center;
             justify-content: center;
             padding: 1rem 0;
             background: $c-white;
+            &:not(:first-child) {
+                padding-left: 1rem;
+            }
             &:not(:last-child) {
                 &::before {
                     position: absolute;
@@ -71,9 +59,6 @@
                 color: $c-white;
                 &:not(:last-child)::after {
                     border-left-color: $c-primary;
-                }
-                &:not(:last-child)::before {
-                    border-left: none;
                 }
             }
         }
@@ -180,6 +165,21 @@
                 width: 1px;
                 margin: -1px;
                 padding: 0;
+            }
+        }
+    }
+    .-p-bycle-plan-back{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .p-bycle-plan-title{
+            max-width: 316px;
+        }
+        p{
+            width: 100%;
+            text-align: center;
+            a{
+                background-image: url(/common_2024/img/arrow/arrow_sm_white.svg);
             }
         }
     }
