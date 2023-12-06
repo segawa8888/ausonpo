@@ -8,9 +8,11 @@ const options = {
   IMG_CMN_SRC_PATH: "./src/img/common_2024",
   IMG_SUB_SRC_PATH: "./src/img/sub",
   IMG_CORP_SRC_PATH: "./src/img/corporate",
+  IMG_HOME_SRC_PATH: "./src/img/home",
   IMG_CMN_PUBLIC_PATH: "./common_2024/img",
   IMG_SUB_PUBLIC_PATH: "./pc",
   IMG_CORP_PUBLIC_PATH: "./corporate/assets/img",
+  IMG_HOME_PUBLIC_PATH: "./pc/assets/img",
   MINIFY_JS: true,
 };
 const gulp = require("gulp");
@@ -150,6 +152,21 @@ const imageTinyCmn = () => {
     .pipe(gulp.dest(`${options.IMG_CMN_PUBLIC_PATH}/`));
 };
 
+const imageTinyHome = () => {
+  return gulp
+    .src(`${options.IMG_HOME_SRC_PATH}/**/*.{jpg,jpeg,png,gif,svg}`, { base: options.IMG_HOME_SRC_PATH })
+    .pipe(
+      plumber({
+        errorHandler: notify.onError("Error: <%= error.message %>"),
+      })
+    ) //エラーチェック
+    .pipe(changed(`${options.IMG_HOME_PUBLIC_PATH}/`))
+    .pipe(imageMin([pngquant({ quality: [0.7, 0.8], speed: 1 }), mozjpeg({ quality: 80 }), imageMin.svgo(), imageMin.optipng(), imageMin.gifsicle({ optimizationLevel: 3 })]))
+    .pipe(gulp.dest(`${options.IMG_HOME_PUBLIC_PATH}/`))
+    .pipe(webp())
+    .pipe(gulp.dest(`${options.IMG_HOME_PUBLIC_PATH}/`));
+};
+
 const imageTinyCorp = () => {
   return gulp
     .src(`${options.IMG_CORP_SRC_PATH}/**/*.{jpg,jpeg,png,gif,svg}`, { base: options.IMG_CORP_SRC_PATH })
@@ -219,6 +236,7 @@ function watchFiles() {
   gulp.watch(`${options.JS_PUBLIC_PATH}/script.js`, gulp.series(jsMin));
   gulp.watch(`${options.IMG_CMN_SRC_PATH}/**/*.{jpg,jpeg,png,gif,svg}`, gulp.series(imageTinyCmn));
   gulp.watch(`${options.IMG_CORP_SRC_PATH}/**/*.{jpg,jpeg,png,gif,svg}`, gulp.series(imageTinyCorp));
+  gulp.watch(`${options.IMG_HOME_SRC_PATH}/**/*.{jpg,jpeg,png,gif,svg}`, gulp.series(imageTinyHome));
 }
 
 function watch() {
