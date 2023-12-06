@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @use "../../global" as *;
+.bycle_boder{
+    text-decoration:underline;
+    line-height: 1.5;
+}
 // 自転車TOP
 .p-keiyakusya-kaigai__mv {
     p.u-text-xs {

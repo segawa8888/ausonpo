@@ -5,7 +5,7 @@
     max-width: 100%;
     width: 100%;
     &__list {
-        justify-content: center;
+        justify-content: flex-start;
         gap: 2.5rem;
         @include mq-max("sm") {
             justify-content: space-between;
