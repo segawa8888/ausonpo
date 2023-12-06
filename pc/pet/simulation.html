@@ -157,7 +157,6 @@
           </div>
       </div>
 
-
       <div class="c-accordion-4 u-mt-12 u-w-1/2">
         <h3 class="c-accordion-4__heading js-accordion-toggle-btn -angle" id="pet_price_button">見積もりをシミュレーションする</h3>
         <div class="c-accordion-4__wrapper js-accordion-toggle-content" id="pet_price_detail">
@@ -247,716 +246,940 @@
 
       <section class="p-byclebest-tab">
         <h2 class="c-heading2-has-line">保険料表</h2>
-        <div class="p-bycle-tab-change u-border-primary">
-          <div class="p-bycle-tab-change__tabs">
-            <div class="p-bycle-type-info__tab is-active">
-              <button type="button" class="js-pet-info is-active tab-buttom c-btn -lg" data-id="pet-cont01">犬Ａ(主に小型犬)</button>
+
+      <div class="p-bycle-tab-change u-border-primary">
+        <div class="tab-buttons p-bycle-tab-change__tabs">
+          <button class="tab-button tab-button1 c-btn -lg active" data-tab="1">犬Ａ(主に小型犬)</button>
+          <button class="tab-button tab-button2 c-btn -lg" data-tab="2">犬Ｂ(主に中型犬)</button>
+          <button class="tab-button tab-button3 c-btn -lg" data-tab="3">犬Ｃ(主に大型犬)</button>
+          <button class="tab-button tab-button4 c-btn -lg" data-tab="4">猫</button>
+        </div>
+        <!-- 1つめ -->
+        <div id="tab1" class="tab-content p-bycle-type-info__type active">
+          <div class="p-bycletab-inner">
+              <p>例）<br>
+                ●秋田　●アフガン・ハウンド　●ゴールデン・レトリーバー　●シベリアン・ハスキー　●セント・バーナード　●バーニーズ・マウンテン・ドッグ<br>
+                ●ブルドッグ　●ラブラドール・レトリーバー　●混血犬（体重20kg以上）など<br>
+                上記にない犬種の区分は<a href="" class="u-link-text">こちら</a>からご覧ください。</p>
+                <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --yellow">通院なしタイプ</h4>
+                <div class="c-table l-container u-mt-8">
+                  <table class="c-table__table">
+                    <thead>
+                      <tr>
+                        <th class="" colspan="1" style="border:none;"></th>
+                        <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">70%コース</th>
+                        <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">50%コース</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th style="border:none;"></th>
+                        <td class="c-table__title">月払</td>
+                        <td class="c-table__title">一時払</td>
+                        <td class="c-table__title">月払</td>
+                        <td class="c-table__title">一時払</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">0歳</th>
+                        <td class="u-text-center u-text-bold">1,240 円</td>
+                        <td class="u-text-center u-text-bold">13,530 円</td>
+                        <td class="u-text-center u-text-bold">990 円</td>
+                        <td class="u-text-center u-text-bold">10,760 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">1歳</th>
+                        <td class="u-text-center u-text-bold">1,150 円</td>
+                        <td class="u-text-center u-text-bold">12,580 円</td>
+                        <td class="u-text-center u-text-bold">920 円</td>
+                        <td class="u-text-center u-text-bold">10,080 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">2歳</th>
+                        <td class="u-text-center u-text-bold">1,070 円</td>
+                        <td class="u-text-center u-text-bold">11,640 円</td>
+                        <td class="u-text-center u-text-bold">860 円</td>
+                        <td class="u-text-center u-text-bold">9,410 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">3歳</th>
+                        <td class="u-text-center u-text-bold">1,210 円</td>
+                        <td class="u-text-center u-text-bold">13,160 円</td>
+                        <td class="u-text-center u-text-bold">960 円</td>
+                        <td class="u-text-center u-text-bold">10,500 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">4歳</th>
+                        <td class="u-text-center u-text-bold">1,350 円</td>
+                        <td class="u-text-center u-text-bold">14,680 円</td>
+                        <td class="u-text-center u-text-bold">1,060 円</td>
+                        <td class="u-text-center u-text-bold">11,580  円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">5歳</th>
+                        <td class="u-text-center u-text-bold">1,480 円</td>
+                        <td class="u-text-center u-text-bold">16,190 円</td>
+                        <td class="u-text-center u-text-bold">1,160 円</td>
+                        <td class="u-text-center u-text-bold">12,660 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">6歳</th>
+                        <td class="u-text-center u-text-bold">1,910 円</td>
+                        <td class="u-text-center u-text-bold">20,800 円</td>
+                        <td class="u-text-center u-text-bold">1,460 円</td>
+                        <td class="u-text-center u-text-bold">15,950 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">7歳</th>
+                        <td class="u-text-center u-text-bold">2,330 円</td>
+                        <td class="u-text-center u-text-bold">25,380 円</td>
+                        <td class="u-text-center u-text-bold">1,760 円</td>
+                        <td class="u-text-center u-text-bold">19,220 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">8歳</th>
+                        <td class="u-text-center u-text-bold">2,750 円</td>
+                        <td class="u-text-center u-text-bold">29,980 円</td>
+                        <td class="u-text-center u-text-bold">2,060 円</td>
+                        <td class="u-text-center u-text-bold">22,510 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">9歳</th>
+                        <td class="u-text-center u-text-bold">3,130 円</td>
+                        <td class="u-text-center u-text-bold">34,140 円</td>
+                        <td class="u-text-center u-text-bold">2,340 円</td>
+                        <td class="u-text-center u-text-bold">25,480 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">10歳</th>
+                        <td class="u-text-center u-text-bold">3,510 円</td>
+                        <td class="u-text-center u-text-bold">38,300 円</td>
+                        <td class="u-text-center u-text-bold">2,610 円</td>
+                        <td class="u-text-center u-text-bold">28,450 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">11歳</th>
+                        <td colspan="4" class="u-text-center">11歳以上はお問合せください<br>
+                          <a href="#" class="u-link-has-arrow -sm">お問合せはこちら</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --orange">通院ありタイプ</h4>
+                <div class="c-table l-container u-mt-8">
+                  <table class="c-table__table">
+                    <thead>
+                      <tr>
+                        <th colspan="1" style="border:none;"></th>
+                        <th class="c-table__heading" colspan="2">70%コース</th>
+                        <th class="c-table__heading" colspan="2">50%コース</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th style="border:none;"></th>
+                        <td class="c-table__title">月払</td>
+                        <td class="c-table__title">一時払</td>
+                        <td class="c-table__title">月払</td>
+                        <td class="c-table__title">一時払</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">0歳</th>
+                        <td class="u-text-center u-text-bold">2,480 円</td>
+                        <td class="u-text-center u-text-bold">27,070 円</td>
+                        <td class="u-text-center u-text-bold">1,930 円</td>
+                        <td class="u-text-center u-text-bold">20,980 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">1歳</th>
+                        <td class="u-text-center u-text-bold">2,320 円</td>
+                        <td class="u-text-center u-text-bold">25,360 円</td>
+                        <td class="u-text-center u-text-bold">1,810 円</td>
+                        <td class="u-text-center u-text-bold">19,750 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">2歳</th>
+                        <td class="u-text-center u-text-bold">1,070 円</td>
+                        <td class="u-text-center u-text-bold">2,170 円</td>
+                        <td class="u-text-center u-text-bold">1,700 円</td>
+                        <td class="u-text-center u-text-bold">18,540 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">3歳</th>
+                        <td class="u-text-center u-text-bold">2,470 円</td>
+                        <td class="u-text-center u-text-bold">26,930 円</td>
+                        <td class="u-text-center u-text-bold">1,910 円</td>
+                        <td class="u-text-center u-text-bold">20,880 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">4歳</th>
+                        <td class="u-text-center u-text-bold">2,770 円</td>
+                        <td class="u-text-center u-text-bold">30,200 円</td>
+                        <td class="u-text-center u-text-bold">2,130 円</td>
+                        <td class="u-text-center u-text-bold">23,210 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">5歳</th>
+                        <td class="u-text-center u-text-bold">3,060 円</td>
+                        <td class="u-text-center u-text-bold">33,460 円</td>
+                        <td class="u-text-center u-text-bold">2,340 円</td>
+                        <td class="u-text-center u-text-bold">25,540 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">6歳</th>
+                        <td class="u-text-center u-text-bold">3,870 円</td>
+                        <td class="u-text-center u-text-bold">42,190 円</td>
+                        <td class="u-text-center u-text-bold">2,910 円</td>
+                        <td class="u-text-center u-text-bold">31,770 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">7歳</th>
+                        <td class="u-text-center u-text-bold">4,670 円</td>
+                        <td class="u-text-center u-text-bold">50,880 円</td>
+                        <td class="u-text-center u-text-bold">3,480 円</td>
+                        <td class="u-text-center u-text-bold">37,980 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">8歳</th>
+                        <td class="u-text-center u-text-bold">5,470 円</td>
+                        <td class="u-text-center u-text-bold">59,600 円</td>
+                        <td class="u-text-center u-text-bold">4,050 円</td>
+                        <td class="u-text-center u-text-bold">44,210 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">9歳</th>
+                        <td class="u-text-center u-text-bold">6,290 円</td>
+                        <td class="u-text-center u-text-bold">68,580 円</td>
+                        <td class="u-text-center u-text-bold">4,650 円</td>
+                        <td class="u-text-center u-text-bold">50,630 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">10歳</th>
+                        <td class="u-text-center u-text-bold">7,110 円</td>
+                        <td class="u-text-center u-text-bold">77,560 円</td>
+                        <td class="u-text-center u-text-bold">5,230 円</td>
+                        <td class="u-text-center u-text-bold">57,040 円</td>
+                      </tr>
+                      <tr>
+                        <th class="c-table__title">11歳</th>
+                        <td colspan="4" class="u-text-center">11歳以上はお問合せください<br>
+                          <a href="#" class="u-link-has-arrow -sm">お問合せはこちら</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                  <p class="u-text-bold u-text-10 u-text-gray u-mt-3">※年齢は保険契約の開始日時点での満年齢となります。</p>
+                  <p class="u-text-bold u-text-10 u-text-gray">※継続時は、継続契約の保険開始日時点での年齢による保険料となります。ご継続の引受け年齢に制限はございません。</p>
+                  <p class="u-text-bold u-text-10 u-text-gray">※11歳以降の保険料はお問い合わせください。</p>
+                  <p class="u-text-bold u-text-10 u-text-gray">※現時点での保険料を表示しています。今後、保険料等改定があった場合は、変更となることがありますのでご注意ください。</p>
+
+              <div class="u-radius-4 u-border-2 u-border-gray u-mt-8 u-pb-8 u-px-5">
+                <p class="c-text-accent u-text-center u-mt-6">犬種分類表</p>
+                <p class="u-text-center u-mt-4 u-text-sm">保険料は、犬種により異なります。<br><br>
+                  混血犬以外の犬種については下表より検索し、右側に記載の犬A・B・Cの区分をご確認の上、保険料表にて該当の犬種の保険料をご確認ください<br>
+                  なお、混血犬の場合は混血犬を選択し、体重による分類をご確認ください。</p>
+                  <div class="c-accordion u-mt-6">
+                    <h3 class="c-accordion__heading js-accordion-toggle-btn">ア行</h3>
+                    <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
+                      <div class="c-accordion__content">
+                      </div>
+                    </div>
+                  </div>
+              </div>
             </div>
-            <div class="p-bycle-type-info__tab">
-              <button type="button" class="js-pet-info tab-buttom c-btn -lg" data-id="pet-cont02">犬Ｂ(主に中型犬)</button>
-            </div>
-            <div class="p-bycle-type-info__tab">
-              <button type="button" class="js-pet-info tab-buttom c-btn -lg" data-id="pet-cont03">犬Ｃ(主に大型犬)</button>
-            </div>
-            <div class="p-bycle-type-info__tab">
-              <button type="button" class="js-pet-info tab-buttom c-btn -lg" data-id="pet-cont04">猫</button>
+        </div>
+        <!-- 2つめ -->
+        <div id="tab2" class="tab-content p-bycle-type-info__type">
+          <div class="p-bycletab-inner">
+            <p>（例）<br>
+              ●アメリカン・コッカー・スパニエル　●イタリアン・グレーハウンド<br>
+              ●キャバリア・キング・チャールズ・スパニエル　●シェットランド・シープドッグ　●パグ<br>
+              ●ビション・フリーゼ　●ビーグル　●フレンチ・ブルドッグ　●ペキニーズ<br>
+              ●ボーダー・コリー　●ボストン・テリア　●ミニチュア・ピンシャー<br>
+              ●混血犬(体重10kg以上20kg未満)　など　</p>
+              <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --yellow">通院なしタイプ</h4>
+              <div class="c-table l-container u-mt-8">
+                <table class="c-table__table">
+                  <thead>
+                    <tr>
+                      <th colspan="1" style="border:none;"></th>
+                      <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">70%コース</th>
+                      <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">50%コース</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th style="border:none;"></th>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">0歳</th>
+                      <td class="u-text-center u-text-bold">2,240 円</td>
+                      <td class="u-text-center u-text-bold">24,450 円</td>
+                      <td class="u-text-center u-text-bold">1,700 円</td>
+                      <td class="u-text-center u-text-bold">18,560 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">1歳</th>
+                      <td class="u-text-center u-text-bold">2,040 円</td>
+                      <td class="u-text-center u-text-bold">22,230 円</td>
+                      <td class="u-text-center u-text-bold">1,560 円</td>
+                      <td class="u-text-center u-text-bold">16,980 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">2歳</th>
+                      <td class="u-text-center u-text-bold">1,840 円</td>
+                      <td class="u-text-center u-text-bold">20,040 円</td>
+                      <td class="u-text-center u-text-bold">1,410 円</td>
+                      <td class="u-text-center u-text-bold">15,410 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">3歳</th>
+                      <td class="u-text-center u-text-bold">2,080 円</td>
+                      <td class="u-text-center u-text-bold">22,650 円</td>
+                      <td class="u-text-center u-text-bold">1,580 円</td>
+                      <td class="u-text-center u-text-bold">17,270 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">4歳</th>
+                      <td class="u-text-center u-text-bold">2,320 円</td>
+                      <td class="u-text-center u-text-bold">25,270 円</td>
+                      <td class="u-text-center u-text-bold">1,760 円</td>
+                      <td class="u-text-center u-text-bold">19,150 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">5歳</th>
+                      <td class="u-text-center u-text-bold">2,550 円</td>
+                      <td class="u-text-center u-text-bold">27,870 円</td>
+                      <td class="u-text-center u-text-bold">1,930 円</td>
+                      <td class="u-text-center u-text-bold">21,000 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">6歳</th>
+                      <td class="u-text-center u-text-bold">3,340 円</td>
+                      <td class="u-text-center u-text-bold">36,470 円</td>
+                      <td class="u-text-center u-text-bold">2,490 円</td>
+                      <td class="u-text-center u-text-bold">27,150 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">7歳</th>
+                      <td class="u-text-center u-text-bold">4,130 円</td>
+                      <td class="u-text-center u-text-bold">45,060 円</td>
+                      <td class="u-text-center u-text-bold">3,050 円</td>
+                      <td class="u-text-center u-text-bold">33,280 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">8歳</th>
+                      <td class="u-text-center u-text-bold">4,920 円</td>
+                      <td class="u-text-center u-text-bold">53,660 円</td>
+                      <td class="u-text-center u-text-bold">3,610 円</td>
+                      <td class="u-text-center u-text-bold">39,430 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">9歳</th>
+                      <td class="u-text-center u-text-bold">5,660 円</td>
+                      <td class="u-text-center u-text-bold">61,750 円</td>
+                      <td class="u-text-center u-text-bold">4,140 円</td>
+                      <td class="u-text-center u-text-bold">45,200 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">10歳</th>
+                      <td class="u-text-center u-text-bold">6,400 円</td>
+                      <td class="u-text-center u-text-bold">69,860 円</td>
+                      <td class="u-text-center u-text-bold">4,670 円</td>
+                      <td class="u-text-center u-text-bold">50,990 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">11歳</th>
+                      <td colspan="4" class="u-text-center">11歳以上はお問合せください<br>
+                        <a href="#" class="u-link-has-arrow -sm">お問合せはこちら</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --orange">通院ありタイプ</h4>
+              <div class="c-table l-container u-mt-8">
+                <table class="c-table__table">
+                  <thead>
+                    <tr>
+                      <th colspan="1" style="border:none;"></th>
+                      <th class="c-table__heading" colspan="2">70%コース</th>
+                      <th class="c-table__heading" colspan="2">50%コース</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th style="border:none;"></th>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">0歳</th>
+                      <td class="u-text-center u-text-bold">4,170 円</td>
+                      <td class="u-text-center u-text-bold">45,560 円</td>
+                      <td class="u-text-center u-text-bold">3,130 円</td>
+                      <td class="u-text-center u-text-bold">34,190 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">1歳</th>
+                      <td class="u-text-center u-text-bold">3,940 円</td>
+                      <td class="u-text-center u-text-bold">42,960 円</td>
+                      <td class="u-text-center u-text-bold">2,970 円</td>
+                      <td class="u-text-center u-text-bold">32,330 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">2歳</th>
+                      <td class="u-text-center u-text-bold">3,710 円</td>
+                      <td class="u-text-center u-text-bold">40,390 円</td>
+                      <td class="u-text-center u-text-bold">2,790 円</td>
+                      <td class="u-text-center u-text-bold">30,490 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">3歳</th>
+                      <td class="u-text-center u-text-bold">4,120 円</td>
+                      <td class="u-text-center u-text-bold">44,950 円</td>
+                      <td class="u-text-center u-text-bold">3,090 円</td>
+                      <td class="u-text-center u-text-bold">33,750 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">4歳</th>
+                      <td class="u-text-center u-text-bold">4,540 円</td>
+                      <td class="u-text-center u-text-bold">49,530 円</td>
+                      <td class="u-text-center u-text-bold">3,400 円</td>
+                      <td class="u-text-center u-text-bold">37,030 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">5歳</th>
+                      <td class="u-text-center u-text-bold">4,950 円</td>
+                      <td class="u-text-center u-text-bold">54,090 円</td>
+                      <td class="u-text-center u-text-bold">3,700 円</td>
+                      <td class="u-text-center u-text-bold">40,270 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">6歳</th>
+                      <td class="u-text-center u-text-bold">6,050 円</td>
+                      <td class="u-text-center u-text-bold">66,010 円</td>
+                      <td class="u-text-center u-text-bold">4,470 円</td>
+                      <td class="u-text-center u-text-bold">48,800 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">7歳</th>
+                      <td class="u-text-center u-text-bold">7,140 円</td>
+                      <td class="u-text-center u-text-bold">77,930 円</td>
+                      <td class="u-text-center u-text-bold">5,250 円</td>
+                      <td class="u-text-center u-text-bold">57,300 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">8歳</th>
+                      <td class="u-text-center u-text-bold">8,240 円</td>
+                      <td class="u-text-center u-text-bold">89,850 円</td>
+                      <td class="u-text-center u-text-bold">6,030 円</td>
+                      <td class="u-text-center u-text-bold">65,830 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">9歳</th>
+                      <td class="u-text-center u-text-bold">9,510 円</td>
+                      <td class="u-text-center u-text-bold">103,780 円</td>
+                      <td class="u-text-center u-text-bold">6,940 円</td>
+                      <td class="u-text-center u-text-bold">75,770 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">10歳</th>
+                      <td class="u-text-center u-text-bold">10,790 円</td>
+                      <td class="u-text-center u-text-bold">117,730 円</td>
+                      <td class="u-text-center u-text-bold">7,850 円</td>
+                      <td class="u-text-center u-text-bold">85,730 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">11歳</th>
+                      <td colspan="4" class="u-text-center">11歳以上はお問合せください<br>
+                        <a href="#" class="u-link-has-arrow -sm">お問合せはこちら</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+                <p class="u-text-bold u-text-10 u-text-gray u-mt-3">※年齢は保険契約の開始日時点での満年齢となります。</p>
+                <p class="u-text-bold u-text-10 u-text-gray">※継続時は、継続契約の保険開始日時点での年齢による保険料となります。ご継続の引受け年齢に制限はございません。</p>
+                <p class="u-text-bold u-text-10 u-text-gray">※11歳以降の保険料はお問い合わせください。</p>
+                <p class="u-text-bold u-text-10 u-text-gray">※現時点での保険料を表示しています。今後、保険料等改定があった場合は、変更となることがありますのでご注意ください。</p>
+
+            <div class="u-radius-4 u-border-2 u-border-gray u-mt-8 u-pb-8 u-px-5">
+              <p class="c-text-accent u-text-center u-mt-6">犬種分類表</p>
+              <p class="u-text-center u-mt-4 u-text-sm">保険料は、犬種により異なります。<br><br>
+                混血犬以外の犬種については下表より検索し、右側に記載の犬A・B・Cの区分をご確認の上、保険料表にて該当の犬種の保険料をご確認ください<br>
+                なお、混血犬の場合は混血犬を選択し、体重による分類をご確認ください。</p>
+
+              <div class="c-accordion u-mt-6">
+                <h3 class="c-accordion__heading js-accordion-toggle-btn">ア行</h3>
+                <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
+                  <div class="c-accordion__content">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-  
-  
-            <div class="p-bycle-type-info__box u-p-5">
-              <div id="pet-cont01" class="p-bycle-type-info__type is-active">
-                <p>例）<br>
-                  ●秋田　●アフガン・ハウンド　●ゴールデン・レトリーバー　●シベリアン・ハスキー　●セント・バーナード　●バーニーズ・マウンテン・ドッグ<br>
-                  ●ブルドッグ　●ラブラドール・レトリーバー　●混血犬（体重20kg以上）など<br>
-                  上記にない犬種の区分は<a href="" class="u-link-text">こちら</a>からご覧ください。</p>
-                  <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --yellow">通院なしタイプ</h4>
-                  <div class="c-table l-container u-mt-8">
-                    <table class="c-table__table">
-                      <thead>
-                        <tr>
-                          <th class="" colspan="1" style="border:none;"></th>
-                          <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">70%コース</th>
-                          <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">50%コース</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th style="border:none;"></th>
-                          <td class="c-table__title">月払</td>
-                          <td class="c-table__title">一時払</td>
-                          <td class="c-table__title">月払</td>
-                          <td class="c-table__title">一時払</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">0歳</th>
-                          <td class="u-text-center u-text-bold">1,240 円</td>
-                          <td class="u-text-center u-text-bold">13,530 円</td>
-                          <td class="u-text-center u-text-bold">990 円</td>
-                          <td class="u-text-center u-text-bold">10,760 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">1歳</th>
-                          <td class="u-text-center u-text-bold">1,150 円</td>
-                          <td class="u-text-center u-text-bold">12,580 円</td>
-                          <td class="u-text-center u-text-bold">920 円</td>
-                          <td class="u-text-center u-text-bold">10,080 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">2歳</th>
-                          <td class="u-text-center u-text-bold">1,070 円</td>
-                          <td class="u-text-center u-text-bold">11,640 円</td>
-                          <td class="u-text-center u-text-bold">860 円</td>
-                          <td class="u-text-center u-text-bold">9,410 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">3歳</th>
-                          <td class="u-text-center u-text-bold">1,210 円</td>
-                          <td class="u-text-center u-text-bold">13,160 円</td>
-                          <td class="u-text-center u-text-bold">960 円</td>
-                          <td class="u-text-center u-text-bold">10,500 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">4歳</th>
-                          <td class="u-text-center u-text-bold">1,350 円</td>
-                          <td class="u-text-center u-text-bold">14,680 円</td>
-                          <td class="u-text-center u-text-bold">1,060 円</td>
-                          <td class="u-text-center u-text-bold">11,580  円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">5歳</th>
-                          <td class="u-text-center u-text-bold">1,480 円</td>
-                          <td class="u-text-center u-text-bold">16,190 円</td>
-                          <td class="u-text-center u-text-bold">1,160 円</td>
-                          <td class="u-text-center u-text-bold">12,660 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">6歳</th>
-                          <td class="u-text-center u-text-bold">1,910 円</td>
-                          <td class="u-text-center u-text-bold">20,800 円</td>
-                          <td class="u-text-center u-text-bold">1,460 円</td>
-                          <td class="u-text-center u-text-bold">15,950 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">7歳</th>
-                          <td class="u-text-center u-text-bold">2,330 円</td>
-                          <td class="u-text-center u-text-bold">25,380 円</td>
-                          <td class="u-text-center u-text-bold">1,760 円</td>
-                          <td class="u-text-center u-text-bold">19,220 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">8歳</th>
-                          <td class="u-text-center u-text-bold">2,750 円</td>
-                          <td class="u-text-center u-text-bold">29,980 円</td>
-                          <td class="u-text-center u-text-bold">2,060 円</td>
-                          <td class="u-text-center u-text-bold">22,510 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">9歳</th>
-                          <td class="u-text-center u-text-bold">3,130 円</td>
-                          <td class="u-text-center u-text-bold">34,140 円</td>
-                          <td class="u-text-center u-text-bold">2,340 円</td>
-                          <td class="u-text-center u-text-bold">25,480 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">10歳</th>
-                          <td class="u-text-center u-text-bold">3,510 円</td>
-                          <td class="u-text-center u-text-bold">38,300 円</td>
-                          <td class="u-text-center u-text-bold">2,610 円</td>
-                          <td class="u-text-center u-text-bold">28,450 円</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --orange">通院ありタイプ</h4>
-                  <div class="c-table l-container u-mt-8">
-                    <table class="c-table__table">
-                      <thead>
-                        <tr>
-                          <th colspan="1" style="border:none;"></th>
-                          <th class="c-table__heading" colspan="2">70%コース</th>
-                          <th class="c-table__heading" colspan="2">50%コース</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th style="border:none;"></th>
-                          <td class="c-table__title">月払</td>
-                          <td class="c-table__title">一時払</td>
-                          <td class="c-table__title">月払</td>
-                          <td class="c-table__title">一時払</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">0歳</th>
-                          <td class="u-text-center u-text-bold">2,480 円</td>
-                          <td class="u-text-center u-text-bold">27,070 円</td>
-                          <td class="u-text-center u-text-bold">1,930 円</td>
-                          <td class="u-text-center u-text-bold">20,980 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">1歳</th>
-                          <td class="u-text-center u-text-bold">2,320 円</td>
-                          <td class="u-text-center u-text-bold">25,360 円</td>
-                          <td class="u-text-center u-text-bold">1,810 円</td>
-                          <td class="u-text-center u-text-bold">19,750 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">2歳</th>
-                          <td class="u-text-center u-text-bold">1,070 円</td>
-                          <td class="u-text-center u-text-bold">2,170 円</td>
-                          <td class="u-text-center u-text-bold">1,700 円</td>
-                          <td class="u-text-center u-text-bold">18,540 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">3歳</th>
-                          <td class="u-text-center u-text-bold">2,470 円</td>
-                          <td class="u-text-center u-text-bold">26,930 円</td>
-                          <td class="u-text-center u-text-bold">1,910 円</td>
-                          <td class="u-text-center u-text-bold">20,880 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">4歳</th>
-                          <td class="u-text-center u-text-bold">2,770 円</td>
-                          <td class="u-text-center u-text-bold">30,200 円</td>
-                          <td class="u-text-center u-text-bold">2,130 円</td>
-                          <td class="u-text-center u-text-bold">23,210 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">5歳</th>
-                          <td class="u-text-center u-text-bold">3,060 円</td>
-                          <td class="u-text-center u-text-bold">33,460 円</td>
-                          <td class="u-text-center u-text-bold">2,340 円</td>
-                          <td class="u-text-center u-text-bold">25,540 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">6歳</th>
-                          <td class="u-text-center u-text-bold">3,870 円</td>
-                          <td class="u-text-center u-text-bold">42,190 円</td>
-                          <td class="u-text-center u-text-bold">2,910 円</td>
-                          <td class="u-text-center u-text-bold">31,770 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">7歳</th>
-                          <td class="u-text-center u-text-bold">4,670 円</td>
-                          <td class="u-text-center u-text-bold">50,880 円</td>
-                          <td class="u-text-center u-text-bold">3,480 円</td>
-                          <td class="u-text-center u-text-bold">37,980 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">8歳</th>
-                          <td class="u-text-center u-text-bold">5,470 円</td>
-                          <td class="u-text-center u-text-bold">59,600 円</td>
-                          <td class="u-text-center u-text-bold">4,050 円</td>
-                          <td class="u-text-center u-text-bold">44,210 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">9歳</th>
-                          <td class="u-text-center u-text-bold">6,290 円</td>
-                          <td class="u-text-center u-text-bold">68,580 円</td>
-                          <td class="u-text-center u-text-bold">4,650 円</td>
-                          <td class="u-text-center u-text-bold">50,630 円</td>
-                        </tr>
-                        <tr>
-                          <th class="c-table__title">10歳</th>
-                          <td class="u-text-center u-text-bold">7,110 円</td>
-                          <td class="u-text-center u-text-bold">77,560 円</td>
-                          <td class="u-text-center u-text-bold">5,230 円</td>
-                          <td class="u-text-center u-text-bold">57,040 円</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                    <p class="u-text-bold u-text-10 u-text-gray u-mt-3">※年齢は保険契約の開始日時点での満年齢となります。</p>
-                    <p class="u-text-bold u-text-10 u-text-gray">※継続時は、継続契約の保険開始日時点での年齢による保険料となります。ご継続の引受け年齢に制限はございません。</p>
-                    <p class="u-text-bold u-text-10 u-text-gray">※11歳以降の保険料はお問い合わせください。</p>
-                    <p class="u-text-bold u-text-10 u-text-gray">※現時点での保険料を表示しています。今後、保険料等改定があった場合は、変更となることがありますのでご注意ください。</p>
+        </div>
+        <!-- 3つめ -->
+        <div id="tab3" class="tab-content p-bycle-type-info__type">
+          <div class="p-bycletab-inner">
+            <p>（例）<br>
+              ●秋田　●アフガン・ハウンド　●ゴールデン・レトリーバー　●シベリアン・ハスキー<br>
+              ●セント・バーナード　●バーニーズ・マウンテン・ドッグ<br>
+              ●ブルドッグ　●ラブラドール・レトリーバー　●混血犬（体重20kg以上）など</p>
+              <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --yellow">通院なしタイプ</h4>
+              <div class="c-table l-container u-mt-8">
+                <table class="c-table__table">
+                  <thead>
+                    <tr>
+                      <th colspan="1" style="border:none;"></th>
+                      <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">70%コース</th>
+                      <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">50%コース</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th style="border:none;"></th>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">0歳</th>
+                      <td class="u-text-center u-text-bold">2,240 円</td>
+                      <td class="u-text-center u-text-bold">24,450 円</td>
+                      <td class="u-text-center u-text-bold">1,700 円</td>
+                      <td class="u-text-center u-text-bold">18,560 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">1歳</th>
+                      <td class="u-text-center u-text-bold">2,040 円</td>
+                      <td class="u-text-center u-text-bold">22,230 円</td>
+                      <td class="u-text-center u-text-bold">1,560 円</td>
+                      <td class="u-text-center u-text-bold">16,980 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">2歳</th>
+                      <td class="u-text-center u-text-bold">1,840 円</td>
+                      <td class="u-text-center u-text-bold">20,040 円</td>
+                      <td class="u-text-center u-text-bold">1,410 円</td>
+                      <td class="u-text-center u-text-bold">15,410 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">3歳</th>
+                      <td class="u-text-center u-text-bold">2,080 円</td>
+                      <td class="u-text-center u-text-bold">22,650 円</td>
+                      <td class="u-text-center u-text-bold">1,580 円</td>
+                      <td class="u-text-center u-text-bold">17,270 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">4歳</th>
+                      <td class="u-text-center u-text-bold">2,320 円</td>
+                      <td class="u-text-center u-text-bold">25,270 円</td>
+                      <td class="u-text-center u-text-bold">1,760 円</td>
+                      <td class="u-text-center u-text-bold">19,150 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">5歳</th>
+                      <td class="u-text-center u-text-bold">2,550 円</td>
+                      <td class="u-text-center u-text-bold">27,870 円</td>
+                      <td class="u-text-center u-text-bold">1,930 円</td>
+                      <td class="u-text-center u-text-bold">21,000 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">6歳</th>
+                      <td class="u-text-center u-text-bold">3,340 円</td>
+                      <td class="u-text-center u-text-bold">36,470 円</td>
+                      <td class="u-text-center u-text-bold">2,490 円</td>
+                      <td class="u-text-center u-text-bold">27,150 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">7歳</th>
+                      <td class="u-text-center u-text-bold">4,130 円</td>
+                      <td class="u-text-center u-text-bold">45,060 円</td>
+                      <td class="u-text-center u-text-bold">3,050 円</td>
+                      <td class="u-text-center u-text-bold">33,280 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">8歳</th>
+                      <td class="u-text-center u-text-bold">4,920 円</td>
+                      <td class="u-text-center u-text-bold">53,660 円</td>
+                      <td class="u-text-center u-text-bold">3,610 円</td>
+                      <td class="u-text-center u-text-bold">39,430 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">9歳</th>
+                      <td class="u-text-center u-text-bold">5,660 円</td>
+                      <td class="u-text-center u-text-bold">61,750 円</td>
+                      <td class="u-text-center u-text-bold">4,140 円</td>
+                      <td class="u-text-center u-text-bold">45,200 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">10歳</th>
+                      <td class="u-text-center u-text-bold">6,400 円</td>
+                      <td class="u-text-center u-text-bold">69,860 円</td>
+                      <td class="u-text-center u-text-bold">4,670 円</td>
+                      <td class="u-text-center u-text-bold">50,990 円</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --orange">通院ありタイプ</h4>
+              <div class="c-table l-container u-mt-8">
+                <table class="c-table__table">
+                  <thead>
+                    <tr>
+                      <th colspan="1" style="border:none;"></th>
+                      <th class="c-table__heading" colspan="2">70%コース</th>
+                      <th class="c-table__heading" colspan="2">50%コース</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th style="border:none;"></th>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">0歳</th>
+                      <td class="u-text-center u-text-bold">4,170 円</td>
+                      <td class="u-text-center u-text-bold">45,560 円</td>
+                      <td class="u-text-center u-text-bold">3,130 円</td>
+                      <td class="u-text-center u-text-bold">34,190 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">1歳</th>
+                      <td class="u-text-center u-text-bold">3,940 円</td>
+                      <td class="u-text-center u-text-bold">42,960 円</td>
+                      <td class="u-text-center u-text-bold">2,970 円</td>
+                      <td class="u-text-center u-text-bold">32,330 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">2歳</th>
+                      <td class="u-text-center u-text-bold">3,710 円</td>
+                      <td class="u-text-center u-text-bold">40,390 円</td>
+                      <td class="u-text-center u-text-bold">2,790 円</td>
+                      <td class="u-text-center u-text-bold">30,490 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">3歳</th>
+                      <td class="u-text-center u-text-bold">4,120 円</td>
+                      <td class="u-text-center u-text-bold">44,950 円</td>
+                      <td class="u-text-center u-text-bold">3,090 円</td>
+                      <td class="u-text-center u-text-bold">33,750 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">4歳</th>
+                      <td class="u-text-center u-text-bold">4,540 円</td>
+                      <td class="u-text-center u-text-bold">49,530 円</td>
+                      <td class="u-text-center u-text-bold">3,400 円</td>
+                      <td class="u-text-center u-text-bold">37,030 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">5歳</th>
+                      <td class="u-text-center u-text-bold">4,950 円</td>
+                      <td class="u-text-center u-text-bold">54,090 円</td>
+                      <td class="u-text-center u-text-bold">3,700 円</td>
+                      <td class="u-text-center u-text-bold">40,270 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">6歳</th>
+                      <td class="u-text-center u-text-bold">6,050 円</td>
+                      <td class="u-text-center u-text-bold">66,010 円</td>
+                      <td class="u-text-center u-text-bold">4,470 円</td>
+                      <td class="u-text-center u-text-bold">48,800 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">7歳</th>
+                      <td class="u-text-center u-text-bold">7,140 円</td>
+                      <td class="u-text-center u-text-bold">77,930 円</td>
+                      <td class="u-text-center u-text-bold">5,250 円</td>
+                      <td class="u-text-center u-text-bold">57,300 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">8歳</th>
+                      <td class="u-text-center u-text-bold">8,240 円</td>
+                      <td class="u-text-center u-text-bold">89,850 円</td>
+                      <td class="u-text-center u-text-bold">6,030 円</td>
+                      <td class="u-text-center u-text-bold">65,830 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">9歳</th>
+                      <td class="u-text-center u-text-bold">9,510 円</td>
+                      <td class="u-text-center u-text-bold">103,780 円</td>
+                      <td class="u-text-center u-text-bold">6,940 円</td>
+                      <td class="u-text-center u-text-bold">75,770 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">10歳</th>
+                      <td class="u-text-center u-text-bold">10,790 円</td>
+                      <td class="u-text-center u-text-bold">117,730 円</td>
+                      <td class="u-text-center u-text-bold">7,850 円</td>
+                      <td class="u-text-center u-text-bold">85,730 円</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+                <p class="u-text-bold u-text-10 u-text-gray u-mt-3">※年齢は保険契約の開始日時点での満年齢となります。</p>
+                <p class="u-text-bold u-text-10 u-text-gray">※継続時は、継続契約の保険開始日時点での年齢による保険料となります。ご継続の引受け年齢に制限はございません。</p>
+                <p class="u-text-bold u-text-10 u-text-gray">※11歳以降の保険料はお問い合わせください。</p>
+                <p class="u-text-bold u-text-10 u-text-gray">※現時点での保険料を表示しています。今後、保険料等改定があった場合は、変更となることがありますのでご注意ください。</p>
 
-                <div class="u-radius-4 u-border-2 u-border-gray u-mt-8 u-pb-8 u-px-5">
-                  <p class="c-text-accent u-text-center u-mt-6">犬種分類表</p>
-                  <p class="u-text-center u-mt-4 u-text-sm">保険料は、犬種により異なります。<br><br>
-                    混血犬以外の犬種については下表より検索し、右側に記載の犬A・B・Cの区分をご確認の上、保険料表にて該当の犬種の保険料をご確認ください<br>
-                    なお、混血犬の場合は混血犬を選択し、体重による分類をご確認ください。</p>
+            <div class="u-radius-4 u-border-2 u-border-gray u-mt-8 u-pb-8 u-px-5">
+              <p class="c-text-accent u-text-center u-mt-6">犬種分類表</p>
+              <p class="u-text-center u-mt-4 u-text-sm">保険料は、犬種により異なります。<br><br>
+                混血犬以外の犬種については下表より検索し、右側に記載の犬A・B・Cの区分をご確認の上、保険料表にて該当の犬種の保険料をご確認ください<br>
+                なお、混血犬の場合は混血犬を選択し、体重による分類をご確認ください。</p>
 
-                <div class="c-accordion u-mt-6">
-                  <h3 class="c-accordion__heading js-accordion-toggle-btn">ア行</h3>
-                  <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
-                    <div class="c-accordion__content">
-                    </div>
-                  </div>
-                </div>
-                <div class="c-accordion u-mt-3">
-                  <h3 class="c-accordion__heading js-accordion-toggle-btn">カ行</h3>
-                  <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
-                    <div class="c-accordion__content">
-                    </div>
+              <div class="c-accordion u-mt-6">
+                <h3 class="c-accordion__heading js-accordion-toggle-btn">ア行</h3>
+                <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
+                  <div class="c-accordion__content">
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4つめ -->
+        <div id="tab4" class="tab-content p-bycle-type-info__type">
+          <div class="p-bycletab-inner">
+            <p>（例）<br>
+              ●秋田　●アフガン・ハウンド　●ゴールデン・レトリーバー　●シベリアン・ハスキー<br>
+              ●セント・バーナード　●バーニーズ・マウンテン・ドッグ<br>
+              ●ブルドッグ　●ラブラドール・レトリーバー　●混血犬（体重20kg以上）など</p>
+              <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --yellow">通院なしタイプ</h4>
+              <div class="c-table l-container u-mt-8">
+                <table class="c-table__table">
+                  <thead>
+                    <tr>
+                      <th colspan="1" style="border:none;"></th>
+                      <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">70%コース</th>
+                      <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">50%コース</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th style="border:none;"></th>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">0歳</th>
+                      <td class="u-text-center u-text-bold">2,240 円</td>
+                      <td class="u-text-center u-text-bold">24,450 円</td>
+                      <td class="u-text-center u-text-bold">1,700 円</td>
+                      <td class="u-text-center u-text-bold">18,560 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">1歳</th>
+                      <td class="u-text-center u-text-bold">2,040 円</td>
+                      <td class="u-text-center u-text-bold">22,230 円</td>
+                      <td class="u-text-center u-text-bold">1,560 円</td>
+                      <td class="u-text-center u-text-bold">16,980 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">2歳</th>
+                      <td class="u-text-center u-text-bold">1,840 円</td>
+                      <td class="u-text-center u-text-bold">20,040 円</td>
+                      <td class="u-text-center u-text-bold">1,410 円</td>
+                      <td class="u-text-center u-text-bold">15,410 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">3歳</th>
+                      <td class="u-text-center u-text-bold">2,080 円</td>
+                      <td class="u-text-center u-text-bold">22,650 円</td>
+                      <td class="u-text-center u-text-bold">1,580 円</td>
+                      <td class="u-text-center u-text-bold">17,270 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">4歳</th>
+                      <td class="u-text-center u-text-bold">2,320 円</td>
+                      <td class="u-text-center u-text-bold">25,270 円</td>
+                      <td class="u-text-center u-text-bold">1,760 円</td>
+                      <td class="u-text-center u-text-bold">19,150 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">5歳</th>
+                      <td class="u-text-center u-text-bold">2,550 円</td>
+                      <td class="u-text-center u-text-bold">27,870 円</td>
+                      <td class="u-text-center u-text-bold">1,930 円</td>
+                      <td class="u-text-center u-text-bold">21,000 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">6歳</th>
+                      <td class="u-text-center u-text-bold">3,340 円</td>
+                      <td class="u-text-center u-text-bold">36,470 円</td>
+                      <td class="u-text-center u-text-bold">2,490 円</td>
+                      <td class="u-text-center u-text-bold">27,150 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">7歳</th>
+                      <td class="u-text-center u-text-bold">4,130 円</td>
+                      <td class="u-text-center u-text-bold">45,060 円</td>
+                      <td class="u-text-center u-text-bold">3,050 円</td>
+                      <td class="u-text-center u-text-bold">33,280 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">8歳</th>
+                      <td class="u-text-center u-text-bold">4,920 円</td>
+                      <td class="u-text-center u-text-bold">53,660 円</td>
+                      <td class="u-text-center u-text-bold">3,610 円</td>
+                      <td class="u-text-center u-text-bold">39,430 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">9歳</th>
+                      <td class="u-text-center u-text-bold">5,660 円</td>
+                      <td class="u-text-center u-text-bold">61,750 円</td>
+                      <td class="u-text-center u-text-bold">4,140 円</td>
+                      <td class="u-text-center u-text-bold">45,200 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">10歳</th>
+                      <td class="u-text-center u-text-bold">6,400 円</td>
+                      <td class="u-text-center u-text-bold">69,860 円</td>
+                      <td class="u-text-center u-text-bold">4,670 円</td>
+                      <td class="u-text-center u-text-bold">50,990 円</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-                <div id="pet-cont02" class="p-bycle-type-info__type">
-                  <p>（例）<br>
-                    ●アメリカン・コッカー・スパニエル　●イタリアン・グレーハウンド<br>
-                    ●キャバリア・キング・チャールズ・スパニエル　●シェットランド・シープドッグ　●パグ<br>
-                    ●ビション・フリーゼ　●ビーグル　●フレンチ・ブルドッグ　●ペキニーズ<br>
-                    ●ボーダー・コリー　●ボストン・テリア　●ミニチュア・ピンシャー<br>
-                    ●混血犬(体重10kg以上20kg未満)　など　</p>
-                    <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --yellow">通院なしタイプ</h4>
-                    <div class="c-table l-container u-mt-8">
-                      <table class="c-table__table">
-                        <thead>
-                          <tr>
-                            <th colspan="1" style="border:none;"></th>
-                            <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">70%コース</th>
-                            <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">50%コース</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th style="border:none;"></th>
-                            <td class="c-table__title">月払</td>
-                            <td class="c-table__title">一時払</td>
-                            <td class="c-table__title">月払</td>
-                            <td class="c-table__title">一時払</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">0歳</th>
-                            <td class="u-text-center u-text-bold">2,240 円</td>
-                            <td class="u-text-center u-text-bold">24,450 円</td>
-                            <td class="u-text-center u-text-bold">1,700 円</td>
-                            <td class="u-text-center u-text-bold">18,560 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">1歳</th>
-                            <td class="u-text-center u-text-bold">2,040 円</td>
-                            <td class="u-text-center u-text-bold">22,230 円</td>
-                            <td class="u-text-center u-text-bold">1,560 円</td>
-                            <td class="u-text-center u-text-bold">16,980 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">2歳</th>
-                            <td class="u-text-center u-text-bold">1,840 円</td>
-                            <td class="u-text-center u-text-bold">20,040 円</td>
-                            <td class="u-text-center u-text-bold">1,410 円</td>
-                            <td class="u-text-center u-text-bold">15,410 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">3歳</th>
-                            <td class="u-text-center u-text-bold">2,080 円</td>
-                            <td class="u-text-center u-text-bold">22,650 円</td>
-                            <td class="u-text-center u-text-bold">1,580 円</td>
-                            <td class="u-text-center u-text-bold">17,270 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">4歳</th>
-                            <td class="u-text-center u-text-bold">2,320 円</td>
-                            <td class="u-text-center u-text-bold">25,270 円</td>
-                            <td class="u-text-center u-text-bold">1,760 円</td>
-                            <td class="u-text-center u-text-bold">19,150 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">5歳</th>
-                            <td class="u-text-center u-text-bold">2,550 円</td>
-                            <td class="u-text-center u-text-bold">27,870 円</td>
-                            <td class="u-text-center u-text-bold">1,930 円</td>
-                            <td class="u-text-center u-text-bold">21,000 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">6歳</th>
-                            <td class="u-text-center u-text-bold">3,340 円</td>
-                            <td class="u-text-center u-text-bold">36,470 円</td>
-                            <td class="u-text-center u-text-bold">2,490 円</td>
-                            <td class="u-text-center u-text-bold">27,150 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">7歳</th>
-                            <td class="u-text-center u-text-bold">4,130 円</td>
-                            <td class="u-text-center u-text-bold">45,060 円</td>
-                            <td class="u-text-center u-text-bold">3,050 円</td>
-                            <td class="u-text-center u-text-bold">33,280 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">8歳</th>
-                            <td class="u-text-center u-text-bold">4,920 円</td>
-                            <td class="u-text-center u-text-bold">53,660 円</td>
-                            <td class="u-text-center u-text-bold">3,610 円</td>
-                            <td class="u-text-center u-text-bold">39,430 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">9歳</th>
-                            <td class="u-text-center u-text-bold">5,660 円</td>
-                            <td class="u-text-center u-text-bold">61,750 円</td>
-                            <td class="u-text-center u-text-bold">4,140 円</td>
-                            <td class="u-text-center u-text-bold">45,200 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">10歳</th>
-                            <td class="u-text-center u-text-bold">6,400 円</td>
-                            <td class="u-text-center u-text-bold">69,860 円</td>
-                            <td class="u-text-center u-text-bold">4,670 円</td>
-                            <td class="u-text-center u-text-bold">50,990 円</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --orange">通院ありタイプ</h4>
-                    <div class="c-table l-container u-mt-8">
-                      <table class="c-table__table">
-                        <thead>
-                          <tr>
-                            <th colspan="1" style="border:none;"></th>
-                            <th class="c-table__heading" colspan="2">70%コース</th>
-                            <th class="c-table__heading" colspan="2">50%コース</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th style="border:none;"></th>
-                            <td class="c-table__title">月払</td>
-                            <td class="c-table__title">一時払</td>
-                            <td class="c-table__title">月払</td>
-                            <td class="c-table__title">一時払</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">0歳</th>
-                            <td class="u-text-center u-text-bold">4,170 円</td>
-                            <td class="u-text-center u-text-bold">45,560 円</td>
-                            <td class="u-text-center u-text-bold">3,130 円</td>
-                            <td class="u-text-center u-text-bold">34,190 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">1歳</th>
-                            <td class="u-text-center u-text-bold">3,940 円</td>
-                            <td class="u-text-center u-text-bold">42,960 円</td>
-                            <td class="u-text-center u-text-bold">2,970 円</td>
-                            <td class="u-text-center u-text-bold">32,330 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">2歳</th>
-                            <td class="u-text-center u-text-bold">3,710 円</td>
-                            <td class="u-text-center u-text-bold">40,390 円</td>
-                            <td class="u-text-center u-text-bold">2,790 円</td>
-                            <td class="u-text-center u-text-bold">30,490 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">3歳</th>
-                            <td class="u-text-center u-text-bold">4,120 円</td>
-                            <td class="u-text-center u-text-bold">44,950 円</td>
-                            <td class="u-text-center u-text-bold">3,090 円</td>
-                            <td class="u-text-center u-text-bold">33,750 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">4歳</th>
-                            <td class="u-text-center u-text-bold">4,540 円</td>
-                            <td class="u-text-center u-text-bold">49,530 円</td>
-                            <td class="u-text-center u-text-bold">3,400 円</td>
-                            <td class="u-text-center u-text-bold">37,030 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">5歳</th>
-                            <td class="u-text-center u-text-bold">4,950 円</td>
-                            <td class="u-text-center u-text-bold">54,090 円</td>
-                            <td class="u-text-center u-text-bold">3,700 円</td>
-                            <td class="u-text-center u-text-bold">40,270 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">6歳</th>
-                            <td class="u-text-center u-text-bold">6,050 円</td>
-                            <td class="u-text-center u-text-bold">66,010 円</td>
-                            <td class="u-text-center u-text-bold">4,470 円</td>
-                            <td class="u-text-center u-text-bold">48,800 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">7歳</th>
-                            <td class="u-text-center u-text-bold">7,140 円</td>
-                            <td class="u-text-center u-text-bold">77,930 円</td>
-                            <td class="u-text-center u-text-bold">5,250 円</td>
-                            <td class="u-text-center u-text-bold">57,300 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">8歳</th>
-                            <td class="u-text-center u-text-bold">8,240 円</td>
-                            <td class="u-text-center u-text-bold">89,850 円</td>
-                            <td class="u-text-center u-text-bold">6,030 円</td>
-                            <td class="u-text-center u-text-bold">65,830 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">9歳</th>
-                            <td class="u-text-center u-text-bold">9,510 円</td>
-                            <td class="u-text-center u-text-bold">103,780 円</td>
-                            <td class="u-text-center u-text-bold">6,940 円</td>
-                            <td class="u-text-center u-text-bold">75,770 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">10歳</th>
-                            <td class="u-text-center u-text-bold">10,790 円</td>
-                            <td class="u-text-center u-text-bold">117,730 円</td>
-                            <td class="u-text-center u-text-bold">7,850 円</td>
-                            <td class="u-text-center u-text-bold">85,730 円</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                      <p class="u-text-bold u-text-10 u-text-gray u-mt-3">※年齢は保険契約の開始日時点での満年齢となります。</p>
-                      <p class="u-text-bold u-text-10 u-text-gray">※継続時は、継続契約の保険開始日時点での年齢による保険料となります。ご継続の引受け年齢に制限はございません。</p>
-                      <p class="u-text-bold u-text-10 u-text-gray">※11歳以降の保険料はお問い合わせください。</p>
-                      <p class="u-text-bold u-text-10 u-text-gray">※現時点での保険料を表示しています。今後、保険料等改定があった場合は、変更となることがありますのでご注意ください。</p>
-    
-                  <div class="u-radius-4 u-border-2 u-border-gray u-mt-8 u-pb-8 u-px-5">
-                    <p class="c-text-accent u-text-center u-mt-6">犬種分類表</p>
-                    <p class="u-text-center u-mt-4 u-text-sm">保険料は、犬種により異なります。<br><br>
-                      混血犬以外の犬種については下表より検索し、右側に記載の犬A・B・Cの区分をご確認の上、保険料表にて該当の犬種の保険料をご確認ください<br>
-                      なお、混血犬の場合は混血犬を選択し、体重による分類をご確認ください。</p>
-    
-                  <div class="c-accordion u-mt-6">
-                    <h3 class="c-accordion__heading js-accordion-toggle-btn">ア行</h3>
-                    <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
-                      <div class="c-accordion__content">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-accordion u-mt-3">
-                    <h3 class="c-accordion__heading js-accordion-toggle-btn">カ行</h3>
-                    <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
-                      <div class="c-accordion__content">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-                <div id="pet-cont03" class="p-bycle-type-info__type">
-                  <p>（例）<br>
-                    ●アメリカン・コッカー・スパニエル　●イタリアン・グレーハウンド<br>
-                    ●キャバリア・キング・チャールズ・スパニエル　●シェットランド・シープドッグ　●パグ<br>
-                    ●ビション・フリーゼ　●ビーグル　●フレンチ・ブルドッグ　●ペキニーズ<br>
-                    ●ボーダー・コリー　●ボストン・テリア　●ミニチュア・ピンシャー<br>
-                    ●混血犬(体重10kg以上20kg未満)　など　</p>
-                    <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --yellow">通院なしタイプ</h4>
-                    <div class="c-table l-container u-mt-8">
-                      <table class="c-table__table">
-                        <thead>
-                          <tr>
-                            <th colspan="1" style="border:none;"></th>
-                            <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">70%コース</th>
-                            <th class="c-table__heading" colspan="2" style="background-color: #fff682; color: #000; border-color: #fff;">50%コース</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th style="border:none;"></th>
-                            <td class="c-table__title">月払</td>
-                            <td class="c-table__title">一時払</td>
-                            <td class="c-table__title">月払</td>
-                            <td class="c-table__title">一時払</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">0歳</th>
-                            <td class="u-text-center u-text-bold">2,240 円</td>
-                            <td class="u-text-center u-text-bold">24,450 円</td>
-                            <td class="u-text-center u-text-bold">1,700 円</td>
-                            <td class="u-text-center u-text-bold">18,560 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">1歳</th>
-                            <td class="u-text-center u-text-bold">2,040 円</td>
-                            <td class="u-text-center u-text-bold">22,230 円</td>
-                            <td class="u-text-center u-text-bold">1,560 円</td>
-                            <td class="u-text-center u-text-bold">16,980 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">2歳</th>
-                            <td class="u-text-center u-text-bold">1,840 円</td>
-                            <td class="u-text-center u-text-bold">20,040 円</td>
-                            <td class="u-text-center u-text-bold">1,410 円</td>
-                            <td class="u-text-center u-text-bold">15,410 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">3歳</th>
-                            <td class="u-text-center u-text-bold">2,080 円</td>
-                            <td class="u-text-center u-text-bold">22,650 円</td>
-                            <td class="u-text-center u-text-bold">1,580 円</td>
-                            <td class="u-text-center u-text-bold">17,270 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">4歳</th>
-                            <td class="u-text-center u-text-bold">2,320 円</td>
-                            <td class="u-text-center u-text-bold">25,270 円</td>
-                            <td class="u-text-center u-text-bold">1,760 円</td>
-                            <td class="u-text-center u-text-bold">19,150 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">5歳</th>
-                            <td class="u-text-center u-text-bold">2,550 円</td>
-                            <td class="u-text-center u-text-bold">27,870 円</td>
-                            <td class="u-text-center u-text-bold">1,930 円</td>
-                            <td class="u-text-center u-text-bold">21,000 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">6歳</th>
-                            <td class="u-text-center u-text-bold">3,340 円</td>
-                            <td class="u-text-center u-text-bold">36,470 円</td>
-                            <td class="u-text-center u-text-bold">2,490 円</td>
-                            <td class="u-text-center u-text-bold">27,150 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">7歳</th>
-                            <td class="u-text-center u-text-bold">4,130 円</td>
-                            <td class="u-text-center u-text-bold">45,060 円</td>
-                            <td class="u-text-center u-text-bold">3,050 円</td>
-                            <td class="u-text-center u-text-bold">33,280 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">8歳</th>
-                            <td class="u-text-center u-text-bold">4,920 円</td>
-                            <td class="u-text-center u-text-bold">53,660 円</td>
-                            <td class="u-text-center u-text-bold">3,610 円</td>
-                            <td class="u-text-center u-text-bold">39,430 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">9歳</th>
-                            <td class="u-text-center u-text-bold">5,660 円</td>
-                            <td class="u-text-center u-text-bold">61,750 円</td>
-                            <td class="u-text-center u-text-bold">4,140 円</td>
-                            <td class="u-text-center u-text-bold">45,200 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">10歳</th>
-                            <td class="u-text-center u-text-bold">6,400 円</td>
-                            <td class="u-text-center u-text-bold">69,860 円</td>
-                            <td class="u-text-center u-text-bold">4,670 円</td>
-                            <td class="u-text-center u-text-bold">50,990 円</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --orange">通院ありタイプ</h4>
-                    <div class="c-table l-container u-mt-8">
-                      <table class="c-table__table">
-                        <thead>
-                          <tr>
-                            <th colspan="1" style="border:none;"></th>
-                            <th class="c-table__heading" colspan="2">70%コース</th>
-                            <th class="c-table__heading" colspan="2">50%コース</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th style="border:none;"></th>
-                            <td class="c-table__title">月払</td>
-                            <td class="c-table__title">一時払</td>
-                            <td class="c-table__title">月払</td>
-                            <td class="c-table__title">一時払</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">0歳</th>
-                            <td class="u-text-center u-text-bold">4,170 円</td>
-                            <td class="u-text-center u-text-bold">45,560 円</td>
-                            <td class="u-text-center u-text-bold">3,130 円</td>
-                            <td class="u-text-center u-text-bold">34,190 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">1歳</th>
-                            <td class="u-text-center u-text-bold">3,940 円</td>
-                            <td class="u-text-center u-text-bold">42,960 円</td>
-                            <td class="u-text-center u-text-bold">2,970 円</td>
-                            <td class="u-text-center u-text-bold">32,330 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">2歳</th>
-                            <td class="u-text-center u-text-bold">3,710 円</td>
-                            <td class="u-text-center u-text-bold">40,390 円</td>
-                            <td class="u-text-center u-text-bold">2,790 円</td>
-                            <td class="u-text-center u-text-bold">30,490 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">3歳</th>
-                            <td class="u-text-center u-text-bold">4,120 円</td>
-                            <td class="u-text-center u-text-bold">44,950 円</td>
-                            <td class="u-text-center u-text-bold">3,090 円</td>
-                            <td class="u-text-center u-text-bold">33,750 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">4歳</th>
-                            <td class="u-text-center u-text-bold">4,540 円</td>
-                            <td class="u-text-center u-text-bold">49,530 円</td>
-                            <td class="u-text-center u-text-bold">3,400 円</td>
-                            <td class="u-text-center u-text-bold">37,030 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">5歳</th>
-                            <td class="u-text-center u-text-bold">4,950 円</td>
-                            <td class="u-text-center u-text-bold">54,090 円</td>
-                            <td class="u-text-center u-text-bold">3,700 円</td>
-                            <td class="u-text-center u-text-bold">40,270 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">6歳</th>
-                            <td class="u-text-center u-text-bold">6,050 円</td>
-                            <td class="u-text-center u-text-bold">66,010 円</td>
-                            <td class="u-text-center u-text-bold">4,470 円</td>
-                            <td class="u-text-center u-text-bold">48,800 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">7歳</th>
-                            <td class="u-text-center u-text-bold">7,140 円</td>
-                            <td class="u-text-center u-text-bold">77,930 円</td>
-                            <td class="u-text-center u-text-bold">5,250 円</td>
-                            <td class="u-text-center u-text-bold">57,300 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">8歳</th>
-                            <td class="u-text-center u-text-bold">8,240 円</td>
-                            <td class="u-text-center u-text-bold">89,850 円</td>
-                            <td class="u-text-center u-text-bold">6,030 円</td>
-                            <td class="u-text-center u-text-bold">65,830 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">9歳</th>
-                            <td class="u-text-center u-text-bold">9,510 円</td>
-                            <td class="u-text-center u-text-bold">103,780 円</td>
-                            <td class="u-text-center u-text-bold">6,940 円</td>
-                            <td class="u-text-center u-text-bold">75,770 円</td>
-                          </tr>
-                          <tr>
-                            <th class="c-table__title">10歳</th>
-                            <td class="u-text-center u-text-bold">10,790 円</td>
-                            <td class="u-text-center u-text-bold">117,730 円</td>
-                            <td class="u-text-center u-text-bold">7,850 円</td>
-                            <td class="u-text-center u-text-bold">85,730 円</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                      <p class="u-text-bold u-text-10 u-text-gray u-mt-3">※年齢は保険契約の開始日時点での満年齢となります。</p>
-                      <p class="u-text-bold u-text-10 u-text-gray">※継続時は、継続契約の保険開始日時点での年齢による保険料となります。ご継続の引受け年齢に制限はございません。</p>
-                      <p class="u-text-bold u-text-10 u-text-gray">※11歳以降の保険料はお問い合わせください。</p>
-                      <p class="u-text-bold u-text-10 u-text-gray">※現時点での保険料を表示しています。今後、保険料等改定があった場合は、変更となることがありますのでご注意ください。</p>
-    
-                  <div class="u-radius-4 u-border-2 u-border-gray u-mt-8 u-pb-8 u-px-5">
-                    <p class="c-text-accent u-text-center u-mt-6">犬種分類表</p>
-                    <p class="u-text-center u-mt-4 u-text-sm">保険料は、犬種により異なります。<br><br>
-                      混血犬以外の犬種については下表より検索し、右側に記載の犬A・B・Cの区分をご確認の上、保険料表にて該当の犬種の保険料をご確認ください<br>
-                      なお、混血犬の場合は混血犬を選択し、体重による分類をご確認ください。</p>
-    
-                  <div class="c-accordion u-mt-6">
-                    <h3 class="c-accordion__heading js-accordion-toggle-btn">ア行</h3>
-                    <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
-                      <div class="c-accordion__content">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-accordion u-mt-3">
-                    <h3 class="c-accordion__heading js-accordion-toggle-btn">カ行</h3>
-                    <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
-                      <div class="c-accordion__content">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
+              <h4 class="u-mt-6 u-text-center p-pet-type-info__sub-title --orange">通院ありタイプ</h4>
+              <div class="c-table l-container u-mt-8">
+                <table class="c-table__table">
+                  <thead>
+                    <tr>
+                      <th colspan="1" style="border:none;"></th>
+                      <th class="c-table__heading" colspan="2">70%コース</th>
+                      <th class="c-table__heading" colspan="2">50%コース</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th style="border:none;"></th>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                      <td class="c-table__title">月払</td>
+                      <td class="c-table__title">一時払</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">0歳</th>
+                      <td class="u-text-center u-text-bold">4,170 円</td>
+                      <td class="u-text-center u-text-bold">45,560 円</td>
+                      <td class="u-text-center u-text-bold">3,130 円</td>
+                      <td class="u-text-center u-text-bold">34,190 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">1歳</th>
+                      <td class="u-text-center u-text-bold">3,940 円</td>
+                      <td class="u-text-center u-text-bold">42,960 円</td>
+                      <td class="u-text-center u-text-bold">2,970 円</td>
+                      <td class="u-text-center u-text-bold">32,330 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">2歳</th>
+                      <td class="u-text-center u-text-bold">3,710 円</td>
+                      <td class="u-text-center u-text-bold">40,390 円</td>
+                      <td class="u-text-center u-text-bold">2,790 円</td>
+                      <td class="u-text-center u-text-bold">30,490 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">3歳</th>
+                      <td class="u-text-center u-text-bold">4,120 円</td>
+                      <td class="u-text-center u-text-bold">44,950 円</td>
+                      <td class="u-text-center u-text-bold">3,090 円</td>
+                      <td class="u-text-center u-text-bold">33,750 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">4歳</th>
+                      <td class="u-text-center u-text-bold">4,540 円</td>
+                      <td class="u-text-center u-text-bold">49,530 円</td>
+                      <td class="u-text-center u-text-bold">3,400 円</td>
+                      <td class="u-text-center u-text-bold">37,030 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">5歳</th>
+                      <td class="u-text-center u-text-bold">4,950 円</td>
+                      <td class="u-text-center u-text-bold">54,090 円</td>
+                      <td class="u-text-center u-text-bold">3,700 円</td>
+                      <td class="u-text-center u-text-bold">40,270 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">6歳</th>
+                      <td class="u-text-center u-text-bold">6,050 円</td>
+                      <td class="u-text-center u-text-bold">66,010 円</td>
+                      <td class="u-text-center u-text-bold">4,470 円</td>
+                      <td class="u-text-center u-text-bold">48,800 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">7歳</th>
+                      <td class="u-text-center u-text-bold">7,140 円</td>
+                      <td class="u-text-center u-text-bold">77,930 円</td>
+                      <td class="u-text-center u-text-bold">5,250 円</td>
+                      <td class="u-text-center u-text-bold">57,300 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">8歳</th>
+                      <td class="u-text-center u-text-bold">8,240 円</td>
+                      <td class="u-text-center u-text-bold">89,850 円</td>
+                      <td class="u-text-center u-text-bold">6,030 円</td>
+                      <td class="u-text-center u-text-bold">65,830 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">9歳</th>
+                      <td class="u-text-center u-text-bold">9,510 円</td>
+                      <td class="u-text-center u-text-bold">103,780 円</td>
+                      <td class="u-text-center u-text-bold">6,940 円</td>
+                      <td class="u-text-center u-text-bold">75,770 円</td>
+                    </tr>
+                    <tr>
+                      <th class="c-table__title">10歳</th>
+                      <td class="u-text-center u-text-bold">10,790 円</td>
+                      <td class="u-text-center u-text-bold">117,730 円</td>
+                      <td class="u-text-center u-text-bold">7,850 円</td>
+                      <td class="u-text-center u-text-bold">85,730 円</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+                <p class="u-text-bold u-text-10 u-text-gray u-mt-3">※年齢は保険契約の開始日時点での満年齢となります。</p>
+                <p class="u-text-bold u-text-10 u-text-gray">※継続時は、継続契約の保険開始日時点での年齢による保険料となります。ご継続の引受け年齢に制限はございません。</p>
+                <p class="u-text-bold u-text-10 u-text-gray">※11歳以降の保険料はお問い合わせください。</p>
+                <p class="u-text-bold u-text-10 u-text-gray">※現時点での保険料を表示しています。今後、保険料等改定があった場合は、変更となることがありますのでご注意ください。</p>
 
+            <div class="u-radius-4 u-border-2 u-border-gray u-mt-8 u-pb-8 u-px-5">
+              <p class="c-text-accent u-text-center u-mt-6">犬種分類表</p>
+              <p class="u-text-center u-mt-4 u-text-sm">保険料は、犬種により異なります。<br><br>
+                混血犬以外の犬種については下表より検索し、右側に記載の犬A・B・Cの区分をご確認の上、保険料表にて該当の犬種の保険料をご確認ください<br>
+                なお、混血犬の場合は混血犬を選択し、体重による分類をご確認ください。</p>
+
+              <div class="c-accordion u-mt-6">
+                <h3 class="c-accordion__heading js-accordion-toggle-btn">ア行</h3>
+                <div class="c-accordion__wrapper l-container lg:-md js-accordion-toggle-content">
+                  <div class="c-accordion__content">
+                  </div>
+                </div>
               </div>
-      </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
 
       <div class="p-pet-application u-mt-20 l-container lg:-md">
         <div class="p-pet-application__head">
