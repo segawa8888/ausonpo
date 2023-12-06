@@ -43,7 +43,7 @@ layout/_container.scss
       margin-right: rem(-10px);
     }
     &.sm\:-full {
-      width: calc(100% - 20px);
+      width: calc(100% - rem(20px));
     }
     &.sm\:-md {
       width: 86%;
