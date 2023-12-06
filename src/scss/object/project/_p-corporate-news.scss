@@ -5,7 +5,7 @@
 .p-corporate-news {
     max-width: 813px;
 
-    &-menu {
+    &__menu {
         padding: 5px 20px;
         transition: all .3s ease 0s;
         border-color: #BFBFBF;
@@ -19,7 +19,7 @@
     }
 
 
-    &-list {
+    &__list {
         background: url(/common_2024/img/arrow/arrow_sm_black.svg) calc(100% - 2rem) center no-repeat;
         border-bottom: 1px solid #BFBFBF;
         font-size: rem(12px);
@@ -43,19 +43,19 @@
         }
     }
 
-    &-left {
+    &__left {
         flex: 0 0 27.5%;
     }
 
-    &-topics {
+    &__topics {
         background-color: #FFDABA;
     }
 
-    &-release {
+    &__release {
         background-color: #FFF9A9;
     }
 
-    &-right {
+    &__right {
         flex: 0 1 72.5%;
     }
 }
