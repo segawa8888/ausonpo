@@ -320,6 +320,11 @@
             line-height: 1.5;
         }
     }
+    .splide{
+        @include mq-max("sm"){
+            padding: 0 1rem;
+        }
+    }
     .p-bycle-case-list {
         justify-content: space-between;
         .p-bycle-hoten {
@@ -330,7 +335,8 @@
                 max-width: calc((100% - 2.5rem) / 3);
             }
             @include mq-max("sm") {
-                max-width: 100%;
+                max-width: 18rem;
+                margin-right: 0.625rem;
             }
             .p-koutsuujiko-detail__card {
                 height: 100%;
