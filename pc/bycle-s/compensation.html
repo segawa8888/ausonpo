@@ -814,62 +814,64 @@
       </section>
       <!-- ここまで -->
       <div class="p-keiyakusya-kaigai-cta u-mt-10 u-mx-auto u-mb-0">
-        <a href="/pc/rdt/bycle-s/">
-          <picture class="sm:u-hidden">
-            <source srcset="/pc/bycle-s/assets/img/bycle-s_button01_pc.webp" type="image/webp" />
-            <img src="/pc/bycle-s/assets/img/bycle-s_button01_pc.png" alt="BycleS（バイクルエス）カンタンお申込み" loading="eager" />
-          </picture>
-          <picture class="sm-min:u-hidden">
-            <source srcset="/pc/bycle-s/assets/img/bycle-s_button01_sp.webp" type="image/webp" />
-            <img src="/pc/bycle-s/assets/img/bycle-s_button01_sp.png" alt="BycleS（バイクルエス）カンタンお申込み" loading="eager" />
-          </picture>
-        </a>
+        <div class="p-keiyakusya-kaigai-cta u-mt-10 u-mx-auto u-mb-0">
+          <a href="/pc/rdt/bycle-s/">
+            <picture class="sm:u-hidden">
+              <source srcset="/pc/bycle-s/assets/img/bycle-s_button01_pc.webp" type="image/webp" />
+              <img src="/pc/bycle-s/assets/img/bycle-s_button01_pc.png" alt="BycleS（バイクルエス）カンタンお申込み" loading="eager" />
+            </picture>
+            <picture class="sm-min:u-hidden">
+              <source srcset="/pc/bycle-s/assets/img/bycle-s_button01_sp.webp" type="image/webp" />
+              <img src="/pc/bycle-s/assets/img/bycle-s_button01_sp.png" alt="BycleS（バイクルエス）カンタンお申込み" loading="eager" />
+            </picture>
+          </a>
+      </div>
         <p class="u-text-lg u-text-center">auユーザー以外の方もご契約いただけます。</p>
       </div>
       <!-- お支払い方法 -->
-      <div class="p-kokunai-payment">
+      <div class="p-kaigai-payment">
         <h2 class="c-heading2-has-line">お支払い方法</h2>
-        <p class="u-text-lg u-text-center u-mt-6">クレジットカード、auかんたん決済<br>(au/UQ mobile/povo)、au
-          PAY、コンビニでのお支払いができます。</p>
-        <div class="p-kokunai-payment__icons bycle">
-          <div class="p-kokunai-payment__icon">
+        <p class="u-text-lg u-text-center u-mt-6">クレジットカード、auかんたん決済(au/UQ mobile/povo)、au PAY、コンビニでのお支払いができます。</p>
+        <div class="p-kaigai-payment__icons">
+          <div class="p-kaigai-payment__icon">
             <picture>
               <source srcset="/common_2024/img/icon/icon_credit.webp" type="image/webp" />
               <img src="/common_2024/img/icon/icon_credit.png" alt="au損保" loading="lazy" />
             </picture>
           </div>
-          <div class="p-kokunai-payment__icon">
+          <div class="p-kaigai-payment__icon">
             <picture>
               <source srcset="/common_2024/img/icon/icon_au.webp" type="image/webp" />
               <img src="/common_2024/img/icon/icon_au.png" alt="au損保" loading="lazy" />
             </picture>
           </div>
-          <div class="p-kokunai-payment__icon">
+          <div class="p-kaigai-payment__icon">
             <picture>
               <source srcset="/common_2024/img/icon/icon_uq01.webp" type="image/webp" />
               <img src="/common_2024/img/icon/icon_uq01.png" alt="au損保" loading="lazy" />
             </picture>
           </div>
-          <div class="p-kokunai-payment__icon">
+          <div class="p-kaigai-payment__icon">
             <picture>
               <source srcset="/common_2024/img/icon/icon_povo01.webp" type="image/webp" />
               <img src="/common_2024/img/icon/icon_povo01.png" alt="au損保" loading="lazy" />
             </picture>
           </div>
-          <div class="p-kokunai-payment__icon">
+          <div class="p-kaigai-payment__icon">
             <picture>
               <source srcset="/common_2024/img/icon/icon_aupay.webp" type="image/webp" />
               <img src="/common_2024/img/icon/icon_aupay.png" alt="au損保" loading="lazy" />
             </picture>
           </div>
-          <div class="p-kokunai-payment__icon">
+          <div class="p-kaigai-payment__icon">
             <picture>
               <source srcset="/common_2024/img/icon/icon_24.webp" type="image/webp" />
               <img src="/common_2024/img/icon/icon_24.png" alt="au損保" loading="lazy" />
             </picture>
           </div>
         </div>
-        <div class="p-kokunai-payment__table">
+
+        <div class="p-kaigai-payment__table">
           <table>
             <tbody>
               <tr>
@@ -939,12 +941,16 @@
               </tr>
             </tbody>
           </table>
-          <p class="u-mt-4 u-text-12 u-text-left">auかんたん決済(au/UQ mobile/povo)ではPontaポイントを1ポイント=1円相当でご利用いただけます。
+
+          <p class="u-text-sm u-mt-4">auかんたん決済(au/UQ mobile/povo)ではPontaポイントを1ポイント=1円相当でご利用いただけます。
             au PAY、コンビニは一時払のみとなります。</p>
           <p class="u-text-center u-mt-4">
-            <a href="#" class="c-btn -md">詳細はこちら</a>
+            <a href="javascript:void(0)"
+              onclick="openwin2('https://www.au-sonpo.co.jp/pc/common/popup/PU_C_39.html','myau');"
+              class="c-btn -md -external">詳細はこちら</a>
           </p>
         </div>
+
       </div>
       <!-- ここまで -->
       <!-- auユーザーの皆さまへ -->
@@ -1034,7 +1040,7 @@
           </li>
         </ol>
         <p class="u-text-center u-mt-8">
-          <a href="https://faq.au-sonpo.co.jp" target="_blank" class="c-btn -md">よくある質問をもっとみる</a>
+          <a href="https://faq.au-sonpo.co.jp/" target="_blank" class="c-btn -md -external">よくある質問をもっとみる</a>
         </p>
       </section>
       <!-- よくある質問 -->
@@ -1104,8 +1110,8 @@
       <div class="p-keiyakusya-kaigai-cta -sticky u-mt-8 u-mx-auto lg:u-hidden">
         <a href="pc/rdt/byclebest/">
           <picture>
-            <source srcset="/pc/bycle-best/assets/img/bycle-best_button01_sp.webp" type="image/webp" />
-            <img src="/pc/bycle-best/assets/img/bycle-best_button01_sp.png" alt="Bycle Best（バイクルベスト）カンタンお申込み" loading="lazy" />
+            <source srcset="/pc/bycle-s/assets/img/bycle-s_button01_sp.webp" type="image/webp" />
+            <img src="/pc/bycle-s/assets/img/bycle-s_button01_sp.png" alt="Bycle S（バイクル エス）" loading="lazy" />
           </picture>
         </a>
       </div>
