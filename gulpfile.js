@@ -216,7 +216,7 @@ function serve(done) {
   connect.server({
     root: "./",
     livereload: true,
-    port: 8081,
+    port: 8080,
   });
   done();
 }
