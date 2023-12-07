@@ -34,7 +34,11 @@
 
 .p-byclehoken-tab-money {
     .P-byclehoken-text {
+        font-size: 1.125rem;
         line-height: 1.5rem;
+        @include mq-max("sm") {
+            font-size: 0.875rem;
+        }
     }
     table thead {
         tr {
@@ -94,6 +98,13 @@
                 }
                 &.maru {
                     flex-direction: row;
+                    @include mq-max("md") {
+                        justify-content: end;
+                        align-content: center;
+                    }
+                    @include mq-max("sm") {
+                        justify-content: center;
+                    }
                 }
                 &:first-child {
                     @include mq-max("sm") {
