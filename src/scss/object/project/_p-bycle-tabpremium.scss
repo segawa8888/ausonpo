@@ -75,8 +75,8 @@
                 p{
                     width: 100%;
                     display: flex;
-                    justify-content: end;
-                    align-items: end;
+                    justify-content:flex-end;
+                    align-items: flex-end;
                     @include mq-max("sm"){
                         align-items: center;
                         justify-content: center;
