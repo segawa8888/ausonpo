@@ -102,7 +102,7 @@
                           <img src="/pc/keiyakusya/assets/img/icon_seikyu.png" alt="" loading="lazy" />
                         </picture>
                       </div>
-                      <p class="p-keiyakusya-accordion__text u-mt-1">帰国後に事故のご連絡<br />・保険金の請求をしたい</p>
+                      <p class="p-keiyakusya-accordion__text u-mt-1">帰国後に事故の<br>ご連絡・保険金の<br>請求をしたい</p>
                       <img class="u-mt-1 u-mx-auto p-keiyakusya-accordion__arrow" src="/common_2024/img/arrow/arrow_bold_primary.svg" alt="" />
                     </a>
                   </div>
@@ -127,7 +127,7 @@
           <div class="p-keiyakusya-kaigai-type__wrapper">
             <div class="p-keiyakusya-kaigai-type__items">
               <div class="p-keiyakusya-kaigai-type__item">
-                <p class="p-keiyakusya-kaigai-type__title u-text-primary u-text-bold u-text-center">本人タイプ<br /><span>（ご旅行者1人で申し込み）</span></p>
+                <p class="p-keiyakusya-kaigai-type__title u-text-primary u-text-bold u-text-center">本人タイプ<br /><span>（ご旅行者1人で申込み）</span></p>
                 <div class="p-keiyakusya-kaigai-type__img u-mx-auto">
                   <picture>
                     <source srcset="/pc/kaigai/assets/img/kaigai_type01.webp" type="image/webp" />
@@ -137,7 +137,7 @@
                 <p class="p-keiyakusya-kaigai-type__text u-mt-5 sm:u-mt-7">個人を補償の対象<br class="sm-min:u-hidden" />とするタイプ</p>
               </div>
               <div class="p-keiyakusya-kaigai-type__item">
-                <p class="p-keiyakusya-kaigai-type__title u-text-primary u-text-bold u-text-center">家族タイプ<br /><span>（ご旅行者2人~5人で申し込み）</span></p>
+                <p class="p-keiyakusya-kaigai-type__title u-text-primary u-text-bold u-text-center">家族タイプ<br /><span>（ご旅行者2人~5人で申込み）</span></p>
                 <div class="p-keiyakusya-kaigai-type__img">
                   <picture>
                     <source srcset="/pc/kaigai/assets/img/kaigai_type02.webp" type="image/webp" />
@@ -446,7 +446,7 @@
           </div>
           <p class="u-text-10 u-leading-tight u-text-indent-2 u-mt-2">※1盗難、強盗及び航空会社に預けた手荷物の不着による損害に対する限度額は、保険期間を通じて30万円となります。</p>
           <p class="u-text-10 u-leading-tight u-text-indent-2">※2損害の額は携行品1個、1組または1対あたり10万円（乗車券等は5万円）が限度となります。</p>
-          <p class="u-text-10 u-leading-tight u-text-indent-1">
+          <p class="u-text-10 u-leading-tight u-text-indent-2">
             ※3損害の額とは修理費、または再調達価額（同等のものを再度新品で購入するために要する費用をいいます）から減価償却した時価額のいずれか低い方をいい、運転免許証に<br class="sm:u-hidden" />
             ついては再発給手数料を、パスポートについては再取得費用（現地にて負担した場合に限ります。交通費、宿泊費を含み5万円を限度とします）をいいます。
           </p>
@@ -796,7 +796,7 @@
                         </div>
                         <p class="c-text-accent u-text-center u-text-primary u-tracking-normal">航空機寄託<br />手荷物遅延等費用</p>
                         <div class="p-keiyakusya-point-item__text">
-                          <p class="u-has-check">航空会社に預けた<br />手荷物の到着が<br />遅れて身の回り品を<br />購入</p>
+                          <p class="u-has-check sm:u-mt-2">航空会社に預けた<br />手荷物の到着が<br />遅れて身の回り品を<br />購入</p>
                         </div>
                         <p class="u-text-center">
                           <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_8.html','myau');" class="c-btn -md -external">詳細はこちら</a>
@@ -826,7 +826,7 @@
                         </div>
                         <p class="c-text-accent u-text-center u-text-primary u-tracking-normal">傷害死亡<br />疾病死亡</p>
                         <div class="p-keiyakusya-point-item__text">
-                          <p class="u-has-check u-mt-3">ケガや病気により<br />死亡</p>
+                          <p class="u-has-check u-mt-1">ケガや病気により<br />死亡</p>
                         </div>
                         <p class="u-text-center">
                           <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/hosyo_naiyo/kaigai/K_1_H_9.html','myau');" class="c-btn -md -external">詳細はこちら</a>
@@ -1051,127 +1051,134 @@
           </div>
         </div>
 
-        <div class="p-kaigai-payment">
-          <h2 class="c-heading2-has-line">お支払い方法</h2>
-          <p class="u-text-lg u-text-center u-mt-6">クレジットカード、auかんたん決済(au/UQ mobile/<br class="lg:u-hidden" />povo)、au PAY、コンビニでのお支払いができます。</p>
-          <div class="p-kaigai-payment__icons">
-            <div class="p-kaigai-payment__icon">
+        <section class="p-pet-payment">
+          <h2 class="p-pet-payment__heading c-heading2-has-line">お支払い方法</h2>
+          <p class="p-pet-payment__description">クレジットカード、auかんたん決済(au/UQ mobile/povo)、au PAY、コンビニでのお支払いができます。</p>
+          <ul class="p-pet-payment__logo-items">
+            <li class="p-pet-payment__logo-item">
               <picture>
-                <source srcset="/common_2024/img/icon/icon_credit.webp" type="image/webp" />
-                <img src="/common_2024/img/icon/icon_credit.png" alt="" loading="lazy" />
+                <source srcset="/pc/pet/assets/img/pet_payment01.webp" type="image/webp">
+                <img src="/pc/pet/assets/img/pet_payment01.png" alt="クレジットカード" loading="lazy">
               </picture>
-            </div>
-            <div class="p-kaigai-payment__icon">
+            </li>
+            <li class="p-pet-payment__logo-item">
               <picture>
-                <source srcset="/common_2024/img/icon/icon_au.webp" type="image/webp" />
-                <img src="/common_2024/img/icon/icon_au.png" alt="" loading="lazy" />
+                <source srcset="/pc/pet/assets/img/pet_payment02.webp" type="image/webp">
+                <img src="/pc/pet/assets/img/pet_payment02.png" alt="auかんたん決済" loading="lazy">
               </picture>
-            </div>
-            <div class="p-kaigai-payment__icon">
+            </li>
+            <li class="p-pet-payment__logo-item">
               <picture>
-                <source srcset="/common_2024/img/icon/icon_uq01.webp" type="image/webp" />
-                <img src="/common_2024/img/icon/icon_uq01.png" alt="" loading="lazy" />
+                <source srcset="/pc/pet/assets/img/pet_payment03.webp" type="image/webp">
+                <img src="/pc/pet/assets/img/pet_payment03.png" alt="UQ mobile" loading="lazy">
               </picture>
-            </div>
-            <div class="p-kaigai-payment__icon">
+            </li>
+            <li class="p-pet-payment__logo-item">
               <picture>
-                <source srcset="/common_2024/img/icon/icon_povo01.webp" type="image/webp" />
-                <img src="/common_2024/img/icon/icon_povo01.png" alt="" loading="lazy" />
+                <source srcset="/pc/pet/assets/img/pet_payment04.webp" type="image/webp">
+                <img src="/pc/pet/assets/img/pet_payment04.png" alt="povo" loading="lazy">
               </picture>
-            </div>
-            <div class="p-kaigai-payment__icon">
+            </li>
+            <li class="p-pet-payment__logo-item">
               <picture>
-                <source srcset="/common_2024/img/icon/icon_aupay.webp" type="image/webp" />
-                <img src="/common_2024/img/icon/icon_aupay.png" alt="" loading="lazy" />
+                <source srcset="/pc/pet/assets/img/pet_payment05.webp" type="image/webp">
+                <img src="/pc/pet/assets/img/pet_payment05.png" alt="au pay" loading="lazy">
               </picture>
-            </div>
-            <div class="p-kaigai-payment__icon">
+            </li>
+            <li class="p-pet-payment__logo-item">
               <picture>
-                <source srcset="/common_2024/img/icon/icon_24.webp" type="image/webp" />
-                <img src="/common_2024/img/icon/icon_24.png" alt="" loading="lazy" />
+                <source srcset="/pc/pet/assets/img/pet_payment06.webp" type="image/webp">
+                <img src="/pc/pet/assets/img/pet_payment06.png" alt="コンビニ払い" loading="lazy">
               </picture>
-            </div>
-          </div>
-
-          <div class="p-kaigai-payment__table">
-            <table>
-              <tbody>
-                <tr>
-                  <td>
-                    <span>
-                      <picture>
-                        <source srcset="/common_2024/img/icon/icon_credit.webp" type="image/webp" />
-                        <img src="/common_2024/img/icon/icon_credit.png" alt="" loading="lazy" />
-                      </picture>
-                    </span>
-                    <p class="u-text-center u-text-bold u-text-12">クレジットカード</p>
-                  </td>
-                  <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none" role="img" aria-label="ご利用いただけます">
-                      <circle cx="15" cy="15.5156" r="12" stroke="#EA5404" stroke-width="6" />
-                    </svg>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>
-                      <picture>
-                        <source srcset="/common_2024/img/icon/icon_au.webp" type="image/webp" />
-                        <img src="/common_2024/img/icon/icon_au.png" alt="" loading="lazy" />
-                      </picture>
-                    </span>
-                    <p class="u-text-center u-text-bold u-text-12">auかんたん決済<br /><small class="u-text-10 u-text-bold">（au/UQ mobile/povo）</small></p>
-                  </td>
-                  <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none" role="img" aria-label="ご利用いただけます">
-                      <circle cx="15" cy="15.5156" r="12" stroke="#EA5404" stroke-width="6" />
-                    </svg>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>
-                      <picture>
-                        <source srcset="/common_2024/img/icon/icon_aupay.webp" type="image/webp" />
-                        <img src="/common_2024/img/icon/icon_aupay.png" alt="" loading="lazy" />
-                      </picture>
-                    </span>
-                    <p class="u-text-center u-text-bold u-text-12">au pay</p>
-                  </td>
-                  <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none" role="img" aria-label="ご利用いただけます">
-                      <circle cx="15" cy="15.5156" r="12" stroke="#EA5404" stroke-width="6" />
-                    </svg>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>
-                      <picture>
-                        <source srcset="/common_2024/img/icon/icon_24.webp" type="image/webp" />
-                        <img src="/common_2024/img/icon/icon_24.png" alt="" loading="lazy" />
-                      </picture>
-                    </span>
-                    <p class="u-text-center u-text-bold u-text-12">コンビニ払い</p>
-                  </td>
-                  <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none" role="img" aria-label="ご利用いただけます">
-                      <circle cx="15" cy="15.5156" r="12" stroke="#EA5404" stroke-width="6" />
-                    </svg>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <p class="u-text-sm u-mt-4">
-              auかんたん決済(au/UQ mobile/povo)ではPontaポイントを1ポイント=1円相当でご利用いただけます。<br />
-              au PAY、コンビニは一時払のみとなります。
-            </p>
-            <p class="u-text-center u-mt-4">
-              <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/common/popup/PU_C_39.html','myau')" class="c-btn -md -external">詳細はこちら</a>
-            </p>
-          </div>
-        </div>
+            </li>
+          </ul>
+          <table class="p-pet-payment__table">
+            <tbody class="p-pet-payment__tbody">
+              <tr class="p-pet-payment__tr">
+                <th class="p-pet-payment__th-logo">
+                  <div class="p-pet-payment__th-logo-wrapper">
+                    <picture>
+                      <source srcset="/pc/pet/assets/img/pet_payment01.webp" type="image/webp">
+                      <img src="/pc/pet/assets/img/pet_payment01.png" alt="クレジットカード" loading="lazy">
+                    </picture>
+                  </div>
+                </th>
+                <th class="p-pet-payment__th-text">クレジットカード</th>
+                <td class="p-pet-payment__td">
+                  <div class="p-pet-payment__td-inner">
+                    <picture>
+                      <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp">
+                      <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="ご利用いただけます" loading="lazy">
+                    </picture>
+                  </div>
+                </td>
+              </tr>
+              <tr class="p-pet-payment__tr">
+                <th class="p-pet-payment__th-logo">
+                  <div class="p-pet-payment__th-logo-wrapper">
+                    <picture>
+                      <source srcset="/pc/pet/assets/img/pet_payment02.webp" type="image/webp">
+                      <img src="/pc/pet/assets/img/pet_payment02.png" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                </th>
+                <th class="p-pet-payment__th-text">auかんたん決済<br>（au/UQ mobile/povo）</th>
+                <td class="p-pet-payment__td">
+                  <div class="p-pet-payment__td-inner">
+                    <picture>
+                      <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp">
+                      <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="ご利用いただけます" loading="lazy">
+                    </picture>
+                  </div>
+                </td>
+              </tr>
+              <tr class="p-pet-payment__tr">
+                <th class="p-pet-payment__th-logo">
+                  <div class="p-pet-payment__th-logo-wrapper">
+                    <picture>
+                      <source srcset="/pc/pet/assets/img/pet_payment05o.webp" type="image/webp">
+                      <img src="/pc/pet/assets/img/pet_payment03.png" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                </th>
+                <th class="p-pet-payment__th-text">au pay</th>
+                <td class="p-pet-payment__td">
+                  <div class="p-pet-payment__td-inner">
+                    <picture>
+                      <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp">
+                      <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="ご利用いただけます" loading="lazy">
+                    </picture>
+                  </div>
+                </td>
+              </tr>
+              <tr class="p-pet-payment__tr">
+                <th class="p-pet-payment__th-logo">
+                  <div class="p-pet-payment__th-logo-wrapper">
+                    <picture>
+                      <source srcset="/pc/pet/assets/img/pet_payment06o.webp" type="image/webp">
+                      <img src="/pc/pet/assets/img/pet_payment06o.png" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                </th>
+                <th class="p-pet-payment__th-text">コンビニ払い</th>
+                <td class="p-pet-payment__td">
+                  <div class="p-pet-payment__td-inner">
+                    <picture>
+                      <source srcset="/pc/pet/assets/img/pet_cat_circle.webp" type="image/webp">
+                      <img src="/pc/pet/assets/img/pet_cat_circle.png" alt="ご利用いただけます" loading="lazy">
+                    </picture>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="p-pet-payment__note">
+            auかんたん決済(au/UQ mobile/povo)ではPontaポイントを1ポイント=1円相当でご利用いただけます。<br>
+            au PAY、コンビニは一時払のみとなります。
+          </p>
+          <p class="p-pet-payment__btn"><a href="#" target="_blank" class="c-btn -md -external">詳細はこちら</a></p>
+          <!-- 参考 c-download-app__btn -->
+        </section>
 
         <div class="p-pet-link u-mt-28">
           <a href="https://www.au-sonpo.co.jp/pc/lp_auid/">
@@ -1228,8 +1235,7 @@
 
           <ol class="c-faq l-container lg:-md u-mt-12">
             <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-              <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
-                「海外旅行の保険」で自分のスーツケースの破損は補償されますか？
+              <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「海外旅行の保険」で自分のスーツケースの破損は補償されますか？</h3>
               <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
                 <div itemprop="text" class="c-faq__content">
                   はい、携行品損害補償特約の補償対象となります。<br class="">
