@@ -4,10 +4,14 @@
     <meta charset="utf-8" />
     <!--▼タイトル・キーワードなどの指定-->
     <title>犬の保険（ワン保）なら月々860円から加入できるau損保！ - au損害保険公式サイト</title>
-    <meta
-      name="description"
-      content="au損保のペット医療費用保険「ペットの保険（ワン保）」は、愛犬のもしもの時に備えて2つのタイプ・コースから選べます。お支払い限度額までなら何度でも。いくらでも。保険金を受け取れて、auをご利用でない方にもお申込みいただけます。"
-    />
+    <meta name="description" content="au損保のペット医療費用保険「ペットの保険（ワン保）」は、愛犬のもしもの時に備えて2つのタイプ・コースから選べます。お支払い限度額までなら何度でも。いくらでも。保険金を受け取れて、auをご利用でない方にもお申込みいただけます。"/>
+
+    <meta property="og:site_name" content="au損害保険">
+    <meta property="og:title" content="犬の保険（ワン保）なら月々860円から加入できるau損保！ - au損害保険公式サイト">
+    <meta property="og:url" content="https://www.au-sonpo.co.jp/pc/pet-dog/">
+    <meta property="og:description" content="au損保のペット医療費用保険「ペットの保険（ワン保）」は、愛犬のもしもの時に備えて2つのタイプ・コースから選べます。お支払い限度額までなら何度でも。いくらでも。保険金を受け取れて、auをご利用でない方にもお申込みいただけます。">
+    <meta property="og:image" content="https://www.au-sonpo.co.jp/common_2024/img/ogp.png">
+    <meta property="og:locale" content="ja_JP">
 
     <script type="text/javascript" src="/pc/common/js/campcd.js"></script>
     <script type="text/javascript" src="/pc/common/js/checkCookie.js"></script>
@@ -79,7 +83,7 @@
     </nav>
 
     <main class="l-main l-container lg:-full sm:-full js-main">
-      <div class="p-pet-mv-images u-mt-5 sm:u-mt-2">
+      <h1 class="p-pet-mv-images u-mt-5 sm:u-mt-2">
         <div class="p-pet-mv-images__slide splide js-mv-slider">
           <div class="splide__track">
             <div class="splide__list">
@@ -98,9 +102,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </h1>
       <!-- /.p-pet-mv-images -->
-      <div class="p-pet-dog-manzokudo u-flex u-mt-6">
+      <div class="p-pet-dog-manzokudo u-flex u-mt-6 sm:u-hidden">
         <figure class="p-pet-dog-manzokudo__icon">
           <picture>
             <source srcset="/pc/pet/assets/img/pet_dog_manzokudo.webp" type="image/webp" />
@@ -110,7 +114,17 @@
         <div class="p-pet-dog-manzokudo__text u-text-20 u-text-bold u-leading-relaxed">
           お支払い限度額までなら<span class="u-text-primary">何度でも<span class="u-text-10">(※2)</span></span
           >利用可能！<br />保険金請求も<span class="u-text-primary">アプリ</span>でらくらく便利！
+          <p class="u-text-xs u-mt-3">※1：2022年11月~12月「保険のご契約に関するアンケート」より</p>
+          <p class="u-text-xs">
+            ※2：お支払いする保険金の合計は、各コースに設定された年間のお支払い限度額までとなります
+          </p>
         </div>
+      </div>
+      <div class="p-pet-dog-manzokudo sm-min:u-hidden u-mt-4">
+        <picture>
+          <source srcset="/pc/pet/assets/img/pet_dog_manzokudo_sp.webp" type="image/webp" />
+          <img src="/pc/pet/assets/img/pet_dog_manzokudo_sp.png" alt="お客さま満足度93.4%" loading="eager" />
+        </picture>
       </div>
       <!-- /.p-pet-dog-manzokudo -->
       <p class="u-text-center u-mt-8">
@@ -157,7 +171,7 @@
                       </picture>
                     </div>
                     <h3 class="p-pet-customer__body-wrapper-right-container-btn-text">
-                      保険金を<br />請求したい
+                      保険金の<br class="">請求をしたい
                     </h3>
                   </a>
                   <a
@@ -169,7 +183,7 @@
                         <source srcset="/pc/keiyakusya/assets/img/icon_tel02.webp" type="image/webp" />
                         <img
                           src="/pc/keiyakusya/assets/img/icon_tel02.png"
-                          alt="かかりつけ獣医師ダイヤルを利用したい"
+                          alt=""
                           loading="lazy"
                         />
                       </picture>
@@ -222,8 +236,8 @@
               <p>通院あり<br class="lg:u-hidden" /><span>タイプ</span></p>
             </div>
             <p class="p-pet-type-info__text">
-              保険料が高くても<br />
-              <span><span class="u-text-primary">入院・手術に加え、通院まで</span><br class="lg:u-hidden" /></span>しっかりカバーしたい方へ
+              <span><span class="u-text-primary">入院・手術に加え、通院まで</span>
+              <br class="lg:u-hidden" /></span>しっかりカバーしたい方へ
             </p>
           </div>
           <div class="p-pet-type-info__type p-pet-type-info__type--yellow">
@@ -231,8 +245,7 @@
               <p>通院なし<br class="lg:u-hidden" /><span>タイプ</span></p>
             </div>
             <p class="p-pet-type-info__text">
-              <span>保険料の負担は抑えたい</span>けど、<br />
-              高額になりがちな<span class="u-text-primary">入院・手術に特化</span>して備えておきたい
+              <span class="u-text-primary">入院・手術に特化</span>して、保険料を抑えたい方へ
             </p>
           </div>
         </div>
@@ -481,19 +494,7 @@
                 <span><i>70</i>%コース</span>を選択されています。
               </p>
             </div>
-            <div class="p-pet-balloon-girl__text sm:u-hidden">
-              <p>
-                ※70%・50%とは:かかった入院・手術等の費用のうち保険金をお支払いする割合です。<br />
-                70％コースでは、費用の70％を保険金とし、30％がお客さまの負担割合となります。
-              </p>
-            </div>
           </div>
-        </div>
-        <div class="p-pet-balloon-girl__text lg:u-hidden">
-          <p>
-            ※70%・50%とは:かかった入院・手術等の費用のうち保険金をお支払いする割合です。<br />
-            70％コースでは、費用の70％を保険金とし、30％がお客さまの負担割合となります。
-          </p>
         </div>
       </div>
       <!-- /.p-pet-compensation-cont__balloon -->
@@ -599,7 +600,7 @@
       <!-- /.p-pet-premium -->
       <div class="c-point-box">
         <div class="c-chosen-point__title">
-          <h2 class="c-heading2-has-line">au損保のネコの保険が<br class="lg:u-hidden" />選ばれるポイント</h2>
+          <h2 class="c-heading2-has-line">au損保のワンコの保険が<br class="lg:u-hidden" />選ばれるポイント</h2>
         </div>
         <div class="c-point-box__items">
           <div class="c-point-box__item">
@@ -665,7 +666,7 @@
                 <p>保険金のお支払いは、獣医師が監修。<br />親身に、丁寧に対応いたします。</p>
               </div>
               <div class="c-point-box__sub">
-                <p>
+                <p class="u-text-indent-1">
                   ※2020年4月から9月までの6か月間、保険金をお受け取りいただいたお客さまを対象にアンケートを実施。アンケート回答件数214件中「満足した」「どちらかというと満足した」を集計
                 </p>
               </div>
@@ -700,7 +701,7 @@
               </div>
               <div class="c-point-box__text">
                 <p>
-                  大切な家族（ネコちゃん）の健康やしつけ、<br />お困りごとなどをアニクリ24の医院長先生を含む獣医師に<br />
+                  大切な家族（ワンちゃん）の健康やしつけ、<br />お困りごとなどをアニクリ24の医院長先生を含む獣医師に<br />
                   24時間365日無料で電話相談できます
                 </p>
               </div>
@@ -1073,19 +1074,19 @@
             <div class="p-pet-link__img-item">
               <picture>
                 <source srcset="/pc/pet/assets/img/pet_pc_icon.webp" type="image/webp" />
-                <img src="/pc/pet/assets/img/pet_pc_icon.png" alt="" loading="lazy" />
+                <img src="/pc/pet/assets/img/pet_pc_icon.png" alt="PCとauIDの連携イメージ" loading="lazy" />
               </picture>
             </div>
             <div class="p-pet-link__img-item">
               <picture>
                 <source srcset="/pc/pet/assets/img/pet_arrow_icon.webp" type="image/webp" />
-                <img src="/pc/pet/assets/img/pet_arrow_icon.png" alt="" loading="lazy" />
+                <img src="/pc/pet/assets/img/pet_arrow_icon.png" alt="PCとauIDの連携イメージ" loading="lazy" />
               </picture>
             </div>
             <div class="p-pet-link__img-item">
               <picture>
                 <source srcset="/pc/pet/assets/img/pet_id_icon.webp" type="image/webp" />
-                <img src="/pc/pet/assets/img/pet_id_icon.png" alt="" loading="lazy" />
+                <img src="/pc/pet/assets/img/pet_id_icon.png" alt="PCとauIDの連携イメージ" loading="lazy" />
               </picture>
             </div>
           </div>
@@ -1120,32 +1121,17 @@
         <h2 class="c-heading2-has-line">よくあるご質問</h2>
         <ol class="c-faq l-container lg:-md u-mt-12">
           <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-            <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">
-              保険料はどのように支払うのですか？
-            </h3>
-            <div
-              itemprop="acceptedAnswer"
-              itemscope
-              itemtype="http://schema.org/Answer"
-              class="c-faq__wrapper js-accordion-toggle-content"
-            >
+            <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">保険料はどのように支払うのですか？</h3>
+            <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
               <div itemprop="text" class="c-faq__content">
-                保険料のお支払い方法は、クレジットカード払・auかんたん決済・au PAY・コンビニ払となります。<br />
-                ただし、「ゴルフの保険」、「国内旅行の保険」および「海外旅行の保険」にお申込みの場合には、コンビニエンスストアでのお支払いはお選びいただけません。
-                <p class="u-mt-2">
-                  ※auかんたん決済は、月々のau携帯電話料金と合算して決済するお支払い方法です。
-                </p>
-                <p class="u-mt-2">
-                  ※auかんたん決済の一時払では、Pontaポイントを1ポイント＝1円相当でご利用いただけます。
-                </p>
-                <p class="u-mt-2">
-                  ※当サイトの au PAY は、KDDI株式会社が運営する au PAY（ネット支払い）です。チャージされた au
-                  PAY 残高を利用して保険料をお支払いいただくことができます。
-                </p>
-                <p class="u-mt-2">
-                  ※　「自転車向け保険　Bycle」、「自転車向け保険　Bycle Best」、「自転車向け保険 Bycle
-                  S」、「ケガの保険　交通事故」、「ケガの保険　日常の事故」の保険期間1年のご契約、および「ペットの保険」をクレジットカード払またはauかんたん決済でお申込みの場合、月払をお選びいただくこともできます。
-                </p>
+                保険料のお支払い方法は、クレジットカード払、auかんたん決済、au PAY、コンビニ払となります。ただし、「ゴルフの保険」、「国内旅行の保険」および「海外旅行の保険」にお申込みの場合には、コンビニエンスストアでのお支払いはお選びいただけません。<br><br>
+                <span class="u-text-gray">
+                  ※auかんたん決済は、月々のau携帯電話料金と合算して決済するお支払い方法です。<br>
+                  ※auかんたん決済の一時払では、Pontaポイントを1ポイント＝1円相当でご利用いただけます。<br>
+                  ※当サイトの au PAY は、KDDI株式会社が運営する au PAY（ネット支払い）です。<br>
+                  チャージされた au PAY 残高を利用して保険料をお支払いいただくことができます。<br>
+                  ※ 「自転車向け保険 Bycle」、「自転車向け保険 Bycle Best」、「自転車向け保険 Bycle S」、「ケガの保険 交通事故」、「ケガの保険 日常の事故」の保険期間1年のご契約、および「ペットの保険」をクレジットカード払またはauかんたん決済でお申込みの場合、月払をお選びいただくこともできます。
+                </span>
               </div>
             </div>
           </li>
@@ -1162,21 +1148,25 @@
             <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
               <div itemprop="text" class="c-faq__content">
                 お申込み日時点において、治療中もしくは経過観察中の病気やケガがある場合、または、過去3か月以内に動物病院にて病気やケガの治療目的で診察を受けたことがある場合には、ご契約いただけません。また、以下の病気であると診断されたことがある場合には、ご契約をお引受けすることができません。<br><br>
-                ・悪性腫瘍　・腎疾患（腎不全など）<br>
+                ・悪性腫瘍<br>
+                ・腎疾患（腎不全など）<br>
                 ・免疫介在性溶血性貧血（IMHA)<br>
                 ・免疫介在性血小板減少症<br>
                 ・巨大食道症<br>
                 ・膵外分泌不全<br>
-                ・肝硬変　・門脈シャント<br>
+                ・肝硬変<br>
+                ・門脈シャント<br>
                 ・脳神経疾患（水頭症を含む）<br>
-                ・てんかん様発作、けいれん発作　・椎間板ヘルニア<br>
+                ・てんかん様発作、けいれん発作
+                <br>・椎間板ヘルニア<br>
                 ・心疾患（僧帽弁閉鎖不全症など）<br>
                 ・フィラリア症<br>
                 ・甲状腺機能亢進症<br>
                 ・甲状腺機能低下症<br>
                 ・副腎皮質機能低下症（アジソン病）<br>
                 ・副腎皮質機能亢進症（クッシングﾞ病）<br>
-                ・糖尿病　・猫伝染性腹膜炎（FIP)<br>
+                ・糖尿病<br>
+                ・猫伝染性腹膜炎（FIP)<br>
                 ・猫白血病（FeLV)<br>
                 ・猫後天性免疫不全症候群(FIV)<br>
                 なお、上記の病気以外でも、特定の疾病や特定の身体部位を補償の対象外とすることでお引受けをさせていただく場合もあります。詳しくはお申込み時の審査結果画面をご確認ください。
@@ -1230,45 +1220,59 @@
           </div>
           <p class="p-pet-column__head-text u-mt-6 sm:u-mt-3">飼い主の方のよくあるお悩みの<br class="lg:u-hidden">解決方法などを多数掲載しています</p>
         </div>
-        <div class="p-pet-column__body splide js-column-slider splide--loop splide--ltr splide--draggable is-active is-initialized" id="splide02" role="region" aria-roledescription="carousel">
-          <div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable" id="splide02-track" aria-live="polite" aria-atomic="true" aria-busy="false" style="padding-left: 3.125rem; padding-right: 3.125rem;">
-            <div class="splide__list" id="splide02-list" role="presentation" style="transform: translateX(-2734.81px);">
-              <article class="p-pet-column__post-card splide__slide splide__slide--clone" id="splide02-clone01" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" style="margin-right: 3.125rem; width: calc(((100% + 3.125rem) / 3) - 3.125rem);" aria-hidden="true">
+        <div class="p-pet-column__body splide js-column-slider">
+          <div class="splide__track">
+            <div class="splide__list">
+              <article class="p-pet-column__post-card splide__slide">
                 <div class="p-pet-column__post-card-img">
                   <picture>
                     <source srcset="https://www.au-sonpo.co.jp/common/img/id0049.jpg" type="image/webp">
                     <img src="https://www.au-sonpo.co.jp/common/img/id0049.jpg" alt="" loading="lazy">
                   </picture>
                 </div>
-                <h3 class="p-pet-column__post-card-title">【犬の年齢ガイド】人間に例えると何歳？見た目で年齢を判断する方法を解説</h3>
-                <p class="p-pet-column__post-card-readmore"><a href="/pc/pet-dog/column/post-49.html" tabindex="-1">コラムを読む</a></p>
+                <h3 class="p-pet-column__post-card-title">
+                  【犬の年齢ガイド】人間に例えると何歳？見た目で年齢を判断する方法を解説
+                </h3>
+                <p class="p-pet-column__post-card-readmore">
+                  <a href="/pc/pet-dog/column/post-49.html">コラムを読む</a>
+                </p>
               </article>
-              <article class="p-pet-column__post-card splide__slide splide__slide--clone" id="splide02-clone02" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" style="margin-right: 3.125rem; width: calc(((100% + 3.125rem) / 3) - 3.125rem);" aria-hidden="true">
+              <article class="p-pet-column__post-card splide__slide">
                 <div class="p-pet-column__post-card-img">
                   <picture>
                     <source srcset="https://www.au-sonpo.co.jp/common/img/id0008.jpeg" type="image/webp">
                     <img src="https://www.au-sonpo.co.jp/common/img/id0008.jpeg" alt="" loading="lazy">
                   </picture>
                 </div>
-                <h3 class="p-pet-column__post-card-title">犬がトイレをわざと失敗する理由やしつけ方法、トレーニンググッズを解説</h3>
-                <p class="p-pet-column__post-card-readmore"><a href="/pc/pet-cat/column/post-34.html" tabindex="-1">コラムを読む</a></p>
+                <h3 class="p-pet-column__post-card-title">
+                  犬がトイレをわざと失敗する理由やしつけ方法、トレーニンググッズを解説
+                </h3>
+                <p class="p-pet-column__post-card-readmore">
+                  <a href="/pc/pet-cat/column/post-34.html">コラムを読む</a>
+                </p>
               </article>
-              <article class="p-pet-column__post-card splide__slide splide__slide--clone is-active" id="splide02-clone03" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" style="margin-right: 3.125rem; width: calc(((100% + 3.125rem) / 3) - 3.125rem);" aria-hidden="true">
+              <article class="p-pet-column__post-card splide__slide">
                 <div class="p-pet-column__post-card-img">
                   <picture>
                     <source srcset="https://www.au-sonpo.co.jp/common/img/id0025.jpeg" type="image/webp">
                     <img src="https://www.au-sonpo.co.jp/common/img/id0025.jpeg" alt="" loading="lazy">
                   </picture>
                 </div>
-                <h3 class="p-pet-column__post-card-title">犬の去勢手術はした方が良い？メリット・デメリットや費用など解説</h3>
-                <p class="p-pet-column__post-card-readmore"><a href="/pc/pet-dog/column/post-43.html" tabindex="-1">コラムを読む</a></p>
+                <h3 class="p-pet-column__post-card-title">
+                  犬の去勢手術はした方が良い？メリット・デメリットや費用など解説
+                </h3>
+                <p class="p-pet-column__post-card-readmore">
+                  <a href="/pc/pet-dog/column/post-43.html">コラムを読む</a>
+                </p>
               </article>
             </div>
           </div>
-          <ul class="splide__pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show"><li role="presentation"><button class="splide__pagination__page p-pet-column-page" type="button" role="tab" aria-controls="splide02-slide01" aria-label="Go to slide 1" tabindex="-1"></button></li><li role="presentation"><button class="splide__pagination__page p-pet-column-page" type="button" role="tab" aria-controls="splide02-slide02" aria-label="Go to slide 2" tabindex="-1"></button></li><li role="presentation"><button class="splide__pagination__page p-pet-column-page is-active" type="button" role="tab" aria-controls="splide02-slide03" aria-label="Go to slide 3" aria-selected="true"></button></li></ul>
+          <ul class="splide__pagination"></ul>
         </div>
+
+
         <div class="p-pet-column__btn u-text-center">
-          <a href="/pc/pet_column/column.html" class="c-btn -md">コラムTOPへ</a>
+          <a href="/pc/pet-dog/column/index.html" class="c-btn -md">コラムTOPへ</a>
         </div>
       </div>
       <!-- /.p-pet-column -->

@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 rem(36px) 0 rem(12px);
+  padding: 0 rem(40px) 0 rem(12px);
   transition: all 0.2s ease;
   &.-external {
     background-image: url(/common_2024/img/icon/icon_external_primary.svg);
@@ -33,6 +33,7 @@
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: 0.05em;
+    flex: 1;
   }
   @include hover {
     border-color: $c-primary;
@@ -56,6 +57,7 @@
       height: rem(53px);
       display: flex;
       align-items: center;
+      flex-direction: column;
     }
   }
   &--single {
@@ -63,10 +65,10 @@
       width: rem(340px);
       padding: rem(14px) rem(22px) rem(13px) rem(17px);
       flex-direction: row;
-      gap:0 rem(21.6px);
+      gap: 0 rem(21.6px);
       background-position: center right rem(12px);
       min-height: initial;
-      height:rem(97px);
+      height: rem(97px);
     }
     .c-btn-important-1__text {
       @include mq-max("sm") {
@@ -155,7 +157,7 @@
     background-position: right rem(8px) center;
     background-size: rem(6px);
   }
-  &.-bottom{
+  &.-bottom {
     font-size: rem(16px);
     width: rem(340px);
     height: rem(40px);
@@ -163,7 +165,7 @@
     background-position: right rem(14px) center;
     background-size: rem(12px);
   }
-  &.-up{
+  &.-up {
     font-size: rem(16px);
     width: rem(340px);
     height: rem(40px);
@@ -184,5 +186,14 @@
   &.prev {
     background-image: url(/common_2024/img/arrow/arrow_prev_primary.svg);
     background-position: left rem(19px) center;
+  }
+  &.-maintenance {
+    &::before {
+      content: "";
+      width: rem(18px);
+      height: rem(18px);
+      margin-right: 0.4em;
+      background: url(/common_2024/img/icon/icon_gear.svg) center center/cover no-repeat;
+    }
   }
 }
