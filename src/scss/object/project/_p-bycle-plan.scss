@@ -1,26 +1,22 @@
 @charset "UTF-8";
 @use "../../global" as *;
 /*　プラン診断　*/
-.-p-bycle-plan-back{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .p-bycle-plan-title{
-        max-width: 316px;
-    }
-    p{
-        width: 100%;
-        text-align: center;
-        a{
-            background-image: url(/common_2024/img/arrow/arrow_sm_white.svg);
-        }
-    }
-}
 .-p-bycle-plan {
-    &-title {
-        img {
-            width: 20rem;
+    &-back {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p {
+            width: 100%;
+            text-align: center;
+            a {
+                background-image: url(/common_2024/img/arrow/arrow_sm_white.svg);
+            }
         }
+    }
+    &-title {
+        max-width: 20rem;
+        width: 100%;
     }
     &-progressbar {
         display: flex;
@@ -31,32 +27,37 @@
         }
         &-step {
             position: relative;
-            width: 33%;
-            text-align: center;
+            width: calc(100% / 3);
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 1rem 0;
+            text-align: center;
             background: $c-white;
+            height: 4.5rem;
+            &:not(:first-child) {
+                padding-left: 1rem;
+            }
             &:not(:last-child) {
                 &::before {
+                    content: "";
                     position: absolute;
                     z-index: 2;
                     top: 0;
                     bottom: 0;
                     left: 100%;
-                    content: "";
-                    border: 2rem solid transparent;
+                    border: 2.2rem solid transparent;
                     border-left: 1rem solid $c-white;
                     margin: auto;
                 }
                 &::after {
+                    content: "";
                     position: absolute;
                     z-index: 2;
                     top: 0;
                     bottom: 0;
                     left: 100%;
-                    content: "";
-                    border: 2rem solid transparent;
+                    border: 2.2rem solid transparent;
                     border-left: 1rem solid $c-white;
                     margin: auto;
                 }
@@ -72,9 +73,6 @@
                 &:not(:last-child)::after {
                     border-left-color: $c-primary;
                 }
-                &:not(:last-child)::before {
-                    border-left: none;
-                }
             }
         }
     }
@@ -82,10 +80,57 @@
         width: 100%;
         padding: 0 15rem;
         @include mq-max("sm") {
-            padding: 0.5rem;
+            padding: 0 0.5rem;
         }
         &-btn {
             background: $c-white;
+            .tag-area {
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include mq-max("sm") {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .tag {
+                    font-size: 0.625rem;
+                    font-weight: 700;
+                    padding: 0.25rem 0;
+                    border: 0.0625rem solid #d1d1d1;
+                    @include mq-max("sm") {
+                        font-size: 0.5rem;
+                        width: 2.8rem;
+                    }
+                    &.recom {
+                        background-color: #fff682;
+                        border: none;
+                    }
+                }
+            }
+            &.honin {
+                picture {
+                    max-width: 3.5rem;
+                }
+            }
+            &.kazoku {
+                .tag-area {
+                    @include mq-max("sm") {
+                        flex-direction: row-reverse;
+                    }
+                }
+                picture {
+                    max-width: 3.5rem;
+                }
+            }
+            &.sinzoku {
+                .tag {
+                    text-align: left;
+                }
+                picture {
+                    max-width: 4.5rem;
+                }
+            }
             label {
                 padding: 0.5rem;
                 padding-top: 2rem;
@@ -101,21 +146,7 @@
                     max-width: 5rem;
                     width: 100%;
                 }
-                &.honin {
-                    picture {
-                        max-width: 3.5rem;
-                    }
-                }
-                &.kazoku {
-                    picture {
-                        max-width: 3.5rem;
-                    }
-                }
-                &.sinzoku {
-                    picture {
-                        max-width: 4.5rem;
-                    }
-                }
+
                 &::before {
                     content: "";
                     display: block;
@@ -143,25 +174,6 @@
                     width: 0.5rem;
                     height: 0.5rem;
                 }
-                .tag-area {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    @include mq-max("sm") {
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        flex-direction: row-reverse;
-                    }
-                    .tag {
-                        padding: 0.25rem;
-                        border: 0.0625rem solid #d1d1d1;
-                        &.recom {
-                            background-color: #fff682;
-                            border: none;
-                        }
-                    }
-                }
             }
             input:checked + label::after {
                 opacity: 1;
@@ -184,12 +196,12 @@
         }
     }
 }
-.u-bycle-plan-access{
+.u-bycle-plan-access {
     padding-top: 4rem;
     max-width: 30rem;
     width: 100%;
     margin: 0 auto;
-    @include mq-max("sm"){
+    @include mq-max("sm") {
         max-width: calc(100% - 1.25rem);
     }
 }

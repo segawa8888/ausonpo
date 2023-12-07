@@ -1,0 +1,312 @@
+@charset "UTF-8";
+@use "../../global" as *;
+/*　タブ切り替え　補償内容　*/
+.tab2.bycle-hosyou {
+    .p-koutsuujiko-detail__fukidashi {
+        top: rem(-22px);
+    }
+    .u-text-xs-tight {
+        letter-spacing: -0.04em;
+    }
+
+    .p-koutsuujiko-accordion-service {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        &__wrap {
+            padding: 0;
+        }
+        .c-accordion-4 {
+            &__wrapper {
+                padding: 0;
+            }
+            &__content {
+                border-color: $c-base-050;
+                padding: 0.5rem;
+            }
+            &__heading {
+                max-width: 100%;
+            }
+        }
+    }
+    .p-koutsuujiko-detail__card {
+        .p-koutsuujiko-detail__wrap {
+            padding: 0 0.5rem;
+            .p-koutsuujiko-detail__recommend {
+                padding: 1.5rem;
+                @include mq-max("sm") {
+                    padding: 1rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .p-koutsuujiko-detail {
+        &__text {
+            max-width: 100%;
+        }
+    }
+    .js-up-accordion-body {
+        padding-bottom: 0;
+    }
+    .p-koutsuujiko-accordion {
+        padding-bottom: 0;
+    }
+    .point01 {
+        .jidan-daikou__flex {
+            max-width: 50.5rem;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: center;
+            gap: 1.5rem;
+            @include mq-max("sm") {
+                justify-content: center;
+                gap: 1rem;
+            }
+            &--img {
+                max-width: 13.625rem;
+                width: 100%;
+            }
+            &--text {
+                @include mq-max("sm") {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .point02 {
+        .p-koutsuujiko-detail__heading {
+            position: relative;
+            picture {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: -1rem;
+                max-width: 6rem;
+                @include mq-max("md") {
+                    display: block;
+                }
+                @include mq-max("md") {
+                    top: -0.5rem;
+                }
+            }
+        }
+        .p-koutsuujiko-detail__icon {
+            @include mq-max("md") {
+                display: none;
+            }
+        }
+        .p-koutsuujiko-accordion__list {
+            grid-template-rows: none;
+        }
+        .p-koutsuujiko-detail__recommend {
+            p {
+                display: block;
+            }
+        }
+    }
+    .point03 {
+        .p-koutsuujiko-detail__heading {
+            position: relative;
+            picture {
+                display: none;
+                position: absolute;
+                right: 0;
+                top: -0.5rem;
+                max-width: 6rem;
+                @include mq-max("md") {
+                    display: block;
+                }
+            }
+        }
+    }
+    .point04 {
+        .p-koutsuujiko-detail__icon {
+            @include mq-max("md") {
+                max-width: 5rem;
+                top: 1.5rem;
+                right: 0.5rem;
+            }
+        }
+        .p-koutsuujiko-detail__wrap {
+            max-width: 50.5rem;
+            width: 100%;
+            justify-content: left;
+            align-items: center;
+            @include mq-max("sm") {
+                padding: 0;
+            }
+        }
+        .p-koutsuujiko-detail__text {
+            max-width: 27.25rem;
+            width: 100%;
+            @include mq-max("md") {
+                max-width: 100%;
+            }
+        }
+    }
+    .bycle__smart-service {
+        padding: 2.5rem 1rem;
+        &__wrap {
+            max-width: 50.5rem;
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            gap: 2.5rem;
+            @include mq-max("sm") {
+                gap: 1rem;
+                align-items: center;
+            }
+            &--img {
+                max-width: 5.375rem;
+                width: 100%;
+                @include mq-max("sm") {
+                    max-width: 3.5rem;
+                }
+            }
+            &--text {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+.p-bycle__orange-content {
+    position: relative;
+    border: 0.125rem solid $c-primary;
+    border-radius: 1rem;
+    padding: 2.5rem 1rem;
+    .special-btn {
+        a.c-btn {
+            padding: 0 1.5rem;
+        }
+    }
+    @include mq-max("sm") {
+        padding: 1.5rem 1rem;
+    }
+    .fukidasi {
+        position: absolute;
+        width: 100%;
+        max-width: 10.5rem;
+        top: -2.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+    &__flex {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        @include mq-max("sm") {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &--img {
+            max-width: 15rem;
+            width: 100%;
+        }
+        &--text {
+            max-width: 40.125rem;
+            width: 100%;
+        }
+    }
+}
+.p-bycle__btn-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem 2.5rem;
+    @include mq-max("sm") {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.5rem;
+    }
+    &--btn {
+        border: 0.0625rem solid #bdbdbd;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+        border-radius: 0.5rem;
+        @include mq-max("sm") {
+            padding: 2rem 0.5rem;
+            align-items: flex-end;
+        }
+        p {
+            width: 100%;
+        }
+        &.annot {
+            small {
+                bottom: -1rem;
+                letter-spacing: -0.08em;
+                left: 0;
+                position: absolute;
+            }
+        }
+    }
+}
+.list-img {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    gap: 1.5rem;
+    &__imgblock {
+        max-width: 4rem;
+        width: 100%;
+        @include mq-max("sm") {
+            padding-left: 0rem;
+            width: 20%;
+            max-width: 3rem;
+        }
+    }
+}
+.gray_block {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $c-base-050;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    @include mq-max("sm") {
+        gap: 0.5rem;
+    }
+    &--title {
+        background-color: $c-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 3.75rem;
+        width: 100%;
+        height: 3.75rem;
+        border-radius: 0.25rem;
+        p {
+            width: 100%;
+            white-space: nowrap;
+        }
+    }
+}
+.c-btn.-lg {
+    padding: 0 2.5rem;
+    font-size: 0.875rem;
+    @include mq-max("sm") {
+        padding: 0 0.75rem;
+    }
+}
+.c-btn.-md {
+    width: 100%;
+    max-width: 21.25rem;
+}
+.additional_services {
+    li span {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+}

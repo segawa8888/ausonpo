@@ -90,7 +90,10 @@ object/project
 @use "project/pet-dog-lead";
 @use "project/pet-dog-banner";
 @use "project/_p-bycle-popup";
-@use "project/_p-bycle-tab";
+@use "project/_p-bycle-tabpoint";
+@use "project/_p-bycle-tabcompensation";
+@use "project/_p-bycle-tabpremium";
+@use "project/_p-bycle-tabroadservice";
 @use "project/_p-bycle-voice";
 @use "project/_p-bycle-plan";
 @use "project/_p-byclebest-tab";
@@ -114,3 +117,4 @@ object/project
 @use "project/_p-corporate-image";
 @use "project/_p-corporate-heading";
 @use "project/_p-corporate-border";
+@use "project/_p-corporate-flex";
