@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+/*　------　*/
+/*　タブ切り替え　保険金額と保険料　*/
+.p-byclehoken-tab-money {
+    .p-keiyakusya-table table {
+        width: 100%;
+        tr.-p-byclepic-ful {
+            max-width: 100%;
+            width: 100%;
+            grid-template-areas: "p-bycle-hoken-title p-bycle-hoken-pic p-bycle-hoken-pic p-bycle-hoken-pic";
+            .p-bycle-hoken-title {
+                grid-area: p-bycle-hoken-title;
+                @include mq-max("md") {
+                    min-width: 7.6875rem;
+                }
+            }
+            .p-bycle-hoken-pic {
+                grid-area: p-bycle-hoken-pic;
+                text-align: center;
+                background-color: rgba(144, 144, 144, 0.1);
+                @include mq-max("md") {
+                    min-width: 100%;
+                }
+                strong {
+                    line-height: 1.2;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+}
+
+.p-byclehoken-tab-money {
+    .P-byclehoken-text {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        @include mq-max("sm") {
+            font-size: 0.875rem;
+        }
+    }
+    table thead {
+        tr {
+            td {
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    min-width: 8.75rem;
+                }
+            }
+        }
+    }
+    table tbody {
+        tr {
+            .p-bycle-boder {
+                border-bottom: 1px solid $c-black;
+            }
+            &.-p-byclepic-ful {
+                .p-bycle-hoken-pic {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            td {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                @include mq-max("md") {
+                    justify-content: center;
+                }
+                @include mq-max("sm") {
+                    line-height: 1rem;
+                    min-width: 8.75rem;
+                    justify-content: center;
+                    align-items: center;
+                }
+                p {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    @include mq-max("sm") {
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                span {
+                    @include mq-max("md") {
+                        margin-top: 0;
+                    }
+                }
+                strong {
+                    @include mq-max("sm") {
+                        font-size: 1rem;
+                    }
+                }
+                &.maru {
+                    flex-direction: row;
+                    @include mq-max("md") {
+                        justify-content: end;
+                        align-content: center;
+                    }
+                    @include mq-max("sm") {
+                        justify-content: center;
+                    }
+                }
+                &:first-child {
+                    @include mq-max("sm") {
+                        min-width: 7.75rem;
+                    }
+                }
+            }
+            &:not(:last-child)::before {
+                @include mq-max("md") {
+                    width: 11.75rem;
+                }
+                @include mq-max("sm") {
+                    width: 8.5rem;
+                }
+            }
+        }
+    }
+    .p-bycle-table__wrappe {
+        @include mq-max("md") {
+            min-width: 37.9375rem;
+            padding: 0.625rem;
+        }
+    }
+}
+.p-byclehoken-tab-price {
+    .p-keiyakusya-type__title {
+        @include mq-max("sm") {
+            padding: 0 2rem;
+        }
+        &::before,
+        &::after {
+            width: 2rem;
+        }
+        span {
+            @include mq-max("sm") {
+                font-size: 1.5rem;
+            }
+        }
+        span.u-bycle-subtext {
+            font-size: 1.5rem;
+            @include mq-max("md") {
+                font-size: 1rem;
+            }
+            @include mq-max("sm") {
+                font-size: 1.2rem;
+            }
+        }
+        @include mq-max("sm") {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+    }
+    .p-bycle-table__wrapper {
+        @include mq-max("md") {
+            min-width: 42.875rem;
+        }
+        table {
+            @include mq-max("md") {
+                width: 100%;
+            }
+        }
+        table tbody .p-byclytable-twocolumn {
+            position: relative;
+            border: none;
+            grid-template-areas:
+                "p-byclehoten-type p-byclehoten-price1 p-byclehoten-price2 p-byclehoten-price3"
+                "p-byclehoten-type p-byclehoten-price4 p-byclehoten-price5 p-byclehoten-price6";
+            &::before,
+            &::after {
+                background: #fff;
+                position: absolute;
+                content: "";
+                width: calc(100% - 8.482188rem);
+                top: 50%;
+                right: 0;
+                height: 1px;
+                border-top: 0.125rem dashed #c9c9c9;
+                @include mq-max("md") {
+                    width: calc(100% - 9.0625rem);
+                }
+            }
+            &::before {
+                top: auto;
+                bottom: 0;
+                z-index: 1;
+            }
+            &:last-child {
+                &::before {
+                    content: none;
+                }
+            }
+            td {
+                &:first-child {
+                    grid-area: p-byclehoten-type;
+                    @include mq-max("md") {
+                        height: 100%;
+                    }
+                }
+                &:nth-child(2) {
+                    grid-area: p-byclehoten-price1;
+                }
+                &:nth-child(3) {
+                    grid-area: p-byclehoten-price2;
+                }
+                &:nth-child(4) {
+                    grid-area: p-byclehoten-price3;
+                }
+                &:nth-child(5) {
+                    grid-area: p-byclehoten-price4;
+                    background-color: rgba(176, 134, 69, 0.1);
+                }
+                &:nth-child(6) {
+                    grid-area: p-byclehoten-price5;
+                    background-color: rgba(144, 144, 144, 0.1);
+                }
+                &:nth-child(7) {
+                    grid-area: p-byclehoten-price6;
+                    background-color: rgba(189, 159, 0, 0.1);
+                }
+                .p-byclehoten-pay-temporary {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    p {
+                        height: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:first-child {
+                            background-color: #fff6f2;
+                        }
+                    }
+                }
+                &.p-byclehoten-type {
+                    justify-content: space-between;
+                    padding: 0;
+                    border: none;
+                    .p-byclehoten-type__inner {
+                        width: calc(100% - 5rem);
+                        padding: 0.5rem;
+                        @include mq-max("md") {
+                            width: calc(100% - 3.5rem);
+                        }
+                        @include mq-max("sm") {
+                            width: calc(100% - 5rem);
+                        }
+                        .p-byclehoten-type__inner-img {
+                            padding-bottom: 0.25rem;
+                        }
+                        .p-byclehoten-type__inner-text {
+                            width: 100%;
+                            a {
+                                padding-right: 1rem;
+                                padding-bottom: 0.0625rem;
+                                border-bottom: 0.0625rem solid $c-black;
+                                span {
+                                    right: 0;
+                                    width: 0.875rem;
+                                    margin: 0;
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                            p {
+                                width: 100%;
+                                line-height: 1.6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        table thead td {
+            &:first-child {
+                @include mq-max("sm") {
+                    min-width: 14rem;
+                }
+            }
+        }
+        table tbody td {
+            @include mq-max("md") {
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            &:first-child {
+                border-bottom: none;
+                @include mq-max("sm") {
+                    min-width: 14rem;
+                }
+            }
+            .p-byclehoten-pay-temporary {
+                max-width: 5rem;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ffe8dc;
+                @include mq-max("md") {
+                    max-width: 3.5rem;
+                }
+                @include mq-max("sm") {
+                    max-width: 5rem;
+                }
+                p {
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .p-bycle-table_course {
+        width: 100%;
+        table tbody tr {
+            @include mq-max("md") {
+                height: 3.5rem;
+            }
+            td:first-child {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                padding: 0;
+                p {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.p-byclehoken-tab-money,
+.p-byclehoken-tab-price {
+    @include mq-max("sm") {
+        .p-keiyakusya-table {
+            padding-bottom: 1rem;
+            margin: 0 -0.5rem;
+            &::-webkit-scrollbar {
+                width: 2rem;
+                height: 2px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: #cbcbcb;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $c-rss;
+            }
+        }
+        table tbody td span strong {
+            margin-left: 0;
+        }
+    }
+}
+/*　----------------------　*/

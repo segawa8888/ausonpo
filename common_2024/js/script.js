@@ -441,10 +441,11 @@ document.addEventListener("componentsLoaded", () => {
     new Splide(byclebvoiceSlider, {
       perPage: 3,
       arrows: false,
-      gap: "0.5rem",
+      pagination: false,
       breakpoints: {
         520: {
           perPage: 1,
+          pagination: true,
         },
       },
     }).mount();
@@ -633,16 +634,29 @@ document.addEventListener("componentsLoaded", () => {
   accordionToggles.forEach((toggleButton) => {
     const accordionBody = toggleButton.previousElementSibling;
 
-    // 初期状態でコンテンツを非表示にする
-    accordionBody.style.display = 'none';
+    // アコーディオンの初期状態を設定（アニメーション時間を0.5秒に変更）
+    accordionBody.style.transition = 'max-height 0.5s ease-out, padding-bottom 0.5s ease-out';
+    accordionBody.style.maxHeight = '0';
+    accordionBody.style.overflow = 'hidden';
+    accordionBody.style.paddingBottom = '0';
 
     const toggleAccordion = () => {
-      slideToggle(accordionBody, toggleButton);
-
-      // ボタンのテキストを切り替える
-      const buttonText = toggleButton.innerText.trim();
-      toggleButton.innerText = buttonText === '詳しくはこちら' ? '閉じる' : '詳しくはこちら';
+      const isClosed = accordionBody.style.maxHeight === '0px';
+      if (isClosed) {
+        // コンテンツの全高さを取得し、max-heightに設定
+        accordionBody.style.maxHeight = 'initial';
+        accordionBody.style.paddingBottom = '30px';
+      } else {
+        accordionBody.style.maxHeight = '0';
+        accordionBody.style.paddingBottom = '0';
+      }
+      toggleButton.classList.toggle('is-active', isClosed);
     };
+
+    accordionBody.addEventListener('transitionend', () => {
+      const isOpen = accordionBody.style.maxHeight !== '0px';
+      toggleButton.textContent = isOpen ? '閉じる' : '詳しくはこちら';
+    });
 
     toggleButton.addEventListener('click', toggleAccordion);
   });
@@ -709,29 +723,29 @@ popup-input-contentの中にポップアップに表示するコンテンツを�
 Ibuki Suzuki タブ切り替え機能 - 2023-11-29
 ----------------------------------------------------------*/
 document.addEventListener("componentsLoaded", () => {
-var tabButtons = document.querySelectorAll(".tab-button");
-var tabContents = document.querySelectorAll(".tab-content");
-    tabButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-        var tabId = this.getAttribute("data-tab");
-        // 同じクラス名の .tab-button から 'active' クラスを削除
-        document.querySelectorAll(".tab-button").forEach(function (tabButton) {
-        tabButton.classList.remove("active");
-        });
-        // 同じクラス名・同じ data-tab 属性を持つ .tab-button に 'active' クラスを追加
-        document
-        .querySelectorAll('.tab-button[data-tab="' + tabId + '"]')
-        .forEach(function (tabButton) {
-        tabButton.classList.add("active");
-        });
-        // すべてのタブを非表示にする
-        tabContents.forEach(function (tabContent) {
-        tabContent.classList.remove("active");
-        });
-        // 対応するタブを表示する
-        document.getElementById("tab" + tabId).classList.add("active");
-        });
-    });
+// var tabButtons = document.querySelectorAll(".tab-button");
+// var tabContents = document.querySelectorAll(".tab-content");
+//     tabButtons.forEach(function (button) {
+//     button.addEventListener("click", function () {
+//         var tabId = this.getAttribute("data-tab");
+//         // 同じクラス名の .tab-button から 'active' クラスを削除
+//         document.querySelectorAll(".tab-button").forEach(function (tabButton) {
+//         tabButton.classList.remove("active");
+//         });
+//         // 同じクラス名・同じ data-tab 属性を持つ .tab-button に 'active' クラスを追加
+//         document
+//         .querySelectorAll('.tab-button[data-tab="' + tabId + '"]')
+//         .forEach(function (tabButton) {
+//         tabButton.classList.add("active");
+//         });
+//         // すべてのタブを非表示にする
+//         tabContents.forEach(function (tabContent) {
+//         tabContent.classList.remove("active");
+//         });
+//         // 対応するタブを表示する
+//         document.getElementById("tab" + tabId).classList.add("active");
+//         });
+//     });
 });
 /*
 scss _tab.scss

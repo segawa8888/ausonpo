@@ -1,11 +1,39 @@
 @charset "UTF-8";
 @use "../../global" as *;
-// 自転車TOP
+.p-column-cta__item.-blue{
+    color: #057CD8;
+    .p-column-cta__title{
+        background-color: #057CD8;
+        color: #FFF;
+    }
+}
+.p-column-cta__item.-matcha{
+    color: #6B9E13;
+    .p-column-cta__title{
+        background-color: #6B9E13;
+        color: #FFF;
+    }
+}
+.p-keiyakusya-kaigai-cta.-sticky.p-bycle_homingbuttom_from{
+    @include mq-max("sm"){
+        bottom: 8.625rem;
+        z-index: 10;
+    }
+}
+
+.bycle_boder{
+    text-decoration:underline;
+    line-height: 1.5;
+}
+
+// bycleメインビジュアル
 .p-keiyakusya-kaigai__mv {
     p.u-text-xs {
         color: $c-base-600;
     }
+
 }
+// 自転車TOP
 .-p-bicycle-banner {
     &__contents {
         max-width: 50rem;
