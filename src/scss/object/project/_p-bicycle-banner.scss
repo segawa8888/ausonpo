@@ -1,11 +1,18 @@
 @charset "UTF-8";
 @use "../../global" as *;
-// 自転車TOP
+.bycle_boder{
+    text-decoration:underline;
+    line-height: 1.5;
+}
+
+// bycleメインビジュアル
 .p-keiyakusya-kaigai__mv {
     p.u-text-xs {
         color: $c-base-600;
     }
+
 }
+// 自転車TOP
 .-p-bicycle-banner {
     &__contents {
         max-width: 50rem;

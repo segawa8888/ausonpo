@@ -35,7 +35,7 @@
         .c-btn.-md {
             @include mq-max("sm") {
                 max-width: 100%;
-             }
+            }
         }
         &__block1 {
             &__flexbox {
@@ -69,7 +69,7 @@
                     border-radius: 0.25rem 0.25rem 0 0;
                     @include mq-max("sm") {
                         padding: 0.625rem 0.5rem;
-                     }
+                    }
                 }
                 
             }
