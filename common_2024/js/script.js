@@ -463,6 +463,8 @@ document.addEventListener("componentsLoaded", () => {
       },
     }).mount();
   }
+
+
   //猫の保険特長のスライダー
   const catFeatureSlider = document.querySelector(".js-cat-feature-slider"); // 対象となる要素を取得
   if (catFeatureSlider) {
@@ -475,6 +477,32 @@ document.addEventListener("componentsLoaded", () => {
           perPage: 1,
           gap: "0.857142857rem",
           type: "loop",
+        },
+      },
+    }).mount();
+  }
+
+  //バイクルコラム ピックアップスライダー
+  const byclePickupSlider = document.querySelector(".js-pickup-slider"); // 対象となる要素を取得
+  if (byclePickupSlider) {
+    new Splide(mvSlider, {
+      autoplay: true,
+      type: "loop",
+      perMove: 1,
+      arrows: false,
+      focus: 0,
+      updateOnMove: true,
+      autoScroll: {
+        speed: 0.3,
+        pauseOnHover: false,
+      },
+      classes: {
+        pagination: "splide__pagination p-pet-column-pagination",
+        page: "splide__pagination__page p-pet-column-page",
+      },
+      breakpoints: {
+        520: {
+          perPage: 1,
         },
       },
     }).mount();
