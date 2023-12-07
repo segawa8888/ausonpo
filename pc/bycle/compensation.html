@@ -31,7 +31,6 @@
       </li>
     </ol>
   </nav>
-  <a class="bycle_hominglink" href="/pc/rdt/bycle-s/"><img src="/src/img/sub/bycle/bycle_popupbutton01_pc.svg"alt=""></a>
 
   <main class="l-main l-container lg:-full sm:-full js-main">
     <div class="p-keiyakusya-kaigai">
@@ -55,7 +54,7 @@
         <a href="/pc/rdt/bycle/">
           <picture>
             <source srcset="/pc/bycle/assets/img/bycle_btn01.webp" type="image/webp" />
-            <img src="/pc/bycle/assets/img/bycle_btn01.png" alt="au損保" loading="lazy" />
+            <img src="/pc/bycle/assets/img/bycle_btn01.png" alt="Bycle（バイクル）カンタンお申込み" loading="lazy" />
           </picture>
         </a>
       </div>
@@ -129,16 +128,14 @@
         </h2>
         <div class="p-bycle-tab-change u-border-primary">
           <div class="tab-buttons p-bycle-tab-change__tabs">
-            <button class="tab-button tab-button1 c-btn -lg"><a href="./index.html"><span>01</span>5つのポイント</a></button>
-            <button class="tab-button tab-button2 c-btn -lg active"><span>02</span>補償内容</button>
-            <button class="tab-button tab-button3 c-btn -lg"><a
-                href="./premium.html"><span>03</span>保険金額と保険料</a></button>
-            <button class="tab-button tab-button4 c-btn -lg"><a href="./roadservice.html"><span>04</span>自転車<br
-                  class="lg:u-hidden">ロードサービス</a></button>
+            <button class="tab-button tab-button1 c-btn -lg"><a href="./index.html#bycle_point"><span>01</span>5つのポイント</a></button>
+            <button class="tab-button tab-button2 c-btn -lg active"><a href="./compensation.html#bycle_compensation"><span>02</span>補償内容</a></button>
+            <button class="tab-button tab-button3 c-btn -lg"><a href="./premium.html#bycle_premium"><span>03</span>保険金額と保険料</a></button>
+            <button class="tab-button tab-button4 c-btn -lg"><a href="./roadservice.html#bycle_roadservice"><span>04</span>自転車<br class="lg:u-hidden">ロードサービス</a></button>
           </div>
           <!-- 補償内容 -->
           <div class="tab-content p-bycle-type-info__type active tab2 bycle-hosyou">
-            <div class="p-bycletab-inner">
+            <div class="p-bycletab-inner" id="bycle_compensation">
               <p class="c-text-accent u-text-center">個人賠償責任補償の保険金が<br class="sm-min:u-hidden">対人・対物どちらの事故でも<br
                   class="sm-min:u-hidden">補償されます。</p>
               <div class="p-koutsuujiko-detail u-mt-8">
@@ -805,12 +802,10 @@
             </div>
           </div>
           <div class="tab-buttons p-bycle-tab-change__tabs">
-            <button class="tab-button tab-button1 c-btn -lg"><a href="./index.html"><span>01</span>5つのポイント</a></button>
-            <button class="tab-button tab-button2 c-btn -lg active"><span>02</span>補償内容</button>
-            <button class="tab-button tab-button3 c-btn -lg"><a
-                href="./premium.html"><span>03</span>保険金額と保険料</a></button>
-            <button class="tab-button tab-button4 c-btn -lg"><a href="./roadservice.html"><span>04</span>自転車<br
-                  class="lg:u-hidden">ロードサービス</a></button>
+            <button class="tab-button tab-button1 c-btn -lg"><a href="./index.html#bycle_point"><span>01</span>5つのポイント</a></button>
+            <button class="tab-button tab-button2 c-btn -lg active"><a href="./compensation.html#bycle_compensation"><span>02</span>補償内容</a></button>
+            <button class="tab-button tab-button3 c-btn -lg"><a href="./premium.html#bycle_premium"><span>03</span>保険金額と保険料</a></button>
+            <button class="tab-button tab-button4 c-btn -lg"><a href="./roadservice.html#bycle_roadservice"><span>04</span>自転車<br class="lg:u-hidden">ロードサービス</a></button>
           </div>
         </div>
       </section>
@@ -1165,14 +1160,14 @@
           </li>
         </ol>
         <p class="u-text-center u-mt-8">
-          <a href="https://faq.au-sonpo.co.jp" target="_blank" class="c-btn -md">よくある質問をもっとみる</a>
+          <a href="https://faq.au-sonpo.co.jp/" target="_blank" class="c-btn -md -external">よくあるご質問をもっとみる</a>
         </p>
       </section>
       <!-- よくある質問 -->
       <!-- お役立ちコラム -->
       <section class="u-bg-base-050 u-pt-12 u-pb-14 l-container sm:-screen u-mt-28">
         <h2 class="c-heading2-has-line u-mt-0">お役立ちコラム</h2>
-        <p class="u-text-center u-mt-6">保険会社ならではの自転車に関するお役立ち情報をお伝えします。</p>
+        <p class="u-text-center u-mt-6 u-leading-normal u-mx-1">保険会社ならではの自転車に関する<br>お役立ち情報をお伝えします。</p>
         <div class="c-post-card-slider splide js-post-card-slider u-mt-6">
           <div class="l-container lg:-md splide__track">
             <div class="splide__list">
@@ -1232,14 +1227,25 @@
           <li>「自転車向け保険 Bycle（バイクル）」は、定型タイプ・コースのみの販売となります。ご希望のタイプ・コースをお選びください。</li>
         </ul>
       </div>
-      <div class="p-keiyakusya-kaigai-cta -sticky u-mt-8 u-mx-auto lg:u-hidden">
+      <div class="p-keiyakusya-kaigai-cta -sticky u-mt-8 u-mx-auto p-bycle_homingbuttom_from lg:u-hidden">
         <a href="/pc/rdt/bycle/">
           <picture>
             <source srcset="/pc/bycle/assets/img/bycle_btn01.webp" type="image/webp" />
-            <img src="/pc/bycle/assets/img/bycle_btn01.png" alt="au損保" loading="lazy" />
+            <img src="/pc/bycle/assets/img/bycle_btn01.png" alt="Bycle（バイクル）カンタンお申込み" loading="lazy" />
           </picture>
         </a>
       </div>
+      <nav class="p-column-cta">
+        <h4 class="p-column-cta__heading">自転車事故の補償を重視</h4>
+        <ul class="p-column-cta__list">
+          <li class="p-column-cta__item -primary">
+            <a href="/pc/rdt/bycle/">
+              <h4 class="p-column-cta__title">自転車事故の補償を重視</h4>
+              <p class="p-column-cta__text">Bycleの<br />お申込みはこちら</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
   </main>
   <!--javascript-->
   <script src="/common_2024/js/script.min.js"></script>
