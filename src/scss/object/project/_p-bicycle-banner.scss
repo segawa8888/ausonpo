@@ -1,27 +1,27 @@
 @charset "UTF-8";
 @use "../../global" as *;
-.p-column-cta__item.-blue{
-    color: #057CD8;
-    .p-column-cta__title{
-        background-color: #057CD8;
-        color: #FFF;
+.p-column-cta__item.-blue {
+    color: #057cd8;
+    .p-column-cta__title {
+        background-color: #057cd8;
+        color: #fff;
     }
 }
-.p-column-cta__item.-matcha{
-    color: #6B9E13;
-    .p-column-cta__title{
-        background-color: #6B9E13;
-        color: #FFF;
+.p-column-cta__item.-matcha {
+    color: $c-bycle-s;
+    .p-column-cta__title {
+        background-color: $c-bycle-s;
+        color: #fff;
     }
 }
-.p-column-cta.p-bycle_homingbuttom_from{
-    @include mq-max("sm"){
+.p-column-cta.p-bycle_homingbuttom_from {
+    @include mq-max("sm") {
         display: none;
     }
 }
 
-.bycle_boder{
-    text-decoration:underline;
+.bycle_boder {
+    text-decoration: underline;
     line-height: 1.5;
 }
 
@@ -30,7 +30,6 @@
     p.u-text-xs {
         color: $c-base-600;
     }
-
 }
 // 自転車TOP
 .-p-bicycle-banner {
