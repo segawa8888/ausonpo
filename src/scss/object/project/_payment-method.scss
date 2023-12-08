@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-payment-method {
+    &__table {
+        @include mq-min("sm") {
+            width: rem(496px);
+        }
+        margin: rem(28px) auto rem(16px);
+        @include mq-max("sm") {
+        }
+    }
+    &__table-header,
+    &__table-data {
+        vertical-align: middle;
+        @include mq-min("sm") {
+            width: rem(248px);
+        }
+    }
+    &__table-header {
+        border-bottom: $c-white rem(2px) dotted;
+        background-color: $c-yellow-100;
+        display: flex;
+        align-items: center;
+        padding: rem(16px) rem(14px);
+        @include mq-max("sm") {
+            width: auto;
+            padding: rem(16px) rem(4px);
+        }
+    }
+    &__table-data {
+        border-bottom: $c-base-200 rem(2px) dotted;
+        text-align: center;
+        padding: 0;
+        @include mq-max("sm") {
+            width: rem(124px);
+        }
+    }
+    &__table-row:last-child &__table-header {
+        border-bottom: none;
+    }
+    &__table-row:first-child &__table-data {
+        border-top: $c-base-200 rem(2px) dotted;
+    }
+    &__icon {
+        width: rem(76px);
+        @include mq-max("sm") {
+            width: rem(49px);
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: rem(12px);
+        font-weight: 700;
+        width: rem(110px);
+        line-height: 1.3;
+    }
+    &__ok {
+        width: rem(30px);
+        height: auto;
+    }
+}

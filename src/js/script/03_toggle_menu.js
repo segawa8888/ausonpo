@@ -5,13 +5,21 @@ Pocket.Inc トグルメニュー - 2023-11-2
 document.addEventListener("componentsLoaded", () => {
   document.querySelectorAll(".js-drawer-toggle-btn").forEach((button) => {
     button.addEventListener("click", function () {
-      // このボタンの隣接要素にslideToggleを適用
-      const adjacentElement = this.nextElementSibling;
-      if (adjacentElement && adjacentElement.classList.contains("js-drawer-toggle-content")) {
-        slideToggle(adjacentElement, this);
+      toggleDrawerAccordion(this);
+    });
+    button.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        toggleDrawerAccordion(this);
       }
     });
   });
+  function toggleDrawerAccordion(button) {
+    // このボタンの隣接要素にslideToggleを適用
+    const adjacentElement = button.nextElementSibling;
+    if (adjacentElement && adjacentElement.classList.contains("js-drawer-toggle-content")) {
+      slideToggle(adjacentElement, button);
+    }
+  }
   document.querySelectorAll(".js-footer-toggle-btn").forEach((button, index) => {
     button.addEventListener("click", function () {
       // このボタンの隣接要素にslideToggleを適用

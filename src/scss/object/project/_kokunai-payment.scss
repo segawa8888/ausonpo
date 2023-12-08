@@ -3,7 +3,7 @@
 
 .p-kokunai-payment__icons {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     column-gap: rem(35px);
     justify-items: center;
     align-items: center;
@@ -12,13 +12,13 @@
     margin-right: auto;
     margin-top: rem(38px);
     @include mq-max("md") {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: rem(40px);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(2, 1fr);
         row-gap: rem(24px);
         max-width: rem(264px);
         margin-top: rem(23px);
-      }
+    }
 }
 
 .p-kokunai-payment__table {
@@ -39,42 +39,42 @@
             }
             &:last-child {
                 td:last-child {
-                    border-bottom:rem(2px) dashed #C9C9C9;
+                    border-bottom: rem(2px) dashed #c9c9c9;
                 }
             }
         }
         td {
-            width:rem(246px);
-            height:rem(65px);
+            width: rem(246px);
+            height: rem(65px);
             display: flex;
             align-items: center;
-            border-top:rem(2px) dashed #C9C9C9;
+            border-top: rem(2px) dashed #c9c9c9;
             @include mq-max("md") {
-                height:rem(61px);
-              }
+                height: rem(61px);
+            }
             &:first-child {
-                gap:0 rem(5px);
+                gap: 0 rem(5px);
                 border-top: none;
                 border-bottom: rem(2px) dashed $c-white;
-                background-color: #FFF6D1;
+                background-color: $c-yellow-100;
                 padding-left: rem(50px);
-                  @include mq-max("md") {
-                    width:rem(169px);
+                @include mq-max("md") {
+                    width: rem(169px);
                     padding-left: rem(15px);
-                  }
+                }
             }
 
             &:last-child {
                 justify-content: center;
                 @include mq-max("md") {
-                    width:rem(124px);
-                  }
+                    width: rem(124px);
+                }
 
-                  svg {
+                svg {
                     @include mq-max("md") {
-                        width:rem(30px);
+                        width: rem(30px);
                     }
-                  }
+                }
             }
 
             span {
@@ -82,7 +82,7 @@
             }
 
             p {
-                min-width:rem(109px);
+                min-width: rem(109px);
             }
         }
     }

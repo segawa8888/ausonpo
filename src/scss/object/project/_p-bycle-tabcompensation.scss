@@ -8,7 +8,7 @@
     .u-text-xs-tight {
         letter-spacing: -0.04em;
     }
-
+   
     .p-koutsuujiko-accordion-service {
         margin-left: 0;
         margin-right: 0;
@@ -28,6 +28,9 @@
             }
             &__heading {
                 max-width: 100%;
+                &::after {
+                    top: 0.78rem;
+                }
             }
         }
     }
