@@ -16,6 +16,14 @@
 
     <script type="text/javascript" src="/pc/common/js/campcd.js"></script>
     <script type="text/javascript" src="/pc/common/js/checkCookie.js"></script>
+
+    <style>
+        @media only screen and (max-width: 519px) {
+          div.popup-input-content {
+            height: 33rem;
+          }
+        }
+    </style>
 </head>
 
 <body style="visibility: hidden"
@@ -32,7 +40,7 @@
                     '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-WG9V33');</script>
     <!-- End Google Tag Manager -->
-    <a class="bycle_hominglink sm:u-hidden" href="/pc/rdt/bycle-s/"><img src="/src/img/sub/bycle/bycle_popupbutton01_pc.svg"alt=""></a>
+    <a class="bycle_hominglink sm:u-hidden popup-open" href="javascript:void(0);"><img src="/src/img/sub/bycle/bycle_popupbutton01_pc.svg"alt=""></a>
     <main class="l-main l-container lg:-full sm:-full js-main">
         <!--コンテンツはこちら-->
 
@@ -379,7 +387,7 @@
             </section>
 
       <div class="p-keiyakusya-kaigai-cta -sticky u-mt-8 u-mx-auto lg:u-hidden">
-        <a href="pc/rdt/byclebest/">
+        <a href="javascript:void(0);" class="popup-open" style="position: relative; bottom: 0; right: 0;">
           <picture>
             <source srcset="/pc/bycle/assets/img/bycle_popupbutton01_sp.webp" type="image/webp" />
             <img src="/pc/bycle/assets/img/bycle_popupbutton01_sp.png" alt="自転車向け保険をご検討中の方へ お申込みはこちらから" loading="lazy" />
@@ -387,6 +395,86 @@
         </a>
       </div>
     </main>
+    <div class="popup-input">
+      <div class="bg">
+        <div class="popup-input-content p-bycle-pouupcontent" style="">
+          <a href="" class="p-bycle-popupclose">
+            <div class="p-bycle-popupclose__cross">
+              <span class=""></span><span class=""></span>
+            </div>
+            <p class="">
+              閉じる
+            </p>
+          </a>
+          <div class="p-bycle-pouupcontent__banner">
+            <p class="p-bycle-pouupcontent-text u-text-primary u-text-bold sm:u-pt-3">
+              保険商品を選んで<br class="lg:u-hidden">お申込みへお進みください
+            </p>
+            <ul class="u-pb-8">
+              <li>
+                <a href="/pc/bycle/index.html">
+                  <p class="sm:u-mb-1">
+                    自転車事故の補償を重視
+                  </p>
+                  <picture class="sm:u-hidden">
+                    <source srcset="/pc/bycle/assets/img/bycle_popup01_pc.webp" type="image/webp" />
+                    <img src="/pc/bycle/assets/img/bycle_popup01_pc.png"
+                        alt=""
+                        loading="lazy" />
+                  </picture>
+                  <picture class="lg:u-hidden">
+                    <source srcset="/pc/bycle/assets/img/bycle_popup01_sp.webp" type="image/webp" />
+                    <img src="/pc/bycle/assets/img/bycle_popup01_sp.png"
+                        alt=""
+                        loading="lazy" />
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a href="/pc/bycle-best/index.html">
+                  <p class="sm:u-mb-1">
+                    自転車事故に加えて、<br class="sm:u-hidden">
+                    日常のケガにも備える
+                  </p>
+                  <picture class="sm:u-hidden">
+                    <source srcset="/pc/bycle/assets/img/bycle_popup02_pc.webp" type="image/webp" />
+                    <img src="/pc/bycle/assets/img/bycle_popup02_pc.png"
+                        alt=""
+                        loading="lazy" />
+                  </picture>
+                  <picture class="lg:u-hidden">
+                    <source srcset="/pc/bycle/assets/img/bycle_popup02_sp.webp" type="image/webp" />
+                    <img src="/pc/bycle/assets/img/bycle_popup02_sp.png"
+                        alt=""
+                        loading="lazy" />
+                  </picture>
+                </a>
+              </li>
+              <li>
+                <a href="/pc/bycle-s/index.html">
+                  <p class="sm:u-mb-1">
+                    70才以上の方専用！<br class="">
+                    自転車事故に備える
+                  </p>
+                  <picture class="sm:u-hidden">
+                    <source srcset="/pc/bycle/assets/img/bycle_popup03_pc.webp" type="image/webp" />
+                    <img src="/pc/bycle/assets/img/bycle_popup03_pc.png"
+                        alt=""
+                        loading="lazy" />
+                  </picture>
+                  <picture class="lg:u-hidden">
+                    <source srcset="/pc/bycle/assets/img/bycle_popup03_sp.webp" type="image/webp" />
+                    <img src="/pc/bycle/assets/img/bycle_popup03_sp.png"
+                        alt=""
+                        loading="lazy" />
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--javascript-->
     <script src="/common_2024/js/script.min.js"></script>
 </body>
