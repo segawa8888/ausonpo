@@ -1567,7 +1567,7 @@ Promise.all([
     // 各要素に対してコンポーネントを読み込む
     dataComponentElements.forEach((elm) => {
       const componentName = elm.getAttribute("data-component");
-      const componentPath = `/common_2024/component/${componentName}.html`;
+      const componentPath = `/common_2024/component/parts/${componentName}.html`;
       loadComponent(componentPath, `[data-component="${componentName}"]`, "afterbegin");
     });
   })
