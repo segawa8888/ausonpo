@@ -11,8 +11,12 @@
             justify-content: space-between;
             gap: 0rem;
         }
-        @include mq-min("sm") {
-            transform: none !important;
+    }
+    .js-voice-slider {
+        .-p-bycle-voice__list {
+            @include mq-min("sm") {
+                transform: none !important;
+            }
         }
     }
 }
@@ -34,7 +38,7 @@
             height: 7.25rem;
         }
         &-name {
-            p{
+            p {
                 line-height: 1.5;
             }
             width: calc(100% - 7.25rem);
@@ -44,6 +48,7 @@
                 span {
                     width: 5.25rem;
                     height: 1.5rem;
+                    font-size: 0.625rem;
                     justify-content: center;
                     align-items: center;
                 }

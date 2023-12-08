@@ -4,6 +4,9 @@
 /*　------　*/
 /*　タブ切り替え　保険金額と保険料　*/
 .p-byclehoken-tab-money {
+    .c-table__title {
+        z-index: -1;
+    }
     .p-keiyakusya-table table {
         width: 100%;
         tr.-p-byclepic-ful {
@@ -30,9 +33,14 @@
             }
         }
     }
-}
 
+}
+.max5075{
+    max-width: 50.75rem;
+    width: 100%;
+}
 .p-byclehoken-tab-money {
+  
     .P-byclehoken-text {
         font-size: 1.125rem;
         line-height: 1.5rem;
@@ -290,7 +298,7 @@
             @include mq-max("md") {
                 height: 100%;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: center;
                 align-items: center;
             }
             &:first-child {
