@@ -14,10 +14,9 @@
         color: #FFF;
     }
 }
-.p-keiyakusya-kaigai-cta.-sticky.p-bycle_homingbuttom_from{
+.p-column-cta.p-bycle_homingbuttom_from{
     @include mq-max("sm"){
-        bottom: 8.625rem;
-        z-index: 10;
+        display: none;
     }
 }
 
