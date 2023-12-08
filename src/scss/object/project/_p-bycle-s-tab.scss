@@ -3,7 +3,7 @@
  .gray_block__custom {
         background-color: $c-base-050;
         width: 100%;
-        padding: 0.5rem;
+        padding: 0 0.5rem 0.5rem;
     }
 .p-bycle-s-tab {
     .p-bycle-tab-change__tabs {
@@ -20,6 +20,9 @@
                 font-size: 0.625rem;
             }
         }
+    }
+    .c-table__title {
+        z-index: -1;
     }
     .max700 {
         max-width: 44.375rem;
@@ -158,6 +161,10 @@
                     font-size: 1.25rem;
                     span {
                         font-size: 1.75rem;
+                    }
+                    span.anot{
+                        font-size: 0.75rem;
+                        color:  $c-black;
                     }
                 }
             }
