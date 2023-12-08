@@ -126,6 +126,21 @@ document.addEventListener("componentsLoaded", () => {
       },
     }).mount();
   }
+  //自転車TOPのお客様の声のスライダー
+  const bikevoiceSlider = document.querySelector(".js-bikevoice-slider"); // 対象となる要素を取得
+  if (bikevoiceSlider) {
+    new Splide(bikevoiceSlider, {
+      perPage: 3,
+      perMove: 1,
+      arrows: false,
+      pagination: true,
+      breakpoints: {
+        520: {
+          perPage: 1,
+        },
+      },
+    }).mount();
+  }
   //バイクルのお客様の声のスライダー
   const byclebvoiceSlider = document.querySelector(".js-voice-slider"); // 対象となる要素を取得
   if (byclebvoiceSlider) {
@@ -141,7 +156,7 @@ document.addEventListener("componentsLoaded", () => {
       },
     }).mount();
   }
-  //バイクルのお客様の声のスライダー
+  //バイクルのケースのスライダー
   const SPbyclebcaseSlider = document.querySelector(".js-byclecase-slider"); // 対象となる要素を取得
   if (SPbyclebcaseSlider) {
     new Splide(SPbyclebcaseSlider, {
