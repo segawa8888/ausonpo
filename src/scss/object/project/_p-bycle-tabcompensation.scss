@@ -28,6 +28,9 @@
             }
             &__heading {
                 max-width: 100%;
+                &::after {
+                    top: 0.78rem;
+                }
             }
         }
     }
