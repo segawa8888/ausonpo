@@ -79,6 +79,10 @@ layout/_header.scss
       align-items: center;
       justify-content: center;
       font-size: rem(14px);
+      transition:
+        background-color 0.32s,
+        color 0.32s;
+
       @include mq-max("md") {
         width: rem(80px);
         height: rem(48px);
@@ -99,6 +103,12 @@ layout/_header.scss
         background-image: url(/common_2024/img/header_icon_login_pc.webp);
         .no-webp-support & {
           background-image: url(/common_2024/img/header_icon_login_pc.png);
+        }
+        @include mq-min("md") {
+          @include hover {
+            color: $c-white;
+            background-color: $c-login;
+          }
         }
         @include mq-max("md") {
           background-image: url(/common_2024/img/header_icon_login_sp.webp);
@@ -122,6 +132,12 @@ layout/_header.scss
             background-image: url(/common_2024/img/header_icon_user_sp.png);
           }
           border-color: $c-base-200;
+        }
+        @include mq-min("md") {
+          @include hover {
+            color: $c-white;
+            background-color: $c-base-400;
+          }
         }
       }
     }
@@ -264,6 +280,7 @@ layout/_header.scss
       background: transparent;
     }
   }
+
   &__inner {
     // ハンバーガーボタンのサイズを指定
     width: rem(40px);
@@ -311,6 +328,21 @@ layout/_header.scss
       transform: translateY(rem(-10px)) rotate(45deg);
     }
   }
+  &__btn:not(.is-active):hover &__bar,
+  &__btn:not(.is-active):focus &__bar {
+    &:nth-of-type(1) {
+      width: 0;
+      animation: menu_btn_bar 0.4s forwards;
+    }
+    &:nth-of-type(2) {
+      width: 0;
+      animation: menu_btn_bar 0.4s 0.2s forwards;
+    }
+    &:nth-of-type(3) {
+      width: 0;
+      animation: menu_btn_bar 0.4s 0.4s forwards;
+    }
+  }
   &__text {
     font-weight: 700;
     margin-top: rem(8px);
@@ -324,5 +356,13 @@ layout/_header.scss
       color: $c-white;
       letter-spacing: -0.1em;
     }
+  }
+}
+@keyframes menu_btn_bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }

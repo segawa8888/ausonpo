@@ -29,79 +29,91 @@ document.addEventListener("componentsLoaded", () => {
       });
     });
   }
-  new Splide("#js-home-splide-1", {
-    type: "loop",
-    fixedWidth: "49rem",
-    perPage: 1,
-    //gap: "2rem",
-    arrows: false,
-    pagination: true,
-    focus: "center",
-    breakpoints: {
-      519: {
-        fixedWidth: "18.5rem",
-        gap: "0.75rem",
+  const homeSplide1 = document.getElementById("js-home-splide-1");
+  if (homeSplide1) {
+    new Splide(homeSplide1, {
+      type: "loop",
+      fixedWidth: "49rem",
+      perPage: 1,
+      //gap: "2rem",
+      arrows: false,
+      pagination: true,
+      focus: "center",
+      breakpoints: {
+        519: {
+          fixedWidth: "18.5rem",
+          gap: "0.75rem",
+        },
       },
-    },
-  }).mount();
-  new Splide("#js-home-splide-2", {
-    type: "slide",
-    fixedWidth: "16rem",
-    perPage: 1,
-    gap: "1rem",
-    arrows: false,
+    }).mount();
+  }
+  const homeSplide2 = document.getElementById("js-home-splide-2");
+  if (homeSplide2) {
+    new Splide(homeSplide2, {
+      type: "slide",
+      fixedWidth: "16rem",
+      perPage: 1,
+      gap: "1rem",
+      arrows: false,
 
-    pagination: false,
-    trimSpace: false,
-    focus: "center",
-    destroy: true,
-    breakpoints: {
-      519: {
-        destroy: false,
-        pagination: true,
+      pagination: false,
+      trimSpace: false,
+      focus: "center",
+      destroy: true,
+      breakpoints: {
+        519: {
+          destroy: false,
+          pagination: true,
+        },
+        520: {
+          destroy: true,
+        },
       },
-      520: {
-        destroy: true,
-      },
-    },
-  }).mount();
-  new Splide("#js-home-splide-3", {
-    type: "slide",
-    perPage: 4,
-    gap: "1.5rem",
-    arrows: false,
+    }).mount();
+  }
+  const homeSplide3 = document.getElementById("js-home-splide-3");
+  if (homeSplide3) {
+    new Splide(homeSplide3, {
+      type: "slide",
+      perPage: 4,
+      gap: "1.5rem",
+      arrows: false,
 
-    pagination: true,
-    breakpoints: {
-      519: {
-        fixedWidth: "16rem",
-        perPage: 1,
-        trimSpace: false,
-        focus: "center",
-        gap: "1rem",
+      pagination: true,
+      breakpoints: {
+        519: {
+          fixedWidth: "16rem",
+          perPage: 1,
+          trimSpace: false,
+          focus: "center",
+          gap: "1rem",
+        },
       },
-    },
-  }).mount();
-  new Splide("#js-home-splide-4", {
-    type: "slide",
-    fixedWidth: "16rem",
-    perPage: 1,
-    gap: "1rem",
-    arrows: false,
+    }).mount();
+  }
+  const homeSplide4 = document.getElementById("js-home-splide-4");
+  if (homeSplide4) {
+    new Splide(homeSplide4, {
+      type: "slide",
+      fixedWidth: "16rem",
+      perPage: 1,
+      gap: "1rem",
+      arrows: false,
 
-    pagination: false,
-    //padding: { left: "3.25rem", right: "3.25rem" },
-    trimSpace: false,
-    focus: "center",
-    destroy: true,
-    breakpoints: {
-      519: {
-        destroy: false,
-        pagination: true,
+      pagination: false,
+      //padding: { left: "3.25rem", right: "3.25rem" },
+      trimSpace: false,
+      focus: "center",
+      destroy: true,
+      breakpoints: {
+        519: {
+          destroy: false,
+          pagination: true,
+        },
+        520: {
+          destroy: true,
+        },
       },
-      520: {
-        destroy: true,
-      },
-    },
-  }).mount();
+    }).mount();
+  }
 });
