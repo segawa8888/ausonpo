@@ -47,8 +47,7 @@
     width: 100%;
     max-width: rem(200px);
     @include mq-max("sm") {
-     width: 50%;
-     max-width: unset;
+       
     }
 }
 
