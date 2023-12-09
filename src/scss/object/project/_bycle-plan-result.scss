@@ -23,6 +23,9 @@
     @include mq-max("sm") {
         padding: rem(0) rem(12px) rem(26px);
     }
+    .-blue{
+        color: #057cd8;
+    }
  
 }
 .p-bycle-plan-result__cource-title{
