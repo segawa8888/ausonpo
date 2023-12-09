@@ -34,6 +34,7 @@ object/component
 object/project
 **********************************************/
 @use "project/anipos-feature";
+@use "project/bycle-cta";
 @use "project/cards";
 @use "project/column";
 @use "project/feature-card-grid";
@@ -60,6 +61,7 @@ object/project
 @use "project/moushikomi";
 @use "project/news";
 @use "project/golf-feature";
+@use "project/payment-method";
 @use "project/pet-application";
 @use "project/pet-balloon-girl";
 @use "project/pet-btn";

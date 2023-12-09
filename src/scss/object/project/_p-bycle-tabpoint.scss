@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @use "../../global" as *;
-.bycle_hominglink{
+.bycle_hominglink {
     max-width: 8.375rem;
     width: 100%;
     height: 6.125;
@@ -8,7 +8,7 @@
     position: fixed;
     right: 2rem;
     z-index: 10000;
-    img{
+    img {
         width: 100%;
     }
 }
@@ -28,6 +28,15 @@
         padding: 3rem;
         @include mq-max("sm") {
             padding: 2.5rem 0.5rem;
+        }
+    }
+    // タブ内　ポイント見出しの修正
+    .p-koutsuujiko-detail__heading {
+        justify-content: center;
+        padding: 0 1rem;
+        @include mq-max("sm") {
+            justify-content: left;
+            padding-left: 1rem;
         }
     }
 }
@@ -96,7 +105,7 @@
                     height: 3.25rem;
                 }
             }
-            a{
+            a {
                 width: 100%;
                 height: 100%;
                 display: flex;
@@ -329,8 +338,8 @@
             line-height: 1.5;
         }
     }
-    .splide{
-        @include mq-max("sm"){
+    .splide {
+        @include mq-max("sm") {
             padding: 0 1rem;
         }
     }
@@ -402,11 +411,13 @@
     .p-bycle-point {
         .p-koutsuujiko-detail__heading {
             position: relative;
+         
             @include mq-max("sm") {
                 justify-content: flex-start;
                 padding-left: 1rem;
             }
             span {
+                padding-right: 0;
                 @include mq-max("sm") {
                     font-size: 2.375rem;
                 }

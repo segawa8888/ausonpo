@@ -31,18 +31,21 @@ const isiOS = ["iphone", "ipad", "macintosh"].some((device) => ua.includes(devic
 const isMobile = ["iphone", "ipad", "macintosh", "android"].some((device) => ua.includes(device) && "ontouchend" in document); //Mobile判定
 const currentUrl = window.location.href; //URLの取得
 const currentPath = window.location.pathname; //パス
-const resizeTimerCmn = null; //resizeイベント用タイマー
+let resizeTimerCmn; //resizeイベント用タイマー
 let ww; //window width
 let wh; //window height
 
 const html = document.querySelector("html"); //html要素
 const body = document.querySelector("body"); //body要素
+let header; //header要素
+let main; //main要素
 let scrollBarWidth = window.innerWidth - body.clientWidth; //スクロールバーの幅
 
 //1.スクロールバーを除いたブラウザサイズの取得
 const setWindowSize = () => {
-  ww = document.documentElement.clientWidth;
-  wh = document.documentElement.clientHeight;
+  const ww = document.documentElement.clientWidth;
+  const wh = document.documentElement.clientHeight;
+  console.log(`Width: ${ww}, Height: ${wh}`);
 };
 setWindowSize();
 
@@ -51,22 +54,15 @@ const setScrollbarWidth = () => {
   scrollBarWidth = window.innerWidth - body.clientWidth;
 };
 
-//3.loadイベント(読み込み完了時の処理)
-window.addEventListener("load", setWindowSize);
-
 document.addEventListener("componentsLoaded", () => {
-  const header = document.querySelector(".js-header"); //header要素
-  const main = document.querySelector(".js-main"); //main要素
+  header = document.querySelector(".js-header"); //header要素
+  main = document.querySelector(".js-main"); //main要素
   //4.resizeイベント
-  //resizeイベントが発生しないようにする処理(回転時のみ)
-  //200ミリ秒ごとにイベントを走らせ重複を避ける
   const resizeHandlerCmn = () => {
-    if (resizeTimerCmn) {
-      clearTimeout(resizeTimerCmn);
-    }
-    resizeTimerCmn = setTimeout(setWindowSize, 200);
+    cancelAnimationFrame(resizeTimerCmn);
+    resizeTimerCmn = requestAnimationFrame(setWindowSize);
   };
-
+  //resizeイベントが発生しないようにする処理(回転時のみ)
   if (isMobile) {
     window.addEventListener("orientationchange", resizeHandlerCmn);
   } else {
@@ -79,55 +75,53 @@ document.addEventListener("componentsLoaded", () => {
 bodyScrollPrevent(true); //スクロール禁止
 bodyScrollPrevent(false, modalArea); //スクロール解除
 ------------------------------------*/
-document.addEventListener("componentsLoaded", () => {
-  // transitionendイベントを一回だけ呼び出すための関数
-  const addEventListenerOnce = (node, event, callback) => {
-    const handler = (e) => {
-      callback.call(node, e);
-      node.removeEventListener(event, handler);
-    };
-    node.addEventListener(event, handler);
+// transitionendイベントを一回だけ呼び出すための関数
+const addEventListenerOnce = (node, event, callback) => {
+  const handler = (e) => {
+    callback.call(node, e);
+    node.removeEventListener(event, handler);
   };
+  node.addEventListener(event, handler);
+};
 
-  // モーダル表示時の背景固定処理
-  const bodyScrollPrevent = (flag, modal) => {
-    let scrollPosition;
+// モーダル表示時の背景固定処理
+const bodyScrollPrevent = (flag, modal) => {
+  let scrollPosition;
 
-    // スクロールバーの幅を取得
-    setScrollbarWidth();
+  // スクロールバーの幅を取得
+  setScrollbarWidth();
 
-    if (flag) {
-      body.style.paddingRight = `${scrollBarWidth}px`;
-      header.style.paddingRight = `${scrollBarWidth}px`;
+  if (flag) {
+    body.style.paddingRight = `${scrollBarWidth}px`;
+    header.style.paddingRight = `${scrollBarWidth}px`;
 
-      if (isiOS) {
-        scrollPosition = -window.pageYOffset;
-        Object.assign(body.style, {
-          position: "fixed",
-          width: "100%",
-          top: `${scrollPosition}px`,
-        });
-      } else {
-        body.style.overflow = "hidden";
-      }
+    if (isiOS) {
+      scrollPosition = -window.pageYOffset;
+      Object.assign(body.style, {
+        position: "fixed",
+        width: "100%",
+        top: `${scrollPosition}px`,
+      });
     } else {
-      body.style.paddingRight = "";
-      header.style.paddingRight = "";
-
-      if (isiOS) {
-        scrollPosition = parseInt(body.style.top.replace(/[^0-9]/g, ""), 10);
-        Object.assign(body.style, {
-          position: "",
-          width: "",
-          top: "",
-        });
-        window.scrollTo(0, scrollPosition);
-      } else {
-        body.style.overflow = "";
-      }
+      body.style.overflow = "hidden";
     }
-  };
-});
+  } else {
+    body.style.paddingRight = "";
+    header.style.paddingRight = "";
+
+    if (isiOS) {
+      scrollPosition = parseInt(body.style.top.replace(/[^0-9]/g, ""), 10);
+      Object.assign(body.style, {
+        position: "",
+        width: "",
+        top: "",
+      });
+      window.scrollTo(0, scrollPosition);
+    } else {
+      body.style.overflow = "";
+    }
+  }
+};
 
 /*------------------------------------
 jQUeryのslideUp/slideDown/slideToggleの
