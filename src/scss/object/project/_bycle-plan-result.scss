@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-bycle-plan-result{
+    border-radius: rem(16px);
+    border: 2px solid $c-primary;
+    padding: rem(33px) rem(36px) rem(51px);
+    @include mq-max("sm") {
+        padding: rem(54px) rem(12px) rem(31px);
+    }
+}
+
+.p-bycle-plan-result__title{
+    max-width: rem(253px);
+    margin-inline: auto;
+   
+}
+
+.p-bycle-plan-result__cource{
+    border: 1px solid #C6C6C6;
+    padding:rem(12px) rem(26px) rem(26px);
+    position: relative;
+    @include mq-max("sm") {
+        padding: rem(0) rem(12px) rem(26px);
+    }
+    .-blue{
+        color: #057cd8;
+    }
+ 
+}
+.p-bycle-plan-result__cource-title{
+    & ruby{
+        font-size: rem(30px);
+    }
+}
+.p-bycle-plan-result__cource-sub-title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    // gap: rem(80px);
+}
+
+.p-bycle-plan-result__cource-sub-title span{
+    font-size: rem(30px);
+}
+.p-bycle-plan-result__cource-type{
+    width: 100%;
+    max-width: rem(200px);
+    @include mq-max("sm") {
+       
+    }
+}
+
+
+.p-bycle-plan-result__cource-item{
+    font-size: rem(24px);
+    display: block;
+    // position: absolute;
+    // top: rem(63px);
+    // left: 47%;
+    // transform: translateX(-50%);
+    margin-left: initial;
+    @include mq-max("sm") {
+        // top: rem(53px);
+        // left: 42%;
+        // transform: translateX(-50%);
+    }
+}
+// 保険料
+.p-bycle-plan-result__price{
+    display: flex;
+    justify-content: center;
+   column-gap: rem(54px);
+   align-items: flex-start;
+   @include mq-max("sm") {
+  display: block;
+
+   }
+   
+}
+
+
+.p-bycle-plan-result__price-wrapper{
+display: flex;
+gap: rem(10px);
+@include mq-max("sm") {
+  justify-content: space-between;
+}}
+
+.p-bycle-plan-result__price-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 1px solid #C6C6C6;
+min-width: rem(215px);
+max-width: rem(215px);
+padding: rem(6px) rem(10px);
+}
+.p-bycle-plan-result__price-value{
+    max-width: rem(130px);
+    & span{
+        font-size: rem(30px);
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        
+    }
+}
+
+.p-bycle-plan-result__price-arrow_box{
+    position:relative;
+    width:rem(213px);
+    background:#ED7331;
+    padding:rem(7px);
+    border-radius:5px;
+}
+.p-bycle-plan-result__price-arrow_box:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    border-bottom-width: 4px;
+    border-color: rgba(237,115,49,0);
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 3px;
+    margin-left: -10px;
+    border-bottom-color:#ED7331 !important;
+    bottom:99%;
+    left:72%;
+}
