@@ -42,7 +42,7 @@
  
     display: inline-block;
 }
-.p-bycle-plan-result__cource-sub-title span:not(:first-child){
+.p-bycle-plan-result__cource-sub-title span:nth-child(3){
     margin-left: rem(40px);
     @include mq-max("sm") {
         margin-left: rem(32px);
