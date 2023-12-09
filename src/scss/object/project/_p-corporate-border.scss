@@ -3,6 +3,8 @@
 // TOPメッセージ
 
 .p-corporate-border {
+    border-bottom: 2px solid $c-black;;
+
     &__dot {
         border-bottom: 2px dotted #C9C9C9;
         &.-primary{
