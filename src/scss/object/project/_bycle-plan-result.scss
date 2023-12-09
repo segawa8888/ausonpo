@@ -42,27 +42,29 @@
 
 .p-bycle-plan-result__cource-sub-title span{
     font-size: rem(30px);
- 
-    display: inline-block;
 }
-.p-bycle-plan-result__cource-sub-title span:nth-child(3){
-    margin-left: rem(40px);
+.p-bycle-plan-result__cource-type{
+    width: 100%;
+    max-width: rem(200px);
     @include mq-max("sm") {
-        margin-left: rem(32px);
+     width: 50%;
+     max-width: unset;
     }
 }
+
+
 .p-bycle-plan-result__cource-item{
     font-size: rem(24px);
     display: block;
-    position: absolute;
-    top: rem(63px);
-    left: 47%;
-    transform: translateX(-50%);
+    // position: absolute;
+    // top: rem(63px);
+    // left: 47%;
+    // transform: translateX(-50%);
     margin-left: initial;
     @include mq-max("sm") {
-        top: rem(53px);
-        left: 42%;
-        transform: translateX(-50%);
+        // top: rem(53px);
+        // left: 42%;
+        // transform: translateX(-50%);
     }
 }
 // 保険料
@@ -77,6 +79,8 @@
    }
    
 }
+
+
 .p-bycle-plan-result__price-wrapper{
 display: flex;
 gap: rem(10px);
