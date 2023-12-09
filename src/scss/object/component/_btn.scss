@@ -183,6 +183,11 @@
       background-position: right rem(11px) center;
     }
   }
+  &.-reload{
+    background-image: url(/common_2024/img/arrow/arrow_reload.svg);
+    background-position: right rem(14px) center;
+    background-size: rem(12px);
+  }
   &.prev {
     background-image: url(/common_2024/img/arrow/arrow_prev_primary.svg);
     background-position: left rem(19px) center;
