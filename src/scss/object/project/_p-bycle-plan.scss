@@ -84,6 +84,7 @@
         }
         &-btn {
             background: $c-white;
+            position: relative;
             .tag-area {
                 position: absolute;
                 top: 0;
@@ -129,6 +130,16 @@
                 }
                 picture {
                     max-width: 4.5rem;
+                }
+            }
+            &.bycle-best{
+                picture {
+                    max-width: rem(77px);
+                }
+            }
+            &.bycle {
+                picture {
+                    max-width: rem(132px);
                 }
             }
             label {

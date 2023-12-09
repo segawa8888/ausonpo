@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-bycle-shindan__sub-text{
+    color: #5C5C5C;
+    text-align: left !important;
+}
+
+.p-bycle-shindan__select-text{
+    background-color: #FFF682;
+width: 100%;
+position: absolute;
+top: rem(99px);
+left: 0;
+z-index: 11;
+}
