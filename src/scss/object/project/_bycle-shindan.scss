@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-bycle-shindan__sub-text {
+  color: #5c5c5c;
+  text-align: left !important;
+}
+
+.p-bycle-shindan__select-text {
+  background-color: #fff682;
+  width: 100%;
+  position: absolute;
+  top: rem(99px);
+  left: 0;
+  z-index: 11;
+}
+
+.p-bycle-shindan__title{
+    width: 100%;
+    position: absolute;
+    top: rem(30px);
+    left: 0;
+    z-index: 11;
+    &.-bronze{
+        background-color: #B08645;
+    }
+    &.-silver{
+        background-color: #909090;
+    }
+    &.-gold{
+        background-color: #DAB700;
+    }
+}
+
+
+.p-bycle-shindan__course-img{
+    text-align: center;
+    @include mq-max("sm") {
+        width: 26% !important;
+        margin-left: initial;
+        margin-right: initial;
+    }
+    & img{
+        max-width: rem(40px) !important;
+        width: 100%;
+    }
+
+}
+
+.p-bycle-shindan__wrapper{
+    @include mq-max("sm") {
+    display: flex;
+    gap: rem(10px);
+    align-items: center;
+    }
+}
+
+.p-bycle-shindan__course-title{
+    @include mq-max("sm") {
+        width: 74%;
+    }
+}
