@@ -4,6 +4,8 @@
 
 .p-corporate-table {
 
+    overflow: auto;
+
     th,
     td {
         border-left: 1px solid #afafaf;
@@ -71,6 +73,14 @@
             padding-left: rem(35px);
             padding-right: rem(16px);
             letter-spacing: 0.1em;
+        }
+
+        @include mq-max('sm') {
+            width: 914px;
+
+            &::-webkit-scrollbar-thumb {
+                background: $c-primary;
+            }
         }
 
     }
