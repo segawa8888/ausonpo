@@ -4,7 +4,7 @@
 
 .p-corporate-table {
 
-    &-overview {
+    &__overview {
 
         th {
             padding: 1.25rem 4rem;
@@ -24,7 +24,7 @@
         }
     }
 
-    &-officer {
+    &__officer {
 
         th {
             @include mq-min("sm") {
