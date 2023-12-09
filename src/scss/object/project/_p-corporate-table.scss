@@ -4,6 +4,17 @@
 
 .p-corporate-table {
 
+    th,
+    td {
+        border-left: 1px solid #afafaf;
+        border-top: 1px solid #afafaf;
+        font-size: .875rem;
+        line-height: 1.5;
+        vertical-align: middle;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+
     &__overview {
 
         th {
@@ -30,6 +41,7 @@
             @include mq-min("sm") {
                 width: rem(357px);
             }
+
             @include mq-max("sm") {
                 padding: 1.25rem 0.25rem;
             }
@@ -41,6 +53,26 @@
                 padding: 1.25rem 0.5rem;
             }
         }
+    }
+
+    &__histry {
+
+        /* 1列目と2列目の幅を指定 */
+        &-col1,
+        &-col2 {
+            width: rem(180px);
+        }
+
+        &-month {
+            text-align: center;
+        }
+
+        &-content {
+            padding-left: rem(35px);
+            padding-right: rem(16px);
+            letter-spacing: 0.1em;
+        }
+
     }
 
 }
