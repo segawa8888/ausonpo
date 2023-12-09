@@ -153,7 +153,7 @@
                     <p class="u-text-14 u-mt-1 u-text-bold sm:u-text-12 ">補償の手厚さ<br class="sm-min:u-hidden">を選ぶ</p>
                 </div>
             </div>
-            <p class="u-text-14 u-mt-6 u-leading-normal u-text-bold u-text-center">補償の対象となる人を選んでください</p>
+            <p class="u-text-14 u-mt-6 u-leading-normal u-text-bold u-text-center">ケガの補償範囲を選んでください</p>
             <div class="-p-bycle-plan-select u-mt-8 u-grid u-grid-cols-2 u-gap-10 sm:u-gap-2">
                 <div class="-p-bycle-plan-select-btn bycle-best radio">
                     <input id="radio-4" class="visually-hidden" type="radio" name="btn" checked="">
@@ -200,7 +200,7 @@
                     class="sm-min:u-hidden">まずは診断してみませんか？
             </p>
             <div class="-p-bycle-plan-progressbar u-mt-6">
-                <div class="-p-bycle-plan-progressbar-step active">
+                <div class="-p-bycle-plan-progressbar-step ">
                     <p class="u-text-14 sm:u-text-12">STEP1</p>
                     <p class="u-text-14 u-mt-1 u-text-bold sm:u-text-12">補償の対象となる人を選ぶ</p>
                 </div>
@@ -208,59 +208,77 @@
                     <p class="u-text-14 sm:u-text-12">STEP2</p>
                     <p class="u-text-14 u-mt-1 u-text-bold sm:u-text-12">ご自身のケガの補償範囲を選ぶ</p>
                 </div>
-                <div class="-p-bycle-plan-progressbar-step">
+                <div class="-p-bycle-plan-progressbar-step active">
                     <p class="u-text-14 sm:u-text-12">STEP3</p>
                     <p class="u-text-14 u-mt-1 u-text-bold sm:u-text-12 ">補償の手厚さ<br class="sm-min:u-hidden">を選ぶ</p>
                 </div>
             </div>
-            <p class="u-text-14 u-mt-6 u-leading-normal u-text-bold u-text-center">補償の対象となる人を選んでください</p>
-            <div class="-p-bycle-plan-select u-mt-8 u-grid u-grid-cols-3 u-gap-10 sm:u-gap-2">
-                <div class="-p-bycle-plan-select-btn honin radio">
-                    <input id="radio-1" class="visually-hidden" type="radio" name="btn" checked="">
-                    <label for="radio-1">
-                        <div class="tag-area u-text-center">
-                            <p class="tag u-text-10 u-text-bold sm:u-text-8">本人タイプ</p>
-                        </div>
-                        <picture>
-                            <source srcset="/pc/bycle/assets/img/bycle_tabpoint1-03_pc.webp" type="image/webp">
-                            <img src="/pc/bycle/assets/img/bycle_tabpoint1-03_pc.png" alt="本人" loading="lazy">
+            <p class="u-text-14 u-mt-6 u-leading-normal u-text-bold u-text-center">補償の手厚さを選んでくださいい</p>
+            <div class="-p-bycle-plan-select u-mt-8 u-grid u-grid-cols-3 sm:u-grid-cols-2 u-gap-10 sm:u-gap-2">
+                <div class="-p-bycle-plan-select-btn  radio">
+                    <input id="radio-6" class="visually-hidden" type="radio" name="btn" checked="">
+                    <label for="radio-6">
+                        <p class="p-bycle-shindan__title -bronze u-text-12 u-text-bold sm:u-text-8 u-text-bold u-text-white u-leading-relaxed">お手軽に【ブロンズコース】</p>
+                        <div class="p-bycle-shindan__wrapper u-mt-6 sm:u-mt-4 ">
+                        <picture class="p-bycle-shindan__course-img u-block u-mx-auto">
+                            <source srcset="/pc/assets/img/bycle_tabpoint3-01_pc.webp" type="image/webp">
+                            <img src="/pc/assets/img/bycle_tabpoint3-01_pc.png" alt="お手軽に【ブロンズコース】" loading="lazy">
                         </picture>
-                        <p class="u-text-14 u-mt-1 u-text-bold u-text-center sm:u-text-12">本人のみを補償</p>
+                        <div class="u-mt-2 p-bycle-shindan__course-title">
+                        <p class="u-text-primary u-text-12 sm:u-text-8 u-text-left u-text-bold p-bycle-shindan__select-title">自転車保険義務化に対応！</p>
+                        <p class="u-text-14 u-mt-1 u-text-bold u-text-left sm:u-text-10 ">死亡・入院まで補償！<br>
+                            個人賠償責任2億円</p>
+                        </div>
+                        </div>
                     </label>
                 </div>
                 <div class="-p-bycle-plan-select-btn honin radio">
-                    <input id="radio-2" class="visually-hidden" type="radio" name="btn">
-                    <label for="radio-2">
-                        <div class="tag-area u-text-center">
-                            <p class="tag recom u-text-10 u-text-bold sm:u-text-8">おすすめ</p>
-                            <p class="tag u-text-10 u-text-bold sm:u-text-8">家族タイプ</p>
-                        </div>
-                        <picture>
-                            <source srcset="/pc/bycle/assets/img/bycle_tabpoint1-04_pc.webp" type="image/webp">
-                            <img src="/pc/bycle/assets/img/bycle_tabpoint1-04_pc.png" alt="家族" loading="lazy">
+                    <input id="radio-7" class="visually-hidden" type="radio" name="btn">
+                    <label for="radio-7">
+                        <p class="p-bycle-shindan__title -silver u-text-11 u-text-bold sm:u-text-8 u-text-bold u-text-white u-leading-loose">バランスよく【シルバーコース】</p>
+                        <div class="p-bycle-shindan__wrapper u-mt-6 sm:u-mt-4 ">
+                        <picture class="p-bycle-shindan__course-img u-block u-mx-auto">
+                            <source srcset="/pc/assets/img/bycle_tabpoint3-02_pc.webp" type="image/webp">
+                            <img src="/pc/assets/img/bycle_tabpoint3-02_pc.png" alt="バランスよく【シルバーコース】" loading="lazy">
                         </picture>
-                        <p class="u-text-14 u-mt-1 u-text-bold u-text-center sm:u-text-12">家族全員を補償</p>
+                        <div class="u-mt-2 p-bycle-shindan__course-title">
+                        <p class="u-text-primary u-text-12 sm:u-text-8 u-text-left u-text-bold p-bycle-shindan__select-title">自転車保険義務化に対応！</p>
+                        <p class="u-text-14 u-mt-1 u-text-bold u-text-left sm:u-text-10 ">通院まで補償！<br>
+                            さらに入院一時金も。<br>
+                            個人賠償責任3億円</p>
+                        </div>
+                        </div>
                     </label>
                 </div>
                 <div class="-p-bycle-plan-select-btn honin radio">
-                    <input id="radio-3" class="visually-hidden" type="radio" name="btn">
-                    <label for="radio-3">
-                        <div class="tag-area">
-                            <p class="tag u-text-10 u-text-bold sm:u-text-8">本人・親族<br>タイプ</p>
-                        </div>
-                        <picture>
-                            <source srcset="/pc/bycle/assets/img/bycle_tabpoint1-05_pc.webp" type="image/webp">
-                            <img src="/pc/bycle/assets/img/bycle_tabpoint1-05_pc.png" alt="配偶者を除く" loading="lazy">
+                    <input id="radio-8" class="visually-hidden" type="radio" name="btn">
+                    <label for="radio-8">
+                        <p class="p-bycle-shindan__title -gold u-text-12 u-text-bold sm:u-text-8 u-text-bold u-text-white u-leading-relaxed">手厚く【ゴールドコース】</p>
+                        <div class="p-bycle-shindan__wrapper u-mt-6 sm:u-mt-4 ">
+                        <picture class="p-bycle-shindan__course-img u-block u-mx-auto">
+                            <source srcset="/pc/assets/img/bycle_tabpoint3-03_pc.webp" type="image/webp">
+                            <img src="/pc/assets/img/bycle_tabpoint3-03_pc.png" alt="手厚く【ゴールドコース】" loading="lazy">
                         </picture>
-                        <p class="u-text-14 u-mt-1 u-text-bold u-text-center sm:u-text-12">配偶者を除く本人と親族<br><span
-                                class="u-text-12">(子など)を補償</span></p>
+                        <div class="u-mt-2 p-bycle-shindan__course-title">
+                        <p class="u-text-primary u-text-12 sm:u-text-8 u-text-left u-text-bold p-bycle-shindan__select-title">自転車保険義務化に対応！</p>
+                        <p class="u-text-14 u-mt-1 u-text-bold u-text-left sm:u-text-10 ">さらに法律相談・<br>
+                            弁護士費用も！<br>
+                            個人賠償責任3億円</p>
+                        </div>
+                        </div>
                     </label>
                 </div>
             </div>
             <p class="u-text-center u-mt-8">
-                <a href="#" class="c-btn -md u-bg-primary u-text-white u-text-medium">STEP2へ </a>
+                <a href="#" class="c-btn -md u-bg-primary u-text-white u-text-medium">診断結果を見る</a>
             </p>
+            <p class="u-mt-3 u-text-center u-text-primary u-text-bold u-text-16">
+                <a href="/pc/bycle/application.html" class="u-link-has-arrow -primary">お申込みについて</a>
+              </p>
         </div>
+
+
+        
     </main>
     <!--javascript-->
     <script src="/common_2024/js/script.js"></script>
