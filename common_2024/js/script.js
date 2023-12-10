@@ -43,9 +43,8 @@ let scrollBarWidth = window.innerWidth - body.clientWidth; //スクロールバ�
 
 //1.スクロールバーを除いたブラウザサイズの取得
 const setWindowSize = () => {
-  const ww = document.documentElement.clientWidth;
-  const wh = document.documentElement.clientHeight;
-  console.log(`Width: ${ww}, Height: ${wh}`);
+  ww = document.documentElement.clientWidth;
+  wh = document.documentElement.clientHeight;
 };
 setWindowSize();
 
@@ -57,6 +56,7 @@ const setScrollbarWidth = () => {
 document.addEventListener("componentsLoaded", () => {
   header = document.querySelector(".js-header"); //header要素
   main = document.querySelector(".js-main"); //main要素
+  setWindowSize();
   //4.resizeイベント
   const resizeHandlerCmn = () => {
     cancelAnimationFrame(resizeTimerCmn);
@@ -1741,15 +1741,29 @@ function determineNavComponent(url) {
 }
 
 // 全てのコンポーネントの読み込みを管理
-Promise.all([
-  //コンポーネントの読み込み処理
-  loadComponent("/common_2024/component/head/meta.html", "head", "afterbegin"),
-  //loadComponent("/common_2024/component/head/ogp.html", "head", "beforeend"),
-  loadComponent("/common_2024/component/layout/footer.html", ".l-main", "afterend"),
-  loadComponent("/common_2024/component/layout/header.html", "body", "afterbegin").then(() => {
-    return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
-  }),
-])
+let promises = [];
+
+// .p-popupクラスがbody要素に付与されていない場合の処理を追加
+if (!html.classList.contains("p-popup")) {
+  promises.push(loadComponent("/common_2024/component/layout/footer.html", ".l-main", "afterend"));
+  promises.push(
+    loadComponent("/common_2024/component/layout/header.html", "body", "afterbegin").then(() => {
+      return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
+    })
+  );
+} else {
+  promises.push(
+    loadComponent("/common_2024/component/layout/header_popup.html", "body", "afterbegin").then(() => {
+      return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
+    })
+  );
+}
+
+// 常に実行される処理を追加
+promises.push(loadComponent("/common_2024/component/head/meta.html", "head", "afterbegin"));
+//promises.push(loadComponent("/common_2024/component/head/ogp.html", "head", "beforeend"));
+
+Promise.all(promises)
   .then(() => {
     // data-component属性を持つ要素をすべて取得
     const dataComponentElements = document.querySelectorAll("[data-component]");
