@@ -14,6 +14,17 @@ html {
   @include mq-max("sm") {
     font-size: $base-font-size-xs;
   }
+  &.p-popup {
+    @include mq-max("lg") {
+      font-size: $base-font-size-lg;
+    }
+    @include mq-max("md") {
+      font-size: $base-font-size-lg;
+    }
+    @include mq-max("sm") {
+      font-size: $base-font-size-xs;
+    }
+  }
 }
 
 body {
