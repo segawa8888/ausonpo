@@ -24,11 +24,11 @@
   color: $c-base-600;
 }
 .tab-content {
-  display: none;
-  &.is-active {
-    display: block;
-
-
+  .-tab-change-js & {
+    display: none;
+    &.is-active {
+      display: block;
+    }
   }
   .p-bycletab-inner {
     padding: 3rem;
@@ -56,7 +56,7 @@
     padding: 6.25rem 0;
     border-radius: 0.625rem;
   }
-  .p-bycle-tab-change__tabs {
+  &__tabs {
     width: 100%;
     border: 1px solid $c-primary;
     border-radius: 1rem;
@@ -88,12 +88,18 @@
       line-height: 1.6;
       font-weight: bold;
       position: relative;
-      padding: 0.625rem;
       @include mq-max("sm") {
-        min-width: 33%;
-        width: 33%;
+        min-width: 50%;
+        width: 50%;
         height: 3rem;
         font-size: 0.8125rem;
+      }
+      .-button-col3 & {
+        padding: 0.625rem;
+        @include mq-max("sm") {
+          min-width: 33%;
+          width: 33%;
+        }
       }
       &:hover {
         transform: translateY(0rem);
@@ -126,45 +132,72 @@
         }
       }
       &:first-child {
-        border-radius: 0.78rem 0 0 0.78rem;
+        border-radius: 1rem 0 0 1rem;
         @include mq-max("sm") {
-          border-radius: 0.425rem 0 0 0.425rem;
+          border-radius: 0.625rem 0 0 0;
+        }
+        .-button-col3 & {
+          border-radius: 0.78rem 0 0 0.78rem;
+          @include mq-max("sm") {
+            border-radius: 0.425rem 0 0 0.425rem;
+          }
         }
       }
       &:nth-child(2) {
         @include mq-max("sm") {
-          // border-radius: 0 0.625rem 0 0;
-          border-left: 1px solid $c-primary;
+          border-radius: 0 0.625rem 0 0;
           &::after {
             content: none;
           }
+        }
+        .-button-col3 & {
+          border-left: 1px solid $c-primary;
         }
       }
       &:nth-child(3) {
         @include mq-max("sm") {
           border-radius: 0 0 0 0.625rem;
-          // border-top: 1px solid $c-primary;
+          border-top: 1px solid $c-primary;
+        }
+        .-button-col3 & {
+          @include mq-max("sm") {
+            border-top: none;
+          }
         }
       }
       &:last-child {
-        border-radius: 0 0.78rem 0.78rem 0;
+        border-radius: 0 1rem 1rem 0;
         @include mq-max("sm") {
-          border-radius: 0 0.425rem 0.425rem 0;
-          border-left: 1px solid $c-primary;
+          border-radius: 0 0 0.625rem 0;
+          border-top: 1px solid $c-primary;
         }
         &::after {
           content: none;
         }
+        .-button-col3 & {
+          border-radius: 0 0.78rem 0.78rem 0;
+          @include mq-max("sm") {
+            border-radius: 0 0.425rem 0.425rem 0;
+            border-top: none;
+            border-left: 1px solid $c-primary;
+          }
+        }
       }
-      &.is-active {
+      &.is-active,
+      &.active {
         background-color: $c-primary;
         color: $c-white;
         height: calc(3.75rem + 0.25rem);
         box-shadow: none;
         padding: 0.625rem;
         @include mq-max("sm") {
-          min-width: calc(100% / 3);
+          min-width: calc(100% / 2);
           height: calc(3rem + 0.25rem);
+        }
+      }
+      &.is-active {
+        @include mq-max("sm") {
+          min-width: calc(100% / 3);
         }
       }
       &:focus {
