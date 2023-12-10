@@ -25,6 +25,7 @@
         }
         @include mq-max("sm") {
             padding-left: rem(96px);
+            background-position: left top;
         }
     }
     &__box-heading {

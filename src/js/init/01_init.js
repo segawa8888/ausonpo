@@ -21,9 +21,8 @@ let scrollBarWidth = window.innerWidth - body.clientWidth; //スクロールバ�
 
 //1.スクロールバーを除いたブラウザサイズの取得
 const setWindowSize = () => {
-  const ww = document.documentElement.clientWidth;
-  const wh = document.documentElement.clientHeight;
-  console.log(`Width: ${ww}, Height: ${wh}`);
+  ww = document.documentElement.clientWidth;
+  wh = document.documentElement.clientHeight;
 };
 setWindowSize();
 
@@ -35,6 +34,7 @@ const setScrollbarWidth = () => {
 document.addEventListener("componentsLoaded", () => {
   header = document.querySelector(".js-header"); //header要素
   main = document.querySelector(".js-main"); //main要素
+  setWindowSize();
   //4.resizeイベント
   const resizeHandlerCmn = () => {
     cancelAnimationFrame(resizeTimerCmn);

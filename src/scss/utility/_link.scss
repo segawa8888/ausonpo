@@ -2,6 +2,17 @@
 .u-link-text {
   text-decoration: underline;
   color: $c-link;
+  &.-external {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-left: 0.25em;
+      vertical-align: -0.1em;
+      background: url(/common_2024/img/icon/icon_external_link.svg) center center / contain no-repeat;
+    }
+  }
 }
 .u-link-has-arrow {
   font-size: rem(14px);
@@ -23,6 +34,22 @@
   &.-primary {
     color: $c-primary;
     background-image: url(/common_2024/img/arrow/arrow_sm_primary.svg);
+  }
+  &.-external {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-left: 0.5em;
+      vertical-align: -0.1em;
+      background: url(/common_2024/img/icon/icon_external.svg) center center / contain no-repeat;
+    }
+    &.-primary {
+      &::after {
+        background-image: url(/common_2024/img/icon/icon_external_primary.svg);
+      }
+    }
   }
   @include hover {
     text-decoration: underline;

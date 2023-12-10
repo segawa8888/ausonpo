@@ -15,6 +15,10 @@ layout/_container.scss
   &.lg\:-full {
     @include mq-min("sm") {
       width: vw(1100px);
+      .p-popup & {
+        width: calc(100% - 20px);
+        max-width: rem(1100px);
+      }
     }
     @include mq-min("lg") {
       width: rem(1100px);

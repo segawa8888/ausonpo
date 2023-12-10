@@ -1,1226 +1,1216 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<title>各種お問い合わせ｜au損保</title>
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<link rel="canonical" href="https://www.au-sonpo.co.jp/pc/otoiawase/" />
-<script type="text/javascript" src="../common/js/campcd.js"></script>
-<script type="text/javascript" src="../common/js/checkCookie.js"></script>
-<script type="text/javascript" src="../common/js/switchview.js"></script>
-<script type="text/javascript" src="../common/js/jquery.aute.extend.js"></script>
-<script type="text/javascript" src="../common/js/back_top.js"></script>
-<script type="text/javascript" src="../common/js/header.js"></script>
-<script type="text/javascript" src="/pc/common/js/header-footer_include.js"></script>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <title>各種お問い合わせ｜au損保</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="canonical" href="https://www.au-sonpo.co.jp/pc/otoiawase/" />
+    <script type="text/javascript" src="../common/js/campcd.js"></script>
+    <script type="text/javascript" src="../common/js/checkCookie.js"></script>
+    <script type="text/javascript" src="../common/js/switchview.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.aute.extend.js"></script>
+    <script type="text/javascript" src="../common/js/back_top.js"></script>
+    <script type="text/javascript" src="../common/js/header.js"></script>
+    <script type="text/javascript" src="/pc/common/js/header-footer_include.js"></script>
 
-<script type="text/javascript">
-$.SwitchView();
-</script>
+    <script type="text/javascript">
+      $.SwitchView();
+    </script>
 
-<!--[if lt IE 9]>
-<script type="text/javascript" src="../common_aute/js/PIE_IE678_20150706.js"></script>
-<![endif]-->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="../common_aute/js/PIE_IE678_20150706.js"></script>
+    <![endif]-->
 
-<!--[webfonts]-->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--[webfonts]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
 
-<!--[CSS]-->
-<link type="text/css" href="../common/css/reset.css" rel="stylesheet" />
-<link type="text/css" href="../common/css/module.css" rel="stylesheet" />
-<link type="text/css" href="../common/css/base.css" rel="stylesheet" />
-<link type="text/css" href="../common/css/layout.css" rel="stylesheet" />
-<link type="text/css" href="../common/css/parts.css" rel="stylesheet" />
-<link type="text/css" href="../common/css/page.css" rel="stylesheet" />
-<link type="text/css" href="../common/css/otoiawase.css" rel="stylesheet" />
+    <!--[CSS]-->
+    <link type="text/css" href="../common/css/reset.css" rel="stylesheet" />
+    <link type="text/css" href="../common/css/module.css" rel="stylesheet" />
+    <link type="text/css" href="../common/css/base.css" rel="stylesheet" />
+    <link type="text/css" href="../common/css/layout.css" rel="stylesheet" />
+    <link type="text/css" href="../common/css/parts.css" rel="stylesheet" />
+    <link type="text/css" href="../common/css/page.css" rel="stylesheet" />
+    <link type="text/css" href="../common/css/otoiawase.css" rel="stylesheet" />
 
-<!-- お問い合わせ　専用JS　読込み -->
-<script type="text/javascript" src="./common/js/otoiawase.js"></script>
+    <!-- お問い合わせ　専用JS　読込み -->
+    <script type="text/javascript" src="./common/js/otoiawase.js"></script>
 
-<!--スマホ・PC 切り替え-->
-<script type="text/javascript" src="../common/js/sp_switch.js"></script>
-<script>
-    //読み込みCSS 設定
-    var sp_css_1 = "../common/css/style.css";
-    var sp_css_2 = "../common/css/layout_sp.css";
-    var sp_css_3 = "../common/css/base_sp.css";
-    var sp_css_4 = "../common/css/parts_sp.css";
-    var sp_css_5 = "../common/css/page_sp.css";
-    var sp_css_6 = "../common/css/otoiawase_sp.css";
+    <!--スマホ・PC 切り替え-->
+    <script type="text/javascript" src="../common/js/sp_switch.js"></script>
+    <script>
+      //読み込みCSS 設定
+      var sp_css_1 = "../common/css/style.css";
+      var sp_css_2 = "../common/css/layout_sp.css";
+      var sp_css_3 = "../common/css/base_sp.css";
+      var sp_css_4 = "../common/css/parts_sp.css";
+      var sp_css_5 = "../common/css/page_sp.css";
+      var sp_css_6 = "../common/css/otoiawase_sp.css";
 
-    //SPに変更
-    function change_script_sp(){
-        if(mode == "PC"){
-            //JS
-            $.getScript("../common/js/script_sp.js");
-            //CSS
-            $("#sp_css_1").attr("href",sp_css_1);
-            $("#sp_css_2").attr("href",sp_css_2);
-            $("#sp_css_3").attr("href",sp_css_3);
-            $("#sp_css_4").attr("href",sp_css_4);
-            $("#sp_css_5").attr("href",sp_css_5);
-            $("#sp_css_6").attr("href",sp_css_6);
-            mode = "SP";
+      //SPに変更
+      function change_script_sp() {
+        if (mode == "PC") {
+          //JS
+          $.getScript("../common/js/script_sp.js");
+          //CSS
+          $("#sp_css_1").attr("href", sp_css_1);
+          $("#sp_css_2").attr("href", sp_css_2);
+          $("#sp_css_3").attr("href", sp_css_3);
+          $("#sp_css_4").attr("href", sp_css_4);
+          $("#sp_css_5").attr("href", sp_css_5);
+          $("#sp_css_6").attr("href", sp_css_6);
+          mode = "SP";
         }
-    }
-    //PCに変更
-    function change_script_pc(){
-        if(mode == "SP"){
-            //CSS
-            $("#sp_css_1").attr("href","");
-            $("#sp_css_2").attr("href","");
-            $("#sp_css_3").attr("href","");
-            $("#sp_css_4").attr("href","");
-            $("#sp_css_5").attr("href","");
-            $("#sp_css_6").attr("href","");
-            mode = "PC";
+      }
+      //PCに変更
+      function change_script_pc() {
+        if (mode == "SP") {
+          //CSS
+          $("#sp_css_1").attr("href", "");
+          $("#sp_css_2").attr("href", "");
+          $("#sp_css_3").attr("href", "");
+          $("#sp_css_4").attr("href", "");
+          $("#sp_css_5").attr("href", "");
+          $("#sp_css_6").attr("href", "");
+          mode = "PC";
         }
-    }
-</script>
-<!--CSS スマホ用（JSで読み込み・初期値はNULL）　-->
-<link id="sp_css_1" type="text/css" href="" rel="stylesheet" />
-<link id="sp_css_2" type="text/css" href="" rel="stylesheet" />
-<link id="sp_css_3" type="text/css" href="" rel="stylesheet" />
-<link id="sp_css_4" type="text/css" href="" rel="stylesheet" />
-<link id="sp_css_5" type="text/css" href="" rel="stylesheet" />
-<link id="sp_css_6" type="text/css" href="" rel="stylesheet" />
-
-
-
-
-<style type="text/css">
-
-#page-top .cyan_area{
-	background:#6783D0;
-	border:none;
-	max-width:724px;
-}
-#page-top .cyan_area p{
-	color:#fff;
-}
-
-#page-top .orange_area{
-	background:#ec5601;
-	border:none;
-	max-width:724px;
-	border-radius: 10px;
-}
-#page-top .orange_area p{
-	color:#fff;
-}
-
-#page-top .point_label_tbl{
-	border-spacing: 17px 5px;
-}
-#page-top .point_label_blue{
-	background-color:#2d8cb4;
-
-}
-#page-top .navy_area .point_label_blue{
-	background-color:#445271;
-
-}
-#page-top .green_area .point_label_blue{
-	background-color:#2d8cb4;
-
-}
-#page-top .point_label_tbl td.navy_area{
-	border:solid 3px #e3e3e3;
-}
-#page-top .point_label_tbl td.green_area{
-	border:solid 3px #2d8cb4;
-}
-#page-top .point_label_tbl td{
-	border:solid 3px #2d8cb4;
-	height: 400px;
-	vertical-align: top;
-}
-
-.block_lower_narrow_space.block_mitumori{
-	margin-top:5px;
-	width:93%;
-}
-.block_mitumori_inner{
-	margin:0 auto;
-	padding:5px;
-	max-width:270px;
-}
-
-.block_mitumori_inner dl{
-	margin-bottom:10px;
-}
-.block_mitumori_inner dt{
-	text-indent:-1em;
-	margin-left:2em;
-	color:#333;
-}
-.block_mitumori_inner dd{
-	text-indent:-1em;
-	margin-left:3em;
-	color:#333;
-}
-.txt_black{
-	color:#333;
-}
-.orange_pie{
-	background-color:#EA5505;
-	font-weight:bold;
-	color:#fff;
-	padding:2px 15px;
-	display:inline-block;
-}
-.pet_indent2{
-	text-align:center;
-	margin-top:5px;
-}
-.pet_indent2 > div{
-	display:inline-block;
-}
-.pink_txt{
-	color:#E47373;
-	text-align:left;
-}
-.pink_pie{
-	background-color:#E47373;
-	font-weight:bold;
-	color:#fff;
-	border-radius:20px;
-	padding:2px 15px;
-}
-.orange_txt{
-	color:#EA5505;
-}
-.indent1{
-	margin-left:1em;
-	text-align:-1em;
-}
-#page-top .point_label_tbl_sp td {
-	border:solid 3px #2d8cb4;
-}
-#page-top .navy_area .point_label_blue{
-	background-color:#e3e3e3;
-
-}
-#page-top .point_label_tbl_sp td.navy_area{
-	border:solid 3px #e3e3e3;
-}
-#page-top .point_label_tbl_sp td.green_area{
-	border:solid 3px #2d8cb4;
-}
-.margin1{
-	margin-left:1em;
-}
-.navy_txt{
-	color: #001E60;
-}
-.hokenkin_btn {
-	background-color:#EA5505;
-	color:#fff;
-	border-radius:5px;
-	max-width:300px;
-	margin:20px auto 0;
-	text-align: center;
-	font-size:15px;
-}
-.hokenkin_txt{
-	text-align:center;
-	margin-top:15px;
-	line-height:1.8;
-}
-.img_tate img {
-	margin:10px 5px 20px;
-}
-.orange_box {
-	border: none;
-	border-radius: 3px;
-	max-width: 724px;
-	color: #fff;
-	background-color: #2d8cb4;
-	font-weight: bold;
-	font-size: 16px;
-	margin-bottom: 10px;
-}
-#page-top .orange_border {
-	border: solid 3px #EA5505;
-}
-
-
-
-#page-top .large_title{
-	border:none;
-	max-width:724px;
-	color: #fff;
-	background-color: #1d2b54;
-	font-weight: bold;
-	font-size: 16px;
-	margin-bottom:15px;
-}
-#page-top .medium_title{
-	border:none;
-	max-width:724px;
-	color: #fff;
-	background-color: #2d8cb4;
-	font-weight: bold;
-	font-size: 16px;
-	margin-bottom:10px;
-}
-#page-top .small_title{
-	border:none;
-	max-width:724px;
-	color: #fff;
-	background-color: #e3e3e3;
-	font-weight: bold;
-	font-size: 16px;
-}
-#page-top .large_title p{
-	color:#fff;
-}
-
-
-.back_screen_1{
-	background-color: #ccd0d0;
-	margin: 0px 2.4%;
-	padding-bottom: 15px;
-	margin-bottom: 50px;
-}
-
-.back_screen_1 p{
-	font-size:15px;
-	line-height:1.8em;
-	margin-top:0.6em;
-}
-.back_screen_1 .title_mega
-{
-	font-size:16px;
-	line-height:1.5em;
-	margin-top:0px;
-}
-#page-top .cyan_area,
-#page-top .brown_area,
-#page-top .title_box.navy_area,
-#page-top .title_box.green_area{
-	margin:0px;
-	margin-bottom:10px;
-	line-height:1.5em;
-}
-
-.lv1{
-	background-color: #ccd0d0;
-	border:none;
-}
-.lv1_title{
-	font-size:16px;
-}
-.lv1_contents{
-	width: 95%;
-	margin:5px auto;
-}
-.lv2{
-	border: solid 3px #2d8cb4;
-	background-color:#ffffff;
-	color:#000000;
-	margin:0 auto;
-	font-size:15px;
-	line-height:1.8;
-}
-.lv2_title{
-	background-color: #2d8cb4;
-	color:#ffffff;
-	margin:0;
-	border: none;
-}
-.lv2_title p{
-	line-height:1.5;
-	font-weight: bold;
-	padding:0px 15px;
-	color:#ffffff;
-	font-size:16px;
-	line-height:1.5em;
-	margin-top:0px;
-
-}
-.lv2_contents{
-	margin: 10px 5px 0;
-	padding-bottom:15px;
-}
-.lv3{
-}
-.lv3_title{
-}
-.tokukan_mongon{
-	color: red;
-	text-align: center;
-}
-#contents_1 a.tokukan_link{
-	color: red;
-	text-decoration: underline;
-}
-
-@media (max-width:679px) {
-	.lv1_contents{
-		width:100%;
-		margin:5px 0;
-	}
-	.lv2{ margin:0 5px;}
-
-	.marg_set{
-		max-width:100%!important;
-		margin:auto 8px!important;
-	}
-	.back_screen_1{
-		margin: 0px 0px 30px 0px;
-		border-radius: 0px;
-		padding-bottom: 10px;
-	}
-	.back_screen_1 p{
-	}
-	.back_screen_1 .title_mega
-	{
-	}
-	#page-top .cyan_area,
-	#page-top .brown_area,
-	#page-top .title_box.navy_area,
-	#page-top .title_box.green_area{
-	}
-	#page-top .navy_area .point_label_blue{
-		border-radius:3px;
-	}
-	.tokukan_mongon{
-		text-align: left;
-	}
-	.pc_only{
-		display: none;
-	}
-}
-
-</style>
-
-<link rel="shortcut icon" type="image/x-icon" href="/pc/common/img/share/favicon/favicon.ico" />
-<link rel="canonical" href="https://www.au-sonpo.co.jp/pc/otoiawase/" />
-
-
-<script type="text/javascript">
-var win2
-function openwin2(pop,winname){
-	var avW = 700;
-	var avH = 650;
-	win2 = open(pop,'popup',"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,top=0,left=0,width=" + avW + ",height=" + avH + "");
-	win2.opener = self;
-	win2.focus();
-}
-var win3
-function openwin3(pop,winname){
-	var avW = 980;
-	var avH = 650;
-	win3 = open(pop,'popup',"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,top=0,left=0,width=" + avW + ",height=" + avH + "");
-	win3.opener = self;
-	win3.focus();
-}
-// 親ウインドウが閉じる際に子ウインドウも閉じる
-onunload = function() {
-	if(!win2) return false;
-	win2.close();
-}
-</script>
-
-<script type="text/javascript">
-
- var _gaq = _gaq || [];
- _gaq.push(['_setAccount', 'UA-32568740-1']);
- _gaq.push(['_trackPageview']);
-
- (function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
- })();
-
-</script>
-<script type="text/javascript" src="../common/popup/spjs/telNo.js"></script>
-
-<script src="../common_aute/js/cr_effectLog.js" type="text/javascript"></script>
-
-
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-32568740-1']);
-</script>
-
-<!-- Google Tag Analytics -->
-<script type="text/javascript">
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-</script>
-<!-- Google Tag Analytics -->
-
-</head>
-<body onload="javascript:sbSetCAMPCookie();javascript:loadRiyouQrcode();javascript:checkUserAgent();javascript:checkCookie();" id="cateogryItem" class="itemOversea"
->
-<!-- Google Tag Manager -->
-<noscript>
-<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WG9V33"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WG9V33');</script>
-<!-- End Google Tag Manager -->
-
-
-
-
-<div id="page-top">
-	<div id="contents_wrapper" style="margin-top:0;">
-		<div id="page_contents">
-	<!--[container_new]-->
-	<div class="lower_main_cont">
-		<div class="block_lower_main">
-			<div class="inner-block bread_wrap">
-				<ul class="bread_crumb" style="margin: 10px auto;width: 95%;">
-					<li><a href="../">au損保TOP</a></li>
-					<li>各種お問い合わせ</li>
-				</ul>
-			</div>
-			<div class="back_color">
-				<div id="page_layer_1" class="inner-block">
-
-
-					<div class="contents_md_wrap">
-
-						<div class="instance_title_1 title_mini title_a">
-							<div>
-								<p style="text-align:left;">事故のご連絡・保険金のご請求</p>
-							</div>
-						</div>
-						<p class="title_sub">※おケガをされた場合などのお問い合わせはこちらへ</p>
-						<div class="" style="padding:5px;">
-							<div class="col_area">
-								<div class="square_btn col3_pc col2_sp">
-									<a href="#contents_1" id="a_orange_1">
-										<div class="orange_inner orange_1 height_set">
-											<div class="height_set">
-												自転車向け保険<br>
-												ケガの保険<br>
-												国内旅行の保険<br>
-												ゴルフの保険
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="square_btn col3_pc col2_sp">
-									<a href="#contents_2">
-										<div class="orange_inner orange_2 height_set">
-											<div class="height_set">
-												海外旅行の保険
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="square_btn col3_pc col2_sp">
-									<a href="#contents_3">
-										<div class="orange_inner orange_3 height_set">
-											<div class="height_set">
-												ペットの保険
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="instance_title_1 title_mini title_c">
-							<div>
-								<p style="text-align:left;">お客さま向けサービス</p>
-							</div>
-						</div>
-						<div class="" style="padding:5px;">
-							<div class="col_area">
-								<div class="square_btn col3_pc col2_sp">
-									<a href="#contents_6">
-										<div class="green_inner green_1 height_set">
-											<div class="height_set">
-												自転車<br>ロードサービス
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="square_btn col3_pc col2_sp">
-									<a href="#contents_7">
-										<div class="green_inner green_2 height_set">
-											<div class="height_set">
-												かかりつけ<br>獣医師ダイヤル
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="instance_title_1 title_mini title_b">
-							<div>
-								<p style="text-align:left;">お問い合わせ</p>
-							</div>
-						</div>
-						<p class="title_sub">※保険金ご請求のお問い合わせは「事故のご連絡・保険金のご請求」へ</p>
-						<div class="" style="padding:5px;">
-							<div class="col_area">
-								<div class="square_btn col3_pc col2_sp">
-									<a href="#contents_4">
-										<div class="blue_inner blue_1 height_set">
-											<div class="height_set">
-												お問い合わせ
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="square_btn col3_pc col2_sp">
-									<a href="http://faq.au-sonpo.co.jp/">
-										<div class="blue_inner blue_2 height_set">
-											<div class="height_set">
-												よくあるご質問
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div><!--end contents_md_wrap-->
-
-
-					<div id="contents_1" class="contents_md_wrap contents_display">
-						<div class="instance_title_1 title_mini title_d">
-							<div>
-								<p style="text-align:left;">WEBからのご連絡・保険金請求</p>
-							</div>
-						</div>
-						<div class="" style="padding:5px;margin-top: 20px;">
-							<div class="col_area">
-								<div class="square_btn col7_pc col3_sp">
-									<img src="../common/spimg3/images_common/06_bycle_tate.png" alt="自転車向け保険 Bycle">
-								</div>
-								<div class="square_btn col7_pc col3_sp">
-									<img src="../common/spimg3/images_common/07_byclebest_tate.png" alt="自転車向け保険 Bycle Best">
-								</div>
-								<div class="square_btn col7_pc col3_sp">
-									<img src="../common/spimg3/images_common/12_bycle-s_tate.png" alt="自転車向け保険 Bycle S">
-								</div>
-								<div class="square_btn col7_pc col3_sp">
-									<img src="../common/spimg3/images_common/08_koutsu_tate.png" alt="ケガの保険 交通事故">
-								</div>
-								<div class="square_btn col7_pc col3_sp">
-									<img src="../common/spimg3/images_common/09_nitizyo_tate.png" alt="ケガの保険 日常の事故">
-								</div>
-								<div class="square_btn col7_pc col3_sp">
-									<img src="../common/spimg3/images_common/11_kokunai_tate.png" alt="国内旅行の保険">
-								</div>
-								<div class="square_btn col7_pc col3_sp">
-									<img src="../common/spimg3/images_common/04_golf_tate.png" alt="ゴルフの保険">
-								</div>
-							</div>
-						</div>
-						<div class="text_area">
-							<p class="tokukan_mongon">auスマートパスプレミアム会員向けの<br class="pc_only">「入院費サポート　プラス感染症」に関する保険金のご請求は、<br class="pc_only">「保険金請求手続きをされる方はこちら」、もしくは<br class="pc_only">お電話（下記「事故受付デスク」）から承っております。</p>
-						</div>
-						<div class="instance">
-							<div class="instance_inner_button_area">
-								<div class="instance_inner_part1" style="margin-bottom:10px;">
-									<a href="https://webjiko.au-sonpo.co.jp/request">
-									<div class="basic_button_1_3">
-										事故のご連絡はこちら
-									</div>
-									</a>
-								</div>
-								<div class="delta_arrow_up"></div>
-								<p class="orange_back" style="max-width:8.5em;margin:0 auto;text-align:center;">24時間365日受付</p>
-							</div>
-						</div>
-                        <div class="text_area">
-							<p class="tokukan_mongon">以下のボタンから保険金請求手続きが行えます。<br class="pc_only">医師の診断書や医療機関の領収書・診療明細書などの<br class="pc_only">いずれかを画像でご準備ください。</p>
-						</div>
-						<div class="text_area">
-							<p class="tokukan_mongon">
-								なお、新型コロナウイルス感染症の取扱いが2023年5月8日<br class="pc_only">より変更となりました。詳しくは以下のリンク先を参照ください。<br>
-								<a href="https://www.au-sonpo.co.jp/pc/oshirase/pdf/topics_20230419.pdf" target="_blank"  class="tokukan_link">「新型コロナウイルス感染症の感染症法上の位置づけ変更に<br class="pc_only">伴う取扱いについて」</a>
-							</p>
-						</div>
-						<div class="instance">
-							<div class="instance_inner_button_area">
-								<div class="instance_inner_part1" style="margin-bottom:10px;">
-									<a href="https://webjiko-self.au-sonpo.co.jp/cs/bims/efnol/" target="_blank">
-									<div class="basic_button_1_3">
-										保険金請求手続きをされる方はこちら
-									</div>
-									</a>
-								</div>
-								<div class="delta_arrow_up"></div>
-								<p class="orange_back" style="max-width:8.5em;margin:0 auto;text-align:center;">24時間365日受付</p>
-							</div>
-						</div>
-						<div class="instance_title_1 title_mini title_d">
-							<div>
-								<p style="text-align:left;">お電話からのご連絡（通話料無料）</p>
-							</div>
-						</div>
-						<div class="text_area">
-							<p class="title_big text_center" style="margin-top:20px;">事故受付デスク</p>
-							<p class="text_center" style="font-size:22px;font-weight:bold;margin-bottom:5px;">
-								<img style="max-height:33px; margin-right: 3px;" src="../common/img/fc.png" alt="フリーコール">
-								<span class="telNoText">
-									<font id="font_blue">
-										<u style="text-decoration:none;">0077-78-0365</u>
-									</font>
-								</span>
-								<a href="tel:0077-78-0365" class="telNoLink" style="color:#1288cc;">
-									<u style="color:#1288cc;">0077-78-0365</u>
-								</a>
-							</p>
-							<div class="delta_arrow_up"></div>
-							<p class="orange_back" style="max-width:8.5em;margin:0 auto;margin-bottom:30px;text-align:center;">24時間365日受付</p>
-							<p class="indent1">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
-							<p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
-						</div>
-					</div><!--end contents_md_wrap-->
-
-					<div id="contents_2" class="contents_md_wrap contents_display">
-						<div class="instance_title_1 title_mini title_d">
-							<div>
-								<p style="text-align:left;">WEBからのご連絡</p>
-							</div>
-						</div>
-						<div class="" style="padding:5px;margin-top:20px;margin-bottom:-40px;">
-							<div class="col_area">
-								<div class="square_btn col7_pc col3_sp" style="float:none;margin:0 auto;">
-									<img src="../common/spimg3/images_common/10_kaigai_tate.png" alt="海外旅行の保険">
-								</div>
-							</div>
-						<div class="instance">
-							<div class="instance_inner_button_area">
-								<div class="instance_inner_part1" style="margin-bottom:10px;">
-									<a href="https://webjiko.au-sonpo.co.jp/request">
-									<div class="basic_button_1_3">
-										WEB 事故受付はこちら
-									</div>
-									</a>
-								</div>
-								<div class="delta_arrow_up"></div>
-								<p class="orange_back" style="max-width:8.5em;margin:0 auto;text-align:center;">24時間365日受付</p>
-							</div>
-						</div>
-						</div>
-						<div class="instance_title_1 title_mini title_d">
-							<div>
-								<p style="text-align:left;">お電話からのご連絡（通話料無料）</p>
-							</div>
-						</div>
-						<div class="" style="padding:5px;margin-top:20px;margin-bottom:10px;">
-							<div class="col_area">
-								<p class="title_big text_center" style="margin-bottom:15px;">海外サポートデスク</p>
-							</div>
-						</div>
-						<div class="text_area">
-							<p class="title_big text_center" style="margin-bottom:15px;">日本国内からの事故のご連絡</p>
-							<p class="text_center" style="font-size:22px;font-weight:bold;margin-bottom:5px;">
-								<img style="max-height:33px; margin-right: 3px;" src="../common/img/fc.png" alt="フリーコール">
-								<span class="telNoText">
-									<font id="font_blue">
-										<u style="text-decoration:none;">0077-78-7365</u>
-									</font>
-								</span>
-								<a href="tel:0077-78-7365" class="telNoLink" style="color:#1288cc;">
-									<u style="color:#1288cc;">0077-78-7365</u>
-								</a>
-							</p>
-							<div class="delta_arrow_up"></div>
-							<p class="orange_back" style="max-width:8.5em;margin:0 auto;margin-bottom:30px;text-align:center;">24時間365日受付</p>
-							<p class="text_center" style="margin-top: 30px;">海外からの事故のご連絡は<a class="underline" onclick="openwin2('../common/popup/PU_C_19.html','myau');" style="cursor:pointer;">こちら</a></p>
-
-							<p class="indent1" style="margin-top: 30px;">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
-							<p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
-						</div>
-					</div><!--end contents_md_wrap-->
-
-					<div id="contents_3" class="contents_md_wrap contents_display">
-						<div class="instance_title_1 title_mini title_d">
-							<div>
-								<p style="text-align:left;">WEBからのご連絡</p>
-							</div>
-						</div>
-						<div class="" style="padding:5px;margin-top:20px;">
-							<div class="col_area">
-								<div class="square_btn col7_pc col3_sp" style="float:none;margin:0 auto;">
-									<img src="../common/spimg3/images_common/05_pet_tate.png" alt="ペットの保険">
-								</div>
-							</div>
-						</div>
-						<div class="instance">
-							<div class="instance_inner_button_area">
-								<div class="instance_inner_part1" style="margin-bottom:10px;">
-									<a href="https://webjiko.au-sonpo.co.jp/request/input2/">
-									<div class="basic_button_1_3">
-										WEB 保険金のご請求はこちら
-									</div>
-									</a>
-								</div>
-								<div class="delta_arrow_up"></div>
-								<p class="orange_back" style="max-width:8.5em;margin:0 auto;text-align:center;">24時間365日受付</p>
-							</div>
-						</div>
-						<div class="instance_title_1 title_mini title_d">
-							<div>
-								<p style="text-align:left;">アニポスアプリの利用による直接請求</p>
-							</div>
-						</div>
-						<div class="" style="padding:5px;margin-top:20px;">
-							<div class="col_area">
-								<div class="square_btn col7_pc col3_sp" style="float:none;margin:0 auto;">
-									<img src="../common/spimg3/images_common/13_anipos_tate.png" alt="アニポス">
-								</div>
-							</div>
-						</div>
-						<div class="instance">
-							<div class="instance_inner_button_area">
-								<div class="instance_inner_part1" style="margin-bottom:5px;">
-									<a href="https://guides.anipos.co.jp/au-sonpo" target="_blank">
-									<div class="basic_button_1_3">アニポス利用ガイドはこちら</div>
-									</a>
-								</div>
-								<p style="font-size:12px;">（外部サイトにリンクします）</p>
-								<div class="delta_arrow_up"></div>
-								<p class="orange_back" style="max-width:8.5em;margin:0 auto;text-align:center;">24時間365日受付</p>
-							</div>
-						</div>
-						<div class="instance_title_1 title_mini title_d">
-							<div>
-								<p style="text-align:left;">お電話からのご連絡（通話料無料）</p>
-							</div>
-						</div>
-						<div class="text_area">
-							<p class="title_big text_center" style="margin-top:20px;">ペットの保険　カスタマーセンター</p>
-							<p class="text_center" style="font-size:22px;font-weight:bold;margin-bottom:5px;">
-								<img style="max-height:33px; margin-right: 3px;" src="../common/img/fc.png" alt="フリーコール">
-								<span class="telNoText">
-									<font id="font_blue">
-										<u style="text-decoration:none;">0800-700-1122</u>
-									</font>
-								</span>
-								<a href="tel:0800-700-1122" class="telNoLink" style="color:#1288cc;">
-									<u style="color:#1288cc;">0800-700-1122</u>
-								</a>
-							</p>
-							<div class="delta_arrow_up"></div>
-							<p class="orange_back" style="max-width:11em;margin:0 auto;margin-bottom:30px;text-align:center;">受付時間：9:00-18:00<br>（年末年始を除きます）</p>
-							<p class="indent1">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
-							<p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
-						</div>
-					</div><!--end contents_md_wrap-->
-
-
-					<div id="contents_4" class="contents_md_wrap contents_display">
-						<div id="contents_5" class="instance_title_1 title_mini title_d" style="margin-bottom:10px;">
-							<div>
-								<p style="text-align:left;">よくあるご質問</p>
-							</div>
-						</div>
-						<div class="text_area" style="margin-top: 20px;">
-							<p class="text_center">お申込みやログインの方法・補償内容・証券発行等についてご紹介します</p>
-						</div>
-						<div class="instance">
-							<div class="instance_inner_button_area">
-								<div class="instance_inner_part1" style="margin-bottom:30px;">
-									<a href="http://faq.au-sonpo.co.jp/">
-									<div class="basic_button_1_3">
-										よくあるご質問はこちら
-									</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="instance_title_1 title_mini title_d" style="margin-bottom:10px;">
-							<div>
-								<p style="text-align:left;">メールでのお問い合わせ</p>
-							</div>
-						</div>
-						<div class="text_area" style="margin-top: 20px;">
-							<p class="text_center">メールで24時間お問い合わせいただけます<br>(ご回答は翌営業日以降となる場合がございます)</p>
-						</div>
-						<div class="instance">
-							<div class="instance_inner_button_area">
-								<div class="instance_inner_part1" style="margin-bottom:30px;">
-									<a class="underline" href="JavaScript:void(0);" onclick="openwin3('https://www.au-sonpo.co.jp/pca/popup_mbp161.html','myau');">
-										<div class="basic_button_1_3">
-											メールでのお問い合わせはこちら
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="instance_title_1 title_mini title_d">
-							<div>
-								<p style="text-align:left;">お電話でのお問い合わせ（通話料無料）</p>
-							</div>
-						</div>
-						<div class="text_area">
-							<div style="margin-bottom:30px;">
-								<p class="title_big text_center" style="margin-top:20px;">カスタマーセンター</p>
-								<p class="text_center" style="font-size:22px;font-weight:bold;margin-bottom:5px;">
-									<img style="max-height:33px; margin-right: 3px;" src="../common/img/fc.png" alt="フリーコール">
-									<span class="telNoText">
-										<font id="font_blue">
-											<u style="text-decoration:none;">0800-700-0600</u>
-										</font>
-									</span>
-									<a href="tel:0800-700-0600" class="telNoLink" style="color:#1288cc;">
-										<u style="color:#1288cc;">0800-700-0600</u>
-									</a>
-								</p>
-								<div class="delta_arrow_up"></div>
-								<p class="orange_back" style="max-width:11em;margin:0 auto;margin-bottom:15px;text-align:center;">受付時間：9:00-18:00<br>（年末年始を除きます）</p>
-							</div>
-
-							<div style="margin-bottom:30px;">
-								<p class="title_big text_center" style="margin-top:20px;">ペットの保険　カスタマーセンター</p>
-								<p class="text_center" style="font-size:22px;font-weight:bold;margin-bottom:5px;">
-									<img style="max-height:33px; margin-right: 3px;" src="../common/img/fc.png" alt="フリーコール">
-									<span class="telNoText">
-										<font id="font_blue">
-											<u style="text-decoration:none;">0800-700-1122</u>
-										</font>
-									</span>
-									<a href="tel:0800-700-1122" class="telNoLink" style="color:#1288cc;">
-										<u style="color:#1288cc;">0800-700-1122</u>
-									</a>
-								</p>
-								<div class="delta_arrow_up"></div>
-								<p class="orange_back" style="max-width:11em;margin:0 auto;margin-bottom:15px;text-align:center;">受付時間：9:00-18:00<br>（年末年始を除きます）</p>
-							</div>
-
-							<p class="indent1">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
-							<p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
-						</div>
-					</div><!--end contents_md_wrap-->
-
-
-
-					<div id="contents_6" class="contents_md_wrap contents_display">
-						<div class="instance_title_1 title_mini title_d">
-							<div>
-								<p style="text-align:left;">自転車ロードサービスデスク（通話料無料）</p>
-							</div>
-						</div>
-						<div class="" style="padding:5px;">
-							<div class="col_area">
-								<div class="square_btn col7_pc col3_sp" style="float:none;margin:0 auto;">
-									<img src="../common/img/bycle/roadservice_icon.png" alt="ロードサービス">
-								</div>
-							</div>
-						</div>
-						<div class="text_area">
-							<p class="text_center" style="font-size:22px;font-weight:bold;margin-bottom:5px;">
-								<img style="max-height:33px; margin-right: 3px;" src="../common/img/fc.png" alt="フリーコール">
-								<span class="telNoText">
-									<font id="font_blue">
-										<u style="text-decoration:none;">0077-78-8365</u>
-									</font>
-								</span>
-								<a href="tel:0077-78-8365" class="telNoLink" style="color:#1288cc;">
-									<u style="color:#1288cc;">0077-78-8365</u>
-								</a>
-							</p>
-							<div class="delta_arrow_up"></div>
-							<p class="orange_back" style="max-width:8.5em;margin:0 auto;margin-bottom:30px;text-align:center;">24時間365日受付</p>
-
-							<p class="indent1" style="margin-top: 30px;">●ロードサービスが付帯されている商品にご契約いただいているお客さまに限ります。</p>
-							<p class="indent1">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
-							<p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
-                            <p class="indent1">●ロードサービスカーには原則として人は同乗できません。</p>
-							<p class="text_center" style="margin-top: 30px;">ロードサービス詳細は<a class="txt_orange underline" href="JavaScript:void(0);" onclick="openwin3('../hosyo_naiyo/standard/S_2_H_20.html','myau');">こちら</a></p>
-						</div>
-					</div><!--end contents_md_wrap-->
-
-					<div id="contents_7" class="contents_md_wrap contents_display">
-						<div class="instance_title_1 title_mini title_d">
-							<div>
-								<p style="text-align:left;">かかりつけ獣医師ダイヤル（利用料無料）</p>
-							</div>
-						</div>
-						<div class="" style="padding:5px;">
-							<div class="col_area">
-								<div class="square_btn col7_pc col3_sp" style="float:none;margin:0 auto;">
-									<img src="../common/spimg3/images_common/05_pet_tate.png" alt="ペットの保険">
-								</div>
-							</div>
-						</div>
-						<div class="text_area">
-							<p class="text_center" style="font-size:22px;font-weight:bold;margin-bottom:5px;">
-								<span class="telNoText">
-									<font id="font_blue">
-										<u style="text-decoration:none;">050-2018-1919</u>
-									</font>
-								</span>
-								<a href="tel:050-2018-1919" class="telNoLink" style="color:#1288cc;">
-									<u style="color:#1288cc;">050-2018-1919</u>
-								</a>
-							</p>
-							<div class="delta_arrow_up"></div>
-							<p class="orange_back" style="max-width:8.5em;margin:0 auto;margin-bottom:10px;text-align:center;">24時間365日受付</p>
-							<p class="indent1 text_center">●通話料はお客さま負担です</p>
-
-							<p class="indent1" style="margin-top: 40px;">●ご契約時にご登録いただいたお電話番号から、発信番号を通知する設定でお電話ください。</p>
-							<p class="indent1">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
-							<p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
-							<p class="text_center" style="margin-top: 30px;">ご利用規約・注意事項は<a class="txt_orange underline" href="JavaScript:void(0);" onclick="openwin2('../common/popup/PU_P_5.html','myau');">こちら</a></p>
-						</div>
-					</div><!--end contents_md_wrap-->
-
-
-
-
-					<div class="lv1 flowchart contents_display" style="padding-bottom:15px;margin-bottom:30px;">
-						<div id="accident_flow" class="lv1_title title_box cyan_area large_title" style="max-width:100%;"><p class="title_mega" style="color:#fff;">事故連絡の流れ</p></div>
-						<div class="lv1_contents accident_contact">
-							<div class="lv2 accordionBlock" style="text-align:left;">
-								<div class="lv2_title switch other_txt title_box" style="cursor:pointer;">
-									<p class="title_mega" style="text-align:left;"><span class="triangle">▼</span>&nbsp;交通事故の場合</p>
-								</div>
-								<div class="lv2_contents accordionArea" style="display:none;">
-									<ul>
-										<li style="font-weight:bold">1.&nbsp;まずケガの確認をしてください</li>
-										<li class="margin1">あなたと同乗者、そして相手の方の救護がなにより優先です。</li>
-										<li>　　↓</li>
-										<li style="font-weight:bold">2.&nbsp;二次災害を防いでください</li>
-										<li class="margin1">車を路肩に寄せる、三角停止版を置く等、周りに事故があったことを知らせてください。</li>
-										<li>　　↓</li>
-										<li style="font-weight:bold">3.&nbsp;警察に連絡をしてください</li>
-										<li class="margin1">どんなに小さな事故でも必ず警察に届けてください。また、当事者間同士の約束事は禁物です。</li>
-										<li>　　↓</li>
-										<li style="font-weight:bold">4.&nbsp;目撃者を確保してください</li>
-										<li class="margin1">目撃者の証言は後ほどの交渉において非常に重要となる場合があります。</li>
-										<li>　　↓</li>
-										<li style="font-weight:bold">5.&nbsp;事故状況をメモしてください</li>
-										<li class="margin1">走行スピード、信号状況、一時停止など、後ほどの交渉において非常に重要な部分です。</li>
-										<li>　　↓</li>
-										<li style="font-weight:bold">6.&nbsp;au損保に連絡してください</li>
-										<li class="margin1">24時間365日受付しています。</li>
-										<li class="margin1">専任担当者による事故対応や、保険金お支払いのお手続きは平日9:00～17：00です。（年末年始を除く）</li>
-									</ul>
-								</div>
-							</div>
-							<div class="lv2 accordionBlock" style="text-align:left;margin-top:10px;">
-								<div class="lv2_title switch other_txt title_box" style="cursor:pointer;">
-									<p class="title_mega" style="text-align:left;"><span class="triangle">▼</span>&nbsp;その他の事故の場合</p>
-								</div>
-								<div class="lv2_contents accordionArea" style="display:none;">
-									<ul>
-										<li style="font-weight:bold">1.&nbsp;まずケガや被害物を確認してください</li>
-										<li class="margin1">ケガの治療がなにより優先です。被害物については損害の程度を確認してください。</li>
-										<li>　　↓</li>
-										<li style="font-weight:bold">2.&nbsp;事故状況をメモしてください</li>
-										<li class="margin1">発生に至るまでの様子や原因、日時・場所などをメモしてください。</li>
-										<li>　　↓</li>
-										<li style="font-weight:bold">3.&nbsp;au損保に連絡してください</li>
-										<li class="margin1">24時間365日受付しています。</li>
-										<li class="margin1">専任担当者による事故対応や保険金お支払いのお手続きは平日9:00～17：00です。（年末年始を除く）</li>
-									</ul>
-								</div>
-							</div>
-							<div class="lv2 accordionBlock" style="text-align:left;margin-top:10px;">
-								<div class="lv2_title switch other_txt title_box" style="cursor:pointer;">
-									<p class="title_mega" style="text-align:left;"><span class="triangle">▼</span>&nbsp;保険金のお受取りまで</p>
-								</div>
-								<div class="lv2_contents accordionArea" style="display:none;">
-									<div id="hoken_uketori">
-										<div class="tx_area">
-											<p>事故のご連絡をいただいてから、保険金のお受取りまでの傷害保険金の一般的な流れです。<br>万一の事故により保険金をご請求される時のご参考としてください。
-											<br />
-											<br />
-											「ペットの保険」の保険金のお受取りについては、au損保トップページ&nbsp;&rarr;&nbsp;ペットの保険&nbsp;&rarr;&nbsp;保険金請求について&nbsp;をご確認ください。
-											<br /><br /></p>
-											<p style="text-align:center;border:1px solid #E95504;padding:0.5em;">事故のご連絡からお受取りまでの流れ</p>
-											<div class="accident center">
-												<img src="../common/popup/spimg/A-3-3_01.gif" alt="事故発生" />
-											</div>
-											<table class="tbl_customer">
-												<tr>
-													<th class="okyaku">お客さま</th>
-													<td>●事故のご連絡</td>
-												</tr>
-											</table>
-
-											<div class="arrow center">
-												<img src="../common/popup/spimg/A-3-3_02_down.gif" alt="" />
-											</div>
-
-											<table class="tbl_au">
-												<tr>
-													<th class="ausonpo">au損保</th>
-													<td>
-														<ul class="ate_00">
-															<li>
-																<h4 class="indent1">●事故の受付、契約内容等の確認</h4>
-															</li>
-															<li>
-																<p>●お受取りまでの手順のご案内</p>
-															</li>
-															<li>
-																<p class="last">●必要書類のご案内<br>
-																弊社から、事故の状況などの確認をさせていただいたうえで、お客さまにとって当面必要となる対応に関するアドバイスを行います。<br>また、ご心配な点がありましたら、ご遠慮なくご相談ください </p>
-															</li>
-														</ul>
-													</td>
-												</tr>
-											</table>
-
-											<div class="arrow center">
-												<img src="../common/popup/spimg/A-3-3_02_down.gif" alt="" />
-											</div>
-
-											<table class="tbl_customer">
-												<tr>
-													<th class="okyaku">お客さま</th>
-													<td>
-														<ul class="ate_0a">
-															<li>
-																<p>●調査へのご協力<br>事故状況や損害の状況、治療の経過などを確認させていただきますのでご協力ください</p>
-															</li>
-															<li>
-																<p class="last">●必要書類の取り揃え・送付<br>損害調査の結果によっては、新たな書類やご説明をお願いすることもございますので、ご協力ください </p>
-															</li>
-														</ul>
-													</td>
-												</tr>
-											</table>
-
-											<div class="arrow center">
-												<img src="../common/popup/spimg/A-3-3_02_down.gif" alt="" />
-											</div>
-
-											<table class="tbl_au">
-												<tr>
-													<th class="ausonpo">au損保</th>
-													<td>
-														<ul class="ate_00">
-															<li>
-																<p>●事故状況の確認・調査・治療状況の確認</p>
-															</li>
-															<li>
-																<p>●支払保険金の算出</p>
-															</li>
-															<li>
-																<p class="last">●支払保険金のご説明</p>
-															</li>
-														</ul>
-													</td>
-												</tr>
-											</table>
-
-											<div class="arrow center">
-												<img src="../common/popup/spimg/A-3-3_02_down.gif" alt="" />
-											</div>
-
-											<table class="tbl_customer">
-												<tr>
-													<th class="okyaku">お客さま</th>
-													<td>
-														<ul class="ate_0a">
-															<li>
-															<p class="last">●ご確認<br>弊社にて、お客さまの保険金のご請求意思を確認させていただき、ご指定の口座に保険金をお支払いいたします </p>
-															</li>
-														</ul>
-													</td>
-												</tr>
-											</table>
-
-											<div class="arrow center">
-												<img src="../common/popup/spimg/A-3-3_03_down.gif" alt="" />
-											</div>
-
-											<table class="tbl_customer">
-												<tr>
-													<th class="okyaku">お客さま</th>
-													<td class="receives" style="color:#ff0000;"><span style="color:#464646;">●</span>保険金のお受取り</td>
-												</tr>
-											</table>
-										</div>
-									</div>
-									<div id="hoken_oshiharai">
-										<p class="title_navy" style="color:#001E60;font-weight:bold;">保険金のお支払いにあたり、ご理解・ご協力いただきたいこと</p>
-										<div class="tx_area">
-											<h4 class="first">(1)事故状況とご契約内容のご確認</h4>
-											<p>担当者からあらためてメール、お電話にてお客さまにご連絡させていただきます。<br>
-											事故状況の再確認、保険金のお支払いまでの流れ、ご契約内容に基づきお支払いする保険金、保険金請求にあたり必要になる書類について、ご説明させていただきます。</p>
-
-											<hr />
-
-											<h4 class="indent1_sp">(2)お支払いできる保険金・費用保険金のご確認</h4>
-											<ul>
-												<li>●お支払いできる保険金について<br />
-													保険金の種類やご契約の内容等によって、損害に対する保険金(損害保険金)のほか、特約によりお支払いする保険金、費用保険金等があります。詳細につきましては、約款等をご参照ください。
-												</li>
-												<li>●保険金をお支払いできない場合のご説明について<br />
-													事故の内容によっては、保険金をお支払いできない場合があります。このような場合には、弊社からその理由についてあらためてご説明させていただきます。
-												</li>
-											</ul>
-
-											<hr />
-
-											<h4>(3)調査等に対するご協力のお願い</h4>
-											<p>適切な保険金のお支払いのために、弊社が事故の状況や損害の状況、治療の経過、保険金のお支払い対象となる事故かどうかの確認等、各種の損害調査を行いますので、ご協力くださいますようお願い申し上げます。具体的には</p>
-											<ul class="ate_0a">
-												<li>
-													<p>●携行品等に損害が発生した場合、損害状況確認のための、修理見積書・写真等のお手配</p>
-												</li>
-												<li>
-													<p>●おケガの場合、その程度や治療内容確認のための診断書等のお手配
-													等をお願いすることがございますので、その際はご協力をお願い申し上げます。なお、上記お手配にかかる費用、書類取付料は保険金ご請求者様のご負担になりますので、予めご了承ください。また、保険金請求書や診断書を拝見し、事故の状況やおケガの状態などを病院等へ照会することが必要と判断した場合には、その照会のために必要な同意書(注)をお客さまにお送りさせていただきます。その他、上記以外の書類のご提出をお願いすることがあります。</p>
-												</li>
-											</ul>
-											<ul class="ate_0a2">
-												<li style="margin-left:2em; text-indent: -2em;">
-													<p>(注)同意書とは:保険事故の発生や、保険金のお支払い・お支払額等を、弊社が公の機関・病院等に確認を行う際、お客さまに同意していただくための書式です。同意書が必要となる場合、別途弊社よりご案内します。</p>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-                    <div style="margin: 0 8px;">
-                        <p style="font-size:1.166666em; font-weight:bold;"><a href="../common/pdf/info_20230517.pdf" target="_blank" style="text-decoration: underline;">お身体の不自由なお客さまへ</a></p>
-                        <p style="margin-left:1em;">当社では、お身体が不自由なお客さま向けに各種窓口をご用意しています。</p>
+      }
+    </script>
+    <!--CSS スマホ用（JSで読み込み・初期値はNULL）　-->
+    <link id="sp_css_1" type="text/css" href="" rel="stylesheet" />
+    <link id="sp_css_2" type="text/css" href="" rel="stylesheet" />
+    <link id="sp_css_3" type="text/css" href="" rel="stylesheet" />
+    <link id="sp_css_4" type="text/css" href="" rel="stylesheet" />
+    <link id="sp_css_5" type="text/css" href="" rel="stylesheet" />
+    <link id="sp_css_6" type="text/css" href="" rel="stylesheet" />
+
+    <style type="text/css">
+      #page-top .cyan_area {
+        background: #6783d0;
+        border: none;
+        max-width: 724px;
+      }
+      #page-top .cyan_area p {
+        color: #fff;
+      }
+
+      #page-top .orange_area {
+        background: #ec5601;
+        border: none;
+        max-width: 724px;
+        border-radius: 10px;
+      }
+      #page-top .orange_area p {
+        color: #fff;
+      }
+
+      #page-top .point_label_tbl {
+        border-spacing: 17px 5px;
+      }
+      #page-top .point_label_blue {
+        background-color: #2d8cb4;
+      }
+      #page-top .navy_area .point_label_blue {
+        background-color: #445271;
+      }
+      #page-top .green_area .point_label_blue {
+        background-color: #2d8cb4;
+      }
+      #page-top .point_label_tbl td.navy_area {
+        border: solid 3px #e3e3e3;
+      }
+      #page-top .point_label_tbl td.green_area {
+        border: solid 3px #2d8cb4;
+      }
+      #page-top .point_label_tbl td {
+        border: solid 3px #2d8cb4;
+        height: 400px;
+        vertical-align: top;
+      }
+
+      .block_lower_narrow_space.block_mitumori {
+        margin-top: 5px;
+        width: 93%;
+      }
+      .block_mitumori_inner {
+        margin: 0 auto;
+        padding: 5px;
+        max-width: 270px;
+      }
+
+      .block_mitumori_inner dl {
+        margin-bottom: 10px;
+      }
+      .block_mitumori_inner dt {
+        text-indent: -1em;
+        margin-left: 2em;
+        color: #333;
+      }
+      .block_mitumori_inner dd {
+        text-indent: -1em;
+        margin-left: 3em;
+        color: #333;
+      }
+      .txt_black {
+        color: #333;
+      }
+      .orange_pie {
+        background-color: #ea5505;
+        font-weight: bold;
+        color: #fff;
+        padding: 2px 15px;
+        display: inline-block;
+      }
+      .pet_indent2 {
+        text-align: center;
+        margin-top: 5px;
+      }
+      .pet_indent2 > div {
+        display: inline-block;
+      }
+      .pink_txt {
+        color: #e47373;
+        text-align: left;
+      }
+      .pink_pie {
+        background-color: #e47373;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 20px;
+        padding: 2px 15px;
+      }
+      .orange_txt {
+        color: #ea5505;
+      }
+      .indent1 {
+        margin-left: 1em;
+        text-align: -1em;
+      }
+      #page-top .point_label_tbl_sp td {
+        border: solid 3px #2d8cb4;
+      }
+      #page-top .navy_area .point_label_blue {
+        background-color: #e3e3e3;
+      }
+      #page-top .point_label_tbl_sp td.navy_area {
+        border: solid 3px #e3e3e3;
+      }
+      #page-top .point_label_tbl_sp td.green_area {
+        border: solid 3px #2d8cb4;
+      }
+      .margin1 {
+        margin-left: 1em;
+      }
+      .navy_txt {
+        color: #001e60;
+      }
+      .hokenkin_btn {
+        background-color: #ea5505;
+        color: #fff;
+        border-radius: 5px;
+        max-width: 300px;
+        margin: 20px auto 0;
+        text-align: center;
+        font-size: 15px;
+      }
+      .hokenkin_txt {
+        text-align: center;
+        margin-top: 15px;
+        line-height: 1.8;
+      }
+      .img_tate img {
+        margin: 10px 5px 20px;
+      }
+      .orange_box {
+        border: none;
+        border-radius: 3px;
+        max-width: 724px;
+        color: #fff;
+        background-color: #2d8cb4;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      #page-top .orange_border {
+        border: solid 3px #ea5505;
+      }
+
+      #page-top .large_title {
+        border: none;
+        max-width: 724px;
+        color: #fff;
+        background-color: #1d2b54;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      #page-top .medium_title {
+        border: none;
+        max-width: 724px;
+        color: #fff;
+        background-color: #2d8cb4;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      #page-top .small_title {
+        border: none;
+        max-width: 724px;
+        color: #fff;
+        background-color: #e3e3e3;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      #page-top .large_title p {
+        color: #fff;
+      }
+
+      .back_screen_1 {
+        background-color: #ccd0d0;
+        margin: 0px 2.4%;
+        padding-bottom: 15px;
+        margin-bottom: 50px;
+      }
+
+      .back_screen_1 p {
+        font-size: 15px;
+        line-height: 1.8em;
+        margin-top: 0.6em;
+      }
+      .back_screen_1 .title_mega {
+        font-size: 16px;
+        line-height: 1.5em;
+        margin-top: 0px;
+      }
+      #page-top .cyan_area,
+      #page-top .brown_area,
+      #page-top .title_box.navy_area,
+      #page-top .title_box.green_area {
+        margin: 0px;
+        margin-bottom: 10px;
+        line-height: 1.5em;
+      }
+
+      .lv1 {
+        background-color: #ccd0d0;
+        border: none;
+      }
+      .lv1_title {
+        font-size: 16px;
+      }
+      .lv1_contents {
+        width: 95%;
+        margin: 5px auto;
+      }
+      .lv2 {
+        border: solid 3px #2d8cb4;
+        background-color: #ffffff;
+        color: #000000;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 1.8;
+      }
+      .lv2_title {
+        background-color: #2d8cb4;
+        color: #ffffff;
+        margin: 0;
+        border: none;
+      }
+      .lv2_title p {
+        line-height: 1.5;
+        font-weight: bold;
+        padding: 0px 15px;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.5em;
+        margin-top: 0px;
+      }
+      .lv2_contents {
+        margin: 10px 5px 0;
+        padding-bottom: 15px;
+      }
+      .lv3 {
+      }
+      .lv3_title {
+      }
+      .tokukan_mongon {
+        color: red;
+        text-align: center;
+      }
+      #contents_1 a.tokukan_link {
+        color: red;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 679px) {
+        .lv1_contents {
+          width: 100%;
+          margin: 5px 0;
+        }
+        .lv2 {
+          margin: 0 5px;
+        }
+
+        .marg_set {
+          max-width: 100% !important;
+          margin: auto 8px !important;
+        }
+        .back_screen_1 {
+          margin: 0px 0px 30px 0px;
+          border-radius: 0px;
+          padding-bottom: 10px;
+        }
+        .back_screen_1 p {
+        }
+        .back_screen_1 .title_mega {
+        }
+        #page-top .cyan_area,
+        #page-top .brown_area,
+        #page-top .title_box.navy_area,
+        #page-top .title_box.green_area {
+        }
+        #page-top .navy_area .point_label_blue {
+          border-radius: 3px;
+        }
+        .tokukan_mongon {
+          text-align: left;
+        }
+        .pc_only {
+          display: none;
+        }
+      }
+    </style>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/pc/common/img/share/favicon/favicon.ico" />
+    <link rel="canonical" href="https://www.au-sonpo.co.jp/pc/otoiawase/" />
+
+    <script type="text/javascript">
+      var win2;
+      function openwin2(pop, winname) {
+        var avW = 700;
+        var avH = 650;
+        win2 = open(pop, "popup", "toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,top=0,left=0,width=" + avW + ",height=" + avH + "");
+        win2.opener = self;
+        win2.focus();
+      }
+      var win3;
+      function openwin3(pop, winname) {
+        var avW = 980;
+        var avH = 650;
+        win3 = open(pop, "popup", "toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,top=0,left=0,width=" + avW + ",height=" + avH + "");
+        win3.opener = self;
+        win3.focus();
+      }
+      // 親ウインドウが閉じる際に子ウインドウも閉じる
+      onunload = function () {
+        if (!win2) return false;
+        win2.close();
+      };
+    </script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-32568740-1"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script type="text/javascript" src="../common/popup/spjs/telNo.js"></script>
+
+    <script src="../common_aute/js/cr_effectLog.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-32568740-1"]);
+    </script>
+
+    <!-- Google Tag Analytics -->
+    <script type="text/javascript">
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!-- Google Tag Analytics -->
+  </head>
+  <body onload="javascript:sbSetCAMPCookie();javascript:loadRiyouQrcode();javascript:checkUserAgent();javascript:checkCookie();" id="cateogryItem" class="itemOversea">
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WG9V33" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WG9V33");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <div id="page-top">
+      <div id="header_new_wrapper" style="">
+        <div id="header_new_wrap">
+          <div id="header_new2" class="pc_display">
+            <div class="head_logo" style="width: 980px; margin: 0 auto; padding: 0 24px">
+              <a href="/pc/" class="trans"><img src="/pc/common/img/share/au_logo.png" alt="au損保｜au損害保険公式サイト" class="au_logo" /></a>
+            </div>
+            <div style="clear: both"></div>
+          </div>
+        </div>
+      </div>
+      <div id="contents_wrapper" style="margin-top: 0">
+        <div id="page_contents">
+          <!--[container_new]-->
+          <div class="lower_main_cont">
+            <div class="block_lower_main">
+              <div class="inner-block bread_wrap">
+                <ul class="bread_crumb" style="margin: 10px auto; width: 95%">
+                  <li><a href="../">au損保TOP</a></li>
+                  <li>各種お問い合わせ</li>
+                </ul>
+              </div>
+              <div class="back_color">
+                <div id="page_layer_1" class="inner-block">
+                  <div class="contents_md_wrap">
+                    <div class="instance_title_1 title_mini title_a">
+                      <div>
+                        <p style="text-align: left">事故のご連絡・保険金のご請求</p>
+                      </div>
                     </div>
+                    <p class="title_sub">※おケガをされた場合などのお問い合わせはこちらへ</p>
+                    <div class="" style="padding: 5px">
+                      <div class="col_area">
+                        <div class="square_btn col3_pc col2_sp">
+                          <a href="#contents_1" id="a_orange_1">
+                            <div class="orange_inner orange_1 height_set">
+                              <div class="height_set">
+                                自転車向け保険<br />
+                                ケガの保険<br />
+                                国内旅行の保険<br />
+                                ゴルフの保険
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="square_btn col3_pc col2_sp">
+                          <a href="#contents_2">
+                            <div class="orange_inner orange_2 height_set">
+                              <div class="height_set">海外旅行の保険</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="square_btn col3_pc col2_sp">
+                          <a href="#contents_3">
+                            <div class="orange_inner orange_3 height_set">
+                              <div class="height_set">ペットの保険</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instance_title_1 title_mini title_c">
+                      <div>
+                        <p style="text-align: left">お客さま向けサービス</p>
+                      </div>
+                    </div>
+                    <div class="" style="padding: 5px">
+                      <div class="col_area">
+                        <div class="square_btn col3_pc col2_sp">
+                          <a href="#contents_6">
+                            <div class="green_inner green_1 height_set">
+                              <div class="height_set">自転車<br />ロードサービス</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="square_btn col3_pc col2_sp">
+                          <a href="#contents_7">
+                            <div class="green_inner green_2 height_set">
+                              <div class="height_set">かかりつけ<br />獣医師ダイヤル</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instance_title_1 title_mini title_b">
+                      <div>
+                        <p style="text-align: left">お問い合わせ</p>
+                      </div>
+                    </div>
+                    <p class="title_sub">※保険金ご請求のお問い合わせは「事故のご連絡・保険金のご請求」へ</p>
+                    <div class="" style="padding: 5px">
+                      <div class="col_area">
+                        <div class="square_btn col3_pc col2_sp">
+                          <a href="#contents_4">
+                            <div class="blue_inner blue_1 height_set">
+                              <div class="height_set">お問い合わせ</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="square_btn col3_pc col2_sp">
+                          <a href="http://faq.au-sonpo.co.jp/">
+                            <div class="blue_inner blue_2 height_set">
+                              <div class="height_set">よくあるご質問</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end contents_md_wrap-->
 
+                  <div id="contents_1" class="contents_md_wrap contents_display">
+                    <div class="instance_title_1 title_mini title_d">
+                      <div>
+                        <p style="text-align: left">WEBからのご連絡・保険金請求</p>
+                      </div>
+                    </div>
+                    <div class="" style="padding: 5px; margin-top: 20px">
+                      <div class="col_area">
+                        <div class="square_btn col7_pc col3_sp">
+                          <img src="../common/spimg3/images_common/06_bycle_tate.png" alt="自転車向け保険 Bycle" />
+                        </div>
+                        <div class="square_btn col7_pc col3_sp">
+                          <img src="../common/spimg3/images_common/07_byclebest_tate.png" alt="自転車向け保険 Bycle Best" />
+                        </div>
+                        <div class="square_btn col7_pc col3_sp">
+                          <img src="../common/spimg3/images_common/12_bycle-s_tate.png" alt="自転車向け保険 Bycle S" />
+                        </div>
+                        <div class="square_btn col7_pc col3_sp">
+                          <img src="../common/spimg3/images_common/08_koutsu_tate.png" alt="ケガの保険 交通事故" />
+                        </div>
+                        <div class="square_btn col7_pc col3_sp">
+                          <img src="../common/spimg3/images_common/09_nitizyo_tate.png" alt="ケガの保険 日常の事故" />
+                        </div>
+                        <div class="square_btn col7_pc col3_sp">
+                          <img src="../common/spimg3/images_common/11_kokunai_tate.png" alt="国内旅行の保険" />
+                        </div>
+                        <div class="square_btn col7_pc col3_sp">
+                          <img src="../common/spimg3/images_common/04_golf_tate.png" alt="ゴルフの保険" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text_area">
+                      <p class="tokukan_mongon">auスマートパスプレミアム会員向けの<br class="pc_only" />「入院費サポート　プラス感染症」に関する保険金のご請求は、<br class="pc_only" />「保険金請求手続きをされる方はこちら」、もしくは<br class="pc_only" />お電話（下記「事故受付デスク」）から承っております。</p>
+                    </div>
+                    <div class="instance">
+                      <div class="instance_inner_button_area">
+                        <div class="instance_inner_part1" style="margin-bottom: 10px">
+                          <a href="https://webjiko.au-sonpo.co.jp/request">
+                            <div class="basic_button_1_3">事故のご連絡はこちら</div>
+                          </a>
+                        </div>
+                        <div class="delta_arrow_up"></div>
+                        <p class="orange_back" style="max-width: 8.5em; margin: 0 auto; text-align: center">24時間365日受付</p>
+                      </div>
+                    </div>
+                    <div class="text_area">
+                      <p class="tokukan_mongon">以下のボタンから保険金請求手続きが行えます。<br class="pc_only" />医師の診断書や医療機関の領収書・診療明細書などの<br class="pc_only" />いずれかを画像でご準備ください。</p>
+                    </div>
+                    <div class="text_area">
+                      <p class="tokukan_mongon">
+                        なお、新型コロナウイルス感染症の取扱いが2023年5月8日<br class="pc_only" />より変更となりました。詳しくは以下のリンク先を参照ください。<br />
+                        <a href="https://www.au-sonpo.co.jp/pc/oshirase/pdf/topics_20230419.pdf" target="_blank" class="tokukan_link">「新型コロナウイルス感染症の感染症法上の位置づけ変更に<br class="pc_only" />伴う取扱いについて」</a>
+                      </p>
+                    </div>
+                    <div class="instance">
+                      <div class="instance_inner_button_area">
+                        <div class="instance_inner_part1" style="margin-bottom: 10px">
+                          <a href="https://webjiko-self.au-sonpo.co.jp/cs/bims/efnol/" target="_blank">
+                            <div class="basic_button_1_3">保険金請求手続きをされる方はこちら</div>
+                          </a>
+                        </div>
+                        <div class="delta_arrow_up"></div>
+                        <p class="orange_back" style="max-width: 8.5em; margin: 0 auto; text-align: center">24時間365日受付</p>
+                      </div>
+                    </div>
+                    <div class="instance_title_1 title_mini title_d">
+                      <div>
+                        <p style="text-align: left">お電話からのご連絡（通話料無料）</p>
+                      </div>
+                    </div>
+                    <div class="text_area">
+                      <p class="title_big text_center" style="margin-top: 20px">事故受付デスク</p>
+                      <p class="text_center" style="font-size: 22px; font-weight: bold; margin-bottom: 5px">
+                        <img style="max-height: 33px; margin-right: 3px" src="../common/img/fc.png" alt="フリーコール" />
+                        <span class="telNoText">
+                          <font id="font_blue">
+                            <u style="text-decoration: none">0077-78-0365</u>
+                          </font>
+                        </span>
+                        <a href="tel:0077-78-0365" class="telNoLink" style="color: #1288cc">
+                          <u style="color: #1288cc">0077-78-0365</u>
+                        </a>
+                      </p>
+                      <div class="delta_arrow_up"></div>
+                      <p class="orange_back" style="max-width: 8.5em; margin: 0 auto; margin-bottom: 30px; text-align: center">24時間365日受付</p>
+                      <p class="indent1">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
+                      <p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
+                    </div>
+                  </div>
+                  <!--end contents_md_wrap-->
 
+                  <div id="contents_2" class="contents_md_wrap contents_display">
+                    <div class="instance_title_1 title_mini title_d">
+                      <div>
+                        <p style="text-align: left">WEBからのご連絡</p>
+                      </div>
+                    </div>
+                    <div class="" style="padding: 5px; margin-top: 20px; margin-bottom: -40px">
+                      <div class="col_area">
+                        <div class="square_btn col7_pc col3_sp" style="float: none; margin: 0 auto">
+                          <img src="../common/spimg3/images_common/10_kaigai_tate.png" alt="海外旅行の保険" />
+                        </div>
+                      </div>
+                      <div class="instance">
+                        <div class="instance_inner_button_area">
+                          <div class="instance_inner_part1" style="margin-bottom: 10px">
+                            <a href="https://webjiko.au-sonpo.co.jp/request">
+                              <div class="basic_button_1_3">WEB 事故受付はこちら</div>
+                            </a>
+                          </div>
+                          <div class="delta_arrow_up"></div>
+                          <p class="orange_back" style="max-width: 8.5em; margin: 0 auto; text-align: center">24時間365日受付</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instance_title_1 title_mini title_d">
+                      <div>
+                        <p style="text-align: left">お電話からのご連絡（通話料無料）</p>
+                      </div>
+                    </div>
+                    <div class="" style="padding: 5px; margin-top: 20px; margin-bottom: 10px">
+                      <div class="col_area">
+                        <p class="title_big text_center" style="margin-bottom: 15px">海外サポートデスク</p>
+                      </div>
+                    </div>
+                    <div class="text_area">
+                      <p class="title_big text_center" style="margin-bottom: 15px">日本国内からの事故のご連絡</p>
+                      <p class="text_center" style="font-size: 22px; font-weight: bold; margin-bottom: 5px">
+                        <img style="max-height: 33px; margin-right: 3px" src="../common/img/fc.png" alt="フリーコール" />
+                        <span class="telNoText">
+                          <font id="font_blue">
+                            <u style="text-decoration: none">0077-78-7365</u>
+                          </font>
+                        </span>
+                        <a href="tel:0077-78-7365" class="telNoLink" style="color: #1288cc">
+                          <u style="color: #1288cc">0077-78-7365</u>
+                        </a>
+                      </p>
+                      <div class="delta_arrow_up"></div>
+                      <p class="orange_back" style="max-width: 8.5em; margin: 0 auto; margin-bottom: 30px; text-align: center">24時間365日受付</p>
+                      <p class="text_center" style="margin-top: 30px">海外からの事故のご連絡は<a class="underline" onclick="openwin2('../common/popup/PU_C_19.html','myau');" style="cursor: pointer">こちら</a></p>
 
+                      <p class="indent1" style="margin-top: 30px">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
+                      <p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
+                    </div>
+                  </div>
+                  <!--end contents_md_wrap-->
 
-				</div><!--end innner_block-->
+                  <div id="contents_3" class="contents_md_wrap contents_display">
+                    <div class="instance_title_1 title_mini title_d">
+                      <div>
+                        <p style="text-align: left">WEBからのご連絡</p>
+                      </div>
+                    </div>
+                    <div class="" style="padding: 5px; margin-top: 20px">
+                      <div class="col_area">
+                        <div class="square_btn col7_pc col3_sp" style="float: none; margin: 0 auto">
+                          <img src="../common/spimg3/images_common/05_pet_tate.png" alt="ペットの保険" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instance">
+                      <div class="instance_inner_button_area">
+                        <div class="instance_inner_part1" style="margin-bottom: 10px">
+                          <a href="https://webjiko.au-sonpo.co.jp/request/input2/">
+                            <div class="basic_button_1_3">WEB 保険金のご請求はこちら</div>
+                          </a>
+                        </div>
+                        <div class="delta_arrow_up"></div>
+                        <p class="orange_back" style="max-width: 8.5em; margin: 0 auto; text-align: center">24時間365日受付</p>
+                      </div>
+                    </div>
+                    <div class="instance_title_1 title_mini title_d">
+                      <div>
+                        <p style="text-align: left">アニポスアプリの利用による直接請求</p>
+                      </div>
+                    </div>
+                    <div class="" style="padding: 5px; margin-top: 20px">
+                      <div class="col_area">
+                        <div class="square_btn col7_pc col3_sp" style="float: none; margin: 0 auto">
+                          <img src="../common/spimg3/images_common/13_anipos_tate.png" alt="アニポス" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instance">
+                      <div class="instance_inner_button_area">
+                        <div class="instance_inner_part1" style="margin-bottom: 5px">
+                          <a href="https://guides.anipos.co.jp/au-sonpo" target="_blank">
+                            <div class="basic_button_1_3">アニポス利用ガイドはこちら</div>
+                          </a>
+                        </div>
+                        <p style="font-size: 12px">（外部サイトにリンクします）</p>
+                        <div class="delta_arrow_up"></div>
+                        <p class="orange_back" style="max-width: 8.5em; margin: 0 auto; text-align: center">24時間365日受付</p>
+                      </div>
+                    </div>
+                    <div class="instance_title_1 title_mini title_d">
+                      <div>
+                        <p style="text-align: left">お電話からのご連絡（通話料無料）</p>
+                      </div>
+                    </div>
+                    <div class="text_area">
+                      <p class="title_big text_center" style="margin-top: 20px">ペットの保険　カスタマーセンター</p>
+                      <p class="text_center" style="font-size: 22px; font-weight: bold; margin-bottom: 5px">
+                        <img style="max-height: 33px; margin-right: 3px" src="../common/img/fc.png" alt="フリーコール" />
+                        <span class="telNoText">
+                          <font id="font_blue">
+                            <u style="text-decoration: none">0800-700-1122</u>
+                          </font>
+                        </span>
+                        <a href="tel:0800-700-1122" class="telNoLink" style="color: #1288cc">
+                          <u style="color: #1288cc">0800-700-1122</u>
+                        </a>
+                      </p>
+                      <div class="delta_arrow_up"></div>
+                      <p class="orange_back" style="max-width: 11em; margin: 0 auto; margin-bottom: 30px; text-align: center">受付時間：9:00-18:00<br />（年末年始を除きます）</p>
+                      <p class="indent1">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
+                      <p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
+                    </div>
+                  </div>
+                  <!--end contents_md_wrap-->
 
-			</div>
-			<!--end block_lower_main-->
-			<div class="block_lower_main">
-				<div class="inner-block">
-						<ul class="bread_crumb" style="margin: 10px auto;width: 95%;">
-							<li><a href="../">au損保TOP</a></li>
-							<li>各種お問い合わせ</li>
-						</ul>
-				</div>
-			</div>
-		</div>
+                  <div id="contents_4" class="contents_md_wrap contents_display">
+                    <div id="contents_5" class="instance_title_1 title_mini title_d" style="margin-bottom: 10px">
+                      <div>
+                        <p style="text-align: left">よくあるご質問</p>
+                      </div>
+                    </div>
+                    <div class="text_area" style="margin-top: 20px">
+                      <p class="text_center">お申込みやログインの方法・補償内容・証券発行等についてご紹介します</p>
+                    </div>
+                    <div class="instance">
+                      <div class="instance_inner_button_area">
+                        <div class="instance_inner_part1" style="margin-bottom: 30px">
+                          <a href="http://faq.au-sonpo.co.jp/">
+                            <div class="basic_button_1_3">よくあるご質問はこちら</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instance_title_1 title_mini title_d" style="margin-bottom: 10px">
+                      <div>
+                        <p style="text-align: left">メールでのお問い合わせ</p>
+                      </div>
+                    </div>
+                    <div class="text_area" style="margin-top: 20px">
+                      <p class="text_center">メールで24時間お問い合わせいただけます<br />(ご回答は翌営業日以降となる場合がございます)</p>
+                    </div>
+                    <div class="instance">
+                      <div class="instance_inner_button_area">
+                        <div class="instance_inner_part1" style="margin-bottom: 30px">
+                          <a class="underline" href="JavaScript:void(0);" onclick="openwin3('https://www.au-sonpo.co.jp/pca/popup_mbp161.html','myau');">
+                            <div class="basic_button_1_3">メールでのお問い合わせはこちら</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instance_title_1 title_mini title_d">
+                      <div>
+                        <p style="text-align: left">お電話でのお問い合わせ（通話料無料）</p>
+                      </div>
+                    </div>
+                    <div class="text_area">
+                      <div style="margin-bottom: 30px">
+                        <p class="title_big text_center" style="margin-top: 20px">カスタマーセンター</p>
+                        <p class="text_center" style="font-size: 22px; font-weight: bold; margin-bottom: 5px">
+                          <img style="max-height: 33px; margin-right: 3px" src="../common/img/fc.png" alt="フリーコール" />
+                          <span class="telNoText">
+                            <font id="font_blue">
+                              <u style="text-decoration: none">0800-700-0600</u>
+                            </font>
+                          </span>
+                          <a href="tel:0800-700-0600" class="telNoLink" style="color: #1288cc">
+                            <u style="color: #1288cc">0800-700-0600</u>
+                          </a>
+                        </p>
+                        <div class="delta_arrow_up"></div>
+                        <p class="orange_back" style="max-width: 11em; margin: 0 auto; margin-bottom: 15px; text-align: center">受付時間：9:00-18:00<br />（年末年始を除きます）</p>
+                      </div>
 
+                      <div style="margin-bottom: 30px">
+                        <p class="title_big text_center" style="margin-top: 20px">ペットの保険　カスタマーセンター</p>
+                        <p class="text_center" style="font-size: 22px; font-weight: bold; margin-bottom: 5px">
+                          <img style="max-height: 33px; margin-right: 3px" src="../common/img/fc.png" alt="フリーコール" />
+                          <span class="telNoText">
+                            <font id="font_blue">
+                              <u style="text-decoration: none">0800-700-1122</u>
+                            </font>
+                          </span>
+                          <a href="tel:0800-700-1122" class="telNoLink" style="color: #1288cc">
+                            <u style="color: #1288cc">0800-700-1122</u>
+                          </a>
+                        </p>
+                        <div class="delta_arrow_up"></div>
+                        <p class="orange_back" style="max-width: 11em; margin: 0 auto; margin-bottom: 15px; text-align: center">受付時間：9:00-18:00<br />（年末年始を除きます）</p>
+                      </div>
 
+                      <p class="indent1">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
+                      <p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
+                    </div>
+                  </div>
+                  <!--end contents_md_wrap-->
+
+                  <div id="contents_6" class="contents_md_wrap contents_display">
+                    <div class="instance_title_1 title_mini title_d">
+                      <div>
+                        <p style="text-align: left">自転車ロードサービスデスク（通話料無料）</p>
+                      </div>
+                    </div>
+                    <div class="" style="padding: 5px">
+                      <div class="col_area">
+                        <div class="square_btn col7_pc col3_sp" style="float: none; margin: 0 auto">
+                          <img src="../common/img/bycle/roadservice_icon.png" alt="ロードサービス" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text_area">
+                      <p class="text_center" style="font-size: 22px; font-weight: bold; margin-bottom: 5px">
+                        <img style="max-height: 33px; margin-right: 3px" src="../common/img/fc.png" alt="フリーコール" />
+                        <span class="telNoText">
+                          <font id="font_blue">
+                            <u style="text-decoration: none">0077-78-8365</u>
+                          </font>
+                        </span>
+                        <a href="tel:0077-78-8365" class="telNoLink" style="color: #1288cc">
+                          <u style="color: #1288cc">0077-78-8365</u>
+                        </a>
+                      </p>
+                      <div class="delta_arrow_up"></div>
+                      <p class="orange_back" style="max-width: 8.5em; margin: 0 auto; margin-bottom: 30px; text-align: center">24時間365日受付</p>
+
+                      <p class="indent1" style="margin-top: 30px">●ロードサービスが付帯されている商品にご契約いただいているお客さまに限ります。</p>
+                      <p class="indent1">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
+                      <p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
+                      <p class="indent1">●ロードサービスカーには原則として人は同乗できません。</p>
+                      <p class="text_center" style="margin-top: 30px">ロードサービス詳細は<a class="txt_orange underline" href="JavaScript:void(0);" onclick="openwin3('../hosyo_naiyo/standard/S_2_H_20.html','myau');">こちら</a></p>
+                    </div>
+                  </div>
+                  <!--end contents_md_wrap-->
+
+                  <div id="contents_7" class="contents_md_wrap contents_display">
+                    <div class="instance_title_1 title_mini title_d">
+                      <div>
+                        <p style="text-align: left">かかりつけ獣医師ダイヤル（利用料無料）</p>
+                      </div>
+                    </div>
+                    <div class="" style="padding: 5px">
+                      <div class="col_area">
+                        <div class="square_btn col7_pc col3_sp" style="float: none; margin: 0 auto">
+                          <img src="../common/spimg3/images_common/05_pet_tate.png" alt="ペットの保険" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text_area">
+                      <p class="text_center" style="font-size: 22px; font-weight: bold; margin-bottom: 5px">
+                        <span class="telNoText">
+                          <font id="font_blue">
+                            <u style="text-decoration: none">050-2018-1919</u>
+                          </font>
+                        </span>
+                        <a href="tel:050-2018-1919" class="telNoLink" style="color: #1288cc">
+                          <u style="color: #1288cc">050-2018-1919</u>
+                        </a>
+                      </p>
+                      <div class="delta_arrow_up"></div>
+                      <p class="orange_back" style="max-width: 8.5em; margin: 0 auto; margin-bottom: 10px; text-align: center">24時間365日受付</p>
+                      <p class="indent1 text_center">●通話料はお客さま負担です</p>
+
+                      <p class="indent1" style="margin-top: 40px">●ご契約時にご登録いただいたお電話番号から、発信番号を通知する設定でお電話ください。</p>
+                      <p class="indent1">●携帯電話・PHSからもご利用いただけます。ただし一部のIP電話など、ご利用いただけない場合があります。</p>
+                      <p class="indent1">●サービス向上に役立てるため通話を録音させていただきます。</p>
+                      <p class="text_center" style="margin-top: 30px">ご利用規約・注意事項は<a class="txt_orange underline" href="JavaScript:void(0);" onclick="openwin2('../common/popup/PU_P_5.html','myau');">こちら</a></p>
+                    </div>
+                  </div>
+                  <!--end contents_md_wrap-->
+
+                  <div class="lv1 flowchart contents_display" style="padding-bottom: 15px; margin-bottom: 30px">
+                    <div id="accident_flow" class="lv1_title title_box cyan_area large_title" style="max-width: 100%"><p class="title_mega" style="color: #fff">事故連絡の流れ</p></div>
+                    <div class="lv1_contents accident_contact">
+                      <div class="lv2 accordionBlock" style="text-align: left">
+                        <div class="lv2_title switch other_txt title_box" style="cursor: pointer">
+                          <p class="title_mega" style="text-align: left"><span class="triangle">▼</span>&nbsp;交通事故の場合</p>
+                        </div>
+                        <div class="lv2_contents accordionArea" style="display: none">
+                          <ul>
+                            <li style="font-weight: bold">1.&nbsp;まずケガの確認をしてください</li>
+                            <li class="margin1">あなたと同乗者、そして相手の方の救護がなにより優先です。</li>
+                            <li>　　↓</li>
+                            <li style="font-weight: bold">2.&nbsp;二次災害を防いでください</li>
+                            <li class="margin1">車を路肩に寄せる、三角停止版を置く等、周りに事故があったことを知らせてください。</li>
+                            <li>　　↓</li>
+                            <li style="font-weight: bold">3.&nbsp;警察に連絡をしてください</li>
+                            <li class="margin1">どんなに小さな事故でも必ず警察に届けてください。また、当事者間同士の約束事は禁物です。</li>
+                            <li>　　↓</li>
+                            <li style="font-weight: bold">4.&nbsp;目撃者を確保してください</li>
+                            <li class="margin1">目撃者の証言は後ほどの交渉において非常に重要となる場合があります。</li>
+                            <li>　　↓</li>
+                            <li style="font-weight: bold">5.&nbsp;事故状況をメモしてください</li>
+                            <li class="margin1">走行スピード、信号状況、一時停止など、後ほどの交渉において非常に重要な部分です。</li>
+                            <li>　　↓</li>
+                            <li style="font-weight: bold">6.&nbsp;au損保に連絡してください</li>
+                            <li class="margin1">24時間365日受付しています。</li>
+                            <li class="margin1">専任担当者による事故対応や、保険金お支払いのお手続きは平日9:00～17：00です。（年末年始を除く）</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="lv2 accordionBlock" style="text-align: left; margin-top: 10px">
+                        <div class="lv2_title switch other_txt title_box" style="cursor: pointer">
+                          <p class="title_mega" style="text-align: left"><span class="triangle">▼</span>&nbsp;その他の事故の場合</p>
+                        </div>
+                        <div class="lv2_contents accordionArea" style="display: none">
+                          <ul>
+                            <li style="font-weight: bold">1.&nbsp;まずケガや被害物を確認してください</li>
+                            <li class="margin1">ケガの治療がなにより優先です。被害物については損害の程度を確認してください。</li>
+                            <li>　　↓</li>
+                            <li style="font-weight: bold">2.&nbsp;事故状況をメモしてください</li>
+                            <li class="margin1">発生に至るまでの様子や原因、日時・場所などをメモしてください。</li>
+                            <li>　　↓</li>
+                            <li style="font-weight: bold">3.&nbsp;au損保に連絡してください</li>
+                            <li class="margin1">24時間365日受付しています。</li>
+                            <li class="margin1">専任担当者による事故対応や保険金お支払いのお手続きは平日9:00～17：00です。（年末年始を除く）</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="lv2 accordionBlock" style="text-align: left; margin-top: 10px">
+                        <div class="lv2_title switch other_txt title_box" style="cursor: pointer">
+                          <p class="title_mega" style="text-align: left"><span class="triangle">▼</span>&nbsp;保険金のお受取りまで</p>
+                        </div>
+                        <div class="lv2_contents accordionArea" style="display: none">
+                          <div id="hoken_uketori">
+                            <div class="tx_area">
+                              <p>
+                                事故のご連絡をいただいてから、保険金のお受取りまでの傷害保険金の一般的な流れです。<br />万一の事故により保険金をご請求される時のご参考としてください。
+                                <br />
+                                <br />
+                                「ペットの保険」の保険金のお受取りについては、au損保トップページ&nbsp;&rarr;&nbsp;ペットの保険&nbsp;&rarr;&nbsp;保険金請求について&nbsp;をご確認ください。
+                                <br /><br />
+                              </p>
+                              <p style="text-align: center; border: 1px solid #e95504; padding: 0.5em">事故のご連絡からお受取りまでの流れ</p>
+                              <div class="accident center">
+                                <img src="../common/popup/spimg/A-3-3_01.gif" alt="事故発生" />
+                              </div>
+                              <table class="tbl_customer">
+                                <tr>
+                                  <th class="okyaku">お客さま</th>
+                                  <td>●事故のご連絡</td>
+                                </tr>
+                              </table>
+
+                              <div class="arrow center">
+                                <img src="../common/popup/spimg/A-3-3_02_down.gif" alt="" />
+                              </div>
+
+                              <table class="tbl_au">
+                                <tr>
+                                  <th class="ausonpo">au損保</th>
+                                  <td>
+                                    <ul class="ate_00">
+                                      <li>
+                                        <h4 class="indent1">●事故の受付、契約内容等の確認</h4>
+                                      </li>
+                                      <li>
+                                        <p>●お受取りまでの手順のご案内</p>
+                                      </li>
+                                      <li>
+                                        <p class="last">
+                                          ●必要書類のご案内<br />
+                                          弊社から、事故の状況などの確認をさせていただいたうえで、お客さまにとって当面必要となる対応に関するアドバイスを行います。<br />また、ご心配な点がありましたら、ご遠慮なくご相談ください
+                                        </p>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <div class="arrow center">
+                                <img src="../common/popup/spimg/A-3-3_02_down.gif" alt="" />
+                              </div>
+
+                              <table class="tbl_customer">
+                                <tr>
+                                  <th class="okyaku">お客さま</th>
+                                  <td>
+                                    <ul class="ate_0a">
+                                      <li>
+                                        <p>●調査へのご協力<br />事故状況や損害の状況、治療の経過などを確認させていただきますのでご協力ください</p>
+                                      </li>
+                                      <li>
+                                        <p class="last">●必要書類の取り揃え・送付<br />損害調査の結果によっては、新たな書類やご説明をお願いすることもございますので、ご協力ください</p>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <div class="arrow center">
+                                <img src="../common/popup/spimg/A-3-3_02_down.gif" alt="" />
+                              </div>
+
+                              <table class="tbl_au">
+                                <tr>
+                                  <th class="ausonpo">au損保</th>
+                                  <td>
+                                    <ul class="ate_00">
+                                      <li>
+                                        <p>●事故状況の確認・調査・治療状況の確認</p>
+                                      </li>
+                                      <li>
+                                        <p>●支払保険金の算出</p>
+                                      </li>
+                                      <li>
+                                        <p class="last">●支払保険金のご説明</p>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <div class="arrow center">
+                                <img src="../common/popup/spimg/A-3-3_02_down.gif" alt="" />
+                              </div>
+
+                              <table class="tbl_customer">
+                                <tr>
+                                  <th class="okyaku">お客さま</th>
+                                  <td>
+                                    <ul class="ate_0a">
+                                      <li>
+                                        <p class="last">●ご確認<br />弊社にて、お客さまの保険金のご請求意思を確認させていただき、ご指定の口座に保険金をお支払いいたします</p>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <div class="arrow center">
+                                <img src="../common/popup/spimg/A-3-3_03_down.gif" alt="" />
+                              </div>
+
+                              <table class="tbl_customer">
+                                <tr>
+                                  <th class="okyaku">お客さま</th>
+                                  <td class="receives" style="color: #ff0000"><span style="color: #464646">●</span>保険金のお受取り</td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <div id="hoken_oshiharai">
+                            <p class="title_navy" style="color: #001e60; font-weight: bold">保険金のお支払いにあたり、ご理解・ご協力いただきたいこと</p>
+                            <div class="tx_area">
+                              <h4 class="first">(1)事故状況とご契約内容のご確認</h4>
+                              <p>
+                                担当者からあらためてメール、お電話にてお客さまにご連絡させていただきます。<br />
+                                事故状況の再確認、保険金のお支払いまでの流れ、ご契約内容に基づきお支払いする保険金、保険金請求にあたり必要になる書類について、ご説明させていただきます。
+                              </p>
+
+                              <hr />
+
+                              <h4 class="indent1_sp">(2)お支払いできる保険金・費用保険金のご確認</h4>
+                              <ul>
+                                <li>
+                                  ●お支払いできる保険金について<br />
+                                  保険金の種類やご契約の内容等によって、損害に対する保険金(損害保険金)のほか、特約によりお支払いする保険金、費用保険金等があります。詳細につきましては、約款等をご参照ください。
+                                </li>
+                                <li>
+                                  ●保険金をお支払いできない場合のご説明について<br />
+                                  事故の内容によっては、保険金をお支払いできない場合があります。このような場合には、弊社からその理由についてあらためてご説明させていただきます。
+                                </li>
+                              </ul>
+
+                              <hr />
+
+                              <h4>(3)調査等に対するご協力のお願い</h4>
+                              <p>適切な保険金のお支払いのために、弊社が事故の状況や損害の状況、治療の経過、保険金のお支払い対象となる事故かどうかの確認等、各種の損害調査を行いますので、ご協力くださいますようお願い申し上げます。具体的には</p>
+                              <ul class="ate_0a">
+                                <li>
+                                  <p>●携行品等に損害が発生した場合、損害状況確認のための、修理見積書・写真等のお手配</p>
+                                </li>
+                                <li>
+                                  <p>●おケガの場合、その程度や治療内容確認のための診断書等のお手配 等をお願いすることがございますので、その際はご協力をお願い申し上げます。なお、上記お手配にかかる費用、書類取付料は保険金ご請求者様のご負担になりますので、予めご了承ください。また、保険金請求書や診断書を拝見し、事故の状況やおケガの状態などを病院等へ照会することが必要と判断した場合には、その照会のために必要な同意書(注)をお客さまにお送りさせていただきます。その他、上記以外の書類のご提出をお願いすることがあります。</p>
+                                </li>
+                              </ul>
+                              <ul class="ate_0a2">
+                                <li style="margin-left: 2em; text-indent: -2em">
+                                  <p>(注)同意書とは:保険事故の発生や、保険金のお支払い・お支払額等を、弊社が公の機関・病院等に確認を行う際、お客さまに同意していただくための書式です。同意書が必要となる場合、別途弊社よりご案内します。</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="margin: 0 8px">
+                    <p style="font-size: 1.166666em; font-weight: bold"><a href="../common/pdf/info_20230517.pdf" target="_blank" style="text-decoration: underline">お身体の不自由なお客さまへ</a></p>
+                    <p style="margin-left: 1em">当社では、お身体が不自由なお客さま向けに各種窓口をご用意しています。</p>
+                  </div>
+                </div>
+                <!--end innner_block-->
+              </div>
+              <!--end block_lower_main-->
+              <div class="block_lower_main">
+                <div class="inner-block">
+                  <ul class="bread_crumb" style="margin: 10px auto; width: 95%">
+                    <li><a href="../">au損保TOP</a></li>
+                    <li>各種お問い合わせ</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_new_wide" id="footer">
+                <div class="foot_lower_wrap clearfix">
+                  <div class="foot_lower clearfix" style="width: calc(100% - 48px); max-width: 980px; padding-left: 24px; padding-right: 24px">
+                    <div class="foot_logo">
+                      <a href="/pc/" class="trans"><img src="/pc/common/img/share/logo_footer.png" alt="au損保保険株式会社" width="201px" height="17px" style="margin-top: 10px" /></a>
+                      <p class="copy">Copyright © au insurance Co., Ltd. All Rights Reserved.</p>
+                    </div>
+                  </div>
+                  <!--/foot_lower-->
+                  <div class="foot_lower_sp">
+                    <div class="foot_lower_sp_box">
+                      <a href="/pc/" class="trans"><img src="/pc/common/img/share/logo_footer.png" alt="au損保保険株式会社" width="150" height="12" style="margin-top: 46px" /></a>
+                      <p class="copy">Copyright © au insurance Co., Ltd. All Rights Reserved.</p>
+                    </div>
+                  </div>
+                </div>
+                <!--/foot_lower_wrap-->
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
-		<!--end lower_main_cont-->
-		<!--[footer_new_wide]-->
-</div>
-</body>
-
+      </div>
+      <!--end lower_main_cont-->
+      <!--[footer_new_wide]-->
+    </div>
+  </body>
 </html>
