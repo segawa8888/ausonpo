@@ -1,0 +1,14 @@
+
+@charset "UTF-8";
+@use "../../global" as *;
+.p-pet-dog-table table{
+    width: 100%;
+}
+.p-pet-dog-table th{
+padding: rem(10px);
+width: 80%;
+}
+.p-pet-dog-table td{
+    width: 20%;
+    text-align: right;
+}
