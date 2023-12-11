@@ -5,8 +5,17 @@
     max-width: 100%;
     width: 100%;
     &__list {
-        justify-content: flex-start;
-        gap: 2.5rem;
+        //justify-content: flex-start;
+        //gap: 2.5rem;
+        //justify-content: center;
+        @include mq-min("sm") {
+            &:has(.p-bycle-box:nth-child(-n + 2):last-child) {
+                justify-content: center;
+            }
+            &:has(.p-bycle-box:nth-child(-n + 2):last-child) {
+                transform: none !important;
+            }
+        }
         @include mq-max("sm") {
             justify-content: space-between;
             gap: 0rem;
@@ -15,13 +24,13 @@
     .js-voice-slider {
         .-p-bycle-voice__list {
             @include mq-min("sm") {
-                transform: none !important;
+                //transform: none !important;
             }
         }
     }
 }
 .p-bycle-box {
-    max-width: calc((100% - 7rem) / 3);
+    //max-width: calc((100% - 7rem) / 3);
     @include mq-max("md") {
         max-width: calc((100% - 6rem) / 3);
     }
@@ -44,7 +53,7 @@
             width: calc(100% - 7.25rem);
             .p-bycle-box-voice-typename {
                 justify-content: flex-start;
-                align-items: center;
+                align-items: flex-start;
                 span {
                     width: 5.25rem;
                     height: 1.5rem;
