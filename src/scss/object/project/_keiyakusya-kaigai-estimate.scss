@@ -109,3 +109,91 @@
 .p-keiyakusya-kaigai-estimate__img {
     max-width: rem(359px);
 }
+
+.p-keiyakusya-kaigai-estimate-price__table {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap:0 rem(8px);
+}
+
+.p-keiyakusya-kaigai-estimate-price {
+    border-radius: rem(5px);
+
+    &.--bronze {
+        width:rem(102.631px);
+        border:rem(1px) solid #B08645;
+        .p-keiyakusya-kaigai-estimate-price__title {
+            color: #B08645;
+        }
+        .p-keiyakusya-kaigai-estimate-price__price {
+            height:rem(44px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #B08645;
+        }  
+    }
+
+    &.--silver {
+        width:rem(120px);
+        border:rem(1px) solid #909090;
+        .p-keiyakusya-kaigai-estimate-price__title {
+            color: #909090;
+        }
+        .p-keiyakusya-kaigai-estimate-price__price {
+            height:rem(54px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #909090;
+        }  
+    }
+
+    &.--gold {
+        width:rem(120px);
+        border: rem(1px) solid #BD9F00;
+        .p-keiyakusya-kaigai-estimate-price__title {
+            color: #BD9F00;
+        }
+        .p-keiyakusya-kaigai-estimate-price__price {
+            height:rem(64px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #BD9F00;
+        }
+    }
+}
+
+.p-keiyakusya-kaigai-estimate-price__title {
+    font-size: rem(13px);
+    height:rem(22px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $c-white;
+    font-weight: 700;
+    border-radius: rem(5px) rem(5px) 0 0;
+}
+
+.p-keiyakusya-kaigai-estimate-price__price {
+    color: $c-white;
+    font-weight: 700;
+    font-size: rem(12.6px);
+
+    p {
+        position: relative;
+    }
+    
+    .price {
+        font-size: rem(20px);
+    }
+
+    .shiharai {
+        font-size: rem(7.512px);
+        position: absolute;
+        top: rem(-2px);
+        right:rem(-4px);
+    }
+}
