@@ -317,6 +317,8 @@ document.addEventListener("componentsLoaded", () => {
       perPage: 3,
       arrows: false,
       pagination: false,
+      //focus: "center",
+      gap: "2.5rem",
       breakpoints: {
         520: {
           perPage: 1,
@@ -338,7 +340,6 @@ document.addEventListener("componentsLoaded", () => {
       },
     }).mount();
   }
-
 
   //猫の保険特長のスライダー
   const catFeatureSlider = document.querySelector(".js-cat-feature-slider"); // 対象となる要素を取得
