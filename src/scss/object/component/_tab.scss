@@ -89,14 +89,14 @@ ul/olタグの共通スタイル
     line-height: 1;
     letter-spacing: 0.1em;
     margin-top: rem(6px);
-    display: none;
+    display: block;
     @include mq-max("sm") {
       font-size: rem(10px);
       line-height: 1.2;
       margin-top: rem(4px);
     }
     .is-current > & {
-      display: block;
+      display: none;
     }
   }
   &__panel {
