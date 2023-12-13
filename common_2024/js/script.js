@@ -5500,31 +5500,3 @@ Promise.all(promises)
   });
 
   
-// 保険料表一覧 タブ切り替え 2023-12-13
-const $js_tab = $(".js-tab");
-const $js_tab_target = $(".js-tab-target");
-const $tab_buttons = $(".tab-buttons> button");
-const cls = "is-active";
-
-$js_tab.on("click", function () {
-  const this_category = $(this).data("category");
-
-  $js_tab.removeClass(cls);
-  $(this).addClass(cls);
-
-  $js_tab_target.removeClass(cls);
-  $js_tab_target.each(function () {
-    const target_data = $(this).data("target");
-    if (this_category === target_data) {
-      $(this).addClass(cls);
-    }
-  });
-
-  $tab_buttons.removeClass(cls);
-  $tab_buttons.each(function () {
-    const category_data = $(this).data("category");
-    if (this_category === category_data) {
-      $(this).addClass(cls);
-    }
-  });
-});
