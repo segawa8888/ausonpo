@@ -13,4 +13,53 @@
             margin-bottom: 0.5rem;
         }
     }
+
+    &__important1 {
+        background: url(/common_2024/img/arrow/arrow_bold_primary.svg) right rem(16px) center no-repeat;
+        background-size: rem(18px);
+        font-weight: 700;
+        border-radius: rem(8px);
+        border: 1px solid $c-base-200;
+        box-shadow: 0px rem(4px) 0px 0px $c-base-200;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            border-color 0.2s ease 0.1s;
+        font-size: rem(20px);
+        letter-spacing: 0;
+        text-align: center;
+
+
+        &.-contact {
+            border: 2px solid $c-base-200;
+            height: rem(80px);
+            min-width: rem(300px);
+        }
+
+        &.-lg {
+            height: rem(112px);
+            min-width: rem(389px);
+
+            @include mq-max("sm") {
+                background-position: center bottom 0.75rem;
+                height: rem(161px);
+                min-width: rem(147px);
+                font-size: rem(14px);
+            }
+        }
+
+        &.-sm {
+            height: rem(60px);
+            min-width: rem(325px);
+        }
+
+        @include hover {
+            box-shadow: none;
+            transform: translateY(rem(4px));
+            border-color: $c-primary;
+        }
+    }
 }
