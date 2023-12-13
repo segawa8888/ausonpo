@@ -381,6 +381,81 @@ document.addEventListener("componentsLoaded", () => {
       },
     }).mount();
   }
+
+  // p-recruit-office slide
+  const recruitSliderOffice = document.querySelector(".splide-office-1");
+  if (recruitSliderOffice) {
+    new Splide(recruitSliderOffice, {
+      autoplay: false, // 自動再生
+      arrows: false,
+      //speed: 2000, // スライダーの移動時間
+      destroy: true, // スライダーを破棄
+      perPage: 1,
+      flickMaxPages: 1,
+      pagination: true,
+      breakpoints: {
+        768: {
+          destroy: false,
+        },
+      },
+    }).mount();
+  }
+
+  const recruitSliderOffice2 = document.querySelector(".splide-office-2");
+  if (recruitSliderOffice2) {
+    new Splide(recruitSliderOffice2, {
+      autoplay: false, // 自動再生
+      arrows: false,
+      //speed: 2000, // スライダーの移動時間
+      destroy: true, // スライダーを破棄
+      perPage: 1,
+      flickMaxPages: 1,
+      pagination: true,
+      breakpoints: {
+        768: {
+          destroy: false,
+        },
+      },
+    }).mount();
+  }
+
+  const recruitSliderOffice3 = document.querySelector(".splide-office-3");
+  if (recruitSliderOffice3) {
+    new Splide(recruitSliderOffice3, {
+      autoplay: false, // 自動再生
+      arrows: false,
+      //speed: 2000, // スライダーの移動時間
+      destroy: true, // スライダーを破棄
+      perPage: 1,
+      flickMaxPages: 1,
+      pagination: true,
+      breakpoints: {
+        768: {
+          destroy: false,
+        },
+      },
+    }).mount();
+  }
+
+  const recruitSliderOffice4 = document.querySelector(".splide-office-4");
+  if (recruitSliderOffice4) {
+    new Splide(recruitSliderOffice4, {
+      autoplay: false, // 自動再生
+      arrows: false,
+      //speed: 2000, // スライダーの移動時間
+      destroy: true, // スライダーを破棄
+      perPage: 1,
+      flickMaxPages: 1,
+      pagination: true,
+      breakpoints: {
+        768: {
+          destroy: false,
+        },
+      },
+    }).mount();
+  }
+
+
 });
 
 /*----------------------------------------------------------
