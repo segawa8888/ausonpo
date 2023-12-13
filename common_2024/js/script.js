@@ -489,8 +489,8 @@ document.addEventListener("componentsLoaded", () => {
   if (bikevoiceSlider) {
     new Splide(bikevoiceSlider, {
       perPage: 3,
-      perMove: 1,
       arrows: false,
+      gap: "2.5rem",
       pagination: true,
       breakpoints: {
         520: {
@@ -505,13 +505,11 @@ document.addEventListener("componentsLoaded", () => {
     new Splide(byclebvoiceSlider, {
       perPage: 3,
       arrows: false,
-      pagination: false,
-      //focus: "center",
       gap: "2.5rem",
+      pagination: true,
       breakpoints: {
         520: {
           perPage: 1,
-          pagination: true,
         },
       },
     }).mount();
