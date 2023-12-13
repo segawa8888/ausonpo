@@ -46,10 +46,25 @@
         padding-right: rem(15px);
         background: url(/common_2024/img/arrow/arrow_sm_primary.svg) right 0.45em no-repeat;
 
+        &.-main {
+            background-size: rem(12px);
+            padding-right: rem(24px);
+            background: url(/common_2024/img/arrow/arrow_sm_primary.svg) right 0.4em no-repeat;
+
+            @include mq-max("sm") {
+                background: url(/common_2024/img/arrow/arrow_sm_primary.svg) right 2.9rem no-repeat;
+                background-size: rem(12px);
+            }
+        }
+
+
         &.-lg {
             background-size: rem(12px);
             padding-right: rem(24px);
             background: url(/common_2024/img/arrow/arrow_sm_primary.svg) right 0.4em no-repeat;
+            @include mq-max("sm") {
+                background-size: rem(10px);
+            }
         }
     }
 }
