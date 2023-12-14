@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-recruit-voice__icon {
+    max-width: rem(116px);
+    width: 100%;
+    height: rem(116px);
+
+    img {
+        height: 100%;
+    }
+}

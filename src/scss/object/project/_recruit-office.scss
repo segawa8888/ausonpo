@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@use "../../global" as *;
+
+.p-recruit-office .splide {
+    visibility:initial;
+}
+
+.p-recruit-office .splide__list {
+    @include mq-min("md") {
+        display: grid!important;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: rem(12px);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: rem(10px);
+    }
+}
