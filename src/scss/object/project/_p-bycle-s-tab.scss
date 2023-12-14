@@ -6,21 +6,6 @@
         padding: 0 0.5rem 0.5rem;
     }
 .p-bycle-s-tab {
-    .p-bycle-tab-change__tabs {
-        .ruby-text {
-            display: flex;
-            align-items: flex-end;
-            @include mq-max("sm") {
-                flex-wrap: wrap;
-            }
-        }           
-        ruby {
-            rt {
-                text-align: left;
-                font-size: 0.625rem;
-            }
-        }
-    }
     .c-table__title {
         z-index: -1;
     }

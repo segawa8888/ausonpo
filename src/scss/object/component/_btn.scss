@@ -183,7 +183,12 @@
       background-position: right rem(11px) center;
     }
   }
-  &.-reload{
+  &.-close {
+    background-image: url(/common_2024/img/icon/icon_close_primary.svg);
+    background-position: right rem(14px) center;
+    background-size: rem(12px);
+  }
+  &.-reload {
     background-image: url(/common_2024/img/arrow/arrow_reload.svg);
     background-position: right rem(14px) center;
     background-size: rem(12px);

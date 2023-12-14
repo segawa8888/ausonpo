@@ -58,7 +58,10 @@
                 対象となる人やケガの補償範囲、<br class="lg:u-hidden">補償の手厚さから<br>
                 最適なプランを見つけましょう！</span>
         </p>
-        <div class="-p-bycle-plan-back u-py-12 u-bg-base-050 u-flex u-mt-12">
+        
+        
+        
+        <div class="-p-bycle-plan-back u-py-12 u-bg-base-050 u-flex u-mt-12" id="bycle_shindan_step1">
             <picture class="p-bycle-plan-title">
                 <source srcset="/pc/bycle/assets/img/bycle_diagnosis01_pc.webp" type="image/webp">
                 <img src="/pc/bycle/assets/img/bycle_diagnosis01_pc.png" alt="自転車向け保険プラン診断" loading="lazy">
@@ -83,7 +86,7 @@
             <p class="u-text-14 u-mt-6 u-leading-normal u-text-bold u-text-center">補償の対象となる人を選んでください</p>
             <div class="-p-bycle-plan-select u-mt-8 u-grid u-grid-cols-3 u-gap-10 sm:u-gap-2">
                 <div class="-p-bycle-plan-select-btn honin radio">
-                    <input id="radio-1" class="visually-hidden" type="radio" name="btn" checked="">
+                    <input id="radio-1" class="visually-hidden" type="radio" name="select_step1" checked="checked" value="本人">
                     <label for="radio-1">
                         <span class="tag-area u-text-center">
                             <span class="u-block tag u-text-10 u-text-bold sm:u-text-8">本人タイプ</span>
@@ -96,7 +99,7 @@
                     </label>
                 </div>
                 <div class="-p-bycle-plan-select-btn honin radio">
-                    <input id="radio-2" class="visually-hidden" type="radio" name="btn">
+                    <input id="radio-2" class="visually-hidden" type="radio" name="select_step1" value="家族">
                     <label for="radio-2">
                         <span class="tag-area u-text-center">
                             <span class="u-block tag recom u-text-10 u-text-bold sm:u-text-8">おすすめ</span>
@@ -110,7 +113,7 @@
                     </label>
                 </div>
                 <div class="-p-bycle-plan-select-btn honin radio">
-                    <input id="radio-3" class="visually-hidden" type="radio" name="btn">
+                    <input id="radio-3" class="visually-hidden" type="radio" name="select_step1" value="本人・親族">
                     <label for="radio-3">
                         <span class="tag-area">
                             <span class="u-block tag u-text-10 u-text-bold sm:u-text-8">本人・親族<br>タイプ</span>
@@ -125,13 +128,17 @@
                 </div>
             </div>
             <p class="u-text-center u-mt-8">
-                <a href="#" class="c-btn -md u-bg-primary u-text-white u-text-medium">STEP2へ </a>
+                <button class="c-btn -md u-bg-primary u-text-white u-text-medium" id="next_step2">STEP2へ </button>
             </p>
             <p class="u-mt-3 u-text-center u-text-primary u-text-bold u-text-16">
                 <a href="/pc/bycle/application.html" class="u-link-has-arrow -primary">お申込みについて</a>
             </p>
         </div>
-        <div class="-p-bycle-plan-back u-py-12 u-bg-base-050 u-flex u-mt-24">
+        
+        
+        
+        
+        <div class="-p-bycle-plan-back u-py-12 u-bg-base-050 closed u-mt-24" id="bycle_shindan_step2">
             <picture class="p-bycle-plan-title">
                 <source srcset="/pc/bycle/assets/img/bycle_diagnosis01_pc.webp" type="image/webp">
                 <img src="/pc/bycle/assets/img/bycle_diagnosis01_pc.png" alt="自転車向け保険プラン診断" loading="lazy">
@@ -156,7 +163,7 @@
             <p class="u-text-14 u-mt-6 u-leading-normal u-text-bold u-text-center">ケガの補償範囲を選んでください</p>
             <div class="-p-bycle-plan-select u-mt-8 u-grid u-grid-cols-2 u-gap-10 sm:u-gap-2">
                 <div class="-p-bycle-plan-select-btn bycle-best radio">
-                    <input id="radio-4" class="visually-hidden" type="radio" name="btn" checked="">
+                    <input id="radio-4" class="visually-hidden" type="radio" name="select_step2" checked="checked" value="BycleBest">
                     <label for="radio-4">
                         <span class="tag-area u-text-center">
                             <span class="u-block tag u-text-12 u-text-bold sm:u-text-8">Bycle Best</span>
@@ -175,7 +182,7 @@
                         ※2023年4月~6月の当社契約実績</p>
                 </div>
                 <div class="-p-bycle-plan-select-btn bycle radio">
-                    <input id="radio-5" class="visually-hidden" type="radio" name="btn">
+                    <input id="radio-5" class="visually-hidden" type="radio" name="select_step2" value="Bycle">
                     <label for="radio-5">
                         <span class="tag-area u-text-center">
                             <span class="u-block tag u-text-10 u-text-bold sm:u-text-8">Bycle</span>
@@ -189,13 +196,16 @@
                 </div>
             </div>
             <p class="u-text-center u-mt-8">
-                <a href="#" class="c-btn -md u-bg-primary u-text-white u-text-medium">STEP3へ </a>
+                <button class="c-btn -md u-bg-primary u-text-white u-text-medium" id="next_step3">STEP3へ </button>
             </p>
             <p class="u-mt-3 u-text-center u-text-primary u-text-bold u-text-16">
                 <a href="/pc/bycle/application.html" class="u-link-has-arrow -primary">お申込みについて</a>
             </p>
         </div>
-        <div class="-p-bycle-plan-back u-py-12 u-bg-base-050 u-flex u-mt-24">
+        
+        
+        
+        <div class="-p-bycle-plan-back u-py-12 u-bg-base-050 closed u-mt-24" id="bycle_shindan_step3">
             <picture class="p-bycle-plan-title">
                 <source srcset="/pc/bycle/assets/img/bycle_diagnosis01_pc.webp" type="image/webp">
                 <img src="/pc/bycle/assets/img/bycle_diagnosis01_pc.png" alt="自転車向け保険プラン診断" loading="lazy">
@@ -220,7 +230,7 @@
             <p class="u-text-14 u-mt-6 u-leading-normal u-text-bold u-text-center">補償の手厚さを選んでくださいい</p>
             <div class="-p-bycle-plan-select u-mt-8 u-grid u-grid-cols-3 sm:u-grid-cols-2 u-gap-10 sm:u-gap-2">
                 <div class="-p-bycle-plan-select-btn  radio">
-                    <input id="radio-6" class="visually-hidden" type="radio" name="btn" checked="">
+                    <input id="radio-6" class="visually-hidden" type="radio" name="select_step3" checked="checked" value="ブロンズ">
                     <label for="radio-6">
                         <span
                             class="u-block p-bycle-shindan__title u-text-center -bronze u-text-12 u-text-bold sm:u-text-8 u-text-bold u-text-white u-leading-relaxed">
@@ -241,7 +251,7 @@
                     </label>
                 </div>
                 <div class="-p-bycle-plan-select-btn honin radio">
-                    <input id="radio-7" class="visually-hidden" type="radio" name="btn">
+                    <input id="radio-7" class="visually-hidden" type="radio" name="select_step3" value="シルバー">
                     <label for="radio-7">
                         <span
                             class="u-block u-text-center p-bycle-shindan__title -silver u-text-11 u-text-bold sm:u-text-8 u-text-bold u-text-white u-leading-loose">
@@ -264,7 +274,7 @@
                     </label>
                 </div>
                 <div class="-p-bycle-plan-select-btn honin radio">
-                    <input id="radio-8" class="visually-hidden" type="radio" name="btn">
+                    <input id="radio-8" class="visually-hidden" type="radio" name="select_step3" value="ゴールド">
                     <label for="radio-8">
                         <span
                             class="u-block u-text-center p-bycle-shindan__title -gold u-text-12 u-text-bold sm:u-text-8 u-text-bold u-text-white u-leading-relaxed">
@@ -287,7 +297,7 @@
                 </div>
             </div>
             <p class="u-text-center u-mt-8">
-                <a href="#" class="c-btn -md u-bg-primary u-text-white u-text-medium">診断結果を見る</a>
+                <button class="c-btn -md u-bg-primary u-text-white u-text-medium" id="next_result">診断結果を見る</button>
             </p>
             <p class="u-mt-3 u-text-center u-text-primary u-text-bold u-text-16">
                 <a href="/pc/bycle/application.html" class="u-link-has-arrow -primary">お申込みについて</a>
@@ -296,41 +306,41 @@
 
 
 
-        <section class="p-bycle-plan-result u-mt-24">
+        <section class="p-bycle-plan-result u-mt-24 closed" id="bycle_shindan_result">
             <picture class="p-bycle-plan-result__title u-block">
                 <source srcset="/pc/assets/img/bycle_diagnosis-result.webp" type="image/webp">
                 <img src="/pc/assets/img/bycle_diagnosis-result.png" alt="診断結果" loading="lazy">
             </picture>
-            <div class="p-bycle-plan-result__cource u-mt-4 u-text-center">
+            <div class="p-bycle-plan-result__cource u-mt-4 u-text-center" id="result_bycle1">
                 <p class="p-bycle-plan-result__cource-title u-text-bold u-text-primary"><ruby>Bycle<rt
                             class="u-text-12">バイクル</rt></ruby></p>
                 <div class="p-bycle-plan-result__cource-sub-title u-text-14 u-mt-2 u-text-bold">
                     <p class="p-bycle-plan-result__cource-type"><span
-                        class="u-text-bold u-text-primary">家族</span> タイプ</p><span
+                        class="u-text-bold u-text-primary" id="result_type1">家族</span> タイプ</p><span
                         class="p-bycle-plan-result__cource-item">×</span>
                         <p class="p-bycle-plan-result__cource-type"><span
-                        class="u-text-bold u-text-primary">ブロンズ</span><br class="lg:u-hidden">コース</p>
+                        class="u-text-bold u-text-primary" id="cource_type1">ブロンズ</span><br class="lg:u-hidden">コース</p>
                         </div>
             </div>
             <!-- バイクルベスト（color青ver） -->
-                 <!-- <div class="p-bycle-plan-result__cource u-mt-4 u-text-center">
-                <p class="p-bycle-plan-result__cource-title u-text-bold -blue"><ruby>Bycle<rt
-                            class="u-text-12">バイクル</rt></ruby></p>
+                  <div class="p-bycle-plan-result__cource u-mt-4 u-text-center close" id="result_byclebest1">
+                <p class="p-bycle-plan-result__cource-title u-text-bold -blue"><ruby>Bycle Best<rt
+                            class="u-text-12">バイクルベスト</rt></ruby></p>
                 <div class="p-bycle-plan-result__cource-sub-title u-text-14 u-mt-2 u-text-bold">
                     <p class="p-bycle-plan-result__cource-type"><span
-                        class="u-text-bold -blue">家族</span> タイプ</p><span
+                        class="u-text-bold -blue" id="result_type2">家族</span> タイプ</p><span
                         class="p-bycle-plan-result__cource-item">×</span>
                         <p class="p-bycle-plan-result__cource-type"><span
-                        class="u-text-bold -blue">ブロンズ</span><br class="lg:u-hidden">コース</p>
+                        class="u-text-bold -blue" id="cource_type2">ブロンズ</span><br class="lg:u-hidden">コース</p>
                         </div>
-            </div> -->
+            </div> 
             <h2 class="c-heading2-has-line">保険料</h2>
             <ul class="p-bycle-plan-result__price">
                 <li class="p-bycle-plan-result__price-wrapper">
                     <p class="p-bycle-plan-result__price-method u-text-20 u-text-bold u-leading-loose">月払</p>
                     <div class="p-bycle-plan-result__price-content">
                         <p class="p-bycle-plan-result__price-text u-text-14">月々</p>
-                        <p class="p-bycle-plan-result__price-value u-text-14"><span class="u-text-bold">680</span>円</p>
+                        <p class="p-bycle-plan-result__price-value u-text-14"><span class="u-text-bold" id="result_price1">680</span>円</p>
                     </div>
                 </li>
                 <li class="p-bycle-plan-result__price-wrapper u-mt-1">
@@ -339,11 +349,11 @@
                         <div class="p-bycle-plan-result__price-content">
                             <p class="p-bycle-plan-result__price-text u-text-14 ">１年契約</p>
                             <p class="p-bycle-plan-result__price-value u-text-14"><span
-                                    class="u-text-bold">7,440</span>円</p>
+                                    class="u-text-bold" id="result_price2">7,440</span>円</p>
                         </div>
                         <p
                             class="u-text-center u-text-10 u-mt-2 u-text-bold u-text-white p-bycle-plan-result__price-arrow_box">
-                            月払と比べて年間 <span class="u-inline-block u-text-24">720</span>円 おトク！
+                            月払と比べて年間 <span class="u-inline-block u-text-24" id="result_price3">720</span>円 おトク！
                         </p>
                         <p class="u-text-center u-text-8 u-text-bold u-mt-1">さらに<span
                                 class="u-text-primary">2年契約</span>なら1年契約と比べて<span class="u-text-primary">約10％おトク！</span>
@@ -365,10 +375,14 @@
                 <figure>
                     <img src="/pc/assets/img/bycle_diagnosis_rangebtn02.png" alt="自転車事故を含む交通事故を起こした場合" loading="lazy">
                 </figure>
-                <figure>
+                <figure id="result_bycle2">
                     <img src="/pc/assets/img/bycle_diagnosis_rangebtn03.png" alt="部活・レジャーを含む日常の事故を起こした場合"
                         loading="lazy">
                 </figure>
+                <figure id="result_byclebest2">
+                    <img src="/pc/assets/img/bycle_diagnosis_rangebtn03_pc_on.png" alt="部活・レジャーを含む日常の事故を起こした場合"
+                        loading="lazy">
+                </figure>             
             </div>
             <h2 class="c-heading2-has-line">補償・サービス内容</h2>
             <div class="u-grid u-grid-cols-4 u-gap-2 sm:u-pl-3 sm:u-pr-3">
@@ -423,37 +437,57 @@
                     </picture>
             
        
-                    <picture>
+                    <picture id="result_img08_off">
                         <source srcset="/pc/assets/img/bycle_diagnosis_rservicebtn08_sp.png" media="(max-width:519px)"
                             type="image/png" />
                         <img src="/pc/assets/img/bycle_diagnosis_rservicebtn08_pc.png" alt="" loading="lazy" />
                     </picture>
-            
-       
-                    <picture>
+                    <picture id="result_img08_on">
+                        <source srcset="/pc/assets/img/bycle_diagnosis_rservicebtn08_sp_on.png" media="(max-width:519px)"
+                            type="image/png" />
+                        <img src="/pc/assets/img/bycle_diagnosis_rservicebtn08_pc_on.png" alt="" loading="lazy" />
+                    </picture>
+                    
+                    
+                    <picture id="result_img09_off">
                         <source srcset="/pc/assets/img/bycle_diagnosis_rservicebtn09_sp.png" media="(max-width:519px)"
                             type="image/png" />
                         <img src="/pc/assets/img/bycle_diagnosis_rservicebtn09_pc.png" alt="" loading="lazy" />
                     </picture>
-            
-       
-                    <picture>
+                    <picture id="result_img09_on">
+                        <source srcset="/pc/assets/img/bycle_diagnosis_rservicebtn09_sp_on.png" media="(max-width:519px)"
+                            type="image/png" />
+                        <img src="/pc/assets/img/bycle_diagnosis_rservicebtn09_pc_on.png" alt="" loading="lazy" />
+                    </picture>
+                    
+                    
+                    <picture id="result_img10_off">
                         <source srcset="/pc/assets/img/bycle_diagnosis_rservicebtn10_sp.png" media="(max-width:519px)"
                              type="image/png" />
                         <img src="/pc/assets/img/bycle_diagnosis_rservicebtn10_pc.png" alt="" loading="lazy" />
                     </picture>
-            
-       
-                    <picture>
+                    <picture id="result_img10_on">
+                        <source srcset="/pc/assets/img/bycle_diagnosis_rservicebtn10_sp_on.png" media="(max-width:519px)"
+                            type="image/png" />
+                        <img src="/pc/assets/img/bycle_diagnosis_rservicebtn10_pc_on.png" alt="" loading="lazy" />
+                    </picture>
+                    
+                    
+                    <picture id="result_img11_off">
                         <source srcset="/pc/assets/img/bycle_diagnosis_rservicebtn11_sp.png" media="(max-width:519px)"
                      type="image/png" />
                         <img src="/pc/assets/img/bycle_diagnosis_rservicebtn11_pc.png" alt="" loading="lazy" />
+                    </picture>
+                    <picture id="result_img11_on">
+                        <source srcset="/pc/assets/img/bycle_diagnosis_rservicebtn11_sp_on.png" media="(max-width:519px)"
+                            type="image/png" />
+                        <img src="/pc/assets/img/bycle_diagnosis_rservicebtn11_pc_on.png" alt="" loading="lazy" />
                     </picture>
             
             </div>
             <p class="c-text-accent u-text-primary u-text-center u-mt-8 u-text-16">申込み画面であなたに合った商品・<br
                     class="lg:u-hidden">タイプ・コースをお選びください</p>
-            <div class="p-keiyakusya-kaigai-cta u-mt-10 u-mx-auto u-mb-0">
+            <div class="p-keiyakusya-kaigai-cta u-mt-10 u-mx-auto u-mb-0" id="result_bycle3">
                 <a href="/pc/rdt/bycle/">
                     <picture>
                         <source srcset="/pc/bycle/assets/img/bycle_btn01.webp" type="image/webp">
@@ -461,20 +495,21 @@
                     </picture>
                 </a>
             </div>
-            <!-- <div class="p-keiyakusya-kaigai-cta u-mt-10 u-mx-auto u-mb-0">
+            <div class="p-keiyakusya-kaigai-cta u-mt-10 u-mx-auto u-mb-0" id="result_byclebest3">
                 <a href="/pc/rdt/bycle/">
                     <picture>
-                        <source srcset="/pc/bycle/assets/img/bycle_btn01.webp" type="image/webp">
-                        <img src="/pc/bycle/assets/img/bycle_btn01.png" alt="au損保" loading="lazy">
+                        <source srcset="/pc/bycle-best/assets/img/bycle-best_button01_pc.webp" type="image/webp">
+                        <img src="/pc/bycle-best/assets/img/bycle-best_button01_pc.png" alt="au損保" loading="lazy">
                     </picture>
                 </a>
-            </div> -->
+            </div>
             <p class="p-bycle-plan-result__btn u-text-center u-mt-8">
-                <a href="#" class="c-btn -md -reload">もう一度診断しなおす</a>
+                <button class="c-btn -md -reload" id="shindan_restart">もう一度診断しなおす</button>
             </p>
             <p class="u-text-indent-1 u-mt-8 u-text-center sm:u-text-left u-text-14">※クレジットカード・auかんたん決済 (au / UQ mobile
                 / povo)・au PAY・コンビニでお支払いができます。</p>
         </section>
+
     </main>
     <!--javascript-->
     <script src="/common_2024/js/script.js"></script>
