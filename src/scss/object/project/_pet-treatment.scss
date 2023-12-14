@@ -7,7 +7,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: rem(79px);
+  gap: rem(69px);
   @include mq-max("sm") {
     flex-direction: column-reverse;
     gap: initial;
@@ -21,7 +21,8 @@
   }
 }
 .p-pet-treatment__text-box {
-  width: 46%;
+  width: 50%;
+  padding-left: rem(30px);
   @include mq-max("sm") {
     width: 100%;
     padding-left: rem(10px);
@@ -79,7 +80,7 @@
       }
 }
 .p-pet-treatment__img {
-  width: 54%;
+  width: 50%;
   @include mq-max("sm") {
     width: 100%;
     padding-left: rem(10px);
