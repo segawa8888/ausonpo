@@ -28,7 +28,20 @@
                 left: -10px;
                 width: calc(100% + 20px);
             }
-
         }
+    }
+
+    &__recruit {
+        background-color: #f3f3f3;
+        height: rem(221px);
+        padding: 36px;
+
+        &.-sm{
+            @include mq-max("sm") {
+                height: auto;
+                padding: 28px 20px 28px 22px;
+            }
+        }
+        
     }
 }
