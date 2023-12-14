@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @use "../../global" as *;
-.bycle_hominglink{
+.bycle_hominglink {
     max-width: 8.375rem;
     width: 100%;
     height: 6.125;
@@ -8,35 +8,205 @@
     position: fixed;
     right: 2rem;
     z-index: 10000;
-    img{
+    img {
         width: 100%;
     }
 }
 /*　タブ切り替え　ベース　*/
-.tab-buttons {
-    display: flex;
-    justify-content: space-between;
-    button {
-        cursor: pointer;
-    }
+.c-tab__list {
+display: flex;
+height: auto;
+justify-content: space-between;
+.c-tab__item-current {
+    cursor: pointer;
+}
 }
 .text-gray {
-    color: $c-base-600;
+color: $c-base-600;
 }
-.tab-content {
-    .p-bycletab-inner {
-        padding: 3rem;
+.c-tab__content {
+.c-tab__content-inner {
+    padding: 3rem;
+    @include mq-max("sm") {
+    padding: 2.5rem 0.5rem;
+    }
+}
+// タブ内　ポイント見出しの修正
+.p-koutsuujiko-detail__heading {
+    justify-content: center;
+    padding: 0 1rem;
+    @include mq-max("sm") {
+    justify-content: left;
+    padding-left: 1rem;
+    }
+}
+}
+.c-tab {
+border: 1px solid $c-primary;
+border-radius: 1rem;
+margin-top: 10px;
+position: relative;
+padding: 4rem 0;
+@include mq-max("sm") {
+    padding: 6.25rem 0;
+    border-radius: 0.625rem;
+}
+&__list {
+    width: 100%;
+    border: 1px solid $c-primary;
+    border-radius: 1rem;
+    @include mq-max("sm") {
+    flex-wrap: wrap;
+    border-radius: 0.625rem;
+    align-content: flex-start;
+    }
+    &:first-child {
+    position: absolute;
+    bottom: auto;
+    top: -1px;
+    margin-bottom: 0.625rem;
+    }
+    &:last-child {
+    position: absolute;
+    top: auto;
+    bottom: -1px;
+    }
+    .c-tab__item-current {
+    min-width: calc(100% / 4);
+    width: 100%;
+    border-radius: 0rem;
+    border: none;
+    justify-content: flex-start;
+    align-items: center;
+    color: $c-primary;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: bold;
+    position: relative;
+    @include mq-max("sm") {
+        min-width: 50%;
+        width: 50%;
+        height: 3rem;
+        font-size: 0.8125rem;
+    }
+    .-button-col3 & {
+        padding: 0.625rem;
         @include mq-max("sm") {
-            padding: 2.5rem 0.5rem;
+        min-width: 33%;
+        width: 33%;
         }
     }
-}
-/*　---------------　*/
-/*　決済方法　*/
-.p-kokunai-payment__icons.bycle {
-    grid-template-columns: repeat(6, 1fr);
-    @include mq-max("md") {
-        grid-template-columns: repeat(3, 1fr);
+    &:hover {
+        transform: translateY(0rem);
+        -webkit-transform: translateY(0rem);
+    }
+    &::after {
+        content: "";
+        width: 1px;
+        height: 4rem;
+        background-color: $c-primary;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include mq-max("sm") {
+        height: 3.25rem;
+        }
+    }
+    a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0.625rem;
+    }
+    span {
+        font-size: 1.5rem;
+        padding-right: 0.625rem;
+        @include mq-max("sm") {
+        font-size: 1.25rem;
+        }
+    }
+    &:first-child {
+        border-radius: 1rem 0 0 1rem;
+        @include mq-max("sm") {
+        border-radius: 0.625rem 0 0 0;
+        }
+        .-button-col3 & {
+        border-radius: 0.78rem 0 0 0.78rem;
+        @include mq-max("sm") {
+            border-radius: 0.425rem 0 0 0.425rem;
+        }
+        }
+    }
+    &:nth-child(2) {
+        @include mq-max("sm") {
+        border-radius: 0 0.625rem 0 0;
+        &::after {
+            content: none;
+        }
+        }
+        .-button-col3 & {
+        border-left: 1px solid $c-primary;
+        }
+    }
+    &:nth-child(3) {
+        @include mq-max("sm") {
+        border-radius: 0 0 0 0.625rem;
+        border-top: 1px solid $c-primary;
+        }
+        .-button-col3 & {
+        @include mq-max("sm") {
+            border-top: none;
+        }
+        }
+    }
+    &:last-child {
+        border-radius: 0 1rem 1rem 0;
+        @include mq-max("sm") {
+        border-radius: 0 0 0.625rem 0;
+        border-top: 1px solid $c-primary;
+        }
+        &::after {
+        content: none;
+        }
+        .-button-col3 & {
+        border-radius: 0 0.78rem 0.78rem 0;
+        @include mq-max("sm") {
+            border-radius: 0 0.425rem 0.425rem 0;
+            border-top: none;
+            border-left: 1px solid $c-primary;
+        }
+        }
+    }
+    &.is-active,
+    &.active {
+        background-color: $c-primary;
+        color: $c-white;
+        height: calc(3.75rem + 0.25rem);
+        box-shadow: none;
+        padding: 0.625rem;
+        @include mq-max("sm") {
+        min-width: calc(100% / 2);
+        height: calc(3rem + 0.25rem);
+        }
+    }
+    &.is-active {
+        @include mq-max("sm") {
+        min-width: calc(100% / 3);
+        }
+    }
+    &:focus {
+        transform: translateY(0rem);
+        -webkit-transform: translateY(0rem);
+        box-shadow: none;
+    }
+    &.active {
+        &:hover {
+        transform: translateY(0rem);
+        -webkit-transform: translateY(0rem);
+        }
+    }
     }
 }
-/*　------　*/
+}
+/*　---------------　*/

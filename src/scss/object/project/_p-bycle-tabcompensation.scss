@@ -1,14 +1,13 @@
 @charset "UTF-8";
 @use "../../global" as *;
 /*　タブ切り替え　補償内容　*/
-.tab2.bycle-hosyou {
+.bycle-hosyou {
     .p-koutsuujiko-detail__fukidashi {
         top: rem(-22px);
     }
     .u-text-xs-tight {
         letter-spacing: -0.04em;
     }
-   
     .p-koutsuujiko-accordion-service {
         margin-left: 0;
         margin-right: 0;
@@ -297,7 +296,6 @@
     }
 }
 .c-btn.-lg {
-    padding: 0 2.5rem;
     font-size: 0.875rem;
     @include mq-max("sm") {
         padding: 0 0.75rem;
