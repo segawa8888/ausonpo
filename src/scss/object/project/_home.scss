@@ -216,6 +216,7 @@
             transition: opacity 0.4s;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding-right: rem(32px);
             @include hover {
                 opacity: 0.6;
