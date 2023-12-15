@@ -488,6 +488,23 @@ document.addEventListener("componentsLoaded", () => {
   if (currentPath.endsWith("/")) {
     modifiedCurrentPath += "index.html";
   }
+  // パスのパターンと対応する変更後のパスを定義
+  const pathPatterns = [
+    { pattern: /^\/pc\/bycle-best\/(compensation|premium|roadservice)\.html$/, newPath: "/pc/bycle-best/index.html" },
+    { pattern: /^\/pc\/bycle\/(compensation|premium|roadservice)\.html$/, newPath: "/pc/bycle/index.html" },
+    { pattern: /^\/pc\/bycle-s\/(compensation|premium|roadservice)\.html$/, newPath: "/pc/bycle-s/index.html" },
+  ];
+
+  // URLに'bycle'が含まれる場合のみパターンマッチングを実行
+  if (currentPath.includes("bycle")) {
+    pathPatterns.forEach(({ pattern, newPath }) => {
+      if (pattern.test(currentPath)) {
+        modifiedCurrentPath = newPath;
+      }
+    });
+  }
+
+  console.log(modifiedCurrentPath);
   const navItems = document.querySelectorAll(".l-header-nav__item");
   // 各要素をループして処理
   navItems.forEach((item) => {
