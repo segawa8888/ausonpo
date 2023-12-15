@@ -60,6 +60,20 @@ layout/_header.scss
         text-decoration: underline;
       }
     }
+    &.-external {
+      a {
+        background: url(/common_2024/img/icon/icon_external.svg) center right / #{rem(15px)} no-repeat;
+        padding-right: rem(24px);
+        /*width: rem(15px);
+        height: rem(12px);
+        display: inline-block;
+        margin-left: 0.75em;
+        @include mq-max("sm") {
+          width: rem(15px);
+          height: rem(12px);
+        }*/
+      }
+    }
   }
   &__btn {
     & + & {

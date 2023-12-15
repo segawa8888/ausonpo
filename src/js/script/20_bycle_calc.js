@@ -81,6 +81,8 @@
 			var course_num;
 			if(step3_val == "ブロンズ") {
 				course_num = 0;
+				document.getElementById('result_img07_off').style.display = "block";
+				document.getElementById('result_img07_on').style.display = "none";
 				document.getElementById('result_img08_off').style.display = "block";
 				document.getElementById('result_img08_on').style.display = "none";
 				document.getElementById('result_img09_off').style.display = "block";
@@ -91,6 +93,8 @@
 				document.getElementById('result_img11_on').style.display = "none";
 			} else if(step3_val == "シルバー") {
 				course_num = 1;
+				document.getElementById('result_img07_off').style.display = "none";
+				document.getElementById('result_img07_on').style.display = "block";
 				document.getElementById('result_img08_off').style.display = "none";
 				document.getElementById('result_img08_on').style.display = "block";
 				document.getElementById('result_img09_off').style.display = "none";
@@ -101,6 +105,8 @@
 				document.getElementById('result_img11_on').style.display = "none";
 			} else if(step3_val == "ゴールド") {
 				course_num = 2;
+				document.getElementById('result_img07_off').style.display = "none";
+				document.getElementById('result_img07_on').style.display = "block";
 				document.getElementById('result_img08_off').style.display = "none";
 				document.getElementById('result_img08_on').style.display = "block";
 				document.getElementById('result_img09_off').style.display = "none";

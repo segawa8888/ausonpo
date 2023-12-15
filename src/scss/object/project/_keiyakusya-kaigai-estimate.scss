@@ -187,13 +187,27 @@
     }
     
     .price {
-        font-size: rem(20px);
+        font-size: rem(32px);
     }
 
-    .shiharai {
-        font-size: rem(7.512px);
-        position: absolute;
-        top: rem(-2px);
-        right:rem(-4px);
+    &.--vary {
+        position: relative;
+        &::before {
+            content: '';
+            background-image: url(/pc/kaigai/assets/img/kaigai_smark.webp);
+            background-size: contain;
+            width:rem(13px);
+            height:rem(13px);
+            position: absolute;
+            top: rem(4px);
+            left: rem(5px);
+        }
     }
+
+    // .shiharai {
+    //     font-size: rem(7.512px);
+    //     position: absolute;
+    //     top: rem(-2px);
+    //     right:rem(-4px);
+    // }
 }

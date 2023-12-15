@@ -14,4 +14,13 @@
             }
         }
     }
+
+    &__benefits {
+
+            div {
+                &:first-child {
+                    flex: 0 0 rem(93px);
+                }
+            }
+        }
 }
