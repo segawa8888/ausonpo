@@ -1682,9 +1682,9 @@ document.addEventListener("componentsLoaded", () => {
 
 //コンポーネント読み込み後
 document.addEventListener("componentsLoaded", () => {
-  const tabContainer = document.querySelector(".c-tab");
-  const tabs = document.querySelectorAll(".c-tab__item");
-  const panels = document.querySelectorAll(".c-tab__panel");
+  const tabContainer = document.querySelector(".c-tab2");
+  const tabs = document.querySelectorAll(".c-tab2__item");
+  const panels = document.querySelectorAll(".c-tab2__panel");
   if (tabContainer) {
     tabs.forEach((tab) => {
       tab.addEventListener("click", () => {
