@@ -46,15 +46,15 @@
   }
 
   &__left {
-    flex: 0 0 27.5%;
+    flex: 0 0 28.5%;
     align-items: center;
   }
 
   &__topics {
     background-color: #ffdaba;
-    max-width: rem(116px);
+    max-width: rem(130px);
     text-align: center;
-    width: 50%;
+    width: 56%;
     @include mq-max("sm") {
       max-width: rem(134px);
     }
@@ -62,9 +62,9 @@
 
   &__release {
     background-color: #fff9a9;
-    max-width: rem(116px);
+    max-width: rem(130px);
     text-align: center;
-    width: 50%;
+    width: 56%;
     @include mq-max("sm") {
       max-width: rem(134px);
     }
@@ -76,7 +76,7 @@
 
   &__date {
     max-width: rem(90px);
-    width: 50%;
+    width: 44%;
     @include mq-max("sm") {
       max-width: rem(110px);
     }
