@@ -187,10 +187,7 @@
     }
     
     .price {
-        font-size: rem(29px);
-        @include mq-max("md") {
-            font-size: rem(32px);
-        }
+        font-size: rem(32px);
     }
 
     &.--vary {
