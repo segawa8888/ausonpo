@@ -3,7 +3,6 @@
 // TOPメッセージ
 
 .p-corporate-btn {
-
     background-size: rem(18px);
     font-weight: 700;
     border-radius: rem(8px);
@@ -39,6 +38,10 @@
         min-width: rem(300px);
     }
 
+    &.-external {
+        background: url(/common_2024/img/icon/icon_external_primary.svg)right rem(11px) center no-repeat;
+      }
+
     &.-lg {
         height: rem(112px);
         min-width: rem(389px);
@@ -61,5 +64,4 @@
         transform: translateY(rem(4px));
         border-color: $c-primary;
     }
-
 }
