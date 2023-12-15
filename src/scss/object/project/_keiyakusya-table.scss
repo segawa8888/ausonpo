@@ -168,3 +168,24 @@
 .p-keiyakusya-table table thead td:nth-child(4) {
     background-color: #BD9F00;
 }
+
+.p-keiyakusya-table table 
+.p-keiyakusya-table__type-title {
+    display: block;
+    &:not(:last-child) {
+        border-bottom: initial;
+    }
+}
+
+.p-keiyakusya-table table 
+.p-keiyakusya-table__type-title td:first-child {
+    min-width: initial;
+    background-color: initial;
+    width: 100%;
+    padding-right: initial;
+    padding-left: initial;
+    border-bottom:initial;
+    p {
+        width: 100%;
+    }
+}
