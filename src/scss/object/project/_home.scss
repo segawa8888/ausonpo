@@ -222,6 +222,7 @@
                 opacity: 0.6;
             }
             @include mq-max("sm") {
+                align-items: flex-start;
                 flex-direction: column;
             }
         }
