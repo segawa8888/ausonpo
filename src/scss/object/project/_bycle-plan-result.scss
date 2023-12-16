@@ -20,7 +20,7 @@
     padding: rem(12px) rem(26px) rem(26px);
     position: relative;
     @include mq-max("sm") {
-        padding: rem(0px) rem(12px) rem(26px);
+        padding: rem(12px) rem(12px) rem(26px);
     }
     .-blue {
         color: #057cd8;
@@ -35,6 +35,9 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    @include mq-max("sm") {
+        align-items: center;
+    }
     // gap: rem(80px);
 }
 
