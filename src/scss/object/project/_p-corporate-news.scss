@@ -3,59 +3,89 @@
 // TOPメッセージ
 
 .p-corporate-news {
-    max-width: 813px;
+  max-width: rem(813px);
 
-    &__menu {
-        padding: 5px 20px;
-        transition: all .3s ease 0s;
-        border-color: #BFBFBF;
-        display: inline-block;
+  &__menu {
+    padding: 5px 20px;
+    transition: all 0.3s ease 0s;
+    border-color: $c-base-300;
+    display: inline-block;
 
-        @include hover {
-            background-color: $c-primary;
-            color: #fff;
-            border-color: transparent;
-        }
+    @include hover {
+      background-color: $c-primary;
+      color: #fff;
+      border-color: transparent;
+    }
+  }
+
+  &__list {
+    background: url(/common_2024/img/arrow/arrow_sm_black.svg) calc(100% - 2rem) center no-repeat;
+    border-bottom: 1px solid $c-base-300;
+    font-size: rem(12px);
+
+    &:first-child {
+      border-top: 1px solid $c-base-300;
     }
 
-
-    &__list {
-        background: url(/common_2024/img/arrow/arrow_sm_black.svg) calc(100% - 2rem) center no-repeat;
-        border-bottom: 1px solid #BFBFBF;
-        font-size: rem(12px);
-
-        &:first-child {
-            border-top: 1px solid #BFBFBF;
-        }
-
-        @include hover {
-            opacity: 0.6;
-        }
-
-        @include mq-max("sm") {
-            font-size: rem(14px);
-            background: url(/common_2024/img/arrow/arrow_sm_black.svg) calc(100% - 0.5rem) calc(100% - 4.75rem) no-repeat;
-
-            a {
-                font-weight: 500;
-            }
-
-        }
+    @include hover {
+      opacity: 0.6;
     }
-
-    &__left {
-        flex: 0 0 27.5%;
+    a {
+      align-items: center;
     }
+    @include mq-max("sm") {
+      font-size: rem(14px);
+      background: url(/common_2024/img/arrow/arrow_sm_black.svg) calc(100% - 0.5rem) center no-repeat;
 
-    &__topics {
-        background-color: #FFDABA;
+      a {
+        font-weight: 500;
+      }
     }
+  }
 
-    &__release {
-        background-color: #FFF9A9;
+  &__date {
+    width: rem(112px);
+    @include mq-max("sm") {
+      max-width: rem(112px);
     }
+  }
 
-    &__right {
-        flex: 0 1 72.5%;
+  &__left {
+    /*flex: 0 0 28.5%;*/
+    flex: 1;
+    align-items: center;
+  }
+
+  &__topics {
+    background-color: #ffdaba;
+    //max-width: rem(130px);
+    text-align: center;
+    //width: 56%;
+    margin-left: 0 !important; //コンポーネント化時に削除
+    width: rem(120px);
+    @include mq-max("sm") {
+      //max-width: rem(134px);
     }
+  }
+
+  &__release {
+    background-color: #fff9a9;
+    //max-width: rem(130px);
+    text-align: center;
+    //width: 56%;
+    width: rem(120px);
+    margin-left: 0 !important; //コンポーネント化時に削除
+    @include mq-max("sm") {
+      //max-width: rem(134px);
+    }
+  }
+
+  &__right {
+    //flex: 0 1 65.5%;
+    width: rem(560px);
+    @include mq-max("sm") {
+      width: 100%;
+      margin-left: 0 !important; //コンポーネント化時に削除
+    }
+  }
 }
