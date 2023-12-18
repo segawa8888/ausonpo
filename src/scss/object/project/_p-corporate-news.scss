@@ -51,37 +51,31 @@
   }
 
   &__left {
-    /*flex: 0 0 28.5%;*/
     flex: 1;
     align-items: center;
   }
 
   &__topics {
     background-color: #ffdaba;
-    //max-width: rem(130px);
     text-align: center;
-    //width: 56%;
     margin-left: 0 !important; //コンポーネント化時に削除
     width: rem(120px);
     @include mq-max("sm") {
-      //max-width: rem(134px);
+      width: rem(134px);
     }
   }
 
   &__release {
     background-color: #fff9a9;
-    //max-width: rem(130px);
     text-align: center;
-    //width: 56%;
     width: rem(120px);
     margin-left: 0 !important; //コンポーネント化時に削除
     @include mq-max("sm") {
-      //max-width: rem(134px);
+      width: rem(134px);
     }
   }
 
   &__right {
-    //flex: 0 1 65.5%;
     width: rem(560px);
     @include mq-max("sm") {
       width: 100%;
