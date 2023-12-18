@@ -11,14 +11,24 @@
         padding-left: rem(20px);
         padding-right: 0.5em;
 
+        &.-second {
+            &::before {
+                content: '“';
+                position: absolute;
+                top: -0.5rem;
+                left: 0;
+
+                @include mq-max("sm") {
+                    left: 0.5rem;
+                }
+            }
+        }
+
         &::before {
             content: '“';
             position: absolute;
             top: -0.5rem;
             left: 0;
-            @include mq-max("sm") {
-                left: 0.25rem;
-            }
         }
 
         &::after {
