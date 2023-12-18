@@ -64,7 +64,7 @@
     margin-left: 0 !important; //コンポーネント化時に削除
     width: rem(120px);
     @include mq-max("sm") {
-      //max-width: rem(134px);
+      width: rem(144px);
     }
   }
 
@@ -76,7 +76,7 @@
     width: rem(120px);
     margin-left: 0 !important; //コンポーネント化時に削除
     @include mq-max("sm") {
-      //max-width: rem(134px);
+      width: rem(144px);
     }
   }
 
