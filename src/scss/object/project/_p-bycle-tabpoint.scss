@@ -222,6 +222,95 @@
       }
     }
   }
+
+  .p-bycle-compensation-box-right {
+    position: relative;
+    border-radius: rem(6.498px);
+    border: rem(2.599px) dashed #EA5404;
+    background: #FFF682;
+    padding:rem(25px) rem(16px) rem(23.37px) rem(26px);
+    max-width: rem(379px);
+    margin-left: rem(20px);
+    @include mq-max("md") {
+      max-width: rem(162px);
+      margin-left: rem(16px);
+      padding:rem(28px) rem(7px) rem(15px) rem(21px);
+      border-radius: rem(5px);
+    }
+    &::before {
+      content: '';
+      background-image: url(/common_2024/img/icon/icon_plus.webp);
+      background-size: rem(25px);
+      width: rem(25px);
+      height: rem(25px);
+      position: absolute;
+      left: rem(-12.5px);
+      top: 50%;
+      transform: translateY(-50%);
+      @include mq-max("md") {
+        background-size: rem(20px);
+        width: rem(20px);
+        height: rem(20px);
+        left: rem(-10px);
+      }
+    }
+    .hukidashi {
+      position: absolute;
+      top: rem(-11px);
+      left: 50%;
+      transform: translateX(-50%);
+      z-index:2;
+    }
+    .hukidashi__text{
+      position:relative;
+      width:rem(150.765px);
+      height:rem(22.743px);
+      line-height: rem(22.743px);
+      background:#EA5404;
+      text-align:center;
+      color:#FFFFFF;
+      font-size:rem(16px);
+      font-weight:bold;
+      border-radius:rem(6.498px);
+      @include mq-max("md") {
+        width:rem(116px);
+        height: rem(17.49px);
+        font-size:rem(12px);
+        line-height: rem(17.49px);
+      }
+  }
+  .hukidashi__text:after{
+      border: solid transparent;
+      content:'';
+      height:0;
+      width:0;
+      pointer-events:none;
+      position:absolute;
+      border-color: rgba(234, 84, 4, 0);
+      border-top-width:rem(5px);
+      border-bottom-width:rem(5px);
+      border-left-width:rem(5px);
+      border-right-width:rem(5px);
+      margin-left:rem( -5px);
+      border-top-color:#EA5404;
+      top:100%;
+      left:50%;
+  }
+  
+  }
+
+  .p-bycle-compensation-box-right__inner {
+    display: flex;
+    align-items: center;
+    @include mq-max("md") {
+     flex-wrap: wrap;
+    }
+  }
+
+  .p-bycle-compensation-box-right__img {
+    max-width: rem(175.65px);
+  }
+
   .p-bycle-compensation__pic-img {
     max-width: 24.5rem;
     @include mq-max("lg") {
