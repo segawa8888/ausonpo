@@ -119,6 +119,7 @@
 
 .p-keiyakusya-kaigai-estimate-price {
     border-radius: rem(5px);
+    position: relative;
 
     &.--bronze {
         width:rem(102.631px);
@@ -132,7 +133,20 @@
             justify-content: center;
             align-items: center;
             background-color: #B08645;
-        }  
+        }
+
+        &.-lg {
+            width:rem(148px);
+            @include mq-max("md") {
+                width:rem(102.6px)
+            }
+            .p-keiyakusya-kaigai-estimate-price__price {
+                height:rem(64px);
+                @include mq-max("md") {
+                    height:rem(44px);
+                }
+            }
+        }
     }
 
     &.--silver {
@@ -147,7 +161,20 @@
             justify-content: center;
             align-items: center;
             background-color: #909090;
-        }  
+        } 
+
+        &.-lg {
+            width:rem(168px);
+            @include mq-max("md") {
+                width: rem(102.9px);
+            }
+            .p-keiyakusya-kaigai-estimate-price__price {
+                height:rem(78px);
+                @include mq-max("md") {
+                    height:rem(53px);
+                }
+            }
+        }
     }
 
     &.--gold {
@@ -163,7 +190,81 @@
             align-items: center;
             background-color: #BD9F00;
         }
+
+        &.-lg {
+            width:rem(168px);
+            @include mq-max("md") {
+                width: rem(116.46px);
+            }
+            .p-keiyakusya-kaigai-estimate-price__price {
+                height:rem(95px);
+                @include mq-max("md") {
+                    height:rem(65px);
+                }
+            }
+        }
     }
+
+    .hukidashi {
+        position: absolute;
+        top: rem(-50px);
+        left: 50%;
+        transform: translateX(-50%);
+        @include mq-max("md") {
+            top:rem(-35px);
+        }
+    }
+
+    .hukidashi__text{
+        position:relative;
+        width:rem(168px);
+        height:rem(25.33px);
+        background:#FFF682;
+        text-align:center;
+        border:rem(5px) solid #FFF682;
+        color:#000000;
+        font-size: rem(17px);
+        font-weight:bold;
+        border-radius:rem(7.25px);
+        font-weight: 700;
+        @include mq-max("md") {
+            width:rem(110px);
+            height: rem(20px);
+            font-size: rem(11px);
+         }
+    }
+    .hukidashi__text:after,.hukidashi__text:before{
+        border: solid transparent;
+        content:'';
+        height:0;
+        width:0;
+        pointer-events:none;
+        position:absolute;
+        top:100%;
+        left:50%;
+    }
+    .hukidashi__text:after{
+        border-color: rgba(255, 246, 130, 0);
+        border-top-width:rem(5px);
+        border-bottom-width:rem(5px);
+        border-left-width:rem(5px);
+        border-right-width:rem(5px);
+        margin-left: rem(-5px);
+        border-top-color:#FFF682;
+        @include mq-max("md"){
+            border-color: transparent;
+        }
+    }
+    .hukidashi__text:before{
+        border-color: rgba(255, 246, 130, 0);
+        border-top-width:rem(10px);
+        border-bottom-width:rem(10px);
+        border-left-width:rem(10px);
+        border-right-width:rem(10px);
+        margin-left: rem(-10px);
+        margin-top: rem(5px);
+        border-top-color:#FFF682;
+    }    
 }
 
 .p-keiyakusya-kaigai-estimate-price__title {
@@ -204,10 +305,41 @@
         }
     }
 
-    // .shiharai {
-    //     font-size: rem(7.512px);
-    //     position: absolute;
-    //     top: rem(-2px);
-    //     right:rem(-4px);
-    // }
+    .shiharai {
+        font-size: rem(7.512px);
+        position: absolute;
+        top: rem(10px);
+        right:rem(-7px);
+    }
+}
+
+.p-keiyakusya-kaigai-estimate-price {
+    &.-lg {
+        .p-keiyakusya-kaigai-estimate-price__title {
+            font-size: rem(18.848px);
+            @include mq-max("md") {
+               font-size: rem(13px);
+            }
+        }
+        .p-keiyakusya-kaigai-estimate-price__price {
+            font-size: rem(18.848px);
+            @include mq-max("md") {
+                font-size: rem(12.6px);
+             }
+            .price {
+                font-size: rem(50.382px);
+                @include mq-max("md") {
+                    font-size: rem(34.75px);
+                 }
+            }
+        }
+        .shiharai {
+            font-size: rem(10.89px);
+            top:rem(15px);
+            font-weight: 700;
+            @include mq-max("md") {
+                font-size: rem(8px);
+             }
+        }
+    }
 }

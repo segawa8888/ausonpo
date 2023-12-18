@@ -175,16 +175,40 @@
                         <p class="u-text-lg u-py-8 u-text-center u-text-bold">
                           安心の補償で、家計に優しい自転車向け保険！<br class="lg:u-hidden">必要な補償内容によって、3つのコースから<br class="lg:u-hidden">お選びいただけます。
                         </p>
-                        <div class="u-pb-10 p-bycle-course__img u-text-center">
-                          <picture>
-                            <source srcset="/pc/bycle/assets/img/bycle_tabpoint1-02_pc.webp" type="image/webp">
-                            <img src="/pc/bycle/assets/img/bycle_tabpoint1-02_pc.png"
-                              alt="ブロンズコースは、月払い340円~。通院まで補償のシルバーコースは月払590円~。さらに弁護士補償も付いたゴールドコースは月払1,130円~"
-                              loading="lazy">
-                          </picture>
+                        <div class="p-keiyakusya-kaigai-estimate-price__table u-mt-8">
+                          <div class="p-keiyakusya-kaigai-estimate-price -lg --bronze">
+                            <p class="p-keiyakusya-kaigai-estimate-price__title">ブロンズコース</p>
+                            <div class="p-keiyakusya-kaigai-estimate-price__price">
+                              <p><span class="price">340</span> 円~
+                                <span class="shiharai">（月払）</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="p-keiyakusya-kaigai-estimate-price -lg --silver">
+                            <div class="hukidashi">
+                              <div class='hukidashi__text'>通院まで補償</div>
+                            </div>
+                            <p class="p-keiyakusya-kaigai-estimate-price__title">シルバーコース</p>
+                            <div class="p-keiyakusya-kaigai-estimate-price__price">
+                              <p><span class="price">590</span> 円~
+                                <span class="shiharai">（月払）</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="p-keiyakusya-kaigai-estimate-price -lg --gold">
+                            <div class="hukidashi">
+                              <div class='hukidashi__text'>さらに弁護士費用も</div>
+                            </div>
+                            <p class="p-keiyakusya-kaigai-estimate-price__title">ゴールドコース</p>
+                            <div class="p-keiyakusya-kaigai-estimate-price__price">
+                              <p><span class="price">1,130</span> 円~
+                                <span class="shiharai">（月払）</span>
+                              </p>
+                            </div>
+                          </div>
                         </div>
                         <div class="bycle-course-type">
-                          <p class="u-text-primary u-text-14 u-text-center u-text-lg">さらに！</p>
+                          <p class="u-text-primary u-text-14 u-text-center u-text-lg u-mt-10">さらに！</p>
                           <h2 class="c-heading2-has-line u-mt-1">家族や親族と一緒に<br class="sm-min:u-hidden">補償を受けられるタイプも</h2>
                           <ul class="bycle-course-text u-grid u-grid-cols-3 u-gap-10 u-mx-auto sm:u-grid-cols-1 sm:u-gap-4">
                             <li class="bycle-course-text__pic">
@@ -343,7 +367,7 @@
                       </div>
                       <p class="u-pt-8 u-pb-2 u-text-center u-text-bold">ご自身のケガの補償範囲</p>
                       <div class="p-bycle-compensation u-pb-8 u-px-2">
-                        <div class="p-bycle-compensation-box u-flex">
+                        <div class="p-bycle-compensation-box u-flex u-mt-6">
                           <div class="p-bycle-compensation-box-text">
                             <picture>
                               <source srcset="/pc/bycle/assets/img/bycle_tabpoint5-02_pc.webp" type="image/webp">
@@ -353,12 +377,27 @@
                             </picture>
                             <p class="u-text-16 u-text-bold u-pr-2 u-pl-4 u-leading-normal">自転車事故を含む<br>交通事故のケガを補償！</p>
                           </div>
-                          <picture>
-                            <source srcset="/pc/bycle/assets/img/bycle_tabpoint5-03_pc.webp" media="(min-width:768px)"
-                              loading="lazy">
-                            <img src="/pc/bycle/assets/img/bycle_tabpoint5-03_sp.png"
-                              alt="ここも補償！部活やアウトドア、ご自宅などでの身近なケガも補償！" loading="lazy">
-                          </picture>
+                          <div class="p-bycle-compensation-box-right">
+                            <div class="hukidashi">
+                              <div class='hukidashi__text'>ココも補償！</div>
+                            </div>
+                            <div class="p-bycle-compensation-box-right__inner">
+                              <div class="p-bycle-compensation-box-right__item">
+                                <div class="p-bycle-compensation-box-right__img">
+                                  <picture>
+                                    <source srcset="/pc/bycle/assets/img/bycle_tabpoint5-02.webp" type="image/webp">
+                                    <img src="/pc/bycle/assets/img/bycle_tabpoint5-02.png" alt="" loading="lazy">
+                                  </picture>
+                                </div>
+                              </div>
+                              <div class="p-bycle-compensation-box-right__item">
+                                <p class="u-text-16 u-ml-2 u-text-bold u-leading-relaxed sm:u-text-14 sm:u-mt-1 sm:u-mx-0">
+                                  部活やアウトドア、<br>
+                                  ご自宅などでの<br>
+                                  身近なケガも補償！</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="p-keiyakusya-kaigai-cta u-mt-8 u-mx-auto p-bycle-compensation-buttom">
                           <a href="/pc/bycle-best/index.html">
@@ -638,7 +677,7 @@
       </section>
       <!-- ここまで -->
       <!-- お支払い方法 -->
-<section class="p-payment-method" data-component="payment-method"></section>
+<section class="p-payment-method" data-component="payment-method-2"></section>
       <!-- ここまで -->
       <!-- auユーザーの皆さまへ -->
       <div class="p-kaigai-user p-kaigai__user u-mx-auto">
