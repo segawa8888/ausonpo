@@ -29,10 +29,10 @@
         }
 
         td {
-            padding: 1.25rem 1.25rem 1.25rem rem(60px);
+            padding: 1.25rem rem(60px);
 
             @include mq-max("sm") {
-                padding: 1.25rem rem(4px) 1.25rem rem(20px);
+                padding: 1rem 1rem ;
             }
         }
     }
