@@ -1,0 +1,16 @@
+{
+  "editor.tabSize": 2, //タブのサイズ変更
+  "editor.wordWrap": "off", //エディターの幅で折り返し
+  "files.insertFinalNewline": true, //ファイルの保存時に末尾を改行
+  "files.trimFinalNewlines": true, //ファイルの保存時に最終行以降をトリミング
+  "files.trimTrailingWhitespace": true, // ファイルの保存時に行末の空白をトリミング
+  "explorer.confirmDelete": false, // ファイル削除時の確認を表示しない
+  "html.format.contentUnformatted": "pre, code, textarea", // タグ内の記述はフォーマットしない
+  "html.format.extraLiners": "", // head, body, /html タグの前に改行を入れない
+  "html.format.unformatted": null, // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない
+  "html.format.wrapAttributes": "auto", // 属性を折り返さない。
+  "html.format.indentInnerHtml": false, //headタグとbodyタグをインデントしない。
+  "html.format.wrapLineLength": 1000, //1000字以上で属性で折り返す
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.printWidth": 1000
+}
