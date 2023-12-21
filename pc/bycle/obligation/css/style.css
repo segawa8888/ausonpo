@@ -1,0 +1,2596 @@
+@charset "UTF-8";
+main {
+  width: 100% !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+  line-height: 1.5;
+  /* default
+  ----------------------------------------------------------------------*/
+  /* clearfix */
+  /* Hides from IE-mac \*/
+  /* End hide from IE-mac */
+  /* マウスオーバー */
+  /* [ utility ]
+  -----------------------------*/
+  /* structure
+  ----------------------------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /* header
+  -----------------------------*/
+  /* lp_maintenance用 */
+  /* lp_maintenance用 */
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  /* スマートフォン用 */
+  /* スマートフォン用 */
+  /*--------------------------------------------------*/
+  /* フェード */
+  /* 下からフェード */
+  /* 左からフェード */
+  /* 右からフェード */
+}
+main b {
+  font-weight: bold;
+}
+main * {
+  margin: 0;
+  padding: 0;
+}
+main img {
+  max-width: 100%;
+  border: 0;
+  vertical-align: top;
+}
+main ul, main ol {
+  list-style: none;
+}
+main .none {
+  display: none !important;
+}
+main .clearfix {
+  display: inline-block;
+}
+main .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+main * html .clearfix {
+  height: 1px;
+}
+main .clearfix {
+  display: block;
+}
+main a.hover img {
+  transition: all 0.5s ease;
+  backface-visibility: hidden;
+}
+main a.hover:hover img {
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+main a:focus {
+  outline: none !important;
+}
+main .only-pc {
+  display: block !important;
+}
+main .only-pci {
+  display: inline-block !important;
+}
+main .only-sp {
+  display: none !important;
+}
+main .only-spi {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  main .only-pc {
+    display: none !important;
+  }
+  main .only-pci {
+    display: none !important;
+  }
+  main .only-sp {
+    display: block !important;
+  }
+  main .only-spi {
+    display: inline-block !important;
+  }
+}
+main body {
+  color: #000;
+  min-width: 1000px;
+  font-size: 17px;
+  font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+}
+main .sp {
+  display: none;
+}
+main header {
+  height: 50px;
+  background: #fff;
+  line-height: 45px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+@media screen and (max-width: 768px) {
+  main header {
+    padding: 0 2%;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+main header .container-fluid {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  main header .container-fluid {
+    width: 100%;
+  }
+}
+main header .lt {
+  float: left;
+}
+main header .rt {
+  float: right;
+}
+main header img {
+  vertical-align: middle;
+  max-width: 100%;
+  line-height: 0;
+  height: auto;
+  outline: none;
+  border: 0;
+  font-size: 0;
+}
+main header .logo img {
+  width: 104px;
+}
+@media screen and (max-width: 768px) {
+  main header .logo img {
+    width: 83px;
+  }
+}
+main header .icon-wrap a {
+  width: 30px;
+  display: inline-block;
+  margin: 0 2px;
+}
+@media screen and (max-width: 768px) {
+  main header .icon-wrap a {
+    float: left;
+    margin: 0 2px;
+  }
+}
+main header .icon-wrap a img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  main header .icon-wrap a img {
+    width: 80%;
+  }
+}
+main main {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+main .column {
+  width: 1000px;
+  margin: 0 auto;
+}
+main p.code {
+  font-size: 13px;
+  line-height: 1;
+}
+main footer {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+  border-top: 4px solid #eb5505;
+}
+@media screen and (max-width: 768px) {
+  main footer {
+    border-top: 2px solid #eb5505;
+  }
+}
+main footer .inner {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+@media screen and (max-width: 768px) {
+  main footer .inner {
+    width: 100%;
+    height: auto;
+    padding: 4% 0;
+  }
+}
+main footer img {
+  width: 238px;
+}
+@media screen and (max-width: 768px) {
+  main footer img {
+    width: 238px;
+  }
+}
+main .news_outline {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 110px 0 105px;
+  /*バナー追加*/
+  /*バナー追加終わり*/
+}
+@media screen and (max-width: 768px) {
+  main .news_outline {
+    width: 100%;
+    margin: 0 auto;
+    padding: 11% 0 0;
+  }
+}
+main .news_outline .news_title {
+  background-color: #eee;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 70px;
+  width: 900px;
+  margin: 0 auto 40px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  main .news_outline .news_title {
+    height: auto;
+    line-height: 1.67;
+    border-radius: 50px;
+    width: 90%;
+    padding: 2% 0;
+    margin: 0 auto 4%;
+  }
+}
+main .news_outline .news_title:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-top: 30px solid #eee;
+  border-right: 25px solid transparent;
+  left: 50%;
+  margin-left: -17px;
+  bottom: -30px;
+}
+@media screen and (max-width: 768px) {
+  main .news_outline .news_title:after {
+    border-left: 12px solid transparent;
+    border-top: 15px solid #eee;
+    border-right: 12px solid transparent;
+    margin-left: -12px;
+    bottom: -15px;
+  }
+}
+main .news_outline .news_title p {
+  color: #000;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  main .news_outline .news_title p {
+    font-size: 12px;
+  }
+}
+main .news_outline .news_inline {
+  width: 900px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  main .news_outline .news_inline {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+main .news_outline .news_inline li {
+  width: 33%;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  padding: 0 1.666666%;
+}
+@media screen and (max-width: 768px) {
+  main .news_outline .news_inline li {
+    width: 100%;
+    float: none;
+    font-size: 14px;
+  }
+}
+main .news_outline .news_inline li a:link {
+  color: #000;
+  font-weight: bold;
+}
+main .news_outline .news_inline li a:visited, main .news_outline .news_inline li a:hover, main .news_outline .news_inline li a:active {
+  color: #000;
+}
+main .news_outline p.link {
+  float: right;
+  margin-top: 45px;
+  margin-right: 60px;
+  font-size: 17px;
+}
+@media screen and (max-width: 768px) {
+  main .news_outline p.link {
+    float: none;
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-size: 12px;
+  }
+}
+main .news_outline p.link a {
+  color: #333333;
+  text-decoration: underline;
+}
+main .news_outline .banner_box {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main .news_outline .banner_img {
+  display: inline-block;
+  margin-left: 3em;
+  max-width: 425px;
+}
+main .news_outline .txt_ctr {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 17px;
+  font-weight: bold;
+  color: #333333;
+}
+@media screen and (max-width: 768px) {
+  main .news_outline .banner_img {
+    margin-left: 1em;
+    margin-right: 1em;
+    max-width: 100%;
+  }
+  main .news_outline .txt_ctr {
+    font-size: 16px;
+  }
+  main .news_outline .mgb_3 {
+    margin-bottom: 3em;
+  }
+}
+main .bg_title {
+  position: relative;
+  width: 100%;
+  background: url(../img/bg_main.png) center top no-repeat;
+  background-size: auto 782px;
+  overflow: hidden;
+  margin-top: 0;
+}
+main .bg_title .column {
+  position: relative;
+  height: 738px;
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+main .bg_title .column > * {
+  opacity: 0;
+}
+main .bg_title h1 {
+  width: 960px;
+  height: 308px;
+  margin: 0 auto 15px auto;
+  padding-right: 10px;
+  background: url("../img/title.png") no-repeat;
+  font-size: 71px;
+  line-height: 1.39;
+  color: #2ba4dd;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  main .bg_title h1 {
+    font-size: 50px;
+    line-height: 1.36;
+    height: 35vw;
+    margin: 0 auto 7px auto;
+    padding-right: 0;
+    background: url("../img/title.png") no-repeat;
+    background-size: contain;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 685px) {
+  main .bg_title h1 {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 620px) {
+  main .bg_title h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .bg_title h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .bg_title h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .bg_title h1 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .bg_title h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .bg_title h1 {
+    font-size: 20px;
+    line-height: 1.36;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .bg_title h1 b {
+    display: block;
+    margin: 0 auto;
+  }
+}
+main .bg_title h1 strong {
+  background: linear-gradient(transparent 70%, #ffff00 70%);
+  padding-bottom: 2px;
+}
+main .bg_title h1 span {
+  position: relative;
+}
+main .bg_title h1 span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  margin-left: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  background: #2ba4dd;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  main .bg_title h1 span:after {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    margin-left: -3px;
+    top: -5px;
+  }
+}
+main .bg_title p {
+  width: 542px;
+  margin: 0 auto;
+  font-size: 34px;
+  line-height: 1.47;
+  color: #4f4f4f;
+  text-align: center;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  main .bg_title p {
+    width: 48%;
+    font-size: 21px;
+    line-height: 1.43;
+    text-align: center;
+    padding: 0;
+    top: 43%;
+    left: 28%;
+    text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
+  }
+}
+@media screen and (max-width: 685px) {
+  main .bg_title p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main .bg_title p {
+    font-size: 18px;
+    width: 55%;
+    top: 43%;
+    left: 24%;
+  }
+}
+@media screen and (max-width: 415px) {
+  main .bg_title p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .bg_title p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .bg_title p {
+    font-size: 11px;
+    width: 58%;
+    top: 43%;
+    left: 23%;
+  }
+}
+main .bg_title .people01 {
+  position: absolute;
+  width: 263px;
+  left: -14px;
+  bottom: 127px;
+}
+main .bg_title .people02 {
+  position: absolute;
+  width: 260px;
+  right: -28px;
+  bottom: 98px;
+}
+main .bg_title .btn_rec {
+  position: absolute;
+  width: 164px;
+  top: 377px;
+  right: -75px;
+}
+main .anchor {
+  position: absolute;
+  width: 100%;
+  padding: 10px 0;
+  top: 580px;
+  left: 0;
+}
+main .anchor ul {
+  width: 1000px;
+  margin: 0 auto;
+}
+main .anchor ul li {
+  position: relative;
+  float: left;
+  width: 328px;
+  margin-left: 8px;
+  opacity: 0;
+}
+main .anchor ul li:first-child {
+  margin-left: 0;
+}
+main .menu_fixed {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+  top: 0 !important;
+  z-index: 999;
+  overflow: hidden;
+}
+main h2 img {
+  opacity: 0;
+}
+main .column h3, main .column p {
+  opacity: 0;
+}
+main .blackboard {
+  background: #2c4307 url(../img/bg_blackboard.png) left bottom no-repeat;
+  background-size: 100% auto;
+  margin-bottom: 40px;
+  padding: 65px 75px;
+}
+main .blackboard p {
+  margin-bottom: 60px;
+}
+main dl.balloon {
+  position: relative;
+  width: 980px;
+  margin-bottom: 40px;
+}
+main dl.balloon > * {
+  opacity: 0;
+}
+main dl.balloon dt {
+  position: absolute;
+  bottom: 0;
+}
+main #mandatory {
+  width: 100%;
+  background: url(../img/bg_mandatory.png) left top repeat;
+  background-size: 30px auto;
+  padding-bottom: 45px;
+}
+main #mandatory h2 {
+  position: relative;
+  background-color: #fe5c5c;
+  margin-bottom: 80px;
+  text-align: center;
+  height: 200px;
+}
+main #mandatory h2 strong {
+  position: absolute;
+  width: 1000px;
+  font-size: 36px;
+  color: #fff;
+  line-height: 1.7;
+  margin-top: 30px;
+  margin-left: 33px;
+  opacity: 0;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  main #mandatory h2 strong {
+    width: 65%;
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.76;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: left;
+    left: 17%;
+    top: 17%;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #mandatory h2 strong {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 590px) {
+  main #mandatory h2 strong {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #mandatory h2 strong {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #mandatory h2 strong {
+    font-size: 18px;
+    top: 17%;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #mandatory h2 strong {
+    font-size: 16px;
+    line-height: 1.36;
+    top: 24%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #mandatory h2 strong b {
+    border-bottom: 2px solid #ffff00;
+  }
+}
+main #mandatory h2 strong span {
+  font-size: 48px;
+  border-bottom: 4px solid #ffff00;
+}
+@media screen and (max-width: 768px) {
+  main #mandatory h2 strong span {
+    font-size: 38px;
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #mandatory h2 strong span {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #mandatory h2 strong span {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #mandatory h2 strong span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #mandatory h2 strong span {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #mandatory h2 strong span {
+    font-size: 16px;
+    line-height: 1.36;
+  }
+}
+main #mandatory h2:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 88px;
+  height: 54px;
+  background: url(../img/bg_title01.png) center bottom no-repeat;
+  background-size: 88px auto;
+  left: 50%;
+  bottom: -37px;
+  transform: translateX(-50%);
+}
+main #mandatory h2 img {
+  width: 1033px;
+  margin-left: 33px;
+}
+@media screen and (max-width: 768px) {
+  main #mandatory h2 img {
+    margin-left: 0;
+  }
+}
+main #mandatory dl.balloon {
+  margin-left: 15px;
+}
+main #mandatory dl.balloon dt {
+  width: 185px;
+  left: 0;
+}
+main #mandatory dl.balloon dd {
+  float: right;
+  width: 804px;
+  height: 241px;
+  background: url("../img/img_balloon01.png") no-repeat;
+  padding: 40px 0 0 100px;
+  box-sizing: border-box;
+  background-size: contain;
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  main #mandatory dl.balloon dd {
+    height: 267px;
+    background: url("../img/img_balloon01_sp.png") no-repeat;
+    background-size: 100%;
+    padding: 4% 3% 3% 10%;
+    font-size: 22px;
+    width: 74%;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #mandatory dl.balloon dd {
+    height: 245px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #mandatory dl.balloon dd {
+    height: 206px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #mandatory dl.balloon dd {
+    height: 150px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #mandatory dl.balloon dd {
+    height: 140px;
+    font-size: 12px;
+    line-height: 1.3;
+    top: 22%;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #mandatory dl.balloon dd {
+    height: 120px;
+    font-size: 10px;
+  }
+}
+main #mandatory dl.balloon dd p {
+  width: 88%;
+}
+@media screen and (max-width: 768px) {
+  main #mandatory dl.balloon dd p {
+    width: 93%;
+  }
+}
+main #mandatory dl.balloon2 {
+  margin-bottom: 0;
+}
+main #mandatory dl.balloon2 dd {
+  height: 201px;
+  background: url("../img/img_balloon05.png") no-repeat;
+  padding: 35px 0 0 100px;
+}
+@media screen and (max-width: 768px) {
+  main #mandatory dl.balloon2 dd {
+    height: 30vw;
+    background: url("../img/img_balloon05_sp.png") no-repeat;
+    padding: 3.5% 0 3% 11%;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #mandatory dl.balloon2 dd {
+    height: 185px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #mandatory dl.balloon2 dd {
+    height: 160px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #mandatory dl.balloon2 dd {
+    height: 115px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #mandatory dl.balloon2 dd {
+    height: 110px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #mandatory dl.balloon2 dd {
+    height: 89px;
+    font-size: 10px;
+  }
+}
+main #mandatory .blackboard h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  font-size: 38px;
+  line-height: 1;
+  color: #fff;
+  background: url("../img/st_mandatory.png") no-repeat bottom center;
+  padding-bottom: 55px;
+}
+@media screen and (max-width: 768px) {
+  main #mandatory .blackboard h3 {
+    font-size: 28px;
+    padding-bottom: 8%;
+    line-height: 1.2;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #mandatory .blackboard h3 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #mandatory .blackboard h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #mandatory .blackboard h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #mandatory .blackboard h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #mandatory .blackboard h3 {
+    font-size: 12px;
+    line-height: 1.36;
+  }
+}
+main #area {
+  width: 100%;
+  background: url(../img/bg_area.png) left top repeat;
+  background-size: 30px auto;
+  padding-bottom: 30px;
+}
+main #area h2 {
+  position: relative;
+  background-color: #4888e7;
+  margin-bottom: 95px;
+  text-align: center;
+  height: 200px;
+}
+main #area h2 strong {
+  position: absolute;
+  width: 1000px;
+  font-size: 36px;
+  color: #fff;
+  line-height: 1.7;
+  margin-top: 55px;
+  margin-left: 43px;
+  opacity: 0;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  main #area h2 strong {
+    width: 65%;
+    font-size: 38px;
+    color: #fff;
+    line-height: 1.76;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: left;
+    left: 17%;
+    top: 17%;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #area h2 strong {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 590px) {
+  main #area h2 strong {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #area h2 strong {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #area h2 strong {
+    font-size: 18px;
+    top: 17%;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #area h2 strong {
+    font-size: 16px;
+    line-height: 1.36;
+    top: 24%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #area h2 strong b {
+    border-bottom: 2px solid #ffff00;
+  }
+}
+main #area h2 strong span {
+  font-size: 48px;
+  border-bottom: 4px solid #ffff00;
+}
+@media screen and (max-width: 768px) {
+  main #area h2 strong span {
+    font-size: 38px;
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #area h2 strong span {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #area h2 strong span {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #area h2 strong span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #area h2 strong span {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #area h2 strong span {
+    font-size: 16px;
+    line-height: 1.36;
+  }
+}
+main #area h2:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 88px;
+  height: 54px;
+  background: url(../img/bg_title02.png) center bottom no-repeat;
+  background-size: 88px auto;
+  left: 50%;
+  bottom: -37px;
+  transform: translateX(-50%);
+}
+main #area h2 img {
+  width: 1043px;
+  margin-left: 43px;
+}
+@media screen and (max-width: 768px) {
+  main #area h2 img {
+    margin-left: 0;
+  }
+}
+main #area dl.balloon dt {
+  width: 150px;
+  right: 0;
+}
+main #area dl.balloon dd {
+  float: left;
+  width: 845px;
+}
+main #area dl.balloon3 {
+  margin-left: 15px;
+}
+@media screen and (max-width: 768px) {
+  main #area dl.balloon3 {
+    margin-left: 0;
+  }
+}
+main #area dl.balloon3 dt {
+  width: 185px;
+  left: 0;
+}
+main #area dl.balloon3 dd {
+  float: right;
+  width: 804px;
+  height: 154px;
+  background: url("../img/img_balloon03.png") no-repeat;
+  padding: 34px 0 0 100px;
+  box-sizing: border-box;
+  background-size: contain;
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  main #area dl.balloon3 dd {
+    height: 26vw;
+    background: url("../img/img_balloon03_sp.png") no-repeat;
+    background-size: 100% 82%;
+    padding: 3.5% 3% 3% 11%;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #area dl.balloon3 dd {
+    height: 185px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #area dl.balloon3 dd {
+    height: 160px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #area dl.balloon3 dd {
+    height: 110px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #area dl.balloon3 dd {
+    height: 100px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #area dl.balloon3 dd {
+    height: 89px;
+    font-size: 10px;
+  }
+}
+main #area dl.balloon3 dd p {
+  width: 93%;
+}
+main #area dl.balloon4 {
+  margin-left: 15px;
+}
+@media screen and (max-width: 768px) {
+  main #area dl.balloon4 {
+    margin-left: 0;
+  }
+}
+main #area dl.balloon4 dt {
+  width: 185px;
+  left: 0;
+}
+main #area dl.balloon4 dd {
+  float: right;
+  width: 804px;
+  height: 241px;
+  background: url("../img/img_balloon04.png") no-repeat;
+  padding: 40px 0 0 100px;
+  box-sizing: border-box;
+  background-size: contain;
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  main #area dl.balloon4 dd {
+    height: 29vw;
+    background: url("../img/img_balloon04_sp.png") no-repeat;
+    background-size: 100%;
+    padding: 3.5% 0 9% 11%;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #area dl.balloon4 dd {
+    height: 195px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #area dl.balloon4 dd {
+    height: 170px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #area dl.balloon4 dd {
+    height: 125px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #area dl.balloon4 dd {
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #area dl.balloon4 dd {
+    height: 99px;
+    font-size: 10px;
+  }
+}
+main #area dl.balloon4 dd p {
+  width: 93%;
+}
+@media screen and (max-width: 768px) {
+  main #area dl.balloon4 dd p {
+    width: 90%;
+  }
+}
+main #area dl.balloon4 dd p span {
+  color: #ea5202;
+}
+main #area .remember {
+  background: url(../img/bg_remember.png) left top repeat;
+  background-size: 14px auto;
+  margin-bottom: 70px;
+  padding: 16px;
+  border-radius: 30px;
+}
+main #area .remember dl {
+  background-color: #e5f4ff;
+  padding: 35px 30px 35px 55px;
+  border-radius: 20px;
+}
+main #area .remember dl > * {
+  opacity: 0;
+}
+main #area .remember dl dt {
+  float: left;
+  width: 177px;
+}
+main #area .remember dl dd {
+  float: right;
+  width: 686px;
+  padding-top: 25px;
+}
+main #area .blackboard h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+  background: url(../img/st_mandatory2.png) no-repeat bottom center;
+  padding-bottom: 22px;
+}
+@media screen and (max-width: 768px) {
+  main #area .blackboard h3 {
+    margin: 0 auto 5% auto;
+    font-size: 28px;
+    line-height: 1.2;
+    padding-bottom: 4%;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #area .blackboard h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #area .blackboard h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #area .blackboard h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #area .blackboard h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #area .blackboard h3 {
+    font-size: 12px;
+    line-height: 1.36;
+  }
+}
+main #area .blackboard ul {
+  width: 770px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  main #area .blackboard ul {
+    width: 100%;
+  }
+}
+main #area .blackboard ul li {
+  width: 180px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 768px) {
+  main #area .blackboard ul li {
+    width: 24%;
+    margin-bottom: 2%;
+    margin-right: 1%;
+  }
+}
+main #area .blackboard ul li:nth-child(4n) {
+  margin-right: 0;
+}
+main #area .blackboard ul li:last-child {
+  margin-right: auto;
+}
+main #area .blackboard ul li a {
+  font-weight: bold;
+  width: 100%;
+  height: 46px;
+  background: #e60012;
+  box-sizing: border-box;
+  box-shadow: 0 4px 0 #95252e;
+  border-radius: 46px;
+  display: block;
+  position: relative;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  color: #fff;
+  text-decoration: none;
+  line-height: 46px;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  main #area .blackboard ul li a {
+    height: 47px;
+    box-shadow: 0 3px 0 #95252e;
+    border-radius: 10px;
+    line-height: 1;
+    font-size: 12px;
+  }
+}
+main #area .blackboard ul li a:hover {
+  box-shadow: 0 0 0 #95252e;
+  top: 4px;
+}
+@media screen and (max-width: 768px) {
+  main #area .blackboard ul li a:hover {
+    top: 3px;
+  }
+}
+main #area .blackboard ul li a i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transition: 0.3s;
+  transform: rotate(45deg);
+  margin-right: 7px;
+  position: relative;
+  top: -2px;
+}
+@media screen and (max-width: 768px) {
+  main #area .blackboard ul li a i {
+    width: 4px;
+    height: 4px;
+    margin-right: 5px;
+    top: -1px;
+  }
+}
+main #area .blackboard ul li a span {
+  font-size: 12px;
+  background: #fff;
+  color: #e60012;
+  padding: 2px 3px;
+  line-height: 1;
+  margin-left: 10px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  main #area .blackboard ul li a span {
+    font-size: 9px;
+    padding: 1px 2px;
+    line-height: 1;
+    margin-left: 0;
+  }
+}
+main #area .blackboard ul li.orange a {
+  background: #f08200;
+  box-shadow: 0 4px 0 #9c5f17;
+}
+@media screen and (max-width: 768px) {
+  main #area .blackboard ul li.orange a {
+    box-shadow: 0 3px 0 #9c5f17;
+  }
+}
+main #area .blackboard ul li a:hover {
+  box-shadow: 0 0 0 #9c5f17;
+}
+main #area .blackboard ul li a span {
+  color: #f08200;
+}
+main #area .blackboard ul li.blue a {
+  background: #95b3d7;
+  box-shadow: 0 4px 0 #557aa6;
+}
+main #point {
+  width: 100%;
+  background: url(../img/bg_point.png) left top repeat;
+  background-size: 30px auto;
+  padding-bottom: 1px;
+}
+main #point h2 {
+  position: relative;
+  background-color: #08bf59;
+  margin-bottom: 95px;
+  text-align: center;
+  height: 200px;
+}
+main #point h2 strong {
+  position: absolute;
+  width: 1000px;
+  font-size: 36px;
+  color: #fff;
+  line-height: 1.7;
+  margin-top: 55px;
+  margin-left: 43px;
+  opacity: 0;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  main #point h2 strong {
+    width: 65%;
+    font-size: 38px;
+    color: #fff;
+    line-height: 1.76;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: left;
+    left: 17%;
+    top: 17%;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #point h2 strong {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #point h2 strong {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #point h2 strong {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #point h2 strong {
+    font-size: 18px;
+    top: 17%;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #point h2 strong {
+    font-size: 16px;
+    line-height: 1.36;
+    top: 24%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #point h2 strong b {
+    border-bottom: 2px solid #ffff00;
+  }
+}
+main #point h2 strong span {
+  font-size: 48px;
+  border-bottom: 4px solid #ffff00;
+}
+@media screen and (max-width: 768px) {
+  main #point h2 strong span {
+    font-size: 38px;
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #point h2 strong span {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #point h2 strong span {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #point h2 strong span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #point h2 strong span {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #point h2 strong span {
+    font-size: 16px;
+    line-height: 1.36;
+  }
+}
+main #point h2:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 88px;
+  height: 54px;
+  background: url(../img/bg_title03.png) center bottom no-repeat;
+  background-size: 88px auto;
+  left: 50%;
+  bottom: -37px;
+  transform: translateX(-50%);
+}
+main #point h2 img {
+  width: 1043px;
+  margin-left: 43px;
+}
+@media screen and (max-width: 768px) {
+  main #point h2 img {
+    margin-left: 0;
+  }
+}
+main #point h3.tit {
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  main #point h3.tit {
+    margin-bottom: 3%;
+  }
+}
+main #point h3.tit strong {
+  background: linear-gradient(transparent 70%, #ffff00 70%);
+  padding-bottom: 2px;
+  font-size: 40px;
+  color: #004b21;
+  line-height: 1.25;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  main #point h3.tit strong {
+    font-size: 34px;
+    line-height: 1.52;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #point h3.tit strong {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #point h3.tit strong {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #point h3.tit strong {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #point h3.tit strong {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #point h3.tit strong {
+    font-size: 20px;
+  }
+}
+main #point h3.tit span {
+  position: absolute;
+  font-size: 16px;
+  line-height: 1;
+  left: 50px;
+  top: -15px;
+}
+@media screen and (max-width: 768px) {
+  main #point h3.tit span {
+    font-size: 14px;
+    left: 8%;
+    top: -20%;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #point h3.tit span {
+    font-size: 12px;
+    left: 10%;
+    top: -20%;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #point h3.tit span {
+    font-size: 12px;
+    left: 15%;
+    top: -20%;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #point h3.tit span {
+    font-size: 10px;
+    left: 15%;
+    top: -18%;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #point h3.tit span {
+    font-size: 10px;
+    left: 15%;
+    top: -18%;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #point h3.tit span {
+    font-size: 9px;
+    left: 15%;
+    top: -15%;
+  }
+}
+main #point dl.balloon {
+  margin-left: 15px;
+  margin-bottom: 45px;
+}
+main #point dl.balloon dt {
+  width: 160px;
+  left: 0;
+  bottom: 60px;
+}
+@media screen and (max-width: 675px) {
+  main #point dl.balloon dt {
+    width: 28% !important;
+    bottom: 6% !important;
+  }
+}
+@media screen and (max-width: 414px) {
+  main #point dl.balloon dt {
+    width: 28% !important;
+    bottom: 4% !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #point dl.balloon dt {
+    width: 28% !important;
+    bottom: 6% !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #point dl.balloon dt {
+    width: 28% !important;
+    bottom: 6% !important;
+  }
+}
+main #point dl.balloon dd {
+  float: right;
+  width: 808px;
+  height: 380px;
+  background: url("../img/img_balloon03_1.png") no-repeat;
+  font-size: 24px;
+  color: #000;
+  line-height: 1.54;
+  box-sizing: border-box;
+  padding: 35px 0 0 110px;
+}
+@media screen and (max-width: 768px) {
+  main #point dl.balloon dd {
+    height: 542px;
+    background: url("../img/img_balloon03_1_sp.png") no-repeat;
+    background-size: 100%;
+    padding: 5% 0 3% 13%;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #point dl.balloon dd {
+    height: 490px;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #point dl.balloon dd {
+    height: 420px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 534px) {
+  main #point dl.balloon dd {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #point dl.balloon dd {
+    height: 303px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #point dl.balloon dd {
+    height: 300px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #point dl.balloon dd {
+    height: 234px;
+    font-size: 10px;
+  }
+}
+main #point dl.balloon dd p {
+  width: 95%;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  main #point dl.balloon dd p.p1 {
+    letter-spacing: 0;
+  }
+}
+main #point dl.balloon dd span {
+  color: #ea5202;
+}
+main #point dl.balloon dd b {
+  color: #ff0000;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  main #point dl.balloon dd b {
+    font-size: 28px;
+  }
+  main #point dl.balloon dd b.b1 {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #point dl.balloon dd b {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #point dl.balloon dd b {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #point dl.balloon dd b {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #point dl.balloon dd b {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #point dl.balloon dd b {
+    font-size: 13px;
+  }
+}
+main #point dl.balloon2 dt {
+  width: 209px;
+  bottom: -12px;
+}
+main #point dl.balloon2 dd {
+  height: 270px;
+  background: url("../img/img_balloon03_2.png") no-repeat;
+  padding: 45px 0 0 110px;
+}
+@media screen and (max-width: 768px) {
+  main #point dl.balloon2 dd {
+    height: 292px;
+    background: url("../img/img_balloon03_2_sp.png") no-repeat;
+    background-size: 100%;
+    padding: 3% 1% 3% 11%;
+  }
+}
+@media screen and (max-width: 685px) {
+  main #point dl.balloon2 dd {
+    height: 265px;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 568px) {
+  main #point dl.balloon2 dd {
+    height: 223px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 534px) {
+  main #point dl.balloon2 dd {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 415px) {
+  main #point dl.balloon2 dd {
+    height: 166px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main #point dl.balloon2 dd {
+    height: 150px;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 320px) {
+  main #point dl.balloon2 dd {
+    height: 127px;
+    font-size: 10px;
+  }
+}
+main #point dl.balloon_hw {
+  position: relative;
+  padding-bottom: 50px;
+}
+main #point dl.balloon_hw > * {
+  opacity: 0;
+}
+main #point dl.balloon_hw dt {
+  position: absolute;
+  width: 180px;
+  right: 0;
+  bottom: 0;
+}
+main #point dl.balloon_hw dd {
+  float: left;
+  width: 846px;
+}
+main #point p {
+  margin-bottom: 50px;
+}
+main .buy-wrap {
+  background: #ffe6da;
+  padding: 70px 0 80px;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap {
+    padding: 10% 0 8%;
+  }
+}
+main .buy-wrap .hd h3 {
+  font-size: 78px;
+  color: #eb5505;
+  line-height: 1;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .hd h3 {
+    font-size: 39px;
+    line-height: 1.28;
+  }
+}
+main .buy-wrap .hd h3 span {
+  font-size: 28px;
+  color: #000;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .hd h3 span {
+    font-size: 14px;
+    margin-bottom: 2%;
+  }
+}
+main .buy-wrap .bd {
+  background: #fff;
+  border: 4px solid #eb5505;
+  border-radius: 20px;
+  width: 960px;
+  box-sizing: border-box;
+  margin: 55px auto 0;
+  padding: 45px 77px;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd {
+    border: 2px solid #eb5505;
+    border-radius: 10px;
+    width: 96%;
+    margin: 4% auto 0;
+    padding: 2%;
+  }
+}
+main .buy-wrap .bd ul {
+  overflow: hidden;
+}
+main .buy-wrap .bd ul li {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 12px;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd ul li {
+    padding-top: 2%;
+    padding-bottom: 0;
+  }
+}
+main .buy-wrap .bd ul li:first-child {
+  background: url("../img/buy-img4.png") no-repeat right top;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd ul li:first-child {
+    background-size: contain;
+  }
+  main .buy-wrap .bd ul li:first-child .img {
+    width: 50%;
+  }
+}
+main .buy-wrap .bd ul li h4 {
+  font-size: 64px;
+  color: #eb5505;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd ul li h4 {
+    font-size: 32px;
+  }
+}
+main .buy-wrap .bd ul li h4 span {
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd ul li h4 span {
+    font-size: 15px;
+  }
+}
+main .buy-wrap .bd ul li p {
+  font-size: 24px;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd ul li p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+main .buy-wrap .bd ul li:first-child p {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd ul li:first-child p {
+    margin-bottom: 4%;
+  }
+}
+main .buy-wrap .bd ul li p strong {
+  font-size: 30px;
+  line-height: 1;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd ul li p strong {
+    font-size: 15px;
+  }
+}
+main .buy-wrap .bd ul li:last-child h4 {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd ul li:last-child h4 {
+    margin-bottom: 4%;
+  }
+}
+main .buy-wrap .bd ul li:last-child p {
+  background: url("../img/buy-img2.png") no-repeat center center;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd ul li:last-child p {
+    background-size: 80%;
+  }
+}
+main .buy-wrap .bd ul li p span {
+  font-size: 20px;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd ul li p span {
+    font-size: 10px;
+  }
+}
+main .buy-wrap .bd ul li .img {
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  main .buy-wrap .bd ul li .img {
+    width: 70%;
+    margin: 4% auto 0;
+  }
+}
+main .btn-wrap {
+  background: #fff;
+  padding: 40px 0 0;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  main .btn-wrap {
+    padding: 4% 0 0;
+  }
+}
+main .btn-wrap .btn-wrap-r {
+  position: relative;
+}
+main .btn-wrap .btn-wrap-r a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+main .btn-wrap .btn-wrap-r a:hover:after {
+  content: "";
+  width: 99%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0.5%;
+  top: 0%;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.3);
+}
+main .btn-wrap .btn-wrap-r .reflection {
+  position: absolute;
+  z-index: 9999;
+  height: 100%;
+  width: 30px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  transform: rotate(45deg);
+  animation: reflection 2s ease-in-out infinite;
+}
+@keyframes reflection {
+  0% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(70) rotate(45deg);
+    opacity: 0;
+  }
+}
+main #recommend {
+  width: 100%;
+  background: url(../img/bg_recommend.png) left top repeat;
+  background-size: 30px auto;
+  padding-bottom: 130px;
+}
+main #recommend h2 {
+  background-color: #ff8a00;
+  padding: 50px 0 60px 0;
+  text-align: center;
+}
+main #recommend h2 img {
+  width: 799px;
+}
+main #recommend dl.balloon {
+  width: 1000px;
+  background: url(../img/arrow_long.png) center bottom no-repeat;
+  background-size: 310px auto;
+  margin-bottom: 0;
+  padding: 25px 0 115px 0;
+  z-index: 10;
+}
+main #recommend dl.balloon dt {
+  width: 238px;
+  left: 6px;
+  bottom: 65px;
+}
+main #recommend dl.balloon dd {
+  float: right;
+  width: 808px;
+}
+main #recommend .blackboard {
+  position: relative;
+  margin-top: -65px;
+  padding-top: 100px;
+  z-index: 5;
+}
+main #recommend .blackboard h3 {
+  width: 709px;
+  margin: 0 auto 30px auto;
+}
+main #recommend .blackboard h4 {
+  width: 844px;
+  margin-bottom: 40px;
+  opacity: 0;
+}
+main #recommend .blackboard dl {
+  position: relative;
+  margin-bottom: 50px;
+}
+main #recommend .blackboard dl > * {
+  opacity: 0;
+}
+main #recommend .blackboard dl dt {
+  position: absolute;
+  width: 207px;
+  right: 0;
+  bottom: -15px;
+}
+main #recommend .blackboard dl dd {
+  float: left;
+  width: 680px;
+}
+main #recommend .blackboard .arrow {
+  position: relative;
+  margin-bottom: 195px;
+}
+main #recommend .blackboard .arrow:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 249px;
+  height: 112px;
+  background: url(../img/arrow.png) center top no-repeat;
+  background-size: 249px auto;
+  left: 50%;
+  bottom: -155px;
+  transform: translateX(-50%);
+}
+main .application {
+  background: url(../img/bg_application.png) center top no-repeat;
+  background-size: auto 97px;
+  margin-top: -97px;
+  padding: 160px 0 100px 0;
+}
+main .application ul li {
+  float: right;
+  width: 478px;
+  opacity: 0;
+}
+main .application ul li:first-child {
+  float: left;
+}
+main .application ul li p {
+  width: 464px;
+  margin: 0 auto 10px auto;
+}
+@media (max-width: 768px) {
+  main {
+    /*--------------------------------------------------*/
+    /*--------------------------------------------------*/
+    /*--------------------------------------------------*/
+    /*--------------------------------------------------*/
+    /*--------------------------------------------------*/
+    /*--------------------------------------------------*/
+    /*--------------------------------------------------*/
+    /*--------------------------------------------------*/
+  }
+  main body {
+    min-width: 100%;
+    font-size: 14px;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+  }
+  main .pc {
+    display: none;
+  }
+  main .sp {
+    display: block;
+  }
+  main header, main .column, main p.code {
+    width: 96%;
+  }
+  main footer {
+    padding: 0;
+  }
+  main footer img {
+    width: 180px;
+    margin: 0 auto 2%;
+  }
+  main .news_outline {
+    font-size: 73%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .news_outline .news_inline li {
+    float: none;
+    margin: 30px auto;
+    width: 100%;
+  }
+  main .bg_title {
+    background: none;
+    margin-top: 0;
+  }
+  main .bg_title .column {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    position: relative;
+  }
+  main .bg_title .column > * {
+    position: absolute;
+    z-index: 10;
+    display: block;
+  }
+  main .bg_title .column .sp_main {
+    position: relative;
+    opacity: 1;
+    z-index: 0;
+  }
+  main .bg_title h1 {
+    width: 98%;
+    padding: 0;
+    top: 6%;
+    left: 1%;
+    display: flex !important;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3%;
+  }
+  main .bg_title .people01 {
+    width: 27%;
+    left: 0;
+    bottom: 27%;
+  }
+  main .bg_title .people02 {
+    width: 25%;
+    right: 0;
+    bottom: 26%;
+  }
+  main .bg_title .btn_rec {
+    width: 18%;
+    top: 50%;
+    right: 10%;
+  }
+  main .anchor {
+    width: 100%;
+    padding: 10px 0;
+    top: 69%;
+    left: 0;
+    z-index: 99;
+  }
+  main .anchor ul {
+    width: 96%;
+  }
+  main .anchor ul li {
+    width: 32.4%;
+    margin-left: 1.4%;
+  }
+  main .blackboard {
+    margin-bottom: 10%;
+    padding: 8% 5% 3%;
+  }
+  main .blackboard p {
+    margin-bottom: 10%;
+  }
+  main dl.balloon {
+    width: 100%;
+    margin-bottom: 8%;
+  }
+  main #mandatory {
+    background-size: 22px auto;
+    padding-bottom: 5%;
+  }
+  main #mandatory h2 {
+    margin-bottom: 35px;
+    padding: 0% 0% 0 0%;
+    height: auto;
+  }
+  main #mandatory h2:after {
+    width: 44px;
+    height: 27px;
+    background-size: 44px auto;
+    bottom: -20px;
+  }
+  main #mandatory h2 img {
+    width: 100%;
+    margin-top: 0;
+  }
+  main #mandatory dl.balloon {
+    margin-left: 0;
+  }
+  main #mandatory dl.balloon dt {
+    width: 28%;
+    bottom: 0;
+  }
+  main #mandatory .blackboard h3 {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  main #area {
+    background-size: 22px auto;
+    padding-bottom: 5%;
+  }
+  main #area h2 {
+    margin-bottom: 35px;
+    padding: 0% 0% 0 0%;
+    height: auto;
+  }
+  main #area h2:after {
+    width: 44px;
+    height: 27px;
+    background-size: 44px auto;
+    bottom: -20px;
+  }
+  main #area h2 img {
+    width: 100%;
+    margin-top: 0;
+  }
+  main #area dl.balloon dt {
+    width: 28%;
+  }
+  main #area dl.balloon dd {
+    width: 75%;
+  }
+  main #area .remember {
+    background-size: 10px auto;
+    margin-bottom: 10%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  main #area .remember dl {
+    padding: 5% 5% 5% 3%;
+    border-radius: 10px;
+  }
+  main #area .remember dl dt {
+    width: 28%;
+    padding-top: 5%;
+  }
+  main #area .remember dl dd {
+    width: 68%;
+    padding-top: 0;
+  }
+  main #point {
+    background-size: 22px auto;
+  }
+  main #point h2 {
+    margin-bottom: 35px;
+    padding: 0% 0% 0 0%;
+    height: auto;
+  }
+  main #point h2:after {
+    width: 44px;
+    height: 27px;
+    background-size: 44px auto;
+    bottom: -20px;
+  }
+  main #point h2 img {
+    width: 100%;
+    margin-top: 0;
+  }
+  main #point dl.balloon {
+    margin-left: 0;
+  }
+  main #point dl.balloon dd {
+    width: 75%;
+  }
+  main #point dl.balloon_hw {
+    padding-bottom: 5%;
+  }
+  main #point dl.balloon_hw dt {
+    width: 2%;
+  }
+  main #point dl.balloon_hw dd {
+    width: 80%;
+  }
+  main #point p {
+    margin-bottom: 8%;
+  }
+  main #recommend {
+    background-size: 22px auto;
+    padding-bottom: 10%;
+  }
+  main #recommend h2 {
+    padding: 5%;
+  }
+  main #recommend h2 img {
+    width: 100%;
+  }
+  main #recommend dl.balloon {
+    width: 100%;
+    background-size: 45% auto;
+    padding: 5% 0 18% 0;
+    z-index: 10;
+  }
+  main #recommend dl.balloon dt {
+    width: 25%;
+    left: 0;
+    bottom: 13.5%;
+  }
+  main #recommend dl.balloon dd {
+    width: 90%;
+  }
+  main #recommend .blackboard {
+    margin-top: -7%;
+    padding-top: 12%;
+  }
+  main #recommend .blackboard h3 {
+    width: 73%;
+    margin-bottom: 5%;
+  }
+  main #recommend .blackboard h4 {
+    width: 100%;
+    margin-bottom: 8%;
+  }
+  main #recommend .blackboard dl {
+    margin-bottom: 10%;
+  }
+  main #recommend .blackboard dl dt {
+    width: 28%;
+    bottom: 0;
+  }
+  main #recommend .blackboard dl dd {
+    width: 78%;
+  }
+  main #recommend .blackboard .arrow {
+    margin-bottom: 90px;
+  }
+  main #recommend .blackboard .arrow:after {
+    width: 100px;
+    height: 45px;
+    background-size: 100px auto;
+    bottom: -70px;
+  }
+  main .application {
+    background-size: auto 30px;
+    margin-top: -30px;
+    padding: 12% 0 5% 0;
+  }
+  main .application ul li {
+    float: none !important;
+    width: 100%;
+    margin-bottom: 8%;
+  }
+  main .application ul li p {
+    width: 90%;
+  }
+}
+main .fadeIn {
+  animation-fill-mode: both;
+  animation-duration: 1.2s;
+  animation-name: fadeIn;
+  visibility: visible !important;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main .fadeInUp {
+  animation-fill-mode: both;
+  animation-duration: 0.8s;
+  animation-delay: 0.3s;
+  animation-name: fadeInUp;
+  visibility: visible !important;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main .fadeInLeft {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-name: fadeInLeft;
+  visibility: visible !important;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+main .fadeInRight {
+  animation-fill-mode: both;
+  animation-duration: 0.8s;
+  animation-delay: 0.3s;
+  animation-name: fadeInRight;
+  visibility: visible !important;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+main .flipInX {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-name: flipInX;
+  backface-visibility: visible !important;
+}
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    transform: perspective(400px);
+  }
+}
+main .bounceIn {
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+  animation-name: bounceIn;
+  backface-visibility: visible !important;
+}
+@keyframes bounceIn {
+  from, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+main .jackInTheBox {
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+  animation-delay: 0.8s;
+  animation-name: jackInTheBox;
+  backface-visibility: visible !important;
+}
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(3deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+main h3,
+main h4 {
+  font-weight: bold;
+}
+/*# sourceMappingURL=map/style.css.map */
