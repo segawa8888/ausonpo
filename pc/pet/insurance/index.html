@@ -15,6 +15,14 @@
 
     <script type="text/javascript" src="/pc/common/js/campcd.js"></script>
     <script type="text/javascript" src="/pc/common/js/checkCookie.js"></script>
+    <style>
+      @media (max-width: 519px) {
+        html .p-pet-column__head-title::after {
+          right: 0rem;
+          top: 58%;
+        }
+      }
+    </style>
   </head>
 
   <body style="visibility: hidden" onload="javascript:sbSetCAMPCookie();javascript:loadRiyouQrcode();javascript:checkUserAgent();javascript:checkCookie();">
@@ -35,14 +43,14 @@
     <!-- End Google Tag Manager -->
 
     <nav class="c-breadcrumbs">
-      <ol class="c-breadcrumbs__list l-container lg:-full sm:-full">
+      <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="c-breadcrumbs__list l-container lg:-full sm:-full">
         <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="/pc/"><span itemprop="name">au損保トップ</span></a
-          ><meta itemprop="position" content="1" />
+          <a itemprop="item" href="/pc/"><span itemprop="name">au損保トップ</span></a>
+          <meta itemprop="position" content="1" />
         </li>
         <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="/pc/pet/"><span itemprop="name">ペットの保険</span></a
-          ><meta itemprop="position" content="2" />
+          <a itemprop="item" href="/pc/"><span itemprop="name">ペットの保険</span></a>
+          <meta itemprop="position" content="2" />
         </li>
         <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">保険金をお支払いできない主な場合</span><meta itemprop="position" content="3" /></li>
       </ol>
