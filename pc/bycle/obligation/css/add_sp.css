@@ -1,0 +1,316 @@
+@charset "UTF-8";
+main {
+  /*ヘッダー*/
+  /*メニューとログインボタン*/
+  /*メニュー詳細*/
+  /*footer*/
+  /*top btn*/
+}
+main a:link, main a:visited {
+  text-decoration: none;
+}
+main #disableDoublePost-overlay {
+  background: none;
+}
+main .page_copy {
+  font-size: 10px;
+  padding-top: 0;
+}
+main #header_new {
+  display: none !important;
+}
+main #header_low {
+  display: none !important;
+}
+main #page_contents {
+  margin-top: 0;
+}
+main .sp_header_top .sp_gnav {
+  width: 75%;
+  position: absolute;
+  right: -2%;
+  top: 22px;
+  margin-top: -15px;
+  overflow: hidden;
+}
+main .sp_header_top .sp_gnav a {
+  color: #464646;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  padding: 6px 0 4px;
+}
+main .sp_header_new.sp_display {
+  display: block;
+  height: 43px;
+}
+main .sp_header_top .sp_gnav li {
+  width: 30%;
+  float: left;
+  margin-left: 7%;
+  margin-top: -2px;
+}
+main .sp_header_top .sp_gnav li.login_btn {
+  margin-top: -25px;
+}
+main .sp_header_top {
+  width: 100%;
+  display: table;
+  position: relative;
+  height: 43px;
+}
+main a:link, main a:visited {
+  text-decoration: none;
+}
+main .au_logo {
+  max-width: 100px;
+  height: 19px;
+  margin-top: 12px;
+  padding-top: 0px;
+}
+main .sp_header_top .sp_gnav {
+  width: 75%;
+  position: absolute;
+  right: -2%;
+  top: 20px;
+  margin-top: -15px;
+  overflow: hidden;
+}
+main #floatingNavi {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  box-shadow: rgba(87, 76, 75, 0.3) -4px 4px 2px -1px;
+  -webkit-box-shadow: rgba(87, 76, 75, 0.3) -4px 4px 2px -1px;
+  -moz-box-shadow: rgba(87, 76, 75, 0.3) -4px 4px 2px -1px;
+  z-index: 99999;
+}
+main .sp_nav_menu > ul > li:first-child {
+  border-top: none;
+  height: 50px;
+}
+main .sp_nav_menu .btn_close {
+  text-align: right;
+  padding: 7px 20px;
+}
+main .sp_nav_menu .btn_close a {
+  display: inline-block;
+  width: 20px;
+  font-size: 12px;
+  text-align: center;
+  background: #fff;
+  padding: 4px 0px 4px 6px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin: 13px 30px 5px 5px;
+}
+main .sp_nav_menu ul li {
+  border-top: #757575 1px solid;
+}
+main .sp_nav_menu li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  display: block;
+  padding: 12px 12px 12px 20px;
+}
+main .sp_nav_menu li a.lineup {
+  background-image: url("/common/img/share/white_sankaku_r.png");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 4px;
+}
+main .sp_nav_menu li a.lineup span {
+  font-size: 10px;
+}
+main .sp_nav_menu .list_toggle > a {
+  position: relative;
+}
+main .pm_btn {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin: 1px -5px 0 0;
+}
+main .sp_nav_menu .sp_menu_list {
+  display: none;
+}
+main .pankuzu {
+  display: block;
+}
+main .bread_crumb {
+  display: none;
+}
+main .bread_crumb {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+main .footer_new {
+  width: 100%;
+  margin: 0;
+  padding: 5px 10px;
+  position: relative;
+  padding-bottom: 28%;
+}
+main .foot_nav {
+  margin-bottom: 10px;
+}
+main .footer_new .foot_nav {
+  float: left;
+  width: 100%;
+}
+main .footer_new .foot_nav dl {
+  padding-top: 30px;
+  width: 100%;
+  float: none;
+  margin-right: 0;
+  border-bottom: 1px solid #b3b3b3;
+}
+main .footer_new .foot_nav dl.wide {
+  padding-top: 30px;
+  width: 100%;
+  float: none;
+  margin-right: 0;
+  border-bottom: 1px solid #b3b3b3;
+}
+main .footer_new .foot_nav dt {
+  font-size: 14px;
+}
+main .footer_new .foot_nav dd {
+  border-bottom: 1px solid #b3b3b3;
+  height: 2.5em;
+}
+main .footer_new .foot_nav dd a {
+  padding-top: 8px;
+  display: block;
+}
+main .triangle_r {
+  display: inline-block;
+  float: right;
+}
+main .small_square {
+  display: none;
+}
+main .foot_btns {
+  float: right;
+  margin-top: 30px;
+}
+main .foot_lower_wrap {
+  padding-bottom: 54px;
+  margin-top: 50px;
+  padding-top: 0px;
+  border-top: 3px solid #575757;
+  height: inherit;
+}
+main .footer_new .btn_totop {
+  width: 45px;
+  height: 45px;
+  margin-top: -4px;
+  display: inline-block;
+}
+main .foot_lower {
+  display: none !important;
+}
+main .foot_lower_sp {
+  display: block !important;
+  padding-left: 5%;
+  padding-right: 2%;
+  margin-top: -22px;
+  position: relative;
+  margin-bottom: 20px;
+}
+main .foot_lower_sp_box {
+  clear: both;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+main .foot_lower_sp .copy {
+  position: absolute;
+  bottom: -15px;
+  font-size: 10px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  width: 100%;
+}
+main .foot_lower_sp li {
+  float: left;
+  margin: 0 2px;
+}
+main .foot_logo {
+  display: inline-block;
+  position: absolute;
+  bottom: -5px;
+}
+main #product_id {
+  text-align: right;
+  padding-bottom: 15px;
+  padding-right: 0px;
+  margin: 0 auto;
+}
+main .apply_scroll {
+  position: fixed;
+  bottom: 0px;
+  left: 0px !important;
+  z-index: 9997;
+  display: block;
+  text-align: center;
+}
+main .foot_lower_sp .bycle, main .foot_lower_sp .bycle-s, main .foot_lower_sp .byclebest, main .foot_lower_sp .pet, main .foot_lower_sp .pet_nashi, main .foot_lower_sp .kaigai, main .foot_lower_sp .kokunai, main .foot_lower_sp .golf, main .foot_lower_sp .sports, main .foot_lower_sp .koutsuujiko {
+  display: none;
+}
+main .btn_totop {
+  display: none;
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+  width: auto;
+  width: 25%;
+  text-align: center;
+  background-color: #6f6f6f;
+}
+main .btn_totop img {
+  width: auto;
+  height: 100%;
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+}
+main .btn_totop a {
+  height: 55px;
+  width: 100%;
+  background: url("/common/img/share/btn_totop.png") center center no-repeat;
+  background-size: contain;
+  display: block;
+}
+main .scroll {
+  position: fixed;
+  bottom: 0px;
+  left: 0px !important;
+  z-index: 9996;
+  display: block;
+  text-align: right;
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+}
+main .fixed {
+  position: absolute;
+  bottom: 77px;
+  left: 0px !important;
+  display: block;
+  text-align: right;
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+}
+/*# sourceMappingURL=map/add_sp.css.map */
