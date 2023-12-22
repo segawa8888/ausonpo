@@ -94,6 +94,13 @@
   .bycle-s__tab3 {
     // テーブル　特殊デザイン
     .c-table.special {
+      &::-webkit-scrollbar {
+        height: 7px;
+        width: 2rem;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #ee802f;
+      }
       @include mq-max('sm') {
         overflow-x: scroll;
         margin-right: 0;
@@ -116,8 +123,7 @@
         }
         th,
         td {
-          height: 3rem;
-          padding: 0.75rem;
+          padding: 0.5rem;
           border-left: 1px solid $c-primary;
           border-right: 1px solid $c-primary;
           border-top: 1px solid $c-primary;
