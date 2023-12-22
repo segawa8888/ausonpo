@@ -1,10 +1,10 @@
 @charset "UTF-8";
-@use "../../global" as *;
+@use '../../global' as *;
 
 .p-pet-column {
   background-color: #f5f5f5;
   border-radius: rem(10px);
-  @include mq-max("sm") {
+  @include mq-max('sm') {
     margin-left: -0.625rem;
     margin-right: -0.625rem;
   }
@@ -20,7 +20,11 @@
       display: inline-block;
       font-size: rem(24px);
       font-weight: bold;
-      letter-spacing: 0.02em;
+      //letter-spacing: 0.02em;
+      letter-spacing: 0;
+      & h2 {
+        letter-spacing: 0;
+      }
       &::before {
         background-image: url(/pc/pet/assets/img/pet_pad_icon.png);
         background-repeat: no-repeat;
@@ -29,11 +33,11 @@
         width: rem(29px);
         height: rem(29px);
         position: absolute;
-        content: "";
+        content: '';
         top: 3%;
         left: rem(-30px);
         transform: rotate(-20deg);
-        @include mq-max("sm") {
+        @include mq-max('sm') {
           left: rem(-24px);
         }
       }
@@ -45,13 +49,14 @@
         width: rem(29px);
         height: rem(29px);
         position: absolute;
-        content: "";
+        content: '';
         top: 50%;
         right: rem(-25px);
         transform: translateY(-50%);
-        @include mq-max("sm") {
+        @include mq-max('sm') {
           top: 58%;
-          right: rem(45px);
+          // right: rem(45px);
+          right: rem(-10px);
         }
       }
     }
@@ -59,7 +64,7 @@
       font-size: rem(16px);
       font-weight: bold;
       line-height: calc(22 / 14);
-      @include mq-max("sm") {
+      @include mq-max('sm') {
         font-size: rem(14px);
         line-height: calc(20 / 14);
       }
@@ -67,7 +72,7 @@
   }
   &__body {
     margin-top: rem(17px);
-    @include mq-max("sm") {
+    @include mq-max('sm') {
       margin-top: rem(26px);
     }
     .p-pet-column-page {
@@ -88,13 +93,13 @@
     display: flex;
     flex-direction: column;
     min-height: rem(292px);
-    @include mq-max("sm") {
+    @include mq-max('sm') {
       padding: rem(10px);
       min-height: rem(276px);
     }
     &-img {
       aspect-ratio: 280/157;
-      @include mq-max("sm") {
+      @include mq-max('sm') {
         aspect-ratio: 299/149;
       }
       & img {
@@ -108,7 +113,7 @@
       line-height: calc(22 / 14);
       letter-spacing: 0.03em;
       margin-top: rem(10px);
-      @include mq-max("sm") {
+      @include mq-max('sm') {
         margin-top: rem(22px);
         letter-spacing: 0.02em;
         color: #4b4b4b;
@@ -136,9 +141,9 @@
   .splide:not(.is-overflow) .splide__pagination {
     display: flex; //リロードしたときにdisplay: none;でpaginationが非表示になることを防ぐ処理
   }
-  &__medical-text{
+  &__medical-text {
     margin-left: rem(20px);
-    @include mq-max("sm") {
+    @include mq-max('sm') {
       margin-left: 0;
     }
   }

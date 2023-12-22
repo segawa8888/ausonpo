@@ -43,10 +43,16 @@
     <!-- End Google Tag Manager -->
 
     <nav class="c-breadcrumbs">
-      <ol class="c-breadcrumbs__list l-container lg:-full sm:-full">
-        <li class="c-breadcrumbs__item"><a href="/pc/">au損保トップ</a></li>
-        <li class="c-breadcrumbs__item"><a href="/pc/pet">ペットの保険</a></li>
-        <li class="c-breadcrumbs__item">保険開始日と待機期間</li>
+      <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="c-breadcrumbs__list l-container lg:-full sm:-full">
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="/pc/"><span itemprop="name">au損保トップ</span></a
+          ><meta itemprop="position" content="1" />
+        </li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a itemprop="item" href="/pc/pet/"><span itemprop="name">ペットの保険</span></a
+          ><meta itemprop="position" content="2" />
+        </li>
+        <li class="c-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">保険開始日と待機期間</span><meta itemprop="position" content="3" /></li>
       </ol>
     </nav>
     <main class="l-main l-container lg:-full sm:-full js-main u-mb-20">
