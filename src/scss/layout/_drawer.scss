@@ -82,6 +82,7 @@ layout/_header.scss
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     @include mq-max("sm") {
       display: block;
     }
