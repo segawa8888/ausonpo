@@ -9,7 +9,7 @@
   max-width: rem(812px);
   margin: 0 auto;
   @include mq-max("sm") {
-    padding: rem(20px) 0;
+    padding: rem(24px) 0 rem(32px);
   }
   &__title {
     color: $c-primary;

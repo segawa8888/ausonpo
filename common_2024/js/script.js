@@ -191,27 +191,37 @@ var n,t;n=this,t=function(){"use strict";var v="(prefers-reduced-motion: reduce)
 Pocket.Inc ドロワーメニュー - 2023-05-16
 ----------------------------------------------------------*/
 //コンポーネント読み込み後
-document.addEventListener("componentsLoaded", () => {
+document.addEventListener('componentsLoaded', () => {
   /* 初期設定 */
-  const drawer = document.querySelector(".js-drawer"); //メニュー要素
-  const headerNavBtn = document.querySelector(".js-header-menu"); //メニューボタン
-  const headerNavBtnText = document.querySelector(".js-header-menu-text"); //メニューテキスト
+  const drawer = document.querySelector('.js-drawer'); //メニュー要素
+  const headerNavBtn = document.querySelector('.js-header-menu'); //メニューボタン
+  const headerNavBtnText = document.querySelector('.js-header-menu-text'); //メニューテキスト
 
   if (drawer) {
-    headerNavBtn.addEventListener("click", toggleDrawerMenu);
-    headerNavBtn.addEventListener("keydown", function (e) {
-      if (e.key === "Enter") {
+    headerNavBtn.addEventListener('click', toggleDrawerMenu);
+    drawer.addEventListener('click', toggleDrawerMenu); //背景クリックでメニューを閉じる
+
+    //内部要素をクリック時はメニューを閉じない
+    document.querySelector('.l-drawer__main').addEventListener('click', function (event) {
+      event.stopPropagation();
+    });
+    document.querySelector('.l-drawer__sub').addEventListener('click', function (event) {
+      event.stopPropagation();
+    });
+
+    headerNavBtn.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
         toggleDrawerMenu();
       }
     });
     //ドロワーメニューの最後のリンクでtabを押下時にメニューを閉じる処理
-    const focusableElm = drawer.querySelectorAll("a, button, input, select, textarea");
+    const focusableElm = drawer.querySelectorAll('a, button, input, select, textarea');
     const lastFocusableElm = focusableElm[focusableElm.length - 1];
-    lastFocusableElm.addEventListener("keydown", function (e) {
-      if (e.key === "Tab" && !e.shiftKey) {
+    lastFocusableElm.addEventListener('keydown', function (e) {
+      if (e.key === 'Tab' && !e.shiftKey) {
         // 例えば、フォーカスをドロワーメニューの最初の要素に戻す
         e.preventDefault(); // デフォルトのTabキーの挙動を防止
-        document.querySelector(".l-header__logo a").focus();
+        document.querySelector('.l-header__logo a').focus();
         toggleDrawerMenu();
       }
     });
@@ -219,15 +229,15 @@ document.addEventListener("componentsLoaded", () => {
 
   //ドロワーメニューの表示
   function toggleDrawerMenu() {
-    const isActive = headerNavBtn.classList.toggle("is-active");
+    const isActive = headerNavBtn.classList.toggle('is-active');
 
     setScrollbarWidth(); // スクロールバーの幅を取得
-    body.style.paddingRight = isActive ? scrollBarWidth : "";
+    body.style.paddingRight = isActive ? scrollBarWidth : '';
     // headerNavBtn.style.marginRight = isActive ? scrollBarWidth : "";
 
-    html.classList.toggle("is-drawer-open", isActive);
+    html.classList.toggle('is-drawer-open', isActive);
     bodyScrollPrevent(isActive); // 背景スクロールの制御
-    headerNavBtnText.textContent = isActive ? "閉じる" : "メニュー";
+    headerNavBtnText.textContent = isActive ? '閉じる' : 'メニュー';
 
     // ドロワーメニューの状態に基づいて tabindex を制御
     if (isActive) {
@@ -239,20 +249,20 @@ document.addEventListener("componentsLoaded", () => {
 
   // ドロワーメニュー表示時にtabでのセレクトを無効にする
   function disableTabOutsideDrawer() {
-    const focusableElm = document.querySelectorAll("a, button, input, select, textarea");
+    const focusableElm = document.querySelectorAll('a, button, input, select, textarea');
     focusableElm.forEach((elm) => {
-      if (!elm.closest(".js-drawer")) {
+      if (!elm.closest('.js-drawer')) {
         // ドロワーメニュー内の要素を除外
-        elm.setAttribute("tabindex", "-1");
+        elm.setAttribute('tabindex', '-1');
       }
     });
   }
 
   // ドロワーメニュー非表示時にtabでのセレクトを有効化
   function enableTabOutsideDrawer() {
-    const focusableElm = document.querySelectorAll("a, button, input, select, textarea");
+    const focusableElm = document.querySelectorAll('a, button, input, select, textarea');
     focusableElm.forEach((elm) => {
-      elm.removeAttribute("tabindex");
+      elm.removeAttribute('tabindex');
     });
   }
 });
@@ -1800,159 +1810,159 @@ document.addEventListener("componentsLoaded", () => {
   }
 });
 
-	document.addEventListener('DOMContentLoaded', function() {
-	
-		let next_step2 = document.getElementById('next_step2');
-		next_step2.addEventListener("click", function (event) {
-			document.getElementById('bycle_shindan_step1').style.display = "none";
-			document.getElementById('bycle_shindan_step2').style.display = "flex";
-		});
-		
-		let next_step3 = document.getElementById('next_step3');
-		next_step3.addEventListener("click", function (event) {
-			document.getElementById('bycle_shindan_step2').style.display = "none";
-			document.getElementById('bycle_shindan_step3').style.display = "flex";
-		});
-		let next_result = document.getElementById('next_result');
-		next_result.addEventListener("click", function (event) {
-		
-			let select_step1 = document.getElementsByName('select_step1');
-			let step1_len = select_step1.length;
-			let step1_val = '';
-			for (let i = 0; i < step1_len; i++){
-				if (select_step1.item(i).checked){
-					step1_val = select_step1.item(i).value;
-				}
-			}
-			let select_step2 = document.getElementsByName('select_step2');
-			let step2_len = select_step2.length;
-			let step2_val = '';
-			for (let i = 0; i < step2_len; i++){
-				if (select_step2.item(i).checked){
-					step2_val = select_step2.item(i).value;
-				}
-			}
-			let select_step3 = document.getElementsByName('select_step3');
-			let step3_len = select_step3.length;
-			let step3_val = '';
-			for (let i = 0; i < step3_len; i++){
-				if (select_step3.item(i).checked){
-					step3_val = select_step3.item(i).value;
-				}
-			}
-			console.log(step1_val);
-			console.log(step2_val);
-			console.log(step3_val);
-		    /* 配列の順番 ブロンズ[本人月払,一時払,家族月払,一時払,本人・親族月払,一時払],シルバー[],ゴールド[],個賠なし[] */
-		    var arrBycle = [
-		      [340, 3790, 680, 7440, 570, 6200],
-		      [590, 6410, 1280, 13980, 1030, 11300],
-		      [1130, 12300, 2010, 21980, 1680, 18470],
-		      [200, 2220, 530, 5850, 420, 4610],
-		    ];
-		    var arrBycleBest = [
-		      [780, 8480, 2300, 25010, 1850, 20060],
-		      [1470, 16050, 4600, 50260, 3620, 39520],
-		      [2260, 24590, 6280, 68440, 4990, 54330],
-		      [640, 6910, 2150, 23420, 1700, 18470],
-		    ];			
-			var tmpArr;
-			if(step2_val == "Bycle") {
-				tmpArr = arrBycle;
-				document.getElementById('result_type1').innerHTML = step1_val;
-				document.getElementById('cource_type1').innerHTML = step3_val;
-				document.getElementById('result_bycle1').style.display = "block";
-				document.getElementById('result_byclebest1').style.display = "none";
-				document.getElementById('result_bycle2').style.display = "block";
-				document.getElementById('result_byclebest2').style.display = "none";
-				document.getElementById('result_bycle3').style.display = "block";
-				document.getElementById('result_byclebest3').style.display = "none";
-			} else if(step2_val == "BycleBest") {
-				tmpArr = arrBycleBest;
-				document.getElementById('result_type2').innerHTML = step1_val;
-				document.getElementById('cource_type2').innerHTML = step3_val;
-				document.getElementById('result_bycle1').style.display = "none";
-				document.getElementById('result_byclebest1').style.display = "block";
-				document.getElementById('result_bycle2').style.display = "none";
-				document.getElementById('result_byclebest2').style.display = "block";
-				document.getElementById('result_bycle3').style.display = "none";
-				document.getElementById('result_byclebest3').style.display = "block";
-			}
-			
-
-			var course_num;
-			if(step3_val == "ブロンズ") {
-				course_num = 0;
-				document.getElementById('result_img07_off').style.display = "block";
-				document.getElementById('result_img07_on').style.display = "none";
-				document.getElementById('result_img08_off').style.display = "block";
-				document.getElementById('result_img08_on').style.display = "none";
-				document.getElementById('result_img09_off').style.display = "block";
-				document.getElementById('result_img09_on').style.display = "none";
-				document.getElementById('result_img10_off').style.display = "block";
-				document.getElementById('result_img10_on').style.display = "none";
-				document.getElementById('result_img11_off').style.display = "block";
-				document.getElementById('result_img11_on').style.display = "none";
-			} else if(step3_val == "シルバー") {
-				course_num = 1;
-				document.getElementById('result_img07_off').style.display = "none";
-				document.getElementById('result_img07_on').style.display = "block";
-				document.getElementById('result_img08_off').style.display = "none";
-				document.getElementById('result_img08_on').style.display = "block";
-				document.getElementById('result_img09_off').style.display = "none";
-				document.getElementById('result_img09_on').style.display = "block";
-				document.getElementById('result_img10_off').style.display = "block";
-				document.getElementById('result_img10_on').style.display = "none";
-				document.getElementById('result_img11_off').style.display = "block";
-				document.getElementById('result_img11_on').style.display = "none";
-			} else if(step3_val == "ゴールド") {
-				course_num = 2;
-				document.getElementById('result_img07_off').style.display = "none";
-				document.getElementById('result_img07_on').style.display = "block";
-				document.getElementById('result_img08_off').style.display = "none";
-				document.getElementById('result_img08_on').style.display = "block";
-				document.getElementById('result_img09_off').style.display = "none";
-				document.getElementById('result_img09_on').style.display = "block";
-				document.getElementById('result_img10_off').style.display = "none";
-				document.getElementById('result_img10_on').style.display = "block";
-				document.getElementById('result_img11_off').style.display = "none";
-				document.getElementById('result_img11_on').style.display = "block";
-			
-			}
-			
-			var price1;
-			var price2;
-			if(step1_val == "本人") {
-				price1 = tmpArr[course_num][0];
-				price2 = tmpArr[course_num][1];
-			} else if(step1_val == "家族") {
-				price1 = tmpArr[course_num][2];
-				price2 = tmpArr[course_num][3];
-			} else if(step1_val == "本人・親族") {
-				price1 = tmpArr[course_num][4];
-				price2 = tmpArr[course_num][5];
-			}
-			var price3 = Number(price1) * 12-Number(price2);
-			console.log(price1);
-			console.log(price2);
-			console.log(price3);
-			document.getElementById('result_price1').innerHTML = Number(price1).toLocaleString();
-			document.getElementById('result_price2').innerHTML = Number(price2).toLocaleString();
-			document.getElementById('result_price3').innerHTML = Number(price3).toLocaleString();		
-			document.getElementById('bycle_shindan_result').style.display = "block";
-			document.getElementById('bycle_shindan_result').scrollIntoView();
-		});
-		
-		
-		let shindan_restart = document.getElementById('shindan_restart');
-		shindan_restart.addEventListener("click", function (event) {
-
-			document.getElementById('bycle_shindan_step3').style.display = "none";
-			document.getElementById('bycle_shindan_step1').style.display = "flex";
-			document.getElementById('bycle_shindan_result').style.display = "none";
-			document.getElementById('bycle_shindan_step1').scrollIntoView();
-		});
+document.addEventListener('DOMContentLoaded', function () {
+  let next_step2 = document.getElementById('next_step2');
+  if (next_step2) {
+    next_step2.addEventListener('click', function (event) {
+      document.getElementById('bycle_shindan_step1').style.display = 'none';
+      document.getElementById('bycle_shindan_step2').style.display = 'flex';
     });
+  }
+  let next_step3 = document.getElementById('next_step3');
+  if (next_step3) {
+    next_step3.addEventListener('click', function (event) {
+      document.getElementById('bycle_shindan_step2').style.display = 'none';
+      document.getElementById('bycle_shindan_step3').style.display = 'flex';
+    });
+  }
+  let next_result = document.getElementById('next_result');
+  if (next_result) {
+    next_result.addEventListener('click', function (event) {
+      let select_step1 = document.getElementsByName('select_step1');
+      let step1_len = select_step1.length;
+      let step1_val = '';
+      for (let i = 0; i < step1_len; i++) {
+        if (select_step1.item(i).checked) {
+          step1_val = select_step1.item(i).value;
+        }
+      }
+      let select_step2 = document.getElementsByName('select_step2');
+      let step2_len = select_step2.length;
+      let step2_val = '';
+      for (let i = 0; i < step2_len; i++) {
+        if (select_step2.item(i).checked) {
+          step2_val = select_step2.item(i).value;
+        }
+      }
+      let select_step3 = document.getElementsByName('select_step3');
+      let step3_len = select_step3.length;
+      let step3_val = '';
+      for (let i = 0; i < step3_len; i++) {
+        if (select_step3.item(i).checked) {
+          step3_val = select_step3.item(i).value;
+        }
+      }
+      console.log(step1_val);
+      console.log(step2_val);
+      console.log(step3_val);
+      /* 配列の順番 ブロンズ[本人月払,一時払,家族月払,一時払,本人・親族月払,一時払],シルバー[],ゴールド[],個賠なし[] */
+      var arrBycle = [
+        [340, 3790, 680, 7440, 570, 6200],
+        [590, 6410, 1280, 13980, 1030, 11300],
+        [1130, 12300, 2010, 21980, 1680, 18470],
+        [200, 2220, 530, 5850, 420, 4610],
+      ];
+      var arrBycleBest = [
+        [780, 8480, 2300, 25010, 1850, 20060],
+        [1470, 16050, 4600, 50260, 3620, 39520],
+        [2260, 24590, 6280, 68440, 4990, 54330],
+        [640, 6910, 2150, 23420, 1700, 18470],
+      ];
+      var tmpArr;
+      if (step2_val == 'Bycle') {
+        tmpArr = arrBycle;
+        document.getElementById('result_type1').innerHTML = step1_val;
+        document.getElementById('cource_type1').innerHTML = step3_val;
+        document.getElementById('result_bycle1').style.display = 'block';
+        document.getElementById('result_byclebest1').style.display = 'none';
+        document.getElementById('result_bycle2').style.display = 'block';
+        document.getElementById('result_byclebest2').style.display = 'none';
+        document.getElementById('result_bycle3').style.display = 'block';
+        document.getElementById('result_byclebest3').style.display = 'none';
+      } else if (step2_val == 'BycleBest') {
+        tmpArr = arrBycleBest;
+        document.getElementById('result_type2').innerHTML = step1_val;
+        document.getElementById('cource_type2').innerHTML = step3_val;
+        document.getElementById('result_bycle1').style.display = 'none';
+        document.getElementById('result_byclebest1').style.display = 'block';
+        document.getElementById('result_bycle2').style.display = 'none';
+        document.getElementById('result_byclebest2').style.display = 'block';
+        document.getElementById('result_bycle3').style.display = 'none';
+        document.getElementById('result_byclebest3').style.display = 'block';
+      }
+
+      var course_num;
+      if (step3_val == 'ブロンズ') {
+        course_num = 0;
+        document.getElementById('result_img07_off').style.display = 'block';
+        document.getElementById('result_img07_on').style.display = 'none';
+        document.getElementById('result_img08_off').style.display = 'block';
+        document.getElementById('result_img08_on').style.display = 'none';
+        document.getElementById('result_img09_off').style.display = 'block';
+        document.getElementById('result_img09_on').style.display = 'none';
+        document.getElementById('result_img10_off').style.display = 'block';
+        document.getElementById('result_img10_on').style.display = 'none';
+        document.getElementById('result_img11_off').style.display = 'block';
+        document.getElementById('result_img11_on').style.display = 'none';
+      } else if (step3_val == 'シルバー') {
+        course_num = 1;
+        document.getElementById('result_img07_off').style.display = 'none';
+        document.getElementById('result_img07_on').style.display = 'block';
+        document.getElementById('result_img08_off').style.display = 'none';
+        document.getElementById('result_img08_on').style.display = 'block';
+        document.getElementById('result_img09_off').style.display = 'none';
+        document.getElementById('result_img09_on').style.display = 'block';
+        document.getElementById('result_img10_off').style.display = 'block';
+        document.getElementById('result_img10_on').style.display = 'none';
+        document.getElementById('result_img11_off').style.display = 'block';
+        document.getElementById('result_img11_on').style.display = 'none';
+      } else if (step3_val == 'ゴールド') {
+        course_num = 2;
+        document.getElementById('result_img07_off').style.display = 'none';
+        document.getElementById('result_img07_on').style.display = 'block';
+        document.getElementById('result_img08_off').style.display = 'none';
+        document.getElementById('result_img08_on').style.display = 'block';
+        document.getElementById('result_img09_off').style.display = 'none';
+        document.getElementById('result_img09_on').style.display = 'block';
+        document.getElementById('result_img10_off').style.display = 'none';
+        document.getElementById('result_img10_on').style.display = 'block';
+        document.getElementById('result_img11_off').style.display = 'none';
+        document.getElementById('result_img11_on').style.display = 'block';
+      }
+
+      var price1;
+      var price2;
+      if (step1_val == '本人') {
+        price1 = tmpArr[course_num][0];
+        price2 = tmpArr[course_num][1];
+      } else if (step1_val == '家族') {
+        price1 = tmpArr[course_num][2];
+        price2 = tmpArr[course_num][3];
+      } else if (step1_val == '本人・親族') {
+        price1 = tmpArr[course_num][4];
+        price2 = tmpArr[course_num][5];
+      }
+      var price3 = Number(price1) * 12 - Number(price2);
+      console.log(price1);
+      console.log(price2);
+      console.log(price3);
+      document.getElementById('result_price1').innerHTML = Number(price1).toLocaleString();
+      document.getElementById('result_price2').innerHTML = Number(price2).toLocaleString();
+      document.getElementById('result_price3').innerHTML = Number(price3).toLocaleString();
+      document.getElementById('bycle_shindan_result').style.display = 'block';
+      document.getElementById('bycle_shindan_result').scrollIntoView();
+    });
+  }
+  let shindan_restart = document.getElementById('shindan_restart');
+  if (shindan_restart) {
+    shindan_restart.addEventListener('click', function (event) {
+      document.getElementById('bycle_shindan_step3').style.display = 'none';
+      document.getElementById('bycle_shindan_step1').style.display = 'flex';
+      document.getElementById('bycle_shindan_result').style.display = 'none';
+      document.getElementById('bycle_shindan_step1').scrollIntoView();
+    });
+  }
+});
 
 /*----------------------------------------------------------
 Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
@@ -1962,16 +1972,16 @@ Pocket.Inc コンポーネントの読み込み管理 - 2023-11-4
 
 //ナビゲーションコンポーネント一覧
 const navComponents = {
-  "/corporate/": "/common_2024/component/layout/nav-corporate.html",
-  "/keiyakusya/bycle/": "/common_2024/component/layout/nav-keiyakusya-bycle.html",
-  "/keiyakusya/pet/": "/common_2024/component/layout/nav-keiyakusya-pet.html",
-  "/keiyakusya/kaigai/": "/common_2024/component/layout/nav-keiyakusya-kaigai.html",
-  "/keiyakusya/kokunai/": "/common_2024/component/layout/nav-keiyakusya-kokunai.html",
-  "/keiyakusya/sports/": "/common_2024/component/layout/nav-keiyakusya-sports.html",
-  "/keiyakusya/golf/": "/common_2024/component/layout/nav-keiyakusya-golf.html",
-  "/pc/bycle": "/common_2024/component/layout/nav-bicycle.html",
-  "/pc/pet-dog": "/common_2024/component/layout/nav-pet-dog.html",
-  "/pc/pet-cat": "/common_2024/component/layout/nav-pet-cat.html",
+  '/corporate/': '/common_2024/component/layout/nav-corporate.html',
+  '/keiyakusya/bycle/': '/common_2024/component/layout/nav-keiyakusya-bycle.html',
+  '/keiyakusya/pet/': '/common_2024/component/layout/nav-keiyakusya-pet.html',
+  '/keiyakusya/kaigai/': '/common_2024/component/layout/nav-keiyakusya-kaigai.html',
+  '/keiyakusya/kokunai/': '/common_2024/component/layout/nav-keiyakusya-kokunai.html',
+  '/keiyakusya/sports/': '/common_2024/component/layout/nav-keiyakusya-sports.html',
+  '/keiyakusya/golf/': '/common_2024/component/layout/nav-keiyakusya-golf.html',
+  '/pc/bycle': '/common_2024/component/layout/nav-bicycle.html',
+  '/pc/pet-dog': '/common_2024/component/layout/nav-pet-dog.html',
+  '/pc/pet-cat': '/common_2024/component/layout/nav-pet-cat.html',
 };
 
 // 対応するコンポーネントを決定する関数
@@ -1982,46 +1992,63 @@ function determineNavComponent(url) {
       return navComponents[pattern];
     }
   }
-  return "/common_2024/component/blank.html"; // 該当無しの場合はblank
+  return '/common_2024/component/blank.html'; // 該当無しの場合はblank
 }
 
 // 全てのコンポーネントの読み込みを管理
 let promises = [];
 
 // .p-popupクラスがbody要素に付与されていない場合の処理を追加
-if (!html.classList.contains("p-popup")) {
-  promises.push(loadComponent("/common_2024/component/layout/footer.html", ".l-main", "afterend"));
+if (!html.classList.contains('p-popup')) {
+  promises.push(loadComponent('/common_2024/component/layout/footer.html', '.l-main', 'afterend'));
   promises.push(
-    loadComponent("/common_2024/component/layout/header.html", "body", "afterbegin").then(() => {
-      return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
+    loadComponent('/common_2024/component/layout/header.html', 'body', 'afterbegin').then(() => {
+      return loadComponent(determineNavComponent(currentUrl), '.l-header', 'beforeend');
     })
   );
 } else {
   promises.push(
-    loadComponent("/common_2024/component/layout/header_popup.html", "body", "afterbegin").then(() => {
-      return loadComponent(determineNavComponent(currentUrl), ".l-header", "beforeend");
+    loadComponent('/common_2024/component/layout/header_popup.html', 'body', 'afterbegin').then(() => {
+      return loadComponent(determineNavComponent(currentUrl), '.l-header', 'beforeend');
     })
   );
 }
 
 // 常に実行される処理を追加
-promises.push(loadComponent("/common_2024/component/head/meta.html", "head", "afterbegin"));
+promises.push(loadComponent('/common_2024/component/head/meta.html', 'head', 'afterbegin'));
 //promises.push(loadComponent("/common_2024/component/head/ogp.html", "head", "beforeend"));
 
 Promise.all(promises)
   .then(() => {
     // data-component属性を持つ要素をすべて取得
-    const dataComponentElements = document.querySelectorAll("[data-component]");
+    const dataComponentElements = document.querySelectorAll('[data-component]');
     // 各要素に対してコンポーネントを読み込む
     dataComponentElements.forEach((elm) => {
-      const componentName = elm.getAttribute("data-component");
+      const componentName = elm.getAttribute('data-component');
       const componentPath = `/common_2024/component/parts/${componentName}.html`;
-      loadComponent(componentPath, `[data-component="${componentName}"]`, "afterbegin");
+      loadComponent(componentPath, `[data-component="${componentName}"]`, 'afterbegin');
     });
   })
   .then(() => {
     // 全てのコンポーネントが読み込まれたことを示すイベントをディスパッチ
     document.dispatchEvent(componentsLoaded);
+
+    //承認番号をフッターに挿入する処理
+
+    const productIdElement = document.getElementById('js-product-id');
+    if (productIdElement) {
+      const productIdText = productIdElement.textContent;
+
+      // 2. 'js-product-id'の要素を削除する
+      productIdElement.remove();
+
+      // 3. 'l-footer'要素の先頭に新しい'p'要素を作成し、テキストを挿入する
+      const footerElement = document.querySelector('.l-footer');
+      const footerProductId = document.createElement('p');
+      footerProductId.className = 'l-footer__number l-container lg:-full';
+      footerProductId.textContent = productIdText;
+      footerElement.insertBefore(footerProductId, footerElement.firstChild);
+    }
 
     // meta name="description"のcontentを取得し、meta property="og:description"に設定
     const descriptionMeta = document.querySelector('meta[name="description"]');
@@ -2037,23 +2064,23 @@ Promise.all(promises)
 
     /*初期表示時のレイアウト崩れ対応処理*/
     // CSSファイルのパス
-    const cssPath = "/common_2024/css/style.css";
+    const cssPath = '/common_2024/css/style.css';
 
     // CSSを読み込むための<link>要素を生成
-    const elmCssLink = document.createElement("link");
+    const elmCssLink = document.createElement('link');
     elmCssLink.href = cssPath;
-    elmCssLink.rel = "stylesheet";
-    elmCssLink.type = "text/css";
+    elmCssLink.rel = 'stylesheet';
+    elmCssLink.type = 'text/css';
 
     // CSSの読み込み完了時に実行する関数
     elmCssLink.onload = function () {
       // bodyのvisibilityをvisibleに変更
-      document.body.style.visibility = "visible";
+      document.body.style.visibility = 'visible';
     };
 
     // <head>に<link>要素を追加
     document.head.appendChild(elmCssLink);
   })
   .catch((error) => {
-    console.error("Error loading components:", error);
+    console.error('Error loading components:', error);
   });
