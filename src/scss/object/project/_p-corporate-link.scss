@@ -66,5 +66,8 @@
                 background-size: rem(10px);
             }
         }
+        @include hover {
+            text-decoration: underline;
+          }
     }
 }
