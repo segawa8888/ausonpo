@@ -1,133 +1,132 @@
 @charset "UTF-8";
-@use "../../global" as *;
+@use '../../global' as *;
 /*　タブ切り替え　自転車ロードサービス　*/
 .bycle-roadservice {
-    .bycle-roadservice__block01 {
-        &__box {
-            &--img {
-                position: relative;
-                .cover-text {
-                    position: absolute;
-                    background: rgb(255, 255, 255, 0.7);
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    min-height: 6.375rem;
-                }
-            }
+  .bycle-roadservice__block01 {
+    &__box {
+      &--img {
+        position: relative;
+        .cover-text {
+          position: absolute;
+          background: #f3f3f3;
+          bottom: 0;
+          left: 0;
+          width: 100%;
         }
+      }
     }
-    .bycle-roadservice__block02 {
-        &__box {
-            &--items {
-                max-width: 36rem;
-                width: 100%;
-            }
+  }
+  .bycle-roadservice__block02 {
+    &__box {
+      &--items {
+        max-width: 36rem;
+        width: 100%;
+      }
+    }
+  }
+  .bycle-roadservice__block04 {
+    &__grid {
+      gap: 2.5rem 5rem;
+      @include mq-max('sm') {
+        gap: 2.5rem;
+      }
+    }
+  }
+  .bycle-roadservice__block05 {
+    .l-container {
+      max-width: 51rem;
+      width: 100%;
+      .c-btn-important-1 {
+        justify-content: center;
+        height: 3.75rem;
+        @include mq-max('sm') {
+          width: 100%;
+          height: auto;
+          min-height: auto;
+          background-position: right 1rem center;
+          padding: 0.5rem;
         }
+      }
     }
-    .bycle-roadservice__block04 {
-        &__grid {
-            gap: 2.5rem 5rem;
-            @include mq-max("sm") {
-                gap: 2.5rem;
-            }
-        }
+  }
+  .bycle-roadservice__block06 {
+    &--img {
+      margin: 0 auto;
+      max-width: 21rem;
+      width: 100%;
+      @include mq-max('sm') {
+        max-width: 16.56rem;
+      }
     }
-    .bycle-roadservice__block05 {
-        .l-container {
-            max-width: 51rem;
-            width: 100%;
-            .c-btn-important-1 {
-                justify-content: center;
-                height: 3.75rem;
-                @include mq-max("sm") {
-                    width: 100%;
-                    height: auto;
-                    min-height: auto;
-                    background-position: right 1rem center;
-                    padding: 0.5rem;
-                }
-            }
-        }
+  }
+  .bycle-roadservice__block07 {
+    .c-download-pdf {
+      margin: 0;
     }
-    .bycle-roadservice__block06 {
-        &--img {
-            margin: 0 auto;
-            max-width: 21rem;
-            width: 100%;
-            @include mq-max("sm") {
-                max-width: 16.56rem;
-            }
-        }
-    }
-    .bycle-roadservice__block07 {
-        .c-download-pdf {
-            margin: 0;
-        }
-    }
+  }
 }
 .bycle-flexbox01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left {
+    max-width: 13.43rem;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    picture {
+      max-width: 10.875rem;
+      width: 100%;
+    }
+  }
+  &__right {
+    max-width: calc(100% - 15.93rem);
+    width: 100%;
+    &--btns {
+      gap: 1.5rem 1rem;
+    }
+  }
+  @include mq-max('sm') {
     &__left {
-        max-width: 13.43rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        picture {
-            max-width: 10.875rem;
-            width: 100%;
-        }
+      max-width: 5.5rem;
+      picture {
+        max-width: 100%;
+      }
     }
     &__right {
-        max-width: calc(100% - 15.93rem);
-        width: 100%;
-        &--btns {
-            gap: 1.5rem 1rem;
-        }
+      max-width: calc(100% - 6rem);
     }
-    @include mq-max("sm") {
-        &__left {
-            max-width: 5.5rem;
-            picture {
-                max-width: 100%;
-            }
-        }
-        &__right {
-            max-width: calc(100% - 6rem);
-        }
-    }
+  }
 }
 .bycle__c-voice {
-    display: flex;
-    justify-content: space-between;
-    &--img {
-        max-width: 5rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        picture {
-            max-width: 3.56rem;
-            width: 100%;
-        }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &--img {
+    max-width: 5rem;
+    width: 100%;
+    picture {
+      max-width: 3.56rem;
+      width: 100%;
     }
-    &--text {
-        max-width: calc(100% - 6rem);
-        width: 100%;
-    }
+  }
+  &--text {
+    max-width: calc(100% - 6rem);
+    width: 100%;
+  }
 }
 .bycle__check-text {
-    padding-left: 1.5625rem;
-    position: relative;
-    &::after {
-        content: "";
-        position: absolute;
-        background: url(/common_2024/img/icon/check_circle.webp) no-repeat;
-        background-size: contain;
-        top: 0.25rem;
-        left: 0;
-        width: 1rem;
-        height: 1rem;
-    }
+  padding-left: 1.5625rem;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    background: url(/common_2024/img/icon/check_circle.webp) no-repeat;
+    background-size: contain;
+    top: 0.25rem;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+  }
 }
 /*　-------------------------　*/

@@ -1,345 +1,346 @@
 @charset "UTF-8";
-@use "../../global" as *;
+@use '../../global' as *;
 
 .p-keiyakusya-kaigai-estimate__title {
-    max-width: rem(331.41px);
-    margin-left: auto;
-    margin-right: auto;
+  max-width: rem(331.41px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .p-keiyakusya-kaigai-estimate {
-    max-width: rem(812px);
-    background-color: #f5f5f5;
-    padding-bottom: rem(56.14px);
+  max-width: rem(812px);
+  background-color: #f5f5f5;
+  padding-bottom: rem(56.14px);
 }
 
 .p-keiyakusya-kaigai-estimate__container {
-    max-width: rem(264px);
-    margin-left: auto;
-    margin-right: auto;
+  max-width: rem(264px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .p-keiyakusya-kaigai-estimate-form__wrap {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .p-keiyakusya-kaigai-estimate-form__label {
-    font-size: rem(14px);
-    font-weight: 700;
-    line-height: 1;
+  font-size: rem(14px);
+  font-weight: 700;
+  line-height: 1;
 }
 
 .p-keiyakusya-kaigai-estimate-form__select {
-    margin-left: rem(8px);
+  margin-left: rem(8px);
 }
 
 .p-keiyakusya-kaigai-estimate-form-select {
-    max-width: rem(228px);
-    width: 100%;
+  max-width: rem(228px);
+  width: 100%;
 }
 
 .p-keiyakusya-kaigai-estimate-form-select select {
-    padding: rem(11.5px) rem(50px) rem(11.5px) rem(15px);
-    width: 100%;
-    font-size: rem(14px);
-    color: #bdbdbd;
-    line-height: 1;
-    border-radius: rem(5px);
-    background-color: $c-white;
-    border: 1px solid #bdbdbd;
-    background-image: url(/pc/kaigai/assets/img/kaigai_icon_select.webp);
-    background-repeat: no-repeat;
-    background-size: rem(8px);
-    background-position: right rem(15px) top 50%;
-    appearance: none;
-    cursor: pointer;
-    @include mq-max("md") {
-        padding: rem(8px);
-    }
+  padding: rem(11.5px) rem(50px) rem(11.5px) rem(15px);
+  width: 100%;
+  font-size: rem(14px);
+  color: #bdbdbd;
+  line-height: 1;
+  border-radius: rem(5px);
+  background-color: $c-white;
+  border: 1px solid #bdbdbd;
+  background-image: url(/pc/kaigai/assets/img/kaigai_icon_select.webp);
+  background-repeat: no-repeat;
+  background-size: rem(8px);
+  background-position: right rem(15px) top 50%;
+  appearance: none;
+  cursor: pointer;
+  @include mq-max('md') {
+    padding: rem(8px);
+  }
 }
 
 .p-keiyakusya-kaigai-estimate-form-select select::-ms-expand {
-    display: none;
+  display: none;
 }
 
 .p-keiyakusya-kaigai-estimate-form-select select:focus {
-    border: 1px solid #ccc;
-    box-shadow: none;
-    outline: none;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  outline: none;
 }
 
 .p-keiyakusya-kaigai-estimate-form-select select::-ms-expand {
-    display: none;
+  display: none;
 }
 
 .p-keiyakusya-kaigai-estimate-form-select select:focus {
-    border: 1px solid #ccc;
-    box-shadow: none;
-    outline: none;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  outline: none;
 }
 
 .p-keiyakusya-kaigai-estimate__text {
-    position: relative;
-    max-width: rem(359px);
-    margin-top: rem(28px);
-    &::before {
-        content: "";
-        background-color: $c-primary;
-        width: rem(40px);
-        height: rem(0.5px);
-        position: absolute;
-        top: 60%;
-        left: 0;
-        transform: translateY(-50%);
-    }
+  position: relative;
+  max-width: rem(359px);
+  margin-top: rem(28px);
+  &::before {
+    content: '';
+    background-color: $c-primary;
+    width: rem(40px);
+    height: rem(0.5px);
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+  }
 
-    &::after {
-        content: "";
-        background-color: $c-primary;
-        width: rem(40px);
-        height: rem(0.5px);
-        position: absolute;
-        top: 60%;
-        right: 0;
-        transform: translateY(-50%);
-    }
+  &::after {
+    content: '';
+    background-color: $c-primary;
+    width: rem(40px);
+    height: rem(0.5px);
+    position: absolute;
+    top: 60%;
+    right: 0;
+    transform: translateY(-50%);
+  }
 }
 
 .p-keiyakusya-kaigai-estimate__img {
-    max-width: rem(359px);
+  max-width: rem(359px);
 }
 
 .p-keiyakusya-kaigai-estimate-price__table {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap:0 rem(8px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0 rem(8px);
 }
 
 .p-keiyakusya-kaigai-estimate-price {
-    border-radius: rem(5px);
+  border-radius: rem(5px);
+  position: relative;
+
+  &.--bronze {
+    width: rem(102.631px);
+    border: rem(1px) solid #b08645;
+    .p-keiyakusya-kaigai-estimate-price__title {
+      color: #b08645;
+    }
+    .p-keiyakusya-kaigai-estimate-price__price {
+      height: rem(44px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #b08645;
+    }
+
+    &.-lg {
+      width: rem(148px);
+      @include mq-max('md') {
+        width: rem(102.6px);
+      }
+      .p-keiyakusya-kaigai-estimate-price__price {
+        height: rem(64px);
+        @include mq-max('md') {
+          height: rem(44px);
+        }
+      }
+    }
+  }
+
+  &.--silver {
+    width: rem(120px);
+    border: rem(1px) solid #909090;
+    .p-keiyakusya-kaigai-estimate-price__title {
+      color: #909090;
+    }
+    .p-keiyakusya-kaigai-estimate-price__price {
+      height: rem(54px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #909090;
+    }
+
+    &.-lg {
+      width: rem(168px);
+      @include mq-max('md') {
+        width: rem(102.9px);
+      }
+      .p-keiyakusya-kaigai-estimate-price__price {
+        height: rem(78px);
+        @include mq-max('md') {
+          height: rem(53px);
+        }
+      }
+    }
+  }
+
+  &.--gold {
+    width: rem(120px);
+    border: rem(1px) solid #bd9f00;
+    .p-keiyakusya-kaigai-estimate-price__title {
+      color: #bd9f00;
+    }
+    .p-keiyakusya-kaigai-estimate-price__price {
+      height: rem(64px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #bd9f00;
+    }
+
+    &.-lg {
+      width: rem(168px);
+      @include mq-max('md') {
+        width: rem(116.46px);
+      }
+      .p-keiyakusya-kaigai-estimate-price__price {
+        height: rem(95px);
+        @include mq-max('md') {
+          height: rem(65px);
+        }
+      }
+    }
+  }
+
+  .hukidashi {
+    position: absolute;
+    top: rem(-50px);
+    left: 50%;
+    transform: translateX(-50%);
+    @include mq-max('md') {
+      top: rem(-35px);
+    }
+  }
+
+  .hukidashi__text {
     position: relative;
-
-    &.--bronze {
-        width:rem(102.631px);
-        border:rem(1px) solid #B08645;
-        .p-keiyakusya-kaigai-estimate-price__title {
-            color: #B08645;
-        }
-        .p-keiyakusya-kaigai-estimate-price__price {
-            height:rem(44px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #B08645;
-        }
-
-        &.-lg {
-            width:rem(148px);
-            @include mq-max("md") {
-                width:rem(102.6px)
-            }
-            .p-keiyakusya-kaigai-estimate-price__price {
-                height:rem(64px);
-                @include mq-max("md") {
-                    height:rem(44px);
-                }
-            }
-        }
+    width: rem(168px);
+    height: rem(25.33px);
+    background: #fff682;
+    text-align: center;
+    border: rem(5px) solid #fff682;
+    color: #000000;
+    font-size: rem(17px);
+    font-weight: bold;
+    border-radius: rem(7.25px);
+    font-weight: 700;
+    @include mq-max('md') {
+      width: rem(110px);
+      height: rem(20px);
+      font-size: rem(11px);
     }
-
-    &.--silver {
-        width:rem(120px);
-        border:rem(1px) solid #909090;
-        .p-keiyakusya-kaigai-estimate-price__title {
-            color: #909090;
-        }
-        .p-keiyakusya-kaigai-estimate-price__price {
-            height:rem(54px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #909090;
-        } 
-
-        &.-lg {
-            width:rem(168px);
-            @include mq-max("md") {
-                width: rem(102.9px);
-            }
-            .p-keiyakusya-kaigai-estimate-price__price {
-                height:rem(78px);
-                @include mq-max("md") {
-                    height:rem(53px);
-                }
-            }
-        }
+  }
+  .hukidashi__text:after,
+  .hukidashi__text:before {
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+  }
+  .hukidashi__text:after {
+    border-color: rgba(255, 246, 130, 0);
+    border-top-width: rem(5px);
+    border-bottom-width: rem(5px);
+    border-left-width: rem(5px);
+    border-right-width: rem(5px);
+    margin-left: rem(-5px);
+    border-top-color: #fff682;
+    @include mq-max('md') {
+      border-color: transparent;
     }
-
-    &.--gold {
-        width:rem(120px);
-        border: rem(1px) solid #BD9F00;
-        .p-keiyakusya-kaigai-estimate-price__title {
-            color: #BD9F00;
-        }
-        .p-keiyakusya-kaigai-estimate-price__price {
-            height:rem(64px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #BD9F00;
-        }
-
-        &.-lg {
-            width:rem(168px);
-            @include mq-max("md") {
-                width: rem(116.46px);
-            }
-            .p-keiyakusya-kaigai-estimate-price__price {
-                height:rem(95px);
-                @include mq-max("md") {
-                    height:rem(65px);
-                }
-            }
-        }
-    }
-
-    .hukidashi {
-        position: absolute;
-        top: rem(-50px);
-        left: 50%;
-        transform: translateX(-50%);
-        @include mq-max("md") {
-            top:rem(-35px);
-        }
-    }
-
-    .hukidashi__text{
-        position:relative;
-        width:rem(168px);
-        height:rem(25.33px);
-        background:#FFF682;
-        text-align:center;
-        border:rem(5px) solid #FFF682;
-        color:#000000;
-        font-size: rem(17px);
-        font-weight:bold;
-        border-radius:rem(7.25px);
-        font-weight: 700;
-        @include mq-max("md") {
-            width:rem(110px);
-            height: rem(20px);
-            font-size: rem(11px);
-         }
-    }
-    .hukidashi__text:after,.hukidashi__text:before{
-        border: solid transparent;
-        content:'';
-        height:0;
-        width:0;
-        pointer-events:none;
-        position:absolute;
-        top:100%;
-        left:50%;
-    }
-    .hukidashi__text:after{
-        border-color: rgba(255, 246, 130, 0);
-        border-top-width:rem(5px);
-        border-bottom-width:rem(5px);
-        border-left-width:rem(5px);
-        border-right-width:rem(5px);
-        margin-left: rem(-5px);
-        border-top-color:#FFF682;
-        @include mq-max("md"){
-            border-color: transparent;
-        }
-    }
-    .hukidashi__text:before{
-        border-color: rgba(255, 246, 130, 0);
-        border-top-width:rem(10px);
-        border-bottom-width:rem(10px);
-        border-left-width:rem(10px);
-        border-right-width:rem(10px);
-        margin-left: rem(-10px);
-        margin-top: rem(5px);
-        border-top-color:#FFF682;
-    }    
+  }
+  .hukidashi__text:before {
+    border-color: rgba(255, 246, 130, 0);
+    border-top-width: rem(10px);
+    border-bottom-width: rem(10px);
+    border-left-width: rem(10px);
+    border-right-width: rem(10px);
+    margin-left: rem(-10px);
+    margin-top: rem(5px);
+    border-top-color: #fff682;
+  }
 }
 
 .p-keiyakusya-kaigai-estimate-price__title {
-    font-size: rem(13px);
-    height:rem(22px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $c-white;
-    font-weight: 700;
-    border-radius: rem(5px) rem(5px) 0 0;
+  font-size: rem(13px);
+  height: rem(22px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $c-white;
+  font-weight: 700;
+  border-radius: rem(5px) rem(5px) 0 0;
 }
 
 .p-keiyakusya-kaigai-estimate-price__price {
-    color: $c-white;
-    font-weight: 700;
-    font-size: rem(12.6px);
+  color: $c-white;
+  font-weight: 700;
+  font-size: rem(12.6px);
 
-    p {
-        position: relative;
-    }
-    
-    .price {
-        font-size: rem(32px);
-    }
+  p {
+    position: relative;
+  }
 
-    &.--vary {
-        position: relative;
-        &::before {
-            content: '';
-            background-image: url(/pc/kaigai/assets/img/kaigai_smark.webp);
-            background-size: contain;
-            width:rem(13px);
-            height:rem(13px);
-            position: absolute;
-            top: rem(4px);
-            left: rem(5px);
-        }
-    }
+  .price {
+    font-size: rem(32px);
+  }
 
-    .shiharai {
-        font-size: rem(7.512px);
-        position: absolute;
-        top: rem(10px);
-        right:rem(-7px);
+  &.--vary {
+    position: relative;
+    &::before {
+      content: '';
+      background-image: url(/pc/kaigai/assets/img/kaigai_smark.webp);
+      background-size: contain;
+      width: rem(13px);
+      height: rem(13px);
+      position: absolute;
+      top: rem(4px);
+      left: rem(5px);
     }
+  }
+
+  .shiharai {
+    font-size: rem(7.512px);
+    position: absolute;
+    top: rem(10px);
+    right: rem(-7px);
+  }
 }
 
 .p-keiyakusya-kaigai-estimate-price {
-    &.-lg {
-        .p-keiyakusya-kaigai-estimate-price__title {
-            font-size: rem(18.848px);
-            @include mq-max("md") {
-               font-size: rem(13px);
-            }
-        }
-        .p-keiyakusya-kaigai-estimate-price__price {
-            font-size: rem(18.848px);
-            @include mq-max("md") {
-                font-size: rem(12.6px);
-             }
-            .price {
-                font-size: rem(50.382px);
-                @include mq-max("md") {
-                    font-size: rem(34.75px);
-                 }
-            }
-        }
-        .shiharai {
-            font-size: rem(10.89px);
-            top:rem(15px);
-            font-weight: 700;
-            @include mq-max("md") {
-                font-size: rem(8px);
-             }
-        }
+  &.-lg {
+    .p-keiyakusya-kaigai-estimate-price__title {
+      font-size: rem(18.848px);
+      @include mq-max('md') {
+        font-size: rem(13px);
+      }
     }
+    .p-keiyakusya-kaigai-estimate-price__price {
+      font-size: rem(18.848px);
+      @include mq-max('md') {
+        font-size: rem(12.6px);
+      }
+      .price {
+        font-size: rem(50.382px);
+        @include mq-max('md') {
+          font-size: rem(30px);
+        }
+      }
+    }
+    .shiharai {
+      font-size: rem(10.89px);
+      top: rem(8.5px);
+      font-weight: 700;
+      @include mq-max('md') {
+        font-size: rem(8px);
+      }
+    }
+  }
 }
