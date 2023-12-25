@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
+  let back_step1 = document.getElementById('back_step1');
+  if (back_step1) {
+    back_step1.addEventListener('click', function (event) {
+      document.getElementById('bycle_shindan_step1').style.display = 'flex';
+      document.getElementById('bycle_shindan_step2').style.display = 'none';
+    });
+  }
+  let back_step2 = document.getElementById('back_step2');
+  if (back_step2) {
+    back_step2.addEventListener('click', function (event) {
+      document.getElementById('bycle_shindan_step2').style.display = 'flex';
+      document.getElementById('bycle_shindan_step3').style.display = 'none';
+    });
+  }
   let next_step2 = document.getElementById('next_step2');
   if (next_step2) {
     next_step2.addEventListener('click', function (event) {
