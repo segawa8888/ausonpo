@@ -12,9 +12,31 @@
     <meta property="og:description" content="自転車保険（対物・対人）Bycle（バイクル）の自転車ロードサービスをご紹介！auユーザー以外もOK！「自転車保険ネット申込ランキング第1位」！自転車保険加入義務化に対応。ご家族と一緒にお住まいなら保険料がおトクになる「家族タイプ」がオススメ！" />
     <meta property="og:image" content="https://www.au-sonpo.co.jp/common_2024/img/ogp_bycle.png" />
     <meta property="og:locale" content="ja_JP" />
+
+    <script type="text/javascript" src="/pc/common/js/campcd.js"></script>
+    <script type="text/javascript" src="/pc/common/js/checkCookie.js"></script>
   </head>
 
-  <body style="visibility: hidden">
+  <body style="visibility: hidden" onload="javascript:sbSetCAMPCookie();javascript:loadRiyouQrcode();javascript:checkUserAgent();javascript:checkCookie();">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WG9V33" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WG9V33');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- パンくず -->
     <nav class="c-breadcrumbs" aria-label="breadcrumb">
       <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="c-breadcrumbs__list l-container lg:-full sm:-full">
@@ -102,7 +124,7 @@
                     </a>
                   </div>
                   <p class="u-text-center u-mt-6 sm:u-mt-9 u-text-14">
-                    <a href="/pc/keiyakusya/bycle/index.html" class="p-keiyakusya-accordion-btn" target="_blank">その他のお問い合わせ・アプリなど<br />ご契約者向け情報はこちら</a>
+                    <a href="/pc/keiyakusya/bycle/index.html" class="p-keiyakusya-accordion-btn" target="_blank">その他のお問い合わせ・アプリなど<br />ご契約者さま向け情報はこちら</a>
                   </p>
                 </div>
               </div>
@@ -113,7 +135,7 @@
         <!-- タブ切り替え -->
         <div class="p-byclebest-tab">
           <h2 class="c-heading2-has-line" data-gtm-vis-first-on-screen1024435_107="5707" data-gtm-vis-total-visible-time1024435_107="100" data-gtm-vis-has-fired1024435_107="1">
-            <p class="u-text-center u-text-primary u-text-bold u-text-16">au損保の</p>
+            <p class="u-text-center u-text-primary u-text-bold u-text-16" id="bycle_roadservice">au損保の</p>
             自転車向け保険<ruby>Bycle<rt class="u-text-12">バイクル</rt></ruby>
           </h2>
           <nav class="c-tab u-border-primary">
@@ -125,15 +147,15 @@
                 <a href="./compensation.html#bycle_compensation"><span>02</span>補償内容</a>
               </li>
               <li class="c-tab__item-current c-btn -lg">
-                <a href="./premium.html#bycle_premium"><span>03</span>保険金額と保険料</a>
+                <a href="./premium.html#bycle_premium" class="u-leading-snug"><span>03</span>保険金額と<br class="lg:u-hidden" />保険料</a>
               </li>
               <li class="c-tab__item-current c-btn -lg active">
-                <a href="./roadservice.html#bycle_roadservice"><span>04</span>自転車<br class="lg:u-hidden" />ロードサービス</a>
+                <a href="./roadservice.html#bycle_roadservice" class="u-leading-snug"><span>04</span>自転車<br class="lg:u-hidden" />ロードサービス</a>
               </li>
             </ol>
             <!-- 自動車ロードサービス -->
             <div class="c-tab__content bycle-roadservice">
-              <div class="c-tab__content-inner" id="bycle_roadservice">
+              <div class="c-tab__content-inner">
                 <p class="u-text-lg u-text-center u-text-bold">「トラブルでの搬送」や<br class="sm-min:u-hidden" />「自宅への出張修理」に対応！</p>
                 <p class="c-text-accent -underline u-text-center u-mt-1 u-text-24">自転車ロードサービス</p>
                 <div class="bycle-roadservice__block01 u-grid u-grid-cols-2 u-gap-6 u-mt-10 sm:u-grid-cols-1 sm:u-mt-8">
@@ -154,9 +176,8 @@
                         <img src="/pc/bycle/assets/img/bycle_tab4-loadservice02_pc.png" alt="ロードサービス" loading="lazy" />
                       </picture>
                       <div class="cover-text u-p-2">
-                        <p class="u-text-center u-text-18 u-text-bold u-leading-normal">
-                          外出先で電動アシスト付き<br />
-                          自転車がパンクした…<br />
+                        <p class="u-text-center u-text-16 sm:u-text-12 u-text-bold u-leading-normal">
+                          外出先で電動アシスト付き自転車がパンクした…<br />
                           重くて自分じゃ運べない…
                         </p>
                       </div>
@@ -173,7 +194,7 @@
                         <p class="u-text-center">出張<br />修理</p>
                       </div>
                       <div class="gray_block--contents">
-                        <p class="u-text-bold u-text-12 u-mt-1">パンクやチェーン・ブレーキトラブルなど軽微なトラブルは、</p>
+                        <p class="u-text-bold u-text-12 u-mt-1">軽微なトラブルは</p>
                         <p class="u-text-bold u-text-24 u-text-primary">ご自宅まで出張修理！</p>
                       </div>
                     </div>
@@ -184,9 +205,8 @@
                         <img src="/pc/bycle/assets/img/bycle_tab4-loadservice01_pc.png" alt="ロードサービス" loading="lazy" />
                       </picture>
                       <div class="cover-text u-p-2">
-                        <p class="u-text-center u-text-18 u-text-bold u-leading-normal">
-                          久しぶりに自転車に乗ろうとしたら<br />
-                          ブレーキが壊れてる…<br />
+                        <p class="u-text-center u-text-16 sm:u-text-12 u-text-bold u-leading-normal">
+                          久しぶりに自転車に乗ろうとしたらブレーキが壊れてる…<br />
                           自分じゃ修理できなそさそう…
                         </p>
                       </div>
@@ -199,18 +219,18 @@
                   </div>
                 </div>
                 <div class="bycle-roadservice__block02 u-border u-border-primary u-radius-4 u-mt-10 u-p-6 sm:u-py-4 sm:u-px-2">
-                  <p class="u-text-20 u-text-center u-text-bold u-text-primary">自転車ロードサービスの<br class="sm-min:u-hidden" />うれしい3つのポイント！</p>
+                  <p class="u-text-20 u-text-center u-text-bold u-text-primary u-leading-normal">自転車ロードサービスの<br class="sm-min:u-hidden" />うれしい3つのポイント！</p>
                   <div class="bycle-roadservice__block02__box u-flex u-justify-center">
-                    <div class="bycle-roadservice__block02__box--items u-mt-10 u-text-20 u-text-bold">
+                    <div class="bycle-roadservice__block02__box--items u-mt-10 u-text-20 u-text-bold u-leading-normal">
                       <p class="bycle__check-text">保険料はそのまま、<br class="sm-min:u-hidden" />追加費用はかかりません。</p>
-                      <p class="bycle__check-text u-mt-4">家族タイプでもあんしん、年4回までご利用いただけます。</p>
-                      <p class="bycle__check-text u-mt-4">全国、ほとんどの地域で ご利用いただけます。</p>
+                      <p class="bycle__check-text u-mt-4">家族タイプでもあんしん、<br class="sm-min:u-hidden" />年4回までご利用いただけます。</p>
+                      <p class="bycle__check-text u-mt-4">全国、ほとんどの地域で<br class="sm-min:u-hidden" />ご利用いただけます。</p>
                     </div>
                   </div>
-                  <p class="u-text-md u-mt-10 u-text-indent-1 u-text-black">※搬送はご自宅からも要請いただけます。</p>
-                  <p class="u-text-md u-text-indent-1 u-text-black">※出張修理で修理に必要な部品代はお客さま負担となります。</p>
-                  <p class="u-text-md u-text-indent-1 u-text-black">※保険期間が2年のご契約の場合は、1年ごとに4回までとなります。また、利用回数は、搬送、出張修理それぞれ1回としてカウントされます。</p>
-                  <p class="u-text-md u-text-indent-1 u-text-black">※搬送と出張修理は提供地域が異なります。</p>
+                  <p class="u-text-sm u-mt-10 u-text-indent-1 u-text-black">※搬送はご自宅からも要請いただけます。</p>
+                  <p class="u-text-sm u-text-indent-1 u-text-black">※出張修理で修理に必要な部品代はお客さま負担となります。</p>
+                  <p class="u-text-sm u-text-indent-1 u-text-black">※保険期間が2年のご契約の場合は、1年ごとに4回までとなります。また、利用回数は、搬送、出張修理それぞれ1回としてカウントされます。</p>
+                  <p class="u-text-sm u-text-indent-1 u-text-black">※搬送と出張修理は提供地域が異なります。</p>
                 </div>
                 <div class="bycle-roadservice__block03 u-mt-10">
                   <p class="u-text-20 u-text-center u-text-bold u-text-primary">自転車ロードサービス提供地域</p>
@@ -288,8 +308,8 @@
                     <div class="bycle__c-voice">
                       <div class="bycle__c-voice--img">
                         <picture>
-                          <source srcset="/pc/bycle/assets/img/bycle_tab4-voice01.webp" type="image/webp" />
-                          <img src="/pc/bycle/assets/img/bycle_tab4-voice01.png" alt="お客様の声" loading="lazy" />
+                          <source srcset="/common_2024/img/voice_pic_01.webp" type="image/webp" />
+                          <img src="/common_2024/img/voice_pic_01.png" alt="お客様の声" loading="lazy" />
                         </picture>
                       </div>
                       <div class="bycle__c-voice--text">
@@ -299,8 +319,8 @@
                     <div class="bycle__c-voice">
                       <div class="bycle__c-voice--img">
                         <picture>
-                          <source srcset="/pc/bycle/assets/img/bycle_tab4-voice02.webp" type="image/webp" />
-                          <img src="/pc/bycle/assets/img/bycle_tab4-voice02.png" alt="お客様の声" loading="lazy" />
+                          <source srcset="/common_2024/img/voice_pic_02.webp" type="image/webp" />
+                          <img src="/common_2024/img/voice_pic_02.png" alt="お客様の声" loading="lazy" />
                         </picture>
                       </div>
                       <div class="bycle__c-voice--text">
@@ -310,8 +330,8 @@
                     <div class="bycle__c-voice">
                       <div class="bycle__c-voice--img">
                         <picture>
-                          <source srcset="/pc/bycle/assets/img/bycle_tab4-voice03.webp" type="image/webp" />
-                          <img src="/pc/bycle/assets/img/bycle_tab4-voice03.png" alt="お客様の声" loading="lazy" />
+                          <source srcset="/common_2024/img/voice_pic_05.webp" type="image/webp" />
+                          <img src="/common_2024/img/voice_pic_05.png" alt="お客様の声" loading="lazy" />
                         </picture>
                       </div>
                       <div class="bycle__c-voice--text">
@@ -321,8 +341,8 @@
                     <div class="bycle__c-voice">
                       <div class="bycle__c-voice--img">
                         <picture>
-                          <source srcset="/pc/bycle/assets/img/bycle_tab4-voice04.webp" type="image/webp" />
-                          <img src="/pc/bycle/assets/img/bycle_tab4-voice04.png" alt="お客様の声" loading="lazy" />
+                          <source srcset="/common_2024/img/voice_pic_03.webp" type="image/webp" />
+                          <img src="/common_2024/img/voice_pic_03.png" alt="お客様の声" loading="lazy" />
                         </picture>
                       </div>
                       <div class="bycle__c-voice--text">
@@ -367,10 +387,10 @@
                 <a href="./compensation.html#bycle_compensation"><span>02</span>補償内容</a>
               </li>
               <li class="c-tab__item-current c-btn -lg">
-                <a href="./premium.html#bycle_premium"><span>03</span>保険金額と保険料</a>
+                <a href="./premium.html#bycle_premium" class="u-leading-snug"><span>03</span>保険金額と<br class="lg:u-hidden" />保険料</a>
               </li>
               <li class="c-tab__item-current c-btn -lg active">
-                <a href="./roadservice.html#bycle_roadservice"><span>04</span>自転車<br class="lg:u-hidden" />ロードサービス</a>
+                <a href="./roadservice.html#bycle_roadservice" class="u-leading-snug"><span>04</span>自転車<br class="lg:u-hidden" />ロードサービス</a>
               </li>
             </ol>
           </nav>
@@ -385,8 +405,8 @@
                     <div class="p-bycle-box__type u-flex">
                       <div class="p-bycle-box__type-icon">
                         <picture>
-                          <source srcset="/pc/bycle/assets/img/bycle_voice01_pc.webp" type="image/webp" />
-                          <img src="/pc/bycle/assets/img/bycle_voice01_pc.png" alt="お客様の声" loading="lazy" />
+                          <source srcset="/common_2024/img/voice_pic_01.webp" type="image/webp" />
+                          <img src="/common_2024/img/voice_pic_01.png" alt="お客様の声" loading="lazy" />
                         </picture>
                       </div>
                       <div class="p-bycle-box__type-name u-pl-2">
@@ -406,8 +426,8 @@
                     <div class="p-bycle-box__type u-flex">
                       <div class="p-bycle-box__type-icon">
                         <picture>
-                          <source srcset="/pc/bycle/assets/img/bycle_voice01_pc.webp" type="image/webp" />
-                          <img src="/pc/bycle/assets/img/bycle_voice01_pc.png" alt="お客様の声" loading="lazy" />
+                          <source srcset="/common_2024/img/voice_pic_02.webp" type="image/webp" />
+                          <img src="/common_2024/img/voice_pic_02.png" alt="お客様の声" loading="lazy" />
                         </picture>
                       </div>
                       <div class="p-bycle-box__type-name u-pl-2">
@@ -468,7 +488,7 @@
                 <div class="-p-bycle-plan-select-btn kazoku radio">
                   <input id="radio-2" class="visually-hidden" type="radio" name="btn" />
                   <label for="radio-2">
-                    <div class="tag-area u-text-center">
+                    <div class="tag-area u-text-center" style="flex-direction: column">
                       <p class="tag recom">おすすめ</p>
                       <p class="tag">家族タイプ</p>
                     </div>
@@ -527,59 +547,24 @@
             <h2 class="c-heading2-has-line">よくあるご質問</h2>
             <ol class="c-faq l-container lg:-md u-mt-12">
               <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-                <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">自転車向け保険ってなんですか？</h3>
+                <h3 class="c-faq__title js-accordion-toggle-btn" itemprop="name">電動アシスト自転車は「自転車ロードサービス」の対象になりますか？</h3>
                 <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
                   <div itemprop="text" class="c-faq__content">
-                    <p class="u-text-md">自転車向け保険とは、一般的に「傷害保険」と「個人賠償責任保険」がセットの、自転車利用時の事故などのリスクをカバーする保険を指します。</p>
+                    <p class="u-text-md">電動アシスト自転車も対象となります。電動アシスト自転車のバッテリー切れの際にも、自転車ロードサービスをご利用いただくことができます。</p>
+                  </div>
+                </div>
+              </li>
+              <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
+                <h3 class="c-faq__title js-accordion-toggle-btn" itemprop="name">「自転車ロードサービスデスク」の連絡先を知りたい。</h3>
+                <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
+                  <div itemprop="text" class="c-faq__content">
                     <p class="u-text-md">
-                      傷害保険は、自転車事故を含む交通事故全般でのご自身のケガが補償される保険です。<br />
-                      個人賠償責任保険は、自転車運転中に相手にケガをさせてしまった場合だけでなく、日常生活の事故で相手をケガ・死亡させてしまった場合、相手の財産（物）を壊してしまった場合など、法律上の損害賠償責任を負った場合に補償が受けられる保険です。
+                      【自転車ロードサービスデスク】<br />
+                      <br />
+                      0077-78-8365<br />
+                      <br />
+                      受付時間：24時間365日受付（出張修理は受付時間が10:00-18:00となりますのであらかじめご了承ください）
                     </p>
-                  </div>
-                </div>
-              </li>
-              <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-                <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">自転車向け保険の加入義務化ってなんですか？</h3>
-                <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
-                  <div itemprop="text" class="c-faq__content">
-                    <p class="u-text-md">自転車保険の加入義務化とは、“被害者の保護”と“加害者の経済的負担軽減”を目的に、各地方自治体が条例により自転車保険の加入を義務づけていることです。自転車は子どもからお年寄りまで幅広い年代で利用されており、誰もが重大事故に巻き込まれる可能性があります。重大事故の場合、高額な賠償金請求が発生する可能性があるため、加入義務化を推進する自治体は増えており、自転車保険への加入をおススメしております。</p>
-                    <p class="u-text-md u-mt-4">
-                      <a href="/pc/bycle/obligation/index.html" class="bycle_boder">全国に広がる「自転車保険加入の義務化」についてはこちら >></a>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-                <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">家族タイプの場合の補償の対象となる家族の範囲を教えてください。</h3>
-                <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
-                  <div itemprop="text" class="c-faq__content">
-                    「自転車向け保険　Bycle」、「自転車向け保険　Bycle Best」、「ケガの保険　交通事故」の家族タイプの被保険者（補償の対象となる方）の範囲は、契約申込画面にてご指定された本人、本人の配偶者、その他親族※となります。
-                    <p class="u-text-indent-1 u-mt-2">
-                      ※家族タイプのその他親族とは、次の方をいいます。<br />
-                      ・本人またはその配偶者と同居の、本人またはその配偶者の親族<br />
-                      ・本人またはその配偶者と別居の、本人またはその配偶者の未婚の子<br />
-                      上記の補償の対象の範囲の方全員が家族タイプで補償される事となります。
-                    </p>
-                    <p class="u-text-indent-2 u-mt-2">(注)親族とは、6親等内の血族、3親等内の姻族をいいます。また、 未婚とは、これまでに婚姻歴のないことをいいます。</p>
-                  </div>
-                </div>
-              </li>
-              <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-                <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「自転車向け保険 Bycle」、「ケガの保険交通事故」の違いは？</h3>
-                <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
-                  <div itemprop="text" class="c-faq__content">
-                    <p class="u-text-md u-text-indent-1 u-mb-4">①ご自身の補償について、「自転車向け保険 Bycle」、「ケガの保険 交通事故」は、いずれも交通事故によるケガを補償しますが、「自転車向け保険 Bycle」は、自転車に係る事故（※1）の場合、「死亡保険金」「後遺障害保険金」「入院一時金」「入院保険金」「手術保険金」「通院保険金」が2倍となります。また、2017年2月16日以降を保険開始とする「自転車向け保険 Bycle」には「ヘルメット着用中補償（※2）」がセットされています。</p>
-                    <p class="u-text-md u-text-indent-1 u-mb-4">②サービスについて、「自転車向け保険 Bycle」には「自転車ロードサービス（プレミアム）」がセットされています。詳しくは、各プランのページでご確認ください。</p>
-                    <p class="u-text-indent-1 u-text-black">※1「自転車に乗っている間の事故」「自転車に乗っていないときに運行中の自転車と衝突・接触した事故」をいいます。</p>
-                    <p class="u-text-indent-1 u-text-black">※2ヘルメット着用中補償は、自転車に係る事故の場合の2倍補償の対象外となります。</p>
-                  </div>
-                </div>
-              </li>
-              <li itemprop="mainEntity" itemscope itemtype="http://schema.org/Question" class="c-faq__item">
-                <h3 itemprop="name" class="c-faq__title js-accordion-toggle-btn">「自転車向け保険」に加入中です。自転車を買い替えましたが、手続きは必要でしょうか？</h3>
-                <div itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer" class="c-faq__wrapper js-accordion-toggle-content">
-                  <div itemprop="text" class="c-faq__content">
-                    <p class="u-text-md">「自転車向け保険」は自転車本体にかける保険ではなく、被保険者（補償の対象となる方）ご自身のおケガなどについて補償する保険です。自転車を買い替えされた場合や、複数台所有されていても自転車の特定や登録の必要はありません。<br />また、電動アシスト付き自転車に買い替えた場合も、同様に自転車の特定や登録の必要はありません。</p>
                   </div>
                 </div>
               </li>
@@ -634,7 +619,7 @@
                 <a href="https://www.au-sonpo.co.jp/pc/common/pdf/standard_shogai/standard_jyusetsu_20191201.pdf" class="c-download-pdf -external" target="_blank" rel="noopener noreferrer">重要事項のご説明（重要事項説明書）PDF</a>
               </li>
               <li class="u-text-left">
-                <a href="javascript:void(0)" onclick="openwin2('https://www.au-sonpo.co.jp/pc/common/popup/PU_C_16.html#content_c16_03','myau');" class="c-download-pdf sm:u-text-center -external">ご契約のしおり（普通保険約款・特約集）PDF</a>
+                <a href="javascript:void(0)" onclick="openwin2('/pc/common/popup/PU_C_16.html#content_c16_01','myau');" class="c-download-pdf sm:u-text-center -external u-mt-0">ご契約のしおり（普通保険約款・特約集）PDF</a>
               </li>
             </ul>
             <div class="c-textbox-has-link l-container lg:-sm">

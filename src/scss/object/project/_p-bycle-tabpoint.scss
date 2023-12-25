@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@use "../../global" as *;
+@use '../../global' as *;
 
 /*　タブ切り替え　5つのポイント　*/
 .p-byclebest-tab-ranking {
@@ -121,24 +121,24 @@
 }
 .p-bycle-point-wrapper {
   justify-content: space-between;
-  @include mq-max("sm") {
+  @include mq-max('sm') {
     flex-direction: column;
   }
   &__left,
   &__right {
     max-width: calc((100% - 2rem) / 2);
     width: 100%;
-    @include mq-max("sm") {
+    @include mq-max('sm') {
       max-width: 100%;
     }
   }
   &__right {
-    @include mq-max("sm") {
+    @include mq-max('sm') {
       padding-top: 2rem;
     }
   }
   .p-bycle-point-wrapper-box {
-    @include mq-max("sm") {
+    @include mq-max('sm') {
       padding: 0.625rem;
     }
   }
@@ -165,7 +165,7 @@
     }
   }
   .splide {
-    @include mq-max("sm") {
+    @include mq-max('sm') {
       padding: 0 1rem;
     }
   }
@@ -175,10 +175,10 @@
       padding-top: 1rem;
       max-width: calc((100% - 7rem) / 3);
       width: 100%;
-      @include mq-max("lg") {
+      @include mq-max('lg') {
         max-width: calc((100% - 2.5rem) / 3);
       }
-      @include mq-max("sm") {
+      @include mq-max('sm') {
         max-width: 18rem;
         margin-right: 0.625rem;
       }
@@ -203,7 +203,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    @include mq-max("lg") {
+    @include mq-max('lg') {
       flex-direction: column;
       padding-right: 1rem;
       max-width: 50%;
@@ -214,7 +214,7 @@
     }
     .p-bycle-compensation__pic-icon {
       max-width: 12.5rem;
-      @include mq-max("lg") {
+      @include mq-max('lg') {
         max-width: 100%;
       }
       img {
@@ -226,15 +226,15 @@
   .p-bycle-compensation-box-right {
     position: relative;
     border-radius: rem(6.498px);
-    border: rem(2.599px) dashed #EA5404;
-    background: #FFF682;
-    padding:rem(25px) rem(16px) rem(23.37px) rem(26px);
+    border: rem(2.599px) dashed #ea5404;
+    background: #fff682;
+    padding: rem(25px) rem(16px) rem(23.37px) rem(26px);
     max-width: rem(379px);
     margin-left: rem(20px);
-    @include mq-max("md") {
+    @include mq-max('md') {
       max-width: rem(162px);
       margin-left: rem(16px);
-      padding:rem(28px) rem(7px) rem(15px) rem(21px);
+      padding: rem(28px) rem(7px) rem(15px) rem(21px);
       border-radius: rem(5px);
     }
     &::before {
@@ -247,7 +247,7 @@
       left: rem(-12.5px);
       top: 50%;
       transform: translateY(-50%);
-      @include mq-max("md") {
+      @include mq-max('md') {
         background-size: rem(20px);
         width: rem(20px);
         height: rem(20px);
@@ -259,51 +259,50 @@
       top: rem(-11px);
       left: 50%;
       transform: translateX(-50%);
-      z-index:2;
+      z-index: 2;
     }
-    .hukidashi__text{
-      position:relative;
-      width:rem(150.765px);
-      height:rem(22.743px);
+    .hukidashi__text {
+      position: relative;
+      width: rem(150.765px);
+      height: rem(22.743px);
       line-height: rem(22.743px);
-      background:#EA5404;
-      text-align:center;
-      color:#FFFFFF;
-      font-size:rem(16px);
-      font-weight:bold;
-      border-radius:rem(6.498px);
-      @include mq-max("md") {
-        width:rem(116px);
+      background: #ea5404;
+      text-align: center;
+      color: #ffffff;
+      font-size: rem(16px);
+      font-weight: bold;
+      border-radius: rem(6.498px);
+      @include mq-max('md') {
+        width: rem(116px);
         height: rem(17.49px);
-        font-size:rem(12px);
+        font-size: rem(12px);
         line-height: rem(17.49px);
       }
-  }
-  .hukidashi__text:after{
+    }
+    .hukidashi__text:after {
       border: solid transparent;
-      content:'';
-      height:0;
-      width:0;
-      pointer-events:none;
-      position:absolute;
+      content: '';
+      height: 0;
+      width: 0;
+      pointer-events: none;
+      position: absolute;
       border-color: rgba(234, 84, 4, 0);
-      border-top-width:rem(5px);
-      border-bottom-width:rem(5px);
-      border-left-width:rem(5px);
-      border-right-width:rem(5px);
-      margin-left:rem( -5px);
-      border-top-color:#EA5404;
-      top:100%;
-      left:50%;
-  }
-  
+      border-top-width: rem(5px);
+      border-bottom-width: rem(5px);
+      border-left-width: rem(5px);
+      border-right-width: rem(5px);
+      margin-left: rem(-5px);
+      border-top-color: #ea5404;
+      top: 100%;
+      left: 50%;
+    }
   }
 
   .p-bycle-compensation-box-right__inner {
     display: flex;
     align-items: center;
-    @include mq-max("md") {
-     flex-wrap: wrap;
+    @include mq-max('md') {
+      flex-wrap: wrap;
     }
   }
 
@@ -313,7 +312,7 @@
 
   .p-bycle-compensation__pic-img {
     max-width: 24.5rem;
-    @include mq-max("lg") {
+    @include mq-max('lg') {
       max-width: 50%;
     }
     img {
@@ -327,18 +326,18 @@
     .p-koutsuujiko-detail__heading {
       position: relative;
 
-      @include mq-max("sm") {
+      @include mq-max('sm') {
         justify-content: flex-start;
         padding-left: 1rem;
       }
       span {
         padding-right: 0;
-        @include mq-max("sm") {
+        @include mq-max('sm') {
           font-size: 2.375rem;
         }
       }
       &::after {
-        content: "";
+        content: '';
         width: 6rem;
         height: 5rem;
         position: absolute;
@@ -346,7 +345,7 @@
         bottom: 0;
         right: 4px;
         background-repeat: no-repeat;
-        @include mq-max("sm") {
+        @include mq-max('sm') {
           width: 7rem;
           height: 7rem;
           background-position: right;
@@ -361,14 +360,19 @@
     .p-byclebest-title-loadservice {
       &::after {
         background-image: url(/pc/bycle/assets/img/bycle_tabpoint2-01_pc.png);
+        background-position-y: 1rem;
+        @include mq-max('sm') {
+          background-position-y: 2.5rem;
+        }
       }
     }
     .p-byclebest-title-hoten {
       &::after {
-        background-image: url(/pc/bycle/assets/img/bycle_tabpoint3-01_pc.png);
+        background-image: url(/pc/bycle-s/assets/img/bycle-s_tab1-illust02.png);
+        // background-image: url(/pc/bycle/assets/img/bycle_tabpoint3-01_pc.png);
         width: 9rem;
         background-position: right;
-        @include mq-max("sm") {
+        @include mq-max('sm') {
           width: 10rem;
         }
       }
@@ -387,22 +391,22 @@
 }
 .p-bycle-case {
   .p-bycle-point {
-    @include mq-max("sm") {
+    @include mq-max('sm') {
       margin-right: 1rem;
     }
-    @include mq-max("sm") {
+    @include mq-max('sm') {
       font-size: 2.375rem;
     }
     h3 {
       justify-content: flex-start;
       position: relative;
       span {
-        @include mq-max("sm") {
+        @include mq-max('sm') {
           font-size: 2rem;
         }
       }
       &::after {
-        content: "";
+        content: '';
         height: 6.25rem;
         width: 7.25rem;
         display: block;

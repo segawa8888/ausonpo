@@ -1,127 +1,118 @@
 @charset "UTF-8";
-@use "../../global" as *;
+@use '../../global' as *;
 
 .p-bycle-cta {
-    &__list {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        margin-top: rem(40px);
-        @include mq-max("sm") {
-            margin: rem(20px) auto;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: rem(20px);
-            width: rem(340px);
-        }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: rem(40px);
+    @include mq-max('sm') {
+      margin: rem(20px) auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: rem(20px);
+      width: rem(340px);
     }
-    &__item {
-        margin: 0 rem(16px);
-        @include mq-max("sm") {
-            margin: 0;
-        }
+  }
+  &__item {
+    margin: 0 rem(16px);
+    @include mq-max('sm') {
+      margin: 0;
     }
-    &__text {
-        font-size: rem(18px);
-        font-weight: 700;
-        line-height: 1.2;
-        letter-spacing: 0.1em;
-        text-align: center;
-        margin-bottom: rem(8px);
-        @include mq-max("sm") {
-            font-size: rem(16px);
-            letter-spacing: 0;
-            br {
-                display: none;
-            }
-        }
+  }
+  &__text {
+    font-size: rem(18px);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: rem(8px);
+    @include mq-max('sm') {
+      font-size: rem(16px);
+      letter-spacing: 0;
+      br {
+        display: none;
+      }
     }
-    &__btn {
-        a {
-            //background: url(/common_2024/img/arrow/arrow_bold_white.svg) right rem(12px) center no-repeat;
-            //background-size: rem(20px);
-            border-radius: rem(8px);
-            width: rem(260px);
-            height: rem(100px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 rem(20px) 0 0;
-            transition: all 0.2s ease;
-            color: $c-white;
-            text-align: center;
-            font-size: rem(18px);
-            font-weight: 700;
-            line-height: 1.2;
-            position: relative;
-            overflow: hidden;
-            @include hover {
-                box-shadow: none;
-                transform: translateY(rem(4px));
-            }
-            @include mq-max("sm") {
-                font-size: rem(20px);
-                padding: 0 rem(12px) 0 0;
-                height: rem(80px);
-                width: 100%;
-            }
-            &::before {
-                content: "";
-                position: absolute;
-                z-index: 1;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                left: 0;
-                top: 0;
-                background: url(/common_2024/img/arrow/arrow_bold_white.svg) right rem(12px) center / #{rem(20px)} no-repeat;
-            }
-        }
-        rt {
-            font-size: rem(8px);
-            @include mq-max("sm") {
-                font-size: rem(10px);
-            }
-        }
-        &.-bycle {
-            a {
-                background-color: $c-primary;
-                box-shadow: 0px rem(4px) 0px 0px #c24400;
-            }
-        }
-        &.-bycle-best {
-            a {
-                @include mq-min("sm") {
-                    width: rem(292px);
-                }
-                background-image: linear-gradient(
-                    90deg,
-                    #057cd8 0%,
-                    #aedcff 4.69%,
-                    #45a1e8 7.81%,
-                    #057cd8 13.35%,
-                    #1f93ed 67.71%,
-                    #2ca2fd 75.52%,
-                    #2083d0 83.33%,
-                    #057cd8 100%
-                );
-                box-shadow: 0px rem(4px) 0px 0px #005495;
-            }
-        }
-        &.-bycle-s {
-            a {
-                background-color: $c-bycle-s;
-                box-shadow: 0px rem(4px) 0px 0px #446b00;
-            }
-        }
+  }
+  &__btn {
+    a {
+      //background: url(/common_2024/img/arrow/arrow_bold_white.svg) right rem(12px) center no-repeat;
+      //background-size: rem(20px);
+      border-radius: rem(8px);
+      width: rem(260px);
+      height: rem(100px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 rem(20px) 0 0;
+      transition: all 0.2s ease;
+      color: $c-white;
+      text-align: center;
+      font-size: rem(18px);
+      font-weight: 700;
+      line-height: 1.2;
+      position: relative;
+      overflow: hidden;
+      @include hover {
+        box-shadow: none;
+        transform: translateY(rem(4px));
+      }
+      @include mq-max('sm') {
+        font-size: rem(20px);
+        padding: 0 rem(12px) 0 0;
+        height: rem(80px);
+        width: 100%;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(/common_2024/img/arrow/arrow_bold_white.svg) right rem(12px) center / #{rem(20px)} no-repeat;
+      }
     }
-    &__btn-inner {
-        /*display: flex;
+    rt {
+      font-size: rem(8px);
+      margin-bottom: -0.3rem;
+      @include mq-max('sm') {
+        font-size: rem(10px);
+      }
+    }
+    &.-bycle {
+      a {
+        background-color: $c-primary;
+        box-shadow: 0px rem(4px) 0px 0px #c24400;
+      }
+    }
+    &.-bycle-best {
+      a {
+        @include mq-min('sm') {
+          width: rem(292px);
+        }
+        background-image: linear-gradient(45deg, #057cd8 0%, #aedcff 4.69%, #45a1e8 7.81%, #057cd8 18%, #1f93ed 67.71%, #2ca2fd 75.52%, #2083d0 83.33%, #057cd8 100%);
+        box-shadow: 0px rem(4px) 0px 0px #005495;
+      }
+    }
+    &.-bycle-s {
+      a {
+        background-color: $c-bycle-s;
+        box-shadow: 0px rem(4px) 0px 0px #446b00;
+      }
+    }
+  }
+  &__btn-inner {
+    /*display: flex;
         width: 100%;
         height: 100%;
         align-items: center;
         justify-content: flex-start;*/
-    }
-    @include mq-max("sm") {
-    }
+  }
+  @include mq-max('sm') {
+  }
 }
