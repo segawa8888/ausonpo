@@ -21,6 +21,9 @@
       &--items {
         max-width: 36rem;
         width: 100%;
+        @include mq-max('sm') {
+          max-width: 18rem;
+        }
       }
     }
   }
@@ -55,7 +58,7 @@
       max-width: 21rem;
       width: 100%;
       @include mq-max('sm') {
-        max-width: 16.56rem;
+        max-width: 19rem;
       }
     }
   }

@@ -24,7 +24,7 @@
         text-align: center;
         background-color: rgba(144, 144, 144, 0.1);
         @include mq-max('md') {
-          min-width: 1rem;
+          min-width: 31.7rem;
         }
         strong {
           line-height: 1.2;
@@ -130,8 +130,21 @@
   }
   .p-bycle-table__wrappe {
     @include mq-max('md') {
-      min-width: 37.9375rem;
+      min-width: 20rem;
       padding: 0.625rem;
+      &::-webkit-scrollbar {
+        width: 2rem;
+        height: 7px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #ee802f;
+      }
+      @include mq-max('sm') {
+        overflow-x: scroll;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+      }
     }
   }
 }
@@ -165,7 +178,20 @@
   }
   .p-bycle-table__wrapper {
     @include mq-max('md') {
-      min-width: 42.875rem;
+      min-width: 22.5rem;
+      &::-webkit-scrollbar {
+        height: 7px;
+        width: 2rem;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #ee802f;
+      }
+      @include mq-max('sm') {
+        overflow-x: scroll;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+      }
     }
     table {
       @include mq-max('md') {
@@ -347,23 +373,65 @@
 }
 .p-byclehoken-tab-money,
 .p-byclehoken-tab-price {
+  th {
+    align-items: center;
+    background-color: #f5f5f5;
+    border-bottom: 0.0625rem solid #fff;
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0.3125rem;
+    padding-right: 1.125rem;
+    text-align: center;
+  }
   @include mq-max('sm') {
     .p-keiyakusya-table {
       padding-bottom: 1rem;
       margin: 0 -0.5rem;
-      &::-webkit-scrollbar {
-        width: 2rem;
-        height: 7px;
-      }
-      &::-webkit-scrollbar-track {
-        background-color: #cbcbcb;
-      }
-      &::-webkit-scrollbar-thumb {
-        background-color: $c-rss;
-      }
     }
     table tbody td span strong {
       margin-left: 0;
+    }
+    table {
+      width: 1800px;
+    }
+    th,
+    td {
+      width: 160px;
+      height: 55px;
+      vertical-align: middle;
+      padding: 0 15px;
+      border-bottom: 0.0625rem solid #fff;
+      border-radius: 5px 0px 0px 5px;
+    }
+    .fixed01,
+    .fixed02,
+    .sticky_cross {
+      position: sticky;
+      left: 0;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 1;
+      font-size: 0.75rem;
+      &:before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: 100%;
+        height: 100%;
+      }
+      span {
+        position: absolute;
+        right: 1rem;
+      }
+    }
+    .sticky_cross {
+      background: #fff;
+      border-radius: 0;
     }
   }
 }
