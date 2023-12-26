@@ -14,6 +14,11 @@ document.addEventListener('componentsLoaded', () => {
     modifiedCurrentPath = '/corporate/recruit/index.html';
   }
 
+  //サステナカテゴリは下層ページも含めて全てカレント表示する
+  if (currentPath.includes('/corporate/sustainability/')) {
+    modifiedCurrentPath = '/corporate/sustainability/index.html';
+  }
+
   // パスのパターンと対応する変更後のパスを定義
   const pathPatternsBycle = [
     { pattern: /^\/pc\/bycle-best\/(compensation|premium|roadservice)\.html$/, newPath: '/pc/bycle-best/index.html' },

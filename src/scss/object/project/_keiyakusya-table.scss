@@ -9,16 +9,15 @@
   border-radius: rem(10px);
   border: rem(1px) solid #bdbdbd;
   padding: rem(20px);
-  //min-width: rem(477px);
+  min-width: rem(477px);
   @include mq-max('sm') {
     overflow-x: scroll;
-    //min-width: none;
+    min-width: unset;
   }
 }
 
 .p-keiyakusya-table table td:first-child {
-  // min-width: rem(215.715px);
-  min-width: none;
+  min-width: rem(215.715px);
   padding: 0;
   margin-right: rem(-14px);
   font-size: rem(12px);
