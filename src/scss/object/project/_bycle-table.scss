@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@use '../../global' as *;
+
+@include mq-max('sm') {
+  html .fixed01 {
+    height: initial;
+  }
+}
