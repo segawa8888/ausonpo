@@ -110,11 +110,6 @@ layout/_footer.scss
       padding: 0 0 0 rem(20px);
     }
   }
-  &__content.-block {
-    @include mq-max("md") {
-      display: block;
-    }
-  }
   @include mq-max("sm") {
     &__content > &__list {
       &:first-child {
