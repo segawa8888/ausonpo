@@ -2021,7 +2021,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // hashチェック
     if ( hash !== "" ) {
-      console.log(hash);
 
       // 初期位置セット
       window.scrollTo(0, 0);
@@ -2038,7 +2037,6 @@ document.addEventListener('DOMContentLoaded', function () {
           targetElement.scrollIntoView({ behavior: 'smooth' });
         }
       })
-
 
     }
   }
