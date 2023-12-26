@@ -12,7 +12,7 @@
   min-width: rem(477px);
   @include mq-max('sm') {
     overflow-x: scroll;
-    min-width: none;
+    min-width: unset;
   }
 }
 
