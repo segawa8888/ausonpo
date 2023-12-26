@@ -22,7 +22,7 @@
         max-width: 36rem;
         width: 100%;
         @include mq-max('sm') {
-          max-width: 18rem;
+          max-width: 16.5rem;
         }
       }
     }
@@ -119,7 +119,7 @@
   }
 }
 .bycle__check-text {
-  padding-left: 1.5625rem;
+  padding-left: 1.6rem;
   position: relative;
   &::after {
     content: '';
@@ -130,6 +130,11 @@
     left: 0;
     width: 1rem;
     height: 1rem;
+    @include mq-max('sm') {
+      & {
+        top: 0.9rem;
+      }
+    }
   }
 }
 /*　-------------------------　*/

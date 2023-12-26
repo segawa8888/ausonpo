@@ -1,37 +1,36 @@
 @charset "UTF-8";
-@use "../../global" as *;
+@use '../../global' as *;
 
 .p-keiyakusya-kaigai-cta {
-    max-width: rem(360px);
-    margin-bottom: rem(32px);
-&.-sticky{
-    @include mq-max("sm") {
-        position: sticky;
-        bottom: rem(10px);
-        left: 0;
-        z-index: 1000;
+  max-width: rem(360px);
+  margin-bottom: rem(32px);
+  &.-sticky {
+    @include mq-max('sm') {
+      position: sticky;
+      bottom: rem(10px);
+      left: 0;
+      z-index: 10;
     }
+  }
 }
-}
-
 
 .p-keiyakusya-kaigai-cta a {
-    width: 100%;
-    display: block;
-    transition: 0.3s;
-    transition: transform .2s ease;
+  width: 100%;
+  display: block;
+  transition: 0.3s;
+  transition: transform 0.2s ease;
 
-    @include hover {
-        // box-shadow: 0 rem(1px) 0 $c-base-200;
-        transform: translateY(rem(3px));
-    }
+  @include hover {
+    // box-shadow: 0 rem(1px) 0 $c-base-200;
+    transform: translateY(rem(3px));
+  }
 }
 
 .p-kaigai-pdf {
-    max-width: rem(808px);
+  max-width: rem(808px);
 }
 
 .p-kaigai-banner {
-    margin-top: rem(116px);
-    max-width: rem(1100px);
+  margin-top: rem(116px);
+  max-width: rem(1100px);
 }
